@@ -127,8 +127,11 @@ def parse_apkindex(dir: str, file_name: str):
                 version = line[2:]
             elif line.startswith("t:"):
                 time = int(line[2:])
+            elif line.startswith("o:"):
+                origin = line[2:]
             elif line == "":
-                current[pkg][version] = time
+                current[pkg]["origin"] = origin
+                current[pkg]["versions"][version] = time
 
     logger.info("update history.json")
     with open(os.path.join(dir, "history.json"), "w") as f:
