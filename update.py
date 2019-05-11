@@ -116,12 +116,19 @@ def parse_apkindex(dir: str, file_name: str):
     current = nested()
     if os.path.exists(file_path):
         with open(file_path, "r") as f:
-            current = json.load(f, object_hook=hook)
+            old = json.load(f, object_hook=hook)
+
+    for k, v in old.items():
+        if k == "so":
+            current["provide"][k] = v
+            continue
+        current[k] = v
 
     with open(os.path.join(dir, file_name), "r") as f:
         provides = list()
         dependencies = list()
         so = {}
+        provide_pkg = {}
 
         for line in f:
             line = line.strip()
@@ -136,11 +143,22 @@ def parse_apkindex(dir: str, file_name: str):
             elif line.startswith("p:"):
                 provides = line[2:].split()
                 for provide in provides:
-                    if not provide.startswith("so:"):
-                        continue
-                    provide = provide[3:]
-                    s = provide.split("=")
-                    so[s[0]] = {"package": pkg, "version": s[1] if len(s) > 1 else 0}
+                    if provide.startswith("so:"):
+                        provide = provide[3:]
+                        s = provide.split("=")
+                        so[s[0]] = {
+                            "package": pkg,
+                            "version": s[1] if len(s) > 1 else 0,
+                        }
+                    elif provide.startswith("cmd:") or provide.startswith("pc:"):
+                        pass
+                    elif ":" not in provide:
+                        s = provide.split("=")
+                        provide_pkg[s[0]] = {
+                            "package": pkg,
+                            "version": s[1] if len(s) > 1 else 0,
+                        }
+
             elif line.startswith("D:"):
                 dependencies = line[2:].split()
             elif line == "":
@@ -151,13 +169,17 @@ def parse_apkindex(dir: str, file_name: str):
                 if provides:
                     current["package"][pkg]["provides"] = provides
 
+                # provides
                 for so_name, value in so.items():
-                    current["so"][so_name] = value
+                    current["provide"]["so"][so_name] = value
+                for pkg_name, value in provide_pkg.items():
+                    current["provide"]["package"][pkg_name] = value
 
                 # reset
                 provides = list()
                 dependencies = list()
                 so = {}
+                provide_pkg = {}
 
     logger.info("update history.json")
     with open(os.path.join(dir, "history.json"), "w") as f:
