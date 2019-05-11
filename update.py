@@ -119,6 +119,10 @@ def parse_apkindex(dir: str, file_name: str):
             current = json.load(f, object_hook=hook)
 
     with open(os.path.join(dir, file_name), "r") as f:
+        provides = list()
+        dependencies = list()
+        so = {}
+
         for line in f:
             line = line.strip()
             if line.startswith("P:"):
@@ -129,9 +133,31 @@ def parse_apkindex(dir: str, file_name: str):
                 time = int(line[2:])
             elif line.startswith("o:"):
                 origin = line[2:]
+            elif line.startswith("p:"):
+                provides = line[2:].split()
+                for provide in provides:
+                    if not provide.startswith("so:"):
+                        continue
+                    provide = provide[3:]
+                    s = provide.split("=")
+                    so[s[0]] = {"package": pkg, "version": s[1] if len(s) > 1 else 0}
+            elif line.startswith("D:"):
+                dependencies = line[2:].split()
             elif line == "":
-                current[pkg]["origin"] = origin
-                current[pkg]["versions"][version] = time
+                current["package"][pkg]["origin"] = origin
+                current["package"][pkg]["versions"][version] = time
+                if dependencies:
+                    current["package"][pkg]["dependencies"] = dependencies
+                if provides:
+                    current["package"][pkg]["provides"] = provides
+
+                for so_name, value in so.items():
+                    current["so"][so_name] = value
+
+                # reset
+                provides = list()
+                dependencies = list()
+                so = {}
 
     logger.info("update history.json")
     with open(os.path.join(dir, "history.json"), "w") as f:
