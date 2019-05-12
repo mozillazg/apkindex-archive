@@ -1244,22 +1244,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525189445
 c:4d1f821634ba100388362ef339c9e2b59133d147
 
-C:Q1p1tCrBemwyUhk93cOxXZSdDrR/c=
-P:postgresql
-V:10.7-r0
-A:aarch64
-S:4265842
-I:11407360
-T:A sophisticated object-relational DBMS
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274435
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:postgresql-client tzdata /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.45 so:libxml2.so.2
-p:cmd:initdb cmd:pg_archivecleanup cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
-
 C:Q1WvdDfjLlEuTPaf/qUebIrlTwbg4=
 P:uwsgi-router_memcached
 V:2.0.17-r1
@@ -1847,6 +1831,22 @@ t:1525316787
 c:491034e4785c0eff20cca83af4bd5c640115fb6a
 D:libasyncns=0.8-r1 pkgconfig
 p:pc:libasyncns=0.8
+
+C:Q1a03ryLdqwbi187+Ny/euCkFpQrM=
+P:postgresql-dev
+V:10.8-r0
+A:aarch64
+S:1727375
+I:8642560
+T:A sophisticated object-relational DBMS (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668262
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:libressl-dev libpq=10.8-r0 pkgconfig postgresql-libs=10.8-r0 so:libc.musl-aarch64.so.1
+p:pc:libecpg=10.8 pc:libecpg_compat=10.8 pc:libpgtypes=10.8 pc:libpq=10.8 cmd:ecpg cmd:pg_config
 
 C:Q1/aXx7ORxFfBLUVcbK2QQJuhdEEc=
 P:gnuchess-doc
@@ -6919,6 +6919,22 @@ t:1554726457
 c:27d98e6838c9cc6201cce93908a9c8b3e8205f7a
 i:docs putty=0.71-r1
 
+C:Q1AKFxv4xO13GTJ7vEkKiyp7ofz9w=
+P:postgresql-plperl-contrib
+V:10.8-r0
+A:aarch64
+S:5837
+I:57344
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668270
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:postgresql-plperl so:libc.musl-aarch64.so.1 so:libperl.so
+i:postgresql-plperl=10.8-r0 postgresql-contrib=10.8-r0
+
 C:Q1ISfCpfsIBNrPzfiaeBoqa403zMo=
 P:apache2-error
 V:2.4.39-r0
@@ -6979,6 +6995,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1525316305
 c:fd5fb3ae9dbefa4c3ecf22e6f344c233f6a03295
 D:so:libc.musl-aarch64.so.1
+
+C:Q1eXvrKm3Y7tijYrclpy2PerMwxOA=
+P:postgresql-contrib
+V:10.8-r0
+A:aarch64
+S:534017
+I:2588672
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668261
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libpq.so.5 so:libssl.so.45 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:oid2name cmd:pg_standby cmd:vacuumlo
 
 C:Q1yohp9tgdQ/oV1cH7P+T69sUw+Y8=
 P:eggdrop-logs2html
@@ -7055,6 +7087,21 @@ t:1525331985
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:jsoncpp=1.8.4-r0 pkgconfig
 p:pc:jsoncpp=1.8.4
+
+C:Q13tb5YaqK0IRRHk+2N+g11lTRro8=
+P:postgresql-pltcl
+V:10.8-r0
+A:aarch64
+S:23880
+I:114688
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668270
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:pgtcl so:libc.musl-aarch64.so.1 so:libtcl8.6.so
 
 C:Q1H8YZ5XjJBzyZSBBFjX2jo6bpZYU=
 P:busybox-extras
@@ -7685,22 +7732,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525254225
 c:e541f145131460a0c1d69801eddda288714aeb92
 D:so:libc.musl-aarch64.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q17C/IfQK4y291amBQpy9yX8cl6jw=
-P:postgresql-plpython2-contrib
-V:10.7-r0
-A:aarch64
-S:7112
-I:81920
-T:PL/Python 2 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274433
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:postgresql-plpython2 so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
-i:postgresql-plpython2=10.7-r0 postgresql-contrib=10.7-r0
 
 C:Q1D4f5kJ0VDeN32YYNtXLGf43qVgA=
 P:sdl2
@@ -15063,6 +15094,22 @@ c:02841295b767be983eb88485e69bae00607eb592
 D:so:libc.musl-aarch64.so.1
 p:so:libcares.so.2=2.2.0
 
+C:Q1ksrk6ylA//0Xtzv+5oSJsJhURwg=
+P:postgresql
+V:10.8-r0
+A:aarch64
+S:4267543
+I:11427840
+T:A sophisticated object-relational DBMS
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668272
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:postgresql-client tzdata /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.45 so:libxml2.so.2
+p:cmd:initdb cmd:pg_archivecleanup cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
+
 C:Q1eBcw9PxeKRKIp6eO0F5Fxarmvt8=
 P:libnfsidmap-ldap
 V:2.3.1-r4
@@ -15555,6 +15602,21 @@ t:1525263312
 c:8d4313589065fbc86b808ed96434f1c7c5faf8e6
 D:so:libc.musl-aarch64.so.1 so:libsndfile.so.1
 p:so:libsamplerate.so.0=0.1.8 cmd:sndfile-resample
+
+C:Q1GiYWp3ykVu6XAnzHG+NPgF7OuLY=
+P:postgresql-doc
+V:10.8-r0
+A:aarch64
+S:3413685
+I:16805888
+T:A sophisticated object-relational DBMS (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668268
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+i:docs postgresql=10.8-r0
 
 C:Q1fikVjeE5tufEg0h1RrA4E34C1jw=
 P:dhcpcd
@@ -21321,22 +21383,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525328828
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 
-C:Q1oqDVSAjDm9ctXskq8Vl1afp8cHM=
-P:libpq
-V:10.7-r0
-A:aarch64
-S:114237
-I:278528
-T:PostgreSQL libraries
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274432
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libldap_r-2.4.so.2 so:libssl.so.45
-p:so:libpq.so.5=5.10
-
 C:Q1A8UGSXJWzrXgmWxqS322MxkhVGg=
 P:procps-lang
 V:3.3.15-r0
@@ -24836,22 +24882,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1529061754
 c:9bba9ebe8ee228c948b3fb8191aa164a34bcf6af
 i:docs ansible=2.5.5-r0
-
-C:Q1e+HL9pj/1OYDpE6uo3fu6fyTSFQ=
-P:postgresql-libs
-V:10.7-r0
-A:aarch64
-S:67466
-I:167936
-T:A sophisticated object-relational DBMS (libraries)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274432
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:so:libc.musl-aarch64.so.1 so:libpq.so.5
-p:so:libecpg.so.6=6.10 so:libecpg_compat.so.3=3.10 so:libpgtypes.so.3=3.10
 
 C:Q1jr1NSc/7K00PDOmhTvpQk+keIYQ=
 P:perl-module-scandeps
@@ -35080,22 +35110,6 @@ t:1526489384
 c:6409c2986bab8e9302d90474e2ead3d0369b2d8c
 i:docs unrar=5.6.4-r0
 
-C:Q1s2w6Hdlx163eYPiJ4pZ0dCtK3dE=
-P:postgresql-dev
-V:10.7-r0
-A:aarch64
-S:1727108
-I:8634368
-T:A sophisticated object-relational DBMS (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274425
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:libressl-dev libpq=10.7-r0 pkgconfig postgresql-libs=10.7-r0 so:libc.musl-aarch64.so.1
-p:pc:libecpg=10.7 pc:libecpg_compat=10.7 pc:libpgtypes=10.7 pc:libpq=10.7 cmd:ecpg cmd:pg_config
-
 C:Q1ybaJX8MXsFmx6Ne03VfLnFylYj0=
 P:xrdp
 V:0.9.2-r4
@@ -39391,22 +39405,6 @@ t:1525329511
 c:abb52de6c7677f0840d57f6081254aa2e63c6f38
 i:docs perl-inline=0.80-r1
 
-C:Q1f5CxtT4BK6iBAs22Q61IbpGj9Xw=
-P:postgresql-plpython3-contrib
-V:10.7-r0
-A:aarch64
-S:6620
-I:65536
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274435
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:postgresql-plpython3 so:libc.musl-aarch64.so.1 so:libpython3.6m.so.1.0
-i:postgresql-plpython3=10.7-r0 postgresql-contrib=10.7-r0
-
 C:Q18R1othzVw0mVCItcCkzux2sG2IE=
 P:xrdb
 V:1.1.1-r0
@@ -42248,6 +42246,22 @@ t:1525778931
 c:d04fc20dcfbee6b3254723670f98894d5c3e5210
 D:perl perl-test-tester perl-test-nowarnings
 
+C:Q1/eRVD6Qb5ZHnyiFvA6xUNKRtzk8=
+P:postgresql-libs
+V:10.8-r0
+A:aarch64
+S:67443
+I:167936
+T:A sophisticated object-relational DBMS (libraries)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668269
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:so:libc.musl-aarch64.so.1 so:libpq.so.5
+p:so:libecpg.so.6=6.10 so:libecpg_compat.so.3=3.10 so:libpgtypes.so.3=3.10
+
 C:Q1nrWO3rmkq4tPP9tdaZMKM0lo700=
 P:linux-firmware-atusb
 V:20180615-r2
@@ -42769,6 +42783,22 @@ t:1525287681
 c:48d2d428c9bfb574abade3a1ec3925be03e3feff
 D:libcdio++=0.94-r2 libcdio=0.94-r2 pkgconfig
 p:pc:libcdio++=0.94 pc:libcdio=0.94 pc:libiso9660++=0.94 pc:libiso9660=0.94 pc:libudf=0.94
+
+C:Q1GpkPXvNqs6DU2jk6Df2umdpEN98=
+P:libpq
+V:10.8-r0
+A:aarch64
+S:114255
+I:278528
+T:PostgreSQL libraries
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668269
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libldap_r-2.4.so.2 so:libssl.so.45
+p:so:libpq.so.5=5.10
 
 C:Q1u7XlguPuT929/1jLBMnOMcZRupo=
 P:dconf
@@ -45911,22 +45941,6 @@ c:e541f145131460a0c1d69801eddda288714aeb92
 D:so:libc.musl-aarch64.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libsasl2.so.3
 p:cmd:ldapadd cmd:ldapcompare cmd:ldapdelete cmd:ldapexop cmd:ldapmodify cmd:ldapmodrdn cmd:ldappasswd cmd:ldapsearch cmd:ldapurl cmd:ldapwhoami
 
-C:Q1aCtulWk19AQyYW1Zz6qTLDLgU74=
-P:postgresql-contrib
-V:10.7-r0
-A:aarch64
-S:534070
-I:2588672
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274425
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libpq.so.5 so:libssl.so.45 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:oid2name cmd:pg_standby cmd:vacuumlo
-
 C:Q1CYhrkIkdSO8+F7Etn52EaY3kkoM=
 P:giflib-doc
 V:5.1.4-r2
@@ -46771,21 +46785,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1551364217
 c:d6448b760fcebaa43b000a3e57a4926509b5532d
 D:py-asn1 py-cryptography py-bcrypt py-pynacl
-
-C:Q1qU9mM985YiMYtmtZaGGx5x5nqGU=
-P:postgresql-pltcl
-V:10.7-r0
-A:aarch64
-S:23864
-I:114688
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274432
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:pgtcl so:libc.musl-aarch64.so.1 so:libtcl8.6.so
 
 C:Q1birrrSW+Jxxxk9ROiiYrfH/DUWI=
 P:rlog-doc
@@ -52068,6 +52067,21 @@ t:1526277522
 c:5072dded778e58a4f4f66084dcb5ee3777101a3a
 D:so:libc.musl-aarch64.so.1 so:libhiredis.so.0.13
 
+C:Q1XFsixB49LQv75OeAfAwUhpa7HIE=
+P:postgresql-plperl
+V:10.8-r0
+A:aarch64
+S:36709
+I:143360
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668270
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:so:libc.musl-aarch64.so.1 so:libperl.so
+
 C:Q1HhWTBxgbuPIrdItsG4BUiouDMjc=
 P:uwsgi-router_redirect
 V:2.0.17-r1
@@ -52158,22 +52172,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525862443
 c:a69294b13760259a87e359840f7a173da7ef7fe6
 i:docs ckbcomp=1.184-r0
-
-C:Q1Rc6mXmeSSnR3IBuraeU+7gMwapQ=
-P:postgresql-client
-V:10.7-r0
-A:aarch64
-S:679390
-I:1892352
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274432
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:so:libc.musl-aarch64.so.1 so:libedit.so.0 so:libpq.so.5 so:libz.so.1
-p:cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1WKPgyBdrTr0ww06gWPQ4RVlwNP4=
 P:uwsgi-logfile
@@ -53104,6 +53102,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525189415
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 i:docs db=5.3.28-r0
+
+C:Q1V+bEF7P7sOwO9AkRSE9KiK2et20=
+P:postgresql-plpython3
+V:10.8-r0
+A:aarch64
+S:45026
+I:167936
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668271
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:python3 so:libc.musl-aarch64.so.1 so:libpython3.6m.so.1.0
 
 C:Q1+PWP+4StCO/ZetmCS7KG5E2r3xE=
 P:perl-dbix-searchbuilder
@@ -58104,6 +58117,22 @@ t:1530091126
 c:16d03aa618e431b78097d9ccd485fb10c2e67fd6
 i:docs razor=2.85-r7
 
+C:Q1DoSihHfCn9SQKM+fbBlzoAZsja4=
+P:postgresql-plpython3-contrib
+V:10.8-r0
+A:aarch64
+S:6614
+I:65536
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668272
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:postgresql-plpython3 so:libc.musl-aarch64.so.1 so:libpython3.6m.so.1.0
+i:postgresql-plpython3=10.8-r0 postgresql-contrib=10.8-r0
+
 C:Q1sJKm2ONY0/H3Kb5leZhulOPGW7g=
 P:frotz-doc
 V:2.44-r0
@@ -59211,21 +59240,6 @@ t:1529942341
 c:6adf1b454649e1f2b6c4aa06dc3f51212ab2ac01
 D:so:libc.musl-aarch64.so.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libintl.so.8 so:libjson-c.so.4 so:libncursesw.so.6 so:libsqlite3.so.0 so:libstdc++.so.6 so:libstfl.so.0 so:libxml2.so.2
 p:newsbeuter=2.12-r0 cmd:newsboat cmd:podboat
-
-C:Q1tZJ7gihaUz0bw1g/q9M1uuaJtF0=
-P:postgresql-plperl
-V:10.7-r0
-A:aarch64
-S:36713
-I:143360
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274433
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:so:libc.musl-aarch64.so.1 so:libperl.so
 
 C:Q15jDmKtWvM4MYIa1chp5U42wHP60=
 P:glib-dbg
@@ -63253,22 +63267,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1555065484
 c:afcf91b3195a7e0e88b3c570d405ddd1f4591460
 i:docs libsndfile=1.0.28-r6
-
-C:Q162rYpZnMQ09OrpjfcZ3+2bqBPaE=
-P:postgresql-plperl-contrib
-V:10.7-r0
-A:aarch64
-S:5819
-I:57344
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274433
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:postgresql-plperl so:libc.musl-aarch64.so.1 so:libperl.so
-i:postgresql-plperl=10.7-r0 postgresql-contrib=10.7-r0
 
 C:Q1btKfRpDh6/9d/UfzBy67EE+fsQg=
 P:asterisk-mobile
@@ -67803,6 +67801,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1539006538
 c:a9d9f445b7e40ed463fcdb320cd88cde20b3c714
 i:docs libexif=0.6.21-r3
+
+C:Q12VVeenpgi0oUwM8JXsT1vb26uuc=
+P:postgresql-plpython2
+V:10.8-r0
+A:aarch64
+S:45692
+I:180224
+T:PL/Python2 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668270
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:python2 so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
 
 C:Q1Sr1Uqlv5c7zZjLBylRtOKqyf4aY=
 P:elinks
@@ -73750,21 +73763,6 @@ t:1556626571
 c:d7631d72560e54b9f0caa8a04c8c504c7e7c896d
 i:docs tzdata=2019a-r0
 
-C:Q1XjOGBWWwgJwAf92ykglIpVrBgBk=
-P:postgresql-plpython3
-V:10.7-r0
-A:aarch64
-S:45035
-I:167936
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274434
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:python3 so:libc.musl-aarch64.so.1 so:libpython3.6m.so.1.0
-
 C:Q19DofHEDtFXsklUknA7JXSp0kUTU=
 P:xcb-util-renderutil-dev
 V:0.3.9-r1
@@ -76840,21 +76838,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-aarch64.so.1
 p:cmd:beep
 
-C:Q1n13xRr4nbAwOgZaQpizSiIGQsy8=
-P:postgresql-doc
-V:10.7-r0
-A:aarch64
-S:3407980
-I:16777216
-T:A sophisticated object-relational DBMS (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274431
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-i:docs postgresql=10.7-r0
-
 C:Q1IBm9A/TrTOqKYPNg/fhOuUgu2iM=
 P:perl-gdgraph
 V:1.54-r0
@@ -78171,6 +78154,22 @@ o:py-funcsigs
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1525323182
 c:63f5e7d295659a855709901ce22a3e5f40fce455
+
+C:Q14ijSIYdXgk1nO2+ihga47mbl68Q=
+P:postgresql-client
+V:10.8-r0
+A:aarch64
+S:679876
+I:1892352
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668270
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:so:libc.musl-aarch64.so.1 so:libedit.so.0 so:libpq.so.5 so:libz.so.1
+p:cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1wy9uMfn7bFCYIu3tjYsQCGx4/5Q=
 P:py2-nose
@@ -84487,6 +84486,22 @@ c:d19f2800a1df00c0d730c8a31045e0f54ef3404f
 D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libpcap.so.1 so:libssl.so.45 so:libtalloc.so.2
 p:so:libfreeradius-dhcp.so=0 so:libfreeradius-eap.so=0 so:libfreeradius-radius.so=0 so:libfreeradius-server.so=0
 
+C:Q1/mxfC1vbuxC18hgZZ0QIjFkkaug=
+P:postgresql-plpython2-contrib
+V:10.8-r0
+A:aarch64
+S:7152
+I:81920
+T:PL/Python 2 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1557668271
+c:0ce51efa7e896396543355530cdf113bcb648bc0
+D:postgresql-plpython2 so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
+i:postgresql-plpython2=10.8-r0 postgresql-contrib=10.8-r0
+
 C:Q1s1f/o02Wp8HXt7DtYOVKUY4oJes=
 P:kamailio-jsdt
 V:5.1.4-r0
@@ -84796,21 +84811,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1525238602
 c:c5c4a88b7482fef004413fe90c54f6001faa2e38
 D:so:libc.musl-aarch64.so.1
-
-C:Q1ThMTgKiWxyoe69c7W9YI7QBGjMU=
-P:postgresql-plpython2
-V:10.7-r0
-A:aarch64
-S:45674
-I:180224
-T:PL/Python2 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1554274433
-c:931e9aefbb00871e711c8b63f00ffdd1395327e8
-D:python2 so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
 
 C:Q1H4eg4FDsaF7oQRnFDlzE8TImk/E=
 P:gstreamer0.10-dev
