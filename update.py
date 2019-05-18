@@ -116,13 +116,7 @@ def parse_apkindex(dir: str, file_name: str):
     current = nested()
     if os.path.exists(file_path):
         with open(file_path, "r") as f:
-            old = json.load(f, object_hook=hook)
-
-    for k, v in old.items():
-        if k == "so":
-            current["provide"][k] = v
-            continue
-        current[k] = v
+            current = json.load(f, object_hook=hook)
 
     with open(os.path.join(dir, file_name), "r") as f:
         provides = list()
