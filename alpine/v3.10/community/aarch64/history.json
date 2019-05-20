@@ -52969,6 +52969,167 @@
       "versions": {
         "0.9.9-r1": 1557433476
       }
+    },
+    "qpdf-libs": {
+      "origin": "qpdf",
+      "versions": {
+        "8.4.2-r0": 1558350026
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjpeg.so.8",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libqpdf.so.21=21.4.2"
+      ]
+    },
+    "cups-filters": {
+      "origin": "cups-filters",
+      "versions": {
+        "1.22.5-r1": 1558350081
+      },
+      "dependencies": [
+        "poppler-utils",
+        "bc",
+        "ttf-freefont",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libavahi-glib.so.1",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcups.so.2",
+        "so:libcupsfilters.so.1",
+        "so:libcupsimage.so.2",
+        "so:libfontconfig.so.1",
+        "so:libfontembed.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:liblcms2.so.2",
+        "so:libpoppler.so.82",
+        "so:libqpdf.so.21",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:cups-browsed",
+        "cmd:driverless",
+        "cmd:foomatic-rip",
+        "cmd:ttfread"
+      ]
+    },
+    "qpdf": {
+      "origin": "qpdf",
+      "versions": {
+        "8.4.2-r0": 1558350027
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libqpdf.so.21",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:qpdf",
+        "cmd:zlib-flate"
+      ]
+    },
+    "brlaser-doc": {
+      "origin": "brlaser",
+      "versions": {
+        "3-r0": 1558350108
+      }
+    },
+    "qpdf-dev": {
+      "origin": "qpdf",
+      "versions": {
+        "8.4.2-r0": 1558350026
+      },
+      "dependencies": [
+        "pc:libjpeg",
+        "pc:zlib",
+        "pkgconfig",
+        "qpdf-libs=8.4.2-r0"
+      ],
+      "provides": [
+        "pc:libqpdf=8.4.2"
+      ]
+    },
+    "cups-filters-dev": {
+      "origin": "cups-filters",
+      "versions": {
+        "1.22.5-r1": 1558350080
+      },
+      "dependencies": [
+        "cups-filters-libs=1.22.5-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libcupsfilters=1.22.5",
+        "pc:libfontembed=1.22.5"
+      ]
+    },
+    "qpdf-doc": {
+      "origin": "qpdf",
+      "versions": {
+        "8.4.2-r0": 1558350026
+      }
+    },
+    "cups-filters-libs": {
+      "origin": "cups-filters",
+      "versions": {
+        "1.22.5-r1": 1558350080
+      },
+      "dependencies": [
+        "poppler-utils",
+        "bc",
+        "ttf-freefont",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcups.so.2",
+        "so:libdbus-1.so.3",
+        "so:libjpeg.so.8",
+        "so:libpng16.so.16",
+        "so:libtiff.so.5"
+      ],
+      "provides": [
+        "so:libcupsfilters.so.1=1.0.0",
+        "so:libfontembed.so.1=1.0.0"
+      ]
+    },
+    "cups-filters-doc": {
+      "origin": "cups-filters",
+      "versions": {
+        "1.22.5-r1": 1558350080
+      }
+    },
+    "qpdf-fix-qdf": {
+      "origin": "qpdf",
+      "versions": {
+        "8.4.2-r0": 1558350026
+      },
+      "dependencies": [
+        "qpdf",
+        "perl"
+      ],
+      "provides": [
+        "cmd:fix-qdf"
+      ]
+    },
+    "brlaser": {
+      "origin": "brlaser",
+      "versions": {
+        "3-r0": 1558350108
+      },
+      "dependencies": [
+        "cups-filters",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcupsimage.so.2",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
     }
   },
   "provide": {
@@ -58152,6 +58313,18 @@
       "libewf.so.3": {
         "package": "libewf",
         "version": "3.0.0"
+      },
+      "libqpdf.so.21": {
+        "package": "qpdf-libs",
+        "version": "21.4.2"
+      },
+      "libcupsfilters.so.1": {
+        "package": "cups-filters-libs",
+        "version": "1.0.0"
+      },
+      "libfontembed.so.1": {
+        "package": "cups-filters-libs",
+        "version": "1.0.0"
       }
     },
     "package": {
