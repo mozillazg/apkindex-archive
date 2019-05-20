@@ -1521,13 +1521,15 @@
     },
     "snort": {
       "versions": {
-        "2.9.13-r0": 1557172653
+        "2.9.13-r0": 1557172653,
+        "2.9.13-r1": 1558358492
       },
       "origin": "snort",
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86.so.1",
         "so:libdnet.so.1",
+        "so:liblzma.so.5",
         "so:libpcap.so.1",
         "so:libpcre.so.1",
         "so:libsfbpf.so.0",
@@ -3300,7 +3302,8 @@
     },
     "checkbashisms": {
       "versions": {
-        "2.19.3-r0": 1557203806
+        "2.19.3-r0": 1557203806,
+        "2.19.5-r0": 1558358161
       },
       "origin": "checkbashisms",
       "dependencies": [
@@ -5041,14 +5044,15 @@
     },
     "libseccomp": {
       "versions": {
-        "2.4.0-r0": 1557003485
+        "2.4.0-r0": 1557003485,
+        "2.4.1-r0": 1558358372
       },
       "origin": "libseccomp",
       "dependencies": [
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
-        "so:libseccomp.so.2=2.4.0",
+        "so:libseccomp.so.2=2.4.1",
         "cmd:scmp_sys_resolver"
       ]
     },
@@ -6173,12 +6177,13 @@
     },
     "snort-dev": {
       "versions": {
-        "2.9.13-r0": 1557172652
+        "2.9.13-r0": 1557172652,
+        "2.9.13-r1": 1558358491
       },
       "origin": "snort",
       "dependencies": [
         "pkgconfig",
-        "snort=2.9.13-r0"
+        "snort=2.9.13-r1"
       ],
       "provides": [
         "pc:snort=2.9.13",
@@ -11541,7 +11546,8 @@
     },
     "checkbashisms-doc": {
       "versions": {
-        "2.19.3-r0": 1557203806
+        "2.19.3-r0": 1557203806,
+        "2.19.5-r0": 1558358161
       },
       "origin": "checkbashisms"
     },
@@ -15655,16 +15661,17 @@
     },
     "libseccomp-dev": {
       "versions": {
-        "2.4.0-r0": 1557003484
+        "2.4.0-r0": 1557003484,
+        "2.4.1-r0": 1558358371
       },
       "origin": "libseccomp",
       "dependencies": [
         "linux-headers",
-        "libseccomp=2.4.0-r0",
+        "libseccomp=2.4.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libseccomp=2.4.0"
+        "pc:libseccomp=2.4.1"
       ]
     },
     "libxfont2-dev": {
@@ -15796,11 +15803,12 @@
     },
     "file-dev": {
       "versions": {
-        "5.36-r1": 1556547985
+        "5.36-r1": 1556547985,
+        "5.37-r0": 1558357486
       },
       "origin": "file",
       "dependencies": [
-        "libmagic=5.36-r1"
+        "libmagic=5.37-r0"
       ]
     },
     "perl-mime-tools-doc": {
@@ -25463,7 +25471,8 @@
     },
     "snort-openrc": {
       "versions": {
-        "2.9.13-r0": 1557172652
+        "2.9.13-r0": 1557172652,
+        "2.9.13-r1": 1558358491
       },
       "origin": "snort"
     },
@@ -36018,7 +36027,8 @@
     },
     "mpc1-doc": {
       "versions": {
-        "1.0.3-r1": 1556548750
+        "1.0.3-r1": 1556548750,
+        "1.1.0-r0": 1558358159
       },
       "origin": "mpc1"
     },
@@ -41439,7 +41449,8 @@
     },
     "snort-doc": {
       "versions": {
-        "2.9.13-r0": 1557172652
+        "2.9.13-r0": 1557172652,
+        "2.9.13-r1": 1558358491
       },
       "origin": "snort"
     },
@@ -41787,7 +41798,8 @@
     },
     "file": {
       "versions": {
-        "5.36-r1": 1556547986
+        "5.36-r1": 1556547986,
+        "5.37-r0": 1558357487
       },
       "origin": "file",
       "dependencies": [
@@ -47801,7 +47813,8 @@
     },
     "mpc1": {
       "versions": {
-        "1.0.3-r1": 1556548751
+        "1.0.3-r1": 1556548751,
+        "1.1.0-r0": 1558358159
       },
       "origin": "mpc1",
       "dependencies": [
@@ -47810,7 +47823,7 @@
         "so:libmpfr.so.4"
       ],
       "provides": [
-        "so:libmpc.so.3=3.0.0"
+        "so:libmpc.so.3=3.1.0"
       ]
     },
     "libblkid": {
@@ -51073,7 +51086,8 @@
     },
     "libmagic": {
       "versions": {
-        "5.36-r1": 1556547986
+        "5.36-r1": 1556547986,
+        "5.37-r0": 1558357486
       },
       "origin": "file",
       "dependencies": [
@@ -51552,7 +51566,8 @@
     },
     "file-doc": {
       "versions": {
-        "5.36-r1": 1556547986
+        "5.36-r1": 1556547986,
+        "5.37-r0": 1558357486
       },
       "origin": "file"
     },
@@ -52054,11 +52069,12 @@
     },
     "mpc1-dev": {
       "versions": {
-        "1.0.3-r1": 1556548749
+        "1.0.3-r1": 1556548749,
+        "1.1.0-r0": 1558358159
       },
       "origin": "mpc1",
       "dependencies": [
-        "mpc1=1.0.3-r1"
+        "mpc1=1.1.0-r0"
       ]
     },
     "py-tox": {
@@ -52480,7 +52496,8 @@
     },
     "libseccomp-doc": {
       "versions": {
-        "2.4.0-r0": 1557003485
+        "2.4.0-r0": 1557003485,
+        "2.4.1-r0": 1558358372
       },
       "origin": "libseccomp"
     },
@@ -69209,7 +69226,7 @@
       },
       "libseccomp.so.2": {
         "package": "libseccomp",
-        "version": "2.4.0"
+        "version": "2.4.1"
       },
       "libsvn_swig_py-1.so.0": {
         "package": "py-subversion",
@@ -73017,7 +73034,7 @@
       },
       "libmpc.so.3": {
         "package": "mpc1",
-        "version": "3.0.0"
+        "version": "3.1.0"
       },
       "libblkid.so.1": {
         "package": "libblkid",
