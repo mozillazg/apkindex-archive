@@ -716,7 +716,8 @@
     "collectd-nginx": {
       "versions": {
         "5.8.0-r3": 1557246183,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -728,7 +729,8 @@
     "collectd-iptables": {
       "versions": {
         "5.8.0-r3": 1557246189,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -2418,7 +2420,8 @@
     "collectd": {
       "versions": {
         "5.8.0-r3": 1557246198,
-        "5.8.0-r4": 1557604120
+        "5.8.0-r4": 1557604120,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -2818,7 +2821,8 @@
     },
     "samba-common-libs": {
       "versions": {
-        "4.10.2-r0": 1557230769
+        "4.10.2-r0": 1557230769,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba",
       "dependencies": [
@@ -5845,7 +5849,8 @@
     "collectd-log_logstash": {
       "versions": {
         "5.8.0-r3": 1557246192,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -6178,7 +6183,8 @@
     },
     "samba-pidl": {
       "versions": {
-        "4.10.2-r0": 1557230783
+        "4.10.2-r0": 1557230783,
+        "4.10.3-r0": 1558435952
       },
       "origin": "samba",
       "dependencies": [
@@ -6489,7 +6495,8 @@
     },
     "py2-filelock": {
       "versions": {
-        "3.0.10-r1": 1557244378
+        "3.0.10-r1": 1557244378,
+        "3.0.12-r0": 1558436155
       },
       "origin": "py-filelock",
       "dependencies": [
@@ -6926,7 +6933,8 @@
     },
     "unrar-doc": {
       "versions": {
-        "5.7.4-r0": 1557176161
+        "5.7.4-r0": 1557176161,
+        "5.7.5-r0": 1558435160
       },
       "origin": "unrar"
     },
@@ -7542,12 +7550,14 @@
     "collectd-disk": {
       "versions": {
         "5.8.0-r3": 1557246193,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
         "collectd",
-        "so:libc.musl-s390x.so.1"
+        "so:libc.musl-s390x.so.1",
+        "so:libudev.so.1"
       ]
     },
     "apr-dev": {
@@ -7686,7 +7696,8 @@
     },
     "tslib-doc": {
       "versions": {
-        "1.18-r0": 1557072583
+        "1.18-r0": 1557072583,
+        "1.19-r0": 1558435087
       },
       "origin": "tslib"
     },
@@ -7829,7 +7840,8 @@
     "collectd-doc": {
       "versions": {
         "5.8.0-r3": 1557246179,
-        "5.8.0-r4": 1557604115
+        "5.8.0-r4": 1557604115,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd"
     },
@@ -8399,7 +8411,8 @@
     "collectd-lua": {
       "versions": {
         "5.8.0-r3": 1557246194,
-        "5.8.0-r4": 1557604119
+        "5.8.0-r4": 1557604119,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -10429,7 +10442,8 @@
     },
     "samba-libs-py3": {
       "versions": {
-        "4.10.2-r0": 1557230789
+        "4.10.2-r0": 1557230789,
+        "4.10.3-r0": 1558435953
       },
       "origin": "samba",
       "dependencies": [
@@ -10606,9 +10620,16 @@
     },
     "libsrtp": {
       "versions": {
-        "1.5.4-r1": 1557063504
+        "1.5.4-r1": 1557063504,
+        "2.2.0-r0": 1558435994
       },
-      "origin": "libsrtp"
+      "origin": "libsrtp",
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libsrtp2.so.1=1"
+      ]
     },
     "snmptt": {
       "versions": {
@@ -11680,14 +11701,16 @@
     },
     "libsrtp-dev": {
       "versions": {
-        "1.5.4-r1": 1557063503
+        "1.5.4-r1": 1557063503,
+        "2.2.0-r0": 1558435994
       },
       "origin": "libsrtp",
       "dependencies": [
+        "libsrtp=2.2.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libsrtp=1.5.4"
+        "pc:libsrtp2=2.2.0"
       ]
     },
     "gross": {
@@ -12171,7 +12194,8 @@
     },
     "libsmbclient": {
       "versions": {
-        "4.10.2-r0": 1557230770
+        "4.10.2-r0": 1557230770,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba",
       "dependencies": [
@@ -13791,7 +13815,8 @@
     "collectd-mysql": {
       "versions": {
         "5.8.0-r3": 1557246186,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -14216,7 +14241,8 @@
     "collectd-ceph": {
       "versions": {
         "5.8.0-r3": 1557246193,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -15016,7 +15042,8 @@
     },
     "samba-common-server-libs": {
       "versions": {
-        "4.10.2-r0": 1557230768
+        "4.10.2-r0": 1557230768,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba",
       "dependencies": [
@@ -20396,7 +20423,8 @@
     },
     "redis": {
       "versions": {
-        "5.0.4-r0": 1557205466
+        "5.0.4-r0": 1557205466,
+        "5.0.5-r0": 1558435066
       },
       "origin": "redis",
       "dependencies": [
@@ -20842,7 +20870,8 @@
     },
     "samba-doc": {
       "versions": {
-        "4.10.2-r0": 1557230764
+        "4.10.2-r0": 1557230764,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba"
     },
@@ -21144,7 +21173,8 @@
     "collectd-ipmi": {
       "versions": {
         "5.8.0-r3": 1557246195,
-        "5.8.0-r4": 1557604119
+        "5.8.0-r4": 1557604119,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -21712,7 +21742,8 @@
     "collectd-perl": {
       "versions": {
         "5.8.0-r3": 1557246181,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
@@ -24524,7 +24555,8 @@
     "collectd-write_http": {
       "versions": {
         "5.8.0-r3": 1557246183,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -24824,7 +24856,8 @@
     },
     "samba-server-libs": {
       "versions": {
-        "4.10.2-r0": 1557230783
+        "4.10.2-r0": 1557230783,
+        "4.10.3-r0": 1558435952
       },
       "origin": "samba",
       "dependencies": [
@@ -24902,7 +24935,8 @@
     "collectd-lvm": {
       "versions": {
         "5.8.0-r3": 1557246194,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -25910,7 +25944,8 @@
     "collectd-postgresql": {
       "versions": {
         "5.8.0-r3": 1557246185,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -26487,7 +26522,8 @@
     "collectd-libs": {
       "versions": {
         "5.8.0-r3": 1557246180,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
@@ -27083,12 +27119,13 @@
     },
     "samba-server": {
       "versions": {
-        "4.10.2-r0": 1557230782
+        "4.10.2-r0": 1557230782,
+        "4.10.3-r0": 1558435952
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.2-r0",
-        "samba-initscript=4.10.2-r0",
+        "samba-common=4.10.3-r0",
+        "samba-initscript=4.10.3-r0",
         "so:libCHARSET3-samba4.so",
         "so:libauth-samba4.so",
         "so:libc.musl-s390x.so.1",
@@ -27208,7 +27245,8 @@
     "collectd-ascent": {
       "versions": {
         "5.8.0-r3": 1557246190,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -27391,7 +27429,8 @@
     "collectd-snmp": {
       "versions": {
         "5.8.0-r3": 1557246181,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
@@ -29877,15 +29916,16 @@
     },
     "tslib-dev": {
       "versions": {
-        "1.18-r0": 1557072582
+        "1.18-r0": 1557072582,
+        "1.19-r0": 1558435087
       },
       "origin": "tslib",
       "dependencies": [
         "pkgconfig",
-        "tslib=1.18-r0"
+        "tslib=1.19-r0"
       ],
       "provides": [
-        "pc:tslib=1.18"
+        "pc:tslib=1.19"
       ]
     },
     "perl-test-deep": {
@@ -30120,11 +30160,12 @@
     },
     "samba-client": {
       "versions": {
-        "4.10.2-r0": 1557230772
+        "4.10.2-r0": 1557230772,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.2-r0",
+        "samba-common=4.10.3-r0",
         "so:libCHARSET3-samba4.so",
         "so:libaddns-samba4.so",
         "so:libarchive.so.13",
@@ -30966,7 +31007,8 @@
     },
     "libwbclient": {
       "versions": {
-        "4.10.2-r0": 1557230774
+        "4.10.2-r0": 1557230774,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -30981,7 +31023,8 @@
     "collectd-bind": {
       "versions": {
         "5.8.0-r3": 1557246189,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -31416,7 +31459,8 @@
     "collectd-python": {
       "versions": {
         "5.8.0-r3": 1557246188,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -32631,15 +32675,16 @@
     "collectd-dev": {
       "versions": {
         "5.8.0-r3": 1557246179,
-        "5.8.0-r4": 1557604115
+        "5.8.0-r4": 1557604115,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
-        "collectd-libs=5.8.0-r4",
+        "collectd-libs=5.8.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcollectdclient=5.8.0"
+        "pc:libcollectdclient=5.8.1"
       ]
     },
     "libdvdcss": {
@@ -33281,7 +33326,8 @@
     },
     "redis-openrc": {
       "versions": {
-        "5.0.4-r0": 1557205465
+        "5.0.4-r0": 1557205465,
+        "5.0.5-r0": 1558435066
       },
       "origin": "redis"
     },
@@ -33316,7 +33362,8 @@
     "collectd-rrdtool": {
       "versions": {
         "5.8.0-r3": 1557246187,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -34057,22 +34104,23 @@
     },
     "samba-dev": {
       "versions": {
-        "4.10.2-r0": 1557230761
+        "4.10.2-r0": 1557230761,
+        "4.10.3-r0": 1558435949
       },
       "origin": "samba",
       "dependencies": [
-        "libsmbclient=4.10.2-r0",
-        "libwbclient=4.10.2-r0",
+        "libsmbclient=4.10.3-r0",
+        "libwbclient=4.10.3-r0",
         "pc:ldb",
         "pc:talloc",
         "pc:tevent",
         "pkgconfig",
-        "samba-client-libs=4.10.2-r0",
-        "samba-common-libs=4.10.2-r0",
-        "samba-common-server-libs=4.10.2-r0",
-        "samba-dc-libs=4.10.2-r0",
-        "samba-libnss-winbind=4.10.2-r0",
-        "samba-libs=4.10.2-r0"
+        "samba-client-libs=4.10.3-r0",
+        "samba-common-libs=4.10.3-r0",
+        "samba-common-server-libs=4.10.3-r0",
+        "samba-dc-libs=4.10.3-r0",
+        "samba-libnss-winbind=4.10.3-r0",
+        "samba-libs=4.10.3-r0"
       ],
       "provides": [
         "pc:dcerpc=0.0.1",
@@ -35307,7 +35355,8 @@
     },
     "samba-winbind-clients": {
       "versions": {
-        "4.10.2-r0": 1557230775
+        "4.10.2-r0": 1557230775,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -35819,7 +35868,8 @@
     },
     "unrar": {
       "versions": {
-        "5.7.4-r0": 1557176163
+        "5.7.4-r0": 1557176163,
+        "5.7.5-r0": 1558435160
       },
       "origin": "unrar",
       "dependencies": [
@@ -35900,7 +35950,8 @@
     "collectd-mqtt": {
       "versions": {
         "5.8.0-r3": 1557246195,
-        "5.8.0-r4": 1557604119
+        "5.8.0-r4": 1557604119,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -37378,7 +37429,8 @@
     "collectd-virt": {
       "versions": {
         "5.8.0-r3": 1557246190,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -37531,7 +37583,8 @@
     "collectd-utils": {
       "versions": {
         "5.8.0-r3": 1557246182,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
@@ -41477,7 +41530,8 @@
     },
     "samba-winbind-krb5-locator": {
       "versions": {
-        "4.10.2-r0": 1557230775
+        "4.10.2-r0": 1557230775,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -42786,7 +42840,8 @@
     "collectd-network": {
       "versions": {
         "5.8.0-r3": 1557246186,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -44352,7 +44407,8 @@
     },
     "samba-test": {
       "versions": {
-        "4.10.2-r0": 1557230788
+        "4.10.2-r0": 1557230788,
+        "4.10.3-r0": 1558435953
       },
       "origin": "samba",
       "dependencies": [
@@ -45731,7 +45787,8 @@
     "collectd-dns": {
       "versions": {
         "5.8.0-r3": 1557246197,
-        "5.8.0-r4": 1557604119
+        "5.8.0-r4": 1557604119,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -46387,7 +46444,8 @@
     },
     "py3-samba": {
       "versions": {
-        "4.10.2-r0": 1557230787
+        "4.10.2-r0": 1557230787,
+        "4.10.3-r0": 1558435952
       },
       "origin": "samba",
       "dependencies": [
@@ -47865,7 +47923,8 @@
     "collectd-apache": {
       "versions": {
         "5.8.0-r3": 1557246184,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -50575,7 +50634,8 @@
     },
     "pam-winbind": {
       "versions": {
-        "4.10.2-r0": 1557230777
+        "4.10.2-r0": 1557230777,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -50806,7 +50866,8 @@
     },
     "samba-libs": {
       "versions": {
-        "4.10.2-r0": 1557230790
+        "4.10.2-r0": 1557230790,
+        "4.10.3-r0": 1558435953
       },
       "origin": "samba",
       "dependencies": [
@@ -53850,7 +53911,8 @@
     "collectd-curl": {
       "versions": {
         "5.8.0-r3": 1557246182,
-        "5.8.0-r4": 1557604116
+        "5.8.0-r4": 1557604116,
+        "5.8.1-r0": 1558435219
       },
       "origin": "collectd",
       "dependencies": [
@@ -54499,14 +54561,15 @@
     },
     "samba-dc": {
       "versions": {
-        "4.10.2-r0": 1557230779
+        "4.10.2-r0": 1557230779,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.2-r0",
-        "samba-server=4.10.2-r0",
-        "samba-winbind=4.10.2-r0",
-        "py3-samba=4.10.2-r0",
+        "samba-common=4.10.3-r0",
+        "samba-server=4.10.3-r0",
+        "samba-winbind=4.10.3-r0",
+        "py3-samba=4.10.3-r0",
         "tdb",
         "so:libMESSAGING-samba4.so",
         "so:libasn1util-samba4.so",
@@ -56318,7 +56381,8 @@
     },
     "samba-initscript": {
       "versions": {
-        "4.10.2-r0": 1557230766
+        "4.10.2-r0": 1557230766,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba"
     },
@@ -56676,11 +56740,12 @@
     },
     "samba-winbind": {
       "versions": {
-        "4.10.2-r0": 1557230774
+        "4.10.2-r0": 1557230774,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.2-r0",
+        "samba-common=4.10.3-r0",
         "so:libMESSAGING-samba4.so",
         "so:libads-samba4.so",
         "so:libasn1util-samba4.so",
@@ -57303,7 +57368,8 @@
     },
     "hunspell-pt": {
       "versions": {
-        "20170814-r0": 1557212253
+        "20170814-r0": 1557212253,
+        "20190329-r0": 1558436160
       },
       "origin": "hunspell-pt"
     },
@@ -59296,7 +59362,8 @@
     },
     "samba-libnss-winbind": {
       "versions": {
-        "4.10.2-r0": 1557230776
+        "4.10.2-r0": 1557230776,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -60080,7 +60147,8 @@
     },
     "py-filelock": {
       "versions": {
-        "3.0.10-r1": 1557244379
+        "3.0.10-r1": 1557244379,
+        "3.0.12-r0": 1558436156
       },
       "origin": "py-filelock"
     },
@@ -60105,14 +60173,15 @@
     },
     "tslib": {
       "versions": {
-        "1.18-r0": 1557072584
+        "1.18-r0": 1557072584,
+        "1.19-r0": 1558435087
       },
       "origin": "tslib",
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libts.so.0=0.10.0",
+        "so:libts.so.0=0.10.1",
         "cmd:ts_calibrate",
         "cmd:ts_conf",
         "cmd:ts_finddev",
@@ -60327,7 +60396,8 @@
     },
     "samba-heimdal-libs": {
       "versions": {
-        "4.10.2-r0": 1557230778
+        "4.10.2-r0": 1557230778,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -60677,7 +60747,8 @@
     "collectd-write_redis": {
       "versions": {
         "5.8.0-r3": 1557246191,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -61134,7 +61205,8 @@
     },
     "samba-common": {
       "versions": {
-        "4.10.2-r0": 1557230766
+        "4.10.2-r0": 1557230766,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba"
     },
@@ -62722,7 +62794,8 @@
     },
     "samba-common-tools": {
       "versions": {
-        "4.10.2-r0": 1557230767
+        "4.10.2-r0": 1557230767,
+        "4.10.3-r0": 1558435950
       },
       "origin": "samba",
       "dependencies": [
@@ -63194,13 +63267,14 @@
     },
     "samba": {
       "versions": {
-        "4.10.2-r0": 1557230791
+        "4.10.2-r0": 1557230791,
+        "4.10.3-r0": 1558435953
       },
       "origin": "samba",
       "dependencies": [
-        "samba-server=4.10.2-r0",
-        "samba-client=4.10.2-r0",
-        "samba-common-tools=4.10.2-r0"
+        "samba-server=4.10.3-r0",
+        "samba-client=4.10.3-r0",
+        "samba-common-tools=4.10.3-r0"
       ]
     },
     "docbook-xsl": {
@@ -63482,13 +63556,14 @@
     },
     "samba-dc-libs": {
       "versions": {
-        "4.10.2-r0": 1557230781
+        "4.10.2-r0": 1557230781,
+        "4.10.3-r0": 1558435952
       },
       "origin": "samba",
       "dependencies": [
-        "samba-server=4.10.2-r0",
-        "samba-client=4.10.2-r0",
-        "samba-common-tools=4.10.2-r0",
+        "samba-server=4.10.3-r0",
+        "samba-client=4.10.3-r0",
+        "samba-common-tools=4.10.3-r0",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
         "so:libasn1-samba4.so.8",
@@ -66092,7 +66167,8 @@
     "collectd-redis": {
       "versions": {
         "5.8.0-r3": 1557246191,
-        "5.8.0-r4": 1557604118
+        "5.8.0-r4": 1557604118,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -66338,7 +66414,8 @@
     },
     "samba-client-libs": {
       "versions": {
-        "4.10.2-r0": 1557230773
+        "4.10.2-r0": 1557230773,
+        "4.10.3-r0": 1558435951
       },
       "origin": "samba",
       "dependencies": [
@@ -66441,7 +66518,8 @@
     "collectd-ping": {
       "versions": {
         "5.8.0-r3": 1557246196,
-        "5.8.0-r4": 1557604119
+        "5.8.0-r4": 1557604119,
+        "5.8.1-r0": 1558435221
       },
       "origin": "collectd",
       "dependencies": [
@@ -66821,7 +66899,8 @@
     },
     "py3-filelock": {
       "versions": {
-        "3.0.10-r1": 1557244377
+        "3.0.10-r1": 1557244377,
+        "3.0.12-r0": 1558436155
       },
       "origin": "py-filelock",
       "dependencies": [
@@ -67556,7 +67635,8 @@
     "collectd-sensors": {
       "versions": {
         "5.8.0-r3": 1557246187,
-        "5.8.0-r4": 1557604117
+        "5.8.0-r4": 1557604117,
+        "5.8.1-r0": 1558435220
       },
       "origin": "collectd",
       "dependencies": [
@@ -67578,6 +67658,18 @@
       "origin": "perl-test-taint",
       "versions": {
         "1.06-r5": 1557598982
+      }
+    },
+    "libsrtp-static": {
+      "origin": "libsrtp",
+      "versions": {
+        "2.2.0-r0": 1558435994
+      }
+    },
+    "hunspell-pt-doc": {
+      "origin": "hunspell-pt",
+      "versions": {
+        "20190329-r0": 1558436160
       }
     }
   },
@@ -72869,7 +72961,7 @@
       },
       "libts.so.0": {
         "package": "tslib",
-        "version": "0.10.0"
+        "version": "0.10.1"
       },
       "libipset.so.13": {
         "package": "ipset",
@@ -73562,6 +73654,10 @@
       "libqpdf.so.21": {
         "package": "qpdf-libs",
         "version": "21.3.0"
+      },
+      "libsrtp2.so.1": {
+        "package": "libsrtp",
+        "version": "1"
       }
     },
     "package": {

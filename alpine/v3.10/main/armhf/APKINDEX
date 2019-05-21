@@ -1395,22 +1395,6 @@ t:1557062703
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs perl-canary-stability=2012-r0
 
-C:Q1NQAMgB4vJ2ipaJk4uLGAIo/t2lI=
-P:samba-client-libs
-V:4.10.2-r0
-A:armhf
-S:264471
-I:778240
-T:Samba libraries used by clients
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151094
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libaddns-samba4.so so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libinterfaces-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtasn1.so.6 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so
-p:so:libcli-ldap-samba4.so=0 so:libclidns-samba4.so=0 so:libcmdline-contexts-samba4.so=0 so:libcmdline-credentials-samba4.so=0 so:libdcerpc.so.0=0.0.1 so:libdsdb-garbage-collect-tombstones-samba4.so=0 so:libevents-samba4.so=0 so:libhttp-samba4.so=0 so:libmscat-samba4.so=0 so:libnetif-samba4.so=0 so:libpopt-samba3-cmdline-samba4.so=0 so:libregistry-samba4.so=0 so:libsmbclient-raw-samba4.so=0
-
 C:Q1Ou2JbyO5lg8l1OUcM+XU9opQFUg=
 P:uwsgi-dumbloop
 V:2.0.17.1-r1
@@ -1470,6 +1454,22 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1556952105
 c:507c0cb7c38590dc2e5d4050c06f4a73646ab47b
 i:docs perl-test-refcount=0.08-r0
+
+C:Q1Uj0FSYFxMdUgbiLfsw3bHtvY3Tw=
+P:py2-filelock
+V:3.0.12-r0
+A:armhf
+S:10709
+I:73728
+T:A platform independent file lock for Python (for python2)
+U:https://github.com/benediktschmitt/py-filelock
+L:Unlicense
+o:py-filelock
+m:Dmitry Romanenko <dmitry@romanenko.in>
+t:1558435971
+c:42c2291a82318640d649f17c3457761ed4169494
+D:python2
+i:py-filelock=3.0.12-r0 python2
 
 C:Q18jsxkp1X/QTw8Edrp8qovKtY2wM=
 P:py2-django
@@ -2977,21 +2977,6 @@ c:52d25f963f7f9187e56c58dcedf1792eaefd3a12
 D:openrc>=0.6 /bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:cmd:repeater
 
-C:Q1IM2pWXQ3vgfGIkkCggZiKgXS+0Y=
-P:collectd-log_logstash
-V:5.8.0-r4
-A:armhf
-S:4571
-I:28672
-T:log_logstash pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libyajl.so.2
-
 C:Q1AO13gaChk55C7jzB/TyoQ0FVhcw=
 P:perl-log-dispatch
 V:2.68-r0
@@ -3817,6 +3802,36 @@ c:7d17c90e04304a4c22279de4ed0b3c68cbffd9a5
 D:so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libsecret-1.so.0=0.0.0 cmd:secret-tool
 
+C:Q1b9b7x12yzbfYt7Dz6eGxUx9qQc4=
+P:py-filelock
+V:3.0.12-r0
+A:armhf
+S:1195
+I:4096
+T:A platform independent file lock for Python
+U:https://github.com/benediktschmitt/py-filelock
+L:Unlicense
+o:py-filelock
+m:Dmitry Romanenko <dmitry@romanenko.in>
+t:1558435971
+c:42c2291a82318640d649f17c3457761ed4169494
+
+C:Q18DSJ/HwOaruhtLO7opW5ytTKi0Y=
+P:samba-common-tools
+V:4.10.3-r0
+A:armhf
+S:367890
+I:995328
+T:Tools for Samba servers and clients
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435591
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libCHARSET3-samba4.so so:libaddns-samba4.so so:libads-samba4.so so:libauth-samba4.so so:libc.musl-armhf.so.1 so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldap-2.4.so.2 so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetapi.so.0 so:libpopt-samba3-cmdline-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libprinting-migrate-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libserver-role-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsmbldap.so.2 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
+p:so:libgpext-samba4.so=0 so:libnet-keytab-samba4.so=0 cmd:net cmd:pdbedit cmd:profiles cmd:smbcontrol cmd:smbpasswd cmd:testparm
+
 C:Q1AIefTXTy7fhZGE1Ymf11Fkl4nt0=
 P:squid-doc
 V:4.6-r1
@@ -4002,6 +4017,21 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-armhf.so.1 so:libfftw3.so.3 so:libfftw3_threads.so.3 so:libfftw3f.so.3 so:libfftw3f_threads.so.3 so:libfftw3l.so.3 so:libfftw3l_threads.so.3
 p:cmd:fftw-wisdom cmd:fftw-wisdom-to-conf cmd:fftwf-wisdom cmd:fftwl-wisdom
 
+C:Q1QvBMcAcjyrRt0bHOnqHs4hdh748=
+P:collectd-doc
+V:5.8.1-r0
+A:armhf
+S:202719
+I:253952
+T:The system statistics collection daemon (documentation)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435697
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+i:docs collectd=5.8.1-r0
+
 C:Q1lp9kx5ZvNFSjMFNMN57375rAlfM=
 P:xf86-input-mouse-dev
 V:1.9.3-r1
@@ -4137,21 +4167,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557058236
 c:f9d524ab725ac2060f20353cc7ffdb6fa61fd8db
 i:docs jbig2dec=0.16-r0
-
-C:Q1FIcqVah5XBZy/Fbxkt1yTT9Uedw=
-P:collectd-bind
-V:5.8.0-r4
-A:armhf
-S:10965
-I:40960
-T:bind pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2
 
 C:Q1ZNjNPSTZ0oV6d5N0utqyQtueb/E=
 P:ruby-rdoc
@@ -4397,21 +4412,6 @@ t:1557037221
 c:cca20069cf343db2e1dd5e793a956e8bb9f112cb
 i:docs perl-io-async=0.72-r0
 
-C:Q1bGGLZpFA5jekJfhFLCOxHRvIJYM=
-P:collectd-apache
-V:5.8.0-r4
-A:armhf
-S:7493
-I:32768
-T:apache pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4
-
 C:Q1rE8hPhwAAxU7+vqyK1WNPlIoTk8=
 P:perl-module-implementation
 V:0.09-r1
@@ -4547,21 +4547,6 @@ c:4b7e1ee0cc607d914dfdd038e7fbecbb8ed3233a
 D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_fs_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_ra_svn-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:cmd:svn cmd:svnadmin cmd:svnbench cmd:svndumpfilter cmd:svnfsfs cmd:svnlook cmd:svnmucc cmd:svnrdump cmd:svnserve cmd:svnsync cmd:svnversion
 
-C:Q1EEViK29iHceOeENXIwZVcd767bo=
-P:tslib-doc
-V:1.18-r0
-A:armhf
-S:29852
-I:131072
-T:Touchscreen Access Library (documentation)
-U:https://github.com/kergoth/tslib
-L:LGPL-2.0-or-later
-o:tslib
-m:Clayton Craft <clayton@craftyguy.net>
-t:1557135060
-c:1cd3c4e7342f44054aefadd44ca25846f8584f79
-i:docs tslib=1.18-r0
-
 C:Q1wr3ap8OXWfLpBZ30TszgSzRxhnc=
 P:mozjs60-dev
 V:60.6.2-r0
@@ -4668,6 +4653,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557228365
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs farstream=0.2.8-r2
+
+C:Q1a6JH2b+5/Gc41ClDkpH1lZ28pyg=
+P:samba-heimdal-libs
+V:4.10.3-r0
+A:armhf
+S:637733
+I:1544192
+T:Samba heimdal libraries
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435595
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libreplace-samba4.so
+p:so:libasn1-samba4.so.8=8.0.0 so:libgssapi-samba4.so.2=2.0.0 so:libhcrypto-samba4.so.5=5.0.1 so:libheimbase-samba4.so.1=1.0.0 so:libheimntlm-samba4.so.1=1.0.1 so:libhx509-samba4.so.5=5.0.0 so:libkrb5-samba4.so.26=26.0.0 so:libroken-samba4.so.19=19.0.1 so:libwind-samba4.so.0=0.0.0
 
 C:Q1faW5Sv8STDkvr/OrB4y1MnHLLTM=
 P:py3-musicbrainzngs
@@ -4823,21 +4824,6 @@ t:1557132766
 c:5a61d74337f3c6e4993a4a9b00581f554f6d1308
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:so:libtag.so.1=1.17.0 so:libtag_c.so.0=0.0.0
-
-C:Q1mOl06mJ31yTKAMzVqkuoVVQhiyU=
-P:collectd-mqtt
-V:5.8.0-r4
-A:armhf
-S:6789
-I:32768
-T:mqtt pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libmosquitto.so.1
 
 C:Q1SdaJsYYm4VmyBnxqhPJDMCI1wbs=
 P:xf86-input-libinput-doc
@@ -5545,6 +5531,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557163664
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs dosfstools=4.1-r1
+
+C:Q1f4X5lHU3ST87q3HcfRQSoQx7GpU=
+P:collectd-mqtt
+V:5.8.1-r0
+A:armhf
+S:6807
+I:32768
+T:mqtt pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libmosquitto.so.1
 
 C:Q1YZKdSmsgaukYMtZ8WGLokJrSJYk=
 P:libexecinfo-dev
@@ -7823,21 +7824,6 @@ t:1557124405
 c:edd285f8823a7184b59d59ba3e1aab7463013fb7
 i:docs altermime=0.3.11-r0
 
-C:Q1lPGAGQpuMqF4jv/nlPo/HFMRm34=
-P:collectd-ascent
-V:5.8.0-r4
-A:armhf
-S:6736
-I:32768
-T:ascent pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2
-
 C:Q1B5B83HPUfWajWF5U5KAvnQU6fVM=
 P:py3-parsing
 V:2.2.0-r1
@@ -8462,6 +8448,21 @@ t:1557245923
 c:461d26a03341a7ed50480dc0676972f6b798f260
 i:openrc dbus=1.12.12-r0
 
+C:Q1+PXvyxoPoPGzpGlJBASZgUnVeTg=
+P:collectd-snmp
+V:5.8.1-r0
+A:armhf
+S:12234
+I:40960
+T:snmp pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435697
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libnetsnmp.so.35
+
 C:Q1fIr1LyYlmz5JdeZcliKl+ImaxqY=
 P:perl-list-allutils
 V:0.14-r0
@@ -8922,6 +8923,22 @@ o:hwdata
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557004034
 c:efc4e5f79a879a7b97f2c29dfa442e6262d85b29
+
+C:Q16W+jYZnL8pfZJrmMla2wiAvIf3w=
+P:samba-common-server-libs
+V:4.10.3-r0
+A:armhf
+S:1426124
+I:4096000
+T:Samba libraries shared by common-tools and servers
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435592
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libCHARSET3-samba4.so so:libacl.so.1 so:libaddns-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libcups.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libiov-buf-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.1 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpam.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
+p:so:libads-samba4.so=0 so:libauth-samba4.so=0 so:libdfs-server-ad-samba4.so=0 so:libnetapi.so.0=0 so:libnpa-tstream-samba4.so=0 so:libprinting-migrate-samba4.so=0 so:libsmbd-base-samba4.so=0 so:libsmbd-conn-samba4.so=0 so:libsmbldap.so.2=2 so:libsmbldaphelper-samba4.so=0
 
 C:Q1CdpnCTy5BmYYodxmqZZQIb9pdLc=
 P:perl-test-warnings
@@ -9395,6 +9412,22 @@ t:1556951338
 c:d95e50738a5c11874a6c05791b77838b3236f22f
 D:python2
 p:cmd:fetchmailconf
+
+C:Q1Y4Ep0Om+VQwkPltsaEaH1w2uNjE=
+P:samba-libs-py3
+V:4.10.3-r0
+A:armhf
+S:90612
+I:282624
+T:Libraries that require libpython
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435600
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libMESSAGING-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc.so.0 so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpytalloc-util.cpython-37m-arm-linux-gnueabihf.so.2 so:libpython3.7m.so.1.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libserver-role-samba4.so so:libsmbpasswdparser-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0
+p:so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so=0 so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so=0
 
 C:Q14+sHj33mPy5yHdA/m28cRvScyKo=
 P:freeradius-pam
@@ -10467,21 +10500,6 @@ t:1557172173
 c:90daef9edad6ec08c3c4a8602739540575df38f1
 D:iproute2 so:libc.musl-armhf.so.1 so:libpam.so.0
 
-C:Q1saTSf63+lfW6fqVhPk6zGr7/JcQ=
-P:collectd-disk
-V:5.8.0-r4
-A:armhf
-S:6680
-I:32768
-T:disk pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1
-
 C:Q11Ps/9fJsTpJQ+t04H3B2ph1122A=
 P:perl-pathtools
 V:3.75-r1
@@ -10864,6 +10882,20 @@ t:1557038155
 c:c6a9a17f4164572f308708d3bbf7ebcd1662d609
 D:npth=1.6-r0
 p:cmd:npth-config
+
+C:Q1fXBz62Prbhi52sve4E9+MsDmXX4=
+P:samba-initscript
+V:4.10.3-r0
+A:armhf
+S:2013
+I:24576
+T:Init script for Samba
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435591
+c:47edd290d1ad530be52e98617325c29417d47cf1
 
 C:Q1ziS21s7svebOEaL9oE+PC70d7BU=
 P:libxv
@@ -11651,22 +11683,6 @@ t:1556988634
 c:6cdc57e8fc7788db66405de353cb59b9be726cce
 D:python2
 i:py-parsing=2.2.0-r1 python2
-
-C:Q1yy9srGwOIb69FdozF0wccRv3jBA=
-P:samba-server
-V:4.10.2-r0
-A:armhf
-S:437588
-I:1441792
-T:Samba server
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151096
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-common=4.10.2-r0 samba-initscript=4.10.2-r0 so:libCHARSET3-samba4.so so:libauth-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libdbus-1.so.3 so:libdbwrap-samba4.so so:libgenrand-samba4.so so:libgse-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsghdr-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
-p:so:libxattr-tdb-samba4.so=0 cmd:eventlogadm cmd:nmbd cmd:smbd cmd:smbstatus
 
 C:Q1rAtQcd1B6v+zy8YY1fpfrZMVCMM=
 P:cyrus-sasl-ntlm
@@ -12910,21 +12926,6 @@ t:1557130858
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-devel-stacktrace-ashtml=0.15-r0
 
-C:Q11/u/SGYOapwNIApMEfH1RkpK30U=
-P:collectd-write_redis
-V:5.8.0-r4
-A:armhf
-S:5133
-I:28672
-T:write_redis pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libhiredis.so.0.14
-
 C:Q1t+wi0y9GBsNB/WciBE/z0lE/las=
 P:qemu-mipsn32
 V:4.0.0-r0
@@ -13339,21 +13340,6 @@ m:Matt Smith <mcs@darkregion.net>
 t:1557217888
 c:de51e9a1791e3b5c672bad557a16babc1122dfd5
 i:docs duplicity=0.7.19-r0
-
-C:Q10gz2keSTPACyrvs63mziGxWFD5g=
-P:collectd-sensors
-V:5.8.0-r4
-A:armhf
-S:5247
-I:28672
-T:sensors pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libsensors.so.4
 
 C:Q1AsQ/hIkMKKNzcDjpVTGdBNQyABQ=
 P:perl-test-without-doc
@@ -13771,6 +13757,22 @@ t:1557220562
 c:36a4e1b24e8b7e54d6dc2a6a1b50bf23e37a45a2
 D:py3-pbr py3-six python3
 i:py-mock=2.0.0-r4 python3
+
+C:Q1HU1cNckxcHRPYRVNFl6zzIdyLZ0=
+P:py3-filelock
+V:3.0.12-r0
+A:armhf
+S:10813
+I:77824
+T:A platform independent file lock for Python (for python3)
+U:https://github.com/benediktschmitt/py-filelock
+L:Unlicense
+o:py-filelock
+m:Dmitry Romanenko <dmitry@romanenko.in>
+t:1558435970
+c:42c2291a82318640d649f17c3457761ed4169494
+D:python3
+i:py-filelock=3.0.12-r0 python3
 
 C:Q1g+IrwC0etN3joiMf0n37ZsppKCk=
 P:rsyslog-hiredis
@@ -15446,6 +15448,22 @@ t:1556895776
 c:228ad274b6dd232df47e251fe4ebdbe787d5a933
 D:ruby-libs so:libc.musl-armhf.so.1 so:libruby.so.2.5
 
+C:Q1gfDN5JpH7dO0BSQLRzMOGnoOuco=
+P:redis
+V:5.0.5-r0
+A:armhf
+S:616840
+I:1306624
+T:Advanced key-value store
+U:https://redis.io/
+L:BSD-3-Clause
+o:redis
+m:TBK <alpine@jjtc.eu>
+t:1558435214
+c:129f7b6821ca192e6bd14a89688506900ea36850
+D:/bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:cmd:redis-benchmark cmd:redis-check-aof cmd:redis-check-rdb cmd:redis-cli cmd:redis-sentinel cmd:redis-server
+
 C:Q1InDszmcHv2wTia/csg5sSgLLMZA=
 P:subunit-libs
 V:1.2.0-r1
@@ -15509,6 +15527,21 @@ c:ce2c8c257fd929fe9768e27a8526d0439cd42dd8
 D:perl perl-mail-spf perl-netaddr-ip perl-sys-hostname-long
 p:cmd:postfix-policyd-spf-perl
 
+C:Q12MOHJrAxpFMEXSC5A+J8V7eW1k0=
+P:collectd-log_logstash
+V:5.8.1-r0
+A:armhf
+S:4574
+I:28672
+T:log_logstash pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libyajl.so.2
+
 C:Q1yzdLWSGBgVZhtCEKCJ07gs98Uj8=
 P:libid3tag-dev
 V:0.15.1b-r7
@@ -15555,21 +15588,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557591159
 c:73dbc755b16637db87c285bbe87e2c8648429e2b
 i:docs perl-crypt-openssl-random=0.15-r2
-
-C:Q1/lsDxZ9LHcEO/SoarbNeT5xIaWg=
-P:collectd-write_http
-V:5.8.0-r4
-A:armhf
-S:13748
-I:45056
-T:write_http pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libyajl.so.2
 
 C:Q1UJISP/qEGql7AKt21V5F32By4Ik=
 P:newt
@@ -16271,22 +16289,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557062613
 c:965e7c024771ee536388cc336a3d546d66b08eff
 
-C:Q1d46cUnOVnVI4+cY4cqMQQLQmLok=
-P:collectd-libs
-V:5.8.0-r4
-A:armhf
-S:16964
-I:45056
-T:The system statistics collection daemon (libraries)
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:so:libc.musl-armhf.so.1 so:libgcrypt.so.20
-p:so:libcollectdclient.so.1=1.1.0
-
 C:Q115yjzcAQAedI7x7aIrtHjkMDMYY=
 P:py3-incremental
 V:17.5.0-r1
@@ -16780,6 +16782,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libsm-dev xcb-util-dev pkgconfig startup-notification=0.12-r3
 p:pc:libstartup-notification-1.0=0.12
 
+C:Q1fIbe/PIkFKBog0CdMVncDrqxy2c=
+P:samba-server-libs
+V:4.10.3-r0
+A:armhf
+S:58891
+I:208896
+T:Samba libraries shared by server and windbind
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435598
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libMESSAGING-SEND-samba4.so so:libc.musl-armhf.so.1 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libldap-2.4.so.2 so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbldap.so.2 so:libsmbldaphelper-samba4.so so:libtalloc-report-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-tdb-samba4.so
+p:so:libMESSAGING-samba4.so=0 so:libdcerpc-samba4.so=0 so:libidmap-samba4.so=0 so:libnon-posix-acls-samba4.so=0 so:libnss-info-samba4.so=0
+
 C:Q1PRgqeYCRHxQeZjUMl7s3EtZpj1E=
 P:gzip
 V:1.10-r0
@@ -16952,6 +16970,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557136997
 c:d37708d2ba679b13ab31cc92a7187a6e756ebbb6
 i:docs perl-authen-sasl=2.16-r1
+
+C:Q1HY3tz+7s7Iev+PCnRczMrahUJMI=
+P:samba-client
+V:4.10.3-r0
+A:armhf
+S:513395
+I:1757184
+T:Samba client programs
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435593
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-common=4.10.3-r0 so:libCHARSET3-samba4.so so:libaddns-samba4.so so:libarchive.so.13 so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libformw.so.6 so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmscat-samba4.so so:libmsrpc3-samba4.so so:libncursesw.so.6 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpanelw.so.6 so:libpopt-samba3-cmdline-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsecrets3-samba4.so so:libserver-role-samba4.so so:libsmbclient-raw-samba4.so so:libsmbclient.so.0 so:libsmbconf.so.0 so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
+p:cmd:cifsdd cmd:dbwrap_tool cmd:dumpmscat cmd:findsmb cmd:mvxattr cmd:nmblookup cmd:oLschema2ldif cmd:regdiff cmd:regpatch cmd:regshell cmd:regtree cmd:rpcclient cmd:samba-regedit cmd:sharesec cmd:smbcacls cmd:smbclient cmd:smbcquotas cmd:smbget cmd:smbprint cmd:smbspool cmd:smbtar cmd:smbtree
 
 C:Q1D/5aiRk8HjtJjQ4YYqP1K45VthM=
 P:zsh
@@ -17857,6 +17891,21 @@ t:1556994898
 c:7585aa11cc2bad880dc7b56c49c67a7bd04600bc
 p:cmd:gnome-autogen.sh
 
+C:Q1V46WRsCrlzmrPjwENtsqh3Kn7ts=
+P:collectd-curl
+V:5.8.1-r0
+A:armhf
+S:31810
+I:98304
+T:curl* pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2 so:libyajl.so.2
+
 C:Q1ac7Od/vm58QllgAwS5AvK5jhu0w=
 P:perl-net-smtp-ssl-doc
 V:1.04-r0
@@ -17919,21 +17968,6 @@ t:1557216356
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armhf.so.1 so:libmnl.so.0 so:libnetfilter_conntrack.so.3 so:libnetfilter_cthelper.so.0 so:libnetfilter_cttimeout.so.1 so:libnetfilter_queue.so.1 so:libnfnetlink.so.0
 p:cmd:conntrack cmd:conntrackd cmd:nfct
-
-C:Q1vqe/A7HxhRCala5rSffBxfGFUnQ=
-P:samba
-V:4.10.2-r0
-A:armhf
-S:1177
-I:12288
-T:Tools to access a server's filespace and printers via SMB
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151099
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-server=4.10.2-r0 samba-client=4.10.2-r0 samba-common-tools=4.10.2-r0
 
 C:Q1bv28kZB4DuZm3iA6W93MBssVT0o=
 P:py2-unidecode
@@ -19373,6 +19407,22 @@ t:1557168563
 c:1b6471c85a5c5cd1f0927930007f0625c5bc6415
 D:so:libc.musl-armhf.so.1
 
+C:Q1e4txgby9/0LLT6x6y0zy9BXg+YA=
+P:samba-winbind-clients
+V:4.10.3-r0
+A:armhf
+S:47085
+I:126976
+T:Samba winbind client tools
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435594
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libwbclient.so.0 so:libwinbind-client-samba4.so
+p:cmd:ntlm_auth cmd:wbinfo
+
 C:Q1K7fE7W1FHRLX+nMN+vjXjDK3ex4=
 P:ruby
 V:2.5.5-r0
@@ -19805,22 +19855,6 @@ t:1557591038
 c:463ceed7baf81731f3da296cf45173b5d1202671
 D:irssi perl so:libc.musl-armhf.so.1 so:libperl.so
 
-C:Q1dj28nMQXyVQBwwmlNVTr95blHPc=
-P:redis
-V:5.0.4-r0
-A:armhf
-S:615839
-I:1310720
-T:Advanced key-value store
-U:https://redis.io/
-L:BSD-3-Clause
-o:redis
-m:TBK <alpine@jjtc.eu>
-t:1557244366
-c:457421e33f412fc14ce43dfd12c6d3d49a877e08
-D:/bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:cmd:redis-benchmark cmd:redis-check-aof cmd:redis-check-rdb cmd:redis-cli cmd:redis-sentinel cmd:redis-server
-
 C:Q1Bp35klEiE6QQ87vDVzHScHVc/UY=
 P:py3-itsdangerous
 V:0.24-r4
@@ -19881,6 +19915,21 @@ t:1557231904
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
 D:dovecot=2.3.6-r1 so:libc.musl-armhf.so.1 so:libdovecot.so.0
 p:so:libdovecot-sql.so.0=0.0.0
+
+C:Q1CQywfFHVhSWPQd1cs3Lyx4LKvvM=
+P:collectd-disk
+V:5.8.1-r0
+A:armhf
+S:7170
+I:32768
+T:disk pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libudev.so.1
 
 C:Q1PG89ZtfwksPqFK/gqPghbdRwqGI=
 P:json-c
@@ -20814,6 +20863,21 @@ c:90fc75cfa0f7eb99e8bfdc1e7bfde36b80d436bd
 D:logrotate
 i:squid=4.6-r1 lang-el
 
+C:Q1yP4BxYx/PJtxrblZt3q+EZ7acFo=
+P:collectd-postgresql
+V:5.8.1-r0
+A:armhf
+S:15459
+I:49152
+T:postgresql pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libpq.so.5
+
 C:Q1O2DUma/p6+woWqpE79y6/p27pEE=
 P:libsexy-doc
 V:0.1.11-r8
@@ -21230,6 +21294,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557176264
 c:64fb8f27c6db8fee32688fa19b6b6ef867c72cf7
 
+C:Q1UTJJIv6qSyLljURTCW9JKJo/nM8=
+P:collectd-write_http
+V:5.8.1-r0
+A:armhf
+S:13791
+I:45056
+T:write_http pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libyajl.so.2
+
 C:Q14u70yR2/b663vSWs0qqOpz8/E7I=
 P:nagios-plugins-dig
 V:2.2.1-r6
@@ -21642,22 +21721,6 @@ t:1557245237
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs darkice=1.3-r0
 
-C:Q1tusQ89eo1+Q4duo1pvEAj9isNQI=
-P:samba-test
-V:4.10.2-r0
-A:armhf
-S:2259666
-I:7852032
-T:Samba server and client testing tools
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151098
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libaddns-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc.so.0 so:libdnsserver-common-samba4.so so:libdsdb-module-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibsmb-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetapi.so.0 so:libnetif-samba4.so so:libpopt.so.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libshares-samba4.so so:libsmbclient-raw-samba4.so so:libsmbclient.so.0 so:libsmbconf.so.0 so:libsmbpasswdparser-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0 so:libwinbind-client-samba4.so
-p:so:libdlz-bind9-for-torture-samba4.so=0 so:libtorture-samba4.so=0 cmd:gentest cmd:locktest cmd:masktest cmd:ndrdump cmd:smbtorture
-
 C:Q1l0ZPJe2B53W9nRikKQE5pgK0820=
 P:ipsec-tools-dev
 V:0.8.2-r8
@@ -21790,22 +21853,6 @@ t:1557208619
 c:a2cfb9d906813e89c6963cf296babe0abf0041bf
 D:so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libncursesw.so.6 so:libssh2.so.1
 p:cmd:mc cmd:mcdiff cmd:mcedit cmd:mcview
-
-C:Q1VI1LvsJe8ex5FhFxxpdbl1eBhPA=
-P:collectd-utils
-V:5.8.0-r4
-A:armhf
-S:15104
-I:61440
-T:collectd utilities
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:so:libc.musl-armhf.so.1 so:libcollectdclient.so.1
-p:cmd:collectd-nagios cmd:collectd-tg cmd:collectdctl
 
 C:Q1xDVWIyJuXYQAZmANUYJSZDyzVJU=
 P:iso-codes-dev
@@ -22522,21 +22569,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libusb-dev libfprint=0.7.0-r1 pkgconfig
 p:pc:libfprint=0.7.0
 
-C:Q1s5rBApAxKAOF8GJvZvzkepJJegQ=
-P:collectd-perl
-V:5.8.0-r4
-A:armhf
-S:29778
-I:147456
-T:perl bindings to collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:so:libc.musl-armhf.so.1 so:libperl.so
-
 C:Q1+RreDEJgVltgezv+1AMrnPFL20g=
 P:lua5.2-sql-sqlite3
 V:2.3.5-r2
@@ -23019,21 +23051,6 @@ t:1557150135
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:lua5.1 so:libc.musl-armhf.so.1
 i:lua-pty=1.2.1-r1 lua5.1
-
-C:Q1BubcOxJ9pyzEDFm5wf2y1vvWqpc=
-P:collectd-lvm
-V:5.8.0-r4
-A:armhf
-S:4898
-I:28672
-T:lvm pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:liblvm2app.so.2.2
 
 C:Q1RilQkDDo8gLbCrjpxnWMCjHt5n8=
 P:perl-encode-utils
@@ -23896,21 +23913,6 @@ c:9550efcb68fb9cb02f2a178140326fd92f23b37e
 D:so:libc.musl-armhf.so.1 so:libpcre.so.1
 p:cmd:egrep cmd:fgrep cmd:grep
 
-C:Q1TT8ntwloJR64KIEW3BXIw566CFA=
-P:collectd-dns
-V:5.8.0-r4
-A:armhf
-S:9121
-I:36864
-T:dns pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libpcap.so.1
-
 C:Q1rkVK9soY/KO1Uj8IguYlwinrjGw=
 P:py2-flask-wtf
 V:0.14.2-r1
@@ -24332,36 +24334,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557132523
 c:2ef74067670a0d2a5e6a81ea5d19cf81cf0220ed
 D:perl-module-implementation perl-list-someutils-xs
-
-C:Q1KdAOj/9Ts5YlQCBNdUpimVUFLU8=
-P:collectd-ceph
-V:5.8.0-r4
-A:armhf
-S:9572
-I:36864
-T:ceph pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libyajl.so.2
-
-C:Q1imx6qaulUsKkyNQm2t5K8p5qC9g=
-P:collectd-ipmi
-V:5.8.0-r4
-A:armhf
-S:11705
-I:45056
-T:ipmi pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libOpenIPMI.so.0 so:libOpenIPMIpthread.so.0 so:libc.musl-armhf.so.1
 
 C:Q1zC37J1U1zycNZSd5Yhkum/qjTIE=
 P:libunwind-doc
@@ -25461,6 +25433,20 @@ t:1557592447
 c:4b0ff00179ebf26a151df56851f855357e7b89d4
 D:weechat so:libc.musl-armhf.so.1 so:libperl.so
 
+C:Q1wUTE7UP3IlArooQbl0t33naA/ms=
+P:hunspell-pt
+V:20190329-r0
+A:armhf
+S:231780
+I:1589248
+T:Portuguese hunspell dictionaries
+U:http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
+o:hunspell-pt
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558435976
+c:c58b76f2f17d1136847918f7dae77f6a14879e1f
+
 C:Q1omYrOp/oTAuSbv5ixkLq4Q3bPI0=
 P:py3-urllib3
 V:1.25.2-r0
@@ -25491,21 +25477,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557163274
 c:603bd6fd98cbe80fb2815940a7ffce3e1da82d67
 i:docs xf86-video-openchrome=0.6.0-r4
-
-C:Q1d6KtkjN3WT1zQ/hDCQjzupdk+ac=
-P:py2-cliapp
-V:1.20170823-r1
-A:armhf
-S:88478
-I:434176
-T:Framework for Unix-like command line programs (for python2)
-U:http://liw.fi/cliapp
-L:GPL-2.0-or-later
-o:py-cliapp
-t:1557125157
-c:fe3d86c440778c23fff9d28b3e6f20335849ed3d
-D:python2 python3 python2
-i:py-cliapp=1.20170823-r1 python2
 
 C:Q1V2naQY2qRnjIWaBJyVL5b4uzX0g=
 P:shorewall6
@@ -25643,6 +25614,22 @@ o:py-flask-assets
 t:1557232024
 c:8baa6e4396036612eac27551cbef50f4ef480326
 D:python2 py-flask py-webassets
+
+C:Q1Ek7KP9PRjvL6ERQxEtp8u8DnRT4=
+P:tslib-dev
+V:1.19-r0
+A:armhf
+S:3952
+I:32768
+T:Touchscreen Access Library (development files)
+U:https://github.com/kergoth/tslib
+L:LGPL-2.0-or-later
+o:tslib
+m:Clayton Craft <clayton@craftyguy.net>
+t:1558435003
+c:73124fc4eae5b99951d5850cd6b1b168c6851de4
+D:pkgconfig tslib=1.19-r0
+p:pc:tslib=1.19
 
 C:Q1IgSccNc5695XV3jZF5gP9Hl7bRc=
 P:snownews-doc
@@ -26461,6 +26448,22 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:lxc=3.1.0-r1 lvm2 util-linux
 i:lxc=3.1.0-r1 lvm2
 
+C:Q1eLYzq6f7/4N1tv3m25VkFuyurAQ=
+P:samba-dev
+V:4.10.3-r0
+A:armhf
+S:293624
+I:1966080
+T:Tools to access a server's filespace and printers via SMB (development files)
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435590
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:libsmbclient=4.10.3-r0 libwbclient=4.10.3-r0 pc:ldb pc:talloc pc:tevent pkgconfig samba-client-libs=4.10.3-r0 samba-common-libs=4.10.3-r0 samba-common-server-libs=4.10.3-r0 samba-dc-libs=4.10.3-r0 samba-libnss-winbind=4.10.3-r0 samba-libs=4.10.3-r0
+p:pc:dcerpc=0.0.1 pc:dcerpc_samr=0.0.1 pc:dcerpc_server=0.0.1 pc:ndr=0.2.0 pc:ndr_krb5pac=0.0.1 pc:ndr_nbt=0.0.1 pc:ndr_standard=0.0.1 pc:netapi=0 pc:samba-credentials=0.0.1 pc:samba-hostconfig=0.0.1 pc:samba-policy.cpython-37m-arm-linux-gnueabihf=0.0.1 pc:samba-util=0.0.1 pc:samdb=0.0.1 pc:smbclient=0.5.0 pc:wbclient=0.15
+
 C:Q1yKpJ9kXSj/gnLynFrTbdgKkJW9s=
 P:tinyproxy-doc
 V:1.10.0-r2
@@ -26569,6 +26572,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557228543
 c:a371ac9ba316ebf914b1671ecadf0d242d37df34
 D:perl
+
+C:Q1svcD7JapEhUkKaniepUd9ww/4nc=
+P:collectd-perl
+V:5.8.1-r0
+A:armhf
+S:30027
+I:147456
+T:perl bindings to collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435697
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q1U+IScY1DvqFMQkjzkYnyuMXBksk=
 P:udns-doc
@@ -26708,22 +26726,6 @@ t:1556990458
 c:0e31088488fe1dea60548fbaf017a71cf6e4562a
 D:so:libc.musl-armhf.so.1 so:libffi.so.6 so:libgc.so.1 so:libgmp.so.10 so:libltdl.so.7 so:libunistring.so.2
 p:so:libguile-2.0.so.22=22.8.1
-
-C:Q1kOLdxWVmWxadhrEG17VMMMNjnTU=
-P:samba-common-tools
-V:4.10.2-r0
-A:armhf
-S:367800
-I:995328
-T:Tools for Samba servers and clients
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151092
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libCHARSET3-samba4.so so:libaddns-samba4.so so:libads-samba4.so so:libauth-samba4.so so:libc.musl-armhf.so.1 so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldap-2.4.so.2 so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetapi.so.0 so:libpopt-samba3-cmdline-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libprinting-migrate-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libserver-role-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsmbldap.so.2 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
-p:so:libgpext-samba4.so=0 so:libnet-keytab-samba4.so=0 cmd:net cmd:pdbedit cmd:profiles cmd:smbcontrol cmd:smbpasswd cmd:testparm
 
 C:Q14nLgkrTSbsPfb60aiW75G5NV17k=
 P:e2fsprogs-doc
@@ -27202,6 +27204,21 @@ c:5dabb9a2414c63369556ee0052cd25fa3cb20817
 D:libburn=1.5.0-r0 pkgconfig
 p:pc:libburn-1=1.5.0
 
+C:Q1ruBQEdMY6sOHNYLMkoUDczRRnm4=
+P:tslib-doc
+V:1.19-r0
+A:armhf
+S:29878
+I:131072
+T:Touchscreen Access Library (documentation)
+U:https://github.com/kergoth/tslib
+L:LGPL-2.0-or-later
+o:tslib
+m:Clayton Craft <clayton@craftyguy.net>
+t:1558435003
+c:73124fc4eae5b99951d5850cd6b1b168c6851de4
+i:docs tslib=1.19-r0
+
 C:Q134JovbBB3VMxpFEpyvBXH4/7+oI=
 P:libdrm-doc
 V:2.4.98-r0
@@ -27310,21 +27327,6 @@ t:1557049854
 c:ac7a3163569192228eecdbc294b522833ceb8d28
 D:shared-mime-info gtk-update-icon-cache /bin/sh so:libX11.so.6 so:libXcomposite.so.1 so:libXcursor.so.1 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXi.so.6 so:libXinerama.so.1 so:libXrandr.so.2 so:libatk-1.0.so.0 so:libatk-bridge-2.0.so.0 so:libc.musl-armhf.so.1 so:libcairo-gobject.so.2 so:libcairo.so.2 so:libcups.so.2 so:libepoxy.so.0 so:libfontconfig.so.1 so:libfreetype.so.6 so:libfribidi.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libharfbuzz.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0 so:libwayland-client.so.0 so:libwayland-cursor.so.0 so:libwayland-egl.so.1 so:libxkbcommon.so.0
 p:so:libgailutil-3.so.0=0.0.0 so:libgdk-3.so.0=0.2404.4 so:libgtk-3.so.0=0.2404.4 cmd:gtk-builder-tool cmd:gtk-encode-symbolic-svg cmd:gtk-launch cmd:gtk-query-immodules-3.0 cmd:gtk-query-settings cmd:gtk3-demo cmd:gtk3-demo-application cmd:gtk3-icon-browser cmd:gtk3-widget-factory
-
-C:Q1fkkzLoT21q2/HqwumN6Y87I+koI=
-P:py-larch
-V:1.20131130-r1
-A:armhf
-S:99324
-I:540672
-T:Copy-on-write B-tree data structure
-U:http://liw.fi/larch/
-L:GPL-3.0-or-later
-o:py-larch
-t:1557125460
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-D:python2 py-tracing py-cliapp py-ttystatus
-p:cmd:fsck-larch
 
 C:Q1YD0SCEMmq+wGP5B9BIu74DFJBo0=
 P:wxgtk2.8-media
@@ -28274,20 +28276,20 @@ t:1556879416
 c:f8c033e6a464ab51e4f88351db562c02f22a3225
 i:docs libtool=2.4.6-r6
 
-C:Q1qok2QQMMKRt12VrcIIOnlKal97s=
-P:samba-winbind-krb5-locator
-V:4.10.2-r0
+C:Q1auBkupzzPkmXiAATf8CyzJYuUGg=
+P:pam-winbind
+V:4.10.3-r0
 A:armhf
-S:3701
-I:28672
-T:Samba winbind krb5 locator
+S:18390
+I:57344
+T:PAM module for winbind
 U:https://www.samba.org/
 L:GPL-3.0-or-later LGPL-3.0-or-later
 o:samba
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151094
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1 so:libreplace-samba4.so so:libwbclient.so.0
+t:1558435594
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1 so:libpam.so.0 so:libreplace-samba4.so so:libtalloc.so.2 so:libwbclient.so.0
 
 C:Q1m2+2E0r3/HLdVOyHZpvwqd4rYbs=
 P:imagemagick-libs
@@ -28399,6 +28401,21 @@ t:1557208807
 c:9538615b581d4d5b661a672dc8585be1cb4a3a7f
 i:freshclam=0.100.3-r0 openrc
 
+C:Q1u5czzCiaIxjmJI9n8GtqegVQqU0=
+P:collectd-iptables
+V:5.8.1-r0
+A:armhf
+S:4635
+I:28672
+T:iptables pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libip4tc.so.0 so:libip6tc.so.0
+
 C:Q1/GWsCd0mr6McV9YKcrYIXjoKgnE=
 P:py3-dateutil
 V:2.7.3-r1
@@ -28459,21 +28476,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1557589017
 c:954b17e61556ba87913d94d0a0e4fe6dc8d97947
 D:kamailio so:libc.musl-armhf.so.1 so:libprint.so.1 so:libsrutils.so.1
-
-C:Q17s06WqLmE20dRbMSy7+u4b8//mY=
-P:redis-openrc
-V:5.0.4-r0
-A:armhf
-S:2209
-I:28672
-T:Advanced key-value store (OpenRC init scripts)
-U:https://redis.io/
-L:BSD-3-Clause
-o:redis
-m:TBK <alpine@jjtc.eu>
-t:1557244365
-c:457421e33f412fc14ce43dfd12c6d3d49a877e08
-i:openrc redis=5.0.4-r0
 
 C:Q1kTzXLGbFWm9Au+uaNTOp3RczhIg=
 P:xf86-input-keyboard
@@ -28654,6 +28656,20 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1557151686
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libpq.so.5
+
+C:Q1HmgXzR3QJ2HnAnBrKWdUvvJZlqs=
+P:libsrtp-static
+V:2.2.0-r0
+A:armhf
+S:46602
+I:126976
+T:An implementation of the Secure Real-time Transport Protocol (SRTP) (static library)
+U:http://srtp.sourceforge.net
+L:BSD-3-Clause
+o:libsrtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435801
+c:a21674dde1469ee3d28e30a88f1e8a33a336eaf9
 
 C:Q1To6v4+i2d+4/gAwM9OVDnW3OXZw=
 P:rrdtool-cgi
@@ -28901,6 +28917,21 @@ c:90fc75cfa0f7eb99e8bfdc1e7bfde36b80d436bd
 D:logrotate
 i:squid=4.6-r1 lang-vi
 
+C:Q1jMnBZ48UbTXzN/g/P/MdjvyRLlc=
+P:hunspell-pt-doc
+V:20190329-r0
+A:armhf
+S:2107
+I:24576
+T:Portuguese hunspell dictionaries (documentation)
+U:http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
+o:hunspell-pt
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558435976
+c:c58b76f2f17d1136847918f7dae77f6a14879e1f
+i:docs hunspell-pt=20190329-r0
+
 C:Q1LU7xkHegIS4VqxWGfj6V6AbumKk=
 P:py-django-djblets
 V:0.6.31-r0
@@ -29040,22 +29071,6 @@ t:1557141215
 c:25348c62197fdbe6e48bf4dae4bf77b5b182c8d5
 D:python2
 i:py-wtforms=2.1-r1 python2
-
-C:Q1c2RXF6IyadzYXK3GArJ6uNvre2M=
-P:samba-libs-py3
-V:4.10.2-r0
-A:armhf
-S:90599
-I:282624
-T:Libraries that require libpython
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151098
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libMESSAGING-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc.so.0 so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpytalloc-util.cpython-37m-arm-linux-gnueabihf.so.2 so:libpython3.7m.so.1.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libserver-role-samba4.so so:libsmbpasswdparser-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0
-p:so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so=0 so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so=0
 
 C:Q1hc5L5ONbhFDcZDR7chZqHMHzVF0=
 P:dvgrab
@@ -29839,6 +29854,22 @@ t:1557045889
 c:4af82251577e3cb6261baf2e42c0673e91fa5248
 D:sg3_utils=1.42-r1
 
+C:Q1Wb93TZPahO1SG8MozEc4hxmKd9U=
+P:libsrtp-dev
+V:2.2.0-r0
+A:armhf
+S:18422
+I:126976
+T:An implementation of the Secure Real-time Transport Protocol (SRTP) (development files)
+U:http://srtp.sourceforge.net
+L:BSD-3-Clause
+o:libsrtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435801
+c:a21674dde1469ee3d28e30a88f1e8a33a336eaf9
+D:libsrtp=2.2.0-r0 pkgconfig
+p:pc:libsrtp2=2.2.0
+
 C:Q1y/5lQX+m6rC6rgYDX/iVBoYQQ3k=
 P:perl-devel-symdump
 V:2.18-r0
@@ -30481,6 +30512,22 @@ t:1557207468
 c:a09eb83bf131ec19924bc89e8d9bff92f79d6511
 D:f2fs-tools-libs=1.12.0-r0
 
+C:Q1lGVGYUPBbaapBf7NuL/ST+BOzxI=
+P:samba-test
+V:4.10.3-r0
+A:armhf
+S:2260615
+I:7856128
+T:Samba server and client testing tools
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435599
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libaddns-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc.so.0 so:libdnsserver-common-samba4.so so:libdsdb-module-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibsmb-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetapi.so.0 so:libnetif-samba4.so so:libpopt.so.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libshares-samba4.so so:libsmbclient-raw-samba4.so so:libsmbclient.so.0 so:libsmbconf.so.0 so:libsmbpasswdparser-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0 so:libwinbind-client-samba4.so
+p:so:libdlz-bind9-for-torture-samba4.so=0 so:libtorture-samba4.so=0 cmd:gentest cmd:locktest cmd:masktest cmd:ndrdump cmd:smbtorture
+
 C:Q11msTRJnev83pjm8qaMsvuTbH9QA=
 P:clutter
 V:1.26.2-r2
@@ -31027,6 +31074,22 @@ t:1557142010
 c:7c7348c01d1268a15733e6a9a736726e9c45ee61
 i:docs memcached=1.5.14-r0
 
+C:Q1whnsaKxeXv1ug8VgcJe0IenkmNw=
+P:samba-winbind
+V:4.10.3-r0
+A:armhf
+S:426378
+I:1363968
+T:Samba user and group resolver
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435593
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-common=4.10.3-r0 so:libMESSAGING-samba4.so so:libads-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libidmap-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldap-2.4.so.2 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnpa-tstream-samba4.so so:libnss-info-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsecrets3-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsmbldap.so.2 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-tdb-samba4.so
+p:cmd:winbindd
+
 C:Q1AppW427jwYHEWv0ldfDuRMcB6tE=
 P:memcached-openrc
 V:1.5.14-r0
@@ -31224,21 +31287,6 @@ t:1557144661
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:ghostscript imagemagick perl so:libc.musl-armhf.so.1
 p:cmd:a2ps cmd:card cmd:composeglyphs cmd:fixnt cmd:fixps cmd:ogonkify cmd:pdiff cmd:psmandup cmd:psset cmd:texi2dvi4a2ps
-
-C:Q1qjRnEj8RB7of28eQNri4Yc9hIok=
-P:collectd-redis
-V:5.8.0-r4
-A:armhf
-S:6845
-I:32768
-T:redis pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libhiredis.so.0.14
 
 C:Q17aegG/9FU8tQzYz14kcgHev0VX0=
 P:recode-dev
@@ -31499,6 +31547,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557592342
 c:a225781daac3d0cec2f3053d9efd62e5b57214b0
 D:so:libc.musl-armhf.so.1
+
+C:Q1e/Sc7mcoFKhOZG8+zMHDzwyEy1E=
+P:samba-dc
+V:4.10.3-r0
+A:armhf
+S:1916710
+I:15691776
+T:Samba AD Domain Controller
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435596
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-common=4.10.3-r0 samba-server=4.10.3-r0 samba-winbind=4.10.3-r0 py3-samba=4.10.3-r0 tdb so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
+p:so:libsmbpasswdparser-samba4.so=0 cmd:samba cmd:samba-gpupdate cmd:samba-tool cmd:samba_dnsupdate cmd:samba_kcc cmd:samba_spnupdate cmd:samba_upgradedns
 
 C:Q1Tah4ozi9foz2orK7oZAVpaZvlTw=
 P:openldap-overlay-proxycache
@@ -32468,22 +32532,6 @@ c:aeca7a1c388c166715c9a702620e434c0bc3f644
 D:freeradius=3.0.19-r1 so:libc.musl-armhf.so.1 so:libodbc.so.2
 p:freeradius3-unixodbc=3.0.19-r1 so:rlm_sql_unixodbc.so=0
 
-C:Q1DbpYU7wnuBb1fjw6R/4wSGax1o4=
-P:libsmbclient
-V:4.10.2-r0
-A:armhf
-S:52554
-I:147456
-T:The SMB client library
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151093
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1 so:libcli-smb-common-samba4.so so:libdcerpc-samba-samba4.so so:libgse-samba4.so so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so
-p:so:libsmbclient.so.0=0.5.0
-
 C:Q13pUlt9Z45cJjuLsult7g9x4EwNY=
 P:qemu-system-unicore32
 V:4.0.0-r0
@@ -33333,20 +33381,6 @@ t:1557237810
 c:ab5d6426ab2a280dc8509d5fea2e05e1f22390a7
 i:docs librevenge=0.0.4-r2
 
-C:Q1yYHV1zD9Y5z7kuNx/lCQS4oinBg=
-P:samba-common
-V:4.10.2-r0
-A:armhf
-S:5281
-I:77824
-T:Samba common files for both client an servers
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151092
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-
 C:Q1rBO849yWXg8U6nwYAjiVUGBCOy8=
 P:acf-openssl
 V:0.10.1-r4
@@ -34010,21 +34044,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557062653
 c:6304c9f1529580253f4b7599d135ab58073acf11
 D:perl
-
-C:Q1ro2Px3uso5dlT34RuERU9NBvZXg=
-P:collectd-network
-V:5.8.0-r4
-A:armhf
-S:20318
-I:61440
-T:network pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libgcrypt.so.20
 
 C:Q1/5c5WvdMu4pjW1XmZi3eU3d7Fh0=
 P:py-jinja2
@@ -34808,22 +34827,6 @@ t:1557592634
 c:aeca7a1c388c166715c9a702620e434c0bc3f644
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libfreeradius-dhcp.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.4 so:libpcap.so.1 so:libreadline.so.8 so:libssl.so.1.1 so:libtalloc.so.2
 p:freeradius3=3.0.19-r1 so:proto_dhcp.so=0 so:proto_vmps.so=0 so:rlm_always.so=0 so:rlm_attr_filter.so=0 so:rlm_cache.so=0 so:rlm_cache_rbtree.so=0 so:rlm_chap.so=0 so:rlm_counter.so=0 so:rlm_cram.so=0 so:rlm_date.so=0 so:rlm_detail.so=0 so:rlm_dhcp.so=0 so:rlm_digest.so=0 so:rlm_dynamic_clients.so=0 so:rlm_exec.so=0 so:rlm_expiration.so=0 so:rlm_expr.so=0 so:rlm_files.so=0 so:rlm_ippool.so=0 so:rlm_linelog.so=0 so:rlm_logintime.so=0 so:rlm_mschap.so=0 so:rlm_otp.so=0 so:rlm_pap.so=0 so:rlm_passwd.so=0 so:rlm_preprocess.so=0 so:rlm_radutmp.so=0 so:rlm_realm.so=0 so:rlm_replicate.so=0 so:rlm_soh.so=0 so:rlm_sometimes.so=0 so:rlm_test.so=0 so:rlm_unix.so=0 so:rlm_unpack.so=0 so:rlm_utf8.so=0 so:rlm_wimax.so=0 cmd:dhcpclient cmd:map_unit cmd:rad_counter cmd:radattr cmd:radcrypt cmd:raddebug cmd:radiusd cmd:radlast cmd:radmin cmd:radsniff cmd:radsqlrelay cmd:radtest cmd:radwho cmd:radzap cmd:rlm_ippool_tool cmd:smbencrypt
-
-C:Q1Td4GXIRbghQjagtLjWfGvmsPguI=
-P:samba-dc-libs
-V:4.10.2-r0
-A:armhf
-S:795818
-I:2359296
-T:Samba AD Domain Controller libraries
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151096
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-server=4.10.2-r0 samba-client=4.10.2-r0 samba-common-tools=4.10.2-r0 so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcliauth-samba4.so so:libclidns-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc.so.0 so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libhcrypto-samba4.so.5 so:libhx509-samba4.so.5 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetif-samba4.so so:libnpa-tstream-samba4.so so:libpam.so.0 so:libpopt.so.0 so:libpython3.7m.so.1.0 so:libreplace-samba4.so so:libroken-samba4.so.19 so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsmb-transport-samba4.so so:libsmbclient-raw-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libwbclient.so.0
-p:so:libHDB-SAMBA4-samba4.so=0 so:libLIBWBCLIENT-OLD-samba4.so=0 so:libauth-unix-token-samba4.so=0 so:libauth4-samba4.so=0 so:libcluster-samba4.so=0 so:libdb-glue-samba4.so=0 so:libdcerpc-samr.so.0=0.0.1 so:libdcerpc-server.so.0=0.0.1 so:libdnsserver-common-samba4.so=0 so:libdsdb-module-samba4.so=0 so:libhdb-samba4.so.11=11.0.2 so:libkdc-samba4.so.2=2.0.0 so:libpac-samba4.so=0 so:libposix-eadb-samba4.so=0 so:libprocess-model-samba4.so=0 so:libsamba-policy.cpython-37m-arm-linux-gnueabihf.so.0=0.0.1 so:libscavenge-dns-records-samba4.so=0 so:libservice-samba4.so=0 so:libshares-samba4.so=0
 
 C:Q1fewtxJ2B3pLrPsaKYwieB4hQZA8=
 P:lua-lyaml
@@ -36375,6 +36378,21 @@ t:1557152529
 c:7aa64024d164ea2b1fe3bb58ab19f14289e71808
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
 
+C:Q1dWRCKu/14uS4RiZZ+sk8/8Z7R3c=
+P:collectd-python
+V:5.8.1-r0
+A:armhf
+S:23088
+I:77824
+T:python pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0
+
 C:Q1Ry0zjLZwXTKHpsU1iBd7dveeHKs=
 P:pcmciautils
 V:018-r1
@@ -37192,6 +37210,20 @@ c:6f0ba9819c5496e6da5783836e68418caacc7b10
 D:dovecot-sql=2.3.6-r1 so:libc.musl-armhf.so.1 so:libpq.so.5
 p:so:libdriver_pgsql.so=0
 
+C:Q1Gh+noePnoQ+jhPx906BXykDjF6I=
+P:samba-common
+V:4.10.3-r0
+A:armhf
+S:5274
+I:77824
+T:Samba common files for both client an servers
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435591
+c:47edd290d1ad530be52e98617325c29417d47cf1
+
 C:Q1+zPxSXUHEHMyJrRleLJARFHg2PA=
 P:monit
 V:5.25.3-r0
@@ -37238,6 +37270,21 @@ t:1557257561
 c:c2ac0e6df64d71833dfffe422df8113d291a8e13
 D:openssl so:libc.musl-armhf.so.1
 p:cmd:email
+
+C:Q1Xh6PG0xMXGuzF2Lt8YH51pWuBB8=
+P:py3-samba
+V:4.10.3-r0
+A:armhf
+S:3392706
+I:16130048
+T:Samba python libraries
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435599
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:py3-tdb so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libads-samba4.so so:libauth-unix-token-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcommon-auth-samba4.so so:libdb-glue-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc.so.0 so:libdnsserver-common-samba4.so so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgpext-samba4.so so:libgse-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibsmb-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetif-samba4.so so:libposix-eadb-samba4.so so:libpyldb-util.cpython-37m-arm-linux-gnueabihf.so.1 so:libpytalloc-util.cpython-37m-arm-linux-gnueabihf.so.2 so:libpython3.7m.so.1.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-passdb.so.0 so:libsamba-policy.cpython-37m-arm-linux-gnueabihf.so.0 so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libscavenge-dns-records-samba4.so so:libsecrets3-samba4.so so:libserver-role-samba4.so so:libsmbclient-raw-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-reg-samba4.so so:libxattr-tdb-samba4.so
 
 C:Q1HgSENWh1+VBfKjraf08v3UTDYtE=
 P:dnstop
@@ -38216,6 +38263,21 @@ c:7dc449abb25bb1ef82ca09d943c99259a483298e
 D:oniguruma=6.9.2-r0 pkgconfig
 p:pc:oniguruma=6.9.2 cmd:onig-config
 
+C:Q10ww3vFbdjVfOUz4tLRdADPSp/KQ=
+P:unrar-doc
+V:5.7.5-r0
+A:armhf
+S:2356
+I:24576
+T:RAR uncompression program (documentation)
+U:https://www.rarlab.com
+L:custom
+o:unrar
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558434908
+c:a6a029d7b2f04abb45cc8b6587f9083fbe307ffa
+i:docs unrar=5.7.5-r0
+
 C:Q1pkz85kwt4XNVLFi7zCOhjVBRQTo=
 P:wipe
 V:2.3.1-r0
@@ -38542,6 +38604,21 @@ c:71c58a112937693f950498e3efadf748d29812a4
 D:qemu so:libaio.so.1 so:libc.musl-armhf.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libstdc++.so.6 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libz.so.1
 p:cmd:qemu-system-tricore
 
+C:Q15XLBbY2p9XyDNoYeoP858PsMDaE=
+P:collectd-network
+V:5.8.1-r0
+A:armhf
+S:20326
+I:61440
+T:network pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libgcrypt.so.20
+
 C:Q1uvdD/2wranpbC/rbn45pi1J/5+I=
 P:uwsgi-redislog
 V:2.0.17.1-r1
@@ -38617,22 +38694,6 @@ t:1556951391
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXi.so.6=6.1.0
-
-C:Q1ozkghMg5XbsjwTqm3EjytUywVoA=
-P:collectd
-V:5.8.0-r4
-A:armhf
-S:450391
-I:1593344
-T:The system statistics collection daemon
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:/bin/sh so:libc.musl-armhf.so.1 so:libnetsnmpagent.so.35 so:libyajl.so.2
-p:cmd:collectd cmd:collectdmon
 
 C:Q1hnLmQJTlzxv4FncG4XdP1nZPxxg=
 P:asterisk-doc
@@ -39073,21 +39134,20 @@ c:944575e4d8286fb897dcbf96d429efc1a142f6ee
 D:glib-dev pc:glib-2.0 pc:gmodule-2.0 pc:gobject-2.0 pc:libgvc pkgconfig so:libc.musl-armhf.so.1 so:libcgraph.so.6 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgvc.so.6
 p:so:libvala-0.44.so.0=0.0.0 so:libvalaccodegen.so=0 so:libvaladoc-0.44.so.0=0.0.0 pc:libvala-0.44=0.44.3 pc:valadoc-0.44=0.44.3 pc:vapigen-0.44=0.44.3 pc:vapigen=0.44.3 cmd:vala cmd:vala-0.44 cmd:vala-gen-introspect cmd:vala-gen-introspect-0.44 cmd:valac cmd:valac-0.44 cmd:valadoc cmd:valadoc-0.44 cmd:vapigen cmd:vapigen-0.44
 
-C:Q1jrUmGunXbmKx+yr7B4PWTXcySnY=
-P:unrar
-V:5.7.4-r0
+C:Q1XuFVo9OYasaUEHm2wHG7SRuePfo=
+P:samba-winbind-krb5-locator
+V:4.10.3-r0
 A:armhf
-S:116782
-I:241664
-T:RAR uncompression program
-U:https://www.rarlab.com
-L:custom
-o:unrar
+S:3706
+I:28672
+T:Samba winbind krb5 locator
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557158157
-c:86ae0116ae91a00919b8c78d2f28ef1e3af2c10b
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:unrar
+t:1558435594
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1 so:libreplace-samba4.so so:libwbclient.so.0
 
 C:Q1UW8gZdriN6OCMwaOGsOz4p728jo=
 P:jack-dev
@@ -39210,20 +39270,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557152537
 c:7aa64024d164ea2b1fe3bb58ab19f14289e71808
 D:uwsgi so:libc.musl-armhf.so.1
-
-C:Q1Aa3Co3sfG5j9sDhAP4rVlQTyKkI=
-P:libsrtp
-V:1.5.4-r1
-A:armhf
-S:1106
-I:8192
-T:An implementation of the Secure Real-time Transport Protocol (SRTP)
-U:http://srtp.sourceforge.net
-L:BSD
-o:libsrtp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557169422
-c:c1fa63fe4f3412c40612bcb388b0c6b191658f5b
 
 C:Q10iZC3yQTS8TNsO8ENSgYl99toDs=
 P:ruby-net-telnet
@@ -42040,22 +42086,6 @@ c:dc94e84efeadfc648aa9499b1710256e4d0daa4d
 D:libebml=1.3.7-r0 pkgconfig
 p:pc:libebml=1.3.7
 
-C:Q1OvMefzBY278rMGmPfx2tjMhi+8c=
-P:samba-heimdal-libs
-V:4.10.2-r0
-A:armhf
-S:637722
-I:1544192
-T:Samba heimdal libraries
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151095
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libreplace-samba4.so
-p:so:libasn1-samba4.so.8=8.0.0 so:libgssapi-samba4.so.2=2.0.0 so:libhcrypto-samba4.so.5=5.0.1 so:libheimbase-samba4.so.1=1.0.0 so:libheimntlm-samba4.so.1=1.0.1 so:libhx509-samba4.so.5=5.0.0 so:libkrb5-samba4.so.26=26.0.0 so:libroken-samba4.so.19=19.0.1 so:libwind-samba4.so.0=0.0.0
-
 C:Q1/BBLNOUI9G1WfezFzaBZUQS/SXY=
 P:acf-heimdal
 V:0.6.0-r2
@@ -42167,6 +42197,21 @@ c:de51e9a1791e3b5c672bad557a16babc1122dfd5
 D:python2 py-boto gnupg ncftp py2-fasteners so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0 so:librsync.so.2
 p:cmd:duplicity cmd:rdiffdir
 
+C:Q1UNRHPrMX5EQBIySq4CPJz1N5MfI=
+P:samba-doc
+V:4.10.3-r0
+A:armhf
+S:395760
+I:679936
+T:Tools to access a server's filespace and printers via SMB (documentation)
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435591
+c:47edd290d1ad530be52e98617325c29417d47cf1
+i:docs samba=4.10.3-r0
+
 C:Q1E0vbyNW+6NBJr36g1qlKnXWM878=
 P:linux-firmware-rtl_nic
 V:20190322-r0
@@ -42257,6 +42302,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556993776
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libxv=1.0.11-r2
+
+C:Q1bKPi8AF2fxgiLlHKdvbSr+emQQc=
+P:collectd-nginx
+V:5.8.1-r0
+A:armhf
+S:5501
+I:28672
+T:nginx pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4
 
 C:Q1bRp5cOFvS+Vla+KhfWC/n1/zBNI=
 P:py2-jinja2
@@ -43135,22 +43195,6 @@ t:1558361515
 c:efe8886cb84574c66ea33d824360fa059dc8b77f
 i:docs groff=1.22.4-r0
 
-C:Q180m95nERI+WzLB3pf/kLf6mOhac=
-P:samba-dc
-V:4.10.2-r0
-A:armhf
-S:1916754
-I:15691776
-T:Samba AD Domain Controller
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151096
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-common=4.10.2-r0 samba-server=4.10.2-r0 samba-winbind=4.10.2-r0 py3-samba=4.10.2-r0 tdb so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
-p:so:libsmbpasswdparser-samba4.so=0 cmd:samba cmd:samba-gpupdate cmd:samba-tool cmd:samba_dnsupdate cmd:samba_kcc cmd:samba_spnupdate cmd:samba_upgradedns
-
 C:Q1pCXkKlFM/0rs3V3czhOhw4CBrHw=
 P:gamin-dev
 V:0.1.10-r10
@@ -43611,6 +43655,22 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1557262514
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-armhf.so.1
+
+C:Q1Pj7ESkGuwsn5XKxgpQuQrRvn494=
+P:samba-libnss-winbind
+V:4.10.3-r0
+A:armhf
+S:7848
+I:36864
+T:Samba winbind NSS plugin
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435594
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1 so:libreplace-samba4.so so:libwbclient.so.0 so:libwinbind-client-samba4.so
+p:so:libnss_winbind.so.2=2 so:libnss_wins.so.2=2
 
 C:Q1nw+fkzQAl6TC5H3oBAkd/QoOTSA=
 P:py-django-treebeard
@@ -44372,6 +44432,21 @@ c:988b66d67e0000eb1ebddcabf7a1b4facce6536d
 D:python2
 i:py-itsdangerous=0.24-r4 python2
 
+C:Q1Gtn+VXRUE21Pn+iyN9MY7zq5+cA=
+P:collectd-rrdtool
+V:5.8.1-r0
+A:armhf
+S:18176
+I:65536
+T:rrd* pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:librrd.so.8
+
 C:Q1m7xEems6sDcta5/1ph/yk2AKOtg=
 P:perl-test-without-module-doc
 V:0.20-r0
@@ -44752,21 +44827,6 @@ t:1557072900
 c:e994e3935ec148eac17aeecd791d672b90cea26f
 D:so:libc.musl-armhf.so.1
 p:cmd:amuFormat.sh cmd:lz cmd:mattrib cmd:mbadblocks cmd:mcat cmd:mcd cmd:mcheck cmd:mclasserase cmd:mcomp cmd:mcopy cmd:mdel cmd:mdeltree cmd:mdir cmd:mdu cmd:mformat cmd:minfo cmd:mkmanifest cmd:mlabel cmd:mmd cmd:mmount cmd:mmove cmd:mpartition cmd:mrd cmd:mren cmd:mshortname cmd:mshowfat cmd:mtools cmd:mtoolstest cmd:mtype cmd:mxtar cmd:mzip cmd:tgz cmd:uz
-
-C:Q1/yNaabBv85V+0CDfZidvEa7PcJA=
-P:collectd-nginx
-V:5.8.0-r4
-A:armhf
-S:5507
-I:28672
-T:nginx pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4
 
 C:Q1gB43ToOQXT3awm5w0csCBgENbjg=
 P:dovecot-sqlite
@@ -45802,21 +45862,6 @@ t:1556885291
 c:536da02181da6dbe9e852a7909e83c3227f03b7f
 i:docs lzip=1.21-r0
 
-C:Q1b52tsbCpzQGfZkRxYR2f8zFdaOs=
-P:pam-winbind
-V:4.10.2-r0
-A:armhf
-S:18385
-I:57344
-T:PAM module for winbind
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151095
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1 so:libpam.so.0 so:libreplace-samba4.so so:libtalloc.so.2 so:libwbclient.so.0
-
 C:Q1fwRDyB4kMEfxa5qmKn26Rf87CU8=
 P:apache-mod-fcgid-doc
 V:2.3.9-r2
@@ -46706,6 +46751,21 @@ t:1556953812
 c:20c56befb30aa4cb8076f4adecb13d149a877f79
 i:docs xinit=1.4.1-r0
 
+C:Q1V4+I65uBG65NHtafQAcevB90z2w=
+P:collectd-write_redis
+V:5.8.1-r0
+A:armhf
+S:5150
+I:28672
+T:write_redis pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libhiredis.so.0.14
+
 C:Q1uENltDsMDfg0hXOS4bZu/BUa4kU=
 P:libical
 V:3.0.4-r2
@@ -47204,6 +47264,22 @@ c:6bb0cd2be64cb533b07155de9f91361923760481
 D:so:libc.musl-armhf.so.1
 p:so:libhiredis.so.0.14=0.14
 
+C:Q11d9NQIghQYPUKPYzxQeCQsw1j6Y=
+P:samba-libs
+V:4.10.3-r0
+A:armhf
+S:2812740
+I:8196096
+T:Samba core libraries
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435601
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libMESSAGING-SEND-samba4.so so:libasn1-samba4.so.8 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libclidns-samba4.so so:libcom_err.so.2 so:libgnutls.so.30 so:libgssapi-samba4.so.2 so:libjansson.so.4 so:libkrb5-samba4.so.26 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.1 so:libpopt.so.0 so:libreplace-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0 so:libwbclient.so.0 so:libz.so.1
+p:so:libCHARSET3-samba4.so=0 so:libaddns-samba4.so=0 so:libasn1util-samba4.so=0 so:libauthkrb5-samba4.so=0 so:libcli-cldap-samba4.so=0 so:libcli-ldap-common-samba4.so=0 so:libcli-nbt-samba4.so=0 so:libcli-smb-common-samba4.so=0 so:libcliauth-samba4.so=0 so:libcmocka-samba4.so=0 so:libcommon-auth-samba4.so=0 so:libdbwrap-samba4.so=0 so:libflag-mapping-samba4.so=0 so:libgenrand-samba4.so=0 so:libgensec-samba4.so=0 so:libgse-samba4.so=0 so:libinterfaces-samba4.so=0 so:libiov-buf-samba4.so=0 so:libkrb5samba-samba4.so=0 so:libldbsamba-samba4.so=0 so:libmessages-dgm-samba4.so=0 so:libmessages-util-samba4.so=0 so:libmsghdr-samba4.so=0 so:libndr-krb5pac.so.0=0.0.1 so:libndr-nbt.so.0=0.0.1 so:libndr-samba-samba4.so=0 so:libndr-standard.so.0=0.0.1 so:libndr.so.0=0.2.0 so:libpopt-samba3-samba4.so=0 so:libsamba-cluster-support-samba4.so=0 so:libsamba-credentials.so.0=0.0.1 so:libsamba-debug-samba4.so=0 so:libsamba-errors.so.1=1 so:libsamba-hostconfig.so.0=0.0.1 so:libsamba-modules-samba4.so=0 so:libsamba-security-samba4.so=0 so:libsamba-sockets-samba4.so=0 so:libsamba-util.so.0=0.0.1 so:libsamba3-util-samba4.so=0 so:libsamdb-common-samba4.so=0 so:libsamdb.so.0=0.0.1 so:libsecrets3-samba4.so=0 so:libserver-id-db-samba4.so=0 so:libserver-role-samba4.so=0 so:libsmb-transport-samba4.so=0 so:libsmbconf.so.0=0 so:libsmbd-shim-samba4.so=0 so:libsocket-blocking-samba4.so=0 so:libsys-rw-samba4.so=0 so:libtalloc-report-samba4.so=0 so:libtdb-wrap-samba4.so=0 so:libtevent-util.so.0=0.0.1 so:libtime-basic-samba4.so=0 so:libutil-cmdline-samba4.so=0 so:libutil-reg-samba4.so=0 so:libutil-setid-samba4.so=0 so:libutil-tdb-samba4.so=0
+
 C:Q1eeOkHfitn5ufZFBdBXpgbGy1IJE=
 P:dejagnu
 V:1.6.2-r0
@@ -47235,6 +47311,22 @@ t:1557261712
 c:e3385956332c7af7b03dd7d286b08b94aa5bacb2
 D:cmake pkgconfig soxr=0.1.3-r0
 p:pc:soxr-lsr=0.1.3 pc:soxr=0.1.3
+
+C:Q1/6/ZQQDy6ZSb9FdtLm1kBuNC3RA=
+P:samba-pidl
+V:4.10.3-r0
+A:armhf
+S:99685
+I:577536
+T:Perl IDL compiler
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435598
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:perl
+p:cmd:pidl
 
 C:Q1r5VLj8owY07kfe5g3aC6/8iytHs=
 P:perl-email-address
@@ -47466,20 +47558,6 @@ t:1557038156
 c:c6a9a17f4164572f308708d3bbf7ebcd1662d609
 D:so:libc.musl-armhf.so.1
 p:so:libnpth.so.0=0.1.2
-
-C:Q1d9t+Uq1+ELj2FfuKUihwYHBmoN4=
-P:hunspell-pt
-V:20170814-r0
-A:armhf
-S:232815
-I:1601536
-T:Portuguese hunspell dictionaries
-U:http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
-L:LGPL-2.0 GPL-2.0 MPL-1.1
-o:hunspell-pt
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557173294
-c:63f5e7d295659a855709901ce22a3e5f40fce455
 
 C:Q12plyCf6PgIZ2khDgG6Qnrf9x6PY=
 P:grub
@@ -47972,20 +48050,6 @@ c:ebfe96355b4d0b48d126a7382b62089faa96a210
 D:so:libc.musl-armhf.so.1
 p:cmd:dhcrelay
 
-C:Q12ZrWrKIUQzMgIYXJCuyR/VPraKY=
-P:py-tracing
-V:0.8-r1
-A:armhf
-S:4186
-I:32768
-T:Debug log/trace messages
-U:http://liw.fi/tracing/
-L:GPL-3.0-or-later
-o:py-tracing
-t:1557125020
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-D:python2
-
 C:Q1+0DfxKEzdtXOISUXLEiDDWVb4bQ=
 P:libvirt-doc
 V:5.3.0-r0
@@ -48254,6 +48318,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557047119
 c:39d57d8175de808996c28f22244641045eb9ed1c
 i:docs perl-html-formattext-withlinks-andtables=0.07-r0
+
+C:Q1O0F9mECp4zUac2NdLtLqW+zSrSY=
+P:libsrtp
+V:2.2.0-r0
+A:armhf
+S:40176
+I:90112
+T:An implementation of the Secure Real-time Transport Protocol (SRTP)
+U:http://srtp.sourceforge.net
+L:BSD-3-Clause
+o:libsrtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435801
+c:a21674dde1469ee3d28e30a88f1e8a33a336eaf9
+D:so:libc.musl-armhf.so.1
+p:so:libsrtp2.so.1=1
 
 C:Q123jTziR0h5KmYpknWR+W0V343z8=
 P:iniparser-dev
@@ -50063,20 +50143,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557074487
 c:1a369287b0d71d1e33baa359eac2bc28e39a1a9e
 
-C:Q1SbYKH253CH/ZxoqM1EsSZ/olHuo=
-P:py3-cliapp
-V:1.20170823-r1
+C:Q1BtA4NffMPPg1C5/XLDflbfxbmX8=
+P:collectd-utils
+V:5.8.1-r0
 A:armhf
-S:88448
-I:405504
-T:Framework for Unix-like command line programs (for python3)
-U:http://liw.fi/cliapp
+S:15119
+I:61440
+T:collectd utilities
+U:https://collectd.org
 L:GPL-2.0-or-later
-o:py-cliapp
-t:1557125158
-c:fe3d86c440778c23fff9d28b3e6f20335849ed3d
-D:python2 python3 python3
-i:py-cliapp=1.20170823-r1 python3
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:so:libc.musl-armhf.so.1 so:libcollectdclient.so.1
+p:cmd:collectd-nagios cmd:collectd-tg cmd:collectdctl
 
 C:Q1C+DgXs1rhWW8rSpM/zwSMczrWUk=
 P:distcc
@@ -50893,6 +50974,21 @@ c:f8c033e6a464ab51e4f88351db562c02f22a3225
 D:bash libltdl
 p:cmd:libtool cmd:libtoolize
 
+C:Q14S0xr9uES+cEnzc4J9hkNJJ7ovs=
+P:collectd-ceph
+V:5.8.1-r0
+A:armhf
+S:9580
+I:36864
+T:ceph pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libyajl.so.2
+
 C:Q1xibDMMhno89YLClEjmozb3joKHg=
 P:lua5.3-lub
 V:1.1.0-r1
@@ -50956,22 +51052,6 @@ t:1556884551
 c:ee90f36046368628fe8ddf07b9925b8c26a7dec0
 D:libgpg-error=1.36-r0 pkgconfig
 p:pc:gpg-error=1.36 cmd:gpg-error-config cmd:gpgrt-config
-
-C:Q1adr514GrsvYi1FJXrMr4+yqA8q4=
-P:samba-winbind-clients
-V:4.10.2-r0
-A:armhf
-S:47108
-I:126976
-T:Samba winbind client tools
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151094
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libwbclient.so.0 so:libwinbind-client-samba4.so
-p:cmd:ntlm_auth cmd:wbinfo
 
 C:Q1eSuSf/yeFEjTnXO/U36gq30huA4=
 P:nfprofile
@@ -51485,6 +51565,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556884907
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxml2-utils libxslt docbook-xml /bin/sh
+
+C:Q1CT2JQNfP/AecvAStE58HmOdQgc4=
+P:collectd-sensors
+V:5.8.1-r0
+A:armhf
+S:5265
+I:28672
+T:sensors pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libsensors.so.4
 
 C:Q1ypCIeLuS3B1i61m7w/Q5RcrSh5U=
 P:nodejs-dev
@@ -52469,6 +52564,37 @@ t:1557820175
 c:be070eea2fb9f1312fe7f32b3d3a2ec14b20cb16
 D:perl perl-git-svn=2.21.0-r3 perl-subversion perl-term-readkey so:libc.musl-armhf.so.1 so:libpcre2-8.so.0 so:libz.so.1
 
+C:Q1+oq96BYsH9SqBBc3mUiMAKMQ1lk=
+P:collectd-redis
+V:5.8.1-r0
+A:armhf
+S:6851
+I:32768
+T:redis pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libhiredis.so.0.14
+
+C:Q1rK1Q2G6T399qzdfXeheVsLi4td0=
+P:samba-client-libs
+V:4.10.3-r0
+A:armhf
+S:264435
+I:778240
+T:Samba libraries used by clients
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435593
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libaddns-samba4.so so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libinterfaces-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtasn1.so.6 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so
+p:so:libcli-ldap-samba4.so=0 so:libclidns-samba4.so=0 so:libcmdline-contexts-samba4.so=0 so:libcmdline-credentials-samba4.so=0 so:libdcerpc.so.0=0.0.1 so:libdsdb-garbage-collect-tombstones-samba4.so=0 so:libevents-samba4.so=0 so:libhttp-samba4.so=0 so:libmscat-samba4.so=0 so:libnetif-samba4.so=0 so:libpopt-samba3-cmdline-samba4.so=0 so:libregistry-samba4.so=0 so:libsmbclient-raw-samba4.so=0
+
 C:Q1AN1uaE4j4nZXvCy34s8MupOFfFE=
 P:lua5.3-xml
 V:130610-r5
@@ -52628,6 +52754,21 @@ t:1557134613
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs paxctl=0.9-r0
 
+C:Q1sbiFNbvM8dN78F4pa+/SCojxlAY=
+P:redis-openrc
+V:5.0.5-r0
+A:armhf
+S:2216
+I:28672
+T:Advanced key-value store (OpenRC init scripts)
+U:https://redis.io/
+L:BSD-3-Clause
+o:redis
+m:TBK <alpine@jjtc.eu>
+t:1558435214
+c:129f7b6821ca192e6bd14a89688506900ea36850
+i:openrc redis=5.0.5-r0
+
 C:Q1gtHPfwulg8jpa0HCkl5D22KDivQ=
 P:lvm2-dev
 V:2.02.184-r0
@@ -52643,21 +52784,6 @@ t:1556952199
 c:22c6137d98f5fcbb42f6d8e2a108a7d925c24594
 D:linux-headers device-mapper-event-libs=2.02.184-r0 device-mapper-libs=2.02.184-r0 lvm2-libs=2.02.184-r0 pc:blkid pkgconfig
 p:pc:devmapper-event=1.02.156 pc:devmapper=1.02.156 pc:lvm2app=2.2
-
-C:Q1VrJv2ZbzIP2dwCRrpqtUkX7t3Vc=
-P:collectd-doc
-V:5.8.0-r4
-A:armhf
-S:202794
-I:253952
-T:The system statistics collection daemon (documentation)
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-i:docs collectd=5.8.0-r4
 
 C:Q1ZpWhHmqetoAtKZvdyq0fBM1vc4E=
 P:dejagnu-dev
@@ -53378,6 +53504,22 @@ c:66616129bd59e5c92cc7379c7ae36d4143df3674
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libvpx.so.6=6.0.0
 
+C:Q1A9kbXRITUfgh453OY9OvDEjuWlc=
+P:unrar
+V:5.7.5-r0
+A:armhf
+S:116753
+I:241664
+T:RAR uncompression program
+U:https://www.rarlab.com
+L:custom
+o:unrar
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558434909
+c:a6a029d7b2f04abb45cc8b6587f9083fbe307ffa
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:unrar
+
 C:Q1lBajlDTGR0lOnp34o5tX3ZlQL9I=
 P:perl-crypt-openssl-guess-doc
 V:0.11-r0
@@ -53775,6 +53917,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557078068
 c:a55f66b0a1dbdc03b31d48e7b49b38dccf7897fb
 i:docs varnish=6.2.0-r1
+
+C:Q1URIlWzxxfCmiEkNfZ+CE7Fhp1BM=
+P:samba-common-libs
+V:4.10.3-r0
+A:armhf
+S:1026289
+I:3723264
+T:Samba libraries shared by common-tools, server and clients
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435592
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libCHARSET3-samba4.so so:libasn1util-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libdbwrap-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
+p:so:libMESSAGING-SEND-samba4.so=0 so:libcli-spoolss-samba4.so=0 so:libdcerpc-binding.so.0=0.0.1 so:libdcerpc-samba-samba4.so=0 so:liblibcli-lsa3-samba4.so=0 so:liblibcli-netlogon3-samba4.so=0 so:liblibsmb-samba4.so=0 so:libmsrpc3-samba4.so=0 so:libndr-samba4.so=0 so:libsamba-passdb.so.0=0.27.2 so:libtrusts-util-samba4.so=0
 
 C:Q184k6JLs68ksmkjPbprssyNK3U9M=
 P:perl-xml-parser
@@ -54492,22 +54650,6 @@ c:c50372a0878ac343f450f5a475adb1b060eb063e
 D:so:libc.musl-armhf.so.1
 p:so:libilbc.so.0=0.0.2
 
-C:Q10yrd8LR9PyYfbYH5h/lHcqEX2Nc=
-P:samba-common-server-libs
-V:4.10.2-r0
-A:armhf
-S:1426119
-I:4096000
-T:Samba libraries shared by common-tools and servers
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151092
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libCHARSET3-samba4.so so:libacl.so.1 so:libaddns-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libcups.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libiov-buf-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.1 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpam.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
-p:so:libads-samba4.so=0 so:libauth-samba4.so=0 so:libdfs-server-ad-samba4.so=0 so:libnetapi.so.0=0 so:libnpa-tstream-samba4.so=0 so:libprinting-migrate-samba4.so=0 so:libsmbd-base-samba4.so=0 so:libsmbd-conn-samba4.so=0 so:libsmbldap.so.2=2 so:libsmbldaphelper-samba4.so=0
-
 C:Q1ZbYFj/Es5MEnmUTS7STvVPgHHck=
 P:x264-libs
 V:20180304-r1
@@ -54552,21 +54694,6 @@ o:perl-ipc-sharelite
 t:1557595239
 c:e844f77ef484497712a80dfc31d5ee18895aceba
 i:docs perl-ipc-sharelite=0.17-r3
-
-C:Q19PYIxn4hTbUPyonpKwYJDPk4PD0=
-P:collectd-curl
-V:5.8.0-r4
-A:armhf
-S:31793
-I:98304
-T:curl* pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2 so:libyajl.so.2
 
 C:Q1JQetqh9jMufnZ9ouEaW7+WHG5qY=
 P:freeglut-dev
@@ -56268,22 +56395,6 @@ c:4307ea6f79a360536438ab97bab081742b1866a0
 D:pkgconfig rarian=0.8.1-r7
 p:pc:rarian=0.8.1 cmd:rarian-sk-config cmd:scrollkeeper-config
 
-C:Q1vHXGPSrtrkjDUEu+SkiXEBdfXUg=
-P:py2-filelock
-V:3.0.10-r1
-A:armhf
-S:10496
-I:73728
-T:A platform independent file lock for Python (for python2)
-U:https://github.com/benediktschmitt/py-filelock
-L:Unlicense
-o:py-filelock
-m:Dmitry Romanenko <dmitry@romanenko.in>
-t:1557086587
-c:39e4ad20f08a034c42cb1eafe152d7ac5635338b
-D:python2
-i:py-filelock=3.0.10-r1 python2
-
 C:Q1EOTmfLhHp18MID1qOAzTSA+r7zI=
 P:bacula
 V:9.4.3-r0
@@ -56930,6 +57041,21 @@ t:1557262335
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core openntpd
 
+C:Q1HGdOXnTog2XH2RaPWeaEG/sv0XE=
+P:collectd-ping
+V:5.8.1-r0
+A:armhf
+S:6440
+I:32768
+T:ping pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:liboping.so.0
+
 C:Q13VqIeux/GfkrWPN6Hz0MDHiZzUM=
 P:syslog-ng-stomp
 V:3.19.1-r1
@@ -57468,21 +57594,6 @@ c:f8ec2d2e84fda3ba4c28fb447f980af22a880502
 D:libnfs=3.0.0-r0 pkgconfig
 p:pc:libnfs=3.0.0
 
-C:Q1xUtvwc8SNef+0sI5n4/b8dsjyxA=
-P:collectd-iptables
-V:5.8.0-r4
-A:armhf
-S:4637
-I:28672
-T:iptables pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libip4tc.so.0 so:libip6tc.so.0
-
 C:Q1Ba6Hjr1p9gWoREVl+N02Vi8DMYQ=
 P:pmacct-doc
 V:1.7.0-r0
@@ -57512,22 +57623,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557176982
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs pwgen=2.08-r0
-
-C:Q1h86Wtk3Rv63Psf0aT8frM2pQw8Q=
-P:tslib-dev
-V:1.18-r0
-A:armhf
-S:3943
-I:32768
-T:Touchscreen Access Library (development files)
-U:https://github.com/kergoth/tslib
-L:LGPL-2.0-or-later
-o:tslib
-m:Clayton Craft <clayton@craftyguy.net>
-t:1557135059
-c:1cd3c4e7342f44054aefadd44ca25846f8584f79
-D:pkgconfig tslib=1.18-r0
-p:pc:tslib=1.18
 
 C:Q1r5XezcG2Ug+R6w01BZi2HxcZ3eI=
 P:fprobe
@@ -58362,6 +58457,21 @@ c:0012ca0681bdad7f646920585fa58905c7e30cee
 D:so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0
 p:cmd:hg cmd:hg-ssh cmd:hgeditor cmd:hgk
 
+C:Q1O+Jm6NrNLAuIVeqOKZU3+J50idw=
+P:collectd-dns
+V:5.8.1-r0
+A:armhf
+S:9126
+I:36864
+T:dns pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libpcap.so.1
+
 C:Q1/DIjEvi4jfnMtk0C5EEmheMCN5Q=
 P:perl-cps
 V:0.18-r0
@@ -59110,21 +59220,6 @@ t:1557254385
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:so:libc.musl-armhf.so.1
 i:lua5.3 lua-iconv=7-r1
-
-C:Q1n8LRYWWSFBfcPLaiBimrqoOrgYc=
-P:collectd-ping
-V:5.8.0-r4
-A:armhf
-S:6435
-I:32768
-T:ping pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:liboping.so.0
 
 C:Q1Aa6OVD6H/U/QOFKel6SNPvb7mQw=
 P:perl-yaml-syck-doc
@@ -61086,22 +61181,6 @@ t:1557590652
 c:3c086e1b4b07d77e88b3da369b22a0f5305bb503
 D:nginx so:libc.musl-armhf.so.1
 
-C:Q1pd5XrY3o3YBZdo5ZqvuizQJRZL4=
-P:collectd-virt
-V:5.8.0-r4
-A:armhf
-S:16925
-I:53248
-T:virt pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594258
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libvirt.so.0 so:libxml2.so.2
-p:collectd-libvirt
-
 C:Q1yjF1bX+Lx+yTQsh9rsY/theRhzw=
 P:xf86-input-synaptics
 V:1.9.1-r1
@@ -61397,21 +61476,6 @@ t:1557137960
 c:71c58a112937693f950498e3efadf748d29812a4
 p:cmd:qemu-mips64
 
-C:Q13hOZuY+H/Lop6Lq1mlbe7cMr5Ss=
-P:collectd-mysql
-V:5.8.0-r4
-A:armhf
-S:10765
-I:40960
-T:mysql pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libmariadb.so.3
-
 C:Q1kM5o/C5x3MZLVKI/ZtkRFwSyCsU=
 P:libdaemon-doc
 V:0.14-r2
@@ -61489,21 +61553,6 @@ t:1557217401
 c:b0e37087fbeb862579a29f6456f5250c470c2b51
 D:python2 so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0
 i:py-zope-interface=4.6.0-r1 python2
-
-C:Q19dYWjPg830iO6CzKrI7q+4nktkQ=
-P:collectd-snmp
-V:5.8.0-r4
-A:armhf
-S:12228
-I:40960
-T:snmp pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libnetsnmp.so.35
 
 C:Q1Nav0NRlENIJGW4aQ8kLWfLfbb6g=
 P:liblognorm-dev
@@ -64740,22 +64789,6 @@ c:aeb65ff53e14bceecc703545d6680e75f019664e
 D:freetype-dev graphite2=1.3.12-r1 pkgconfig
 p:pc:graphite2=3.0.1
 
-C:Q1ENYQOIaMtsC6BHHC02/1pfh36tU=
-P:libwbclient
-V:4.10.2-r0
-A:armhf
-S:29121
-I:90112
-T:Samba winbind client libraries
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151094
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1
-p:so:libreplace-samba4.so=0 so:libwbclient.so.0=0.15 so:libwinbind-client-samba4.so=0
-
 C:Q1gRJA/Ex7ioY1xaygNzFj4i7gcH8=
 P:gpgmepp
 V:1.13.0-r1
@@ -65093,22 +65126,6 @@ D:make py3-docutils py3-jinja2 py3-pygments py3-six py3-sphinx_rtd_theme py3-ala
 p:cmd:sphinx-apidoc-3 cmd:sphinx-autogen-3 cmd:sphinx-build-3 cmd:sphinx-quickstart-3
 i:py-sphinx=1.8.4-r1 python3
 
-C:Q13sFdi2V0E7xjiWH6ATzXHA14tEM=
-P:samba-pidl
-V:4.10.2-r0
-A:armhf
-S:99643
-I:577536
-T:Perl IDL compiler
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151097
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:perl
-p:cmd:pidl
-
 C:Q1j3BZx8FcksKpfxAw2/Qtx1ScBIs=
 P:librtmp
 V:2.4_git20160909-r6
@@ -65229,6 +65246,21 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1557138774
 c:c7e2316678bff969fbae896b434a687145082a43
 i:geeqie=1.4-r0 lang
+
+C:Q1TJH0SFy6DLgvLxvvfmsMkXfdH58=
+P:samba
+V:4.10.3-r0
+A:armhf
+S:1176
+I:12288
+T:Tools to access a server's filespace and printers via SMB
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435601
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-server=4.10.3-r0 samba-client=4.10.3-r0 samba-common-tools=4.10.3-r0
 
 C:Q1j2Aq28JUKeF7xrvnmGEdaSTWRGg=
 P:libvirt-dev
@@ -66115,6 +66147,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557207196
 c:0012ca0681bdad7f646920585fa58905c7e30cee
 i:mercurial=4.9.1-r0 zsh
+
+C:Q1MOo3yFac2zgHXejbITRXEfzDKds=
+P:collectd-bind
+V:5.8.1-r0
+A:armhf
+S:10979
+I:40960
+T:bind pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2
 
 C:Q1YXTK+PpfdC6zXwf9Eg6sjShRfsA=
 P:tiff-tools
@@ -67023,6 +67070,22 @@ t:1556985868
 c:4c223d8742f9e9f1a73b115db02adbd9e4aad652
 D:so:libc.musl-armhf.so.1 so:libffi.so.6 so:libp11-kit.so.0
 
+C:Q10jfHoXLU6+8YXkDvRvuPaAXXq4A=
+P:libsmbclient
+V:4.10.3-r0
+A:armhf
+S:52541
+I:147456
+T:The SMB client library
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435592
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1 so:libcli-smb-common-samba4.so so:libdcerpc-samba-samba4.so so:libgse-samba4.so so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so
+p:so:libsmbclient.so.0=0.5.0
+
 C:Q1sucubu0GHhpYWismD7dibav+y/s=
 P:postfix-openrc
 V:3.4.5-r0
@@ -67311,22 +67374,6 @@ t:1557075781
 c:785ba5ee3bef5a8907fd0fb778baac73fd7855ac
 D:so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpixman-1.so.0
 p:cmd:Xnest
-
-C:Q1o7GEFfTB7eYTWpyZF2UisrsyP7E=
-P:samba-client
-V:4.10.2-r0
-A:armhf
-S:513381
-I:1757184
-T:Samba client programs
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151093
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-common=4.10.2-r0 so:libCHARSET3-samba4.so so:libaddns-samba4.so so:libarchive.so.13 so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libformw.so.6 so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmscat-samba4.so so:libmsrpc3-samba4.so so:libncursesw.so.6 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpanelw.so.6 so:libpopt-samba3-cmdline-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsecrets3-samba4.so so:libserver-role-samba4.so so:libsmbclient-raw-samba4.so so:libsmbclient.so.0 so:libsmbconf.so.0 so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
-p:cmd:cifsdd cmd:dbwrap_tool cmd:dumpmscat cmd:findsmb cmd:mvxattr cmd:nmblookup cmd:oLschema2ldif cmd:regdiff cmd:regpatch cmd:regshell cmd:regtree cmd:rpcclient cmd:samba-regedit cmd:sharesec cmd:smbcacls cmd:smbclient cmd:smbcquotas cmd:smbget cmd:smbprint cmd:smbspool cmd:smbtar cmd:smbtree
 
 C:Q1ZSLzzznEUjSMNzTpax6bbYGaHvw=
 P:sg3_utils-doc
@@ -68151,22 +68198,6 @@ t:1557205728
 c:6beee599be2cfe105c3359bdff8990ba663d2d5c
 i:docs py-nose=1.3.7-r3
 
-C:Q1omkxSM9hGvmuyS0ExbZY2OpflPM=
-P:samba-libs
-V:4.10.2-r0
-A:armhf
-S:2812548
-I:8196096
-T:Samba core libraries
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151099
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libMESSAGING-SEND-samba4.so so:libasn1-samba4.so.8 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libclidns-samba4.so so:libcom_err.so.2 so:libgnutls.so.30 so:libgssapi-samba4.so.2 so:libjansson.so.4 so:libkrb5-samba4.so.26 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.1 so:libpopt.so.0 so:libreplace-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0 so:libwbclient.so.0 so:libz.so.1
-p:so:libCHARSET3-samba4.so=0 so:libaddns-samba4.so=0 so:libasn1util-samba4.so=0 so:libauthkrb5-samba4.so=0 so:libcli-cldap-samba4.so=0 so:libcli-ldap-common-samba4.so=0 so:libcli-nbt-samba4.so=0 so:libcli-smb-common-samba4.so=0 so:libcliauth-samba4.so=0 so:libcmocka-samba4.so=0 so:libcommon-auth-samba4.so=0 so:libdbwrap-samba4.so=0 so:libflag-mapping-samba4.so=0 so:libgenrand-samba4.so=0 so:libgensec-samba4.so=0 so:libgse-samba4.so=0 so:libinterfaces-samba4.so=0 so:libiov-buf-samba4.so=0 so:libkrb5samba-samba4.so=0 so:libldbsamba-samba4.so=0 so:libmessages-dgm-samba4.so=0 so:libmessages-util-samba4.so=0 so:libmsghdr-samba4.so=0 so:libndr-krb5pac.so.0=0.0.1 so:libndr-nbt.so.0=0.0.1 so:libndr-samba-samba4.so=0 so:libndr-standard.so.0=0.0.1 so:libndr.so.0=0.2.0 so:libpopt-samba3-samba4.so=0 so:libsamba-cluster-support-samba4.so=0 so:libsamba-credentials.so.0=0.0.1 so:libsamba-debug-samba4.so=0 so:libsamba-errors.so.1=1 so:libsamba-hostconfig.so.0=0.0.1 so:libsamba-modules-samba4.so=0 so:libsamba-security-samba4.so=0 so:libsamba-sockets-samba4.so=0 so:libsamba-util.so.0=0.0.1 so:libsamba3-util-samba4.so=0 so:libsamdb-common-samba4.so=0 so:libsamdb.so.0=0.0.1 so:libsecrets3-samba4.so=0 so:libserver-id-db-samba4.so=0 so:libserver-role-samba4.so=0 so:libsmb-transport-samba4.so=0 so:libsmbconf.so.0=0 so:libsmbd-shim-samba4.so=0 so:libsocket-blocking-samba4.so=0 so:libsys-rw-samba4.so=0 so:libtalloc-report-samba4.so=0 so:libtdb-wrap-samba4.so=0 so:libtevent-util.so.0=0.0.1 so:libtime-basic-samba4.so=0 so:libutil-cmdline-samba4.so=0 so:libutil-reg-samba4.so=0 so:libutil-setid-samba4.so=0 so:libutil-tdb-samba4.so=0
-
 C:Q1c+D91Nfbgfmbcg7xIWZNG7HI1n8=
 P:perl-datetime-doc
 V:1.50-r1
@@ -68981,22 +69012,6 @@ t:1557207596
 c:45cbc43991411e6cd63d95d8f942df5b110eecd3
 D:so:libc.musl-armhf.so.1
 p:cmd:pgen
-
-C:Q1/Odx7MDxco6KYMwuj8c9Ox7EBJ8=
-P:py3-filelock
-V:3.0.10-r1
-A:armhf
-S:10564
-I:77824
-T:A platform independent file lock for Python (for python3)
-U:https://github.com/benediktschmitt/py-filelock
-L:Unlicense
-o:py-filelock
-m:Dmitry Romanenko <dmitry@romanenko.in>
-t:1557086587
-c:39e4ad20f08a034c42cb1eafe152d7ac5635338b
-D:python3
-i:py-filelock=3.0.10-r1 python3
 
 C:Q1/NVK82YNwKu00J3bQHK0sqY7lJ0=
 P:perl-class-method-modifiers
@@ -70039,20 +70054,6 @@ t:1556989188
 c:2ae144627c66b46f4071ae488562d9bba8724b0e
 D:so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
-C:Q1gB1UwCI2bcCz2grpt2Ug0GheRK4=
-P:py-cliapp
-V:1.20170823-r1
-A:armhf
-S:1176
-I:4096
-T:Framework for Unix-like command line programs
-U:http://liw.fi/cliapp
-L:GPL-2.0-or-later
-o:py-cliapp
-t:1557125158
-c:fe3d86c440778c23fff9d28b3e6f20335849ed3d
-D:python2 python3
-
 C:Q1cdGIFeUdwqTFH3P0gPj+l1F+tGs=
 P:perl-module-runtime
 V:0.016-r2
@@ -70279,6 +70280,21 @@ t:1557140632
 c:166e2afa3446023700d58fb19e73955a3a9c60ea
 D:tcl so:libc.musl-armhf.so.1
 
+C:Q1sw3XxC6NByGnfSv8Dkwwk03NU6g=
+P:collectd-ipmi
+V:5.8.1-r0
+A:armhf
+S:11500
+I:45056
+T:ipmi pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libOpenIPMI.so.0 so:libOpenIPMIpthread.so.0 so:libc.musl-armhf.so.1
+
 C:Q19PGotUwQw/GSfWptghXEaBGWkoY=
 P:lua-posix
 V:33.4.0-r1
@@ -70427,6 +70443,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556989018
 c:846c41a42aebb90a6388f0bd70cfe26ea3610c67
 D:so:libc.musl-armhf.so.1
+
+C:Q1uwOoE7eBh5D/euRpUbwrxg8JcyA=
+P:collectd-lua
+V:5.8.1-r0
+A:armhf
+S:8071
+I:36864
+T:lua pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:liblua.so.5
 
 C:Q1zCL0TPoSZHNesc/HWvTtGZutKEI=
 P:lua-stdlib-doc
@@ -70693,6 +70724,22 @@ c:f249307d7e088d65b94568749bc2d22386651a41
 D:eventlog=0.2.13-r0 pkgconfig
 p:pc:eventlog=0.2.13
 
+C:Q1v4eQo9aJx91GvOdjivc3TweKkKU=
+P:collectd-dev
+V:5.8.1-r0
+A:armhf
+S:6564
+I:57344
+T:The system statistics collection daemon (development files)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435697
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd-libs=5.8.1-r0 pkgconfig
+p:pc:libcollectdclient=5.8.1
+
 C:Q1wMQkm0iejX/BIoar/Dmv4HTEhoY=
 P:imake-doc
 V:1.0.8-r0
@@ -70935,6 +70982,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557152022
 c:5ce892c5603191fe7d828dca9ce0a07704b81663
 i:lua5.1 lua-stdlib=41.2.1-r0
+
+C:Q10EOWGRu2I56ZyeBaCGwOIX3sELc=
+P:samba-server
+V:4.10.3-r0
+A:armhf
+S:437573
+I:1441792
+T:Samba server
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435597
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-common=4.10.3-r0 samba-initscript=4.10.3-r0 so:libCHARSET3-samba4.so so:libauth-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libdbus-1.so.3 so:libdbwrap-samba4.so so:libgenrand-samba4.so so:libgse-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsghdr-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
+p:so:libxattr-tdb-samba4.so=0 cmd:eventlogadm cmd:nmbd cmd:smbd cmd:smbstatus
 
 C:Q1ZKHxESHztBBdyzC6tmSrcux6Bkg=
 P:installkernel
@@ -72207,21 +72270,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557737248
 c:d27c7b7ef2ac242061da9552b0baa95bcb43a247
 
-C:Q1El4/EMImckfGcMe/x0KC6DafEW8=
-P:collectd-postgresql
-V:5.8.0-r4
-A:armhf
-S:15457
-I:49152
-T:postgresql pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libpq.so.5
-
 C:Q1FdZUm2bhuY28LvvSfS614l6gQ34=
 P:herbstluftwm-zsh-completion
 V:0.7.1-r0
@@ -72236,20 +72284,6 @@ m:prspkt <prspkt@protonmail.com>
 t:1557229485
 c:d57c0885a4458077f8bbef216b7d008f260de21f
 i:herbstluftwm=0.7.1-r0 zsh
-
-C:Q1J2y9FGD+xhcGsb6FmdCifLWPIIM=
-P:py-ttystatus
-V:0.23-r1
-A:armhf
-S:37031
-I:331776
-T:Terminal progress bar and status output for command line
-U:http://liw.fi/ttystatus/
-L:GPL-3.0-or-later
-o:py-ttystatus
-t:1557125324
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-D:python2
 
 C:Q1N4wPCwTkh89igCloWlC/w8vFAJA=
 P:c-ares-doc
@@ -72727,22 +72761,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557231903
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
 D:dovecot=2.3.6-r1 so:libc.musl-armhf.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
-C:Q1x5FB+xy6c7Y++S3JqvBsAv0tg1I=
-P:libsrtp-dev
-V:1.5.4-r1
-A:armhf
-S:89143
-I:413696
-T:An implementation of the Secure Real-time Transport Protocol (SRTP) (development files)
-U:http://srtp.sourceforge.net
-L:BSD
-o:libsrtp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557169421
-c:c1fa63fe4f3412c40612bcb388b0c6b191658f5b
-D:pkgconfig
-p:pc:libsrtp=1.5.4
 
 C:Q1iR8aMC1BfRNab/CyMcddnGAMXbk=
 P:acf-alpine-baselayout
@@ -73359,21 +73377,6 @@ t:1557127147
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs gengetopt=2.22.6-r2
 
-C:Q1JfrVNI7GLcoBl/KblsexUezJmlU=
-P:unrar-doc
-V:5.7.4-r0
-A:armhf
-S:2352
-I:24576
-T:RAR uncompression program (documentation)
-U:https://www.rarlab.com
-L:custom
-o:unrar
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557158156
-c:86ae0116ae91a00919b8c78d2f28ef1e3af2c10b
-i:docs unrar=5.7.4-r0
-
 C:Q1d4DoS6otm9cBQmvP18bMM6mc+Ug=
 P:git-cvs
 V:2.21.0-r3
@@ -73650,6 +73653,21 @@ o:libfastjson
 m:Ashley Sommer <ashleysommer@gmail.com>
 t:1557182970
 c:a3bb032dccb14429ce17f80bf8b067e0c25f3882
+
+C:Q1ibefmqkYvRMnkeTsabjz6hTOXJs=
+P:collectd-mysql
+V:5.8.1-r0
+A:armhf
+S:10768
+I:40960
+T:mysql pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libmariadb.so.3
 
 C:Q1yuYxIUO3mKEVfh5OX5hHZfNJJQc=
 P:dpaste
@@ -75077,21 +75095,6 @@ c:b6ff74fd0c1dd44753eacd2c43d6696a8ca31733
 D:so:libc.musl-armhf.so.1
 p:cmd:soelim
 
-C:Q1hBpUmLjE9iGCdha88WRPWXB7w1g=
-P:samba-doc
-V:4.10.2-r0
-A:armhf
-S:395376
-I:679936
-T:Tools to access a server's filespace and printers via SMB (documentation)
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151092
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-i:docs samba=4.10.2-r0
-
 C:Q1xN2l/AbFsJJluNRj7No6jj1YhWA=
 P:nginx-mod-stream-js
 V:1.16.0-r2
@@ -75992,6 +75995,22 @@ t:1557149818
 c:8190aae00739bc46d5ee8a804d3c96cb24e9e540
 D:so:libc.musl-armhf.so.1 so:libgnutls.so.30
 p:so:librelp.so.0=0.4.0
+
+C:Q1CnctLxftIy/jVgKkvEuHl35WgaU=
+P:collectd-libs
+V:5.8.1-r0
+A:armhf
+S:16976
+I:45056
+T:The system statistics collection daemon (libraries)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435697
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:so:libc.musl-armhf.so.1 so:libgcrypt.so.20
+p:so:libcollectdclient.so.1=1.1.0
 
 C:Q1KwlCDojJQwreH4nVzI9cmyQRVNg=
 P:udns
@@ -77194,22 +77213,6 @@ t:1557223546
 c:aceeb9a8519e1dfa1a58a3f391b87f48773913d9
 D:so:libc.musl-armhf.so.1
 
-C:Q1sL/lHBhi46s3c8FOhEa7tIuqa+w=
-P:samba-dev
-V:4.10.2-r0
-A:armhf
-S:293600
-I:1966080
-T:Tools to access a server's filespace and printers via SMB (development files)
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151091
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:libsmbclient=4.10.2-r0 libwbclient=4.10.2-r0 pc:ldb pc:talloc pc:tevent pkgconfig samba-client-libs=4.10.2-r0 samba-common-libs=4.10.2-r0 samba-common-server-libs=4.10.2-r0 samba-dc-libs=4.10.2-r0 samba-libnss-winbind=4.10.2-r0 samba-libs=4.10.2-r0
-p:pc:dcerpc=0.0.1 pc:dcerpc_samr=0.0.1 pc:dcerpc_server=0.0.1 pc:ndr=0.2.0 pc:ndr_krb5pac=0.0.1 pc:ndr_nbt=0.0.1 pc:ndr_standard=0.0.1 pc:netapi=0 pc:samba-credentials=0.0.1 pc:samba-hostconfig=0.0.1 pc:samba-policy.cpython-37m-arm-linux-gnueabihf=0.0.1 pc:samba-util=0.0.1 pc:samdb=0.0.1 pc:smbclient=0.5.0 pc:wbclient=0.15
-
 C:Q10ymuas5kafUC1SLjYhAM4icmUk0=
 P:libatomic_ops-dev
 V:7.6.10-r0
@@ -77286,21 +77289,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557211219
 c:88794580a16f512ea86dceae7bbf6aec3002c501
 i:docs arpon=3.0-r2
-
-C:Q1zg3I0RN3rckkBj0Gc6rx1R4rnOE=
-P:collectd-python
-V:5.8.0-r4
-A:armhf
-S:23065
-I:77824
-T:python pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0
 
 C:Q1r9URT0EGb2MRDwpM/ZqSRRPfht0=
 P:qemu-system-alpha
@@ -77442,22 +77430,6 @@ t:1556917554
 c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libboost_filesystem.so.1.69.0 so:libboost_thread.so.1.69.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libboost_log.so.1.69.0=1.69.0
-
-C:Q1MOEwX/HBwWECvwWgic+muy9Nk9Y=
-P:samba-server-libs
-V:4.10.2-r0
-A:armhf
-S:58891
-I:208896
-T:Samba libraries shared by server and windbind
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151097
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libMESSAGING-SEND-samba4.so so:libc.musl-armhf.so.1 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libldap-2.4.so.2 so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbldap.so.2 so:libsmbldaphelper-samba4.so so:libtalloc-report-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-tdb-samba4.so
-p:so:libMESSAGING-samba4.so=0 so:libdcerpc-samba4.so=0 so:libidmap-samba4.so=0 so:libnon-posix-acls-samba4.so=0 so:libnss-info-samba4.so=0
 
 C:Q1UW5pC+WdkRJvIC60VnH4Gw2u+DE=
 P:cdw
@@ -78830,20 +78802,6 @@ c:f94875b7106062be7d23fb6053ee3457427f66c4
 D:libpciaccess=0.14-r0 pkgconfig
 p:pc:pciaccess=0.14
 
-C:Q1ZZUNBBDQTas6OGHBMT4j6IvnjbE=
-P:samba-initscript
-V:4.10.2-r0
-A:armhf
-S:1995
-I:24576
-T:Init script for Samba
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151092
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-
 C:Q1h3L9L7oyyYxcwaHn+eYqLiqW1fc=
 P:wpa_supplicant-doc
 V:2.7-r3
@@ -78921,6 +78879,21 @@ t:1556884033
 c:f5f7467df75b4ea412514e0472909bd3d376b3fd
 D:so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0 so:libxml2.so.2
 i:py-libxml2=2.9.9-r2 python2
+
+C:Q1zWmWZAPZSIRLlX0VUnRZ92xETMA=
+P:collectd-lvm
+V:5.8.1-r0
+A:armhf
+S:4909
+I:28672
+T:lvm pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:liblvm2app.so.2.2
 
 C:Q1Idyx/lM+Qn3HuBT4RRXgBjbJU6g=
 P:perl-importer
@@ -79103,6 +79076,22 @@ o:dovecot
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557231903
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
+
+C:Q1IziZCOnDExPIQL497S1yBisBOI0=
+P:libwbclient
+V:4.10.3-r0
+A:armhf
+S:29138
+I:90112
+T:Samba winbind client libraries
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435593
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:so:libc.musl-armhf.so.1
+p:so:libreplace-samba4.so=0 so:libwbclient.so.0=0.15 so:libwinbind-client-samba4.so=0
 
 C:Q1M1uEWMgjs6BjOPhg4hxNM55Wc6s=
 P:qemu-system-s390x
@@ -79689,6 +79678,22 @@ t:1557077890
 c:6905f18fd27e56c693407db2942ecef1f0eb4586
 D:perl
 
+C:Q1KXpE11pl/QH9FnHgYoVwFnbkkck=
+P:samba-dc-libs
+V:4.10.3-r0
+A:armhf
+S:795908
+I:2359296
+T:Samba AD Domain Controller libraries
+U:https://www.samba.org/
+L:GPL-3.0-or-later LGPL-3.0-or-later
+o:samba
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435597
+c:47edd290d1ad530be52e98617325c29417d47cf1
+D:samba-server=4.10.3-r0 samba-client=4.10.3-r0 samba-common-tools=4.10.3-r0 so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcliauth-samba4.so so:libclidns-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc.so.0 so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libhcrypto-samba4.so.5 so:libhx509-samba4.so.5 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetif-samba4.so so:libnpa-tstream-samba4.so so:libpam.so.0 so:libpopt.so.0 so:libpython3.7m.so.1.0 so:libreplace-samba4.so so:libroken-samba4.so.19 so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsmb-transport-samba4.so so:libsmbclient-raw-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libwbclient.so.0
+p:so:libHDB-SAMBA4-samba4.so=0 so:libLIBWBCLIENT-OLD-samba4.so=0 so:libauth-unix-token-samba4.so=0 so:libauth4-samba4.so=0 so:libcluster-samba4.so=0 so:libdb-glue-samba4.so=0 so:libdcerpc-samr.so.0=0.0.1 so:libdcerpc-server.so.0=0.0.1 so:libdnsserver-common-samba4.so=0 so:libdsdb-module-samba4.so=0 so:libhdb-samba4.so.11=11.0.2 so:libkdc-samba4.so.2=2.0.0 so:libpac-samba4.so=0 so:libposix-eadb-samba4.so=0 so:libprocess-model-samba4.so=0 so:libsamba-policy.cpython-37m-arm-linux-gnueabihf.so.0=0.0.1 so:libscavenge-dns-records-samba4.so=0 so:libservice-samba4.so=0 so:libshares-samba4.so=0
+
 C:Q1XOqybjFKyzlPrrrNM6xaHa+EaIo=
 P:xf86-video-modesetting
 V:0.9.0-r6
@@ -79964,22 +79969,6 @@ t:1557150437
 c:165ed7fca607c6196243385a7d2cdd1c2aef68f7
 D:cmocka=1.1.5-r0 pkgconfig
 p:pc:cmocka=1.1.5
-
-C:Q1wTdGPqj/jwqrEly70DelSSQj85Y=
-P:samba-common-libs
-V:4.10.2-r0
-A:armhf
-S:1026258
-I:3723264
-T:Samba libraries shared by common-tools, server and clients
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151093
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libCHARSET3-samba4.so so:libasn1util-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libdbwrap-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
-p:so:libMESSAGING-SEND-samba4.so=0 so:libcli-spoolss-samba4.so=0 so:libdcerpc-binding.so.0=0.0.1 so:libdcerpc-samba-samba4.so=0 so:liblibcli-lsa3-samba4.so=0 so:liblibcli-netlogon3-samba4.so=0 so:liblibsmb-samba4.so=0 so:libmsrpc3-samba4.so=0 so:libndr-samba4.so=0 so:libsamba-passdb.so.0=0.27.2 so:libtrusts-util-samba4.so=0
 
 C:Q1c7QYnmK6UXGK4u7NMLPCQQpMpEM=
 P:linux-firmware-rsi
@@ -80333,22 +80322,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557046849
 c:cd993ffdeb097c658c4a09da9bb06993cc2b8a5b
 i:docs perl-html-tree=5.07-r0
-
-C:Q1U55V0SjEwyANKmRw4Kxlm0Qlsww=
-P:samba-winbind
-V:4.10.2-r0
-A:armhf
-S:426301
-I:1363968
-T:Samba user and group resolver
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151094
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:samba-common=4.10.2-r0 so:libMESSAGING-samba4.so so:libads-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libidmap-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldap-2.4.so.2 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnpa-tstream-samba4.so so:libnss-info-samba4.so so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsecrets3-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsmbldap.so.2 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-tdb-samba4.so
-p:cmd:winbindd
 
 C:Q1221gNn60HlA0Jbd5mGAlGizX0NE=
 P:perl-datetime-format-natural-doc
@@ -81071,22 +81044,6 @@ t:1557083265
 c:9e6609800b9233e28b6cb87933357e2b229ae8bb
 i:docs libconfig=1.5-r3
 
-C:Q127yyrgh0aklMbPFNAG1yk1KiBEc=
-P:tslib
-V:1.18-r0
-A:armhf
-S:81448
-I:348160
-T:Touchscreen Access Library
-U:https://github.com/kergoth/tslib
-L:LGPL-2.0-or-later
-o:tslib
-m:Clayton Craft <clayton@craftyguy.net>
-t:1557135062
-c:1cd3c4e7342f44054aefadd44ca25846f8584f79
-D:so:libc.musl-armhf.so.1
-p:so:libts.so.0=0.10.0 cmd:ts_calibrate cmd:ts_conf cmd:ts_finddev cmd:ts_harvest cmd:ts_print cmd:ts_print_mt cmd:ts_print_raw cmd:ts_test cmd:ts_test_mt cmd:ts_uinput cmd:ts_verify
-
 C:Q1LITIXj0AhdIcWgqcZ47LqAD7l/I=
 P:py3-asn1crypto
 V:0.24.0-r1
@@ -81687,21 +81644,6 @@ o:libgit2
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557045523
 c:8383675cc1a4e5abe90be16b72b4029d51ecad63
-
-C:Q1JvNucPSvjYYk4H7JThWjN3JxEZ4=
-P:collectd-lua
-V:5.8.0-r4
-A:armhf
-S:8066
-I:36864
-T:lua pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594259
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:liblua.so.5
 
 C:Q1hlRUYPg8GOSO+FCkYI1nz1CCMCg=
 P:kamailio-geoip2
@@ -82582,6 +82524,22 @@ c:a18fc6715874db5d73f9649ea98f1df76f9092cc
 D:pixman=0.38.4-r0 pkgconfig
 p:pc:pixman-1=0.38.4
 
+C:Q1g05q0+whLluYXHiHhIIb19FRDZU=
+P:collectd
+V:5.8.1-r0
+A:armhf
+S:450838
+I:1593344
+T:The system statistics collection daemon
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435700
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:/bin/sh so:libc.musl-armhf.so.1 so:libnetsnmpagent.so.35 so:libyajl.so.2
+p:cmd:collectd cmd:collectdmon
+
 C:Q1lPbWs/BhNV1TPCQ5ht/NN+Ta7jo=
 P:py3-btrfs-progs
 V:4.20.2-r1
@@ -83138,22 +83096,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:lua so:libc.musl-armhf.so.1 so:libgdbm.so.4 so:libpcre.so.1
 p:cmd:hypermail cmd:mdir2mbox.lua cmd:msgarchive cmd:rdmsg
 
-C:Q19OE4Up8WWMAadKcxw7QlyixP7Hc=
-P:samba-libnss-winbind
-V:4.10.2-r0
-A:armhf
-S:7870
-I:36864
-T:Samba winbind NSS plugin
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151095
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:so:libc.musl-armhf.so.1 so:libreplace-samba4.so so:libwbclient.so.0 so:libwinbind-client-samba4.so
-p:so:libnss_winbind.so.2=2 so:libnss_wins.so.2=2
-
 C:Q1ByOeeG/LuiLChHfqN3yKB0J6ntI=
 P:lua-filesystem
 V:1.7.0.2-r0
@@ -83321,6 +83263,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557130220
 c:fb2c195c122f375594072195c6ac2e0a1420541f
 D:consolekit2 dbus so:libc.musl-armhf.so.1 so:libudev.so.1
+
+C:Q1iexHx04KJFH8WrK1vZOCcf9gQLE=
+P:tslib
+V:1.19-r0
+A:armhf
+S:81554
+I:348160
+T:Touchscreen Access Library
+U:https://github.com/kergoth/tslib
+L:LGPL-2.0-or-later
+o:tslib
+m:Clayton Craft <clayton@craftyguy.net>
+t:1558435003
+c:73124fc4eae5b99951d5850cd6b1b168c6851de4
+D:so:libc.musl-armhf.so.1
+p:so:libts.so.0=0.10.1 cmd:ts_calibrate cmd:ts_conf cmd:ts_finddev cmd:ts_harvest cmd:ts_print cmd:ts_print_mt cmd:ts_print_raw cmd:ts_test cmd:ts_test_mt cmd:ts_uinput cmd:ts_verify
 
 C:Q1+jHKOqILgp8FCew92oGLfGHCOBw=
 P:perl-file-sharedir-doc
@@ -83842,6 +83800,22 @@ c:d7d8dcb792fc6267eccd6cfce264b8e7ed020aa1
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:wget
 
+C:Q1e2/hX09zXmNYO6LTU7Acf/SEV1M=
+P:collectd-virt
+V:5.8.1-r0
+A:armhf
+S:16922
+I:53248
+T:virt pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libvirt.so.0 so:libxml2.so.2
+p:collectd-libvirt
+
 C:Q1vYKBHPEzCfNhj68cWXN2u0VpeKU=
 P:squid-lang-sl
 V:4.6-r1
@@ -84009,21 +83983,6 @@ t:1557168020
 c:f8f9d7021c031f89f12d1e5d49858f44c5f33a98
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblua-5.3.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
 p:cmd:haproxy
-
-C:Q1N8AKRoP6Ju0RQ9jQj4w8jq+NLHU=
-P:py3-samba
-V:4.10.2-r0
-A:armhf
-S:3392254
-I:16130048
-T:Samba python libraries
-U:https://www.samba.org/
-L:GPL-3.0-or-later LGPL-3.0-or-later
-o:samba
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557151097
-c:f9c714f96e25f8440023fbbbff0ef6c5103bb9af
-D:py3-tdb so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libads-samba4.so so:libauth-unix-token-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcommon-auth-samba4.so so:libdb-glue-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc.so.0 so:libdnsserver-common-samba4.so so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgpext-samba4.so so:libgse-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:liblibsmb-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetif-samba4.so so:libposix-eadb-samba4.so so:libpyldb-util.cpython-37m-arm-linux-gnueabihf.so.1 so:libpytalloc-util.cpython-37m-arm-linux-gnueabihf.so.2 so:libpython3.7m.so.1.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-passdb.so.0 so:libsamba-policy.cpython-37m-arm-linux-gnueabihf.so.0 so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libscavenge-dns-records-samba4.so so:libsecrets3-samba4.so so:libserver-role-samba4.so so:libsmbclient-raw-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-reg-samba4.so so:libxattr-tdb-samba4.so
 
 C:Q12axph7FlYY/o7FvE1fI/MmMd3fw=
 P:libxml2-dbg
@@ -84295,20 +84254,6 @@ t:1557169629
 c:74ff40031f177e3aaa722e3985f930f49fc91e35
 D:so:libasound.so.2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libgsm.so.1 so:libsamplerate.so.0 so:libspeex.so.1 so:libspeexdsp.so.1 so:libssl.so.1.1 so:libstdc++.so.6
 p:so:libg7221codec.so.2=2 so:libilbccodec.so.2=2 so:libpj.so.2=2 so:libpjlib-util.so.2=2 so:libpjmedia-audiodev.so.2=2 so:libpjmedia-codec.so.2=2 so:libpjmedia-videodev.so.2=2 so:libpjmedia.so.2=2 so:libpjnath.so.2=2 so:libpjsip-simple.so.2=2 so:libpjsip-ua.so.2=2 so:libpjsip.so.2=2 so:libpjsua.so.2=2 so:libpjsua2.so.2=2 so:libyuv.so.2=2
-
-C:Q12q2aEWxzhb1ejsM+abJR39/5/l0=
-P:py-filelock
-V:3.0.10-r1
-A:armhf
-S:1195
-I:4096
-T:A platform independent file lock for Python
-U:https://github.com/benediktschmitt/py-filelock
-L:Unlicense
-o:py-filelock
-m:Dmitry Romanenko <dmitry@romanenko.in>
-t:1557086588
-c:39e4ad20f08a034c42cb1eafe152d7ac5635338b
 
 C:Q1e/7u1QUw2keGaT3VbiXFAJK7yiI=
 P:qemu-system-aarch64
@@ -84724,6 +84669,21 @@ t:1557056717
 c:a8e055e13abc0a5e9dbf3c702ba43b8e09c4e8e9
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libxml2.so.2 so:libz.so.1
 p:so:libgsf-1.so.114=114.0.46 cmd:gsf cmd:gsf-vba-dump
+
+C:Q1L8RFe1mSMw3r6JruR03DJUQeKho=
+P:collectd-apache
+V:5.8.1-r0
+A:armhf
+S:7502
+I:32768
+T:apache pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435698
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4
 
 C:Q1ktvc/dV4q/DjJk5ACiK82gzQBcg=
 P:docs
@@ -85523,20 +85483,6 @@ c:d116833524b26f18815a0d72c9d7219d8707f137
 D:py3-asn1 py3-cryptography py3-bcrypt py3-pynacl python3
 i:py-paramiko=2.4.2-r1 python3
 
-C:Q19TwJshvmT97fHZOvGMcTB3OOarQ=
-P:py-cliapp-doc
-V:1.20170823-r1
-A:armhf
-S:5192
-I:8192
-T:Framework for Unix-like command line programs (documentation)
-U:http://liw.fi/cliapp
-L:GPL-2.0-or-later
-o:py-cliapp
-t:1557125156
-c:fe3d86c440778c23fff9d28b3e6f20335849ed3d
-i:docs py-cliapp=1.20170823-r1
-
 C:Q151/fMhKdwCt6s3LC4hBVd+tLq4I=
 P:xclip
 V:0.13-r0
@@ -85659,6 +85605,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557047794
 c:c3644c75f9ec04111ff15aee1b1b869c4e54b565
 D:so:libc.musl-armhf.so.1 so:libruby.so.2.5
+
+C:Q1JXcVeYifAj1py6hJfF5yxArhMLM=
+P:collectd-ascent
+V:5.8.1-r0
+A:armhf
+S:6753
+I:32768
+T:ascent pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558435699
+c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
+D:collectd so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libxml2.so.2
 
 C:Q1Gl/9CVgd2i0kjNIwSyOtaXrRC6M=
 P:py2-twitter
@@ -86134,22 +86095,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557237819
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 
-C:Q1H4RTW8hv731PnSVFJk2sfc+mrms=
-P:collectd-dev
-V:5.8.0-r4
-A:armhf
-S:6563
-I:57344
-T:The system statistics collection daemon (development files)
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594256
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd-libs=5.8.0-r4 pkgconfig
-p:pc:libcollectdclient=5.8.0
-
 C:Q1z5/p37WJELbY2QvEpJHSw/GNzfo=
 P:lvm2-libs
 V:2.02.184-r0
@@ -86396,21 +86341,6 @@ t:1557135366
 c:5285dae30ac91fd9a327bc6cce16bbb4ba5f49d9
 D:perl-xml-simple pkgconfig
 p:pc:icon-naming-utils=0.8.90
-
-C:Q1C0Hx36+lD8n3nL28vY8u0gzUP+o=
-P:collectd-rrdtool
-V:5.8.0-r4
-A:armhf
-S:18180
-I:65536
-T:rrd* pluin for collectd
-U:http://collectd.org
-L:GPL-2.0
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557594257
-c:4f2e1e18ace6c9304eac8f57a28ebe37fafd655c
-D:collectd so:libc.musl-armhf.so.1 so:librrd.so.8
 
 C:Q1+3TdDIDSowTug3FTWBF+nNeerMo=
 P:net-snmp-libs

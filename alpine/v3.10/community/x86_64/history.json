@@ -55710,6 +55710,145 @@
       "versions": {
         "0.9609-r0": 1558373122
       }
+    },
+    "wireguard-tools-wg-quick": {
+      "origin": "wireguard-tools",
+      "versions": {
+        "0.0.20190406-r0": 1558436527
+      },
+      "dependencies": [
+        "wireguard-tools-wg",
+        "iproute2",
+        "bash",
+        "openresolv"
+      ],
+      "provides": [
+        "cmd:wg-quick"
+      ]
+    },
+    "wireguard-tools": {
+      "origin": "wireguard-tools",
+      "versions": {
+        "0.0.20190406-r0": 1558436527
+      },
+      "dependencies": [
+        "wireguard-tools-wg",
+        "wireguard-tools-wg-quick"
+      ]
+    },
+    "wireguard-vanilla": {
+      "origin": "wireguard-vanilla",
+      "versions": {
+        "4.19.41-r1": 1558436597
+      },
+      "dependencies": [
+        "linux-vanilla=4.19.41-r0"
+      ]
+    },
+    "mopidy-doc": {
+      "origin": "mopidy",
+      "versions": {
+        "2.2.2-r0": 1558436702
+      }
+    },
+    "mopidy": {
+      "origin": "mopidy",
+      "versions": {
+        "2.2.2-r0": 1558436702
+      },
+      "dependencies": [
+        "python",
+        "py-pykka",
+        "py-tornado",
+        "gst-plugins-base",
+        "gst-plugins-good",
+        "gst-plugins-ugly",
+        "py-gst",
+        "py-setuptools",
+        "py-libxml2",
+        "py-requests",
+        "py-six",
+        "/bin/sh"
+      ],
+      "provides": [
+        "cmd:mopidy",
+        "cmd:mopidyctl"
+      ]
+    },
+    "py2-pykka": {
+      "origin": "py-pykka",
+      "versions": {
+        "2.0.0-r0": 1558436658
+      },
+      "dependencies": [
+        "python2",
+        "python3",
+        "python2"
+      ]
+    },
+    "wireguard-tools-bash-completion": {
+      "origin": "wireguard-tools",
+      "versions": {
+        "0.0.20190406-r0": 1558436527
+      },
+      "dependencies": [
+        "bash"
+      ]
+    },
+    "mopidy-openrc": {
+      "origin": "mopidy",
+      "versions": {
+        "2.2.2-r0": 1558436702
+      }
+    },
+    "py-pykka": {
+      "origin": "py-pykka",
+      "versions": {
+        "2.0.0-r0": 1558436659
+      },
+      "dependencies": [
+        "python2",
+        "python3"
+      ]
+    },
+    "py3-pykka": {
+      "origin": "py-pykka",
+      "versions": {
+        "2.0.0-r0": 1558436658
+      },
+      "dependencies": [
+        "python2",
+        "python3",
+        "python3"
+      ]
+    },
+    "wireguard-tools-wg": {
+      "origin": "wireguard-tools",
+      "versions": {
+        "0.0.20190406-r0": 1558436527
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libmnl.so.0"
+      ],
+      "provides": [
+        "cmd:wg"
+      ]
+    },
+    "wireguard-virt": {
+      "origin": "wireguard-vanilla",
+      "versions": {
+        "4.19.41-r1": 1558436597
+      },
+      "dependencies": [
+        "linux-virt=4.19.41-r0"
+      ]
+    },
+    "wireguard-tools-doc": {
+      "origin": "wireguard-tools",
+      "versions": {
+        "0.0.20190406-r0": 1558436526
+      }
     }
   },
   "provide": {
