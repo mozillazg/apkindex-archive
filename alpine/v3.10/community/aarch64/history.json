@@ -53588,6 +53588,43 @@
       "versions": {
         "0.2.4-r0": 1558693758
       }
+    },
+    "slim": {
+      "origin": "slim",
+      "versions": {
+        "1.3.6-r9": 1558710042
+      },
+      "dependencies": [
+        "dbus",
+        "so:libX11.so.6",
+        "so:libXft.so.2",
+        "so:libXmu.so.6",
+        "so:libXrandr.so.2",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjpeg.so.8",
+        "so:libpng16.so.16",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libslim.so.1.3.6=1.3.6",
+        "cmd:slim"
+      ]
+    },
+    "slim-doc": {
+      "origin": "slim",
+      "versions": {
+        "1.3.6-r9": 1558710041
+      }
+    },
+    "slim-themes": {
+      "origin": "slim-themes",
+      "versions": {
+        "1.2.3-r3": 1558710081
+      },
+      "dependencies": [
+        "slim"
+      ]
     }
   },
   "provide": {
@@ -58803,6 +58840,10 @@
       "libtumbler-1.so.0": {
         "package": "tumbler",
         "version": "0.0.0"
+      },
+      "libslim.so.1.3.6": {
+        "package": "slim",
+        "version": "1.3.6"
       }
     },
     "package": {
