@@ -8013,7 +8013,8 @@
     "py3-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557697860
+        "2018.1.1-r2": 1557697860,
+        "2018.2.5-r0": 1558814007
       },
       "dependencies": [
         "py3-mako",
@@ -13599,7 +13600,8 @@
     "py2-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557697859
+        "2018.1.1-r2": 1557697859,
+        "2018.2.5-r0": 1558814007
       },
       "dependencies": [
         "py2-mako",
@@ -24482,7 +24484,8 @@
     "py-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557697861
+        "2018.1.1-r2": 1557697861,
+        "2018.2.5-r0": 1558814007
       },
       "dependencies": [
         "py-mako"
@@ -49853,6 +49856,59 @@
       "dependencies": [
         "dbus"
       ]
+    },
+    "py3-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558813928
+      },
+      "dependencies": [
+        "python3"
+      ]
+    },
+    "pev": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813551
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libcrypto.so.1.1"
+      ],
+      "provides": [
+        "so:libpe.so.1=1.0",
+        "cmd:ofs2rva",
+        "cmd:pedis",
+        "cmd:pehash",
+        "cmd:pepack",
+        "cmd:peres",
+        "cmd:pescan",
+        "cmd:pesec",
+        "cmd:pestr",
+        "cmd:readpe",
+        "cmd:rva2ofs"
+      ]
+    },
+    "py-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558813928
+      }
+    },
+    "py2-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558813928
+      },
+      "dependencies": [
+        "python2"
+      ]
+    },
+    "pev-doc": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813551
+      }
     }
   },
   "provide": {
@@ -53608,6 +53664,10 @@
       "libnm-gtk.so.0": {
         "package": "network-manager-applet",
         "version": "0.0.0"
+      },
+      "libpe.so.1": {
+        "package": "pev",
+        "version": "1.0"
       }
     },
     "package": {

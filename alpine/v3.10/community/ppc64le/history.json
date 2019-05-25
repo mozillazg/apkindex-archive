@@ -53967,6 +53967,35 @@
       "dependencies": [
         "lightdm"
       ]
+    },
+    "pev": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813558
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1"
+      ],
+      "provides": [
+        "so:libpe.so.1=1.0",
+        "cmd:ofs2rva",
+        "cmd:pedis",
+        "cmd:pehash",
+        "cmd:pepack",
+        "cmd:peres",
+        "cmd:pescan",
+        "cmd:pesec",
+        "cmd:pestr",
+        "cmd:readpe",
+        "cmd:rva2ofs"
+      ]
+    },
+    "pev-doc": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813558
+      }
     }
   },
   "provide": {
@@ -59206,6 +59235,10 @@
       "libnm-gtk.so.0": {
         "package": "network-manager-applet",
         "version": "0.0.0"
+      },
+      "libpe.so.1": {
+        "package": "pev",
+        "version": "1.0"
       }
     },
     "package": {

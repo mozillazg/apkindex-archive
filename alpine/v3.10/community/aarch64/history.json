@@ -6610,7 +6610,8 @@
     "py2-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557609087
+        "2018.1.1-r2": 1557609087,
+        "2018.2.5-r0": 1558814575
       },
       "dependencies": [
         "py2-mako",
@@ -43907,7 +43908,8 @@
     "py3-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557609091
+        "2018.1.1-r2": 1557609091,
+        "2018.2.5-r0": 1558814577
       },
       "dependencies": [
         "py3-mako",
@@ -44425,7 +44427,8 @@
     "py-opencl": {
       "origin": "py-opencl",
       "versions": {
-        "2018.1.1-r2": 1557609092
+        "2018.1.1-r2": 1557609092,
+        "2018.2.5-r0": 1558814577
       },
       "dependencies": [
         "py-mako"
@@ -53966,6 +53969,59 @@
         "gnome-themes-standard",
         "adwaita-icon-theme"
       ]
+    },
+    "pev": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813561
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libcrypto.so.1.1"
+      ],
+      "provides": [
+        "so:libpe.so.1=1.0",
+        "cmd:ofs2rva",
+        "cmd:pedis",
+        "cmd:pehash",
+        "cmd:pepack",
+        "cmd:peres",
+        "cmd:pescan",
+        "cmd:pesec",
+        "cmd:pestr",
+        "cmd:readpe",
+        "cmd:rva2ofs"
+      ]
+    },
+    "py2-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558814223
+      },
+      "dependencies": [
+        "python2"
+      ]
+    },
+    "py-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558814223
+      }
+    },
+    "pev-doc": {
+      "origin": "pev",
+      "versions": {
+        "0.80-r0": 1558813561
+      }
+    },
+    "py3-pybind11": {
+      "origin": "py-pybind11",
+      "versions": {
+        "2.2.4-r1": 1558814222
+      },
+      "dependencies": [
+        "python3"
+      ]
     }
   },
   "provide": {
@@ -59209,6 +59265,10 @@
       "libnm-gtk.so.0": {
         "package": "network-manager-applet",
         "version": "0.0.0"
+      },
+      "libpe.so.1": {
+        "package": "pev",
+        "version": "1.0"
       }
     },
     "package": {
