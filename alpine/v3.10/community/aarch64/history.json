@@ -16048,7 +16048,8 @@
     "network-manager-applet-lang": {
       "origin": "network-manager-applet",
       "versions": {
-        "1.8.18-r2": 1557740444
+        "1.8.18-r2": 1557740444,
+        "1.8.18-r3": 1558800723
       }
     },
     "clamsmtp-doc": {
@@ -17140,14 +17141,19 @@
     "network-manager-applet-dev": {
       "origin": "network-manager-applet",
       "versions": {
-        "1.8.18-r2": 1557740442
+        "1.8.18-r2": 1557740442,
+        "1.8.18-r3": 1558800723
       },
       "dependencies": [
-        "network-manager-applet=1.8.18-r2",
-        "pc:libnm",
+        "network-manager-applet=1.8.18-r3",
+        "pc:NetworkManager>=0.9.10",
+        "pc:gtk+-3.0>=3.4",
+        "pc:libnm-glib>=0.9.10",
+        "pc:libnm-util>=0.9.10",
         "pkgconfig"
       ],
       "provides": [
+        "pc:libnm-gtk=1.8.18",
         "pc:libnma=1.8.18"
       ]
     },
@@ -28565,7 +28571,8 @@
     "network-manager-applet-doc": {
       "origin": "network-manager-applet",
       "versions": {
-        "1.8.18-r2": 1557740443
+        "1.8.18-r2": 1557740443,
+        "1.8.18-r3": 1558800723
       }
     },
     "py3-flask-login": {
@@ -41650,7 +41657,8 @@
     "network-manager-applet": {
       "origin": "network-manager-applet",
       "versions": {
-        "1.8.18-r2": 1557740445
+        "1.8.18-r2": 1557740445,
+        "1.8.18-r3": 1558800724
       },
       "dependencies": [
         "so:libatk-1.0.so.0",
@@ -41664,9 +41672,12 @@
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgtk-3.so.0",
+        "so:libgudev-1.0.so.0",
         "so:libintl.so.8",
         "so:libjansson.so.4",
         "so:libmm-glib.so.0",
+        "so:libnm-glib.so.4",
+        "so:libnm-util.so.2",
         "so:libnm.so.0",
         "so:libnotify.so.4",
         "so:libpango-1.0.so.0",
@@ -41674,6 +41685,7 @@
         "so:libsecret-1.so.0"
       ],
       "provides": [
+        "so:libnm-gtk.so.0=0.0.0",
         "so:libnma.so.0=0.0.0",
         "cmd:nm-applet",
         "cmd:nm-connection-editor"
@@ -59192,6 +59204,10 @@
       },
       "liblightdm-qt5-3.so.0": {
         "package": "lightdm-qt5",
+        "version": "0.0.0"
+      },
+      "libnm-gtk.so.0": {
+        "package": "network-manager-applet",
         "version": "0.0.0"
       }
     },
