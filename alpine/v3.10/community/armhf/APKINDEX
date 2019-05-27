@@ -8949,22 +8949,6 @@ t:1557640695
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs tpm=1.3.2-r0
 
-C:Q1eQX9C0sbb0fQS0ZqO8m37bpyYKQ=
-P:cups-filters
-V:1.22.5-r1
-A:armhf
-S:703448
-I:2252800
-T:OpenPrinting CUPS filters and backends
-U:https://wiki.linuxfoundation.org/openprinting/cups-filters
-L:GPL-2.0-or-later LGPL-2.1-or-later MIT
-o:cups-filters
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558349835
-c:9944847197251fbd799c9d58756b4f4885449abf
-D:poppler-utils bc ttf-freefont so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsfilters.so.1 so:libcupsimage.so.2 so:libfontconfig.so.1 so:libfontembed.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:liblcms2.so.2 so:libpoppler.so.82 so:libqpdf.so.21 so:libstdc++.so.6 so:libz.so.1
-p:cmd:cups-browsed cmd:driverless cmd:foomatic-rip cmd:ttfread
-
 C:Q1OoKHRG77XjwoEO5xE3LzDerjZvc=
 P:py3-multidict-dev
 V:4.5.2-r1
@@ -13052,6 +13036,22 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1557414052
 c:d73ed5943741ece817a2b8e9eea2e68622e3c186
 i:docs mmh=0.3-r1
+
+C:Q1+abWoH0uq/qWvQQiWD0pMZf1vJM=
+P:cups-filters-libs
+V:1.22.5-r2
+A:armhf
+S:101253
+I:233472
+T:OpenPrinting CUPS filters and backends - cupsfilters and fontembed libraries
+U:https://wiki.linuxfoundation.org/openprinting/cups-filters
+L:GPL-2.0-or-later LGPL-2.1-or-later MIT
+o:cups-filters
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558989034
+c:446f14996174242394b31b2d61631fe053e602b3
+D:poppler-utils bc ttf-freefont ghostscript so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libjpeg.so.8 so:libpng16.so.16 so:libtiff.so.5
+p:so:libcupsfilters.so.1=1.0.0 so:libfontembed.so.1=1.0.0
 
 C:Q16o5R1c/GhLsuv2xYctaAmNQfqe8=
 P:php7-pecl-redis
@@ -18866,6 +18866,22 @@ c:08dc57cd6750bac8c1382beac0484fb40d199de4
 D:pc:dbus-1 pc:dbus-glib-1 pc:glib-2.0 pkgconfig
 p:pc:mate-settings-daemon=1.22.0
 
+C:Q16pAU9koY3ul/4jWexyJhD720/1g=
+P:cups-filters-dev
+V:1.22.5-r2
+A:armhf
+S:10863
+I:110592
+T:OpenPrinting CUPS filters and backends (development files)
+U:https://wiki.linuxfoundation.org/openprinting/cups-filters
+L:GPL-2.0-or-later LGPL-2.1-or-later MIT
+o:cups-filters
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558989033
+c:446f14996174242394b31b2d61631fe053e602b3
+D:cups-filters-libs=1.22.5-r2 pkgconfig
+p:pc:libcupsfilters=1.22.5 pc:libfontembed=1.22.5
+
 C:Q17V/mRjyzYhMSFsa4d/Ez4MqSpJE=
 P:roundcubemail-mysql
 V:1.3.8-r0
@@ -20260,21 +20276,6 @@ c:3aa4de4a56a86c52f0751856fdad42f3c634e5f2
 D:cryptsetup keyutils gettext rsync so:libc.musl-armhf.so.1 so:libkeyutils.so.1 so:libnss3.so so:libpam.so.0
 p:so:libecryptfs.so.1=1.0.0 cmd:ecryptfs-add-passphrase cmd:ecryptfs-find cmd:ecryptfs-insert-wrapped-passphrase-into-keyring cmd:ecryptfs-manager cmd:ecryptfs-migrate-home cmd:ecryptfs-mount-private cmd:ecryptfs-recover-private cmd:ecryptfs-rewrap-passphrase cmd:ecryptfs-rewrite-file cmd:ecryptfs-setup-private cmd:ecryptfs-setup-swap cmd:ecryptfs-stat cmd:ecryptfs-umount-private cmd:ecryptfs-unwrap-passphrase cmd:ecryptfs-verify cmd:ecryptfs-wrap-passphrase cmd:ecryptfsd cmd:mount.ecryptfs cmd:mount.ecryptfs_private cmd:umount.ecryptfs cmd:umount.ecryptfs_private
 
-C:Q1JvcIrsBjP7Ib98j4o/YptpHHfCo=
-P:gcompat
-V:0.3.0-r0
-A:armhf
-S:26001
-I:73728
-T:The GNU C Library compatibility layer for musl
-U:https://code.foxkit.us/adelie/gcompat
-L:UoI-NCSA
-o:gcompat
-t:1557433468
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:libc6-compat so:libc.musl-armhf.so.1
-p:so:ld-linux-armhf.so.3=3 so:libgcompat.so.0=0
-
 C:Q1fVutfVFW77U776qjy7KlihbjzVs=
 P:xchat
 V:2.8.8-r16
@@ -21111,6 +21112,22 @@ o:py-zipstream
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557613120
 c:1b848cd37f8beb9a35b57d88f7d02c429c7d5914
+
+C:Q10iqaJBJwLUWfxgXBiodxD/+3kKU=
+P:cups-filters
+V:1.22.5-r2
+A:armhf
+S:703339
+I:2252800
+T:OpenPrinting CUPS filters and backends
+U:https://wiki.linuxfoundation.org/openprinting/cups-filters
+L:GPL-2.0-or-later LGPL-2.1-or-later MIT
+o:cups-filters
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558989034
+c:446f14996174242394b31b2d61631fe053e602b3
+D:poppler-utils bc ttf-freefont ghostscript so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsfilters.so.1 so:libcupsimage.so.2 so:libfontconfig.so.1 so:libfontembed.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:liblcms2.so.2 so:libpoppler.so.82 so:libqpdf.so.21 so:libstdc++.so.6 so:libz.so.1
+p:cmd:cups-browsed cmd:driverless cmd:foomatic-rip cmd:ttfread
 
 C:Q1VjUF3gFVQJ5Fsz7oKlA+lR3Vs4I=
 P:claws-mail-plugins-notification
@@ -22750,21 +22767,6 @@ t:1557661168
 c:35c4fd0f021249f857f92a2daf3dde95bb2226b3
 D:curl-dev libssh2-dev libgit2-0.27=0.27.8-r0 pc:openssl pc:zlib pkgconfig
 p:pc:libgit2=0.27.8
-
-C:Q1fQhBdpJby3b2YztaHy0AD3EbjzM=
-P:py-pygit2
-V:0.28.1-r0
-A:armhf
-S:1214
-I:4096
-T:Python bindings for libgit2
-U:https://github.com/libgit2/pygit2
-L:GPL-2.0-only-WITH-GCC-exception-2.0
-o:py-pygit2
-m:Drew DeVault <sir@cmpwn.com>
-t:1557558556
-c:f02e444c7ad5c9ea77fa4ec7b0242aae2a1b423c
-D:py-cffi py-six
 
 C:Q1vq+J/7KpkL2wgsjW1YAaemenrhI=
 P:libdroplet-dev
@@ -24578,6 +24580,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557420320
 c:309f6e65d8ddfeb8189f9bfb85e960d5ebbfc09e
 i:docs perl-hash-mostutils=1.07-r1
+
+C:Q1NbUcRwHp+U+Q8nI3Jh7sbLeGe44=
+P:gcompat
+V:0.4.0-r0
+A:armhf
+S:19379
+I:61440
+T:The GNU C Library compatibility layer for musl
+U:https://code.foxkit.us/adelie/gcompat
+L:NCSA
+o:gcompat
+t:1558989041
+c:4ec47414ebafd87dff9b1a12f9472e5f8e713adb
+D:so:libc.musl-armhf.so.1 so:libucontext.so.0
+p:so:ld-linux-armhf.so.3=3 so:libgcompat.so.0=0
 
 C:Q15WvhB16Qe2KInsvxhumMh767Qzc=
 P:orage
@@ -26899,21 +26916,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1558970769
 c:5e44ecc853ea2a9c2c70743a3a7886f4324db85f
 D:perl-json perl-module-runtime perl-mime-base64 perl-carp
-
-C:Q1O/bQ+HQfbipnMNuowdsnsbmX6KA=
-P:cups-filters-doc
-V:1.22.5-r1
-A:armhf
-S:89542
-I:290816
-T:OpenPrinting CUPS filters and backends (documentation)
-U:https://wiki.linuxfoundation.org/openprinting/cups-filters
-L:GPL-2.0-or-later LGPL-2.1-or-later MIT
-o:cups-filters
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558349835
-c:9944847197251fbd799c9d58756b4f4885449abf
-i:docs cups-filters=1.22.5-r1
 
 C:Q1i8+sxpwwoqHtnylncq6IEveX4KQ=
 P:libvterm
@@ -37095,6 +37097,22 @@ c:c30d95ff38b889f04544a271ebe897597a0daa6a
 D:php7-common so:libc.musl-armhf.so.1
 p:php7-igbinary=3.0.1-r0
 
+C:Q1eW4h7y+eAsDuhAa6kylX9HS55LU=
+P:py3-pygit2
+V:0.28.2-r0
+A:armhf
+S:165562
+I:741376
+T:Python bindings for libgit2
+U:https://github.com/libgit2/pygit2
+L:GPL-2.0 WITH GCC-exception-2.0
+o:py3-pygit2
+m:Drew DeVault <sir@cmpwn.com>
+t:1558992281
+c:7ed3b924c77c18509ab30366c9d1cfd804898f5f
+D:py3-cffi py3-six so:libc.musl-armhf.so.1 so:libgit2.so.28 so:libpython3.7m.so.1.0
+p:py-pygit=0.28.2-r0
+
 C:Q1WwLGBJ90NVqIz6etjALyWjXyirE=
 P:libreoffice-lang-lb
 V:6.2.3.2-r2
@@ -37564,22 +37582,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1558434372
 c:d21154493112f6885816074432fdd257876712c8
 i:openrc gitea=1.8.1-r0
-
-C:Q1Ko8pHJyKGutkOFVurMRwoSeV4Uw=
-P:py3-pygit2
-V:0.28.1-r0
-A:armhf
-S:165416
-I:741376
-T:Python bindings for libgit2 (for python3)
-U:https://github.com/libgit2/pygit2
-L:GPL-2.0-only-WITH-GCC-exception-2.0
-o:py-pygit2
-m:Drew DeVault <sir@cmpwn.com>
-t:1557558556
-c:f02e444c7ad5c9ea77fa4ec7b0242aae2a1b423c
-D:py3-cffi py3-six so:libc.musl-armhf.so.1 so:libgit2.so.28 so:libpython3.7m.so.1.0
-i:py-pygit2=0.28.1-r0 python3
 
 C:Q1C0pF3evz375KJYqKtBFQuj4/V6g=
 P:pv-doc
@@ -40454,22 +40456,6 @@ t:1557412488
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:py-gtk xrandr
 p:cmd:arandr cmd:unxrandr
-
-C:Q1mH+gaYrGpuRXB1xMVllpu7eFGaQ=
-P:cups-filters-libs
-V:1.22.5-r1
-A:armhf
-S:101251
-I:233472
-T:OpenPrinting CUPS filters and backends - cupsfilters and fontembed libraries
-U:https://wiki.linuxfoundation.org/openprinting/cups-filters
-L:GPL-2.0-or-later LGPL-2.1-or-later MIT
-o:cups-filters
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558349835
-c:9944847197251fbd799c9d58756b4f4885449abf
-D:poppler-utils bc ttf-freefont so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libjpeg.so.8 so:libpng16.so.16 so:libtiff.so.5
-p:so:libcupsfilters.so.1=1.0.0 so:libfontembed.so.1=1.0.0
 
 C:Q1mJJJsrBNfywAqi7eJZszOk/hHBQ=
 P:luufs
@@ -43760,6 +43746,21 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1557474526
 c:02b3532c41e9c4c105baed5a077613f08746d8f2
 i:docs outils=0.8-r1
+
+C:Q1Zv2WiC+U08od8fSnskMn5NVDGMU=
+P:cups-filters-doc
+V:1.22.5-r2
+A:armhf
+S:89558
+I:290816
+T:OpenPrinting CUPS filters and backends (documentation)
+U:https://wiki.linuxfoundation.org/openprinting/cups-filters
+L:GPL-2.0-or-later LGPL-2.1-or-later MIT
+o:cups-filters
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558989033
+c:446f14996174242394b31b2d61631fe053e602b3
+i:docs cups-filters=1.22.5-r2
 
 C:Q1B0uFrCwaM9BzIc4ssbfXO+Cg8G8=
 P:xfce4-clipman-plugin-lang
@@ -58301,22 +58302,6 @@ c:27d1e194717b1696b3169ad43df027876247b91a
 D:libwnck=2.31.0-r6 pc:cairo pc:glib-2.0 pc:gobject-2.0 pc:gtk+-2.0 pc:libstartup-notification-1.0 pc:pango pc:x11 pc:xres pkgconfig
 p:pc:libwnck-1.0=2.31.0
 
-C:Q1eshk+lH8X+I0sfeTK6WLGaC2K8Y=
-P:py2-pygit2
-V:0.28.1-r0
-A:armhf
-S:170270
-I:753664
-T:Python bindings for libgit2 (for python2)
-U:https://github.com/libgit2/pygit2
-L:GPL-2.0-only-WITH-GCC-exception-2.0
-o:py-pygit2
-m:Drew DeVault <sir@cmpwn.com>
-t:1557558554
-c:f02e444c7ad5c9ea77fa4ec7b0242aae2a1b423c
-D:py2-cffi py2-six so:libc.musl-armhf.so.1 so:libgit2.so.28 so:libpython2.7.so.1.0
-i:py-pygit2=0.28.1-r0 python2
-
 C:Q1XggKJ7UTAMAYpvRmcHcyXOOkU8g=
 P:mate-themes
 V:3.22.18-r0
@@ -62371,22 +62356,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557420352
 c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
 D:so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
-
-C:Q1LNBw8gbarOdbADTeTui7WhzutNs=
-P:cups-filters-dev
-V:1.22.5-r1
-A:armhf
-S:10881
-I:110592
-T:OpenPrinting CUPS filters and backends (development files)
-U:https://wiki.linuxfoundation.org/openprinting/cups-filters
-L:GPL-2.0-or-later LGPL-2.1-or-later MIT
-o:cups-filters
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558349834
-c:9944847197251fbd799c9d58756b4f4885449abf
-D:cups-filters-libs=1.22.5-r1 pkgconfig
-p:pc:libcupsfilters=1.22.5 pc:libfontembed=1.22.5
 
 C:Q1nEh5rB6eKt6xsJxg6hZO/q7lyxo=
 P:lua5.2-dromozoa-utf8

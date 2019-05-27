@@ -598,9 +598,10 @@
       ]
     },
     "py3-pygit2": {
-      "origin": "py-pygit2",
+      "origin": "py3-pygit2",
       "versions": {
-        "0.28.1-r0": 1557409978
+        "0.28.1-r0": 1557409978,
+        "0.28.2-r0": 1558992285
       },
       "dependencies": [
         "py3-cffi",
@@ -608,6 +609,9 @@
         "so:libc.musl-ppc64le.so.1",
         "so:libgit2.so.28",
         "so:libpython3.7m.so.1.0"
+      ],
+      "provides": [
+        "py-pygit=0.28.2-r0"
       ]
     },
     "attica-dev": {
@@ -1187,11 +1191,12 @@
     "gcompat": {
       "origin": "gcompat",
       "versions": {
-        "0.3.0-r0": 1557517448
+        "0.3.0-r0": 1557517448,
+        "0.4.0-r0": 1558989061
       },
       "dependencies": [
-        "libc6-compat",
-        "so:libc.musl-ppc64le.so.1"
+        "so:libc.musl-ppc64le.so.1",
+        "so:libucontext.so.0"
       ],
       "provides": [
         "so:ld64.so.2=2",
@@ -53238,12 +53243,14 @@
     "cups-filters-libs": {
       "origin": "cups-filters",
       "versions": {
-        "1.22.5-r1": 1558349890
+        "1.22.5-r1": 1558349890,
+        "1.22.5-r2": 1558988934
       },
       "dependencies": [
         "poppler-utils",
         "bc",
         "ttf-freefont",
+        "ghostscript",
         "so:libc.musl-ppc64le.so.1",
         "so:libcups.so.2",
         "so:libdbus-1.so.3",
@@ -53259,10 +53266,11 @@
     "cups-filters-dev": {
       "origin": "cups-filters",
       "versions": {
-        "1.22.5-r1": 1558349889
+        "1.22.5-r1": 1558349889,
+        "1.22.5-r2": 1558988934
       },
       "dependencies": [
-        "cups-filters-libs=1.22.5-r1",
+        "cups-filters-libs=1.22.5-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -53358,18 +53366,21 @@
     "cups-filters-doc": {
       "origin": "cups-filters",
       "versions": {
-        "1.22.5-r1": 1558349890
+        "1.22.5-r1": 1558349890,
+        "1.22.5-r2": 1558988934
       }
     },
     "cups-filters": {
       "origin": "cups-filters",
       "versions": {
-        "1.22.5-r1": 1558349890
+        "1.22.5-r1": 1558349890,
+        "1.22.5-r2": 1558988934
       },
       "dependencies": [
         "poppler-utils",
         "bc",
         "ttf-freefont",
+        "ghostscript",
         "so:libavahi-client.so.3",
         "so:libavahi-common.so.3",
         "so:libavahi-glib.so.1",
@@ -60148,6 +60159,10 @@
       "php7-protobuf": {
         "package": "php7-pecl-protobuf",
         "version": "3.7.1-r0"
+      },
+      "py-pygit": {
+        "package": "py3-pygit2",
+        "version": "0.28.2-r0"
       }
     }
   }
