@@ -1024,11 +1024,12 @@
     },
     "daq-dev": {
       "versions": {
-        "2.0.6-r2": 1557072556
+        "2.0.6-r2": 1557072556,
+        "2.0.6-r3": 1558982782
       },
       "origin": "daq",
       "dependencies": [
-        "daq=2.0.6-r2"
+        "daq=2.0.6-r3"
       ],
       "provides": [
         "cmd:daq-modules-config"
@@ -2022,7 +2023,8 @@
     },
     "fish": {
       "versions": {
-        "3.0.2-r2": 1557139152
+        "3.0.2-r2": 1557139152,
+        "3.0.2-r3": 1558984862
       },
       "origin": "fish",
       "dependencies": [
@@ -2724,7 +2726,8 @@
     "snort-doc": {
       "versions": {
         "2.9.13-r0": 1557142334,
-        "2.9.13-r1": 1558358480
+        "2.9.13-r1": 1558358480,
+        "2.9.13-r2": 1558982849
       },
       "origin": "snort"
     },
@@ -5833,7 +5836,8 @@
     },
     "fish-doc": {
       "versions": {
-        "3.0.2-r2": 1557139152
+        "3.0.2-r2": 1557139152,
+        "3.0.2-r3": 1558984862
       },
       "origin": "fish"
     },
@@ -6328,13 +6332,14 @@
     },
     "fish-tools": {
       "versions": {
-        "3.0.2-r2": 1557139152
+        "3.0.2-r2": 1557139152,
+        "3.0.2-r3": 1558984862
       },
       "origin": "fish",
       "dependencies": [
         "fish",
         "python",
-        "man-db"
+        "cmd:man"
       ]
     },
     "imake-doc": {
@@ -6760,12 +6765,15 @@
     "zfs-vanilla": {
       "versions": {
         "4.19.41-r0": 1557317921,
-        "4.19.45-r0": 1558701689
+        "4.19.45-r0": 1558701689,
+        "4.19.45-r1": 1558982763
       },
       "origin": "zfs-vanilla",
       "dependencies": [
-        "spl-vanilla",
         "linux-vanilla=4.19.45-r0"
+      ],
+      "provides": [
+        "spl-vanilla"
       ]
     },
     "openldap-back-shell": {
@@ -7215,16 +7223,17 @@
     },
     "zfs-utils-py": {
       "versions": {
-        "0.7.13-r0": 1557070621
+        "0.7.13-r0": 1557070621,
+        "0.8.0-r0": 1558982213
       },
       "origin": "zfs",
       "dependencies": [
-        "python2"
+        "python3"
       ],
       "provides": [
-        "cmd:arc_summary.py",
-        "cmd:arcstat.py",
-        "cmd:dbufstat.py"
+        "cmd:arc_summary",
+        "cmd:arcstat",
+        "cmd:dbufstat"
       ]
     },
     "b43-fwcutter": {
@@ -7656,12 +7665,14 @@
     },
     "zfs-libs": {
       "versions": {
-        "0.7.13-r0": 1557070618
+        "0.7.13-r0": 1557070618,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs",
       "dependencies": [
         "so:libblkid.so.1",
         "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
         "so:libintl.so.8",
         "so:libtirpc.so.3",
         "so:libuuid.so.1",
@@ -9527,11 +9538,12 @@
     },
     "gst-plugins-base-dev": {
       "versions": {
-        "1.14.4-r0": 1557081765
+        "1.14.4-r0": 1557081765,
+        "1.16.0-r0": 1558984249
       },
       "origin": "gst-plugins-base",
       "dependencies": [
-        "gst-plugins-base=1.14.4-r0",
+        "gst-plugins-base=1.16.0-r0",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gstreamer-1.0",
@@ -9540,19 +9552,19 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gstreamer-allocators-1.0=1.14.4",
-        "pc:gstreamer-app-1.0=1.14.4",
-        "pc:gstreamer-audio-1.0=1.14.4",
-        "pc:gstreamer-fft-1.0=1.14.4",
-        "pc:gstreamer-gl-1.0=1.14.4",
-        "pc:gstreamer-pbutils-1.0=1.14.4",
-        "pc:gstreamer-plugins-base-1.0=1.14.4",
-        "pc:gstreamer-riff-1.0=1.14.4",
-        "pc:gstreamer-rtp-1.0=1.14.4",
-        "pc:gstreamer-rtsp-1.0=1.14.4",
-        "pc:gstreamer-sdp-1.0=1.14.4",
-        "pc:gstreamer-tag-1.0=1.14.4",
-        "pc:gstreamer-video-1.0=1.14.4"
+        "pc:gstreamer-allocators-1.0=1.16.0",
+        "pc:gstreamer-app-1.0=1.16.0",
+        "pc:gstreamer-audio-1.0=1.16.0",
+        "pc:gstreamer-fft-1.0=1.16.0",
+        "pc:gstreamer-gl-1.0=1.16.0",
+        "pc:gstreamer-pbutils-1.0=1.16.0",
+        "pc:gstreamer-plugins-base-1.0=1.16.0",
+        "pc:gstreamer-riff-1.0=1.16.0",
+        "pc:gstreamer-rtp-1.0=1.16.0",
+        "pc:gstreamer-rtsp-1.0=1.16.0",
+        "pc:gstreamer-sdp-1.0=1.16.0",
+        "pc:gstreamer-tag-1.0=1.16.0",
+        "pc:gstreamer-video-1.0=1.16.0"
       ]
     },
     "libev-doc": {
@@ -12612,16 +12624,17 @@
     },
     "dbus-dev": {
       "versions": {
-        "1.12.12-r0": 1557245863
+        "1.12.12-r0": 1557245863,
+        "1.12.14-r0": 1558984988
       },
       "origin": "dbus",
       "dependencies": [
         "util-linux-dev",
-        "dbus-libs=1.12.12-r0",
+        "dbus-libs=1.12.14-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:dbus-1=1.12.12"
+        "pc:dbus-1=1.12.14"
       ]
     },
     "font-micro-misc": {
@@ -13371,7 +13384,8 @@
     },
     "fish-dev": {
       "versions": {
-        "3.0.2-r2": 1557139152
+        "3.0.2-r2": 1557139152,
+        "3.0.2-r3": 1558984862
       },
       "origin": "fish",
       "dependencies": [
@@ -19660,7 +19674,8 @@
     },
     "zfs-udev": {
       "versions": {
-        "0.7.13-r0": 1557070619
+        "0.7.13-r0": 1557070619,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs",
       "dependencies": [
@@ -21998,7 +22013,8 @@
     },
     "zfs-openrc": {
       "versions": {
-        "0.7.13-r0": 1557070617
+        "0.7.13-r0": 1557070617,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs"
     },
@@ -22744,7 +22760,8 @@
     },
     "alpine-baselayout": {
       "versions": {
-        "3.1.1-r0": 1556895229
+        "3.1.1-r0": 1556895229,
+        "3.1.1-r1": 1558982852
       },
       "origin": "alpine-baselayout",
       "dependencies": [
@@ -26502,7 +26519,8 @@
     },
     "dbus": {
       "versions": {
-        "1.12.12-r0": 1557245864
+        "1.12.12-r0": 1557245864,
+        "1.12.14-r0": 1558984989
       },
       "origin": "dbus",
       "dependencies": [
@@ -27799,7 +27817,8 @@
     },
     "dbus-doc": {
       "versions": {
-        "1.12.12-r0": 1557245863
+        "1.12.12-r0": 1557245863,
+        "1.12.14-r0": 1558984988
       },
       "origin": "dbus"
     },
@@ -32094,7 +32113,8 @@
     },
     "zfs": {
       "versions": {
-        "0.7.13-r0": 1557070621
+        "0.7.13-r0": 1557070621,
+        "0.8.0-r0": 1558982213
       },
       "origin": "zfs",
       "dependencies": [
@@ -32109,6 +32129,7 @@
         "so:libzpool.so.2"
       ],
       "provides": [
+        "spl",
         "cmd:fsck.zfs",
         "cmd:mount.zfs",
         "cmd:raidz_test",
@@ -32118,7 +32139,6 @@
         "cmd:zgenhostid",
         "cmd:zhack",
         "cmd:zinject",
-        "cmd:zpios",
         "cmd:zpool",
         "cmd:zstreamdump",
         "cmd:ztest"
@@ -32360,7 +32380,8 @@
     },
     "man-pages": {
       "versions": {
-        "5.00-r1": 1557039674
+        "5.00-r1": 1557039674,
+        "5.01-r0": 1558985098
       },
       "origin": "man-pages"
     },
@@ -34827,7 +34848,8 @@
     "zfs-vanilla-dev": {
       "versions": {
         "4.19.41-r0": 1557317921,
-        "4.19.45-r0": 1558701689
+        "4.19.45-r0": 1558701689,
+        "4.19.45-r1": 1558982763
       },
       "origin": "zfs-vanilla",
       "dependencies": [
@@ -34835,8 +34857,7 @@
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-vanilla-dev=4.19.45-r0",
-        "spl-vanilla-dev"
+        "linux-vanilla-dev=4.19.45-r0"
       ]
     },
     "uwsgi-logcrypto": {
@@ -35950,13 +35971,17 @@
     },
     "zfs-scripts": {
       "versions": {
-        "0.7.13-r0": 1557070620
+        "0.7.13-r0": 1557070620,
+        "0.8.0-r0": 1558982213
       },
       "origin": "zfs",
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
         "so:libintl.so.8",
-        "so:libzfs.so.2"
+        "so:libnvpair.so.1",
+        "so:libzfs.so.2",
+        "so:libzfs_core.so.1",
+        "so:libzpool.so.2"
       ]
     },
     "udisks-dev": {
@@ -36207,16 +36232,17 @@
     },
     "daq": {
       "versions": {
-        "2.0.6-r2": 1557072558
+        "2.0.6-r2": 1557072558,
+        "2.0.6-r3": 1558982782
       },
       "origin": "daq",
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libpcap.so.1"
+        "so:libpcap.so.1",
+        "so:libsfbpf.so.0"
       ],
       "provides": [
-        "so:libdaq.so.2=2.0.4",
-        "so:libsfbpf.so.0=0.0.1"
+        "so:libdaq.so.2=2.0.4"
       ]
     },
     "perl-server-starter": {
@@ -36611,14 +36637,15 @@
     },
     "dbus-libs": {
       "versions": {
-        "1.12.12-r0": 1557245863
+        "1.12.12-r0": 1557245863,
+        "1.12.14-r0": 1558984988
       },
       "origin": "dbus",
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libdbus-1.so.3=3.19.9"
+        "so:libdbus-1.so.3=3.19.10"
       ]
     },
     "libogg": {
@@ -41544,11 +41571,12 @@
     },
     "dbus-x11": {
       "versions": {
-        "1.12.12-r0": 1557245863
+        "1.12.12-r0": 1557245863,
+        "1.12.14-r0": 1558984988
       },
       "origin": "dbus",
       "dependencies": [
-        "dbus=1.12.12-r0",
+        "dbus=1.12.14-r0",
         "so:libX11.so.6",
         "so:libc.musl-x86_64.so.1",
         "so:libdbus-1.so.3"
@@ -44486,7 +44514,8 @@
     },
     "zfs-dracut": {
       "versions": {
-        "0.7.13-r0": 1557070618
+        "0.7.13-r0": 1557070618,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs"
     },
@@ -45686,7 +45715,8 @@
     "snort-openrc": {
       "versions": {
         "2.9.13-r0": 1557142335,
-        "2.9.13-r1": 1558358480
+        "2.9.13-r1": 1558358480,
+        "2.9.13-r2": 1558982850
       },
       "origin": "snort"
     },
@@ -45872,7 +45902,8 @@
     },
     "gst-plugins-base": {
       "versions": {
-        "1.14.4-r0": 1557081768
+        "1.14.4-r0": 1557081768,
+        "1.16.0-r0": 1558984252
       },
       "origin": "gst-plugins-base",
       "dependencies": [
@@ -45913,39 +45944,41 @@
       ],
       "provides": [
         "so:libgstadder.so=0",
-        "so:libgstallocators-1.0.so.0=0.1404.0",
+        "so:libgstallocators-1.0.so.0=0.1600.0",
         "so:libgstalsa.so=0",
-        "so:libgstapp-1.0.so.0=0.1404.0",
+        "so:libgstapp-1.0.so.0=0.1600.0",
         "so:libgstapp.so=0",
-        "so:libgstaudio-1.0.so.0=0.1404.0",
+        "so:libgstaudio-1.0.so.0=0.1600.0",
         "so:libgstaudioconvert.so=0",
         "so:libgstaudiomixer.so=0",
         "so:libgstaudiorate.so=0",
         "so:libgstaudioresample.so=0",
         "so:libgstaudiotestsrc.so=0",
         "so:libgstcdparanoia.so=0",
+        "so:libgstcompositor.so=0",
         "so:libgstencoding.so=0",
-        "so:libgstfft-1.0.so.0=0.1404.0",
+        "so:libgstfft-1.0.so.0=0.1600.0",
         "so:libgstgio.so=0",
-        "so:libgstgl-1.0.so.0=0.1404.0",
+        "so:libgstgl-1.0.so.0=0.1600.0",
         "so:libgstogg.so=0",
         "so:libgstopengl.so=0",
         "so:libgstopus.so=0",
+        "so:libgstoverlaycomposition.so=0",
         "so:libgstpango.so=0",
         "so:libgstpbtypes.so=0",
-        "so:libgstpbutils-1.0.so.0=0.1404.0",
+        "so:libgstpbutils-1.0.so.0=0.1600.0",
         "so:libgstplayback.so=0",
         "so:libgstrawparse.so=0",
-        "so:libgstriff-1.0.so.0=0.1404.0",
-        "so:libgstrtp-1.0.so.0=0.1404.0",
-        "so:libgstrtsp-1.0.so.0=0.1404.0",
-        "so:libgstsdp-1.0.so.0=0.1404.0",
+        "so:libgstriff-1.0.so.0=0.1600.0",
+        "so:libgstrtp-1.0.so.0=0.1600.0",
+        "so:libgstrtsp-1.0.so.0=0.1600.0",
+        "so:libgstsdp-1.0.so.0=0.1600.0",
         "so:libgstsubparse.so=0",
-        "so:libgsttag-1.0.so.0=0.1404.0",
+        "so:libgsttag-1.0.so.0=0.1600.0",
         "so:libgsttcp.so=0",
         "so:libgsttheora.so=0",
         "so:libgsttypefindfunctions.so=0",
-        "so:libgstvideo-1.0.so.0=0.1404.0",
+        "so:libgstvideo-1.0.so.0=0.1600.0",
         "so:libgstvideoconvert.so=0",
         "so:libgstvideorate.so=0",
         "so:libgstvideoscale.so=0",
@@ -47714,7 +47747,8 @@
     "snort": {
       "versions": {
         "2.9.13-r0": 1557142335,
-        "2.9.13-r1": 1558358480
+        "2.9.13-r1": 1558358480,
+        "2.9.13-r2": 1558982850
       },
       "origin": "snort",
       "dependencies": [
@@ -49424,7 +49458,8 @@
     },
     "gst-plugins-base-lang": {
       "versions": {
-        "1.14.4-r0": 1557081767
+        "1.14.4-r0": 1557081767,
+        "1.16.0-r0": 1558984251
       },
       "origin": "gst-plugins-base"
     },
@@ -50307,7 +50342,8 @@
     },
     "zfs-doc": {
       "versions": {
-        "0.7.13-r0": 1557070617
+        "0.7.13-r0": 1557070617,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs"
     },
@@ -56725,12 +56761,13 @@
     "snort-dev": {
       "versions": {
         "2.9.13-r0": 1557142335,
-        "2.9.13-r1": 1558358480
+        "2.9.13-r1": 1558358480,
+        "2.9.13-r2": 1558982850
       },
       "origin": "snort",
       "dependencies": [
         "pkgconfig",
-        "snort=2.9.13-r1"
+        "snort=2.9.13-r2"
       ],
       "provides": [
         "pc:snort=2.9.13",
@@ -63082,21 +63119,23 @@
     },
     "zfs-dev": {
       "versions": {
-        "0.7.13-r0": 1557070616
+        "0.7.13-r0": 1557070616,
+        "0.8.0-r0": 1558982212
       },
       "origin": "zfs",
       "dependencies": [
-        "glib-dev",
-        "e2fsprogs-dev",
-        "util-linux-dev",
-        "libtirpc-dev",
         "attr-dev",
+        "e2fsprogs-dev",
+        "glib-dev",
+        "libtirpc-dev",
+        "openssl-dev",
+        "util-linux-dev",
         "pkgconfig",
-        "zfs-libs=0.7.13-r0"
+        "zfs-libs=0.8.0-r0"
       ],
       "provides": [
-        "pc:libzfs=0.7.13",
-        "pc:libzfs_core=0.7.13"
+        "pc:libzfs=0.8.0",
+        "pc:libzfs_core=0.8.0"
       ]
     },
     "perl-datetime-locale": {
@@ -64303,7 +64342,8 @@
     },
     "gst-plugins-base-doc": {
       "versions": {
-        "1.14.4-r0": 1557081766
+        "1.14.4-r0": 1557081766,
+        "1.16.0-r0": 1558984251
       },
       "origin": "gst-plugins-base"
     },
@@ -67274,7 +67314,8 @@
     },
     "dbus-openrc": {
       "versions": {
-        "1.12.12-r0": 1557245864
+        "1.12.12-r0": 1557245864,
+        "1.12.14-r0": 1558984989
       },
       "origin": "dbus"
     },
@@ -69735,6 +69776,34 @@
       "provides": [
         "so:libvolume_key.so.1=1.2.3",
         "cmd:volume_key"
+      ]
+    },
+    "py3-pyzfs": {
+      "origin": "zfs",
+      "versions": {
+        "0.8.0-r0": 1558982213
+      },
+      "dependencies": [
+        "python3",
+        "zfs"
+      ]
+    },
+    "daq-static": {
+      "origin": "daq",
+      "versions": {
+        "2.0.6-r3": 1558982782
+      }
+    },
+    "daq-sfbpf": {
+      "origin": "daq",
+      "versions": {
+        "2.0.6-r3": 1558982782
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:libsfbpf.so.0=0.0.1"
       ]
     }
   },
@@ -72769,7 +72838,7 @@
         "version": "2.0.4"
       },
       "libsfbpf.so.0": {
-        "package": "daq",
+        "package": "daq-sfbpf",
         "version": "0.0.1"
       },
       "libpangox-1.0.so.0": {
@@ -72786,7 +72855,7 @@
       },
       "libdbus-1.so.3": {
         "package": "dbus-libs",
-        "version": "3.19.9"
+        "version": "3.19.10"
       },
       "libogg.so.0": {
         "package": "libogg",
@@ -73970,7 +74039,7 @@
       },
       "libgstallocators-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstalsa.so": {
         "package": "gst-plugins-base",
@@ -73978,7 +74047,7 @@
       },
       "libgstapp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstapp.so": {
         "package": "gst-plugins-base",
@@ -73986,7 +74055,7 @@
       },
       "libgstaudio-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstaudioconvert.so": {
         "package": "gst-plugins-base",
@@ -74018,7 +74087,7 @@
       },
       "libgstfft-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstgio.so": {
         "package": "gst-plugins-base",
@@ -74026,7 +74095,7 @@
       },
       "libgstgl-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstogg.so": {
         "package": "gst-plugins-base",
@@ -74050,7 +74119,7 @@
       },
       "libgstpbutils-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstplayback.so": {
         "package": "gst-plugins-base",
@@ -74062,19 +74131,19 @@
       },
       "libgstriff-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstrtp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstrtsp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstsdp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstsubparse.so": {
         "package": "gst-plugins-base",
@@ -74082,7 +74151,7 @@
       },
       "libgsttag-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgsttcp.so": {
         "package": "gst-plugins-base",
@@ -74098,7 +74167,7 @@
       },
       "libgstvideo-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstvideoconvert.so": {
         "package": "gst-plugins-base",
@@ -76175,6 +76244,14 @@
       "libvolume_key.so.1": {
         "package": "volume_key",
         "version": "1.2.3"
+      },
+      "libgstcompositor.so": {
+        "package": "gst-plugins-base",
+        "version": "0"
+      },
+      "libgstoverlaycomposition.so": {
+        "package": "gst-plugins-base",
+        "version": "0"
       }
     },
     "package": {
@@ -76784,6 +76861,14 @@
       },
       "freeswitch-sounds-pt-BR-karina-8000": {
         "package": "freeswitch-sounds-pt-br-karina-8000",
+        "version": 0
+      },
+      "spl-vanilla": {
+        "package": "zfs-vanilla",
+        "version": 0
+      },
+      "spl": {
+        "package": "zfs",
         "version": 0
       }
     }

@@ -1607,13 +1607,17 @@
     },
     "zfs-scripts": {
       "versions": {
-        "0.7.13-r0": 1557171682
+        "0.7.13-r0": 1557171682,
+        "0.8.0-r0": 1558982898
       },
       "origin": "zfs",
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libintl.so.8",
-        "so:libzfs.so.2"
+        "so:libnvpair.so.1",
+        "so:libzfs.so.2",
+        "so:libzfs_core.so.1",
+        "so:libzpool.so.2"
       ]
     },
     "check-dev": {
@@ -6050,21 +6054,23 @@
     },
     "zfs-dev": {
       "versions": {
-        "0.7.13-r0": 1557171678
+        "0.7.13-r0": 1557171678,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs",
       "dependencies": [
-        "glib-dev",
-        "e2fsprogs-dev",
-        "util-linux-dev",
-        "libtirpc-dev",
         "attr-dev",
+        "e2fsprogs-dev",
+        "glib-dev",
+        "libtirpc-dev",
+        "openssl-dev",
+        "util-linux-dev",
         "pkgconfig",
-        "zfs-libs=0.7.13-r0"
+        "zfs-libs=0.8.0-r0"
       ],
       "provides": [
-        "pc:libzfs=0.7.13",
-        "pc:libzfs_core=0.7.13"
+        "pc:libzfs=0.8.0",
+        "pc:libzfs_core=0.8.0"
       ]
     },
     "lua5.1-struct": {
@@ -8427,7 +8433,8 @@
     },
     "zfs-udev": {
       "versions": {
-        "0.7.13-r0": 1557171681
+        "0.7.13-r0": 1557171681,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs",
       "dependencies": [
@@ -8681,7 +8688,8 @@
     },
     "gst-plugins-base-lang": {
       "versions": {
-        "1.14.4-r0": 1557083741
+        "1.14.4-r0": 1557083741,
+        "1.16.0-r0": 1558984226
       },
       "origin": "gst-plugins-base"
     },
@@ -10505,7 +10513,8 @@
     },
     "zfs": {
       "versions": {
-        "0.7.13-r0": 1557171683
+        "0.7.13-r0": 1557171683,
+        "0.8.0-r0": 1558982898
       },
       "origin": "zfs",
       "dependencies": [
@@ -10520,6 +10529,7 @@
         "so:libzpool.so.2"
       ],
       "provides": [
+        "spl",
         "cmd:fsck.zfs",
         "cmd:mount.zfs",
         "cmd:raidz_test",
@@ -10529,7 +10539,6 @@
         "cmd:zgenhostid",
         "cmd:zhack",
         "cmd:zinject",
-        "cmd:zpios",
         "cmd:zpool",
         "cmd:zstreamdump",
         "cmd:ztest"
@@ -11218,18 +11227,22 @@
     },
     "udisks2": {
       "versions": {
-        "2.6.5-r1": 1557118887
+        "2.6.5-r1": 1557118887,
+        "2.8.2-r0": 1558982646
       },
       "origin": "udisks2",
       "dependencies": [
         "so:libacl.so.1",
         "so:libatasmart.so.4",
+        "so:libbd_utils.so.2",
+        "so:libblockdev.so.2",
         "so:libc.musl-ppc64le.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgudev-1.0.so.0",
+        "so:libmount.so.1",
         "so:libpolkit-agent-1.so.0",
         "so:libpolkit-gobject-1.so.0",
         "so:libudisks2.so.0"
@@ -13438,7 +13451,8 @@
     "snort-doc": {
       "versions": {
         "2.9.13-r0": 1557179803,
-        "2.9.13-r1": 1558358474
+        "2.9.13-r1": 1558358474,
+        "2.9.13-r2": 1558983385
       },
       "origin": "snort"
     },
@@ -14948,7 +14962,8 @@
     },
     "zfs-openrc": {
       "versions": {
-        "0.7.13-r0": 1557171680
+        "0.7.13-r0": 1557171680,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs"
     },
@@ -20276,7 +20291,8 @@
     },
     "gst-plugins-base-doc": {
       "versions": {
-        "1.14.4-r0": 1557083740
+        "1.14.4-r0": 1557083740,
+        "1.16.0-r0": 1558984226
       },
       "origin": "gst-plugins-base"
     },
@@ -22497,7 +22513,8 @@
     "snort": {
       "versions": {
         "2.9.13-r0": 1557179804,
-        "2.9.13-r1": 1558358475
+        "2.9.13-r1": 1558358475,
+        "2.9.13-r2": 1558983386
       },
       "origin": "snort",
       "dependencies": [
@@ -25363,12 +25380,14 @@
     },
     "zfs-libs": {
       "versions": {
-        "0.7.13-r0": 1557171680
+        "0.7.13-r0": 1557171680,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs",
       "dependencies": [
         "so:libblkid.so.1",
         "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
         "so:libintl.so.8",
         "so:libtirpc.so.3",
         "so:libuuid.so.1",
@@ -30671,7 +30690,8 @@
     "snort-openrc": {
       "versions": {
         "2.9.13-r0": 1557179804,
-        "2.9.13-r1": 1558358475
+        "2.9.13-r1": 1558358475,
+        "2.9.13-r2": 1558983386
       },
       "origin": "snort"
     },
@@ -31496,7 +31516,8 @@
     },
     "zfs-doc": {
       "versions": {
-        "0.7.13-r0": 1557171679
+        "0.7.13-r0": 1557171679,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs"
     },
@@ -35987,7 +36008,8 @@
     },
     "alpine-baselayout": {
       "versions": {
-        "3.1.1-r0": 1556881494
+        "3.1.1-r0": 1556881494,
+        "3.1.1-r1": 1558983289
       },
       "origin": "alpine-baselayout",
       "dependencies": [
@@ -46263,7 +46285,8 @@
     },
     "zfs-dracut": {
       "versions": {
-        "0.7.13-r0": 1557171681
+        "0.7.13-r0": 1557171681,
+        "0.8.0-r0": 1558982897
       },
       "origin": "zfs"
     },
@@ -51710,7 +51733,8 @@
     },
     "udisks2-libs": {
       "versions": {
-        "2.6.5-r1": 1557118885
+        "2.6.5-r1": 1557118885,
+        "2.8.2-r0": 1558982646
       },
       "origin": "udisks2",
       "dependencies": [
@@ -54620,12 +54644,13 @@
     "snort-dev": {
       "versions": {
         "2.9.13-r0": 1557179803,
-        "2.9.13-r1": 1558358475
+        "2.9.13-r1": 1558358475,
+        "2.9.13-r2": 1558983386
       },
       "origin": "snort",
       "dependencies": [
         "pkgconfig",
-        "snort=2.9.13-r1"
+        "snort=2.9.13-r2"
       ],
       "provides": [
         "pc:snort=2.9.13",
@@ -56636,7 +56661,8 @@
     },
     "udisks2-dev": {
       "versions": {
-        "2.6.5-r1": 1557118877
+        "2.6.5-r1": 1557118877,
+        "2.8.2-r0": 1558982646
       },
       "origin": "udisks2",
       "dependencies": [
@@ -56649,10 +56675,10 @@
         "pc:glib-2.0",
         "pc:gobject-2.0",
         "pkgconfig",
-        "udisks2-libs=2.6.5-r1"
+        "udisks2-libs=2.8.2-r0"
       ],
       "provides": [
-        "pc:udisks2=2.6.5"
+        "pc:udisks2=2.8.2"
       ]
     },
     "boost-system": {
@@ -58320,11 +58346,12 @@
     },
     "gst-plugins-base-dev": {
       "versions": {
-        "1.14.4-r0": 1557083740
+        "1.14.4-r0": 1557083740,
+        "1.16.0-r0": 1558984226
       },
       "origin": "gst-plugins-base",
       "dependencies": [
-        "gst-plugins-base=1.14.4-r0",
+        "gst-plugins-base=1.16.0-r0",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gstreamer-1.0",
@@ -58333,19 +58360,19 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gstreamer-allocators-1.0=1.14.4",
-        "pc:gstreamer-app-1.0=1.14.4",
-        "pc:gstreamer-audio-1.0=1.14.4",
-        "pc:gstreamer-fft-1.0=1.14.4",
-        "pc:gstreamer-gl-1.0=1.14.4",
-        "pc:gstreamer-pbutils-1.0=1.14.4",
-        "pc:gstreamer-plugins-base-1.0=1.14.4",
-        "pc:gstreamer-riff-1.0=1.14.4",
-        "pc:gstreamer-rtp-1.0=1.14.4",
-        "pc:gstreamer-rtsp-1.0=1.14.4",
-        "pc:gstreamer-sdp-1.0=1.14.4",
-        "pc:gstreamer-tag-1.0=1.14.4",
-        "pc:gstreamer-video-1.0=1.14.4"
+        "pc:gstreamer-allocators-1.0=1.16.0",
+        "pc:gstreamer-app-1.0=1.16.0",
+        "pc:gstreamer-audio-1.0=1.16.0",
+        "pc:gstreamer-fft-1.0=1.16.0",
+        "pc:gstreamer-gl-1.0=1.16.0",
+        "pc:gstreamer-pbutils-1.0=1.16.0",
+        "pc:gstreamer-plugins-base-1.0=1.16.0",
+        "pc:gstreamer-riff-1.0=1.16.0",
+        "pc:gstreamer-rtp-1.0=1.16.0",
+        "pc:gstreamer-rtsp-1.0=1.16.0",
+        "pc:gstreamer-sdp-1.0=1.16.0",
+        "pc:gstreamer-tag-1.0=1.16.0",
+        "pc:gstreamer-video-1.0=1.16.0"
       ]
     },
     "xdriinfo-doc": {
@@ -60561,7 +60588,8 @@
     },
     "udisks2-doc": {
       "versions": {
-        "2.6.5-r1": 1557118880
+        "2.6.5-r1": 1557118880,
+        "2.8.2-r0": 1558982646
       },
       "origin": "udisks2"
     },
@@ -61114,16 +61142,17 @@
     },
     "daq": {
       "versions": {
-        "2.0.6-r2": 1556996849
+        "2.0.6-r2": 1556996849,
+        "2.0.6-r3": 1558983280
       },
       "origin": "daq",
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
-        "so:libpcap.so.1"
+        "so:libpcap.so.1",
+        "so:libsfbpf.so.0"
       ],
       "provides": [
-        "so:libdaq.so.2=2.0.4",
-        "so:libsfbpf.so.0=0.0.1"
+        "so:libdaq.so.2=2.0.4"
       ]
     },
     "libmtp-dev": {
@@ -62248,11 +62277,12 @@
     },
     "daq-dev": {
       "versions": {
-        "2.0.6-r2": 1556996848
+        "2.0.6-r2": 1556996848,
+        "2.0.6-r3": 1558983280
       },
       "origin": "daq",
       "dependencies": [
-        "daq=2.0.6-r2"
+        "daq=2.0.6-r3"
       ],
       "provides": [
         "cmd:daq-modules-config"
@@ -63625,16 +63655,17 @@
     },
     "zfs-utils-py": {
       "versions": {
-        "0.7.13-r0": 1557171683
+        "0.7.13-r0": 1557171683,
+        "0.8.0-r0": 1558982898
       },
       "origin": "zfs",
       "dependencies": [
-        "python2"
+        "python3"
       ],
       "provides": [
-        "cmd:arc_summary.py",
-        "cmd:arcstat.py",
-        "cmd:dbufstat.py"
+        "cmd:arc_summary",
+        "cmd:arcstat",
+        "cmd:dbufstat"
       ]
     },
     "squark": {
@@ -65391,7 +65422,8 @@
     },
     "udisks2-lang": {
       "versions": {
-        "2.6.5-r1": 1557118882
+        "2.6.5-r1": 1557118882,
+        "2.8.2-r0": 1558982646
       },
       "origin": "udisks2"
     },
@@ -67198,7 +67230,8 @@
     },
     "gst-plugins-base": {
       "versions": {
-        "1.14.4-r0": 1557083742
+        "1.14.4-r0": 1557083742,
+        "1.16.0-r0": 1558984226
       },
       "origin": "gst-plugins-base",
       "dependencies": [
@@ -67239,39 +67272,41 @@
       ],
       "provides": [
         "so:libgstadder.so=0",
-        "so:libgstallocators-1.0.so.0=0.1404.0",
+        "so:libgstallocators-1.0.so.0=0.1600.0",
         "so:libgstalsa.so=0",
-        "so:libgstapp-1.0.so.0=0.1404.0",
+        "so:libgstapp-1.0.so.0=0.1600.0",
         "so:libgstapp.so=0",
-        "so:libgstaudio-1.0.so.0=0.1404.0",
+        "so:libgstaudio-1.0.so.0=0.1600.0",
         "so:libgstaudioconvert.so=0",
         "so:libgstaudiomixer.so=0",
         "so:libgstaudiorate.so=0",
         "so:libgstaudioresample.so=0",
         "so:libgstaudiotestsrc.so=0",
         "so:libgstcdparanoia.so=0",
+        "so:libgstcompositor.so=0",
         "so:libgstencoding.so=0",
-        "so:libgstfft-1.0.so.0=0.1404.0",
+        "so:libgstfft-1.0.so.0=0.1600.0",
         "so:libgstgio.so=0",
-        "so:libgstgl-1.0.so.0=0.1404.0",
+        "so:libgstgl-1.0.so.0=0.1600.0",
         "so:libgstogg.so=0",
         "so:libgstopengl.so=0",
         "so:libgstopus.so=0",
+        "so:libgstoverlaycomposition.so=0",
         "so:libgstpango.so=0",
         "so:libgstpbtypes.so=0",
-        "so:libgstpbutils-1.0.so.0=0.1404.0",
+        "so:libgstpbutils-1.0.so.0=0.1600.0",
         "so:libgstplayback.so=0",
         "so:libgstrawparse.so=0",
-        "so:libgstriff-1.0.so.0=0.1404.0",
-        "so:libgstrtp-1.0.so.0=0.1404.0",
-        "so:libgstrtsp-1.0.so.0=0.1404.0",
-        "so:libgstsdp-1.0.so.0=0.1404.0",
+        "so:libgstriff-1.0.so.0=0.1600.0",
+        "so:libgstrtp-1.0.so.0=0.1600.0",
+        "so:libgstrtsp-1.0.so.0=0.1600.0",
+        "so:libgstsdp-1.0.so.0=0.1600.0",
         "so:libgstsubparse.so=0",
-        "so:libgsttag-1.0.so.0=0.1404.0",
+        "so:libgsttag-1.0.so.0=0.1600.0",
         "so:libgsttcp.so=0",
         "so:libgsttheora.so=0",
         "so:libgsttypefindfunctions.so=0",
-        "so:libgstvideo-1.0.so.0=0.1404.0",
+        "so:libgstvideo-1.0.so.0=0.1600.0",
         "so:libgstvideoconvert.so=0",
         "so:libgstvideorate.so=0",
         "so:libgstvideoscale.so=0",
@@ -68604,6 +68639,321 @@
       "versions": {
         "0.6.13-r0": 1558979842
       }
+    },
+    "ndctl-bash-completion": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558982272
+      }
+    },
+    "libblockdev-dev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558982455
+      },
+      "dependencies": [
+        "libblockdev=2.21-r0",
+        "pc:glib-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:blockdev-utils=2.21",
+        "pc:blockdev=2.21"
+      ]
+    },
+    "dmraid-doc": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558982103
+      }
+    },
+    "volume_key-doc": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558982422
+      }
+    },
+    "libbytesize-dev": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      },
+      "dependencies": [
+        "libbytesize=2.0-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:bytesize=0.1.0"
+      ]
+    },
+    "ndctl": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558982272
+      },
+      "dependencies": [
+        "libuuid",
+        "json-c",
+        "kmod",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libdaxctl.so.1",
+        "so:libjson-c.so.4",
+        "so:libndctl.so.6",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "cmd:daxctl",
+        "cmd:ndctl"
+      ]
+    },
+    "dmraid-dev": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558982102
+      },
+      "dependencies": [
+        "dmraid=1.0.0_rc16-r0"
+      ]
+    },
+    "ndctl-dev": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558982272
+      },
+      "dependencies": [
+        "ndctl-libs=61.2-r0",
+        "pkgconfig"
+      ]
+    },
+    "libbytesize-lang": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      }
+    },
+    "py-libbytesize": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      },
+      "dependencies": [
+        "python3",
+        "py3-six"
+      ]
+    },
+    "daq-sfbpf": {
+      "origin": "daq",
+      "versions": {
+        "2.0.6-r3": 1558983280
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "so:libsfbpf.so.0=0.0.1"
+      ]
+    },
+    "daq-static": {
+      "origin": "daq",
+      "versions": {
+        "2.0.6-r3": 1558983280
+      }
+    },
+    "ndctl-libs": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558982272
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libkmod.so.2",
+        "so:libudev.so.1",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "so:libdaxctl.so.1=1.2.0",
+        "so:libndctl.so.6=6.10.1"
+      ]
+    },
+    "volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558982422
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libglib-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libintl.so.8",
+        "so:libnspr4.so",
+        "so:libnss3.so",
+        "so:libplc4.so",
+        "so:libsmime3.so"
+      ],
+      "provides": [
+        "so:libvolume_key.so.1=1.2.3",
+        "cmd:volume_key"
+      ]
+    },
+    "py3-pyzfs": {
+      "origin": "zfs",
+      "versions": {
+        "0.8.0-r0": 1558982898
+      },
+      "dependencies": [
+        "python3",
+        "zfs"
+      ]
+    },
+    "libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558982455
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libbytesize.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libdevmapper.so.1.02",
+        "so:libdmraid.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libkmod.so.2",
+        "so:libmount.so.1",
+        "so:libndctl.so.6",
+        "so:libnss3.so",
+        "so:libparted-fs-resize.so.0",
+        "so:libparted.so.2",
+        "so:libsmime3.so",
+        "so:libudev.so.1",
+        "so:libuuid.so.1",
+        "so:libvolume_key.so.1",
+        "so:libyaml-0.so.2"
+      ],
+      "provides": [
+        "so:libbd_btrfs.so.2=2.0.0",
+        "so:libbd_crypto.so.2=2.0.0",
+        "so:libbd_dm.so.2=2.0.0",
+        "so:libbd_fs.so.2=2.0.0",
+        "so:libbd_kbd.so.2=2.0.0",
+        "so:libbd_loop.so.2=2.0.0",
+        "so:libbd_lvm-dbus.so.2=2.0.0",
+        "so:libbd_lvm.so.2=2.0.0",
+        "so:libbd_mdraid.so.2=2.0.0",
+        "so:libbd_mpath.so.2=2.0.0",
+        "so:libbd_nvdimm.so.2=2.0.0",
+        "so:libbd_part.so.2=2.0.0",
+        "so:libbd_part_err.so.2=2.0.0",
+        "so:libbd_swap.so.2=2.0.0",
+        "so:libbd_utils.so.2=2.1.0",
+        "so:libbd_vdo.so.2=2.0.0",
+        "so:libblockdev.so.2=2.0.0",
+        "cmd:lvm-cache-stats"
+      ]
+    },
+    "ndctl-doc": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558982272
+      }
+    },
+    "dmraid-static": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558982102
+      }
+    },
+    "libbytesize-doc": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      }
+    },
+    "py3-volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558982422
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libnss3.so",
+        "so:libpython3.7m.so.1.0",
+        "so:libsmime3.so",
+        "so:libvolume_key.so.1"
+      ]
+    },
+    "volume_key-dev": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558982421
+      },
+      "dependencies": [
+        "volume_key=0.3.12-r0"
+      ]
+    },
+    "py3-libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558982455
+      }
+    },
+    "libbytesize": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgmp.so.10",
+        "so:libintl.so.8",
+        "so:libmpfr.so.4",
+        "so:libpcre2-8.so.0"
+      ],
+      "provides": [
+        "so:libbytesize.so.1=1.0.0"
+      ]
+    },
+    "freeswitch-sounds-pt-br-karina-8000": {
+      "origin": "freeswitch-sounds-pt-br-karina-8000",
+      "versions": {
+        "1.0.51-r2": 1558983029
+      },
+      "provides": [
+        "freeswitch-sounds-pt-BR-karina-8000"
+      ]
+    },
+    "dmraid": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558982103
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libdevmapper-event.so.1.02",
+        "so:libdevmapper.so.1.02"
+      ],
+      "provides": [
+        "so:libdmraid.so.1=1.0.0",
+        "cmd:dmevent_tool",
+        "cmd:dmraid"
+      ]
+    },
+    "libbytesize-tools": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558982120
+      },
+      "dependencies": [
+        "py-libbytesize"
+      ],
+      "provides": [
+        "cmd:bscalc"
+      ]
     }
   },
   "provide": {
@@ -73797,7 +74147,7 @@
         "version": "2.0.4"
       },
       "libsfbpf.so.0": {
-        "package": "daq",
+        "package": "daq-sfbpf",
         "version": "0.0.1"
       },
       "libconfig.so.9": {
@@ -74338,7 +74688,7 @@
       },
       "libgstallocators-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstalsa.so": {
         "package": "gst-plugins-base",
@@ -74346,7 +74696,7 @@
       },
       "libgstapp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstapp.so": {
         "package": "gst-plugins-base",
@@ -74354,7 +74704,7 @@
       },
       "libgstaudio-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstaudioconvert.so": {
         "package": "gst-plugins-base",
@@ -74386,7 +74736,7 @@
       },
       "libgstfft-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstgio.so": {
         "package": "gst-plugins-base",
@@ -74394,7 +74744,7 @@
       },
       "libgstgl-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstogg.so": {
         "package": "gst-plugins-base",
@@ -74418,7 +74768,7 @@
       },
       "libgstpbutils-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstplayback.so": {
         "package": "gst-plugins-base",
@@ -74430,19 +74780,19 @@
       },
       "libgstriff-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstrtp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstrtsp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstsdp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstsubparse.so": {
         "package": "gst-plugins-base",
@@ -74450,7 +74800,7 @@
       },
       "libgsttag-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgsttcp.so": {
         "package": "gst-plugins-base",
@@ -74466,7 +74816,7 @@
       },
       "libgstvideo-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.1404.0"
+        "version": "0.1600.0"
       },
       "libgstvideoconvert.so": {
         "package": "gst-plugins-base",
@@ -74603,6 +74953,102 @@
       "libsrtp2.so.1": {
         "package": "libsrtp",
         "version": "1"
+      },
+      "libdaxctl.so.1": {
+        "package": "ndctl-libs",
+        "version": "1.2.0"
+      },
+      "libndctl.so.6": {
+        "package": "ndctl-libs",
+        "version": "6.10.1"
+      },
+      "libvolume_key.so.1": {
+        "package": "volume_key",
+        "version": "1.2.3"
+      },
+      "libbd_btrfs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_crypto.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_dm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_fs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_kbd.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_loop.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm-dbus.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mdraid.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mpath.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_nvdimm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part_err.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_swap.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_utils.so.2": {
+        "package": "libblockdev",
+        "version": "2.1.0"
+      },
+      "libbd_vdo.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libblockdev.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libgstcompositor.so": {
+        "package": "gst-plugins-base",
+        "version": "0"
+      },
+      "libgstoverlaycomposition.so": {
+        "package": "gst-plugins-base",
+        "version": "0"
+      },
+      "libbytesize.so.1": {
+        "package": "libbytesize",
+        "version": "1.0.0"
+      },
+      "libdmraid.so.1": {
+        "package": "dmraid",
+        "version": "1.0.0"
       }
     },
     "package": {
@@ -75208,6 +75654,14 @@
       },
       "ebtables": {
         "package": "iptables",
+        "version": 0
+      },
+      "freeswitch-sounds-pt-BR-karina-8000": {
+        "package": "freeswitch-sounds-pt-br-karina-8000",
+        "version": 0
+      },
+      "spl": {
+        "package": "zfs",
         "version": 0
       }
     }
