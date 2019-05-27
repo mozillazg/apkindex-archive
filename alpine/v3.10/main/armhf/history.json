@@ -2200,12 +2200,13 @@
     },
     "ip6tables": {
       "versions": {
-        "1.6.2-r2": 1556989452
+        "1.6.2-r2": 1556989452,
+        "1.8.2-r0": 1558979319
       },
       "origin": "iptables",
       "dependencies": [
         "iptables",
-        "iptables=1.6.2-r2",
+        "iptables=1.8.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libxtables.so.12"
       ]
@@ -2924,7 +2925,8 @@
     },
     "grub-doc": {
       "versions": {
-        "2.02-r15": 1557257352
+        "2.02-r15": 1557257352,
+        "2.02-r17": 1558980402
       },
       "origin": "grub"
     },
@@ -7761,17 +7763,18 @@
     },
     "libcroco-dev": {
       "versions": {
-        "0.6.12-r1": 1556995762
+        "0.6.12-r1": 1556995762,
+        "0.6.13-r0": 1558979110
       },
       "origin": "libcroco",
       "dependencies": [
-        "libcroco=0.6.12-r1",
+        "libcroco=0.6.13-r0",
         "pc:glib-2.0",
         "pc:libxml-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcroco-0.6=0.6.12",
+        "pc:libcroco-0.6=0.6.13",
         "cmd:croco-0.6-config"
       ]
     },
@@ -8043,7 +8046,8 @@
     },
     "usbredir-server": {
       "versions": {
-        "0.7.1-r0": 1557137199
+        "0.7.1-r0": 1557137199,
+        "0.8.0-r0": 1558978758
       },
       "origin": "usbredir",
       "dependencies": [
@@ -8757,11 +8761,13 @@
     },
     "meson": {
       "versions": {
-        "0.50.1-r0": 1556895956
+        "0.50.1-r0": 1556895956,
+        "0.50.1-r1": 1558978332
       },
       "origin": "meson",
       "dependencies": [
         "ninja",
+        "py3-setuptools",
         "python3"
       ],
       "provides": [
@@ -9995,7 +10001,8 @@
     },
     "grub-efi": {
       "versions": {
-        "2.02-r15": 1557257352
+        "2.02-r15": 1557257352,
+        "2.02-r17": 1558980402
       },
       "origin": "grub",
       "dependencies": [
@@ -10262,7 +10269,8 @@
     },
     "meson-doc": {
       "versions": {
-        "0.50.1-r0": 1556895956
+        "0.50.1-r0": 1556895956,
+        "0.50.1-r1": 1558978332
       },
       "origin": "meson"
     },
@@ -10521,7 +10529,8 @@
     },
     "libvirt": {
       "versions": {
-        "5.3.0-r0": 1557176067
+        "5.3.0-r0": 1557176067,
+        "5.3.0-r2": 1558979939
       },
       "origin": "libvirt",
       "dependencies": [
@@ -13826,12 +13835,13 @@
     },
     "libvirt-lxc": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libblkid.so.1",
         "so:libc.musl-armhf.so.1",
         "so:libcap-ng.so.0",
@@ -17809,7 +17819,8 @@
     },
     "libvirt-client": {
       "versions": {
-        "5.3.0-r0": 1557176065
+        "5.3.0-r0": 1557176065,
+        "5.3.0-r2": 1558979937
       },
       "origin": "libvirt",
       "dependencies": [
@@ -19684,7 +19695,8 @@
     },
     "libvirt-common-drivers": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
@@ -23595,7 +23607,8 @@
     },
     "usbredir": {
       "versions": {
-        "0.7.1-r0": 1557137200
+        "0.7.1-r0": 1557137200,
+        "0.8.0-r0": 1558978758
       },
       "origin": "usbredir",
       "dependencies": [
@@ -23603,8 +23616,8 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "so:libusbredirhost.so.1=1.0.0",
-        "so:libusbredirparser.so.1=1.0.0"
+        "so:libusbredirhost.so.1=1.0.1",
+        "so:libusbredirparser.so.1=1.0.1"
       ]
     },
     "lxc-templates": {
@@ -27831,7 +27844,8 @@
     },
     "iptables": {
       "versions": {
-        "1.6.2-r2": 1556989454
+        "1.6.2-r2": 1556989454,
+        "1.8.2-r0": 1558979319
       },
       "origin": "iptables",
       "dependencies": [
@@ -27840,23 +27854,38 @@
         "so:libnftnl.so.11"
       ],
       "provides": [
+        "ebtables",
         "so:libip4tc.so.0=0.1.0",
         "so:libip6tc.so.0=0.1.0",
         "so:libipq.so.0=0.0.0",
         "so:libiptc.so.0=0.0.0",
-        "so:libxtables.so.12=12.0.0",
-        "cmd:arptables-compat",
-        "cmd:ebtables-compat",
+        "so:libxtables.so.12=12.2.0",
+        "cmd:arptables",
+        "cmd:arptables-nft",
+        "cmd:arptables-nft-restore",
+        "cmd:arptables-nft-save",
+        "cmd:arptables-restore",
+        "cmd:arptables-save",
+        "cmd:ebtables",
+        "cmd:ebtables-nft",
+        "cmd:ebtables-nft-restore",
+        "cmd:ebtables-nft-save",
+        "cmd:ebtables-restore",
+        "cmd:ebtables-save",
         "cmd:iptables",
-        "cmd:iptables-compat",
-        "cmd:iptables-compat-restore",
-        "cmd:iptables-compat-save",
+        "cmd:iptables-legacy",
+        "cmd:iptables-legacy-restore",
+        "cmd:iptables-legacy-save",
+        "cmd:iptables-nft",
+        "cmd:iptables-nft-restore",
+        "cmd:iptables-nft-save",
         "cmd:iptables-restore",
         "cmd:iptables-restore-translate",
         "cmd:iptables-save",
         "cmd:iptables-translate",
-        "cmd:xtables-compat-multi",
-        "cmd:xtables-multi"
+        "cmd:xtables-legacy-multi",
+        "cmd:xtables-monitor",
+        "cmd:xtables-nft-multi"
       ]
     },
     "perl-class-accessor-doc": {
@@ -33242,20 +33271,21 @@
     },
     "iptables-dev": {
       "versions": {
-        "1.6.2-r2": 1556989453
+        "1.6.2-r2": 1556989453,
+        "1.8.2-r0": 1558979319
       },
       "origin": "iptables",
       "dependencies": [
         "linux-headers",
-        "iptables=1.6.2-r2",
+        "iptables=1.8.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libip4tc=1.6.2",
-        "pc:libip6tc=1.6.2",
-        "pc:libipq=1.6.2",
-        "pc:libiptc=1.6.2",
-        "pc:xtables=1.6.2"
+        "pc:libip4tc=1.8.2",
+        "pc:libip6tc=1.8.2",
+        "pc:libipq=1.8.2",
+        "pc:libiptc=1.8.2",
+        "pc:xtables=1.8.2"
       ]
     },
     "gengetopt-dev": {
@@ -35062,7 +35092,8 @@
     },
     "libvirt-libs": {
       "versions": {
-        "5.3.0-r0": 1557176065
+        "5.3.0-r0": 1557176065,
+        "5.3.0-r2": 1558979937
       },
       "origin": "libvirt",
       "dependencies": [
@@ -37895,7 +37926,8 @@
     },
     "grub": {
       "versions": {
-        "2.02-r15": 1557257353
+        "2.02-r15": 1557257353,
+        "2.02-r17": 1558980402
       },
       "origin": "grub",
       "dependencies": [
@@ -38211,7 +38243,8 @@
     },
     "libvirt-doc": {
       "versions": {
-        "5.3.0-r0": 1557176065
+        "5.3.0-r0": 1557176065,
+        "5.3.0-r2": 1558979937
       },
       "origin": "libvirt"
     },
@@ -39798,7 +39831,8 @@
     },
     "usbredir-doc": {
       "versions": {
-        "0.7.1-r0": 1557137197
+        "0.7.1-r0": 1557137197,
+        "0.8.0-r0": 1558978758
       },
       "origin": "usbredir"
     },
@@ -43159,7 +43193,8 @@
     },
     "libcroco": {
       "versions": {
-        "0.6.12-r1": 1556995764
+        "0.6.12-r1": 1556995764,
+        "0.6.13-r0": 1558979110
       },
       "origin": "libcroco",
       "dependencies": [
@@ -43654,7 +43689,8 @@
     },
     "grub-dev": {
       "versions": {
-        "2.02-r15": 1557257351
+        "2.02-r15": 1557257351,
+        "2.02-r17": 1558980402
       },
       "origin": "grub"
     },
@@ -45605,18 +45641,18 @@
     },
     "usbredir-dev": {
       "versions": {
-        "0.7.1-r0": 1557137195
+        "0.7.1-r0": 1557137195,
+        "0.8.0-r0": 1558978758
       },
       "origin": "usbredir",
       "dependencies": [
-        "libusb-dev",
         "pc:libusb-1.0",
         "pkgconfig",
-        "usbredir=0.7.1-r0"
+        "usbredir=0.8.0-r0"
       ],
       "provides": [
-        "pc:libusbredirhost=0.7.1",
-        "pc:libusbredirparser-0.5=0.7.1"
+        "pc:libusbredirhost=0.8.0",
+        "pc:libusbredirparser-0.5=0.8.0"
       ]
     },
     "uwsgi-router_radius": {
@@ -46215,7 +46251,8 @@
     },
     "irqbalance-openrc": {
       "versions": {
-        "1.5.0-r2": 1557212081
+        "1.5.0-r2": 1557212081,
+        "1.6.0-r0": 1558980501
       },
       "origin": "irqbalance"
     },
@@ -48507,7 +48544,8 @@
     },
     "iptables-doc": {
       "versions": {
-        "1.6.2-r2": 1556989453
+        "1.6.2-r2": 1556989453,
+        "1.8.2-r0": 1558979319
       },
       "origin": "iptables"
     },
@@ -49380,12 +49418,13 @@
     },
     "libvirt-vbox": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libintl.so.8",
@@ -51611,12 +51650,13 @@
     },
     "libvirt-dev": {
       "versions": {
-        "5.3.0-r0": 1557176065
+        "5.3.0-r0": 1557176065,
+        "5.3.0-r2": 1558979937
       },
       "origin": "libvirt",
       "dependencies": [
         "libtirpc-dev",
-        "libvirt-libs=5.3.0-r0",
+        "libvirt-libs=5.3.0-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -51881,7 +51921,8 @@
     },
     "libvirt-bash-completion": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt"
     },
@@ -52683,7 +52724,8 @@
     },
     "libvirt-lang": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
@@ -53983,7 +54025,8 @@
     },
     "libvirt-static": {
       "versions": {
-        "5.3.0-r0": 1557176065
+        "5.3.0-r0": 1557176065,
+        "5.3.0-r2": 1558979937
       },
       "origin": "libvirt",
       "dependencies": [
@@ -54221,7 +54264,8 @@
     },
     "libvirt-daemon": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
@@ -54229,7 +54273,6 @@
         "bridge-utils",
         "dmidecode",
         "dnsmasq",
-        "ebtables",
         "ip6tables",
         "iptables",
         "so:libc.musl-armhf.so.1",
@@ -55693,12 +55736,13 @@
     },
     "libvirt-qemu": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
@@ -58060,7 +58104,8 @@
     },
     "irqbalance": {
       "versions": {
-        "1.5.0-r2": 1557212081
+        "1.5.0-r2": 1557212081,
+        "1.6.0-r0": 1558980502
       },
       "origin": "irqbalance",
       "dependencies": [
@@ -63693,12 +63738,13 @@
     },
     "libvirt-uml": {
       "versions": {
-        "5.3.0-r0": 1557176066
+        "5.3.0-r0": 1557176066,
+        "5.3.0-r2": 1558979938
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0"
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2"
       ]
     },
     "htop": {
@@ -64638,7 +64684,8 @@
     },
     "irqbalance-doc": {
       "versions": {
-        "1.5.0-r2": 1557212080
+        "1.5.0-r2": 1557212080,
+        "1.6.0-r0": 1558980501
       },
       "origin": "irqbalance"
     },
@@ -68729,6 +68776,12 @@
       "versions": {
         "1.2.15-r10": 1558968395
       }
+    },
+    "libcroco-doc": {
+      "origin": "libcroco",
+      "versions": {
+        "0.6.13-r0": 1558979110
+      }
     }
   },
   "provide": {
@@ -70619,11 +70672,11 @@
       },
       "libusbredirhost.so.1": {
         "package": "usbredir",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "libusbredirparser.so.1": {
         "package": "usbredir",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "libebt_802_3.so": {
         "package": "ebtables",
@@ -71151,7 +71204,7 @@
       },
       "libxtables.so.12": {
         "package": "iptables",
-        "version": "12.0.0"
+        "version": "12.2.0"
       },
       "libffi.so.6": {
         "package": "libffi",
@@ -75454,6 +75507,10 @@
       "rsyslog-omlibdbi": {
         "package": "rsyslog-libdbi",
         "version": "8.1904.0-r0"
+      },
+      "ebtables": {
+        "package": "iptables",
+        "version": 0
       }
     }
   }

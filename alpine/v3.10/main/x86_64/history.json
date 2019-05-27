@@ -1106,18 +1106,18 @@
     },
     "usbredir-dev": {
       "versions": {
-        "0.7.1-r0": 1557061345
+        "0.7.1-r0": 1557061345,
+        "0.8.0-r0": 1558978757
       },
       "origin": "usbredir",
       "dependencies": [
-        "libusb-dev",
         "pc:libusb-1.0",
         "pkgconfig",
-        "usbredir=0.7.1-r0"
+        "usbredir=0.8.0-r0"
       ],
       "provides": [
-        "pc:libusbredirhost=0.7.1",
-        "pc:libusbredirparser-0.5=0.7.1"
+        "pc:libusbredirhost=0.8.0",
+        "pc:libusbredirparser-0.5=0.8.0"
       ]
     },
     "libmp3splt": {
@@ -2356,12 +2356,13 @@
     },
     "libvirt-vbox": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
         "so:libintl.so.8",
@@ -2801,7 +2802,8 @@
     },
     "libvirt-client": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
@@ -3039,12 +3041,13 @@
     },
     "libvirt-qemu": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
@@ -3697,7 +3700,8 @@
     },
     "iptables": {
       "versions": {
-        "1.6.2-r2": 1556989220
+        "1.6.2-r2": 1556989220,
+        "1.8.2-r0": 1558979173
       },
       "origin": "iptables",
       "dependencies": [
@@ -3706,23 +3710,38 @@
         "so:libnftnl.so.11"
       ],
       "provides": [
+        "ebtables",
         "so:libip4tc.so.0=0.1.0",
         "so:libip6tc.so.0=0.1.0",
         "so:libipq.so.0=0.0.0",
         "so:libiptc.so.0=0.0.0",
-        "so:libxtables.so.12=12.0.0",
-        "cmd:arptables-compat",
-        "cmd:ebtables-compat",
+        "so:libxtables.so.12=12.2.0",
+        "cmd:arptables",
+        "cmd:arptables-nft",
+        "cmd:arptables-nft-restore",
+        "cmd:arptables-nft-save",
+        "cmd:arptables-restore",
+        "cmd:arptables-save",
+        "cmd:ebtables",
+        "cmd:ebtables-nft",
+        "cmd:ebtables-nft-restore",
+        "cmd:ebtables-nft-save",
+        "cmd:ebtables-restore",
+        "cmd:ebtables-save",
         "cmd:iptables",
-        "cmd:iptables-compat",
-        "cmd:iptables-compat-restore",
-        "cmd:iptables-compat-save",
+        "cmd:iptables-legacy",
+        "cmd:iptables-legacy-restore",
+        "cmd:iptables-legacy-save",
+        "cmd:iptables-nft",
+        "cmd:iptables-nft-restore",
+        "cmd:iptables-nft-save",
         "cmd:iptables-restore",
         "cmd:iptables-restore-translate",
         "cmd:iptables-save",
         "cmd:iptables-translate",
-        "cmd:xtables-compat-multi",
-        "cmd:xtables-multi"
+        "cmd:xtables-legacy-multi",
+        "cmd:xtables-monitor",
+        "cmd:xtables-nft-multi"
       ]
     },
     "rsyslog-relp": {
@@ -5310,7 +5329,8 @@
     },
     "grub-bios": {
       "versions": {
-        "2.02-r15": 1557059603
+        "2.02-r15": 1557059603,
+        "2.02-r17": 1558980439
       },
       "origin": "grub",
       "dependencies": [
@@ -6265,7 +6285,8 @@
     },
     "udisks2-dev": {
       "versions": {
-        "2.6.5-r1": 1557164432
+        "2.6.5-r1": 1557164432,
+        "2.8.2-r0": 1558981616
       },
       "origin": "udisks2",
       "dependencies": [
@@ -6278,10 +6299,10 @@
         "pc:glib-2.0",
         "pc:gobject-2.0",
         "pkgconfig",
-        "udisks2-libs=2.6.5-r1"
+        "udisks2-libs=2.8.2-r0"
       ],
       "provides": [
-        "pc:udisks2=2.6.5"
+        "pc:udisks2=2.8.2"
       ]
     },
     "e2fsprogs-libs": {
@@ -6707,17 +6728,18 @@
     },
     "libcroco-dev": {
       "versions": {
-        "0.6.12-r1": 1556990964
+        "0.6.12-r1": 1556990964,
+        "0.6.13-r0": 1558978804
       },
       "origin": "libcroco",
       "dependencies": [
-        "libcroco=0.6.12-r1",
+        "libcroco=0.6.13-r0",
         "pc:glib-2.0",
         "pc:libxml-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcroco-0.6=0.6.12",
+        "pc:libcroco-0.6=0.6.13",
         "cmd:croco-0.6-config"
       ]
     },
@@ -7436,7 +7458,8 @@
     },
     "libvirt-daemon": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
@@ -7444,7 +7467,6 @@
         "bridge-utils",
         "dmidecode",
         "dnsmasq",
-        "ebtables",
         "ip6tables",
         "iptables",
         "so:libc.musl-x86_64.so.1",
@@ -9947,7 +9969,8 @@
     },
     "grub-efi": {
       "versions": {
-        "2.02-r15": 1557059603
+        "2.02-r15": 1557059603,
+        "2.02-r17": 1558980439
       },
       "origin": "grub",
       "dependencies": [
@@ -14637,7 +14660,8 @@
     },
     "libvirt-doc": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt"
     },
@@ -16894,7 +16918,8 @@
     },
     "irqbalance-doc": {
       "versions": {
-        "1.5.0-r2": 1557138278
+        "1.5.0-r2": 1557138278,
+        "1.6.0-r0": 1558980124
       },
       "origin": "irqbalance"
     },
@@ -18741,11 +18766,13 @@
     },
     "meson": {
       "versions": {
-        "0.50.1-r0": 1556895751
+        "0.50.1-r0": 1556895751,
+        "0.50.1-r1": 1558978330
       },
       "origin": "meson",
       "dependencies": [
         "ninja",
+        "py3-setuptools",
         "python3"
       ],
       "provides": [
@@ -20507,7 +20534,8 @@
     },
     "iptables-doc": {
       "versions": {
-        "1.6.2-r2": 1556989219
+        "1.6.2-r2": 1556989219,
+        "1.8.2-r0": 1558979172
       },
       "origin": "iptables"
     },
@@ -22345,7 +22373,8 @@
     },
     "udisks2-doc": {
       "versions": {
-        "2.6.5-r1": 1557164436
+        "2.6.5-r1": 1557164436,
+        "2.8.2-r0": 1558981616
       },
       "origin": "udisks2"
     },
@@ -30404,7 +30433,8 @@
     },
     "irqbalance-openrc": {
       "versions": {
-        "1.5.0-r2": 1557138278
+        "1.5.0-r2": 1557138278,
+        "1.6.0-r0": 1558980124
       },
       "origin": "irqbalance"
     },
@@ -31352,12 +31382,13 @@
     },
     "ip6tables": {
       "versions": {
-        "1.6.2-r2": 1556989218
+        "1.6.2-r2": 1556989218,
+        "1.8.2-r0": 1558979172
       },
       "origin": "iptables",
       "dependencies": [
         "iptables",
-        "iptables=1.6.2-r2",
+        "iptables=1.8.2-r0",
         "so:libc.musl-x86_64.so.1",
         "so:libxtables.so.12"
       ]
@@ -32903,7 +32934,8 @@
     },
     "libvirt-static": {
       "versions": {
-        "5.3.0-r0": 1557149283
+        "5.3.0-r0": 1557149283,
+        "5.3.0-r2": 1558979772
       },
       "origin": "libvirt",
       "dependencies": [
@@ -34731,7 +34763,8 @@
     },
     "libvirt": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979774
       },
       "origin": "libvirt",
       "dependencies": [
@@ -35858,7 +35891,8 @@
     },
     "meson-doc": {
       "versions": {
-        "0.50.1-r0": 1556895751
+        "0.50.1-r0": 1556895751,
+        "0.50.1-r1": 1558978330
       },
       "origin": "meson"
     },
@@ -36620,7 +36654,8 @@
     },
     "usbredir-doc": {
       "versions": {
-        "0.7.1-r0": 1557061347
+        "0.7.1-r0": 1557061347,
+        "0.8.0-r0": 1558978757
       },
       "origin": "usbredir"
     },
@@ -38569,7 +38604,8 @@
     },
     "libcroco": {
       "versions": {
-        "0.6.12-r1": 1556990967
+        "0.6.12-r1": 1556990967,
+        "0.6.13-r0": 1558978804
       },
       "origin": "libcroco",
       "dependencies": [
@@ -39677,7 +39713,8 @@
     },
     "libvirt-bash-completion": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt"
     },
@@ -42107,7 +42144,8 @@
     },
     "libvirt-common-drivers": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979774
       },
       "origin": "libvirt",
       "dependencies": [
@@ -44057,7 +44095,8 @@
     },
     "grub": {
       "versions": {
-        "2.02-r15": 1557059604
+        "2.02-r15": 1557059604,
+        "2.02-r17": 1558980440
       },
       "origin": "grub",
       "dependencies": [
@@ -45804,7 +45843,8 @@
     },
     "grub-doc": {
       "versions": {
-        "2.02-r15": 1557059603
+        "2.02-r15": 1557059603,
+        "2.02-r17": 1558980439
       },
       "origin": "grub"
     },
@@ -46463,7 +46503,8 @@
     },
     "libvirt-libs": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979772
       },
       "origin": "libvirt",
       "dependencies": [
@@ -46722,7 +46763,8 @@
     },
     "irqbalance": {
       "versions": {
-        "1.5.0-r2": 1557138279
+        "1.5.0-r2": 1557138279,
+        "1.6.0-r0": 1558980124
       },
       "origin": "irqbalance",
       "dependencies": [
@@ -49869,20 +49911,21 @@
     },
     "iptables-dev": {
       "versions": {
-        "1.6.2-r2": 1556989219
+        "1.6.2-r2": 1556989219,
+        "1.8.2-r0": 1558979173
       },
       "origin": "iptables",
       "dependencies": [
         "linux-headers",
-        "iptables=1.6.2-r2",
+        "iptables=1.8.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libip4tc=1.6.2",
-        "pc:libip6tc=1.6.2",
-        "pc:libipq=1.6.2",
-        "pc:libiptc=1.6.2",
-        "pc:xtables=1.6.2"
+        "pc:libip4tc=1.8.2",
+        "pc:libip6tc=1.8.2",
+        "pc:libipq=1.8.2",
+        "pc:libiptc=1.8.2",
+        "pc:xtables=1.8.2"
       ]
     },
     "mg": {
@@ -51299,7 +51342,8 @@
     },
     "grub-dev": {
       "versions": {
-        "2.02-r15": 1557059602
+        "2.02-r15": 1557059602,
+        "2.02-r17": 1558980439
       },
       "origin": "grub"
     },
@@ -53059,7 +53103,8 @@
     },
     "grub-xenhost": {
       "versions": {
-        "2.02-r15": 1557059604
+        "2.02-r15": 1557059604,
+        "2.02-r17": 1558980440
       },
       "origin": "grub",
       "dependencies": [
@@ -53333,12 +53378,13 @@
     },
     "libvirt-uml": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0"
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2"
       ]
     },
     "postgresql-plpython2": {
@@ -55854,7 +55900,8 @@
     },
     "udisks2-lang": {
       "versions": {
-        "2.6.5-r1": 1557164439
+        "2.6.5-r1": 1557164439,
+        "2.8.2-r0": 1558981616
       },
       "origin": "udisks2"
     },
@@ -58282,7 +58329,8 @@
     },
     "usbredir-server": {
       "versions": {
-        "0.7.1-r0": 1557061348
+        "0.7.1-r0": 1557061348,
+        "0.8.0-r0": 1558978757
       },
       "origin": "usbredir",
       "dependencies": [
@@ -58988,12 +59036,13 @@
     },
     "libvirt-dev": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979772
       },
       "origin": "libvirt",
       "dependencies": [
         "libtirpc-dev",
-        "libvirt-libs=5.3.0-r0",
+        "libvirt-libs=5.3.0-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -59527,7 +59576,8 @@
     },
     "usbredir": {
       "versions": {
-        "0.7.1-r0": 1557061350
+        "0.7.1-r0": 1557061350,
+        "0.8.0-r0": 1558978757
       },
       "origin": "usbredir",
       "dependencies": [
@@ -59535,8 +59585,8 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "so:libusbredirhost.so.1=1.0.0",
-        "so:libusbredirparser.so.1=1.0.0"
+        "so:libusbredirhost.so.1=1.0.1",
+        "so:libusbredirparser.so.1=1.0.1"
       ]
     },
     "kamailio-postgres": {
@@ -60442,7 +60492,8 @@
     },
     "udisks2-libs": {
       "versions": {
-        "2.6.5-r1": 1557164442
+        "2.6.5-r1": 1557164442,
+        "2.8.2-r0": 1558981617
       },
       "origin": "udisks2",
       "dependencies": [
@@ -64564,18 +64615,22 @@
     },
     "udisks2": {
       "versions": {
-        "2.6.5-r1": 1557164446
+        "2.6.5-r1": 1557164446,
+        "2.8.2-r0": 1558981617
       },
       "origin": "udisks2",
       "dependencies": [
         "so:libacl.so.1",
         "so:libatasmart.so.4",
+        "so:libbd_utils.so.2",
+        "so:libblockdev.so.2",
         "so:libc.musl-x86_64.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgudev-1.0.so.0",
+        "so:libmount.so.1",
         "so:libpolkit-agent-1.so.0",
         "so:libpolkit-gobject-1.so.0",
         "so:libudisks2.so.0"
@@ -65427,12 +65482,13 @@
     },
     "libvirt-xen": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
         "so:libintl.so.8",
@@ -65532,12 +65588,13 @@
     },
     "libvirt-lxc": {
       "versions": {
-        "5.3.0-r0": 1557149285
+        "5.3.0-r0": 1557149285,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=5.3.0-r0",
-        "libvirt-common-drivers=5.3.0-r0",
+        "libvirt-daemon=5.3.0-r2",
+        "libvirt-common-drivers=5.3.0-r2",
         "so:libblkid.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libcap-ng.so.0",
@@ -67959,7 +68016,8 @@
     },
     "libvirt-lang": {
       "versions": {
-        "5.3.0-r0": 1557149284
+        "5.3.0-r0": 1557149284,
+        "5.3.0-r2": 1558979773
       },
       "origin": "libvirt",
       "dependencies": [
@@ -69385,6 +69443,299 @@
       "versions": {
         "1.2.15-r10": 1558968157
       }
+    },
+    "libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558981549
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libbytesize.so.1",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libdevmapper.so.1.02",
+        "so:libdmraid.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libkmod.so.2",
+        "so:libmount.so.1",
+        "so:libndctl.so.6",
+        "so:libnss3.so",
+        "so:libparted-fs-resize.so.0",
+        "so:libparted.so.2",
+        "so:libsmime3.so",
+        "so:libudev.so.1",
+        "so:libuuid.so.1",
+        "so:libvolume_key.so.1",
+        "so:libyaml-0.so.2"
+      ],
+      "provides": [
+        "so:libbd_btrfs.so.2=2.0.0",
+        "so:libbd_crypto.so.2=2.0.0",
+        "so:libbd_dm.so.2=2.0.0",
+        "so:libbd_fs.so.2=2.0.0",
+        "so:libbd_kbd.so.2=2.0.0",
+        "so:libbd_loop.so.2=2.0.0",
+        "so:libbd_lvm-dbus.so.2=2.0.0",
+        "so:libbd_lvm.so.2=2.0.0",
+        "so:libbd_mdraid.so.2=2.0.0",
+        "so:libbd_mpath.so.2=2.0.0",
+        "so:libbd_nvdimm.so.2=2.0.0",
+        "so:libbd_part.so.2=2.0.0",
+        "so:libbd_part_err.so.2=2.0.0",
+        "so:libbd_swap.so.2=2.0.0",
+        "so:libbd_utils.so.2=2.1.0",
+        "so:libbd_vdo.so.2=2.0.0",
+        "so:libblockdev.so.2=2.0.0",
+        "cmd:lvm-cache-stats"
+      ]
+    },
+    "py-libbytesize": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      },
+      "dependencies": [
+        "python3",
+        "py3-six"
+      ]
+    },
+    "libcroco-doc": {
+      "origin": "libcroco",
+      "versions": {
+        "0.6.13-r0": 1558978804
+      }
+    },
+    "dmraid-static": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558981505
+      }
+    },
+    "dmraid": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558981506
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libdevmapper-event.so.1.02",
+        "so:libdevmapper.so.1.02"
+      ],
+      "provides": [
+        "so:libdmraid.so.1=1.0.0",
+        "cmd:dmevent_tool",
+        "cmd:dmraid"
+      ]
+    },
+    "libbytesize-doc": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      }
+    },
+    "libblockdev-dev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558981549
+      },
+      "dependencies": [
+        "libblockdev=2.21-r0",
+        "pc:glib-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:blockdev-utils=2.21",
+        "pc:blockdev=2.21"
+      ]
+    },
+    "volume_key-doc": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558981524
+      }
+    },
+    "libbytesize-dev": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      },
+      "dependencies": [
+        "libbytesize=2.0-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:bytesize=0.1.0"
+      ]
+    },
+    "ndctl-bash-completion": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558981487
+      }
+    },
+    "freeswitch-sounds-pt-br-karina-8000": {
+      "origin": "freeswitch-sounds-pt-br-karina-8000",
+      "versions": {
+        "1.0.51-r2": 1558980944
+      },
+      "provides": [
+        "freeswitch-sounds-pt-BR-karina-8000"
+      ]
+    },
+    "libbytesize": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgmp.so.10",
+        "so:libintl.so.8",
+        "so:libmpfr.so.4",
+        "so:libpcre2-8.so.0"
+      ],
+      "provides": [
+        "so:libbytesize.so.1=1.0.0"
+      ]
+    },
+    "ndctl": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558981487
+      },
+      "dependencies": [
+        "libuuid",
+        "json-c",
+        "kmod",
+        "so:libc.musl-x86_64.so.1",
+        "so:libdaxctl.so.1",
+        "so:libjson-c.so.4",
+        "so:libndctl.so.6",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "cmd:daxctl",
+        "cmd:ndctl"
+      ]
+    },
+    "py3-volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558981524
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libnss3.so",
+        "so:libpython3.7m.so.1.0",
+        "so:libsmime3.so",
+        "so:libvolume_key.so.1"
+      ]
+    },
+    "py3-libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1558981549
+      }
+    },
+    "ndctl-dev": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558981487
+      },
+      "dependencies": [
+        "ndctl-libs=61.2-r0",
+        "pkgconfig"
+      ]
+    },
+    "dmraid-dev": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558981506
+      },
+      "dependencies": [
+        "dmraid=1.0.0_rc16-r0"
+      ]
+    },
+    "ndctl-libs": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558981487
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libkmod.so.2",
+        "so:libudev.so.1",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "so:libdaxctl.so.1=1.2.0",
+        "so:libndctl.so.6=6.10.1"
+      ]
+    },
+    "libbytesize-tools": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      },
+      "dependencies": [
+        "py-libbytesize"
+      ],
+      "provides": [
+        "cmd:bscalc"
+      ]
+    },
+    "ndctl-doc": {
+      "origin": "ndctl",
+      "versions": {
+        "61.2-r0": 1558981487
+      }
+    },
+    "volume_key-dev": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558981524
+      },
+      "dependencies": [
+        "volume_key=0.3.12-r0"
+      ]
+    },
+    "libbytesize-lang": {
+      "origin": "libbytesize",
+      "versions": {
+        "2.0-r1": 1558981451
+      }
+    },
+    "dmraid-doc": {
+      "origin": "dmraid",
+      "versions": {
+        "1.0.0_rc16-r0": 1558981506
+      }
+    },
+    "volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1558981524
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libglib-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libintl.so.8",
+        "so:libnspr4.so",
+        "so:libnss3.so",
+        "so:libplc4.so",
+        "so:libsmime3.so"
+      ],
+      "provides": [
+        "so:libvolume_key.so.1=1.2.3",
+        "cmd:volume_key"
+      ]
     }
   },
   "provide": {
@@ -69743,7 +70094,7 @@
       },
       "libxtables.so.12": {
         "package": "iptables",
-        "version": "12.0.0"
+        "version": "12.2.0"
       },
       "libXinerama.so.1": {
         "package": "libxinerama",
@@ -75027,11 +75378,11 @@
       },
       "libusbredirhost.so.1": {
         "package": "usbredir",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "libusbredirparser.so.1": {
         "package": "usbredir",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "librarian.so.0": {
         "package": "rarian",
@@ -75736,6 +76087,94 @@
       "libsrtp2.so.1": {
         "package": "libsrtp",
         "version": "1"
+      },
+      "libbd_btrfs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_crypto.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_dm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_fs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_kbd.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_loop.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm-dbus.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mdraid.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mpath.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_nvdimm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part_err.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_swap.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_utils.so.2": {
+        "package": "libblockdev",
+        "version": "2.1.0"
+      },
+      "libbd_vdo.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libblockdev.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libdmraid.so.1": {
+        "package": "dmraid",
+        "version": "1.0.0"
+      },
+      "libbytesize.so.1": {
+        "package": "libbytesize",
+        "version": "1.0.0"
+      },
+      "libdaxctl.so.1": {
+        "package": "ndctl-libs",
+        "version": "1.2.0"
+      },
+      "libndctl.so.6": {
+        "package": "ndctl-libs",
+        "version": "6.10.1"
+      },
+      "libvolume_key.so.1": {
+        "package": "volume_key",
+        "version": "1.2.3"
       }
     },
     "package": {
@@ -76338,6 +76777,14 @@
       "freeradius3-sql": {
         "package": "freeradius-sql",
         "version": "3.0.19-r1"
+      },
+      "ebtables": {
+        "package": "iptables",
+        "version": 0
+      },
+      "freeswitch-sounds-pt-BR-karina-8000": {
+        "package": "freeswitch-sounds-pt-br-karina-8000",
+        "version": 0
       }
     }
   }

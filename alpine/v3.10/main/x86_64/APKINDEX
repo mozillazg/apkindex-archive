@@ -706,6 +706,22 @@ c:2593cb4a48e16c47d391023533c533db89dbc6c8
 D:hwdata-usb so:libc.musl-x86_64.so.1 so:libudev.so.1 so:libusb-1.0.so.0
 p:cmd:lsusb cmd:lsusb.py cmd:usb-devices cmd:usbhid-dump
 
+C:Q1PEmUjEiW0W6zEn5PqajA2qawJPg=
+P:libblockdev
+V:2.21-r0
+A:x86_64
+S:237220
+I:860160
+T:Library for manipulating block devices
+U:https://github.com/storaged-project/libblockdev
+L:LGPL-2.1-or-later
+o:libblockdev
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981549
+c:1e4017036f9b57f519b56135307a5c3b2081ad69
+D:so:libblkid.so.1 so:libbytesize.so.1 so:libc.musl-x86_64.so.1 so:libcryptsetup.so.12 so:libdevmapper.so.1.02 so:libdmraid.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libkmod.so.2 so:libmount.so.1 so:libndctl.so.6 so:libnss3.so so:libparted-fs-resize.so.0 so:libparted.so.2 so:libsmime3.so so:libudev.so.1 so:libuuid.so.1 so:libvolume_key.so.1 so:libyaml-0.so.2
+p:so:libbd_btrfs.so.2=2.0.0 so:libbd_crypto.so.2=2.0.0 so:libbd_dm.so.2=2.0.0 so:libbd_fs.so.2=2.0.0 so:libbd_kbd.so.2=2.0.0 so:libbd_loop.so.2=2.0.0 so:libbd_lvm-dbus.so.2=2.0.0 so:libbd_lvm.so.2=2.0.0 so:libbd_mdraid.so.2=2.0.0 so:libbd_mpath.so.2=2.0.0 so:libbd_nvdimm.so.2=2.0.0 so:libbd_part.so.2=2.0.0 so:libbd_part_err.so.2=2.0.0 so:libbd_swap.so.2=2.0.0 so:libbd_utils.so.2=2.1.0 so:libbd_vdo.so.2=2.0.0 so:libblockdev.so.2=2.0.0 cmd:lvm-cache-stats
+
 C:Q1bMnrftk1ipW8ASRfjrpxmVqgxIU=
 P:perl-control-x10
 V:2.09-r1
@@ -1426,22 +1442,6 @@ t:1557138776
 c:fa6f3b9635f4bccdfb49c4ad6b8446c3577a3eaf
 i:docs xf86-input-evdev=2.10.6-r0
 
-C:Q1c4X2dfRfIH5e4mj7+QbvfrIpdtc=
-P:usbredir-dev
-V:0.7.1-r0
-A:x86_64
-S:11186
-I:73728
-T:USB network redirection protocol libraries (development files)
-U:http://spice-space.org/page/UsbRedir
-L:GPL-2.0-or-later LGPL-2.1-or-later
-o:usbredir
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557061345
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:libusb-dev pc:libusb-1.0 pkgconfig usbredir=0.7.1-r0
-p:pc:libusbredirhost=0.7.1 pc:libusbredirparser-0.5=0.7.1
-
 C:Q10ysYCXAVlrec1+u8jAbeCiuNNsg=
 P:libmp3splt
 V:0.9.2-r0
@@ -1566,6 +1566,22 @@ t:1557082204
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-x86_64.so.1
 p:cmd:ddate
+
+C:Q18dYXHUpaNHKGyHQODvz3qhvkWb4=
+P:libvirt-xen
+V:5.3.0-r2
+A:x86_64
+S:183397
+I:516096
+T:XEN driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-daemon=5.3.0-r2 libvirt-common-drivers=5.3.0-r2 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxenlight.so.4.12 so:libxenstore.so.3.0 so:libxentoollog.so.1 so:libxlutil.so.4.12 so:libxml2.so.2
+i:libvirt-daemon=5.3.0-r2 xen
 
 C:Q1w0xbpy2NPphMKAEoXSK0bCP/lvI=
 P:tsocks-doc
@@ -2830,21 +2846,6 @@ t:1557082200
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core tinydns
 
-C:Q1h3Q+4Rb56DNoBVDWHjtbVm6eW7g=
-P:libvirt-vbox
-V:5.3.0-r0
-A:x86_64
-S:144456
-I:385024
-T:VirtualBox driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-daemon=5.3.0-r0 libvirt-common-drivers=5.3.0-r0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
-
 C:Q1hxFHqtfDbswRbErHSDimvFFXnyo=
 P:directfb-doc
 V:1.7.7-r1
@@ -3000,6 +3001,21 @@ t:1556980172
 c:f1c1367bb7d7b933180422fa083a5a206039a60c
 D:so:libX11.so.6 so:libXfixes.so.3 so:libXi.so.6 so:libc.musl-x86_64.so.1
 p:cmd:xbanish
+
+C:Q1LnFgX7fr+n9QY4/I0MHwRFpCjRo=
+P:py-libbytesize
+V:2.0-r1
+A:x86_64
+S:5413
+I:53248
+T:Python bindings for libbytesize
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+D:python3 py3-six
 
 C:Q1fxVxh88PaUlujR2YZP7rmwVSlXY=
 P:perl-encode-doc
@@ -3473,22 +3489,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556997603
 c:7ebbcb3d815f69f1ee1c7f9ea1b338484de9dbf9
 
-C:Q1U1XFlwb51dHdrHOgpQteusi/6So=
-P:libvirt-client
-V:5.3.0-r0
-A:x86_64
-S:676179
-I:1822720
-T:libvirt client package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libreadline.so.8 so:libtirpc.so.3 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
-p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
-
 C:Q1tC/s30w3z1XcHyzQ1kxJBeqMOsU=
 P:testdisk-doc
 V:7.0-r4
@@ -3806,22 +3806,6 @@ o:tarsnap
 t:1557133370
 c:b372b326e4a06116339e50716a870a7d5bd5cbaf
 i:docs tarsnap=1.0.39-r4
-
-C:Q182bso4vUY0IsmS8eHIbRsf36Bac=
-P:libvirt-qemu
-V:5.3.0-r0
-A:x86_64
-S:678649
-I:1773568
-T:QEMU driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-daemon=5.3.0-r0 libvirt-common-drivers=5.3.0-r0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
-i:libvirt-daemon=5.3.0-r0 qemu
 
 C:Q1FP4ECUX4fkLn6LC2hEzZELs9ebY=
 P:ulogd-mysql
@@ -4540,6 +4524,22 @@ t:1557142693
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
 D:dovecot=2.3.6-r1 so:libc.musl-x86_64.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
+C:Q1VGN3LeSJaV9WG6ebM2PS0fXsfMU=
+P:libvirt-dev
+V:5.3.0-r2
+A:x86_64
+S:217678
+I:1425408
+T:A virtualization API for several hypervisor and container systems (development files)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979772
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libtirpc-dev libvirt-libs=5.3.0-r2 pkgconfig
+p:pc:libvirt-admin=5.3.0 pc:libvirt-lxc=5.3.0 pc:libvirt-qemu=5.3.0 pc:libvirt=5.3.0
+
 C:Q1RjAtLMwOuGS5X9abdgTcYByZJ4M=
 P:squid-lang-sl
 V:4.6-r1
@@ -4711,22 +4711,6 @@ t:1557151434
 c:6ff93b0ca657702b566e34b208cf63be61ffb60f
 D:so:libc.musl-x86_64.so.1 so:libhiredis.so.0.14 so:libsyslog-ng-3.19.so.0
 
-C:Q1bGW5ZwC0HbQg1l+TkU6GSmhiTJg=
-P:iptables
-V:1.6.2-r2
-A:x86_64
-S:388192
-I:2134016
-T:Linux kernel firewall, NAT and packet mangling tools
-U:http://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989220
-c:eaea3bf8a90e0ad0739e6e88629340c05c31fce7
-D:so:libc.musl-x86_64.so.1 so:libmnl.so.0 so:libnftnl.so.11
-p:so:libip4tc.so.0=0.1.0 so:libip6tc.so.0=0.1.0 so:libipq.so.0=0.0.0 so:libiptc.so.0=0.0.0 so:libxtables.so.12=12.0.0 cmd:arptables-compat cmd:ebtables-compat cmd:iptables cmd:iptables-compat cmd:iptables-compat-restore cmd:iptables-compat-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-compat-multi cmd:xtables-multi
-
 C:Q1sb/CPmsY22vGuVa9N8NCDbYn7+Q=
 P:rsyslog-relp
 V:8.1904.0-r0
@@ -4758,6 +4742,22 @@ t:1557058583
 c:e728421ca3310bec1c7289686e9fe223ee9f6372
 D:so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libpython3.7m.so.1.0
 i:py-crypto=2.6.1-r3 python3
+
+C:Q1QpIap86ruZsAXz3aTpat+aPyIwc=
+P:iptables
+V:1.8.2-r0
+A:x86_64
+S:425099
+I:2293760
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558979173
+c:a4df5366758364645ebaf9e3136074a013356574
+D:so:libc.musl-x86_64.so.1 so:libmnl.so.0 so:libnftnl.so.11
+p:ebtables so:libip4tc.so.0=0.1.0 so:libip6tc.so.0=0.1.0 so:libipq.so.0=0.0.0 so:libiptc.so.0=0.0.0 so:libxtables.so.12=12.2.0 cmd:arptables cmd:arptables-nft cmd:arptables-nft-restore cmd:arptables-nft-save cmd:arptables-restore cmd:arptables-save cmd:ebtables cmd:ebtables-nft cmd:ebtables-nft-restore cmd:ebtables-nft-save cmd:ebtables-restore cmd:ebtables-save cmd:iptables cmd:iptables-legacy cmd:iptables-legacy-restore cmd:iptables-legacy-save cmd:iptables-nft cmd:iptables-nft-restore cmd:iptables-nft-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-legacy-multi cmd:xtables-monitor cmd:xtables-nft-multi
 
 C:Q1Q/Fy1X4PKHX4ngPc+3KD3OxrHa8=
 P:perl-file-slurper-doc
@@ -5062,6 +5062,22 @@ t:1557175789
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:pkgconfig stfl=0.24-r2
 p:pc:stfl=0.24
+
+C:Q11Y8OZo4k0wIUuRQ2sHpB+1FIasE=
+P:udisks2-dev
+V:2.8.2-r0
+A:x86_64
+S:462688
+I:4583424
+T:A Disk Manager (development files)
+U:http://www.freedesktop.org/wiki/Software/udisks
+L:GPL-2.0-or-later
+o:udisks2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558981616
+c:390d2ae0c43393898cf6407fca34174e8450a88a
+D:gobject-introspection-dev polkit-dev libatasmart-dev libgudev-dev acl-dev pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pkgconfig udisks2-libs=2.8.2-r0
+p:pc:udisks2=2.8.2
 
 C:Q1aMoKnp4gJSgqKYQqeIBnnSkbq7g=
 P:py3-urwid
@@ -6681,6 +6697,22 @@ c:1fc0f4f58d4029c2961bbf629ed7ffa733278b8d
 D:so:libc.musl-x86_64.so.1 so:libpython3.7m.so.1.0
 i:py-bcrypt=3.1.6-r1 python3
 
+C:Q1nPe8t7rSs1MnZyTTb1G+ago73XM=
+P:libvirt-qemu
+V:5.3.0-r2
+A:x86_64
+S:678677
+I:1773568
+T:QEMU driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-daemon=5.3.0-r2 libvirt-common-drivers=5.3.0-r2 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=5.3.0-r2 qemu
+
 C:Q1HnWOuLzimUVTpMZ/hFuNgrzHLg8=
 P:perl-io
 V:1.25-r5
@@ -6803,21 +6835,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558961521
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86_64.so.1
-
-C:Q1WEE8wso9XewEl8qN0DKmgvexPzY=
-P:grub-bios
-V:2.02-r15
-A:x86_64
-S:1498829
-I:4358144
-T:Bootloader with support for Linux, Multiboot and more (BIOS version)
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059603
-c:c40e9ceff34231100ff228d3015900e945727a7f
-D:grub
 
 C:Q1yUGntomup7ulfRhCHj4aXbOXeBM=
 P:cyrus-sasl-ntlm
@@ -7543,6 +7560,21 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:lua5.1 so:libc.musl-x86_64.so.1
 i:lua-pty=1.2.1-r1 lua5.1
 
+C:Q1P9HN4J964/NYdb5f2pD7PRuajno=
+P:libcroco-doc
+V:0.6.13-r0
+A:x86_64
+S:77925
+I:978944
+T:GNOME CSS2 parsing and manipulation toolkit (documentation)
+U:http://www.gnome.org
+L:LGPL-2.1-only
+o:libcroco
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978804
+c:b5f69c4e1eeddf1f0e10e7ab6167575df421548d
+i:docs libcroco=0.6.13-r0
+
 C:Q1Ax2i/7rd+aFIYKLob8gdtW3ptAU=
 P:net-tools-dbg
 V:1.60_git20140218-r2
@@ -7942,22 +7974,6 @@ c:7b7a2f8ae0a8277a947c1b3ce728de06b0e502f6
 D:so:libc.musl-x86_64.so.1 so:libmnl.so.0
 p:so:libnftnl.so.11=11.0.0
 
-C:Q19sdgcdQ6lShM/ilOCViZiQUAZE4=
-P:udisks2-dev
-V:2.6.5-r1
-A:x86_64
-S:281028
-I:3289088
-T:A Disk Manager (development files)
-U:http://www.freedesktop.org/wiki/Software/udisks
-L:GPL-2.0-or-later
-o:udisks2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557164432
-c:69b397fceefdd1ae05560b1559d03a1195b4211b
-D:gobject-introspection-dev polkit-dev libatasmart-dev libgudev-dev acl-dev pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pkgconfig udisks2-libs=2.6.5-r1
-p:pc:udisks2=2.6.5
-
 C:Q19nxHmBWnLzegkGltGR8GS7v+ssg=
 P:e2fsprogs-libs
 V:1.45.0-r0
@@ -8186,6 +8202,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557146316
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libavc1394=0.5.4-r2
+
+C:Q1oqhiC86Fex4XvL+kWnSJUhk0NiM=
+P:libvirt-lxc
+V:5.3.0-r2
+A:x86_64
+S:201290
+I:577536
+T:LXC driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-daemon=5.3.0-r2 libvirt-common-drivers=5.3.0-r2 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=5.3.0-r2 lxc
 
 C:Q1Iwp6ofVP5Pw/dsx7hMgHVQz7drQ=
 P:xen-hypervisor
@@ -8523,6 +8555,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557151747
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 
+C:Q1nJGhTc1P8e7DeS5R4i++FQp42LY=
+P:grub
+V:2.02-r17
+A:x86_64
+S:5318726
+I:12263424
+T:Bootloader with support for Linux, Multiboot and more
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980440
+c:936d3259be28015c2951e98a3c3fed6b150c2614
+D:mkinitfs /bin/sh so:libc.musl-x86_64.so.1 so:libdevmapper.so.1.02 so:libfreetype.so.6 so:liblzma.so.5
+p:cmd:grub-bios-setup cmd:grub-editenv cmd:grub-file cmd:grub-fstest cmd:grub-glue-efi cmd:grub-install cmd:grub-kbdcomp cmd:grub-macbless cmd:grub-menulst2cfg cmd:grub-mkconfig cmd:grub-mkfont cmd:grub-mkimage cmd:grub-mklayout cmd:grub-mknetdir cmd:grub-mkpasswd-pbkdf2 cmd:grub-mkrelpath cmd:grub-mkrescue cmd:grub-mkstandalone cmd:grub-ofpathname cmd:grub-probe cmd:grub-reboot cmd:grub-render-label cmd:grub-script-check cmd:grub-set-default cmd:grub-sparc64-setup cmd:grub-syslinux2cfg
+
 C:Q1nHR7lDv+50uwhJwhMS1TkCfjUS0=
 P:qemu-block-dmg-bz2
 V:4.0.0-r0
@@ -8582,22 +8630,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557140603
 c:ef37e69561a4d6c532c6bf9a603ff6444b679be9
 i:docs xf86-video-chips=1.4.0-r0
-
-C:Q1RRlzDLJYIbA5HllbVbSQySVybHA=
-P:libcroco-dev
-V:0.6.12-r1
-A:x86_64
-S:25080
-I:212992
-T:GNOME CSS2 parsing and manipulation toolkit (development files)
-U:http://www.gnome.org
-L:LGPL-2.1-only
-o:libcroco
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556990964
-c:63875e36ddd7311f88dd347ffbb0e8702d0406ff
-D:libcroco=0.6.12-r1 pc:glib-2.0 pc:libxml-2.0 pkgconfig
-p:pc:libcroco-0.6=0.6.12 cmd:croco-0.6-config
 
 C:Q1qE5C4XLJJ8FQ2EgMm9dIokj+/g0=
 P:perl-sys-hostname-long
@@ -9558,22 +9590,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556886575
 c:3cd48b869ba6eefb0d8dc2afd8e7ec55762c8fc6
 
-C:Q15QG1JTiR3CtdjYWxKDa7wvp2g2s=
-P:libvirt-daemon
-V:5.3.0-r0
-A:x86_64
-S:152689
-I:581632
-T:libvirt daemon package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-client bridge-utils dmidecode dnsmasq ebtables ip6tables iptables so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
-p:cmd:libvirtd
-
 C:Q19SbdsHkmrdyOeiO4+pi8PStQn68=
 P:openvpn-openrc
 V:2.4.7-r1
@@ -9773,6 +9789,22 @@ t:1557002039
 c:c40cb872fd00e29521b07a5ed63347585c5392f3
 D:so:libaspell.so.15 so:libc.musl-x86_64.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libstdc++.so.6
 p:cmd:aspell
+
+C:Q1SOc2Ne6+/+QgnftQ62nXcmkj3pc=
+P:libvirt-daemon
+V:5.3.0-r2
+A:x86_64
+S:152700
+I:581632
+T:libvirt daemon package
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-client bridge-utils dmidecode dnsmasq ip6tables iptables so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
+p:cmd:libvirtd
 
 C:Q1KXFbd/jSBoYGiuDYPW6ByaEMjTc=
 P:gdl-dev
@@ -11230,6 +11262,21 @@ t:1557125406
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:busybox
 
+C:Q1Om6HXrUomo+hssR5Y76dJ77JAzY=
+P:ip6tables
+V:1.8.2-r0
+A:x86_64
+S:47137
+I:401408
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558979172
+c:a4df5366758364645ebaf9e3136074a013356574
+D:iptables iptables=1.8.2-r0 so:libc.musl-x86_64.so.1 so:libxtables.so.12
+
 C:Q1/LqVKQl+BXzwZqCCt+7Lr4aXhWU=
 P:dwm
 V:6.2-r0
@@ -12491,21 +12538,6 @@ c:6f0ba9819c5496e6da5783836e68418caacc7b10
 D:dovecot=2.3.6-r1 so:lib20_fts_plugin.so so:libc.musl-x86_64.so.1 so:libexpat.so.1
 p:so:lib21_fts_solr_plugin.so=0
 
-C:Q1qcNhWW1FLrgS755zh14eKmuKkQM=
-P:grub-efi
-V:2.02-r15
-A:x86_64
-S:1568791
-I:5144576
-T:Bootloader with support for Linux, Multiboot and more (EFI version)
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059603
-c:c40e9ceff34231100ff228d3015900e945727a7f
-D:grub
-
 C:Q1DJpdoDhntkJsylNUZW4xc6+ul3k=
 P:bluez
 V:5.50-r2
@@ -13002,6 +13034,21 @@ t:1556918002
 c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libboost_context.so.1.69.0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1
 p:so:libboost_fiber.so.1.69.0=1.69.0
+
+C:Q1njdOGqhE5hc84KLeXoUeyeDCyH8=
+P:udisks2-lang
+V:2.8.2-r0
+A:x86_64
+S:373506
+I:2113536
+T:Languages for package udisks2
+U:http://www.freedesktop.org/wiki/Software/udisks
+L:GPL-2.0-or-later
+o:udisks2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558981616
+c:390d2ae0c43393898cf6407fca34174e8450a88a
+i:udisks2=2.8.2-r0 lang
 
 C:Q1rxFeE2XtW9oXTpfKzID2fbgt1Go=
 P:neon-dev
@@ -13634,6 +13681,21 @@ c:7944951d23e03c162d96dd71b01d72cb09f97030
 D:so:libc.musl-x86_64.so.1 so:libz.so.1
 p:so:libpng16.so.16=16.37.0
 
+C:Q1HImwigj/ptc+bVNIZbNYBOLR8Sk=
+P:meson-doc
+V:0.50.1-r1
+A:x86_64
+S:3471
+I:24576
+T:Fast and user friendly build system (documentation)
+U:https://mesonbuild.com
+L:Apache-2.0
+o:meson
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558978330
+c:779792a1eaa0b66be14b0bdd12c0607ac381b3de
+i:docs meson=0.50.1-r1
+
 C:Q1jbEEHH45aXRkwlkzfXVc/8iXagI=
 P:perl-test2-plugin-nowarnings
 V:0.06-r0
@@ -14000,6 +14062,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556916745
 c:4be4d2f5b60e479f498c0b7729d750b4d034b00c
 i:docs icu=64.2-r0
+
+C:Q1nVvEFJwTnHR+xz6WYbJIi6PBBeY=
+P:udisks2
+V:2.8.2-r0
+A:x86_64
+S:345548
+I:1314816
+T:A Disk Manager
+U:http://www.freedesktop.org/wiki/Software/udisks
+L:GPL-2.0-or-later
+o:udisks2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558981617
+c:390d2ae0c43393898cf6407fca34174e8450a88a
+D:so:libacl.so.1 so:libatasmart.so.4 so:libbd_utils.so.2 so:libblockdev.so.2 so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libmount.so.1 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0 so:libudisks2.so.0
+p:cmd:udisksctl cmd:umount.udisks2
 
 C:Q17gNM+YNwXLqfQ5QHoXhGKzNKpO4=
 P:lua-inspect
@@ -17835,6 +17913,21 @@ t:1558961519
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86_64.so.1
 
+C:Q1DMh70aOO9xqDkplq/2WINZ9LGzc=
+P:libvirt-vbox
+V:5.3.0-r2
+A:x86_64
+S:144473
+I:385024
+T:VirtualBox driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-daemon=5.3.0-r2 libvirt-common-drivers=5.3.0-r2 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q1XUkRy77QQBSr/q53OJo27OBdZmA=
 P:ruby-bundler-doc
 V:2.0.1-r0
@@ -18050,6 +18143,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557244357
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs ragel=6.10-r0
+
+C:Q1EZdYRkRUe+hhRL17cbzKbsTbd3g=
+P:usbredir-dev
+V:0.8.0-r0
+A:x86_64
+S:11162
+I:73728
+T:USB network redirection protocol libraries (development files)
+U:http://spice-space.org/page/UsbRedir
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:usbredir
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978757
+c:69b85bb1cb210743de4de4c654888989eda0394b
+D:pc:libusb-1.0 pkgconfig usbredir=0.8.0-r0
+p:pc:libusbredirhost=0.8.0 pc:libusbredirparser-0.5=0.8.0
 
 C:Q1hbgWxNHY+TCjzhq9wWn6Eo00SWc=
 P:samba-common-tools
@@ -18425,6 +18534,21 @@ c:47edd290d1ad530be52e98617325c29417d47cf1
 D:so:libMESSAGING-SEND-samba4.so so:libc.musl-x86_64.so.1 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libldap-2.4.so.2 so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbldap.so.2 so:libsmbldaphelper-samba4.so so:libtalloc-report-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-tdb-samba4.so
 p:so:libMESSAGING-samba4.so=0 so:libdcerpc-samba4.so=0 so:libidmap-samba4.so=0 so:libnon-posix-acls-samba4.so=0 so:libnss-info-samba4.so=0
 
+C:Q1C49GUVUr5e5bDzAT78t8BvYQ2pM=
+P:libvirt-doc
+V:5.3.0-r2
+A:x86_64
+S:2425422
+I:8085504
+T:A virtualization API for several hypervisor and container systems (documentation)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+i:docs libvirt=5.3.0-r2
+
 C:Q1jjIYJLRxOtJen08+rpm0/etgIOM=
 P:sqlite-doc
 V:3.28.0-r0
@@ -18578,21 +18702,6 @@ t:1557169356
 c:a2cfb9d906813e89c6963cf296babe0abf0041bf
 i:mc=4.8.22-r0 lang
 
-C:Q1G70S8QwCBEmQtKUPGH2KAYARolU=
-P:libvirt-doc
-V:5.3.0-r0
-A:x86_64
-S:2425326
-I:8085504
-T:A virtualization API for several hypervisor and container systems (documentation)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-i:docs libvirt=5.3.0-r0
-
 C:Q1j02thu15E8lcImpI8km8lcXNH04=
 P:perl-string-shellquote
 V:1.04-r0
@@ -18622,6 +18731,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556909315
 c:7b8fc884f383768f2ac614423367d480a4aa2ce5
 i:docs bash=5.0.0-r0
+
+C:Q1kzBAC6pacNSJ/coKlD/1ZzUCEnQ=
+P:usbredir-doc
+V:0.8.0-r0
+A:x86_64
+S:2500
+I:24576
+T:USB network redirection protocol libraries (documentation)
+U:http://spice-space.org/page/UsbRedir
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:usbredir
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978757
+c:69b85bb1cb210743de4de4c654888989eda0394b
+i:docs usbredir=0.8.0-r0
 
 C:Q1ZOnc55gkPElxyrb4hv6ru9XsfW8=
 P:glew
@@ -19590,6 +19714,22 @@ o:py-flask-wtf
 t:1557245367
 c:327821e3b57e0e59fce22469b581730f00906392
 D:py-flask py-wtforms
+
+C:Q1anRu/jIsnZGLMJoBSiwwnzdVZks=
+P:libcroco-dev
+V:0.6.13-r0
+A:x86_64
+S:24882
+I:212992
+T:GNOME CSS2 parsing and manipulation toolkit (development files)
+U:http://www.gnome.org
+L:LGPL-2.1-only
+o:libcroco
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978804
+c:b5f69c4e1eeddf1f0e10e7ab6167575df421548d
+D:libcroco=0.6.13-r0 pc:glib-2.0 pc:libxml-2.0 pkgconfig
+p:pc:libcroco-0.6=0.6.13 cmd:croco-0.6-config
 
 C:Q1+ycf1yDurH26zoMI+Wt02bnfuQQ=
 P:beep
@@ -20816,6 +20956,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:/bin/sh so:libc.musl-x86_64.so.1 so:libfontenc.so.1 so:libfreetype.so.6 so:libz.so.1
 p:cmd:mkfontscale
 
+C:Q1ehxy0yF/PYuWk2wa38ayhlhoD0g=
+P:grub-doc
+V:2.02-r17
+A:x86_64
+S:32094
+I:118784
+T:Bootloader with support for Linux, Multiboot and more (documentation)
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980439
+c:936d3259be28015c2951e98a3c3fed6b150c2614
+i:docs grub=2.02-r17
+
 C:Q1azxtpLGH0qn8evac1Bfe+u+32mE=
 P:py3-libproxy
 V:0.4.15-r2
@@ -20995,19 +21150,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1557084552
 c:e92f3a421240a849e7be52c15d9448419891c2ae
 i:alpine-ipxe=1.0_git20180825-r1
-
-C:Q1+h8qeIWFbd+joBw0vP2aXF4JPzA=
-P:freeswitch-sounds-pt-BR-karina-8000
-V:1.0.51-r1
-A:x86_64
-S:14265841
-I:22155264
-T:Sounds for freeswitch Brazilian Portuguese
-U:http://files.freeswitch.org/
-L:unknown
-o:freeswitch-sounds-pt-BR-karina-8000
-t:1557161677
-c:9485fcd2d360167cc28ae121e9840d48c7547681
 
 C:Q1yjBXv2sz7x9lfPOQzEyCfA1IH4A=
 P:libxau
@@ -21304,21 +21446,6 @@ t:1558944424
 c:282f22a649e92e9cfd659d1f58fe802c01f12940
 D:libebml=1.3.8-r0 pkgconfig
 p:pc:libebml=1.3.8
-
-C:Q10QFLqd6CPOW6wHI9rNRE+ipBQI4=
-P:irqbalance-doc
-V:1.5.0-r2
-A:x86_64
-S:4475
-I:24576
-T:Daemon that distributes interrupts over the processors (documentation)
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1557138278
-c:43575df70529956671c48df9e9774bc4502e20fd
-i:docs irqbalance=1.5.0-r2
 
 C:Q1cfSnFELSX1pPdOgC3b43eJ9bxcE=
 P:mtools
@@ -21723,6 +21850,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557060674
 c:90daef9edad6ec08c3c4a8602739540575df38f1
 i:docs openvpn=2.4.7-r1
+
+C:Q1unibrY43mARNlYiO/cEmdAoWgq4=
+P:dmraid-static
+V:1.0.0_rc16-r0
+A:x86_64
+S:136676
+I:454656
+T:Device mapper RAID interface (static library)
+U:http://people.redhat.com/~heinzm/sw/dmraid/
+L:GPL-2.0-only LGPL-2.1-only
+o:dmraid
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981505
+c:1606a2ff8ec904210b91ddbd61243617f0847e4f
 
 C:Q1bBgQhB6wnTMqdYQOL9SldgeaKTA=
 P:perl-mailtools
@@ -23477,22 +23618,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1557086670
 c:f75ad6edaf303e16ea6b848ba9da435535bc164f
 
-C:Q1Ram2/ZxMvIFgZYb3EJ8BuRPgBdU=
-P:meson
-V:0.50.1-r0
-A:x86_64
-S:974180
-I:3895296
-T:Fast and user friendly build system
-U:https://mesonbuild.com
-L:Apache-2.0
-o:meson
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556895751
-c:cf6a7e46a0979b362cc5a3b66154a0a533f55ad7
-D:ninja python3
-p:cmd:meson
-
 C:Q11u/DC5RBvJ5Ut+9W8IkUFlE2ypo=
 P:liblcms
 V:1.19-r8
@@ -24558,6 +24683,22 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libjson-c.so.4 so:libpcap.so.1
 p:cmd:zblacklist cmd:zmap cmd:ztee
 
+C:Q1qHRMIMe8GvIAn845MiwBtsmQEHw=
+P:dmraid
+V:1.0.0_rc16-r0
+A:x86_64
+S:122007
+I:323584
+T:Device mapper RAID interface
+U:http://people.redhat.com/~heinzm/sw/dmraid/
+L:GPL-2.0-only LGPL-2.1-only
+o:dmraid
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981506
+c:1606a2ff8ec904210b91ddbd61243617f0847e4f
+D:so:libc.musl-x86_64.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
+p:so:libdmraid.so.1=1.0.0 cmd:dmevent_tool cmd:dmraid
+
 C:Q1Kfw+y+uIunvNzdT09N0zkvEVYR4=
 P:zfs-udev
 V:0.7.13-r0
@@ -24967,6 +25108,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557737247
 c:d27c7b7ef2ac242061da9552b0baa95bcb43a247
 i:docs perl-yaml=1.29-r0
+
+C:Q1/t3dRYtzqHsRF2YvlDJLUrmXS6s=
+P:libbytesize-doc
+V:2.0-r1
+A:x86_64
+S:2098
+I:24576
+T:Library for working with arbitrary big sizes in bytes (documentation)
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+i:docs libbytesize=2.0-r1
 
 C:Q1n33FLkqSmn0C26HsC3OBsvPAIp8=
 P:gdbm
@@ -25411,6 +25567,22 @@ t:1556994543
 c:0c75b697c0a475a086ae9d4ba08c721589703437
 D:perl-cpanel-json-xs
 
+C:Q1yPjTo1Kb831q8jYGc5uCcegoIh8=
+P:libvirt-client
+V:5.3.0-r2
+A:x86_64
+S:676187
+I:1822720
+T:libvirt client package
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libreadline.so.8 so:libtirpc.so.3 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
+p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
+
 C:Q1qVN8BGtxB/ZNt408FaEKqcw3PHI=
 P:espeak-dev
 V:1.48.04-r1
@@ -25795,21 +25967,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557130040
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 p:linux-firmware-any
-
-C:Q1XMv9EvIx9MClo0r2rPkersffvA8=
-P:iptables-doc
-V:1.6.2-r2
-A:x86_64
-S:61619
-I:143360
-T:Linux kernel firewall, NAT and packet mangling tools (documentation)
-U:http://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989219
-c:eaea3bf8a90e0ad0739e6e88629340c05c31fce7
-i:docs iptables=1.6.2-r2
 
 C:Q1vN1JWH7HpuPxY1IUY/o3pOVjEIQ=
 P:mkinitfs-doc
@@ -26880,6 +27037,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557182239
 c:b4030e6a6057ff385715db78f920961c354d9d71
 
+C:Q19tOINBWxPN6JLAvYrpt38L/cU+k=
+P:libvirt-common-drivers
+V:5.3.0-r2
+A:x86_64
+S:496115
+I:1183744
+T:Common libvirt daemon drivers
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979774
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:lvm2 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q12DrAIYqaBhTo1TvL1cuPRZHHdO4=
 P:lua5.2-alt-getopt
 V:0.7-r8
@@ -26973,6 +27145,22 @@ t:1558946139
 c:029239db7014631748cf7ace6f81310c6c58cdb3
 D:py3-httplib2 py3-oauth2client py3-uritemplate py3-six python3
 i:py-google-api-python-client=1.7.9-r0 python3
+
+C:Q11hRO2lJ9eahpRjGYR805RAl19PI=
+P:libblockdev-dev
+V:2.21-r0
+A:x86_64
+S:67572
+I:782336
+T:Library for manipulating block devices (development files)
+U:https://github.com/storaged-project/libblockdev
+L:LGPL-2.1-or-later
+o:libblockdev
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981549
+c:1e4017036f9b57f519b56135307a5c3b2081ad69
+D:libblockdev=2.21-r0 pc:glib-2.0 pkgconfig
+p:pc:blockdev-utils=2.21 pc:blockdev=2.21
 
 C:Q1BpwXwze4KqqmXsD83kc86PjeaFU=
 P:nfdump-openrc
@@ -27904,6 +28092,21 @@ c:3d370096ce3fb696e32cfcb3d59fb96748839e3b
 D:so:libc.musl-x86_64.so.1
 p:cmd:formail cmd:lockfile cmd:mailstat cmd:procmail
 
+C:Q14TFNdsR5nKUP7JKyEvG9uiRuntA=
+P:volume_key-doc
+V:0.3.12-r0
+A:x86_64
+S:4248
+I:24576
+T:Library for manipulating storage volume encryption keys (documentation)
+U:https://pagure.io/volume_key
+L:GPL-2.0-or-later
+o:volume_key
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981524
+c:bcf804fc46dcecc2b73ff75894c39d363e27e0a2
+i:docs volume_key=0.3.12-r0
+
 C:Q1wkQUIhs0DQXJ7EsuVbPRpY2Icho=
 P:iaxmodem
 V:1.3.0-r0
@@ -28121,21 +28324,6 @@ t:1557134043
 c:2379df5196f5ca5b1874189afb54c6f7acb0059d
 i:docs liblogging=1.0.6-r0
 
-C:Q1v5D4KYl/JzNlF6RTo3Nlz7JZaM0=
-P:udisks2-doc
-V:2.6.5-r1
-A:x86_64
-S:533223
-I:7348224
-T:A Disk Manager (documentation)
-U:http://www.freedesktop.org/wiki/Software/udisks
-L:GPL-2.0-or-later
-o:udisks2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557164436
-c:69b397fceefdd1ae05560b1559d03a1195b4211b
-i:docs udisks2=2.6.5-r1
-
 C:Q1N/8PfWW94h44RiFmXFxqO1la07k=
 P:py-mock
 V:2.0.0-r4
@@ -28350,6 +28538,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558961519
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86_64.so.1
+
+C:Q16RvICSqI105JMYLnTu0YugFNmpc=
+P:udisks2-libs
+V:2.8.2-r0
+A:x86_64
+S:152534
+I:581632
+T:Dynamic library to access the udisks daemon
+U:http://www.freedesktop.org/wiki/Software/udisks
+L:GPL-2.0-or-later
+o:udisks2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558981617
+c:390d2ae0c43393898cf6407fca34174e8450a88a
+D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libudisks2.so.0=0.0.0
 
 C:Q14GZxCGWeGxj7kVZTnM5+uUCqgBY=
 P:ngrep-dbg
@@ -30656,6 +30860,21 @@ t:1557037140
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs haserl=0.9.35-r1
 
+C:Q1vSMEHge4CFNWgII3zf2ona8fOoo=
+P:irqbalance-doc
+V:1.6.0-r0
+A:x86_64
+S:4626
+I:24576
+T:Daemon that distributes interrupts over the processors (documentation)
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1558980124
+c:f2044279f5e0ce8f6df4e923847a98b2dc63388d
+i:docs irqbalance=1.6.0-r0
+
 C:Q1TpeAYrHhue8aYUMrj39AoRQ5Fg4=
 P:libmtp
 V:1.1.15-r0
@@ -32074,6 +32293,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libImlib2.so.1 so:libX11.so.6 so:libXext.so.6 so:libXft.so.2 so:libXinerama.so.1 so:libXrandr.so.2 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpango-1.0.so.0 so:libpangoxft-1.0.so.0 so:librsvg-2.so.2 so:libxml2.so.2
 p:so:libobrender.so.32=32.0.0 so:libobt.so.2=2.0.2
 
+C:Q1TwndFF5qZtKb/0vJnqv3I/XoWHE=
+P:libbytesize-dev
+V:2.0-r1
+A:x86_64
+S:3173
+I:36864
+T:Library for working with arbitrary big sizes in bytes (development files)
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+D:libbytesize=2.0-r1 pkgconfig
+p:pc:bytesize=0.1.0
+
 C:Q1z2wn1vov1gIQBsUguktyoHYLB9o=
 P:lua5.3-dbi-sqlite3
 V:0.6-r3
@@ -32848,6 +33083,21 @@ t:1558939067
 c:0eb18dbb4c40f5a53a87065aa959a35b08fb8c9b
 i:docs udns=0.4-r1
 
+C:Q1P4S1cmMAwv7wYLrKcZYm7OaxDXw=
+P:ndctl-bash-completion
+V:61.2-r0
+A:x86_64
+S:4339
+I:32768
+T:Bash completion for ndctl
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+m:Breno Leitao <breno.leitao@gmail.com>
+t:1558981487
+c:cc3c64a9242ce0b328011caa0c4f9caac0d4e010
+i:ndctl=61.2-r0 bash-completion
+
 C:Q10UZWlPJzz514RdZyRJAgJz3RvHY=
 P:libart-lgpl
 V:2.3.21-r5
@@ -32941,6 +33191,21 @@ t:1557245864
 c:461d26a03341a7ed50480dc0676972f6b798f260
 D:/bin/sh so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libexpat.so.1
 p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
+
+C:Q16ZLj06FRAd67NTx4wuSlfSmGvrk=
+P:freeswitch-sounds-pt-br-karina-8000
+V:1.0.51-r2
+A:x86_64
+S:14266306
+I:22155264
+T:Sounds for freeswitch Brazilian Portuguese
+U:http://files.freeswitch.org/
+L:unknown
+o:freeswitch-sounds-pt-br-karina-8000
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558980944
+c:7e61800ae68811820ff7a699614bea948e5f792c
+p:freeswitch-sounds-pt-BR-karina-8000
 
 C:Q1C5gzpFgw+OjcyWKVxqr7hVkr3M8=
 P:gettext-libs
@@ -37075,6 +37340,21 @@ t:1557591238
 c:954b17e61556ba87913d94d0a0e4fe6dc8d97947
 D:kamailio so:libc.musl-x86_64.so.1 so:libfreeradius-client.so.2
 
+C:Q1SX2sYvpzFvengwDauSLqUY65RME=
+P:libvirt-uml
+V:5.3.0-r2
+A:x86_64
+S:1318
+I:32768
+T:UML driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:libvirt-daemon=5.3.0-r2 libvirt-common-drivers=5.3.0-r2
+
 C:Q1PmckM/ToBP+lx+vT0YI9LnUURR0=
 P:libdvdcss-dev
 V:1.4.2-r0
@@ -37914,6 +38194,22 @@ t:1557142744
 c:646012d56415c5050e68d82dee1e41bc6ad1bbe8
 D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libjson-glib-1.0.so.0
 
+C:Q1cnAkfnq7Feno6CupvoyQGC1QAUM=
+P:libvirt-lang
+V:5.3.0-r2
+A:x86_64
+S:4388164
+I:18509824
+T:Languages for package libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:lvm2
+i:libvirt=5.3.0-r2 lang
+
 C:Q1VBdkD3mApffKZ3QkWBAHhjsZx7s=
 P:bzip2
 V:1.0.6-r6
@@ -38096,21 +38392,6 @@ t:1557043611
 c:e1fbe4d9cd1da1bac0c4f449c367a3d5ed8e275b
 D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libxml2.so.2
 p:so:libgstbase-0.10.so.0=0.30.0 so:libgstcheck-0.10.so.0=0.30.0 so:libgstcontroller-0.10.so.0=0.30.0 so:libgstdataprotocol-0.10.so.0=0.30.0 so:libgstnet-0.10.so.0=0.30.0 so:libgstreamer-0.10.so.0=0.30.0
-
-C:Q1laX81CwrKpld/lm6d2VwHJEDHv8=
-P:irqbalance-openrc
-V:1.5.0-r2
-A:x86_64
-S:2135
-I:24576
-T:Daemon that distributes interrupts over the processors (OpenRC init scripts)
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1557138278
-c:43575df70529956671c48df9e9774bc4502e20fd
-i:openrc irqbalance=1.5.0-r2
 
 C:Q1N2vqe0TNco3FGEy89e+s5VLbY1E=
 P:pinentry-gnome
@@ -38430,6 +38711,22 @@ t:1557138580
 c:3d74ea1ae7096384d5f6d590edb6f8f897cb7a7c
 D:so:libc.musl-x86_64.so.1 so:libpython3.7m.so.1.0
 p:cmd:hoedownpy
+
+C:Q1sG2TgThub+vxehA67FKgEDz9i1U=
+P:iptables-dev
+V:1.8.2-r0
+A:x86_64
+S:12866
+I:110592
+T:Linux kernel firewall, NAT and packet mangling tools (development files)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558979173
+c:a4df5366758364645ebaf9e3136074a013356574
+D:linux-headers iptables=1.8.2-r0 pkgconfig
+p:pc:libip4tc=1.8.2 pc:libip6tc=1.8.2 pc:libipq=1.8.2 pc:libiptc=1.8.2 pc:xtables=1.8.2
 
 C:Q1CMJ50w+0gMdxFcbmbCIhE/hZzMw=
 P:perl-text-wikiformat
@@ -39203,6 +39500,22 @@ t:1557082850
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs powertop=2.9-r1
 
+C:Q1qBLbTQHExQ6wS0TDlpSMhMcooM8=
+P:libbytesize
+V:2.0-r1
+A:x86_64
+S:10313
+I:45056
+T:Library for working with arbitrary big sizes in bytes
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+D:so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libintl.so.8 so:libmpfr.so.4 so:libpcre2-8.so.0
+p:so:libbytesize.so.1=1.0.0
+
 C:Q1acLx0QHUz+2n8+hZ9nAFsrC078k=
 P:libgpg-error
 V:1.36-r1
@@ -39403,21 +39716,6 @@ t:1557587899
 c:3c086e1b4b07d77e88b3da369b22a0f5305bb503
 D:nginx so:libc.musl-x86_64.so.1
 p:nginx-rtmp
-
-C:Q1appL4uTZghIrbvR3KC/muIKVDlk=
-P:ip6tables
-V:1.6.2-r2
-A:x86_64
-S:44799
-I:397312
-T:Linux kernel firewall, NAT and packet mangling tools
-U:http://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989218
-c:eaea3bf8a90e0ad0739e6e88629340c05c31fce7
-D:iptables iptables=1.6.2-r2 so:libc.musl-x86_64.so.1 so:libxtables.so.12
 
 C:Q1nRmhNdrts8VVLx/NWqrwhstFBKE=
 P:acf-postgresql
@@ -40281,6 +40579,22 @@ c:6a9519d8b771c58ab70ed15ba005edbaa6bc9684
 D:so:libc.musl-x86_64.so.1 so:libz.so.1
 i:lua5.2 lua-lzlib=0.4.3-r0
 
+C:Q1IW211z9EYCFNT5tAubzd4C6QT7o=
+P:ndctl
+V:61.2-r0
+A:x86_64
+S:64326
+I:188416
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+m:Breno Leitao <breno.leitao@gmail.com>
+t:1558981487
+c:cc3c64a9242ce0b328011caa0c4f9caac0d4e010
+D:libuuid json-c kmod so:libc.musl-x86_64.so.1 so:libdaxctl.so.1 so:libjson-c.so.4 so:libndctl.so.6 so:libuuid.so.1
+p:cmd:daxctl cmd:ndctl
+
 C:Q18rgrelMN+wYJ2gUL5edIhUu8stg=
 P:perl-http-body
 V:1.22-r0
@@ -40568,22 +40882,6 @@ o:py-country
 m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557087654
 c:1ff7954068506fd172015c868782fa4171f64e13
-
-C:Q1eTR+mz3cbdvqFNESP1pj6byjvyo=
-P:ebtables
-V:2.0.10.4-r2
-A:x86_64
-S:89094
-I:503808
-T:Ethernet bridge tables - Linux Ethernet filter for the Linux bridge.
-U:http://ebtables.sourceforge.net/
-L:GPL
-o:ebtables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989176
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-x86_64.so.1
-p:so:libebt_802_3.so=0 so:libebt_among.so=0 so:libebt_arp.so=0 so:libebt_arpreply.so=0 so:libebt_ip.so=0 so:libebt_ip6.so=0 so:libebt_limit.so=0 so:libebt_log.so=0 so:libebt_mark.so=0 so:libebt_mark_m.so=0 so:libebt_nat.so=0 so:libebt_nflog.so=0 so:libebt_pkttype.so=0 so:libebt_redirect.so=0 so:libebt_standard.so=0 so:libebt_stp.so=0 so:libebt_ulog.so=0 so:libebt_vlan.so=0 so:libebtable_broute.so=0 so:libebtable_filter.so=0 so:libebtable_nat.so=0 so:libebtc.so=0 cmd:ebtables cmd:ebtables-restore cmd:ebtables-save
 
 C:Q1SeGVEcTnG0bwqo08JlWG7aa+Wqw=
 P:gphoto2
@@ -41260,21 +41558,6 @@ t:1556991088
 c:8087d10a60aa671bc62c282236ed37c88b64e450
 D:so:libgc.so.1 so:libstdc++.so.6
 p:so:libgccpp.so.1=1.4.0
-
-C:Q1Mp6sdJgdmzHcqcXFIfWD7jd1dR4=
-P:libvirt-static
-V:5.3.0-r0
-A:x86_64
-S:4715987
-I:17436672
-T:libvirt static libraries
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149283
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:lvm2
 
 C:Q1p7J9jdjdf2BmrQVRcRCQ+JOMjRo=
 P:fetchmail
@@ -42889,21 +43172,6 @@ t:1557068773
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core iptables
 
-C:Q1VZ3ZRQ/167DrF+AhbtmdqKh/4nQ=
-P:ebtables-doc
-V:2.0.10.4-r2
-A:x86_64
-S:16200
-I:53248
-T:Ethernet bridge tables - Linux Ethernet filter for the Linux bridge. (documentation)
-U:http://ebtables.sourceforge.net/
-L:GPL
-o:ebtables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989176
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-i:docs ebtables=2.0.10.4-r2
-
 C:Q1VgdpZNQQcAeKBMgewRwBTYfdBrM=
 P:py3-six
 V:1.12.0-r1
@@ -43718,22 +43986,6 @@ t:1557065049
 c:8118840cf320cbfd9fe138fd5a5e2f5b8035e307
 i:udev mdadm=4.1-r0
 
-C:Q1QzqUv86JPVoZQFCzUmiPHW+FGp0=
-P:libvirt
-V:5.3.0-r0
-A:x86_64
-S:1838908
-I:4714496
-T:A virtualization API for several hypervisor and container systems
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:lvm2 /bin/sh so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libparted.so.2 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2 so:libyajl.so.2
-p:cmd:virtlockd cmd:virtlogd
-
 C:Q1A4/BbkqfUTKhyRfsfbrBCxFWmq0=
 P:libdbi-doc
 V:0.9.0-r0
@@ -43824,6 +44076,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557132966
 c:b2d4a592a1d1d7f1190e34a9421f86ad07fb124a
 i:docs xf86-video-rendition=4.2.7-r0
+
+C:Q1EE5HsbNJexi7mI5z+PprH/mUlBM=
+P:usbredir-server
+V:0.8.0-r0
+A:x86_64
+S:6777
+I:36864
+T:Simple USB host TCP server
+U:http://spice-space.org/page/UsbRedir
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:usbredir
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978757
+c:69b85bb1cb210743de4de4c654888989eda0394b
+D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0 so:libusbredirhost.so.1
+p:cmd:usbredirserver
 
 C:Q1Qq0MpqpKz1DvhCnVAROiS7FsxUY=
 P:perl-text-soundex
@@ -43977,6 +44245,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556988663
 c:311669891e5e87cdcd14864f2ee41a3837cfdd8a
 i:docs perl-xml-namespacesupport=1.12-r0
+
+C:Q1ak/fg8jwsLuHhE2OD0t+csRZdYo=
+P:grub-bios
+V:2.02-r17
+A:x86_64
+S:1498479
+I:4358144
+T:Bootloader with support for Linux, Multiboot and more (BIOS version)
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980439
+c:936d3259be28015c2951e98a3c3fed6b150c2614
+D:grub
 
 C:Q12iTe2ENKVdtByAUwURNY7dDUFbs=
 P:postgresql-plpython2-contrib
@@ -44313,6 +44596,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557084742
 c:163e2083ab9656e013615e8ec4804678b6ca06e9
 i:docs ngrep=1.47-r0
+
+C:Q17v5D5bClV/almCIwm9qwgEll4j0=
+P:py3-volume_key
+V:0.3.12-r0
+A:x86_64
+S:26336
+I:131072
+T:Library for manipulating storage volume encryption keys (for python3)
+U:https://pagure.io/volume_key
+L:GPL-2.0-or-later
+o:volume_key
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981524
+c:bcf804fc46dcecc2b73ff75894c39d363e27e0a2
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libnss3.so so:libpython3.7m.so.1.0 so:libsmime3.so so:libvolume_key.so.1
 
 C:Q1n3Lufac1VfwOHPVaoaXKvai5g6o=
 P:docbook-xml
@@ -45257,21 +45555,6 @@ t:1556879240
 c:118463f27ecf2a638fdef1b5265cb4534e86c150
 i:docs automake=1.16.1-r0
 
-C:Q1prg5+uElsGQg4cvkxUIibc+ImeM=
-P:meson-doc
-V:0.50.1-r0
-A:x86_64
-S:3483
-I:24576
-T:Fast and user friendly build system (documentation)
-U:https://mesonbuild.com
-L:Apache-2.0
-o:meson
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556895751
-c:cf6a7e46a0979b362cc5a3b66154a0a533f55ad7
-i:docs meson=0.50.1-r0
-
 C:Q1dmZeoMu34XhbYoPQ8VcSJwxUEZo=
 P:libwebsockets-doc
 V:3.1.0-r0
@@ -45627,6 +45910,20 @@ t:1556886564
 c:27f28073cd8c738eb32ffa8db1623e2e53e8869a
 i:docs luajit=2.1.0_beta3-r4
 
+C:Q1A+oT2MA+xD+muXlNURPbNnQ/By8=
+P:py3-libblockdev
+V:2.21-r0
+A:x86_64
+S:9776
+I:73728
+T:Library for manipulating block devices - python3-bindings
+U:https://github.com/storaged-project/libblockdev
+L:LGPL-2.1-or-later
+o:libblockdev
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981549
+c:1e4017036f9b57f519b56135307a5c3b2081ad69
+
 C:Q1pNX0e3wIE1GS5Id3zBqSO3S9dqo=
 P:gmock
 V:1.8.1-r1
@@ -45766,6 +46063,22 @@ t:1556995601
 c:34beb0c38596e2e22c2004c89a5e119f7fd90b8d
 D:so:libX11.so.6 so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpango-1.0.so.0
 p:so:libpangox-1.0.so.0=0.0.0
+
+C:Q1yY5bx5CxmPZVmB0nZD8NV+RC+og=
+P:libvirt
+V:5.3.0-r2
+A:x86_64
+S:1838901
+I:4714496
+T:A virtualization API for several hypervisor and container systems
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979774
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:lvm2 /bin/sh so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libparted.so.2 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2 so:libyajl.so.2
+p:cmd:virtlockd cmd:virtlogd
 
 C:Q1SkfOkMz86e/Vx/ycwopWmN081jE=
 P:squid-lang-sv
@@ -46226,21 +46539,6 @@ t:1557040104
 c:03a75153438f6a04fbe36b16930c16bf19b3d9f3
 D:lzo=2.10-r2 pkgconfig
 p:pc:lzo2=2.10
-
-C:Q1rI0XfNxcxwJxwRsqI0GFFwpAtHk=
-P:usbredir-doc
-V:0.7.1-r0
-A:x86_64
-S:2440
-I:24576
-T:USB network redirection protocol libraries (documentation)
-U:http://spice-space.org/page/UsbRedir
-L:GPL-2.0-or-later LGPL-2.1-or-later
-o:usbredir
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557061347
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-i:docs usbredir=0.7.1-r0
 
 C:Q1nAe8dG4iTR4EgHnjDXfEqnVpmFg=
 P:libproxy
@@ -47377,6 +47675,21 @@ c:f249307d7e088d65b94568749bc2d22386651a41
 D:eventlog=0.2.13-r0 pkgconfig
 p:pc:eventlog=0.2.13
 
+C:Q1c1G5E+Se9vwT1xTd0xDSNpX3Tzo=
+P:libvirt-static
+V:5.3.0-r2
+A:x86_64
+S:4715973
+I:17436672
+T:libvirt static libraries
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979772
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:lvm2
+
 C:Q1lKzrAUN7YI8R5HZJ06NbHYwRcIs=
 P:weechat-aspell
 V:2.4-r1
@@ -47885,6 +48198,21 @@ c:40437ec074e6bde2cf18c969099795b0079141dc
 D:postgresql-client tzdata /bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
 p:cmd:initdb cmd:pg_archivecleanup cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_verify_checksums cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
 
+C:Q1Hl7pibAl1lIuOh04fJY3H0HpEIc=
+P:ndctl-dev
+V:61.2-r0
+A:x86_64
+S:11507
+I:90112
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (development files)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+m:Breno Leitao <breno.leitao@gmail.com>
+t:1558981487
+c:cc3c64a9242ce0b328011caa0c4f9caac0d4e010
+D:ndctl-libs=61.2-r0 pkgconfig
+
 C:Q1UCAWfiZNtaQxBtlbRsaet2Jopro=
 P:squid-lang-de
 V:4.6-r1
@@ -48174,6 +48502,22 @@ L:BSD
 o:py-cparser
 t:1557068828
 c:441c279d2993b5cc42985eaa997942a05ad7a39b
+
+C:Q13BTA0keqFTtB9x42WOyQRsqwcco=
+P:irqbalance
+V:1.6.0-r0
+A:x86_64
+S:35313
+I:106496
+T:Daemon that distributes interrupts over the processors
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1558980124
+c:f2044279f5e0ce8f6df4e923847a98b2dc63388d
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libnuma.so.1
+p:cmd:irqbalance cmd:irqbalance-ui
 
 C:Q1bRq2o5108/hspvhahybAjjSJKpg=
 P:libva
@@ -48881,22 +49225,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557118015
 c:76b707bcc36248274c64f5210ba7b383ddfbeda6
 
-C:Q1zCPNQwGu59eevh6LYn8n+wWaThA=
-P:libcroco
-V:0.6.12-r1
-A:x86_64
-S:165358
-I:1200128
-T:GNOME CSS2 parsing and manipulation toolkit
-U:http://www.gnome.org
-L:LGPL-2.1-only
-o:libcroco
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556990967
-c:63875e36ddd7311f88dd347ffbb0e8702d0406ff
-D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libxml2.so.2
-p:so:libcroco-0.6.so.3=3.0.1 cmd:csslint-0.6
-
 C:Q1PGb4V+kcnFN3A0K1iCO/YQE/ikg=
 P:gst-plugins-base0.10-lang
 V:0.10.36-r4
@@ -49313,6 +49641,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557084491
 c:5dabb9a2414c63369556ee0052cd25fa3cb20817
 i:docs libburn=1.5.0-r0
+
+C:Q1SLjYZdcNd7oRJzzI461MY0Hk92g=
+P:libvirt-bash-completion
+V:5.3.0-r2
+A:x86_64
+S:2605
+I:24576
+T:Bash completions for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979773
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+i:libvirt=5.3.0-r2 bash-completion
 
 C:Q1udk3zKsFMTNfxF+EoSb2Rs5DAhw=
 P:xprop-doc
@@ -50180,21 +50523,6 @@ c:b0cd6e9587eeb263fc48855ed246edf9b0bdac86
 D:fuse-common so:libc.musl-x86_64.so.1
 p:so:libfuse3.so.3=3.2.6 cmd:fusermount3 cmd:mount.fuse3
 
-C:Q12B4ta7AmQC4jIX/uCGTrRyFFn1E=
-P:libvirt-bash-completion
-V:5.3.0-r0
-A:x86_64
-S:2602
-I:24576
-T:Bash completions for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-i:libvirt=5.3.0-r0 bash-completion
-
 C:Q1aC1xUTapGzuVWKoygyz7TxvV8NM=
 P:scstadmin-doc
 V:2.2.0-r2
@@ -50716,6 +51044,22 @@ t:1557084309
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86_64.so.1 so:libmnl.so.0 so:libnetfilter_conntrack.so.3 so:libnetfilter_cthelper.so.0 so:libnetfilter_cttimeout.so.1 so:libnetfilter_queue.so.1 so:libnfnetlink.so.0
 p:cmd:conntrack cmd:conntrackd cmd:nfct
+
+C:Q1J8wp8xVeihkFyExli9vV3E3oceA=
+P:meson
+V:0.50.1-r1
+A:x86_64
+S:974392
+I:3895296
+T:Fast and user friendly build system
+U:https://mesonbuild.com
+L:Apache-2.0
+o:meson
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558978330
+c:779792a1eaa0b66be14b0bdd12c0607ac381b3de
+D:ninja py3-setuptools python3
+p:cmd:meson
 
 C:Q1KpkBm6g5lgw5l5FwMh0BVbgM7XM=
 P:perl-file-next
@@ -51963,6 +52307,21 @@ t:1556918361
 c:e7341b5ba167195aa648a599808d157dafa9e3aa
 D:so:libc.musl-x86_64.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
 p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
+
+C:Q1jLQ54RC/CMV2BiT5od8HX8q4L74=
+P:dmraid-dev
+V:1.0.0_rc16-r0
+A:x86_64
+S:11652
+I:77824
+T:Device mapper RAID interface (development files)
+U:http://people.redhat.com/~heinzm/sw/dmraid/
+L:GPL-2.0-only LGPL-2.1-only
+o:dmraid
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981506
+c:1606a2ff8ec904210b91ddbd61243617f0847e4f
+D:dmraid=1.0.0_rc16-r0
 
 C:Q1vACiPWkdZ4ONsLmXSc/dAneiN/I=
 P:lua5.3-xml
@@ -53317,21 +53676,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl
 p:cmd:xgettext.pl
 
-C:Q1zNk+qlx+6dK8DjLOKnJB0jgLAfc=
-P:libvirt-common-drivers
-V:5.3.0-r0
-A:x86_64
-S:496072
-I:1183744
-T:Common libvirt daemon drivers
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:lvm2 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
-
 C:Q1jahNgipokVjbYP2/wBEcZl6WDYo=
 P:nload-doc
 V:0.7.4-r3
@@ -54126,6 +54470,21 @@ t:1556989570
 c:af5ed2f2644b0e022961b090d8503b015d8a65bd
 D:mcpp so:libX11.so.6 so:libXmuu.so.1 so:libc.musl-x86_64.so.1
 p:cmd:xrdb
+
+C:Q1htUpH/y2asPg3LEi33pxp/1Ws/s=
+P:irqbalance-openrc
+V:1.6.0-r0
+A:x86_64
+S:2142
+I:24576
+T:Daemon that distributes interrupts over the processors (OpenRC init scripts)
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1558980124
+c:f2044279f5e0ce8f6df4e923847a98b2dc63388d
+i:openrc irqbalance=1.6.0-r0
 
 C:Q1ib2zDwBzkWtRMFU+ejljPVLeCWQ=
 P:ansible-doc
@@ -55308,6 +55667,22 @@ c:f5b5ee18e3b822c869b85644267d5db3849503c9
 D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libgstbase-1.0.so.0=0.1600.0 so:libgstcheck-1.0.so.0=0.1600.0 so:libgstcontroller-1.0.so.0=0.1600.0 so:libgstnet-1.0.so.0=0.1600.0 so:libgstreamer-1.0.so.0=0.1600.0
 
+C:Q1YtaOF9KOiQ0bOC3uAFbhNaCRXKM=
+P:libvirt-libs
+V:5.3.0-r2
+A:x86_64
+S:1602252
+I:4071424
+T:A virtualization API for several hypervisor and container systems (libraries)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1558979772
+c:252a77a12c1eb105fed560a06df70a2b0d389028
+D:so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
+p:so:libvirt-admin.so.0=0.5003.0 so:libvirt-lxc.so.0=0.5003.0 so:libvirt-qemu.so.0=0.5003.0 so:libvirt.so.0=0.5003.0
+
 C:Q1J8krwWeiFWuRkDU+gXe7ZZwrEA0=
 P:vanessa_adt-dev
 V:0.0.9-r0
@@ -55354,6 +55729,22 @@ t:1556879273
 c:58f6785cdd06b7e7e30e84e4c4dc38ce26b9e220
 D:so:libc.musl-x86_64.so.1
 p:cmd:gunzip cmd:gzexe cmd:gzip cmd:uncompress cmd:zcat cmd:zcmp cmd:zdiff cmd:zegrep cmd:zfgrep cmd:zforce cmd:zgrep cmd:zless cmd:zmore cmd:znew
+
+C:Q1H6HUMNwO4eIhd1XjayPmNpzaq/8=
+P:usbredir
+V:0.8.0-r0
+A:x86_64
+S:28506
+I:90112
+T:USB network redirection protocol libraries
+U:http://spice-space.org/page/UsbRedir
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:usbredir
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978757
+c:69b85bb1cb210743de4de4c654888989eda0394b
+D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0
+p:so:libusbredirhost.so.1=1.0.1 so:libusbredirparser.so.1=1.0.1
 
 C:Q10uTN73B5ea62mhD9rzckwZdhrY0=
 P:collectd-doc
@@ -55489,22 +55880,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557087755
 c:95d2373a329754f69c1b50fe1ed2231fc0beef3e
 i:docs unbound=1.9.1-r2
-
-C:Q1nmvEJy24EM/BM8Sn9dhWlBO9A3A=
-P:grub
-V:2.02-r15
-A:x86_64
-S:5318658
-I:12267520
-T:Bootloader with support for Linux, Multiboot and more
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059604
-c:c40e9ceff34231100ff228d3015900e945727a7f
-D:mkinitfs /bin/sh so:libc.musl-x86_64.so.1 so:libdevmapper.so.1.02 so:libfreetype.so.6 so:liblzma.so.5
-p:cmd:grub-bios-setup cmd:grub-editenv cmd:grub-file cmd:grub-fstest cmd:grub-glue-efi cmd:grub-install cmd:grub-kbdcomp cmd:grub-macbless cmd:grub-menulst2cfg cmd:grub-mkconfig cmd:grub-mkfont cmd:grub-mkimage cmd:grub-mklayout cmd:grub-mknetdir cmd:grub-mkpasswd-pbkdf2 cmd:grub-mkrelpath cmd:grub-mkrescue cmd:grub-mkstandalone cmd:grub-ofpathname cmd:grub-probe cmd:grub-reboot cmd:grub-render-label cmd:grub-script-check cmd:grub-set-default cmd:grub-sparc64-setup cmd:grub-syslinux2cfg
 
 C:Q1T12K/6sM6bG/nExa4fljynJQJ/I=
 P:pekwm
@@ -57735,21 +58110,6 @@ t:1557001309
 c:65ee6c0aeb29cc759d211de7a5be3b7ae5c707ce
 i:docs perl-protocol-websocket=0.20-r0
 
-C:Q1me3RI5767zRxs0p5R79STZfbRCI=
-P:grub-doc
-V:2.02-r15
-A:x86_64
-S:32102
-I:118784
-T:Bootloader with support for Linux, Multiboot and more (documentation)
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059603
-c:c40e9ceff34231100ff228d3015900e945727a7f
-i:docs grub=2.02-r15
-
 C:Q1eo/+jbdx8bZqV+DNj+Z3KOxvGPM=
 P:perl-crypt-openssl-random
 V:0.15-r2
@@ -57933,6 +58293,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557140555
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs xsetroot=1.1.2-r0
+
+C:Q1jIBxnTD8P9gaPvbUOcqf2/YcH7A=
+P:ndctl-libs
+V:61.2-r0
+A:x86_64
+S:54239
+I:151552
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (libraries)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+m:Breno Leitao <breno.leitao@gmail.com>
+t:1558981487
+c:cc3c64a9242ce0b328011caa0c4f9caac0d4e010
+D:so:libc.musl-x86_64.so.1 so:libkmod.so.2 so:libudev.so.1 so:libuuid.so.1
+p:so:libdaxctl.so.1=1.2.0 so:libndctl.so.6=6.10.1
 
 C:Q1vcQwheplFTgdH8T4nu2dVzlpu5g=
 P:atf-doc
@@ -58592,22 +58968,6 @@ t:1556977329
 c:d04fc20dcfbee6b3254723670f98894d5c3e5210
 i:docs perl-test-deep=1.128-r0
 
-C:Q1yRF3/nedhFDg4edfpoVnyZ9UW10=
-P:libvirt-libs
-V:5.3.0-r0
-A:x86_64
-S:1602270
-I:4071424
-T:A virtualization API for several hypervisor and container systems (libraries)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-p:so:libvirt-admin.so.0=0.5003.0 so:libvirt-lxc.so.0=0.5003.0 so:libvirt-qemu.so.0=0.5003.0 so:libvirt.so.0=0.5003.0
-
 C:Q1OtAKXRbxYrllhslAem/c/D7tPS0=
 P:lua-b64
 V:0.1-r2
@@ -58971,22 +59331,6 @@ t:1557069599
 c:be1ef5e41eb9669baffacc1be7e29c7714f08d89
 D:py2-cffi py2-six python2 so:libc.musl-x86_64.so.1 so:libpython2.7.so.1.0
 i:py-pynacl=1.3.0-r2 python2
-
-C:Q14b65Oloml7sXyxLcabUNEQ1h8oU=
-P:irqbalance
-V:1.5.0-r2
-A:x86_64
-S:35393
-I:106496
-T:Daemon that distributes interrupts over the processors
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1557138279
-c:43575df70529956671c48df9e9774bc4502e20fd
-D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libnuma.so.1
-p:cmd:irqbalance cmd:irqbalance-ui
 
 C:Q1NaEZC97wbDAvpmIfMblJW4Yx1GI=
 P:a2ps-dev
@@ -59994,6 +60338,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556988738
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:bash jq
+
+C:Q1gdq69fNw6VRhi8F/kVitNVimMvo=
+P:libbytesize-tools
+V:2.0-r1
+A:x86_64
+S:2959
+I:20480
+T:Tools for libbytesize
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+D:py-libbytesize
+p:cmd:bscalc
 
 C:Q1Is6SwNGpsha2aE1D+7/XmCN1ttM=
 P:rsyslog-pmaixforwardedfrom
@@ -61047,6 +61407,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558435522
 c:a6a029d7b2f04abb45cc8b6587f9083fbe307ffa
 i:docs unrar=5.7.5-r0
+
+C:Q18+KsoIp8lz7MFYeSYwTXIZ1UK90=
+P:ndctl-doc
+V:61.2-r0
+A:x86_64
+S:47088
+I:118784
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (documentation)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+m:Breno Leitao <breno.leitao@gmail.com>
+t:1558981487
+c:cc3c64a9242ce0b328011caa0c4f9caac0d4e010
+i:docs ndctl=61.2-r0
 
 C:Q1hHfg7FS2ceiGt4LklgNhB05F+3o=
 P:libevdev-doc
@@ -63015,6 +63390,21 @@ t:1557161921
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs sshguard=2.2.0-r0
 
+C:Q1UhxDCbPjoWe2foUqBijw8qOjbOM=
+P:volume_key-dev
+V:0.3.12-r0
+A:x86_64
+S:5599
+I:36864
+T:Library for manipulating storage volume encryption keys (development files)
+U:https://pagure.io/volume_key
+L:GPL-2.0-or-later
+o:volume_key
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981524
+c:bcf804fc46dcecc2b73ff75894c39d363e27e0a2
+D:volume_key=0.3.12-r0
+
 C:Q1O4sXli+baIVyEXXvOThOzJCI3qc=
 P:ksymoops-doc
 V:2.4.11-r7
@@ -63092,22 +63482,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1557591234
 c:954b17e61556ba87913d94d0a0e4fe6dc8d97947
 D:kamailio so:libc.musl-x86_64.so.1 so:libdb-5.3.so so:libsrdb1.so.1 so:libsrdb2.so.1 so:libsrutils.so.1 so:libtrie.so.1
-
-C:Q19CQahgCpeYZg5l8xeCaQ4YcCwKs=
-P:iptables-dev
-V:1.6.2-r2
-A:x86_64
-S:12498
-I:110592
-T:Linux kernel firewall, NAT and packet mangling tools (development files)
-U:http://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556989219
-c:eaea3bf8a90e0ad0739e6e88629340c05c31fce7
-D:linux-headers iptables=1.6.2-r2 pkgconfig
-p:pc:libip4tc=1.6.2 pc:libip6tc=1.6.2 pc:libipq=1.6.2 pc:libiptc=1.6.2 pc:xtables=1.6.2
 
 C:Q1pV2WFLMsUNt+nu7NVFx3yf/8gCk=
 P:mg
@@ -63932,6 +64306,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556896050
 c:6b8106e625332309aa52111c46e0b76fa74aff30
 i:docs fontconfig=2.13.1-r0
+
+C:Q1bJi7JZgYsC6Ris2AfYxgix2ngwQ=
+P:libcroco
+V:0.6.13-r0
+A:x86_64
+S:89942
+I:262144
+T:GNOME CSS2 parsing and manipulation toolkit
+U:http://www.gnome.org
+L:LGPL-2.1-only
+o:libcroco
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558978804
+c:b5f69c4e1eeddf1f0e10e7ab6167575df421548d
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libxml2.so.2
+p:so:libcroco-0.6.so.3=3.0.1 cmd:csslint-0.6
 
 C:Q1jVAOkynGNyX6mhxSAeY0s6zud1w=
 P:collectd-ascent
@@ -65007,20 +65397,6 @@ t:1557142396
 c:4e7004a77baa653bbf89608105b5ea1bd355eccb
 i:docs xf86-video-fbdev=0.5.0-r2
 
-C:Q1ZcDLaTPob/3fem0XvEnPhgAUmdI=
-P:grub-dev
-V:2.02-r15
-A:x86_64
-S:12707
-I:131072
-T:Bootloader with support for Linux, Multiboot and more (development files)
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059602
-c:c40e9ceff34231100ff228d3015900e945727a7f
-
 C:Q1bIOkXi1BLsDw9UB3FSCFi8gxQuc=
 P:py3-gobject3
 V:3.28.2-r1
@@ -65343,6 +65719,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557142693
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
 i:openrc dovecot=2.3.6-r1
+
+C:Q1pxAEzwVPbcnp0+T7abN55o4H0XE=
+P:grub-dev
+V:2.02-r17
+A:x86_64
+S:12686
+I:131072
+T:Bootloader with support for Linux, Multiboot and more (development files)
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980439
+c:936d3259be28015c2951e98a3c3fed6b150c2614
 
 C:Q1l1mQuFGdcYEXIXwY/PBZqSe4Z6w=
 P:ntop
@@ -67311,21 +67701,6 @@ c:8cb1ee23b7bc0d719ec7229ba43bf47891d68dbf
 D:so:libc.musl-x86_64.so.1 so:libgcrypt.so.20 so:libgnutls.so.30 so:libjpeg.so.8 so:libpng16.so.16 so:libz.so.1
 p:so:libvncclient.so.1=1.0.0 so:libvncserver.so.1=1.0.0
 
-C:Q1Mqn//JghC+Mc4Cx5pUIRb/XeTf4=
-P:grub-xenhost
-V:2.02-r15
-A:x86_64
-S:1272515
-I:3440640
-T:Bootloader with support for Linux, Multiboot and more (XEN host version)
-U:https://www.gnu.org/software/grub/
-L:GPL-3.0-or-later
-o:grub
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557059604
-c:c40e9ceff34231100ff228d3015900e945727a7f
-D:mkinitfs
-
 C:Q182fW87c6wmbREd80HDLHcC5jslU=
 P:lxterminal
 V:0.3.2-r0
@@ -67676,21 +68051,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558701107
 c:d0ec8cf3ec66aa2b4d2b0b0fb86e4ab24dfd69e7
 D:linux-vanilla-dev=4.19.45-r0
-
-C:Q1TiLK4jB6WbLKlDqkUKRVRe6IrIY=
-P:libvirt-uml
-V:5.3.0-r0
-A:x86_64
-S:1315
-I:32768
-T:UML driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-daemon=5.3.0-r0 libvirt-common-drivers=5.3.0-r0
 
 C:Q1wROUuDl7dMiQCCh3ySDL6SsdOl0=
 P:scons
@@ -68106,6 +68466,21 @@ t:1557153755
 c:24888d7657f736add06c15c6998af58c212e98b9
 D:perl nmap openssl
 p:cmd:nikto.pl
+
+C:Q1qrq7iGj4gByWUNyeB2SCpPIqfU0=
+P:libbytesize-lang
+V:2.0-r1
+A:x86_64
+S:23764
+I:1208320
+T:Languages for package libbytesize
+U:https://github.com/rhinstaller/libbytesize
+L:LGPL-2.1-or-later
+o:libbytesize
+m:André Klitzing <aklitzing@gmail.com>
+t:1558981451
+c:cea660389b0d19f5ca02cfe0320299e0432b52a7
+i:libbytesize=2.0-r1 lang
 
 C:Q1+iTgEAPZAyY7riMr0Z3rDOxXxys=
 P:lua5.3-struct
@@ -69419,6 +69794,21 @@ c:de005b3a8c44532e0682f50a828e6e6529672556
 D:so:libc.musl-x86_64.so.1 so:liburcu-bp.so.6 so:liburcu-cds.so.6
 p:so:liblttng-ust-ctl.so.4=4.0.0 so:liblttng-ust-cyg-profile-fast.so.0=0.0.0 so:liblttng-ust-cyg-profile.so.0=0.0.0 so:liblttng-ust-dl.so.0=0.0.0 so:liblttng-ust-fd.so.0=0.0.0 so:liblttng-ust-fork.so.0=0.0.0 so:liblttng-ust-libc-wrapper.so.0=0.0.0 so:liblttng-ust-pthread-wrapper.so.0=0.0.0 so:liblttng-ust-tracepoint.so.0=0.0.0 so:liblttng-ust.so.0=0.0.0 cmd:lttng-gen-tp
 
+C:Q1e/p01W/8GGYAtSZCLLWpFFit520=
+P:grub-efi
+V:2.02-r17
+A:x86_64
+S:1568698
+I:5144576
+T:Bootloader with support for Linux, Multiboot and more (EFI version)
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980439
+c:936d3259be28015c2951e98a3c3fed6b150c2614
+D:grub
+
 C:Q1e795WRcRlel2plAeU8pOZbyCo4s=
 P:libva-glx
 V:2.4.1-r0
@@ -70641,21 +71031,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1557075859
 c:91a19d8390eea05a4e16132aab7f9a371b028db6
 D:s6=2.8.0.0-r0
-
-C:Q1IEMjWj1Rw4/jeQ+Yv3B3r0+owU4=
-P:udisks2-lang
-V:2.6.5-r1
-A:x86_64
-S:350855
-I:1990656
-T:Languages for package udisks2
-U:http://www.freedesktop.org/wiki/Software/udisks
-L:GPL-2.0-or-later
-o:udisks2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557164439
-c:69b397fceefdd1ae05560b1559d03a1195b4211b
-i:udisks2=2.6.5-r1 lang
 
 C:Q1surzliDMWVuPf2jzh2EQzeojIKk=
 P:lua-posix-doc
@@ -73625,22 +74000,6 @@ t:1556969520
 c:eed8ad6753a7b94609afdec25b71e4bc6b40df1d
 i:docs perl-test-script=1.25-r0
 
-C:Q1BTlhFl0oidHIgbmO1dtimbTszAM=
-P:usbredir-server
-V:0.7.1-r0
-A:x86_64
-S:6160
-I:28672
-T:Simple USB host TCP server
-U:http://spice-space.org/page/UsbRedir
-L:GPL-2.0-or-later LGPL-2.1-or-later
-o:usbredir
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557061348
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0 so:libusbredirhost.so.1
-p:cmd:usbredirserver
-
 C:Q1Zs/G17+LZWxgdw1XKAM6draqRv8=
 P:iso-codes-lang
 V:4.2-r0
@@ -74628,22 +74987,6 @@ t:1557118662
 c:7929482b79c87adb2d1fbf0888408612ed96309e
 i:docs s6-dns=2.3.0.2-r0
 
-C:Q1bOvJxPB+JLA5tgp4RlGxNwGsxto=
-P:libvirt-dev
-V:5.3.0-r0
-A:x86_64
-S:217686
-I:1425408
-T:A virtualization API for several hypervisor and container systems (development files)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libtirpc-dev libvirt-libs=5.3.0-r0 pkgconfig
-p:pc:libvirt-admin=5.3.0 pc:libvirt-lxc=5.3.0 pc:libvirt-qemu=5.3.0 pc:libvirt=5.3.0
-
 C:Q17RWUAMfY3rVmzXaHmi8k6a2GN2c=
 P:flex-doc
 V:2.6.4-r2
@@ -75229,22 +75572,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557169407
 c:100bcb7b28c065a45ab09e34026425ae1d453d40
 i:docs perl-class-mix=0.006-r0
-
-C:Q1yR8f20SbVtCl6lmFvCx4PLAAs4o=
-P:usbredir
-V:0.7.1-r0
-A:x86_64
-S:28426
-I:90112
-T:USB network redirection protocol libraries
-U:http://spice-space.org/page/UsbRedir
-L:GPL-2.0-or-later LGPL-2.1-or-later
-o:usbredir
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557061350
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0
-p:so:libusbredirhost.so.1=1.0.0 so:libusbredirparser.so.1=1.0.0
 
 C:Q1OTnRiXyRvM/45alQxCwNj6b2x4s=
 P:xf86-input-libinput-doc
@@ -76304,22 +76631,6 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86_64.so.1
 p:cmd:aoe-discover cmd:aoe-flush cmd:aoe-interfaces cmd:aoe-mkdevs cmd:aoe-mkshelf cmd:aoe-revalidate cmd:aoe-sancheck cmd:aoe-stat cmd:aoe-version cmd:aoecfg cmd:aoeping cmd:coraid-update
 
-C:Q18l03AD1lk2lBbmkJjOXDwtdi8mc=
-P:udisks2-libs
-V:2.6.5-r1
-A:x86_64
-S:144322
-I:544768
-T:Dynamic library to access the udisks daemon
-U:http://www.freedesktop.org/wiki/Software/udisks
-L:GPL-2.0-or-later
-o:udisks2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557164442
-c:69b397fceefdd1ae05560b1559d03a1195b4211b
-D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libudisks2.so.0=0.0.0
-
 C:Q1YqtgegnYEdIIrT9rbBMD4te3Z6c=
 P:py-django-djblets
 V:0.6.31-r0
@@ -77075,6 +77386,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557587936
 c:2cb0c5c2e4eb1ca809d49441dfe12e7baff59d0b
 i:docs perl-module-implementation=0.09-r1
+
+C:Q195f2PIEuzYI3tV6GWt6umoVjC/A=
+P:iptables-doc
+V:1.8.2-r0
+A:x86_64
+S:69591
+I:159744
+T:Linux kernel firewall, NAT and packet mangling tools (documentation)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558979172
+c:a4df5366758364645ebaf9e3136074a013356574
+i:docs iptables=1.8.2-r0
 
 C:Q1ig1sswe4699VbM/kUIrpeBYr+HA=
 P:dansguardian-doc
@@ -79409,6 +79735,21 @@ t:1557130038
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 p:linux-firmware-any
 
+C:Q1cnXbs76gKxpr+Qlmrj4RCJDnizc=
+P:udisks2-doc
+V:2.8.2-r0
+A:x86_64
+S:589927
+I:8482816
+T:A Disk Manager (documentation)
+U:http://www.freedesktop.org/wiki/Software/udisks
+L:GPL-2.0-or-later
+o:udisks2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1558981616
+c:390d2ae0c43393898cf6407fca34174e8450a88a
+i:docs udisks2=2.8.2-r0
+
 C:Q1s13LMmaC0xDEfJpBLqOw6ec0Ims=
 P:libgee
 V:0.20.1-r0
@@ -81071,6 +81412,21 @@ t:1557151323
 c:c8ac75a47b76386041386175f0f2e7c192e42287
 D:perl perl-compress-raw-bzip2 perl-compress-raw-zlib
 
+C:Q1kEHOO8MwhYugBnmLpNqi6tY8V6s=
+P:grub-xenhost
+V:2.02-r17
+A:x86_64
+S:1272540
+I:3440640
+T:Bootloader with support for Linux, Multiboot and more (XEN host version)
+U:https://www.gnu.org/software/grub/
+L:GPL-3.0-or-later
+o:grub
+m:Timo Teräs <timo.teras@iki.fi>
+t:1558980440
+c:936d3259be28015c2951e98a3c3fed6b150c2614
+D:mkinitfs
+
 C:Q1gJmGMy5+jzCyw6W1064wap2pGis=
 P:perl-module-install-doc
 V:1.19-r0
@@ -81302,22 +81658,6 @@ t:1557182233
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:rrdtool so:libc.musl-x86_64.so.1
 p:cmd:rrdcollect
-
-C:Q1ki1IMTZNIpYbTf3if3jTE1/7woI=
-P:udisks2
-V:2.6.5-r1
-A:x86_64
-S:214785
-I:876544
-T:A Disk Manager
-U:http://www.freedesktop.org/wiki/Software/udisks
-L:GPL-2.0-or-later
-o:udisks2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557164446
-c:69b397fceefdd1ae05560b1559d03a1195b4211b
-D:so:libacl.so.1 so:libatasmart.so.4 so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0 so:libudisks2.so.0
-p:cmd:udisksctl cmd:umount.udisks2
 
 C:Q1JOGJnlCEGtzVcprBtEfowrp1no0=
 P:libvorbis-doc
@@ -82050,6 +82390,21 @@ c:f5f7467df75b4ea412514e0472909bd3d376b3fd
 D:so:libc.musl-x86_64.so.1 so:libxml2.so.2
 p:cmd:xmlcatalog cmd:xmllint
 
+C:Q1qZOE9AakZc7P7zbFWdUv1+Lx988=
+P:dmraid-doc
+V:1.0.0_rc16-r0
+A:x86_64
+S:7622
+I:32768
+T:Device mapper RAID interface (documentation)
+U:http://people.redhat.com/~heinzm/sw/dmraid/
+L:GPL-2.0-only LGPL-2.1-only
+o:dmraid
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981506
+c:1606a2ff8ec904210b91ddbd61243617f0847e4f
+i:docs dmraid=1.0.0_rc16-r0
+
 C:Q1XLjDTp9UcdSKiq2TbYgJRGAtUYM=
 P:freeswitch-freetdm
 V:1.8.5-r1
@@ -82484,22 +82839,6 @@ c:a2cfb9d906813e89c6963cf296babe0abf0041bf
 D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libncursesw.so.6 so:libssh2.so.1
 p:cmd:mc cmd:mcdiff cmd:mcedit cmd:mcview
 
-C:Q1VgbpT7QMqt9BMu+peaAGePGBQuk=
-P:libvirt-xen
-V:5.3.0-r0
-A:x86_64
-S:183416
-I:516096
-T:XEN driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-daemon=5.3.0-r0 libvirt-common-drivers=5.3.0-r0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxenlight.so.4.12 so:libxenstore.so.3.0 so:libxentoollog.so.1 so:libxlutil.so.4.12 so:libxml2.so.2
-i:libvirt-daemon=5.3.0-r0 xen
-
 C:Q197nKQiwuiVPmZdD2SEDqzAxJivQ=
 P:xen-libs
 V:4.12.0-r2
@@ -82592,22 +82931,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1556884845
 c:2c412c422820efc7b4c29f67cac374cee7a20120
 i:docs heimdal=7.5.0-r3
-
-C:Q10i8MsqcwV4SRfUkTyuoYq/oDKSo=
-P:libvirt-lxc
-V:5.3.0-r0
-A:x86_64
-S:201294
-I:577536
-T:LXC driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149285
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:libvirt-daemon=5.3.0-r0 libvirt-common-drivers=5.3.0-r0 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
-i:libvirt-daemon=5.3.0-r0 lxc
 
 C:Q1ov+WIIttiU0nTV3AY3XWhjY5XpY=
 P:jasper
@@ -84325,6 +84648,22 @@ c:22c6137d98f5fcbb42f6d8e2a108a7d925c24594
 D:linux-headers device-mapper-event-libs=2.02.184-r0 device-mapper-libs=2.02.184-r0 lvm2-libs=2.02.184-r0 pc:blkid pkgconfig
 p:pc:devmapper-event=1.02.156 pc:devmapper=1.02.156 pc:lvm2app=2.2
 
+C:Q1qdZkJNRWMf9s6O0z7cxFAGLf340=
+P:volume_key
+V:0.3.12-r0
+A:x86_64
+S:162280
+I:1118208
+T:Library for manipulating storage volume encryption keys
+U:https://pagure.io/volume_key
+L:GPL-2.0-or-later
+o:volume_key
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1558981524
+c:bcf804fc46dcecc2b73ff75894c39d363e27e0a2
+D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcryptsetup.so.12 so:libglib-2.0.so.0 so:libgpgme.so.11 so:libintl.so.8 so:libnspr4.so so:libnss3.so so:libplc4.so so:libsmime3.so
+p:so:libvolume_key.so.1=1.2.3 cmd:volume_key
+
 C:Q1jGkZE4qrmK7VRF0f5Vc50+aHz5g=
 P:libsecret-static
 V:0.18.8-r0
@@ -85559,22 +85898,6 @@ t:1556883678
 c:a900edbc6bd4bb8958b69a9d7eeda3139da0ae84
 D:/bin/sh so:libacl.so.1 so:libattr.so.1 so:libc.musl-x86_64.so.1
 p:cmd:[ cmd:b2sum cmd:base32 cmd:base64 cmd:basename cmd:basenc cmd:cat cmd:chcon cmd:chgrp cmd:chmod cmd:chown cmd:chroot cmd:cksum cmd:comm cmd:coreutils cmd:cp cmd:csplit cmd:cut cmd:date cmd:dd cmd:df cmd:dir cmd:dircolors cmd:dirname cmd:du cmd:echo cmd:env cmd:expand cmd:expr cmd:factor cmd:false cmd:fmt cmd:fold cmd:groups cmd:head cmd:hostid cmd:id cmd:install cmd:join cmd:link cmd:ln cmd:logname cmd:ls cmd:md5sum cmd:mkdir cmd:mkfifo cmd:mknod cmd:mktemp cmd:mv cmd:nice cmd:nl cmd:nohup cmd:nproc cmd:numfmt cmd:od cmd:paste cmd:pathchk cmd:pinky cmd:pr cmd:printenv cmd:printf cmd:ptx cmd:pwd cmd:readlink cmd:realpath cmd:rm cmd:rmdir cmd:runcon cmd:seq cmd:sha1sum cmd:sha224sum cmd:sha256sum cmd:sha384sum cmd:sha512sum cmd:shred cmd:shuf cmd:sleep cmd:sort cmd:split cmd:stat cmd:stdbuf cmd:stty cmd:sum cmd:sync cmd:tac cmd:tail cmd:tee cmd:test cmd:timeout cmd:touch cmd:tr cmd:true cmd:truncate cmd:tsort cmd:tty cmd:uname cmd:unexpand cmd:uniq cmd:unlink cmd:users cmd:vdir cmd:wc cmd:who cmd:whoami cmd:yes
-
-C:Q1UxxOG5LN8XWA45PiGkVVzzM4i0o=
-P:libvirt-lang
-V:5.3.0-r0
-A:x86_64
-S:4388264
-I:18509824
-T:Languages for package libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557149284
-c:8bbb60fe88af217bf0369a76fddd2c5c21be5bc9
-D:lvm2
-i:libvirt=5.3.0-r0 lang
 
 C:Q1lO0rtIXr3AD13cBRRgPrNAm5ScA=
 P:unionfs-fuse
