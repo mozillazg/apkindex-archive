@@ -350,22 +350,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1556950499
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 
-C:Q1fo7xm6gpRQ76aWWjAUY4Tlp5RYc=
-P:hiredis
-V:0.14.0-r0
-A:x86_64
-S:23997
-I:65536
-T:Minimalistic C client library for Redis
-U:https://github.com/redis/hiredis
-L:BSD
-o:hiredis
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557059961
-c:6bb0cd2be64cb533b07155de9f91361923760481
-D:so:libc.musl-x86_64.so.1
-p:so:libhiredis.so.0.14=0.14
-
 C:Q1j79/HLNdpGt3XFe30EzdUFKr25s=
 P:libisoburn
 V:1.4.8-r0
@@ -658,6 +642,21 @@ t:1556997332
 c:8375eecad3cde88418634fab3d5bd7169b420b72
 D:openssl-dev ldns=1.7.0-r2 pc:libcrypto pkgconfig
 p:pc:libldns=1.7.0 cmd:ldns-config
+
+C:Q12MhMhdUDF/5DqJjoHIitfSv3BCU=
+P:libnice-doc
+V:0.1.16-r0
+A:x86_64
+S:159327
+I:1130496
+T:GLib ICE implementation (documentation)
+U:https://nice.freedesktop.org/wiki/
+L:LGPL-2.0-or-later MPL-1.1
+o:libnice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032104
+c:4c5c56a6d05856da0715687c72a3f14cc39dc1b6
+i:docs libnice=0.1.16-r0
 
 C:Q12yg+kCIMLKvqClH4RwgVLIAQijc=
 P:usbutils
@@ -1135,21 +1134,6 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1557261457
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-x86_64.so.1
-
-C:Q1liOsQVpeXGC0TmUmW+oskq6FThU=
-P:wpa_supplicant-openrc
-V:2.7-r3
-A:x86_64
-S:2502
-I:32768
-T:A utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557596969
-c:43c8f8a8f1a15295d3639577e4b8d50292b28225
-i:openrc wpa_supplicant=2.7-r3
 
 C:Q1KLMHMAkl5QeDOe5Jp3NqLfcZins=
 P:perl-text-soundex-doc
@@ -3011,6 +2995,22 @@ D:python2
 p:cmd:pbr
 i:py-pbr=5.2.0-r0 python2
 
+C:Q1/I7rNZWzix3Sf8HmJzrk8P8qNvo=
+P:liblksctp
+V:1.0.18-r0
+A:x86_64
+S:7112
+I:53248
+T:User-space access to Linux Kernel SCTP (libraries)
+U:http://lksctp.sourceforge.net
+L:GPL-2.0-only AND LGPL-2.1-or-later
+o:lksctp-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028738
+c:6cbdf20d83ad6bbd3ce99c8f86ab2cde7aff4244
+D:so:libc.musl-x86_64.so.1
+p:so:libsctp.so.1=1.0.17
+
 C:Q1rYLmhbNRjQdb+/g4H+fg26ZxiuI=
 P:xbanish
 V:1.6-r0
@@ -3180,21 +3180,6 @@ t:1557153560
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:gtk+2.0-dev libxext-dev keybinder=0.3.0-r1 pc:gtk+-2.0 pkgconfig
 p:pc:keybinder=0.3.0
-
-C:Q1KDEzj5EPuNbqHbkHV9J+YqCDO5k=
-P:py-pygments
-V:2.2.0-r1
-A:x86_64
-S:1269
-I:12288
-T:A syntax highlighting package written in Python.
-U:http://pygments.org/
-L:BSD
-o:py-pygments
-m:Matt Smith <mcs@darkregion.net>
-t:1556949714
-c:f16efe854d8e581b8fce8b27f9158f7a6d7f941e
-D:py3-pygments py3-pygments=2.2.0-r1
 
 C:Q12vrmMjj0J3TrN0WQwuoBPCL6EgM=
 P:libmaa
@@ -4383,6 +4368,22 @@ c:e9e33e897540e0674f22d011a53685079a5800a8
 D:so:libOpenIPMIposix.so.0 so:libOpenIPMIutils.so.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libpopt.so.0
 p:so:libIPMIlanserv.so.0=0.0.1 cmd:ipmi_sim cmd:ipmilan cmd:sdrcomp
 
+C:Q1cNGO9B4aI/ncy9gQuZ9bAa+DA3Y=
+P:sudo
+V:1.8.27-r0
+A:x86_64
+S:445701
+I:1097728
+T:Give certain users the ability to run some commands as root
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028793
+c:bf68d51d2a0d0616951e1f50950d87b7b7969e23
+D:so:libc.musl-x86_64.so.1 so:libz.so.1
+p:so:group_file.so=0 so:libsudo_noexec.so=0 so:libsudo_util.so.0=0.0.0 so:sudoers.so=0 so:system_group.so=0 cmd:cvtsudoers cmd:sudo cmd:sudoedit cmd:sudoreplay cmd:visudo
+
 C:Q1MMTmRqDItn47XjI8USzqtN9qSU0=
 P:umurmur
 V:0.2.17-r3
@@ -4767,22 +4768,6 @@ t:1557261457
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-x86_64.so.1 so:librelp.so.0
 p:rsyslog-imrelp=8.1904.0-r0 rsyslog-omrelp=8.1904.0-r0
-
-C:Q1QpIap86ruZsAXz3aTpat+aPyIwc=
-P:iptables
-V:1.8.2-r0
-A:x86_64
-S:425099
-I:2293760
-T:Linux kernel firewall, NAT and packet mangling tools
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558979173
-c:a4df5366758364645ebaf9e3136074a013356574
-D:so:libc.musl-x86_64.so.1 so:libmnl.so.0 so:libnftnl.so.11
-p:ebtables so:libip4tc.so.0=0.1.0 so:libip6tc.so.0=0.1.0 so:libipq.so.0=0.0.0 so:libiptc.so.0=0.0.0 so:libxtables.so.12=12.2.0 cmd:arptables cmd:arptables-nft cmd:arptables-nft-restore cmd:arptables-nft-save cmd:arptables-restore cmd:arptables-save cmd:ebtables cmd:ebtables-nft cmd:ebtables-nft-restore cmd:ebtables-nft-save cmd:ebtables-restore cmd:ebtables-save cmd:iptables cmd:iptables-legacy cmd:iptables-legacy-restore cmd:iptables-legacy-save cmd:iptables-nft cmd:iptables-nft-restore cmd:iptables-nft-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-legacy-multi cmd:xtables-monitor cmd:xtables-nft-multi
 
 C:Q18iDBGxeb5lAwdPdyIWzoFMmtk7Q=
 P:py3-crypto
@@ -6770,6 +6755,21 @@ t:1557138906
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs udisks=1.0.5-r3
 
+C:Q1aFbYdSMzIS6Fsm6YfTTfbq7Ey+4=
+P:ip6tables-openrc
+V:1.8.2-r1
+A:x86_64
+S:2903
+I:24576
+T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028717
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+i:openrc ip6tables=1.8.2-r1
+
 C:Q1qVYok7wxi/HAj0j+6io8htp5GAg=
 P:libice
 V:1.0.9-r3
@@ -7292,23 +7292,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557132625
 c:c7cca638e36fb13bd8066203b617f6b531a411a6
 i:docs sic=1.2-r1
-
-C:Q1nBf2LQiywWtDHhwy42+XOYhZ72A=
-P:py2-pygments
-V:2.2.0-r1
-A:x86_64
-S:1872594
-I:7000064
-T:A syntax highlighting package written in Python. (for python2)
-U:http://pygments.org/
-L:BSD
-o:py-pygments
-m:Matt Smith <mcs@darkregion.net>
-t:1556949711
-c:f16efe854d8e581b8fce8b27f9158f7a6d7f941e
-D:python2
-p:cmd:pygmentize-2
-i:py-pygments=2.2.0-r1 python2
 
 C:Q1rbEO8IiZDlBfmy2tEmMAroHMbzw=
 P:py2-flask-wtf
@@ -8063,22 +8046,6 @@ t:1556989195
 c:7b7a2f8ae0a8277a947c1b3ce728de06b0e502f6
 D:so:libc.musl-x86_64.so.1 so:libmnl.so.0
 p:so:libnftnl.so.11=11.0.0
-
-C:Q19nxHmBWnLzegkGltGR8GS7v+ssg=
-P:e2fsprogs-libs
-V:1.45.0-r0
-A:x86_64
-S:214763
-I:487424
-T:Standard Ext2/3/4 filesystem utilities (libraries)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341062
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-D:so:libc.musl-x86_64.so.1 so:libcom_err.so.2
-p:so:libe2p.so.2=2.3 so:libext2fs.so.2=2.4 so:libss.so.2=2.0
 
 C:Q1aguBfV/3ThDe67NMpmW2iZn4jKk=
 P:hwdata-pci
@@ -10631,6 +10598,22 @@ t:1557134758
 c:33af408515a00fc6c3ef7b02e64b93793448b272
 D:so:libc.musl-x86_64.so.1
 
+C:Q1xTV1skoW48RbGgLEOnNE8IUdgZs=
+P:lksctp-tools
+V:1.0.18-r0
+A:x86_64
+S:38989
+I:139264
+T:User-space access to Linux Kernel SCTP
+U:http://lksctp.sourceforge.net
+L:GPL-2.0-only AND LGPL-2.1-or-later
+o:lksctp-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028738
+c:6cbdf20d83ad6bbd3ce99c8f86ab2cde7aff4244
+D:so:libc.musl-x86_64.so.1 so:libsctp.so.1
+p:cmd:checksctp cmd:sctp_darn cmd:sctp_status cmd:sctp_test cmd:withsctp
+
 C:Q1liASkJu4DPCVE4xGrFWYrIR9RiM=
 P:perl-mail-spf
 V:2.9.0-r2
@@ -11283,21 +11266,6 @@ t:1557146317
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86_64.so.1 so:libraw1394.so.11
 p:so:libavc1394.so.0=0.3.0 so:librom1394.so.0=0.3.0 cmd:dvcont cmd:mkrfc2734 cmd:panelctl
-
-C:Q1Om6HXrUomo+hssR5Y76dJ77JAzY=
-P:ip6tables
-V:1.8.2-r0
-A:x86_64
-S:47137
-I:401408
-T:Linux kernel firewall, NAT and packet mangling tools
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558979172
-c:a4df5366758364645ebaf9e3136074a013356574
-D:iptables iptables=1.8.2-r0 so:libc.musl-x86_64.so.1 so:libxtables.so.12
 
 C:Q1Kmioq+oQbs2UULz0hIjROGMl+Ss=
 P:bbsuid
@@ -12604,6 +12572,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556977460
 c:dc4b0cd39714f35d8bba608acdbfc81ab28c6256
 D:perl-module-metadata>=1.000023
+
+C:Q1btPLzdQfzDSy7DltVGNFhMDKzAs=
+P:iptables
+V:1.8.2-r1
+A:x86_64
+S:423514
+I:2277376
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028718
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+D:so:libc.musl-x86_64.so.1 so:libmnl.so.0 so:libnftnl.so.11
+p:ebtables so:libip4tc.so.0=0.1.0 so:libip6tc.so.0=0.1.0 so:libipq.so.0=0.0.0 so:libiptc.so.0=0.0.0 so:libxtables.so.12=12.2.0 cmd:arptables cmd:arptables-nft cmd:arptables-nft-restore cmd:arptables-nft-save cmd:arptables-restore cmd:arptables-save cmd:ebtables cmd:ebtables-nft cmd:ebtables-nft-restore cmd:ebtables-nft-save cmd:ebtables-restore cmd:ebtables-save cmd:iptables cmd:iptables-legacy cmd:iptables-legacy-restore cmd:iptables-legacy-save cmd:iptables-nft cmd:iptables-nft-restore cmd:iptables-nft-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-legacy-multi cmd:xtables-monitor cmd:xtables-nft-multi
 
 C:Q1MEMopWfXf+E0TAA5EZwmJnd9huk=
 P:asterisk-curl
@@ -16370,6 +16354,21 @@ t:1558961525
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86_64.so.1
 
+C:Q1OSnbLySXEWBz1+yntw5A9pTAO2Q=
+P:sudo-doc
+V:1.8.27-r0
+A:x86_64
+S:151198
+I:360448
+T:Give certain users the ability to run some commands as root (documentation)
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028793
+c:bf68d51d2a0d0616951e1f50950d87b7b7969e23
+i:docs sudo=1.8.27-r0
+
 C:Q1Gd4g+Q6XPMRaS8B1C6nQ10YruJ4=
 P:perl-xml-parser
 V:2.44-r5
@@ -16708,6 +16707,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1557134508
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core lighttpd
+
+C:Q1aqCxI7mDrdK3sDZICDp9NxxDXXk=
+P:wpa_supplicant-doc
+V:2.8-r0
+A:x86_64
+S:45160
+I:151552
+T:A utility providing key negotiation for WPA wireless networks (documentation)
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029396
+c:e37cabf47a6ea953c728606fe97981b9f4c8792f
+i:docs wpa_supplicant=2.8-r0
 
 C:Q1+mV4/OJ80OIOWmFdUhM9OZt5YVA=
 P:cairo-gobject
@@ -18493,6 +18507,21 @@ t:1556896006
 c:600739664866e69b07639471958ce35b46cde095
 i:docs gperf=3.1-r2
 
+C:Q1NUiJPaL+yoVGAL0F1UmXQdpM8j4=
+P:py-pygments-doc
+V:2.4.0-r0
+A:x86_64
+S:54196
+I:229376
+T:A syntax highlighting package written in Python. (documentation)
+U:http://pygments.org/
+L:BSD-2-Clause
+o:py-pygments
+m:Matt Smith <mcs@darkregion.net>
+t:1559032047
+c:6646db38523d2d089cb105bcf32165cc7d1f10aa
+i:docs py-pygments=2.4.0-r0
+
 C:Q1d/26ZGlwU5QscBrxzqhcn8eer7w=
 P:freeswitch-perl
 V:1.8.5-r1
@@ -20069,22 +20098,6 @@ t:1557150014
 c:71c58a112937693f950498e3efadf748d29812a4
 p:cmd:qemu-tilegx
 
-C:Q1YibruiIFhICXSxlWWakWPk3PLqY=
-P:e2fsprogs-dev
-V:1.45.0-r0
-A:x86_64
-S:51978
-I:323584
-T:Standard Ext2/3/4 filesystem utilities (development files)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341061
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-D:util-linux-dev e2fsprogs-libs=1.45.0-r0 libcom_err=1.45.0-r0 pkgconfig
-p:pc:com_err=1.45.0 pc:e2p=1.45.0 pc:ext2fs=1.45.0 pc:ss=1.45.0 cmd:compile_et cmd:mk_cmds
-
 C:Q1tkWEH7e+4mtVF9PL+1+WhzOm4AY=
 P:perl-try-tiny
 V:0.30-r1
@@ -20438,6 +20451,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557135186
 c:f8f9d7021c031f89f12d1e5d49858f44c5f33a98
 i:openrc haproxy=1.9.7-r0
+
+C:Q1kj6w934hNY3j9BT6p/+sDYVAHKw=
+P:hiredis
+V:0.14.0-r1
+A:x86_64
+S:24000
+I:65536
+T:Minimalistic C client library for Redis
+U:https://github.com/redis/hiredis
+L:BSD-3-Clause
+o:hiredis
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032119
+c:d6d486daf1ff324190b53e91943c8ed04862e722
+D:so:libc.musl-x86_64.so.1
+p:so:libhiredis.so.0.14=0.14
 
 C:Q1Q8uFk8PNc4wCCBh9A+KA4xXvmUE=
 P:perl-html-formattext-withlinks-doc
@@ -22406,21 +22435,6 @@ t:1557579388
 c:f53988fe35ca87497beef0f41db60b3936b26ccf
 i:docs perl-yaml-libyaml=0.72-r1
 
-C:Q1X5rK9KwT0Ky0DCl0CKM1l2vRbdM=
-P:libnice-doc
-V:0.1.15-r0
-A:x86_64
-S:157711
-I:1118208
-T:GLib ICE implementation (documentation)
-U:https://nice.freedesktop.org/wiki/
-L:LGPL-2.0-or-later MPL-1.1
-o:libnice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557081563
-c:149db244654c394292247b532bc287abc7219de5
-i:docs libnice=0.1.15-r0
-
 C:Q1sCaDp2LuHupf0wu+XPgCE/Pupj8=
 P:libmaa-dev
 V:1.3.2-r1
@@ -22850,6 +22864,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557078460
 c:00bd040b558beaf145e91234228b6df6a54d9ac0
 D:lua-rex-pcre lua-rex-posix
+
+C:Q1IfARvSqG/TGfY2Zt1X1y7PcqLu8=
+P:e2fsprogs-doc
+V:1.45.1-r0
+A:x86_64
+S:84918
+I:184320
+T:Standard Ext2/3/4 filesystem utilities (documentation)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030044
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+i:docs e2fsprogs=1.45.1-r0
 
 C:Q1JQlPvEgj0d7hVSIJWyf+4frn/FU=
 P:nginx-mod-stream-geoip
@@ -23297,21 +23326,6 @@ t:1556988739
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86_64.so.1 so:liblxc.so.1
 p:cmd:init.lxc cmd:init.lxc.static cmd:lxc-attach cmd:lxc-autostart cmd:lxc-cgroup cmd:lxc-checkconfig cmd:lxc-checkpoint cmd:lxc-config cmd:lxc-console cmd:lxc-copy cmd:lxc-create cmd:lxc-destroy cmd:lxc-device cmd:lxc-execute cmd:lxc-freeze cmd:lxc-info cmd:lxc-ls cmd:lxc-monitor cmd:lxc-snapshot cmd:lxc-start cmd:lxc-stop cmd:lxc-top cmd:lxc-unfreeze cmd:lxc-unshare cmd:lxc-update-config cmd:lxc-usernsexec cmd:lxc-wait
-
-C:Q1TzEkTKNumF2CMDmYPz8zkAGhu8c=
-P:py-pygments-doc
-V:2.2.0-r1
-A:x86_64
-S:52922
-I:221184
-T:A syntax highlighting package written in Python. (documentation)
-U:http://pygments.org/
-L:BSD
-o:py-pygments
-m:Matt Smith <mcs@darkregion.net>
-t:1556949714
-c:f16efe854d8e581b8fce8b27f9158f7a6d7f941e
-i:docs py-pygments=2.2.0-r1
 
 C:Q1wUORGPJgO9Fx7OlU4rO37EhADME=
 P:py2-sphinx
@@ -24973,6 +24987,22 @@ t:1557085421
 c:c18b35140d6160530980ddae341d9aa45fe118fa
 D:python2
 
+C:Q1tjhwKLD2VU8ppAylDBKJRktJ11o=
+P:hiredis-dev
+V:0.14.0-r1
+A:x86_64
+S:119025
+I:344064
+T:Minimalistic C client library for Redis (development files)
+U:https://github.com/redis/hiredis
+L:BSD-3-Clause
+o:hiredis
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032119
+c:d6d486daf1ff324190b53e91943c8ed04862e722
+D:hiredis=0.14.0-r1 pkgconfig
+p:pc:hiredis=0.14.0
+
 C:Q1x1QPgWiFWNJtbrz9apTvIj0/aKA=
 P:cd-discid
 V:1.4-r2
@@ -26598,6 +26628,22 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:curl
 p:cmd:sprunge
 
+C:Q18pFGZuCZ4yyCRUBbRhxTFcXx7dQ=
+P:libnice
+V:0.1.16-r0
+A:x86_64
+S:166211
+I:401408
+T:GLib ICE implementation
+U:https://nice.freedesktop.org/wiki/
+L:LGPL-2.0-or-later MPL-1.1
+o:libnice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032104
+c:4c5c56a6d05856da0715687c72a3f14cc39dc1b6
+D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0
+p:so:libnice.so.10=10.9.0 cmd:stunbdc cmd:stund
+
 C:Q1JaSefAoYLt6JAUsfiUfyVnQms0A=
 P:goaccess
 V:1.3-r0
@@ -26829,21 +26875,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556949338
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:giflib=5.1.4-r2
-
-C:Q1ohEYnwiGOTX5F37IxcHE449xiXM=
-P:lksctp-tools-doc
-V:1.0.17-r0
-A:x86_64
-S:16740
-I:69632
-T:User-space access to Linux Kernel SCTP (documentation)
-U:http://lksctp.sourceforge.net
-L:GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT
-o:lksctp-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557086741
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-i:docs lksctp-tools=1.0.17-r0
 
 C:Q1og8ivqBZaaRW3oCDmV+De8b0VYc=
 P:perl-module-refresh-doc
@@ -28912,22 +28943,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1557037115
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 
-C:Q1h4f3LFIWD1VgR4uBWfpWaDVNz9c=
-P:hiredis-dev
-V:0.14.0-r0
-A:x86_64
-S:119006
-I:344064
-T:Minimalistic C client library for Redis (development files)
-U:https://github.com/redis/hiredis
-L:BSD
-o:hiredis
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557059960
-c:6bb0cd2be64cb533b07155de9f91361923760481
-D:hiredis=0.14.0-r0 pkgconfig
-p:pc:hiredis=0.14.0
-
 C:Q1aAcMMaczYZAVdMJPBaY/4zkqw78=
 P:libxklavier
 V:5.4-r5
@@ -29700,6 +29715,20 @@ t:1557245360
 c:58b8d5c5b5d901389debc7ab89fecc078bcf6594
 D:python3
 i:py-lockfile=0.12.2-r1 python3
+
+C:Q1voNF/EwGJNNZed3RnnsR48ubhDU=
+P:sudo-dev
+V:1.8.27-r0
+A:x86_64
+S:3969
+I:20480
+T:Give certain users the ability to run some commands as root (development files)
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028793
+c:bf68d51d2a0d0616951e1f50950d87b7b7969e23
 
 C:Q1j+vJclq2MHfgmyFHTVThW4k27qc=
 P:fping
@@ -30867,22 +30896,6 @@ c:5616885c5e67ed09846062b0ba064473615fc366
 D:so:libc.musl-x86_64.so.1 so:libfreetype.so.6 so:libharfbuzz.so.0 so:libjbig2dec.so.0 so:libjpeg.so.8 so:libmupdf.so.0 so:libmupdfthird.so.0 so:libopenjp2.so.7
 p:cmd:muraster cmd:mutool
 
-C:Q1qv5ZyzTjfBFsXLAuWS46+gFpuV4=
-P:e2fsprogs
-V:1.45.0-r0
-A:x86_64
-S:176816
-I:417792
-T:Standard Ext2/3/4 filesystem utilities
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341062
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libuuid.so.1
-p:cmd:e2fsck cmd:fsck.ext2 cmd:fsck.ext3 cmd:fsck.ext4 cmd:mke2fs cmd:mkfs.ext2 cmd:mkfs.ext3 cmd:mkfs.ext4
-
 C:Q1brWiDJ6bprCMDmnMsTPsUF2uqbQ=
 P:py-imagesize
 V:1.1.0-r1
@@ -31047,22 +31060,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1558980124
 c:f2044279f5e0ce8f6df4e923847a98b2dc63388d
 i:docs irqbalance=1.6.0-r0
-
-C:Q1TpeAYrHhue8aYUMrj39AoRQ5Fg4=
-P:libmtp
-V:1.1.15-r0
-A:x86_64
-S:165445
-I:729088
-T:Software library for MTP media players
-U:http://libmtp.sourceforge.net
-L:LGPL-2.0-or-later
-o:libmtp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557139423
-c:5bd376eaacf20ab26883ffd6bac767d7a9d533fd
-D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0
-p:so:libmtp.so.9=9.4.0
 
 C:Q178tpiZl4tz6RpynlvxvztfeXegg=
 P:perl-dbd-sqlite-doc
@@ -32950,6 +32947,22 @@ t:1557043663
 c:fc203ed3f2042671181358e55726f43a69bfee7b
 D:orc=0.4.28-r0 pkgconfig so:libc.musl-x86_64.so.1 so:liborc-0.4.so.0 so:liborc-test-0.4.so.0
 p:pc:orc-0.4=0.4.28 cmd:orc-bugreport
+
+C:Q1jcdFqAhEYNaiz2KHtmnSAViaZTI=
+P:libnice-dev
+V:0.1.16-r0
+A:x86_64
+S:73298
+I:495616
+T:GLib ICE implementation (development files)
+U:https://nice.freedesktop.org/wiki/
+L:LGPL-2.0-or-later MPL-1.1
+o:libnice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032104
+c:4c5c56a6d05856da0715687c72a3f14cc39dc1b6
+D:libnice=0.1.16-r0 pc:gio-2.0>=2.48 pc:gnutls>=2.12.0 pc:gthread-2.0 pkgconfig
+p:pc:nice=0.1.16
 
 C:Q1DbajztjTThjzvT3J8ubgCbdpfUs=
 P:logcheck-doc
@@ -35074,21 +35087,6 @@ c:eb560670fdcd3242acd38f86c082662f47c15aa4
 D:json-c0.12=0.12.1-r2 pkgconfig
 p:pc:json-c=0.12.1
 
-C:Q1kOcHG+mDiXOHVD7QKmmCjbsE0To=
-P:sudo-doc
-V:1.8.25_p1-r2
-A:x86_64
-S:147010
-I:348160
-T:Give certain users the ability to run some commands as root (documentation)
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556884326
-c:a6ab92c57331d1550173e944fb15cc579c9c31eb
-i:docs sudo=1.8.25_p1-r2
-
 C:Q1Ar+hnFmUlzFqzvw2ZgV1Rf7lkdQ=
 P:dhcpcd
 V:7.2.2-r0
@@ -35119,20 +35117,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557223179
 c:b4ed44246b0a4e87d4c7f71b7dd3d32acea06db9
 D:perl-xml-parser perl-html-parser perl-datetime-format-mail perl-datetime-format-w3cdtf perl-datetime
-
-C:Q1k9OLaH8bWyW5RyI/NeiOJa2iTuc=
-P:e2fsprogs-static
-V:1.45.0-r0
-A:x86_64
-S:250599
-I:811008
-T:Standard Ext2/3/4 filesystem utilities (static libraries)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341061
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
 
 C:Q1lZanhLd119S8lRYlyaGZCoAl6AY=
 P:netcat-openbsd-doc
@@ -37410,22 +37394,6 @@ t:1557001142
 c:d57c0885a4458077f8bbef216b7d008f260de21f
 i:docs herbstluftwm=0.7.1-r0
 
-C:Q1VeRQ1+ui6XfRJZgcmwjIhZAAnXQ=
-P:libnice
-V:0.1.15-r0
-A:x86_64
-S:164554
-I:397312
-T:GLib ICE implementation
-U:https://nice.freedesktop.org/wiki/
-L:LGPL-2.0-or-later MPL-1.1
-o:libnice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557081563
-c:149db244654c394292247b532bc287abc7219de5
-D:so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0
-p:so:libnice.so.10=10.8.0 cmd:stunbdc cmd:stund
-
 C:Q1GFN2FHvGbc3+/TtsVwS1KaFq01A=
 P:gnutls-utils
 V:3.6.7-r0
@@ -37607,6 +37575,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558435640
 c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
 D:collectd so:libc.musl-x86_64.so.1 so:libpq.so.5
+
+C:Q1MXlqdaAHXNpCCF0D/a8rirJCayo=
+P:py3-pygments
+V:2.4.0-r0
+A:x86_64
+S:1726819
+I:6344704
+T:A syntax highlighting package written in Python. (for python3)
+U:http://pygments.org/
+L:BSD-2-Clause
+o:py-pygments
+m:Matt Smith <mcs@darkregion.net>
+t:1559032047
+c:6646db38523d2d089cb105bcf32165cc7d1f10aa
+D:python3
+p:cmd:pygmentize-3
+i:py-pygments=2.4.0-r0 python3
 
 C:Q1QyaziyFMasc2O8xwETFQzIYkSL0=
 P:talloc-dev
@@ -38889,22 +38874,6 @@ c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libc.musl-x86_64.so.1
 p:so:libboost_system.so.1.69.0=1.69.0
 
-C:Q1sG2TgThub+vxehA67FKgEDz9i1U=
-P:iptables-dev
-V:1.8.2-r0
-A:x86_64
-S:12866
-I:110592
-T:Linux kernel firewall, NAT and packet mangling tools (development files)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558979173
-c:a4df5366758364645ebaf9e3136074a013356574
-D:linux-headers iptables=1.8.2-r0 pkgconfig
-p:pc:libip4tc=1.8.2 pc:libip6tc=1.8.2 pc:libipq=1.8.2 pc:libiptc=1.8.2 pc:xtables=1.8.2
-
 C:Q1QEKLBIcEUHT80QNIsVwlYpRCqRc=
 P:py3-hoedown
 V:0.3.0-r0
@@ -39024,6 +38993,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558961520
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86_64.so.1
+
+C:Q10bGE0O0wSRCClYI5kzOjU6q4egM=
+P:libnice-gstreamer
+V:0.1.16-r0
+A:x86_64
+S:10717
+I:45056
+T:Gstreamer 1.0 plugin for libnice
+U:https://nice.freedesktop.org/wiki/
+L:LGPL-2.0-or-later MPL-1.1
+o:libnice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032104
+c:4c5c56a6d05856da0715687c72a3f14cc39dc1b6
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstbase-1.0.so.0 so:libgstreamer-1.0.so.0 so:libnice.so.10
 
 C:Q1IeWFr1bSMxJZnBOX3KqrdCXZg3c=
 P:bzip2-doc
@@ -41857,22 +41841,6 @@ t:1557590401
 c:4b7e1ee0cc607d914dfdd038e7fbecbb8ed3233a
 i:subversion=1.11.1-r1 bash-completion
 
-C:Q1i6M0G3H5cLqVKSS1fT8VTzCG614=
-P:gtk-doc
-V:1.29-r0
-A:x86_64
-S:128092
-I:712704
-T:Documentation tool for public library API
-U:https://www.gtk.org/gtk-doc/
-L:GFDL
-o:gtk-doc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556918097
-c:397e5c68161e958ca1bd1ee2b4423ce854779536
-D:docbook-xsl python3 py3-six pkgconf glib-dev highlight
-p:cmd:gtkdoc-check cmd:gtkdoc-depscan cmd:gtkdoc-fixxref cmd:gtkdoc-mkdb cmd:gtkdoc-mkhtml cmd:gtkdoc-mkhtml2 cmd:gtkdoc-mkman cmd:gtkdoc-mkpdf cmd:gtkdoc-rebase cmd:gtkdoc-scan cmd:gtkdoc-scangobj cmd:gtkdocize
-
 C:Q1b2TBPeEtd287FTDdRdaFbaoqQ+M=
 P:lua5.3-ldbus
 V:20150430-r2
@@ -42134,6 +42102,22 @@ t:1557140428
 c:460ac4dcc5eae75587a65e9acea9488aa9b37783
 D:lua5.3 so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
 i:lua-sqlite=0.9.5-r2 lua5.3
+
+C:Q171TC/r734QSFTpFGm96Q8mg3HEY=
+P:e2fsprogs-extra
+V:1.45.1-r0
+A:x86_64
+S:232175
+I:708608
+T:Ext2/3/4 filesystem extra utilities
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030045
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+D:e2fsprogs so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libss.so.2 so:libuuid.so.1
+p:cmd:badblocks cmd:chattr cmd:debugfs cmd:dumpe2fs cmd:e2freefrag cmd:e2image cmd:e2label cmd:e2mmpstatus cmd:e2scrub cmd:e2scrub_all cmd:e2undo cmd:e4crypt cmd:e4defrag cmd:filefrag cmd:logsave cmd:lsattr cmd:mklost+found cmd:resize2fs cmd:tune2fs
 
 C:Q1fzpjzwWKhPthlDQ5DMW88YzxpYc=
 P:py3-pytest
@@ -42509,22 +42493,6 @@ t:1557146375
 c:ee43ff043bbe380b1070603146e8da09b08b6116
 D:!openssh-client so:libc.musl-x86_64.so.1
 p:cmd:scp
-
-C:Q17/nCS2X/edJmRTJflHdNX8KYsnQ=
-P:wpa_supplicant
-V:2.7-r3
-A:x86_64
-S:1504573
-I:3444736
-T:A utility providing key negotiation for WPA wireless networks
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557596969
-c:43c8f8a8f1a15295d3639577e4b8d50292b28225
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
-p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
 
 C:Q1UTzC63hnf37jqbWpqHBXssg6Wlc=
 P:perl-cgi-psgi
@@ -44027,6 +43995,20 @@ t:1557149525
 c:1c964848a39c5f099d91a9aa6763cf96ddc7c872
 i:docs vte3=0.52.2-r0
 
+C:Q1dUCsrE/bsJZWOe2oyZMgc8Vqhs8=
+P:libnice-dbg
+V:0.1.16-r0
+A:x86_64
+S:558891
+I:1564672
+T:GLib ICE implementation (debug symbols)
+U:https://nice.freedesktop.org/wiki/
+L:LGPL-2.0-or-later MPL-1.1
+o:libnice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032103
+c:4c5c56a6d05856da0715687c72a3f14cc39dc1b6
+
 C:Q1asN5sU1QebEUxiV6uddfXHfpvY8=
 P:perl-pathtools
 V:3.75-r1
@@ -45488,6 +45470,20 @@ t:1557003244
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86_64.so.1
 p:so:libfts.so.0=0.0.0
+
+C:Q1kylqgClkPhVNg7XjTCOP1CIgKGI=
+P:e2fsprogs-static
+V:1.45.1-r0
+A:x86_64
+S:238287
+I:774144
+T:Standard Ext2/3/4 filesystem utilities (static libraries)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030044
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
 
 C:Q1A0mel2RYqnH6IyTng+i255uHddY=
 P:perl-javascript-minifier-xs
@@ -47666,22 +47662,6 @@ o:py-irc
 t:1557003397
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 
-C:Q1bxj/xiQKsRyrOn6K8eXpD7OFK1Q=
-P:lksctp-tools-dev
-V:1.0.17-r0
-A:x86_64
-S:45178
-I:225280
-T:User-space access to Linux Kernel SCTP (development files)
-U:http://lksctp.sourceforge.net
-L:GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT
-o:lksctp-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557086740
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:lksctp-tools=1.0.17-r0 pkgconfig
-p:pc:libsctp=1.0.17
-
 C:Q1sXxGpfTFgIiyJUr3LgEGaWAHR8I=
 P:liboping-doc
 V:1.10.0-r0
@@ -48328,6 +48308,22 @@ t:1557138557
 c:972d90a3b83ab8dca26738877094e7b26e54d09b
 i:docs nfdump=1.6.17-r0
 
+C:Q1Vgp3TT6xvb+mSRMe7B9UU1VBHn4=
+P:iptables-dev
+V:1.8.2-r1
+A:x86_64
+S:12854
+I:110592
+T:Linux kernel firewall, NAT and packet mangling tools (development files)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028717
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+D:linux-headers iptables=1.8.2-r1 pkgconfig
+p:pc:libip4tc=1.8.2 pc:libip6tc=1.8.2 pc:libipq=1.8.2 pc:libiptc=1.8.2 pc:xtables=1.8.2
+
 C:Q1iz6u5LMb4PgZm4DkPPSnOKNcv14=
 P:py3-flask
 V:1.0.2-r2
@@ -48821,6 +48817,21 @@ t:1557588329
 c:90fc75cfa0f7eb99e8bfdc1e7bfde36b80d436bd
 D:logrotate
 i:squid=4.6-r1 lang-bg
+
+C:Q1NcL+hxKZ7limpIU78lH/OCd2U0Y=
+P:py-pygments
+V:2.4.0-r0
+A:x86_64
+S:1261
+I:12288
+T:A syntax highlighting package written in Python.
+U:http://pygments.org/
+L:BSD-2-Clause
+o:py-pygments
+m:Matt Smith <mcs@darkregion.net>
+t:1559032047
+c:6646db38523d2d089cb105bcf32165cc7d1f10aa
+D:py3-pygments py3-pygments=2.4.0-r0
 
 C:Q1RXR+VpbXwY8Hq2e93dxPSuSDxzg=
 P:valgrind-doc
@@ -52691,6 +52702,21 @@ c:2e92fb26cb2f88314844744ceec8488ad9976cfe
 D:gdk-pixbuf-dev glib-dev dbus-dev libnotify=0.7.7-r2 pc:gdk-pixbuf-2.0 pc:gio-2.0>=2.26.0 pc:glib-2.0>=2.26.0 pkgconfig
 p:pc:libnotify=0.7.7
 
+C:Q1M7updxIfg8TtKgGtf0TJMq/gmzI=
+P:wpa_supplicant-openrc
+V:2.8-r0
+A:x86_64
+S:2507
+I:32768
+T:A utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029396
+c:e37cabf47a6ea953c728606fe97981b9f4c8792f
+i:openrc wpa_supplicant=2.8-r0
+
 C:Q1heaOQsodXy+0X1xeuuYFxS9Wb2A=
 P:galculator
 V:2.1.4-r0
@@ -53265,22 +53291,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557079824
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs pwgen=2.08-r0
-
-C:Q1CtAFYkqcIz58x5Gd4gjXNATPdDM=
-P:sudo
-V:1.8.25_p1-r2
-A:x86_64
-S:442592
-I:1093632
-T:Give certain users the ability to run some commands as root
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556884328
-c:a6ab92c57331d1550173e944fb15cc579c9c31eb
-D:so:libc.musl-x86_64.so.1 so:libz.so.1
-p:so:group_file.so=0 so:libsudo_noexec.so=0 so:libsudo_util.so.0=0.0.0 so:sudoers.so=0 so:system_group.so=0 cmd:cvtsudoers cmd:sudo cmd:sudoedit cmd:sudoreplay cmd:visudo
 
 C:Q1GvclEj7m2AfOrJQxq+9fOLi4RkQ=
 P:perl-test-nowarnings-doc
@@ -54755,6 +54765,22 @@ o:lua-openrc
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557039693
 c:1e6d504ee02f23e97a323c97a922be782dd16906
+
+C:Q1xhY0YaoyHkJVa9Oe9sHJRDJwKtg=
+P:libcom_err
+V:1.45.1-r0
+A:x86_64
+S:6085
+I:24576
+T:Common error description library
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030044
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+D:so:libc.musl-x86_64.so.1
+p:so:libcom_err.so.2=2.1
 
 C:Q1Bmzmq4EoSSvp6dTKQvoCGaiBUXI=
 P:giblib-dev
@@ -59653,22 +59679,6 @@ c:db56b4659959268e6602d66e5cda674371d3d3f0
 D:so:libc.musl-x86_64.so.1 so:libudev.so.1
 p:cmd:vmmouse_detect
 
-C:Q1DICbTcJ8axgIF2ppkJr7FCzWrYA=
-P:e2fsprogs-extra
-V:1.45.0-r0
-A:x86_64
-S:231596
-I:708608
-T:Ext2/3/4 filesystem extra utilities
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341062
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-D:e2fsprogs so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libss.so.2 so:libuuid.so.1
-p:cmd:badblocks cmd:chattr cmd:debugfs cmd:dumpe2fs cmd:e2freefrag cmd:e2image cmd:e2label cmd:e2mmpstatus cmd:e2scrub cmd:e2scrub_all cmd:e2undo cmd:e4crypt cmd:e4defrag cmd:filefrag cmd:logsave cmd:lsattr cmd:mklost+found cmd:resize2fs cmd:tune2fs
-
 C:Q1DMy5YxmH7mIRxHUo/1lLeDuIz2k=
 P:ppp-radius
 V:2.4.7-r6
@@ -60092,22 +60102,6 @@ t:1557063730
 c:48fb44e30152bb64d81638e0c055100ba25196bb
 D:py-asn1
 
-C:Q1tVohg46jBXAjhgM6Hb+LmbU1LE4=
-P:libmtp-dev
-V:1.1.15-r0
-A:x86_64
-S:159446
-I:618496
-T:Software library for MTP media players (development files)
-U:http://libmtp.sourceforge.net
-L:LGPL-2.0-or-later
-o:libmtp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557139420
-c:5bd376eaacf20ab26883ffd6bac767d7a9d533fd
-D:libusb-compat-dev libmtp=1.1.15-r0 pc:libusb-1.0 pkgconfig
-p:pc:libmtp=1.1.15
-
 C:Q15UnXzlmuVMBd6EeEhgSA0j+F9pk=
 P:libexecinfo-dev
 V:1.1-r0
@@ -60307,6 +60301,22 @@ t:1557579388
 c:f53988fe35ca87497beef0f41db60b3936b26ccf
 D:so:libc.musl-x86_64.so.1
 p:perl-yaml-xs=0.72-r1
+
+C:Q15oU1jLxC9Pqnw1qzw0+EAFqRcNo=
+P:gtk-doc
+V:1.30-r0
+A:x86_64
+S:130719
+I:729088
+T:Documentation tool for public library API
+U:https://www.gtk.org/gtk-doc/
+L:GPL-2.0-or-later AND GFDL-1.1-or-later
+o:gtk-doc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559032076
+c:91dc6d2e3a17625131ca1ed46eadba52d4224cb1
+D:docbook-xsl python3 py3-six pkgconf glib-dev py3-pygments
+p:cmd:gtkdoc-check cmd:gtkdoc-depscan cmd:gtkdoc-fixxref cmd:gtkdoc-mkdb cmd:gtkdoc-mkhtml cmd:gtkdoc-mkhtml2 cmd:gtkdoc-mkman cmd:gtkdoc-mkpdf cmd:gtkdoc-rebase cmd:gtkdoc-scan cmd:gtkdoc-scangobj cmd:gtkdocize
 
 C:Q1Gtvh5F5MrDr46zdxVG/xqwQJeH0=
 P:libstdc++
@@ -61227,20 +61237,6 @@ c:22c6137d98f5fcbb42f6d8e2a108a7d925c24594
 D:so:libaio.so.1 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
 p:so:libdevmapper-event-lvm2.so.2.02=2.02 so:liblvm2app.so.2.2=2.2 so:liblvm2cmd.so.2.02=2.02
 
-C:Q1OTPvcZtxukIhWakFOruEKyW9bys=
-P:sudo-dev
-V:1.8.25_p1-r2
-A:x86_64
-S:3968
-I:20480
-T:Give certain users the ability to run some commands as root (development files)
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556884327
-c:a6ab92c57331d1550173e944fb15cc579c9c31eb
-
 C:Q1ujLJc2ZB/DfgoohGnCkyIM1laXk=
 P:ciwiki-doc
 V:2.0.5-r1
@@ -61301,6 +61297,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557130020
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 p:linux-firmware-any
+
+C:Q1sDcugHOsrkKgVJ3N1nixontimss=
+P:e2fsprogs
+V:1.45.1-r0
+A:x86_64
+S:177363
+I:421888
+T:Standard Ext2/3/4 filesystem utilities
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030045
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libuuid.so.1
+p:cmd:e2fsck cmd:fsck.ext2 cmd:fsck.ext3 cmd:fsck.ext4 cmd:mke2fs cmd:mkfs.ext2 cmd:mkfs.ext3 cmd:mkfs.ext4
 
 C:Q1kNff1kyb4m0aTWuVvl77Ysj2Kac=
 P:syslog-ng-add-contextual-data
@@ -64703,23 +64715,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:xorgproto libxres=1.2.0-r1 pc:x11 pc:xext pc:xproto pkgconfig
 p:pc:xres=1.2.0
 
-C:Q1ns0e3QyCclL28+4LacrZBOaDxeI=
-P:py3-pygments
-V:2.2.0-r1
-A:x86_64
-S:1654143
-I:6074368
-T:A syntax highlighting package written in Python. (for python3)
-U:http://pygments.org/
-L:BSD
-o:py-pygments
-m:Matt Smith <mcs@darkregion.net>
-t:1556949713
-c:f16efe854d8e581b8fce8b27f9158f7a6d7f941e
-D:python3
-p:cmd:pygmentize-3
-i:py-pygments=2.2.0-r1 python3
-
 C:Q1Yu0+4CnYaeR23dE+4ivqsTASYqk=
 P:btrfs-progs-libs
 V:4.20.2-r1
@@ -65334,21 +65329,6 @@ t:1558987292
 c:9b2fcfaaed80c921d9bb1c20f96be4788b52f95c
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libreadline.so.8 so:libssl.so.1.1
 p:cmd:filan cmd:procan cmd:socat
-
-C:Q1DoG4NUF6qsyn0nTR86G+Nsf7JXw=
-P:libnice-gstreamer
-V:0.1.15-r0
-A:x86_64
-S:10791
-I:45056
-T:Gstreamer 1.0 plugin for libnice
-U:https://nice.freedesktop.org/wiki/
-L:LGPL-2.0-or-later MPL-1.1
-o:libnice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557081563
-c:149db244654c394292247b532bc287abc7219de5
-D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstbase-1.0.so.0 so:libgstreamer-1.0.so.0 so:libnice.so.10
 
 C:Q1EbbIIsJGaNUJTehjex3/MzsATVI=
 P:dmvpn
@@ -67807,6 +67787,22 @@ c:31d7be985845ca15592e3a88182e7420df7c46ac
 D:so:libc.musl-x86_64.so.1 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libvte.so.9
 p:cmd:lxterminal
 
+C:Q1hEMVF2MDXSZsCATQcWdysL5tl9c=
+P:libmtp-examples
+V:1.1.16-r0
+A:x86_64
+S:45213
+I:311296
+T:Example programs for libmtp
+U:http://libmtp.sourceforge.net
+L:LGPL-2.0-or-later
+o:libmtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029776
+c:97c5c7eb4e84a7e51644ba3e1b4794d6bf02efb1
+D:so:libc.musl-x86_64.so.1 so:libmtp.so.9
+p:cmd:mtp-albumart cmd:mtp-albums cmd:mtp-connect cmd:mtp-delfile cmd:mtp-detect cmd:mtp-emptyfolders cmd:mtp-files cmd:mtp-filetree cmd:mtp-folders cmd:mtp-format cmd:mtp-getfile cmd:mtp-getplaylist cmd:mtp-hotplug cmd:mtp-newfolder cmd:mtp-newplaylist cmd:mtp-playlists cmd:mtp-reset cmd:mtp-sendfile cmd:mtp-sendtr cmd:mtp-thumb cmd:mtp-tracks cmd:mtp-trexist
+
 C:Q1dYQvq0jN9Li76130acVybTIBXTM=
 P:liburiparser
 V:0.9.3-r0
@@ -67988,6 +67984,22 @@ o:dovecot
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557142693
 c:6f0ba9819c5496e6da5783836e68418caacc7b10
+
+C:Q14d/5q1SeBrKN89fVdrQWJqBX6Z8=
+P:wpa_supplicant
+V:2.8-r0
+A:x86_64
+S:1533079
+I:3510272
+T:A utility providing key negotiation for WPA wireless networks
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029396
+c:e37cabf47a6ea953c728606fe97981b9f4c8792f
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
+p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
 
 C:Q1kpi4QqY0hpYi3tXY/OlwQnkFQ4o=
 P:acpica
@@ -71511,6 +71523,22 @@ t:1556884491
 c:536da02181da6dbe9e852a7909e83c3227f03b7f
 i:docs lzip=1.21-r0
 
+C:Q1WCcZUu4/8hKUyjiVpx1HqwxpHRY=
+P:libmtp
+V:1.1.16-r0
+A:x86_64
+S:172177
+I:753664
+T:Software library for MTP media players
+U:http://libmtp.sourceforge.net
+L:LGPL-2.0-or-later
+o:libmtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029777
+c:97c5c7eb4e84a7e51644ba3e1b4794d6bf02efb1
+D:so:libc.musl-x86_64.so.1 so:libusb-1.0.so.0
+p:so:libmtp.so.9=9.4.0
+
 C:Q1C0FGniPKykvDMMTUlA/6m3e/hSw=
 P:dbus-glib-dev
 V:0.110-r0
@@ -71941,6 +71969,22 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1559027201
 c:ca1f2455b3830bac71a32f2fc5e95947d3684ea5
 D:perl-future perl-sub-name
+
+C:Q12FOID1OPRtkmjWEg6uObNGBGP0w=
+P:e2fsprogs-dev
+V:1.45.1-r0
+A:x86_64
+S:51868
+I:323584
+T:Standard Ext2/3/4 filesystem utilities (development files)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030044
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+D:util-linux-dev e2fsprogs-libs=1.45.1-r0 libcom_err=1.45.1-r0 pkgconfig
+p:pc:com_err=1.45.1 pc:e2p=1.45.1 pc:ext2fs=1.45.1 pc:ss=1.45.1 cmd:compile_et cmd:mk_cmds
 
 C:Q1ePertuHYR6s4Li9rJR44fyfR5Ac=
 P:gparted
@@ -74057,22 +74101,6 @@ c:070210381b45feb392587cab5e305feda32587dc
 D:so:libc.musl-x86_64.so.1 so:libtiff.so.5
 p:so:libspandsp.so.2=2.0.0
 
-C:Q1WkgO8lE0XFfobvme0QyxjRtyeZg=
-P:lksctp-tools
-V:1.0.17-r0
-A:x86_64
-S:43460
-I:176128
-T:User-space access to Linux Kernel SCTP
-U:http://lksctp.sourceforge.net
-L:GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT
-o:lksctp-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557086742
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-x86_64.so.1
-p:so:libsctp.so.1=1.0.17 cmd:checksctp cmd:sctp_darn cmd:sctp_status cmd:sctp_test cmd:withsctp
-
 C:Q1PEZec3FsogUX2bhHwrIlxwtua8I=
 P:py2-itsdangerous
 V:0.24-r4
@@ -74691,22 +74719,6 @@ t:1557083544
 c:2f2e8225be2f9e322a1cda0ac97eaf5a548494b4
 D:so:libc.musl-x86_64.so.1
 p:cmd:run-parts
-
-C:Q1fVsgCsRX5ETBtCn0gmbczXRFWCM=
-P:libnice-dev
-V:0.1.15-r0
-A:x86_64
-S:71771
-I:491520
-T:GLib ICE implementation (development files)
-U:https://nice.freedesktop.org/wiki/
-L:LGPL-2.0-or-later MPL-1.1
-o:libnice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557081562
-c:149db244654c394292247b532bc287abc7219de5
-D:libnice=0.1.15-r0 pc:gio-2.0>=2.48 pc:gnutls>=2.12.0 pc:gthread-2.0 pkgconfig
-p:pc:nice=0.1.15
 
 C:Q1gBOv8q06j0j+j0A2/s6HoS5wx8Q=
 P:socat-doc
@@ -75341,21 +75353,6 @@ c:e1fbe4d9cd1da1bac0c4f449c367a3d5ed8e275b
 D:pkgconfig so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstreamer-0.10.so.0 so:libintl.so.8
 p:cmd:gst-feedback cmd:gst-feedback-0.10 cmd:gst-inspect cmd:gst-inspect-0.10 cmd:gst-launch cmd:gst-launch-0.10 cmd:gst-typefind cmd:gst-typefind-0.10 cmd:gst-xmlinspect cmd:gst-xmlinspect-0.10 cmd:gst-xmllaunch cmd:gst-xmllaunch-0.10
 
-C:Q18q5Hbs/mu0asZkJ2rZYSIf18Fd8=
-P:e2fsprogs-doc
-V:1.45.0-r0
-A:x86_64
-S:84485
-I:184320
-T:Standard Ext2/3/4 filesystem utilities (documentation)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341062
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-i:docs e2fsprogs=1.45.0-r0
-
 C:Q147GkQ+kjjODMeZcg/A03zyrAduU=
 P:py3-ply
 V:3.11-r0
@@ -75597,6 +75594,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557082355
 c:66216b13996290741c818e928c7f9f04384a5291
 i:docs perl-data-hexdump=0.02-r1
+
+C:Q1q+bM0uiHxAMZwHUkKLRHjDo8tc4=
+P:lksctp-tools-doc
+V:1.0.18-r0
+A:x86_64
+S:20137
+I:77824
+T:User-space access to Linux Kernel SCTP (documentation)
+U:http://lksctp.sourceforge.net
+L:GPL-2.0-only AND LGPL-2.1-or-later
+o:lksctp-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028737
+c:6cbdf20d83ad6bbd3ce99c8f86ab2cde7aff4244
+i:docs lksctp-tools=1.0.18-r0
 
 C:Q16/wJPM83a+zp0XVtGSCmDrT7GiA=
 P:lua5.3-lyaml
@@ -75975,20 +75987,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557150006
 c:71c58a112937693f950498e3efadf748d29812a4
 p:cmd:qemu-sparc
-
-C:Q1mxUq4bhxmLqnyoGIgGdOdIakL/o=
-P:libnice-dbg
-V:0.1.15-r0
-A:x86_64
-S:554696
-I:1552384
-T:GLib ICE implementation (debug symbols)
-U:https://nice.freedesktop.org/wiki/
-L:LGPL-2.0-or-later MPL-1.1
-o:libnice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557081562
-c:149db244654c394292247b532bc287abc7219de5
 
 C:Q1DPC7BYuI5mkBews23U4HJ//4KKY=
 P:xfsprogs-extra
@@ -76654,22 +76652,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1557082402
 c:3f2fb910adfa1aedc48160b3810617da62809dcc
 
-C:Q1RoIld8oI3ye28lqRl4yVlkiuWLs=
-P:libmtp-examples
-V:1.1.15-r0
-A:x86_64
-S:45249
-I:311296
-T:Example programs for libmtp
-U:http://libmtp.sourceforge.net
-L:LGPL-2.0-or-later
-o:libmtp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557139421
-c:5bd376eaacf20ab26883ffd6bac767d7a9d533fd
-D:so:libc.musl-x86_64.so.1 so:libmtp.so.9
-p:cmd:mtp-albumart cmd:mtp-albums cmd:mtp-connect cmd:mtp-delfile cmd:mtp-detect cmd:mtp-emptyfolders cmd:mtp-files cmd:mtp-filetree cmd:mtp-folders cmd:mtp-format cmd:mtp-getfile cmd:mtp-getplaylist cmd:mtp-hotplug cmd:mtp-newfolder cmd:mtp-newplaylist cmd:mtp-playlists cmd:mtp-reset cmd:mtp-sendfile cmd:mtp-sendtr cmd:mtp-thumb cmd:mtp-tracks cmd:mtp-trexist
-
 C:Q1919KMYYgJFLPsxpIJf2DowNFELg=
 P:collectd
 V:5.8.1-r0
@@ -77041,6 +77023,22 @@ D:py2-virtualenv py2-py py2-pluggy py2-argparse py2-six py2-filelock py2-toml py
 p:cmd:tox cmd:tox-quickstart
 i:py-tox=3.7.0-r0 python2
 
+C:Q1md94evH6ybJmR80ITamlkQyPIR0=
+P:e2fsprogs-libs
+V:1.45.1-r0
+A:x86_64
+S:201558
+I:454656
+T:Standard Ext2/3/4 filesystem utilities (libraries)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559030044
+c:5ee85c4acc6b41728a0dd6408b7e8023a17668a9
+D:so:libc.musl-x86_64.so.1 so:libcom_err.so.2
+p:so:libe2p.so.2=2.3 so:libext2fs.so.2=2.4 so:libss.so.2=2.0
+
 C:Q1mS5eNrzQCxiKlwfm6E0W1Mz//N4=
 P:py-libmount
 V:2.33.2-r0
@@ -77397,21 +77395,6 @@ t:1557587936
 c:2cb0c5c2e4eb1ca809d49441dfe12e7baff59d0b
 i:docs perl-module-implementation=0.09-r1
 
-C:Q195f2PIEuzYI3tV6GWt6umoVjC/A=
-P:iptables-doc
-V:1.8.2-r0
-A:x86_64
-S:69591
-I:159744
-T:Linux kernel firewall, NAT and packet mangling tools (documentation)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558979172
-c:a4df5366758364645ebaf9e3136074a013356574
-i:docs iptables=1.8.2-r0
-
 C:Q1GuM4vlA4Qzcqd+C7V01HJdkol2E=
 P:zfs-utils-py
 V:0.8.0-r0
@@ -77658,6 +77641,23 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1556949809
 c:707169fe026d9eb85bdb8e7bd98463346b894269
 D:py3-sphinx py3-sphinx=1.8.4-r1
+
+C:Q1riLzAYoJ3/WBFCFwP0KehlHlRCc=
+P:py2-pygments
+V:2.4.0-r0
+A:x86_64
+S:1950970
+I:7274496
+T:A syntax highlighting package written in Python. (for python2)
+U:http://pygments.org/
+L:BSD-2-Clause
+o:py-pygments
+m:Matt Smith <mcs@darkregion.net>
+t:1559032045
+c:6646db38523d2d089cb105bcf32165cc7d1f10aa
+D:python2
+p:cmd:pygmentize-2
+i:py-pygments=2.4.0-r0 python2
 
 C:Q1gktBkrvGKpSkBDbb20hvbKFa0W4=
 P:pinentry-gtk
@@ -78952,6 +78952,22 @@ t:1556990758
 c:5bb5cc693e78c5cc948b4e7357db182086a0701b
 p:llvm-static=7.0.1-r4
 
+C:Q1Mk8WDfG62O/MUG4VTG19eFTqQJk=
+P:lksctp-tools-dev
+V:1.0.18-r0
+A:x86_64
+S:39411
+I:204800
+T:User-space access to Linux Kernel SCTP (development files)
+U:http://lksctp.sourceforge.net
+L:GPL-2.0-only AND LGPL-2.1-or-later
+o:lksctp-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028737
+c:6cbdf20d83ad6bbd3ce99c8f86ab2cde7aff4244
+D:liblksctp=1.0.18-r0 pkgconfig
+p:pc:libsctp=1.0.18
+
 C:Q1kpNlNv8YijNk1WBobR4/ihIOiTY=
 P:libjpeg-turbo
 V:2.0.2-r0
@@ -79359,6 +79375,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556950001
 c:2ae144627c66b46f4071ae488562d9bba8724b0e
 D:so:libc.musl-x86_64.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
+C:Q1rgFNRpQeuwkSykDqZb1mY7OQNRs=
+P:libmtp-dev
+V:1.1.16-r0
+A:x86_64
+S:165968
+I:638976
+T:Software library for MTP media players (development files)
+U:http://libmtp.sourceforge.net
+L:LGPL-2.0-or-later
+o:libmtp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559029776
+c:97c5c7eb4e84a7e51644ba3e1b4794d6bf02efb1
+D:libusb-compat-dev libmtp=1.1.16-r0 pc:libusb-1.0 pkgconfig
+p:pc:libmtp=1.1.16
 
 C:Q1cDCdRx/IzcctrxV6w7GkuwR3Q0k=
 P:rpcbind
@@ -80552,21 +80584,6 @@ t:1556885092
 c:2c27414ba5422a989ffbc6c73d123673ccfc10a6
 i:docs rhash=1.3.8-r0
 
-C:Q1WNcQdb9byHB2ZTJPPPThxYjfc9E=
-P:wpa_supplicant-doc
-V:2.7-r3
-A:x86_64
-S:43855
-I:147456
-T:A utility providing key negotiation for WPA wireless networks (documentation)
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557596969
-c:43c8f8a8f1a15295d3639577e4b8d50292b28225
-i:docs wpa_supplicant=2.7-r3
-
 C:Q1uZtEjsNpY7trHBkd3hQnkCCV7jk=
 P:perl-data-uuid-doc
 V:1.224-r1
@@ -80826,22 +80843,6 @@ o:perl-test-mockrandom
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557077783
 c:63f5e7d295659a855709901ce22a3e5f40fce455
-
-C:Q19/U/40eN925DgV6eC7Hp/EhcnUc=
-P:libcom_err
-V:1.45.0-r0
-A:x86_64
-S:6091
-I:24576
-T:Common error description library
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557341062
-c:5fbde093bd93ada149a4ea65176ae73b813ad58a
-D:so:libc.musl-x86_64.so.1
-p:so:libcom_err.so.2=2.1
 
 C:Q1/T8R2cuSF4dGKn6GpSXimiJaT2U=
 P:mailcap-doc
@@ -82021,6 +82022,21 @@ t:1557161360
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:docs libidl=0.8.14-r2
 
+C:Q1fT4Ocq6GIuTbh5SYv1MoLcHwLuI=
+P:iptables-openrc
+V:1.8.2-r1
+A:x86_64
+S:2904
+I:24576
+T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028717
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+i:openrc iptables=1.8.2-r1
+
 C:Q1v+zU3AzxMd2jsjYthpMPvPFjtfw=
 P:nagios-plugins-log
 V:2.2.1-r6
@@ -82802,6 +82818,21 @@ t:1556915559
 c:0a4f50156a2cf3686810848a8a6b7587c352eede
 D:/bin/sh so:libc.musl-x86_64.so.1 so:libffi.so.6 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
 p:so:libgio-2.0.so.0=0.5800.1 so:libglib-2.0.so.0=0.5800.1 so:libgmodule-2.0.so.0=0.5800.1 so:libgobject-2.0.so.0=0.5800.1 so:libgthread-2.0.so.0=0.5800.1 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-launch-desktop cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
+
+C:Q1G7v+qQlGahozLb+qM5sAPy1XnEQ=
+P:ip6tables
+V:1.8.2-r1
+A:x86_64
+S:45310
+I:380928
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028717
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+D:iptables=1.8.2-r1 so:libc.musl-x86_64.so.1 so:libxtables.so.12
 
 C:Q1nYIDMaaBPFssnZvw3KUBVxp43OI=
 P:newsboat
@@ -86973,6 +87004,21 @@ t:1557171127
 c:146d630e9813c634bfee9df654d304c83c228a72
 D:python2 docbook-xml rarian py2-libxml2 libxslt
 p:cmd:gnome-doc-prepare cmd:gnome-doc-tool cmd:xml2po
+
+C:Q1S0pNLg+pYHsJQ1KNrxTSffvJFP8=
+P:iptables-doc
+V:1.8.2-r1
+A:x86_64
+S:69623
+I:159744
+T:Linux kernel firewall, NAT and packet mangling tools (documentation)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559028717
+c:d4098f4ed73ea1f2b9bf568f379ac43f0d6f29c9
+i:docs iptables=1.8.2-r1
 
 C:Q1TTgo9GsvdRj7fEHNpYrEtYCS4co=
 P:linux-vanilla
