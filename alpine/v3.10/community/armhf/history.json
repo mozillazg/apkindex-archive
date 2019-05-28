@@ -23091,13 +23091,15 @@
     "py3-gst": {
       "origin": "py-gst",
       "versions": {
-        "1.14.4-r1": 1557677630
+        "1.14.4-r1": 1557677630,
+        "1.16.0-r0": 1559057749
       },
       "dependencies": [
         "py3-gobject3",
         "gst-plugins-base",
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libpython3.7m.so.1.0"
@@ -30845,13 +30847,15 @@
     "py2-gst": {
       "origin": "py-gst",
       "versions": {
-        "1.14.4-r1": 1557677629
+        "1.14.4-r1": 1557677629,
+        "1.16.0-r0": 1559057749
       },
       "dependencies": [
         "py2-gobject3",
         "gst-plugins-base",
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libpython2.7.so.1.0"
@@ -37893,7 +37897,8 @@
     "py-gst": {
       "origin": "py-gst",
       "versions": {
-        "1.14.4-r1": 1557677630
+        "1.14.4-r1": 1557677630,
+        "1.16.0-r0": 1559057750
       },
       "dependencies": [
         "py-gobject3",
@@ -53926,6 +53931,116 @@
         "cmd:fortune",
         "cmd:strfile"
       ]
+    },
+    "vips-doc": {
+      "origin": "vips",
+      "versions": {
+        "8.8.0-r0": 1559056977
+      }
+    },
+    "php7-pecl-vips": {
+      "origin": "php7-pecl-vips",
+      "versions": {
+        "1.0.9-r1": 1559057061
+      },
+      "dependencies": [
+        "php7-common",
+        "so:libc.musl-armhf.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libvips.so.42"
+      ]
+    },
+    "vips-dev": {
+      "origin": "vips",
+      "versions": {
+        "8.8.0-r0": 1559056977
+      },
+      "dependencies": [
+        "pc:fftw3",
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:gobject-2.0",
+        "pc:lcms2",
+        "pc:libexif",
+        "pc:libjpeg",
+        "pc:libpng",
+        "pc:libtiff-4",
+        "pc:libwebp",
+        "pc:libwebpdemux",
+        "pc:libwebpmux",
+        "pc:orc-0.4",
+        "pc:zlib",
+        "pkgconfig",
+        "vips=8.8.0-r0"
+      ],
+      "provides": [
+        "pc:vips-cpp=8.8.0",
+        "pc:vips=8.8.0"
+      ]
+    },
+    "vips-tools": {
+      "origin": "vips",
+      "versions": {
+        "8.8.0-r0": 1559056977
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libvips.so.42"
+      ],
+      "provides": [
+        "cmd:batch_crop",
+        "cmd:batch_image_convert",
+        "cmd:batch_rubber_sheet",
+        "cmd:light_correct",
+        "cmd:shrink_width",
+        "cmd:vips",
+        "cmd:vips-8.8",
+        "cmd:vipsedit",
+        "cmd:vipsheader",
+        "cmd:vipsprofile",
+        "cmd:vipsthumbnail"
+      ]
+    },
+    "vips": {
+      "origin": "vips",
+      "versions": {
+        "8.8.0-r0": 1559056977
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libexif.so.12",
+        "so:libexpat.so.1",
+        "so:libfftw3.so.3",
+        "so:libgcc_s.so.1",
+        "so:libgif.so.7",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libjpeg.so.8",
+        "so:liblcms2.so.2",
+        "so:liborc-0.4.so.0",
+        "so:libpng16.so.16",
+        "so:libstdc++.so.6",
+        "so:libtiff.so.5",
+        "so:libwebp.so.7",
+        "so:libwebpdemux.so.2",
+        "so:libwebpmux.so.3"
+      ],
+      "provides": [
+        "so:libvips-cpp.so.42=42.10.0",
+        "so:libvips.so.42=42.10.0"
+      ]
+    },
+    "vips-lang": {
+      "origin": "vips",
+      "versions": {
+        "8.8.0-r0": 1559056977
+      }
     }
   },
   "provide": {
@@ -59197,6 +59312,14 @@
       "libfko.so.3": {
         "package": "fwknop-libs",
         "version": "3.0.0"
+      },
+      "libvips-cpp.so.42": {
+        "package": "vips",
+        "version": "42.10.0"
+      },
+      "libvips.so.42": {
+        "package": "vips",
+        "version": "42.10.0"
       }
     },
     "package": {
