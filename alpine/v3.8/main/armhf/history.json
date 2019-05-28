@@ -68392,6 +68392,107 @@
       "provides": [
         "so:libkeyutils.so.1=1.6"
       ]
+    },
+    "hylafaxplus-doc": {
+      "origin": "hylafaxplus",
+      "versions": {
+        "7.0.0-r0": 1559045520
+      }
+    },
+    "hylafaxplus-openrc": {
+      "origin": "hylafaxplus",
+      "versions": {
+        "7.0.0-r0": 1559045520
+      },
+      "dependencies": [
+        "ghostscript",
+        "bash",
+        "tiff-tools",
+        "!hylafax"
+      ]
+    },
+    "hylafaxplus": {
+      "origin": "hylafaxplus",
+      "versions": {
+        "7.0.0-r0": 1559045521
+      },
+      "dependencies": [
+        "ghostscript",
+        "bash",
+        "tiff-tools",
+        "!hylafax",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblcms2.so.2",
+        "so:libldap-2.4.so.2",
+        "so:libssl.so.45",
+        "so:libstdc++.so.6",
+        "so:libtiff.so.5",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libfaxserver.so.7.0.0=7.0.0",
+        "so:libfaxutil.so.7.0.0=7.0.0",
+        "cmd:choptest",
+        "cmd:cqtest",
+        "cmd:dialtest",
+        "cmd:edit-faxcover",
+        "cmd:faxabort",
+        "cmd:faxaddmodem",
+        "cmd:faxadduser",
+        "cmd:faxalter",
+        "cmd:faxanswer",
+        "cmd:faxconfig",
+        "cmd:faxcover",
+        "cmd:faxcron",
+        "cmd:faxdeluser",
+        "cmd:faxfetch",
+        "cmd:faxgetty",
+        "cmd:faxinfo",
+        "cmd:faxlock",
+        "cmd:faxmail",
+        "cmd:faxmodem",
+        "cmd:faxmsg",
+        "cmd:faxq",
+        "cmd:faxqclean",
+        "cmd:faxquit",
+        "cmd:faxrm",
+        "cmd:faxsend",
+        "cmd:faxsetup",
+        "cmd:faxsetup.bsdi",
+        "cmd:faxsetup.irix",
+        "cmd:faxsetup.linux",
+        "cmd:faxstat",
+        "cmd:faxstate",
+        "cmd:faxwatch",
+        "cmd:hfaxd",
+        "cmd:hylafax",
+        "cmd:lockname",
+        "cmd:ondelay",
+        "cmd:pagesend",
+        "cmd:probemodem",
+        "cmd:recvstats",
+        "cmd:sendfax",
+        "cmd:sendpage",
+        "cmd:tagtest",
+        "cmd:textfmt",
+        "cmd:tiffcheck",
+        "cmd:tsitest",
+        "cmd:typetest",
+        "cmd:xferfaxstats"
+      ]
+    },
+    "hylafaxplus-lang": {
+      "origin": "hylafaxplus",
+      "versions": {
+        "7.0.0-r0": 1559045520
+      },
+      "dependencies": [
+        "ghostscript",
+        "bash",
+        "tiff-tools",
+        "!hylafax"
+      ]
     }
   },
   "provide": {
@@ -74771,6 +74872,14 @@
       "libkeyutils.so.1": {
         "package": "keyutils-libs",
         "version": "1.6"
+      },
+      "libfaxserver.so.7.0.0": {
+        "package": "hylafaxplus",
+        "version": "7.0.0"
+      },
+      "libfaxutil.so.7.0.0": {
+        "package": "hylafaxplus",
+        "version": "7.0.0"
       }
     },
     "package": {
