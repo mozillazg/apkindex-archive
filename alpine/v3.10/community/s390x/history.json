@@ -4406,7 +4406,8 @@
     "davfs2-doc": {
       "origin": "davfs2",
       "versions": {
-        "1.5.4-r0": 1557419663
+        "1.5.4-r0": 1557419663,
+        "1.5.5-r0": 1559032928
       }
     },
     "caja-doc": {
@@ -7328,7 +7329,8 @@
     "davfs2": {
       "origin": "davfs2",
       "versions": {
-        "1.5.4-r0": 1557419664
+        "1.5.4-r0": 1557419664,
+        "1.5.5-r0": 1559032928
       },
       "dependencies": [
         "/bin/sh",
@@ -22619,7 +22621,8 @@
     "libsoup-lang": {
       "origin": "libsoup",
       "versions": {
-        "2.64.1-r0": 1557334414
+        "2.64.1-r0": 1557334414,
+        "2.66.2-r0": 1559033735
       },
       "dependencies": [
         "glib-networking"
@@ -28105,7 +28108,8 @@
     "libsoup": {
       "origin": "libsoup",
       "versions": {
-        "2.64.1-r0": 1557334415
+        "2.64.1-r0": 1557334415,
+        "2.66.2-r0": 1559033735
       },
       "dependencies": [
         "glib-networking",
@@ -39778,7 +39782,8 @@
     "libsoup-doc": {
       "origin": "libsoup",
       "versions": {
-        "2.64.1-r0": 1557334410
+        "2.64.1-r0": 1557334410,
+        "2.66.2-r0": 1559033735
       }
     },
     "mmh": {
@@ -41490,21 +41495,22 @@
     "libsoup-dev": {
       "origin": "libsoup",
       "versions": {
-        "2.64.1-r0": 1557334407
+        "2.64.1-r0": 1557334407,
+        "2.66.2-r0": 1559033735
       },
       "dependencies": [
-        "gnutls-dev",
-        "sqlite-dev",
-        "libsoup=2.64.1-r0",
-        "pc:gio-2.0",
-        "pc:glib-2.0",
-        "pc:gobject-2.0",
+        "libsoup=2.66.2-r0",
+        "pc:gio-2.0>=2.38",
+        "pc:glib-2.0>=2.38",
+        "pc:gobject-2.0>=2.38",
+        "pc:libpsl>=0.20",
         "pc:libxml-2.0",
+        "pc:sqlite3",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libsoup-2.4=2.64.1",
-        "pc:libsoup-gnome-2.4=2.64.1"
+        "pc:libsoup-2.4=2.66.2",
+        "pc:libsoup-gnome-2.4=2.66.2"
       ]
     },
     "py-mechanize": {
@@ -50244,6 +50250,18 @@
       ],
       "provides": [
         "pc:libucpp=1.3.5"
+      ]
+    },
+    "multirun": {
+      "origin": "multirun",
+      "versions": {
+        "0.3.2-r0": 1559033376
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "cmd:multirun"
       ]
     }
   },
