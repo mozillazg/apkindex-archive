@@ -18157,7 +18157,8 @@
     "ecryptfs-utils-lang": {
       "origin": "ecryptfs-utils",
       "versions": {
-        "111-r6": 1557699614
+        "111-r6": 1557699614,
+        "111-r8": 1559042396
       },
       "dependencies": [
         "cryptsetup",
@@ -30321,14 +30322,15 @@
     "ecryptfs-utils-dev": {
       "origin": "ecryptfs-utils",
       "versions": {
-        "111-r6": 1557699613
+        "111-r6": 1557699613,
+        "111-r8": 1559042395
       },
       "dependencies": [
         "keyutils-dev",
         "linux-pam-dev",
         "nss-dev",
         "linux-headers",
-        "ecryptfs-utils=111-r6",
+        "ecryptfs-utils=111-r8",
         "pkgconfig"
       ],
       "provides": [
@@ -37629,7 +37631,8 @@
     "ecryptfs-utils": {
       "origin": "ecryptfs-utils",
       "versions": {
-        "111-r6": 1557699614
+        "111-r6": 1557699614,
+        "111-r8": 1559042396
       },
       "dependencies": [
         "cryptsetup",
@@ -37637,6 +37640,7 @@
         "gettext",
         "rsync",
         "so:libc.musl-aarch64.so.1",
+        "so:libcrypto.so.1.1",
         "so:libkeyutils.so.1",
         "so:libnss3.so",
         "so:libpam.so.0"
@@ -51149,7 +51153,8 @@
     "ecryptfs-utils-doc": {
       "origin": "ecryptfs-utils",
       "versions": {
-        "111-r6": 1557699613
+        "111-r6": 1557699613,
+        "111-r8": 1559042396
       }
     },
     "lua5.2-say": {
@@ -54460,6 +54465,69 @@
       "provides": [
         "cmd:multirun"
       ]
+    },
+    "fwknop-openrc": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      }
+    },
+    "fwknop-libs": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgpgme.so.11"
+      ],
+      "provides": [
+        "so:libfko.so.3=3.0.0"
+      ]
+    },
+    "fwknop": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      },
+      "dependencies": [
+        "iptables",
+        "so:libc.musl-aarch64.so.1",
+        "so:libfko.so.3"
+      ],
+      "provides": [
+        "cmd:fwknop"
+      ]
+    },
+    "fwknop-dev": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      },
+      "dependencies": [
+        "fwknop-libs=2.6.10-r0"
+      ]
+    },
+    "fwknop-server": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      },
+      "dependencies": [
+        "iptables",
+        "so:libc.musl-aarch64.so.1",
+        "so:libfko.so.3",
+        "so:libpcap.so.1"
+      ],
+      "provides": [
+        "cmd:fwknopd"
+      ]
+    },
+    "fwknop-doc": {
+      "origin": "fwknop",
+      "versions": {
+        "2.6.10-r0": 1559041696
+      }
     }
   },
   "provide": {
@@ -59731,6 +59799,10 @@
       "libucpp.so.13": {
         "package": "libucpp",
         "version": "13.0.5"
+      },
+      "libfko.so.3": {
+        "package": "fwknop-libs",
+        "version": "3.0.0"
       }
     },
     "package": {
