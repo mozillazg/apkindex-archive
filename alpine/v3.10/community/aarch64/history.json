@@ -42326,10 +42326,12 @@
     "ucpp": {
       "origin": "ucpp",
       "versions": {
-        "1.3.2-r0": 1557508303
+        "1.3.2-r0": 1557508303,
+        "1.3.5-r0": 1559028404
       },
       "dependencies": [
-        "so:libc.musl-aarch64.so.1"
+        "so:libc.musl-aarch64.so.1",
+        "so:libucpp.so.13"
       ],
       "provides": [
         "cmd:ucpp"
@@ -48480,7 +48482,8 @@
     "rutorrent": {
       "origin": "rutorrent",
       "versions": {
-        "3.8-r1": 1557472619
+        "3.8-r1": 1557472619,
+        "3.9-r0": 1559028332
       },
       "dependencies": [
         "php7",
@@ -54334,6 +54337,37 @@
         "so:ld-linux-aarch64.so.1=1",
         "so:libgcompat.so.0=0"
       ]
+    },
+    "ucpp-dev": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028403
+      },
+      "dependencies": [
+        "libucpp=1.3.5-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libucpp=1.3.5"
+      ]
+    },
+    "libucpp": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028404
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "so:libucpp.so.13=13.0.5"
+      ]
+    },
+    "ucpp-doc": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028403
+      }
     }
   },
   "provide": {
@@ -59601,6 +59635,10 @@
       "libgcompat.so.0": {
         "package": "gcompat",
         "version": "0"
+      },
+      "libucpp.so.13": {
+        "package": "libucpp",
+        "version": "13.0.5"
       }
     },
     "package": {

@@ -33,7 +33,8 @@
     },
     "rdesktop-doc": {
       "versions": {
-        "1.8.3-r5": 1557083294
+        "1.8.3-r5": 1557083294,
+        "1.8.6-r0": 1559027700
       },
       "origin": "rdesktop"
     },
@@ -1850,9 +1851,13 @@
     },
     "s6-linux-init-dev": {
       "versions": {
-        "0.4.0.1-r0": 1556977414
+        "0.4.0.1-r0": 1556977414,
+        "1.0.0.0-r0": 1559025557
       },
-      "origin": "s6-linux-init"
+      "origin": "s6-linux-init",
+      "dependencies": [
+        "s6-linux-init=1.0.0.0-r0"
+      ]
     },
     "perl-html-formattext-withlinks-andtables-doc": {
       "versions": {
@@ -4395,18 +4400,26 @@
     },
     "s6-linux-init": {
       "versions": {
-        "0.4.0.1-r0": 1556977415
+        "0.4.0.1-r0": 1556977415,
+        "1.0.0.0-r0": 1559025557
       },
       "origin": "s6-linux-init",
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
+        "so:libs6.so.2.8",
         "so:libskarnet.so.2.8"
       ],
       "provides": [
-        "cmd:s6-halt",
+        "so:libs6_linux_init.so.1.0=1.0.0.0",
+        "cmd:s6-linux-init",
+        "cmd:s6-linux-init-echo",
+        "cmd:s6-linux-init-hpr",
+        "cmd:s6-linux-init-logouthookd",
         "cmd:s6-linux-init-maker",
-        "cmd:s6-poweroff",
-        "cmd:s6-reboot"
+        "cmd:s6-linux-init-shutdown",
+        "cmd:s6-linux-init-shutdownd",
+        "cmd:s6-linux-init-telinit",
+        "cmd:s6-linux-init-umountall"
       ]
     },
     "py3-cryptography": {
@@ -6099,15 +6112,16 @@
       "versions": {
         "1.7.0-r0": 1557059230,
         "1.7.0-r1": 1557589889,
-        "1.7.1-r0": 1558946291
+        "1.7.1-r0": 1558946291,
+        "1.7.2-r0": 1559027682
       },
       "origin": "rrdtool",
       "dependencies": [
-        "librrd=1.7.1-r0",
+        "librrd=1.7.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:librrd=1.7.1"
+        "pc:librrd=1.7.2"
       ]
     },
     "sg3_utils": {
@@ -7513,7 +7527,8 @@
     "perl-socket": {
       "versions": {
         "2.027-r0": 1556994975,
-        "2.027-r1": 1557587970
+        "2.027-r1": 1557587970,
+        "2.029-r0": 1559027255
       },
       "origin": "perl-socket",
       "dependencies": [
@@ -8417,7 +8432,8 @@
     "perl-encode-doc": {
       "versions": {
         "2.98-r0": 1557133943,
-        "2.98-r1": 1557590642
+        "2.98-r1": 1557590642,
+        "3.01-r0": 1559027193
       },
       "origin": "perl-encode"
     },
@@ -8650,20 +8666,21 @@
     },
     "libical-dev": {
       "versions": {
-        "3.0.4-r2": 1557069644
+        "3.0.4-r2": 1557069644,
+        "3.0.5-r0": 1559027730
       },
       "origin": "libical",
       "dependencies": [
         "db-dev",
-        "libical=3.0.4-r2",
+        "libical=3.0.5-r0",
         "pc:glib-2.0",
         "pc:gobject-2.0",
         "pc:icu-i18n",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libical-glib=3.0.4",
-        "pc:libical=3.0.4"
+        "pc:libical-glib=3.0.5",
+        "pc:libical=3.0.5"
       ]
     },
     "ser2net-doc": {
@@ -10852,7 +10869,8 @@
     },
     "perl-test2-plugin-nowarnings": {
       "versions": {
-        "0.06-r0": 1557003825
+        "0.06-r0": 1557003825,
+        "0.07-r0": 1559027211
       },
       "origin": "perl-test2-plugin-nowarnings",
       "dependencies": [
@@ -12454,7 +12472,8 @@
       "versions": {
         "1.7.0-r0": 1557059251,
         "1.7.0-r1": 1557589891,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027683
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -12468,7 +12487,7 @@
         "so:libxml2.so.2"
       ],
       "provides": [
-        "so:librrd.so.8=8.2.0"
+        "so:librrd.so.8=8.2.1"
       ]
     },
     "bitlbee-openrc": {
@@ -13731,7 +13750,8 @@
     },
     "perl-test2-plugin-nowarnings-doc": {
       "versions": {
-        "0.06-r0": 1557003822
+        "0.06-r0": 1557003822,
+        "0.07-r0": 1559027211
       },
       "origin": "perl-test2-plugin-nowarnings"
     },
@@ -14060,12 +14080,12 @@
     },
     "perl-xml-xpath": {
       "versions": {
-        "1.42-r0": 1557124410
+        "1.42-r0": 1557124410,
+        "1.44-r0": 1559027166
       },
       "origin": "perl-xml-xpath",
       "dependencies": [
-        "perl-xml-parser",
-        "perl-path-tiny"
+        "perl-xml-parser"
       ],
       "provides": [
         "cmd:xpath"
@@ -16228,7 +16248,8 @@
     },
     "rdesktop": {
       "versions": {
-        "1.8.3-r5": 1557083296
+        "1.8.3-r5": 1557083296,
+        "1.8.6-r0": 1559027700
       },
       "origin": "rdesktop",
       "dependencies": [
@@ -17186,7 +17207,8 @@
     "perl-socket6": {
       "versions": {
         "0.28-r0": 1557088406,
-        "0.28-r1": 1557589900
+        "0.28-r1": 1557589900,
+        "0.29-r0": 1559027207
       },
       "origin": "perl-socket6",
       "dependencies": [
@@ -17815,7 +17837,8 @@
     },
     "lighttpd-dbg": {
       "versions": {
-        "1.4.53-r1": 1557060441
+        "1.4.53-r1": 1557060441,
+        "1.4.54-r0": 1559027787
       },
       "origin": "lighttpd"
     },
@@ -19113,7 +19136,8 @@
       "versions": {
         "1.7.0-r0": 1557059246,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027683
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -19339,7 +19363,8 @@
     },
     "s6-networking-doc": {
       "versions": {
-        "2.3.0.4-r0": 1557151644
+        "2.3.0.4-r0": 1557151644,
+        "2.3.0.4-r1": 1559025568
       },
       "origin": "s6-networking"
     },
@@ -19949,11 +19974,13 @@
     },
     "lighttpd-mod_auth": {
       "versions": {
-        "1.4.53-r1": 1557060441
+        "1.4.53-r1": 1557060441,
+        "1.4.54-r0": 1559027787
       },
       "origin": "lighttpd",
       "dependencies": [
-        "so:libc.musl-x86_64.so.1"
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1"
       ]
     },
     "zstd-libs": {
@@ -20777,7 +20804,8 @@
       "versions": {
         "1.7.0-r0": 1557059241,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027682
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -21105,11 +21133,13 @@
     },
     "perl-cps": {
       "versions": {
-        "0.18-r0": 1557072511
+        "0.18-r0": 1557072511,
+        "0.19-r0": 1559027201
       },
       "origin": "perl-cps",
       "dependencies": [
-        "perl-future"
+        "perl-future",
+        "perl-sub-name"
       ]
     },
     "poppler-utils": {
@@ -23430,7 +23460,8 @@
       "versions": {
         "1.7.0-r0": 1557059254,
         "1.7.0-r1": 1557589891,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027683
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -23952,7 +23983,8 @@
     },
     "s6-networking": {
       "versions": {
-        "2.3.0.4-r0": 1557151645
+        "2.3.0.4-r0": 1557151645,
+        "2.3.0.4-r1": 1559025568
       },
       "origin": "s6-networking",
       "dependencies": [
@@ -28003,7 +28035,8 @@
     },
     "perl-uri": {
       "versions": {
-        "1.74-r0": 1556915775
+        "1.74-r0": 1556915775,
+        "1.76-r0": 1559027154
       },
       "origin": "perl-uri",
       "dependencies": [
@@ -28165,11 +28198,12 @@
     },
     "s6-networking-dev": {
       "versions": {
-        "2.3.0.4-r0": 1557151643
+        "2.3.0.4-r0": 1557151643,
+        "2.3.0.4-r1": 1559025568
       },
       "origin": "s6-networking",
       "dependencies": [
-        "s6-networking=2.3.0.4-r0"
+        "s6-networking=2.3.0.4-r1"
       ]
     },
     "make": {
@@ -31108,7 +31142,8 @@
     },
     "perl-xml-xpath-doc": {
       "versions": {
-        "1.42-r0": 1557124410
+        "1.42-r0": 1557124410,
+        "1.44-r0": 1559027166
       },
       "origin": "perl-xml-xpath"
     },
@@ -31718,7 +31753,8 @@
     },
     "s6-openrc": {
       "versions": {
-        "2.8.0.0-r0": 1557075861
+        "2.8.0.0-r0": 1557075861,
+        "2.8.0.1-r0": 1559025553
       },
       "origin": "s6"
     },
@@ -33047,7 +33083,8 @@
     "perl-datetime": {
       "versions": {
         "1.50-r0": 1557132776,
-        "1.50-r1": 1557590592
+        "1.50-r1": 1557590592,
+        "1.51-r0": 1559027247
       },
       "origin": "perl-datetime",
       "dependencies": [
@@ -33690,7 +33727,8 @@
     },
     "perl-cps-doc": {
       "versions": {
-        "0.18-r0": 1557072505
+        "0.18-r0": 1557072505,
+        "0.19-r0": 1559027201
       },
       "origin": "perl-cps"
     },
@@ -33950,7 +33988,8 @@
     },
     "skalibs-doc": {
       "versions": {
-        "2.8.0.1-r0": 1556977411
+        "2.8.0.1-r0": 1556977411,
+        "2.8.1.0-r0": 1559025545
       },
       "origin": "skalibs"
     },
@@ -34002,7 +34041,8 @@
       "versions": {
         "1.7.0-r0": 1557059236,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027682
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -34075,7 +34115,8 @@
     },
     "execline": {
       "versions": {
-        "2.5.1.0-r0": 1557075856
+        "2.5.1.0-r0": 1557075856,
+        "2.5.1.0-r1": 1559025548
       },
       "origin": "execline",
       "dependencies": [
@@ -34620,7 +34661,8 @@
     },
     "s6-linux-init-doc": {
       "versions": {
-        "0.4.0.1-r0": 1556977415
+        "0.4.0.1-r0": 1556977415,
+        "1.0.0.0-r0": 1559025557
       },
       "origin": "s6-linux-init"
     },
@@ -38000,7 +38042,8 @@
     },
     "perl-extutils-cchecker": {
       "versions": {
-        "0.10-r0": 1557132581
+        "0.10-r0": 1557132581,
+        "0.10-r1": 1559027607
       },
       "origin": "perl-extutils-cchecker",
       "dependencies": [
@@ -39953,7 +39996,8 @@
     },
     "perl-canary-stability": {
       "versions": {
-        "2012-r0": 1557151471
+        "2012-r0": 1557151471,
+        "2013-r0": 1559027196
       },
       "origin": "perl-canary-stability"
     },
@@ -41590,7 +41634,8 @@
     },
     "s6-doc": {
       "versions": {
-        "2.8.0.0-r0": 1557075860
+        "2.8.0.0-r0": 1557075860,
+        "2.8.0.1-r0": 1559025553
       },
       "origin": "s6"
     },
@@ -42839,7 +42884,8 @@
     },
     "lighttpd-mod_webdav": {
       "versions": {
-        "1.4.53-r1": 1557060442
+        "1.4.53-r1": 1557060442,
+        "1.4.54-r0": 1559027787
       },
       "origin": "lighttpd",
       "dependencies": [
@@ -43455,7 +43501,8 @@
     "perl-encode": {
       "versions": {
         "2.98-r0": 1557133948,
-        "2.98-r1": 1557590642
+        "2.98-r1": 1557590642,
+        "3.01-r0": 1559027193
       },
       "origin": "perl-encode",
       "dependencies": [
@@ -43837,7 +43884,8 @@
       "versions": {
         "1.7.0-r0": 1557059249,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027683
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -44108,7 +44156,8 @@
     "perl-encode-dev": {
       "versions": {
         "2.98-r0": 1557133944,
-        "2.98-r1": 1557590642
+        "2.98-r1": 1557590642,
+        "3.01-r0": 1559027193
       },
       "origin": "perl-encode",
       "dependencies": [
@@ -45040,7 +45089,8 @@
     },
     "lighttpd-openrc": {
       "versions": {
-        "1.4.53-r1": 1557060441
+        "1.4.53-r1": 1557060441,
+        "1.4.54-r0": 1559027787
       },
       "origin": "lighttpd"
     },
@@ -46986,7 +47036,8 @@
     },
     "perl-canary-stability-doc": {
       "versions": {
-        "2012-r0": 1557151470
+        "2012-r0": 1557151470,
+        "2013-r0": 1559027196
       },
       "origin": "perl-canary-stability"
     },
@@ -47182,7 +47233,8 @@
     },
     "perl-extutils-cchecker-doc": {
       "versions": {
-        "0.10-r0": 1557132578
+        "0.10-r0": 1557132578,
+        "0.10-r1": 1559027607
       },
       "origin": "perl-extutils-cchecker"
     },
@@ -51182,7 +51234,8 @@
     },
     "s6-dns": {
       "versions": {
-        "2.3.0.2-r0": 1557118663
+        "2.3.0.2-r0": 1557118663,
+        "2.3.0.2-r1": 1559025564
       },
       "origin": "s6-dns",
       "dependencies": [
@@ -51337,7 +51390,8 @@
     },
     "lighttpd-doc": {
       "versions": {
-        "1.4.53-r1": 1557060439
+        "1.4.53-r1": 1557060439,
+        "1.4.54-r0": 1559027786
       },
       "origin": "lighttpd"
     },
@@ -53794,14 +53848,15 @@
     },
     "skalibs": {
       "versions": {
-        "2.8.0.1-r0": 1556977412
+        "2.8.0.1-r0": 1556977412,
+        "2.8.1.0-r0": 1559025546
       },
       "origin": "skalibs",
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libskarnet.so.2.8=2.8.0.1"
+        "so:libskarnet.so.2.8=2.8.1.0"
       ]
     },
     "pcre2-dev": {
@@ -54974,7 +55029,8 @@
     },
     "s6-linux-utils-doc": {
       "versions": {
-        "2.5.0.1-r0": 1557082275
+        "2.5.0.1-r0": 1557082275,
+        "2.5.0.1-r1": 1559025559
       },
       "origin": "s6-linux-utils"
     },
@@ -55089,7 +55145,8 @@
     },
     "perl-uri-doc": {
       "versions": {
-        "1.74-r0": 1556915773
+        "1.74-r0": 1556915773,
+        "1.76-r0": 1559027154
       },
       "origin": "perl-uri"
     },
@@ -55247,11 +55304,12 @@
     },
     "execline-dev": {
       "versions": {
-        "2.5.1.0-r0": 1557075855
+        "2.5.1.0-r0": 1557075855,
+        "2.5.1.0-r1": 1559025548
       },
       "origin": "execline",
       "dependencies": [
-        "execline=2.5.1.0-r0"
+        "execline=2.5.1.0-r1"
       ]
     },
     "lua5.3-sql-mysql": {
@@ -55292,7 +55350,8 @@
     },
     "s6-portable-utils-doc": {
       "versions": {
-        "2.2.1.3-r0": 1557169391
+        "2.2.1.3-r0": 1557169391,
+        "2.2.1.3-r1": 1559025561
       },
       "origin": "s6-portable-utils"
     },
@@ -55979,11 +56038,12 @@
     },
     "s6-dev": {
       "versions": {
-        "2.8.0.0-r0": 1557075859
+        "2.8.0.0-r0": 1557075859,
+        "2.8.0.1-r0": 1559025553
       },
       "origin": "s6",
       "dependencies": [
-        "s6=2.8.0.0-r0"
+        "s6=2.8.0.1-r0"
       ]
     },
     "udisks2-lang": {
@@ -56064,7 +56124,8 @@
       "versions": {
         "1.7.0-r0": 1557059244,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027683
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -57434,7 +57495,8 @@
     },
     "lighttpd": {
       "versions": {
-        "1.4.53-r1": 1557060442
+        "1.4.53-r1": 1557060442,
+        "1.4.54-r0": 1559027787
       },
       "origin": "lighttpd",
       "dependencies": [
@@ -57444,6 +57506,7 @@
         "so:libcrypto.so.1.1",
         "so:libev.so.4",
         "so:libfam.so.0",
+        "so:liblber-2.4.so.2",
         "so:libldap-2.4.so.2",
         "so:liblua-5.3.so.0",
         "so:libpcre.so.1",
@@ -57571,7 +57634,8 @@
     },
     "s6-portable-utils": {
       "versions": {
-        "2.2.1.3-r0": 1557169392
+        "2.2.1.3-r0": 1557169392,
+        "2.2.1.3-r1": 1559025562
       },
       "origin": "s6-portable-utils",
       "dependencies": [
@@ -58807,11 +58871,12 @@
     },
     "s6-dns-dev": {
       "versions": {
-        "2.3.0.2-r0": 1557118661
+        "2.3.0.2-r0": 1557118661,
+        "2.3.0.2-r1": 1559025564
       },
       "origin": "s6-dns",
       "dependencies": [
-        "s6-dns=2.3.0.2-r0"
+        "s6-dns=2.3.0.2-r1"
       ]
     },
     "py-musicbrainzngs": {
@@ -58986,7 +59051,8 @@
     "perl-socket-doc": {
       "versions": {
         "2.027-r0": 1556994973,
-        "2.027-r1": 1557587970
+        "2.027-r1": 1557587970,
+        "2.029-r0": 1559027255
       },
       "origin": "perl-socket"
     },
@@ -59026,7 +59092,8 @@
     "perl-datetime-doc": {
       "versions": {
         "1.50-r0": 1557132775,
-        "1.50-r1": 1557590592
+        "1.50-r1": 1557590592,
+        "1.51-r0": 1559027247
       },
       "origin": "perl-datetime"
     },
@@ -59119,7 +59186,8 @@
     },
     "s6-dns-doc": {
       "versions": {
-        "2.3.0.2-r0": 1557118662
+        "2.3.0.2-r0": 1557118662,
+        "2.3.0.2-r1": 1559025564
       },
       "origin": "s6-dns"
     },
@@ -59314,7 +59382,8 @@
     },
     "libical": {
       "versions": {
-        "3.0.4-r2": 1557069644
+        "3.0.4-r2": 1557069644,
+        "3.0.5-r0": 1559027730
       },
       "origin": "libical",
       "dependencies": [
@@ -59328,12 +59397,12 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libical-glib.so.3=3.0.4",
-        "so:libical.so.3=3.0.4",
-        "so:libical_cxx.so.3=3.0.4",
-        "so:libicalss.so.3=3.0.4",
-        "so:libicalss_cxx.so.3=3.0.4",
-        "so:libicalvcal.so.3=3.0.4"
+        "so:libical-glib.so.3=3.0.5",
+        "so:libical.so.3=3.0.5",
+        "so:libical_cxx.so.3=3.0.5",
+        "so:libicalss.so.3=3.0.5",
+        "so:libicalss_cxx.so.3=3.0.5",
+        "so:libicalvcal.so.3=3.0.5"
       ]
     },
     "multisort": {
@@ -60433,7 +60502,8 @@
     "highlight": {
       "versions": {
         "3.46-r0": 1556918041,
-        "3.50-r0": 1558361372
+        "3.50-r0": 1558361372,
+        "3.51-r0": 1559027759
       },
       "origin": "highlight",
       "dependencies": [
@@ -60726,7 +60796,8 @@
     "highlight-doc": {
       "versions": {
         "3.46-r0": 1556918040,
-        "3.50-r0": 1558361372
+        "3.50-r0": 1558361372,
+        "3.51-r0": 1559027759
       },
       "origin": "highlight"
     },
@@ -61615,7 +61686,8 @@
     },
     "s6-linux-utils": {
       "versions": {
-        "2.5.0.1-r0": 1557082275
+        "2.5.0.1-r0": 1557082275,
+        "2.5.0.1-r1": 1559025559
       },
       "origin": "s6-linux-utils",
       "dependencies": [
@@ -62104,7 +62176,8 @@
     },
     "s6": {
       "versions": {
-        "2.8.0.0-r0": 1557075862
+        "2.8.0.0-r0": 1557075862,
+        "2.8.0.1-r0": 1559025553
       },
       "origin": "s6",
       "dependencies": [
@@ -62114,7 +62187,7 @@
         "so:libskarnet.so.2.8"
       ],
       "provides": [
-        "so:libs6.so.2.8=2.8.0.0",
+        "so:libs6.so.2.8=2.8.0.1",
         "cmd:s6-accessrules-cdb-from-fs",
         "cmd:s6-accessrules-fs-from-cdb",
         "cmd:s6-applyuidgid",
@@ -63598,11 +63671,12 @@
     },
     "skalibs-dev": {
       "versions": {
-        "2.8.0.1-r0": 1556977410
+        "2.8.0.1-r0": 1556977410,
+        "2.8.1.0-r0": 1559025545
       },
       "origin": "skalibs",
       "dependencies": [
-        "skalibs=2.8.0.1-r0"
+        "skalibs=2.8.1.0-r0"
       ]
     },
     "clang": {
@@ -64197,7 +64271,8 @@
       "versions": {
         "1.7.0-r0": 1557059238,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027682
       },
       "origin": "rrdtool",
       "dependencies": [
@@ -67098,7 +67173,8 @@
     },
     "execline-doc": {
       "versions": {
-        "2.5.1.0-r0": 1557075856
+        "2.5.1.0-r0": 1557075856,
+        "2.5.1.0-r1": 1559025548
       },
       "origin": "execline"
     },
@@ -67830,7 +67906,8 @@
       "versions": {
         "1.7.0-r0": 1557059233,
         "1.7.0-r1": 1557589890,
-        "1.7.1-r0": 1558946292
+        "1.7.1-r0": 1558946292,
+        "1.7.2-r0": 1559027682
       },
       "origin": "rrdtool"
     },
@@ -67964,7 +68041,8 @@
     "perl-encode-utils": {
       "versions": {
         "2.98-r0": 1557133946,
-        "2.98-r1": 1557590642
+        "2.98-r1": 1557590642,
+        "3.01-r0": 1559027193
       },
       "origin": "perl-encode",
       "dependencies": [
@@ -69877,6 +69955,12 @@
       "versions": {
         "1.8.4-r1": 1558988104
       }
+    },
+    "perl-socket6-doc": {
+      "origin": "perl-socket6",
+      "versions": {
+        "0.29-r0": 1559027207
+      }
     }
   },
   "provide": {
@@ -70951,7 +71035,7 @@
       },
       "librrd.so.8": {
         "package": "librrd",
-        "version": "8.2.0"
+        "version": "8.2.1"
       },
       "libsodium.so.23": {
         "package": "libsodium",
@@ -74851,7 +74935,7 @@
       },
       "libskarnet.so.2.8": {
         "package": "skalibs",
-        "version": "2.8.0.1"
+        "version": "2.8.1.0"
       },
       "libpixman-1.so.0": {
         "package": "pixman",
@@ -75491,27 +75575,27 @@
       },
       "libical-glib.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libical.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libical_cxx.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libicalss.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libicalss_cxx.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libicalvcal.so.3": {
         "package": "libical",
-        "version": "3.0.4"
+        "version": "3.0.5"
       },
       "libXext.so.6": {
         "package": "libxext",
@@ -75727,7 +75811,7 @@
       },
       "libs6.so.2.8": {
         "package": "s6",
-        "version": "2.8.0.0"
+        "version": "2.8.0.1"
       },
       "libisns.so.0": {
         "package": "open-isns-lib",
@@ -76324,6 +76408,10 @@
       "libgstoverlaycomposition.so": {
         "package": "gst-plugins-base",
         "version": "0"
+      },
+      "libs6_linux_init.so.1.0": {
+        "package": "s6-linux-init",
+        "version": "1.0.0.0"
       }
     },
     "package": {

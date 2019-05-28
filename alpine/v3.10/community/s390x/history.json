@@ -18873,7 +18873,8 @@
     "rutorrent": {
       "origin": "rutorrent",
       "versions": {
-        "3.8-r1": 1557697994
+        "3.8-r1": 1557697994,
+        "3.9-r0": 1559028163
       },
       "dependencies": [
         "php7",
@@ -26134,10 +26135,12 @@
     "ucpp": {
       "origin": "ucpp",
       "versions": {
-        "1.3.2-r0": 1557404719
+        "1.3.2-r0": 1557404719,
+        "1.3.5-r0": 1559028284
       },
       "dependencies": [
-        "so:libc.musl-s390x.so.1"
+        "so:libc.musl-s390x.so.1",
+        "so:libucpp.so.13"
       ],
       "provides": [
         "cmd:ucpp"
@@ -50211,6 +50214,37 @@
       "dependencies": [
         "faenza-icon-theme=1.3.1-r5"
       ]
+    },
+    "libucpp": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028284
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libucpp.so.13=13.0.5"
+      ]
+    },
+    "ucpp-doc": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028284
+      }
+    },
+    "ucpp-dev": {
+      "origin": "ucpp",
+      "versions": {
+        "1.3.5-r0": 1559028284
+      },
+      "dependencies": [
+        "libucpp=1.3.5-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libucpp=1.3.5"
+      ]
     }
   },
   "provide": {
@@ -53982,6 +54016,10 @@
       "libgstsctp-1.0.so.0": {
         "package": "gst-plugins-bad",
         "version": "0.1600.0"
+      },
+      "libucpp.so.13": {
+        "package": "libucpp",
+        "version": "13.0.5"
       }
     },
     "package": {

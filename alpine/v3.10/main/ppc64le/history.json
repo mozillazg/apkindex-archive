@@ -6865,7 +6865,8 @@
     },
     "s6-linux-utils-doc": {
       "versions": {
-        "2.5.0.1-r0": 1557204802
+        "2.5.0.1-r0": 1557204802,
+        "2.5.0.1-r1": 1559026169
       },
       "origin": "s6-linux-utils"
     },
@@ -8344,7 +8345,8 @@
     },
     "s6-doc": {
       "versions": {
-        "2.8.0.0-r0": 1557058985
+        "2.8.0.0-r0": 1557058985,
+        "2.8.0.1-r0": 1559025985
       },
       "origin": "s6"
     },
@@ -9007,11 +9009,12 @@
     },
     "skalibs-dev": {
       "versions": {
-        "2.8.0.1-r0": 1556971184
+        "2.8.0.1-r0": 1556971184,
+        "2.8.1.0-r0": 1559025547
       },
       "origin": "skalibs",
       "dependencies": [
-        "skalibs=2.8.0.1-r0"
+        "skalibs=2.8.1.0-r0"
       ]
     },
     "vte-lang": {
@@ -9104,7 +9107,8 @@
     },
     "s6-linux-init-doc": {
       "versions": {
-        "0.4.0.1-r0": 1557154728
+        "0.4.0.1-r0": 1557154728,
+        "1.0.0.0-r0": 1559026211
       },
       "origin": "s6-linux-init"
     },
@@ -10120,11 +10124,12 @@
     },
     "s6-dns-dev": {
       "versions": {
-        "2.3.0.2-r0": 1556971230
+        "2.3.0.2-r0": 1556971230,
+        "2.3.0.2-r1": 1559025995
       },
       "origin": "s6-dns",
       "dependencies": [
-        "s6-dns=2.3.0.2-r0"
+        "s6-dns=2.3.0.2-r1"
       ]
     },
     "perl-device-serialport": {
@@ -11177,7 +11182,8 @@
     },
     "s6-dns-doc": {
       "versions": {
-        "2.3.0.2-r0": 1556971231
+        "2.3.0.2-r0": 1556971231,
+        "2.3.0.2-r1": 1559025995
       },
       "origin": "s6-dns"
     },
@@ -16010,7 +16016,8 @@
     },
     "s6-dns": {
       "versions": {
-        "2.3.0.2-r0": 1556971231
+        "2.3.0.2-r0": 1556971231,
+        "2.3.0.2-r1": 1559025995
       },
       "origin": "s6-dns",
       "dependencies": [
@@ -19835,7 +19842,8 @@
     },
     "perl-inline-c-doc": {
       "versions": {
-        "0.78-r0": 1557128835
+        "0.78-r0": 1557128835,
+        "0.81-r0": 1559026275
       },
       "origin": "perl-inline-c"
     },
@@ -24615,18 +24623,26 @@
     },
     "s6-linux-init": {
       "versions": {
-        "0.4.0.1-r0": 1557154729
+        "0.4.0.1-r0": 1557154729,
+        "1.0.0.0-r0": 1559026211
       },
       "origin": "s6-linux-init",
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
+        "so:libs6.so.2.8",
         "so:libskarnet.so.2.8"
       ],
       "provides": [
-        "cmd:s6-halt",
+        "so:libs6_linux_init.so.1.0=1.0.0.0",
+        "cmd:s6-linux-init",
+        "cmd:s6-linux-init-echo",
+        "cmd:s6-linux-init-hpr",
+        "cmd:s6-linux-init-logouthookd",
         "cmd:s6-linux-init-maker",
-        "cmd:s6-poweroff",
-        "cmd:s6-reboot"
+        "cmd:s6-linux-init-shutdown",
+        "cmd:s6-linux-init-shutdownd",
+        "cmd:s6-linux-init-telinit",
+        "cmd:s6-linux-init-umountall"
       ]
     },
     "samba-doc": {
@@ -25812,7 +25828,8 @@
     },
     "s6": {
       "versions": {
-        "2.8.0.0-r0": 1557058986
+        "2.8.0.0-r0": 1557058986,
+        "2.8.0.1-r0": 1559025985
       },
       "origin": "s6",
       "dependencies": [
@@ -25822,7 +25839,7 @@
         "so:libskarnet.so.2.8"
       ],
       "provides": [
-        "so:libs6.so.2.8=2.8.0.0",
+        "so:libs6.so.2.8=2.8.0.1",
         "cmd:s6-accessrules-cdb-from-fs",
         "cmd:s6-accessrules-fs-from-cdb",
         "cmd:s6-applyuidgid",
@@ -28745,7 +28762,8 @@
     },
     "execline-doc": {
       "versions": {
-        "2.5.1.0-r0": 1557058972
+        "2.5.1.0-r0": 1557058972,
+        "2.5.1.0-r1": 1559025558
       },
       "origin": "execline"
     },
@@ -30796,14 +30814,15 @@
     },
     "skalibs": {
       "versions": {
-        "2.8.0.1-r0": 1556971185
+        "2.8.0.1-r0": 1556971185,
+        "2.8.1.0-r0": 1559025547
       },
       "origin": "skalibs",
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "so:libskarnet.so.2.8=2.8.0.1"
+        "so:libskarnet.so.2.8=2.8.1.0"
       ]
     },
     "attr-dev": {
@@ -32146,7 +32165,8 @@
     "perl-dbd-pg": {
       "versions": {
         "3.7.4-r0": 1557065043,
-        "3.7.4-r1": 1557594743
+        "3.7.4-r1": 1557594743,
+        "3.8.0-r0": 1559026265
       },
       "origin": "perl-dbd-pg",
       "dependencies": [
@@ -32959,9 +32979,13 @@
     },
     "s6-linux-init-dev": {
       "versions": {
-        "0.4.0.1-r0": 1557154727
+        "0.4.0.1-r0": 1557154727,
+        "1.0.0.0-r0": 1559026211
       },
-      "origin": "s6-linux-init"
+      "origin": "s6-linux-init",
+      "dependencies": [
+        "s6-linux-init=1.0.0.0-r0"
+      ]
     },
     "py-future": {
       "versions": {
@@ -37575,7 +37599,8 @@
     },
     "execline": {
       "versions": {
-        "2.5.1.0-r0": 1557058973
+        "2.5.1.0-r0": 1557058973,
+        "2.5.1.0-r1": 1559025558
       },
       "origin": "execline",
       "dependencies": [
@@ -38438,7 +38463,8 @@
     },
     "perl-inline-c": {
       "versions": {
-        "0.78-r0": 1557128837
+        "0.78-r0": 1557128837,
+        "0.81-r0": 1559026275
       },
       "origin": "perl-inline-c"
     },
@@ -38610,7 +38636,8 @@
     },
     "skalibs-doc": {
       "versions": {
-        "2.8.0.1-r0": 1556971184
+        "2.8.0.1-r0": 1556971184,
+        "2.8.1.0-r0": 1559025547
       },
       "origin": "skalibs"
     },
@@ -42553,16 +42580,17 @@
     "libmatroska-dev": {
       "versions": {
         "1.5.0-r0": 1556990135,
-        "1.5.1-r0": 1558944575
+        "1.5.1-r0": 1558944575,
+        "1.5.2-r0": 1559026391
       },
       "origin": "libmatroska",
       "dependencies": [
-        "libmatroska=1.5.1-r0",
+        "libmatroska=1.5.2-r0",
         "pc:libebml",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmatroska=1.5.1"
+        "pc:libmatroska=1.5.2"
       ]
     },
     "libtirpc": {
@@ -47153,7 +47181,8 @@
     },
     "s6-portable-utils-doc": {
       "versions": {
-        "2.2.1.3-r0": 1557088445
+        "2.2.1.3-r0": 1557088445,
+        "2.2.1.3-r1": 1559025600
       },
       "origin": "s6-portable-utils"
     },
@@ -51104,7 +51133,8 @@
     },
     "s6-networking": {
       "versions": {
-        "2.3.0.4-r0": 1557229481
+        "2.3.0.4-r0": 1557229481,
+        "2.3.0.4-r1": 1559026160
       },
       "origin": "s6-networking",
       "dependencies": [
@@ -51640,7 +51670,8 @@
     "libebml": {
       "versions": {
         "1.3.7-r0": 1556990083,
-        "1.3.8-r0": 1558944524
+        "1.3.8-r0": 1558944524,
+        "1.3.9-r0": 1559025848
       },
       "origin": "libebml",
       "dependencies": [
@@ -54488,7 +54519,8 @@
     },
     "s6-portable-utils": {
       "versions": {
-        "2.2.1.3-r0": 1557088446
+        "2.2.1.3-r0": 1557088446,
+        "2.2.1.3-r1": 1559025600
       },
       "origin": "s6-portable-utils",
       "dependencies": [
@@ -55402,11 +55434,12 @@
     },
     "s6-dev": {
       "versions": {
-        "2.8.0.0-r0": 1557058984
+        "2.8.0.0-r0": 1557058984,
+        "2.8.0.1-r0": 1559025985
       },
       "origin": "s6",
       "dependencies": [
-        "s6=2.8.0.0-r0"
+        "s6=2.8.0.1-r0"
       ]
     },
     "gvim": {
@@ -56152,7 +56185,8 @@
     "perl-dbd-pg-doc": {
       "versions": {
         "3.7.4-r0": 1557065042,
-        "3.7.4-r1": 1557594743
+        "3.7.4-r1": 1557594743,
+        "3.8.0-r0": 1559026265
       },
       "origin": "perl-dbd-pg"
     },
@@ -56791,7 +56825,8 @@
     },
     "fortify-headers": {
       "versions": {
-        "1.0-r1": 1556722371
+        "1.0-r1": 1556722371,
+        "1.1-r0": 1559025856
       },
       "origin": "fortify-headers"
     },
@@ -57366,11 +57401,12 @@
     },
     "s6-networking-dev": {
       "versions": {
-        "2.3.0.4-r0": 1557229480
+        "2.3.0.4-r0": 1557229480,
+        "2.3.0.4-r1": 1559026160
       },
       "origin": "s6-networking",
       "dependencies": [
-        "s6-networking=2.3.0.4-r0"
+        "s6-networking=2.3.0.4-r1"
       ]
     },
     "xvidcore": {
@@ -57398,7 +57434,8 @@
     },
     "s6-linux-utils": {
       "versions": {
-        "2.5.0.1-r0": 1557204803
+        "2.5.0.1-r0": 1557204803,
+        "2.5.0.1-r1": 1559026169
       },
       "origin": "s6-linux-utils",
       "dependencies": [
@@ -58649,11 +58686,13 @@
     "libmatroska": {
       "versions": {
         "1.5.0-r0": 1556990135,
-        "1.5.1-r0": 1558944575
+        "1.5.1-r0": 1558944575,
+        "1.5.2-r0": 1559026391
       },
       "origin": "libmatroska",
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
+        "so:libebml.so.4",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
@@ -60009,15 +60048,16 @@
     "libebml-dev": {
       "versions": {
         "1.3.7-r0": 1556990083,
-        "1.3.8-r0": 1558944524
+        "1.3.8-r0": 1558944524,
+        "1.3.9-r0": 1559025848
       },
       "origin": "libebml",
       "dependencies": [
-        "libebml=1.3.8-r0",
+        "libebml=1.3.9-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libebml=1.3.8"
+        "pc:libebml=1.3.9"
       ]
     },
     "xtables-addons-vanilla": {
@@ -60593,7 +60633,8 @@
     },
     "s6-openrc": {
       "versions": {
-        "2.8.0.0-r0": 1557058985
+        "2.8.0.0-r0": 1557058985,
+        "2.8.0.1-r0": 1559025985
       },
       "origin": "s6"
     },
@@ -66377,7 +66418,8 @@
     },
     "s6-networking-doc": {
       "versions": {
-        "2.3.0.4-r0": 1557229480
+        "2.3.0.4-r0": 1557229480,
+        "2.3.0.4-r1": 1559026160
       },
       "origin": "s6-networking"
     },
@@ -67551,11 +67593,12 @@
     },
     "execline-dev": {
       "versions": {
-        "2.5.1.0-r0": 1557058972
+        "2.5.1.0-r0": 1557058972,
+        "2.5.1.0-r1": 1559025558
       },
       "origin": "execline",
       "dependencies": [
-        "execline=2.5.1.0-r0"
+        "execline=2.5.1.0-r1"
       ]
     },
     "kamailio-doc": {
@@ -71473,7 +71516,7 @@
       },
       "libs6.so.2.8": {
         "package": "s6",
-        "version": "2.8.0.0"
+        "version": "2.8.0.1"
       },
       "libvdpau.so.1": {
         "package": "libvdpau",
@@ -71997,7 +72040,7 @@
       },
       "libskarnet.so.2.8": {
         "package": "skalibs",
-        "version": "2.8.0.1"
+        "version": "2.8.1.0"
       },
       "libnfdump-1.6.17.so": {
         "package": "nfdump",
@@ -75122,6 +75165,10 @@
       "libdmraid.so.1": {
         "package": "dmraid",
         "version": "1.0.0"
+      },
+      "libs6_linux_init.so.1.0": {
+        "package": "s6-linux-init",
+        "version": "1.0.0.0"
       }
     },
     "package": {
