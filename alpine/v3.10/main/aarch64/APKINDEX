@@ -20543,22 +20543,6 @@ c:4d5eb37bc791703fd1feaccabd0bf43f00b6d9b5
 D:so:libc.musl-aarch64.so.1 so:libstdc++.so.6
 p:so:libgps.so.24=24.0.0 cmd:gpsd cmd:gpsdctl
 
-C:Q1aVDPInbDk45wxEupmdoKBkE33dI=
-P:spice-dev
-V:0.14.1-r6
-A:aarch64
-S:9208
-I:86016
-T:Implements the SPICE protocol (development files)
-U:http://www.spice-space.org/
-L:LGPL-2.0-or-later
-o:spice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557176205
-c:8882af1ce24c6d347c5e4a04f8fbd50644911e66
-D:spice-protocol pixman-dev celt051-dev libxinerama-dev pc:gio-2.0>=2.32 pc:glib-2.0>=2.32 pc:gobject-2.0>=2.32 pc:openssl pc:pixman-1>=0.17.7 pc:spice-protocol>=0.12.14 pkgconfig spice-server=0.14.1-r6
-p:pc:spice-server=0.14.1
-
 C:Q1bP4sbtGzhV7u9H0J62SLPCjOS10=
 P:antiword
 V:0.37-r3
@@ -24976,6 +24960,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556917066
 c:65c2c2ffbfdbb3663a6e9ec476183a5c90467c62
 i:docs tzdata=2019a-r0
+
+C:Q1qnKiWgasunzRdxJsN2ID1U38WVw=
+P:spice-server
+V:0.14.2-r0
+A:aarch64
+S:342747
+I:1019904
+T:Server library for SPICE
+U:http://www.spice-space.org/
+L:LGPL-2.0-or-later
+o:spice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559150163
+c:da40c61cddb4cc20ad75a8fc778f2e9336915f2f
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstapp-1.0.so.0 so:libgstreamer-1.0.so.0 so:libjpeg.so.8 so:liblz4.so.1 so:libopus.so.0 so:liborc-0.4.so.0 so:libpixman-1.so.0 so:libsasl2.so.3 so:libssl.so.1.1 so:libz.so.1
+p:so:libspice-server.so.1=1.13.0
 
 C:Q1j82sr5hvqTlxD8A5R+967gLlmho=
 P:libevent-dev
@@ -46154,6 +46154,22 @@ c:fd38fd86824827a92b36f8eede51a76a355466d2
 D:so:libc.musl-aarch64.so.1
 p:cmd:hdparm cmd:idectl cmd:ultrabayd
 
+C:Q13o6WFx8dTsIUS9JQ3pFskeybcEA=
+P:spice-protocol
+V:0.14.0-r0
+A:aarch64
+S:23722
+I:163840
+T:Spice protocol header files
+U:http://www.spice-space.org/
+L:BSD-3-Clause LGPL-2.1-or-later
+o:spice-protocol
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559147964
+c:12aae873efbff983baf4f43dddb2e8cb2b2dbe7b
+D:pkgconfig
+p:pc:spice-protocol=0.14.0
+
 C:Q13+GwNW90oWnpOGqyfbgPqfAcHq8=
 P:lua5.2-sircbot
 V:0.4-r2
@@ -50783,22 +50799,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557219171
 c:e7ccbb2df10869098feaa0ec39f3affadbd4dd65
 i:docs fail2ban=0.10.4-r1
-
-C:Q1lmnqHpTJWooH+/a49XR+Y5VGNQk=
-P:spice-server
-V:0.14.1-r6
-A:aarch64
-S:334778
-I:1007616
-T:Server library for SPICE
-U:http://www.spice-space.org/
-L:LGPL-2.0-or-later
-o:spice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557176207
-c:8882af1ce24c6d347c5e4a04f8fbd50644911e66
-D:so:libc.musl-aarch64.so.1 so:libcelt051.so.0 so:libcrypto.so.1.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libjpeg.so.8 so:libopus.so.0 so:libpixman-1.so.0 so:libsasl2.so.3 so:libssl.so.1.1 so:libz.so.1
-p:so:libspice-server.so.1=1.12.5
 
 C:Q1bTd+mW9TXZ6Meui5TRvZLx/azW8=
 P:libmnl-dev
@@ -65955,6 +65955,20 @@ c:8cb1ee23b7bc0d719ec7229ba43bf47891d68dbf
 D:so:libc.musl-aarch64.so.1 so:libgcrypt.so.20 so:libgnutls.so.30 so:libjpeg.so.8 so:libpng16.so.16 so:libz.so.1
 p:so:libvncclient.so.1=1.0.0 so:libvncserver.so.1=1.0.0
 
+C:Q1NMe0A5SQJTMdqe4ijllQIGZ+VqU=
+P:spice
+V:0.14.2-r0
+A:aarch64
+S:1151
+I:12288
+T:Implements the SPICE protocol
+U:http://www.spice-space.org/
+L:LGPL-2.0-or-later
+o:spice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559150163
+c:da40c61cddb4cc20ad75a8fc778f2e9336915f2f
+
 C:Q1hWoh7DZ3WvQHDRGifQ6rFU++GYA=
 P:nfdump
 V:1.6.17-r0
@@ -74482,20 +74496,6 @@ t:1557177092
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins openssh-client so:libc.musl-aarch64.so.1
 
-C:Q1WQyBNANEth98ojW8iLXHBceubXc=
-P:spice
-V:0.14.1-r6
-A:aarch64
-S:1144
-I:12288
-T:Implements the SPICE protocol
-U:http://www.spice-space.org/
-L:LGPL-2.0-or-later
-o:spice
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557176209
-c:8882af1ce24c6d347c5e4a04f8fbd50644911e66
-
 C:Q1SlYJOT0VtMztvbNbhM+uT6/Qe/o=
 P:py3-lockfile
 V:0.12.2-r1
@@ -74954,6 +74954,22 @@ o:perl-stream-buffered
 t:1557220247
 c:82cd255708034b58deb141a6aa66fde0835faaf7
 i:docs perl-stream-buffered=0.03-r0
+
+C:Q1JzDZoNNufi/8Kmx1KYF2Qjci37g=
+P:spice-dev
+V:0.14.2-r0
+A:aarch64
+S:10006
+I:86016
+T:Implements the SPICE protocol (development files)
+U:http://www.spice-space.org/
+L:LGPL-2.0-or-later
+o:spice
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559150162
+c:da40c61cddb4cc20ad75a8fc778f2e9336915f2f
+D:spice-protocol pixman-dev libxinerama-dev pc:gio-2.0>=2.38 pc:glib-2.0>=2.38 pc:gobject-2.0>=2.38 pc:openssl pc:pixman-1>=0.17.7 pc:spice-protocol>=0.14.0 pkgconfig spice-server=0.14.2-r0
+p:pc:spice-server=0.14.2
 
 C:Q12zNn8r8xU73noHTapix6eGsc+Is=
 P:distcc-pump
@@ -84477,22 +84493,6 @@ t:1557163982
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXaw.so.7 so:libXmu.so.6 so:libXt.so.6 so:libc.musl-aarch64.so.1
 p:cmd:xfontsel
-
-C:Q1zPEbEy3EeFxmvtb0QTuMEpAm/pE=
-P:spice-protocol
-V:0.12.15-r0
-A:aarch64
-S:23298
-I:159744
-T:Spice protocol header files
-U:http://www.spice-space.org/
-L:BSD-3-Clause LGPL-2.1-or-later
-o:spice-protocol
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557175725
-c:6b9690b74d52d6ca6defd00a06a897e862757dc7
-D:pkgconfig
-p:pc:spice-protocol=0.12.15
 
 C:Q1/v0hSjB7syC2ux8DAps+VJjURHw=
 P:groff-doc
