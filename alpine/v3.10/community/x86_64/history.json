@@ -5986,7 +5986,8 @@
     "nodejs-current": {
       "origin": "nodejs-current",
       "versions": {
-        "12.2.0-r0": 1558098139
+        "12.2.0-r0": 1558098139,
+        "12.3.1-r0": 1559130526
       },
       "dependencies": [
         "ca-certificates",
@@ -10747,13 +10748,16 @@
       "origin": "phonon-backend-gstreamer",
       "versions": {
         "4.9.0-r1": 1557666931,
-        "4.9.0-r2": 1558970343
+        "4.9.0-r2": 1558970343,
+        "4.9.0-r3": 1559132875
       },
       "dependencies": [
         "so:libGL.so.1",
-        "so:libQtCore.so.4",
-        "so:libQtGui.so.4",
-        "so:libQtOpenGL.so.4",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5OpenGL.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libQt5X11Extras.so.5",
         "so:libc.musl-x86_64.so.1",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
@@ -10761,7 +10765,7 @@
         "so:libgstpbutils-1.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libgstvideo-1.0.so.0",
-        "so:libphonon.so.4",
+        "so:libphonon4qt5.so.4",
         "so:libstdc++.so.6"
       ]
     },
@@ -14144,7 +14148,8 @@
       "versions": {
         "2.1.17-r0": 1558251020,
         "2.1.18-r0": 1558686999,
-        "2.1.19-r0": 1559111999
+        "2.1.19-r0": 1559111999,
+        "2.1.20-r0": 1559130735
       },
       "dependencies": [
         "python3",
@@ -15046,7 +15051,8 @@
       "versions": {
         "2.1.17-r0": 1558251020,
         "2.1.18-r0": 1558686999,
-        "2.1.19-r0": 1559111998
+        "2.1.19-r0": 1559111998,
+        "2.1.20-r0": 1559130733
       }
     },
     "appstream-glib-lang": {
@@ -22609,18 +22615,20 @@
     "phonon-dev": {
       "origin": "phonon",
       "versions": {
-        "4.10.2-r0": 1557331547
+        "4.10.2-r0": 1557331547,
+        "4.10.2-r1": 1559132852
       },
       "dependencies": [
+        "qt5-qtdeclarative-dev",
         "glib-dev",
-        "pc:QtCore",
-        "pc:QtDBus",
-        "pc:QtGui",
-        "phonon=4.10.2-r0",
+        "pc:Qt5Core",
+        "pc:Qt5DBus",
+        "pc:Qt5Gui",
+        "phonon=4.10.2-r1",
         "pkgconfig"
       ],
       "provides": [
-        "pc:phonon=4.10.2"
+        "pc:phonon4qt5=4.10.2"
       ]
     },
     "font-noto-oldturkic": {
@@ -27107,7 +27115,8 @@
     "nodejs-current-dev": {
       "origin": "nodejs-current",
       "versions": {
-        "12.2.0-r0": 1558098138
+        "12.2.0-r0": 1558098138,
+        "12.3.1-r0": 1559130524
       },
       "dependencies": [
         "libuv"
@@ -31122,19 +31131,20 @@
     "phonon": {
       "origin": "phonon",
       "versions": {
-        "4.10.2-r0": 1557331548
+        "4.10.2-r0": 1557331548,
+        "4.10.2-r1": 1559132852
       },
       "dependencies": [
-        "so:libQtCore.so.4",
-        "so:libQtDBus.so.4",
-        "so:libQtDesigner.so.4",
-        "so:libQtGui.so.4",
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Widgets.so.5",
         "so:libc.musl-x86_64.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libphonon.so.4=4.10.2",
-        "so:libphononexperimental.so.4=4.10.2"
+        "so:libphonon4qt5.so.4=4.10.2",
+        "so:libphonon4qt5experimental.so.4=4.10.2"
       ]
     },
     "redsocks": {
@@ -34837,7 +34847,8 @@
         "2.1.17-r0": 1558250803,
         "2.1.18-r0": 1558686555,
         "2.1.18-r1": 1558939482,
-        "2.1.19-r0": 1559112007
+        "2.1.19-r0": 1559112007,
+        "2.1.20-r0": 1559130719
       },
       "dependencies": [
         "busybox",
@@ -34845,8 +34856,8 @@
         "python3",
         "py3-psutil",
         "py3-jinja2",
-        "py3-aiohttp-gns3",
-        "py3-aiohttp-cors-gns3",
+        "py3-aiohttp",
+        "py3-aiohttp-cors",
         "py3-pytest",
         "py3-netifaces",
         "py3-ws4py",
@@ -34855,8 +34866,8 @@
         "py3-jsonschema",
         "py3-yarl",
         "py3-multidict",
-        "py3-prompt_toolkit-gns3",
-        "py3-typing"
+        "py3-typing",
+        "py3-async-timeout"
       ],
       "provides": [
         "cmd:gns3loopback",
@@ -47287,7 +47298,8 @@
     "nodejs-current-doc": {
       "origin": "nodejs-current",
       "versions": {
-        "12.2.0-r0": 1558098138
+        "12.2.0-r0": 1558098138,
+        "12.3.1-r0": 1559130524
       }
     },
     "mpd-openrc": {
@@ -53463,7 +53475,8 @@
         "2.1.17-r0": 1558250803,
         "2.1.18-r0": 1558686555,
         "2.1.18-r1": 1558939481,
-        "2.1.19-r0": 1559112007
+        "2.1.19-r0": 1559112007,
+        "2.1.20-r0": 1559130719
       }
     },
     "connman": {
@@ -56531,14 +56544,15 @@
     "php7-pecl-protobuf": {
       "origin": "php7-pecl-protobuf",
       "versions": {
-        "3.7.1-r0": 1558695364
+        "3.7.1-r0": 1558695364,
+        "3.8.0-r0": 1559129963
       },
       "dependencies": [
         "php7-common",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "php7-protobuf=3.7.1-r0"
+        "php7-protobuf=3.8.0-r0"
       ]
     },
     "slim-doc": {
@@ -57385,6 +57399,16 @@
         "1.0.1-r0": 1559105197,
         "1.0.1-r1": 1559113414
       }
+    },
+    "acme.sh": {
+      "origin": "acme.sh",
+      "versions": {
+        "2.8.1-r0": 1559131451
+      },
+      "dependencies": [
+        "curl",
+        "cmd:openssl"
+      ]
     }
   },
   "provide": {
@@ -63408,6 +63432,14 @@
       "libwx_gtk3u_xrc-3.0.so.0": {
         "package": "wxgtk3",
         "version": "0.4.0"
+      },
+      "libphonon4qt5.so.4": {
+        "package": "phonon",
+        "version": "4.10.2"
+      },
+      "libphonon4qt5experimental.so.4": {
+        "package": "phonon",
+        "version": "4.10.2"
       }
     },
     "package": {
@@ -64009,7 +64041,7 @@
       },
       "php7-protobuf": {
         "package": "php7-pecl-protobuf",
-        "version": "3.7.1-r0"
+        "version": "3.8.0-r0"
       },
       "py-pygit": {
         "package": "py3-pygit2",
