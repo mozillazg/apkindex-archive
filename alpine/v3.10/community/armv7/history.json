@@ -3288,18 +3288,20 @@
     "phonon-dev": {
       "origin": "phonon",
       "versions": {
-        "4.10.2-r0": 1557698273
+        "4.10.2-r0": 1557698273,
+        "4.10.2-r1": 1559132855
       },
       "dependencies": [
+        "qt5-qtdeclarative-dev",
         "glib-dev",
-        "pc:QtCore",
-        "pc:QtDBus",
-        "pc:QtGui",
-        "phonon=4.10.2-r0",
+        "pc:Qt5Core",
+        "pc:Qt5DBus",
+        "pc:Qt5Gui",
+        "phonon=4.10.2-r1",
         "pkgconfig"
       ],
       "provides": [
-        "pc:phonon=4.10.2"
+        "pc:phonon4qt5=4.10.2"
       ]
     },
     "elixir-doc": {
@@ -3814,7 +3816,8 @@
       "versions": {
         "2.1.18-r1": 1558945711,
         "2.1.19-r0": 1559112157,
-        "2.1.20-r0": 1559131164
+        "2.1.20-r0": 1559131164,
+        "2.1.20-r1": 1559133932
       }
     },
     "gnome-colors-common": {
@@ -16739,7 +16742,8 @@
       "versions": {
         "2.1.18-r1": 1558945711,
         "2.1.19-r0": 1559112157,
-        "2.1.20-r0": 1559131165
+        "2.1.20-r0": 1559131165,
+        "2.1.20-r1": 1559133932
       },
       "dependencies": [
         "busybox",
@@ -16747,8 +16751,8 @@
         "python3",
         "py3-psutil",
         "py3-jinja2",
-        "py3-aiohttp",
-        "py3-aiohttp-cors",
+        "py3-aiohttp-gns3",
+        "py3-aiohttp-cors-gns3",
         "py3-pytest",
         "py3-netifaces",
         "py3-ws4py",
@@ -16758,7 +16762,7 @@
         "py3-yarl",
         "py3-multidict",
         "py3-typing",
-        "py3-async-timeout"
+        "py3-prompt_toolkit-gns3"
       ],
       "provides": [
         "cmd:gns3loopback",
@@ -22382,20 +22386,21 @@
     "phonon": {
       "origin": "phonon",
       "versions": {
-        "4.10.2-r0": 1557698274
+        "4.10.2-r0": 1557698274,
+        "4.10.2-r1": 1559132856
       },
       "dependencies": [
-        "so:libQtCore.so.4",
-        "so:libQtDBus.so.4",
-        "so:libQtDesigner.so.4",
-        "so:libQtGui.so.4",
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Widgets.so.5",
         "so:libc.musl-armv7.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libphonon.so.4=4.10.2",
-        "so:libphononexperimental.so.4=4.10.2"
+        "so:libphonon4qt5.so.4=4.10.2",
+        "so:libphonon4qt5experimental.so.4=4.10.2"
       ]
     },
     "knot-resolver-doc": {
@@ -31016,13 +31021,16 @@
     "phonon-backend-gstreamer": {
       "origin": "phonon-backend-gstreamer",
       "versions": {
-        "4.9.0-r2": 1558972813
+        "4.9.0-r2": 1558972813,
+        "4.9.0-r3": 1559133077
       },
       "dependencies": [
         "so:libGL.so.1",
-        "so:libQtCore.so.4",
-        "so:libQtGui.so.4",
-        "so:libQtOpenGL.so.4",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5OpenGL.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libQt5X11Extras.so.5",
         "so:libc.musl-armv7.so.1",
         "so:libgcc_s.so.1",
         "so:libglib-2.0.so.0",
@@ -31031,7 +31039,7 @@
         "so:libgstpbutils-1.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libgstvideo-1.0.so.0",
-        "so:libphonon.so.4",
+        "so:libphonon4qt5.so.4",
         "so:libstdc++.so.6"
       ]
     },
@@ -59531,6 +59539,14 @@
       "libwx_gtk3u_media-3.0.so.0": {
         "package": "wxgtk3-media",
         "version": "0.4.0"
+      },
+      "libphonon4qt5.so.4": {
+        "package": "phonon",
+        "version": "4.10.2"
+      },
+      "libphonon4qt5experimental.so.4": {
+        "package": "phonon",
+        "version": "4.10.2"
       }
     },
     "package": {
