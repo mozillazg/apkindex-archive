@@ -18822,7 +18822,8 @@
         "2.1.18-r1": 1558939265,
         "2.1.19-r0": 1559111995,
         "2.1.20-r0": 1559131501,
-        "2.1.20-r1": 1559133928
+        "2.1.20-r1": 1559133928,
+        "2.1.20-r2": 1559194485
       }
     },
     "lua5.2-mediator": {
@@ -39256,7 +39257,8 @@
         "2.1.18-r1": 1558939265,
         "2.1.19-r0": 1559111995,
         "2.1.20-r0": 1559131501,
-        "2.1.20-r1": 1559133929
+        "2.1.20-r1": 1559133929,
+        "2.1.20-r2": 1559194485
       },
       "dependencies": [
         "busybox",
@@ -39271,7 +39273,7 @@
         "py3-ws4py",
         "py3-zipstream",
         "py3-raven",
-        "py3-jsonschema",
+        "py3-jsonschema-gns3",
         "py3-yarl",
         "py3-multidict",
         "py3-typing",
@@ -50617,6 +50619,20 @@
       "dependencies": [
         "curl",
         "cmd:openssl"
+      ]
+    },
+    "py3-jsonschema-gns3": {
+      "origin": "py3-jsonschema-gns3",
+      "versions": {
+        "2.6.0-r0": 1559194478
+      },
+      "dependencies": [
+        "py3-pyrsistent",
+        "py-attrs",
+        "!py3-jsonschema"
+      ],
+      "provides": [
+        "cmd:jsonschema"
       ]
     }
   },
