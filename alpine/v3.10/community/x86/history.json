@@ -815,22 +815,20 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335297,
-        "0.35-r2": 1558981863
+        "0.35-r2": 1558981863,
+        "0.37-r0": 1559191647
       },
       "dependencies": [
-        "so:libacl.so.1",
         "so:libc.musl-x86.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libgtk-3.so.0",
-        "so:libpolkit-gobject-1.so.0",
         "so:libspice-client-glib-2.0.so.8",
         "so:libspice-client-gtk-3.0.so.5"
       ],
       "provides": [
-        "cmd:spice-client-glib-usb-acl-helper",
         "cmd:spicy",
         "cmd:spicy-screenshot",
         "cmd:spicy-stats"
@@ -4697,10 +4695,11 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407648,
-        "1.16.4-r0": 1559119918
+        "1.16.4-r0": 1559119918,
+        "1.16.4-r1": 1559161991
       },
       "dependencies": [
-        "py3-numpy=1.16.4-r0",
+        "py3-numpy=1.16.4-r1",
         "python3-dev"
       ],
       "provides": [
@@ -4769,7 +4768,8 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335300,
-        "0.35-r2": 1558981863
+        "0.35-r2": 1558981863,
+        "0.37-r0": 1559191647
       },
       "dependencies": [
         "so:libX11.so.6",
@@ -4781,9 +4781,11 @@
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
+        "so:libgstreamer-1.0.so.0",
+        "so:libgstvideo-1.0.so.0",
         "so:libgtk-3.so.0",
-        "so:libintl.so.8",
-        "so:libspice-client-glib-2.0.so.8"
+        "so:libspice-client-glib-2.0.so.8",
+        "so:libva-x11.so.2"
       ],
       "provides": [
         "so:libspice-client-gtk-3.0.so.5=5.0.0"
@@ -7594,10 +7596,12 @@
       "versions": {
         "1.2.4-r0": 1557646006,
         "1.2.4-r1": 1558970315,
-        "1.4.0-r0": 1559061230
+        "1.4.0-r0": 1559061230,
+        "1.4.0-r1": 1559170852
       },
       "dependencies": [
         "bubblewrap",
+        "/bin/sh",
         "so:libXau.so.6",
         "so:libappstream-glib.so.8",
         "so:libarchive.so.13",
@@ -7676,10 +7680,11 @@
       "versions": {
         "1.2.4-r0": 1557646006,
         "1.2.4-r1": 1558970315,
-        "1.4.0-r0": 1559061230
+        "1.4.0-r0": 1559061230,
+        "1.4.0-r1": 1559170852
       },
       "dependencies": [
-        "flatpak=1.4.0-r0",
+        "flatpak=1.4.0-r1",
         "pc:gio-2.0",
         "pc:gio-unix-2.0",
         "pc:glib-2.0",
@@ -11388,7 +11393,8 @@
     "xarchiver": {
       "origin": "xarchiver",
       "versions": {
-        "0.5.4.13-r0": 1557678475
+        "0.5.4.13-r0": 1557678475,
+        "0.5.4.14-r0": 1559162019
       },
       "dependencies": [
         "desktop-file-utils",
@@ -13161,7 +13167,8 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335298,
-        "0.35-r2": 1558981863
+        "0.35-r2": 1558981863,
+        "0.37-r0": 1559191647
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -13171,16 +13178,16 @@
         "so:libgobject-2.0.so.0",
         "so:libgstapp-1.0.so.0",
         "so:libgstaudio-1.0.so.0",
+        "so:libgstbase-1.0.so.0",
         "so:libgstreamer-1.0.so.0",
         "so:libgstvideo-1.0.so.0",
         "so:libintl.so.8",
         "so:libjpeg.so.8",
+        "so:libjson-glib-1.0.so.0",
         "so:liblz4.so.1",
         "so:libopus.so.0",
-        "so:libphodav-2.0.so.0",
         "so:libpixman-1.so.0",
         "so:libsasl2.so.3",
-        "so:libsoup-2.4.so.1",
         "so:libssl.so.1.1",
         "so:libusb-1.0.so.0",
         "so:libusbredirhost.so.1",
@@ -21811,7 +21818,8 @@
     "py2-isort": {
       "origin": "py-isort",
       "versions": {
-        "4.3.18-r0": 1557410855
+        "4.3.18-r0": 1557410855,
+        "4.3.19-r0": 1559159063
       },
       "dependencies": [
         "python2"
@@ -27237,7 +27245,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407648,
-        "1.16.4-r0": 1559119919
+        "1.16.4-r0": 1559119919,
+        "1.16.4-r1": 1559161992
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -27306,7 +27315,8 @@
     "perl-sql-translator": {
       "origin": "perl-sql-translator",
       "versions": {
-        "0.11024-r0": 1557399560
+        "0.11024-r0": 1557399560,
+        "1.60-r0": 1559194033
       },
       "dependencies": [
         "perl-try-tiny",
@@ -28790,7 +28800,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407647,
-        "1.16.4-r0": 1559119918
+        "1.16.4-r0": 1559119918,
+        "1.16.4-r1": 1559161991
       }
     },
     "nbd-doc": {
@@ -30014,7 +30025,8 @@
     "gitea-openrc": {
       "origin": "gitea",
       "versions": {
-        "1.8.1-r0": 1558436727
+        "1.8.1-r0": 1558436727,
+        "1.8.2-r0": 1559162831
       }
     },
     "elogind-zsh-completion": {
@@ -32151,7 +32163,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407649,
-        "1.16.4-r0": 1559119919
+        "1.16.4-r0": 1559119919,
+        "1.16.4-r1": 1559161992
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -34088,7 +34101,8 @@
     "xarchiver-lang": {
       "origin": "xarchiver",
       "versions": {
-        "0.5.4.13-r0": 1557678473
+        "0.5.4.13-r0": 1557678473,
+        "0.5.4.14-r0": 1559162019
       },
       "dependencies": [
         "desktop-file-utils",
@@ -35652,7 +35666,8 @@
     "gitea": {
       "origin": "gitea",
       "versions": {
-        "1.8.1-r0": 1558436728
+        "1.8.1-r0": 1558436728,
+        "1.8.2-r0": 1559162832
       },
       "dependencies": [
         "git",
@@ -38602,7 +38617,8 @@
     "py3-aiohttp-cors-gns3": {
       "origin": "py3-aiohttp-cors-gns3",
       "versions": {
-        "0.5.3-r1": 1557398820
+        "0.5.3-r1": 1557398820,
+        "0.6.0-r0": 1559161339
       },
       "dependencies": [
         "py3-aiohttp-gns3"
@@ -39884,7 +39900,8 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335294,
-        "0.35-r2": 1558981862
+        "0.35-r2": 1558981862,
+        "0.37-r0": 1559191647
       }
     },
     "tinyssh": {
@@ -40020,7 +40037,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407649,
-        "1.16.4-r0": 1559119919
+        "1.16.4-r0": 1559119919,
+        "1.16.4-r1": 1559161992
       },
       "provides": [
         "cmd:f2py",
@@ -43590,7 +43608,8 @@
     "perl-sql-translator-doc": {
       "origin": "perl-sql-translator",
       "versions": {
-        "0.11024-r0": 1557399558
+        "0.11024-r0": 1557399558,
+        "1.60-r0": 1559194033
       }
     },
     "outils-sha256": {
@@ -44337,7 +44356,8 @@
     "xarchiver-doc": {
       "origin": "xarchiver",
       "versions": {
-        "0.5.4.13-r0": 1557678470
+        "0.5.4.13-r0": 1557678470,
+        "0.5.4.14-r0": 1559162018
       }
     },
     "mlocate-doc": {
@@ -45788,7 +45808,8 @@
     "py-isort": {
       "origin": "py-isort",
       "versions": {
-        "4.3.18-r0": 1557410856
+        "4.3.18-r0": 1557410856,
+        "4.3.19-r0": 1559159063
       }
     },
     "offlineimap-doc": {
@@ -47546,7 +47567,8 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335295,
-        "0.35-r2": 1558981863
+        "0.35-r2": 1558981863,
+        "0.37-r0": 1559191647
       }
     },
     "gdnsd-dev": {
@@ -47760,7 +47782,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407647,
-        "1.16.4-r0": 1559119918
+        "1.16.4-r0": 1559119918,
+        "1.16.4-r1": 1559161991
       }
     },
     "gtksourceview-lang": {
@@ -47868,10 +47891,11 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407648,
-        "1.16.4-r0": 1559119918
+        "1.16.4-r0": 1559119918,
+        "1.16.4-r1": 1559161991
       },
       "dependencies": [
-        "py2-numpy=1.16.4-r0",
+        "py2-numpy=1.16.4-r1",
         "python2-dev"
       ],
       "provides": [
@@ -48241,7 +48265,8 @@
       "versions": {
         "1.2.4-r0": 1557646006,
         "1.2.4-r1": 1558970315,
-        "1.4.0-r0": 1559061230
+        "1.4.0-r0": 1559061230,
+        "1.4.0-r1": 1559170852
       },
       "dependencies": [
         "bubblewrap"
@@ -50058,7 +50083,8 @@
     "py3-isort": {
       "origin": "py-isort",
       "versions": {
-        "4.3.18-r0": 1557410856
+        "4.3.18-r0": 1557410856,
+        "4.3.19-r0": 1559159063
       },
       "dependencies": [
         "python3"
@@ -52416,31 +52442,45 @@
       "origin": "spice-gtk",
       "versions": {
         "0.35-r1": 1557335293,
-        "0.35-r2": 1558981862
+        "0.35-r2": 1558981862,
+        "0.37-r0": 1559191647
       },
       "dependencies": [
-        "gtk+3.0-dev",
-        "polkit-dev",
-        "libxrandr-dev",
-        "openssl-dev",
-        "cyrus-sasl-dev",
-        "gst-plugins-base-dev",
-        "libjpeg-turbo-dev",
-        "zlib-dev",
-        "acl-dev",
-        "lz4-dev",
-        "opus-dev",
-        "pc:gtk+-3.0>=3.12",
-        "pc:openssl",
+        "pc:cairo",
+        "pc:epoxy",
+        "pc:gio-2.0>=2.38",
+        "pc:gio-unix-2.0",
+        "pc:glib-2.0>=2.38",
+        "pc:gobject-2.0>=2.46",
+        "pc:gobject-introspection-1.0>=0.94",
+        "pc:gstreamer-1.0>=1.10",
+        "pc:gstreamer-app-1.0>=1.10",
+        "pc:gstreamer-audio-1.0>=1.10",
+        "pc:gstreamer-base-1.0>=1.10",
+        "pc:gstreamer-video-1.0>=1.10",
+        "pc:gthread-2.0>=2.38",
+        "pc:gtk+-3.0>=3.22",
+        "pc:json-glib-1.0",
+        "pc:libjpeg",
+        "pc:liblz4",
+        "pc:libsasl2",
+        "pc:libusb-1.0>=1.0.16",
+        "pc:libusbredirhost>=0.7.1",
+        "pc:libusbredirparser-0.5>=0.7.1",
+        "pc:libva-x11",
+        "pc:openssl>=1.0.0",
+        "pc:opus>=0.9.14",
         "pc:pixman-1>=0.17.7",
-        "pc:spice-protocol",
+        "pc:spice-protocol>=0.12.12",
+        "pc:x11",
+        "pc:zlib",
         "pkgconfig",
-        "spice-glib=0.35-r2",
-        "spice-gtk=0.35-r2"
+        "spice-glib=0.37-r0",
+        "spice-gtk=0.37-r0"
       ],
       "provides": [
-        "pc:spice-client-glib-2.0=0.35",
-        "pc:spice-client-gtk-3.0=0.35"
+        "pc:spice-client-glib-2.0=0.37",
+        "pc:spice-client-gtk-3.0=0.37"
       ]
     },
     "dnscrypt-proxy": {
@@ -52814,7 +52854,8 @@
       "origin": "py-numpy",
       "versions": {
         "1.16.3-r0": 1557407647,
-        "1.16.4-r0": 1559119918
+        "1.16.4-r0": 1559119918,
+        "1.16.4-r1": 1559161991
       }
     },
     "lua5.2-luassert": {
@@ -55050,7 +55091,8 @@
     "acme.sh": {
       "origin": "acme.sh",
       "versions": {
-        "2.8.1-r0": 1559131451
+        "2.8.1-r0": 1559131451,
+        "2.8.1-r1": 1559161730
       },
       "dependencies": [
         "curl",
