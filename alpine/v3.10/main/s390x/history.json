@@ -11159,18 +11159,21 @@
     },
     "libxkbcommon-dev": {
       "versions": {
-        "0.8.2-r0": 1557046032
+        "0.8.2-r0": 1557046032,
+        "0.8.4-r0": 1559228483
       },
       "origin": "libxkbcommon",
       "dependencies": [
-        "libxkbcommon=0.8.2-r0",
-        "pc:xcb",
-        "pc:xcb-xkb",
+        "libxkbcommon-x11=0.8.4-r0",
+        "libxkbcommon-x11=0.8.4-r0",
+        "libxkbcommon=0.8.4-r0",
+        "pc:xcb-xkb>=1.10",
+        "pc:xcb>=1.10",
         "pkgconfig"
       ],
       "provides": [
-        "pc:xkbcommon-x11=0.8.2",
-        "pc:xkbcommon=0.8.2"
+        "pc:xkbcommon-x11=0.8.4",
+        "pc:xkbcommon=0.8.4"
       ]
     },
     "nmap-nping": {
@@ -11255,7 +11258,8 @@
     },
     "minizip": {
       "versions": {
-        "1.2.11-r0": 1557117998
+        "1.2.11-r0": 1557117998,
+        "1.2.11-r1": 1559229226
       },
       "origin": "minizip",
       "dependencies": [
@@ -11762,16 +11766,14 @@
     },
     "libxkbcommon": {
       "versions": {
-        "0.8.2-r0": 1557046033
+        "0.8.2-r0": 1557046033,
+        "0.8.4-r0": 1559228483
       },
       "origin": "libxkbcommon",
       "dependencies": [
-        "so:libc.musl-s390x.so.1",
-        "so:libxcb-xkb.so.1",
-        "so:libxcb.so.1"
+        "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libxkbcommon-x11.so.0=0.0.0",
         "so:libxkbcommon.so.0=0.0.0"
       ]
     },
@@ -12145,20 +12147,22 @@
     },
     "userspace-rcu": {
       "versions": {
-        "0.10.2-r0": 1557231496
+        "0.10.2-r0": 1557231496,
+        "0.11.0-r0": 1559229820
       },
       "origin": "userspace-rcu",
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:liburcu-bp.so.6=6.0.0",
-        "so:liburcu-cds.so.6=6.0.0",
-        "so:liburcu-common.so.6=6.0.0",
-        "so:liburcu-mb.so.6=6.0.0",
-        "so:liburcu-qsbr.so.6=6.0.0",
-        "so:liburcu-signal.so.6=6.0.0",
-        "so:liburcu.so.6=6.0.0"
+        "so:liburcu-bp.so.5=5.1.0",
+        "so:liburcu-cds.so.5=5.1.0",
+        "so:liburcu-common.so.5=5.1.0",
+        "so:liburcu-mb.so.5=5.1.0",
+        "so:liburcu-memb.so.5=5.1.0",
+        "so:liburcu-qsbr.so.5=5.1.0",
+        "so:liburcu-signal.so.5=5.1.0",
+        "so:liburcu.so.5=5.1.0"
       ]
     },
     "perl-file-rsync": {
@@ -12377,7 +12381,8 @@
     },
     "libdc1394-doc": {
       "versions": {
-        "2.2.5-r1": 1557178687
+        "2.2.5-r1": 1557178687,
+        "2.2.6-r0": 1559228548
       },
       "origin": "libdc1394"
     },
@@ -13023,7 +13028,8 @@
     },
     "mkfontscale-doc": {
       "versions": {
-        "1.1.3-r1": 1556989107
+        "1.1.3-r1": 1556989107,
+        "1.2.1-r1": 1559227750
       },
       "origin": "mkfontscale"
     },
@@ -22827,7 +22833,8 @@
     },
     "userspace-rcu-doc": {
       "versions": {
-        "0.10.2-r0": 1557231496
+        "0.10.2-r0": 1557231496,
+        "0.11.0-r0": 1559229820
       },
       "origin": "userspace-rcu"
     },
@@ -23535,7 +23542,8 @@
     },
     "dialog-doc": {
       "versions": {
-        "1.3.20180621-r0": 1557260589
+        "1.3.20180621-r0": 1557260589,
+        "1.3.20190211-r0": 1559227890
       },
       "origin": "dialog"
     },
@@ -34084,7 +34092,8 @@
     },
     "py3-wtforms": {
       "versions": {
-        "2.1-r1": 1557134184
+        "2.1-r1": 1557134184,
+        "2.2.1-r1": 1559228418
       },
       "origin": "py-wtforms",
       "dependencies": [
@@ -38034,7 +38043,8 @@
     },
     "mkfontscale": {
       "versions": {
-        "1.1.3-r1": 1556989108
+        "1.1.3-r1": 1556989108,
+        "1.2.1-r1": 1559227750
       },
       "origin": "mkfontscale",
       "dependencies": [
@@ -38045,6 +38055,8 @@
         "so:libz.so.1"
       ],
       "provides": [
+        "mkfontdir",
+        "cmd:mkfontdir",
         "cmd:mkfontscale"
       ]
     },
@@ -42198,14 +42210,15 @@
     },
     "faad2": {
       "versions": {
-        "2.7-r8": 1557178507
+        "2.7-r8": 1557178507,
+        "2.8.8-r0": 1559230036
       },
       "origin": "faad2",
       "dependencies": [
-        "so:libc.musl-s390x.so.1"
+        "so:libc.musl-s390x.so.1",
+        "so:libfaad.so.2"
       ],
       "provides": [
-        "so:libfaad.so.2=2.0.0",
         "cmd:faad"
       ]
     },
@@ -43883,17 +43896,18 @@
     },
     "libdc1394-dev": {
       "versions": {
-        "2.2.5-r1": 1557178686
+        "2.2.5-r1": 1557178686,
+        "2.2.6-r0": 1559228548
       },
       "origin": "libdc1394",
       "dependencies": [
         "libusb-dev",
         "libraw1394-dev",
-        "libdc1394=2.2.5-r1",
+        "libdc1394=2.2.6-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libdc1394-2=2.2.5"
+        "pc:libdc1394-2=2.2.6"
       ]
     },
     "perl-astro-suntime": {
@@ -51532,7 +51546,8 @@
     },
     "libdc1394": {
       "versions": {
-        "2.2.5-r1": 1557178688
+        "2.2.5-r1": 1557178688,
+        "2.2.6-r0": 1559228548
       },
       "origin": "libdc1394",
       "dependencies": [
@@ -51541,7 +51556,7 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "so:libdc1394.so.22=22.2.1",
+        "so:libdc1394.so.25=25.0.0",
         "cmd:dc1394_reset_bus"
       ]
     },
@@ -54741,11 +54756,12 @@
     },
     "minizip-dev": {
       "versions": {
-        "1.2.11-r0": 1557117996
+        "1.2.11-r0": 1557117996,
+        "1.2.11-r1": 1559229226
       },
       "origin": "minizip",
       "dependencies": [
-        "minizip=1.2.11-r0",
+        "minizip=1.2.11-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -55778,7 +55794,8 @@
     },
     "dialog": {
       "versions": {
-        "1.3.20180621-r0": 1557260591
+        "1.3.20180621-r0": 1557260591,
+        "1.3.20190211-r0": 1559227890
       },
       "origin": "dialog",
       "dependencies": [
@@ -56084,20 +56101,21 @@
     },
     "userspace-rcu-dev": {
       "versions": {
-        "0.10.2-r0": 1557231495
+        "0.10.2-r0": 1557231495,
+        "0.11.0-r0": 1559229819
       },
       "origin": "userspace-rcu",
       "dependencies": [
         "pkgconfig",
-        "userspace-rcu=0.10.2-r0"
+        "userspace-rcu=0.11.0-r0"
       ],
       "provides": [
-        "pc:liburcu-bp=0.10.2",
-        "pc:liburcu-cds=0.10.2",
-        "pc:liburcu-mb=0.10.2",
-        "pc:liburcu-qsbr=0.10.2",
-        "pc:liburcu-signal=0.10.2",
-        "pc:liburcu=0.10.2"
+        "pc:liburcu-bp=0.11.0",
+        "pc:liburcu-cds=0.11.0",
+        "pc:liburcu-mb=0.11.0",
+        "pc:liburcu-qsbr=0.11.0",
+        "pc:liburcu-signal=0.11.0",
+        "pc:liburcu=0.11.0"
       ]
     },
     "squid-lang-id": {
@@ -59144,12 +59162,13 @@
     },
     "d-feet": {
       "versions": {
-        "0.3.13-r1": 1557065570
+        "0.3.13-r1": 1557065570,
+        "0.3.14-r0": 1559229926
       },
       "origin": "d-feet",
       "dependencies": [
-        "python2",
-        "py-gobject3"
+        "python3",
+        "py3-gobject3"
       ],
       "provides": [
         "cmd:d-feet"
@@ -62742,7 +62761,8 @@
     },
     "faad2-doc": {
       "versions": {
-        "2.7-r8": 1557178506
+        "2.7-r8": 1557178506,
+        "2.8.8-r0": 1559230036
       },
       "origin": "faad2"
     },
@@ -63440,11 +63460,12 @@
     },
     "faad2-dev": {
       "versions": {
-        "2.7-r8": 1557178505
+        "2.7-r8": 1557178505,
+        "2.8.8-r0": 1559230036
       },
       "origin": "faad2",
       "dependencies": [
-        "faad2=2.7-r8"
+        "faad2-libs=2.8.8-r0"
       ]
     },
     "samba-common-tools": {
@@ -66599,7 +66620,8 @@
     },
     "py2-wtforms": {
       "versions": {
-        "2.1-r1": 1557134178
+        "2.1-r1": 1557134178,
+        "2.2.1-r1": 1559228417
       },
       "origin": "py-wtforms",
       "dependencies": [
@@ -67226,7 +67248,8 @@
     },
     "py-wtforms": {
       "versions": {
-        "2.1-r1": 1557134186
+        "2.1-r1": 1557134186,
+        "2.2.1-r1": 1559228418
       },
       "origin": "py-wtforms"
     },
@@ -68858,6 +68881,52 @@
         "tiff-tools",
         "!hylafax"
       ]
+    },
+    "dialog-static": {
+      "origin": "dialog",
+      "versions": {
+        "1.3.20190211-r0": 1559227890
+      }
+    },
+    "faad2-static": {
+      "origin": "faad2",
+      "versions": {
+        "2.8.8-r0": 1559230036
+      }
+    },
+    "libxkbcommon-x11": {
+      "origin": "libxkbcommon",
+      "versions": {
+        "0.8.4-r0": 1559228483
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libxcb-xkb.so.1",
+        "so:libxcb.so.1",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "so:libxkbcommon-x11.so.0=0.0.0"
+      ]
+    },
+    "userspace-rcu-static": {
+      "origin": "userspace-rcu",
+      "versions": {
+        "0.11.0-r0": 1559229819
+      }
+    },
+    "faad2-libs": {
+      "origin": "faad2",
+      "versions": {
+        "2.8.8-r0": 1559230036
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libfaad.so.2=2.0.0",
+        "so:libfaad_drm.so.2=2.0.0"
+      ]
     }
   },
   "provide": {
@@ -69695,7 +69764,7 @@
         "version": "6.2.0"
       },
       "libxkbcommon-x11.so.0": {
-        "package": "libxkbcommon",
+        "package": "libxkbcommon-x11",
         "version": "0.0.0"
       },
       "libxkbcommon.so.0": {
@@ -72519,7 +72588,7 @@
         "version": "8.51"
       },
       "libfaad.so.2": {
-        "package": "faad2",
+        "package": "faad2-libs",
         "version": "2.0.0"
       },
       "libmaxminddb.so.0": {
@@ -74957,6 +75026,46 @@
       "libfaxutil.so.7.0.0": {
         "package": "hylafaxplus",
         "version": "7.0.0"
+      },
+      "liburcu-bp.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-cds.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-common.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-mb.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-memb.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-qsbr.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-signal.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "libfaad_drm.so.2": {
+        "package": "faad2-libs",
+        "version": "2.0.0"
+      },
+      "libdc1394.so.25": {
+        "package": "libdc1394",
+        "version": "25.0.0"
       }
     },
     "package": {
@@ -75482,6 +75591,10 @@
       },
       "spl": {
         "package": "zfs",
+        "version": 0
+      },
+      "mkfontdir": {
+        "package": "mkfontscale",
         "version": 0
       }
     }

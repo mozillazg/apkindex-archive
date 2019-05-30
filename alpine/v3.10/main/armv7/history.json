@@ -8509,7 +8509,8 @@
     },
     "mkfontscale": {
       "versions": {
-        "1.1.3-r1": 1556919257
+        "1.1.3-r1": 1556919257,
+        "1.2.1-r1": 1559227749
       },
       "origin": "mkfontscale",
       "dependencies": [
@@ -8520,6 +8521,8 @@
         "so:libz.so.1"
       ],
       "provides": [
+        "mkfontdir",
+        "cmd:mkfontdir",
         "cmd:mkfontscale"
       ]
     },
@@ -10494,7 +10497,8 @@
     },
     "dialog": {
       "versions": {
-        "1.3.20180621-r0": 1557213453
+        "1.3.20180621-r0": 1557213453,
+        "1.3.20190211-r0": 1559227972
       },
       "origin": "dialog",
       "dependencies": [
@@ -13927,7 +13931,8 @@
     },
     "libdc1394-doc": {
       "versions": {
-        "2.2.5-r1": 1557149200
+        "2.2.5-r1": 1557149200,
+        "2.2.6-r0": 1559228615
       },
       "origin": "libdc1394"
     },
@@ -14640,17 +14645,18 @@
     },
     "libdc1394-dev": {
       "versions": {
-        "2.2.5-r1": 1557149199
+        "2.2.5-r1": 1557149199,
+        "2.2.6-r0": 1559228615
       },
       "origin": "libdc1394",
       "dependencies": [
         "libusb-dev",
         "libraw1394-dev",
-        "libdc1394=2.2.5-r1",
+        "libdc1394=2.2.6-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libdc1394-2=2.2.5"
+        "pc:libdc1394-2=2.2.6"
       ]
     },
     "xcb-util-renderutil-dev": {
@@ -17451,11 +17457,12 @@
     },
     "minizip-dev": {
       "versions": {
-        "1.2.11-r0": 1557212609
+        "1.2.11-r0": 1557212609,
+        "1.2.11-r1": 1559229553
       },
       "origin": "minizip",
       "dependencies": [
-        "minizip=1.2.11-r0",
+        "minizip=1.2.11-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -19024,7 +19031,8 @@
     },
     "py2-wtforms": {
       "versions": {
-        "2.1-r1": 1557144955
+        "2.1-r1": 1557144955,
+        "2.2.1-r1": 1559228419
       },
       "origin": "py-wtforms",
       "dependencies": [
@@ -27010,7 +27018,8 @@
     },
     "py-wtforms": {
       "versions": {
-        "2.1-r1": 1557144957
+        "2.1-r1": 1557144957,
+        "2.2.1-r1": 1559228420
       },
       "origin": "py-wtforms"
     },
@@ -37755,7 +37764,8 @@
     },
     "py3-wtforms": {
       "versions": {
-        "2.1-r1": 1557144957
+        "2.1-r1": 1557144957,
+        "2.2.1-r1": 1559228420
       },
       "origin": "py-wtforms",
       "dependencies": [
@@ -40509,7 +40519,8 @@
     },
     "minizip": {
       "versions": {
-        "1.2.11-r0": 1557212611
+        "1.2.11-r0": 1557212611,
+        "1.2.11-r1": 1559229553
       },
       "origin": "minizip",
       "dependencies": [
@@ -48195,7 +48206,8 @@
     },
     "dialog-doc": {
       "versions": {
-        "1.3.20180621-r0": 1557213452
+        "1.3.20180621-r0": 1557213452,
+        "1.3.20190211-r0": 1559227972
       },
       "origin": "dialog"
     },
@@ -58402,16 +58414,14 @@
     },
     "libxkbcommon": {
       "versions": {
-        "0.8.2-r0": 1557037890
+        "0.8.2-r0": 1557037890,
+        "0.8.4-r0": 1559228627
       },
       "origin": "libxkbcommon",
       "dependencies": [
-        "so:libc.musl-armv7.so.1",
-        "so:libxcb-xkb.so.1",
-        "so:libxcb.so.1"
+        "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "so:libxkbcommon-x11.so.0=0.0.0",
         "so:libxkbcommon.so.0=0.0.0"
       ]
     },
@@ -63486,7 +63496,8 @@
     },
     "libdc1394": {
       "versions": {
-        "2.2.5-r1": 1557149201
+        "2.2.5-r1": 1557149201,
+        "2.2.6-r0": 1559228615
       },
       "origin": "libdc1394",
       "dependencies": [
@@ -63495,7 +63506,7 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "so:libdc1394.so.22=22.2.1",
+        "so:libdc1394.so.25=25.0.0",
         "cmd:dc1394_reset_bus"
       ]
     },
@@ -67319,18 +67330,21 @@
     },
     "libxkbcommon-dev": {
       "versions": {
-        "0.8.2-r0": 1557037889
+        "0.8.2-r0": 1557037889,
+        "0.8.4-r0": 1559228627
       },
       "origin": "libxkbcommon",
       "dependencies": [
-        "libxkbcommon=0.8.2-r0",
-        "pc:xcb",
-        "pc:xcb-xkb",
+        "libxkbcommon-x11=0.8.4-r0",
+        "libxkbcommon-x11=0.8.4-r0",
+        "libxkbcommon=0.8.4-r0",
+        "pc:xcb-xkb>=1.10",
+        "pc:xcb>=1.10",
         "pkgconfig"
       ],
       "provides": [
-        "pc:xkbcommon-x11=0.8.2",
-        "pc:xkbcommon=0.8.2"
+        "pc:xkbcommon-x11=0.8.4",
+        "pc:xkbcommon=0.8.4"
       ]
     },
     "py2-imagesize": {
@@ -67927,7 +67941,8 @@
     },
     "mkfontscale-doc": {
       "versions": {
-        "1.1.3-r1": 1556919256
+        "1.1.3-r1": 1556919256,
+        "1.2.1-r1": 1559227749
       },
       "origin": "mkfontscale"
     },
@@ -69491,6 +69506,27 @@
       "origin": "hylafaxplus",
       "versions": {
         "7.0.0-r3": 1559040715
+      }
+    },
+    "libxkbcommon-x11": {
+      "origin": "libxkbcommon",
+      "versions": {
+        "0.8.4-r0": 1559228627
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libxcb-xkb.so.1",
+        "so:libxcb.so.1",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "so:libxkbcommon-x11.so.0=0.0.0"
+      ]
+    },
+    "dialog-static": {
+      "origin": "dialog",
+      "versions": {
+        "1.3.20190211-r0": 1559227972
       }
     }
   },
@@ -74713,7 +74749,7 @@
         "version": "0.2.2"
       },
       "libxkbcommon-x11.so.0": {
-        "package": "libxkbcommon",
+        "package": "libxkbcommon-x11",
         "version": "0.0.0"
       },
       "libxkbcommon.so.0": {
@@ -75667,6 +75703,10 @@
       "libfaxutil.so.7.0.0": {
         "package": "hylafaxplus",
         "version": "7.0.0"
+      },
+      "libdc1394.so.25": {
+        "package": "libdc1394",
+        "version": "25.0.0"
       }
     },
     "package": {
@@ -76276,6 +76316,10 @@
       },
       "freeswitch-sounds-pt-BR-karina-8000": {
         "package": "freeswitch-sounds-pt-br-karina-8000",
+        "version": 0
+      },
+      "mkfontdir": {
+        "package": "mkfontscale",
         "version": 0
       }
     }
