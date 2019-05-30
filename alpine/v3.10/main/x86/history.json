@@ -1349,7 +1349,8 @@
     },
     "ttf-liberation": {
       "versions": {
-        "2.00.1-r1": 1557249084
+        "2.00.1-r1": 1557249084,
+        "2.00.5-r0": 1559230338
       },
       "origin": "ttf-liberation",
       "dependencies": [
@@ -1631,14 +1632,15 @@
     },
     "adwaita-icon-theme-dev": {
       "versions": {
-        "3.31.1-r0": 1557290993
+        "3.31.1-r0": 1557290993,
+        "3.32.0-r0": 1559230714
       },
       "origin": "adwaita-icon-theme",
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:adwaita-icon-theme=3.31.1"
+        "pc:adwaita-icon-theme=3.32.0"
       ]
     },
     "py2-chardet": {
@@ -4723,7 +4725,8 @@
     },
     "acpica": {
       "versions": {
-        "20181213-r0": 1557064858
+        "20181213-r0": 1557064858,
+        "20190405-r0": 1559230525
       },
       "origin": "acpica",
       "dependencies": [
@@ -9869,7 +9872,8 @@
     },
     "gcr-doc": {
       "versions": {
-        "3.28.0-r0": 1557088894
+        "3.28.0-r0": 1557088894,
+        "3.28.1-r0": 1559230498
       },
       "origin": "gcr"
     },
@@ -15973,9 +15977,13 @@
     },
     "adwaita-icon-theme": {
       "versions": {
-        "3.31.1-r0": 1557290994
+        "3.31.1-r0": 1557290994,
+        "3.32.0-r0": 1559230716
       },
-      "origin": "adwaita-icon-theme"
+      "origin": "adwaita-icon-theme",
+      "dependencies": [
+        "librsvg"
+      ]
     },
     "perl-yaml-tiny-doc": {
       "versions": {
@@ -23688,7 +23696,8 @@
     },
     "gcr-lang": {
       "versions": {
-        "3.28.0-r0": 1557088896
+        "3.28.0-r0": 1557088896,
+        "3.28.1-r0": 1559230498
       },
       "origin": "gcr"
     },
@@ -25183,7 +25192,8 @@
     },
     "fping-doc": {
       "versions": {
-        "4.1-r0": 1557067039
+        "4.1-r0": 1557067039,
+        "4.2-r0": 1559230343
       },
       "origin": "fping"
     },
@@ -25382,12 +25392,15 @@
     },
     "gcr": {
       "versions": {
-        "3.28.0-r0": 1557088897
+        "3.28.0-r0": 1557088897,
+        "3.28.1-r0": 1559230499
       },
       "origin": "gcr",
       "dependencies": [
         "so:libc.musl-x86.so.1",
         "so:libcairo.so.2",
+        "so:libgck-1.so.0",
+        "so:libgcr-base-3.so.1",
         "so:libgcrypt.so.20",
         "so:libgdk-3.so.0",
         "so:libgdk_pixbuf-2.0.so.0",
@@ -25396,12 +25409,9 @@
         "so:libgobject-2.0.so.0",
         "so:libgtk-3.so.0",
         "so:libintl.so.8",
-        "so:libp11-kit.so.0",
         "so:libpango-1.0.so.0"
       ],
       "provides": [
-        "so:libgck-1.so.0=0.0.0",
-        "so:libgcr-base-3.so.1=1.0.0",
         "so:libgcr-ui-3.so.1=1.0.0",
         "cmd:gcr-viewer"
       ]
@@ -58827,7 +58837,8 @@
     },
     "fping": {
       "versions": {
-        "4.1-r0": 1557067040
+        "4.1-r0": 1557067040,
+        "4.2-r0": 1559230343
       },
       "origin": "fping",
       "dependencies": [
@@ -64363,7 +64374,8 @@
     },
     "iasl": {
       "versions": {
-        "20181213-r0": 1557064857
+        "20181213-r0": 1557064857,
+        "20190405-r0": 1559230525
       },
       "origin": "acpica",
       "dependencies": [
@@ -68281,15 +68293,13 @@
     },
     "gcr-dev": {
       "versions": {
-        "3.28.0-r0": 1557088893
+        "3.28.0-r0": 1557088893,
+        "3.28.1-r0": 1559230498
       },
       "origin": "gcr",
       "dependencies": [
-        "glib-dev",
-        "gtk+3.0-dev",
-        "libgcrypt-dev",
-        "p11-kit-dev",
-        "gcr=3.28.0-r0",
+        "gcr-base=3.28.1-r0",
+        "gcr=3.28.1-r0",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gobject-2.0",
@@ -68298,10 +68308,10 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gck-1=3.28.0",
-        "pc:gcr-3=3.28.0",
-        "pc:gcr-base-3=3.28.0",
-        "pc:gcr-ui-3=3.28.0"
+        "pc:gck-1=3.28.1",
+        "pc:gcr-3=3.28.1",
+        "pc:gcr-base-3=3.28.1",
+        "pc:gcr-ui-3=3.28.1"
       ]
     },
     "libsasl": {
@@ -70086,6 +70096,25 @@
       "provides": [
         "so:libfaad.so.2=2.0.0",
         "so:libfaad_drm.so.2=2.0.0"
+      ]
+    },
+    "gcr-base": {
+      "origin": "gcr",
+      "versions": {
+        "3.28.1-r0": 1559230498
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libgcrypt.so.20",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libp11-kit.so.0"
+      ],
+      "provides": [
+        "so:libgck-1.so.0=0.0.0",
+        "so:libgcr-base-3.so.1=1.0.0"
       ]
     }
   },
@@ -72048,11 +72077,11 @@
         "version": "2.9.0"
       },
       "libgck-1.so.0": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "0.0.0"
       },
       "libgcr-base-3.so.1": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "1.0.0"
       },
       "libgcr-ui-3.so.1": {

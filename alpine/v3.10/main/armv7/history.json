@@ -712,7 +712,8 @@
     },
     "cogl": {
       "versions": {
-        "1.22.2-r0": 1557151072
+        "1.22.2-r0": 1557151072,
+        "1.22.4-r0": 1559230456
       },
       "origin": "cogl",
       "dependencies": [
@@ -732,7 +733,10 @@
         "so:libgobject-2.0.so.0",
         "so:libintl.so.8",
         "so:libpango-1.0.so.0",
-        "so:libpangocairo-1.0.so.0"
+        "so:libpangocairo-1.0.so.0",
+        "so:libwayland-client.so.0",
+        "so:libwayland-egl.so.1",
+        "so:libwayland-server.so.0"
       ],
       "provides": [
         "so:libcogl-gles2.so.20=20.4.2",
@@ -3303,7 +3307,8 @@
     },
     "iasl": {
       "versions": {
-        "20181213-r0": 1557176855
+        "20181213-r0": 1557176855,
+        "20190405-r0": 1559231858
       },
       "origin": "acpica",
       "dependencies": [
@@ -9239,7 +9244,8 @@
     },
     "acpica": {
       "versions": {
-        "20181213-r0": 1557176855
+        "20181213-r0": 1557176855,
+        "20190405-r0": 1559231859
       },
       "origin": "acpica",
       "dependencies": [
@@ -13788,7 +13794,8 @@
     },
     "userspace-rcu-doc": {
       "versions": {
-        "0.10.2-r0": 1557040532
+        "0.10.2-r0": 1557040532,
+        "0.11.0-r0": 1559230547
       },
       "origin": "userspace-rcu"
     },
@@ -14131,15 +14138,13 @@
     },
     "gcr-dev": {
       "versions": {
-        "3.28.0-r0": 1557091780
+        "3.28.0-r0": 1557091780,
+        "3.28.1-r0": 1559231221
       },
       "origin": "gcr",
       "dependencies": [
-        "glib-dev",
-        "gtk+3.0-dev",
-        "libgcrypt-dev",
-        "p11-kit-dev",
-        "gcr=3.28.0-r0",
+        "gcr-base=3.28.1-r0",
+        "gcr=3.28.1-r0",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gobject-2.0",
@@ -14148,10 +14153,10 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gck-1=3.28.0",
-        "pc:gcr-3=3.28.0",
-        "pc:gcr-base-3=3.28.0",
-        "pc:gcr-ui-3=3.28.0"
+        "pc:gck-1=3.28.1",
+        "pc:gcr-3=3.28.1",
+        "pc:gcr-base-3=3.28.1",
+        "pc:gcr-ui-3=3.28.1"
       ]
     },
     "perl-digest-sha1": {
@@ -17859,7 +17864,8 @@
     },
     "gcr-doc": {
       "versions": {
-        "3.28.0-r0": 1557091782
+        "3.28.0-r0": 1557091782,
+        "3.28.1-r0": 1559231221
       },
       "origin": "gcr"
     },
@@ -22615,9 +22621,13 @@
     },
     "adwaita-icon-theme": {
       "versions": {
-        "3.31.1-r0": 1557215368
+        "3.31.1-r0": 1557215368,
+        "3.32.0-r0": 1559231811
       },
-      "origin": "adwaita-icon-theme"
+      "origin": "adwaita-icon-theme",
+      "dependencies": [
+        "librsvg"
+      ]
     },
     "kamailio-db": {
       "versions": {
@@ -23455,14 +23465,15 @@
     },
     "adwaita-icon-theme-dev": {
       "versions": {
-        "3.31.1-r0": 1557215366
+        "3.31.1-r0": 1557215366,
+        "3.32.0-r0": 1559231810
       },
       "origin": "adwaita-icon-theme",
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:adwaita-icon-theme=3.31.1"
+        "pc:adwaita-icon-theme=3.32.0"
       ]
     },
     "perl-test-identity-doc": {
@@ -35308,7 +35319,8 @@
     },
     "ttf-liberation": {
       "versions": {
-        "2.00.1-r1": 1557231077
+        "2.00.1-r1": 1557231077,
+        "2.00.5-r0": 1559231229
       },
       "origin": "ttf-liberation",
       "dependencies": [
@@ -36430,23 +36442,12 @@
     },
     "cogl-dev": {
       "versions": {
-        "1.22.2-r0": 1557151066
+        "1.22.2-r0": 1557151066,
+        "1.22.4-r0": 1559230456
       },
       "origin": "cogl",
       "dependencies": [
-        "glib-dev",
-        "mesa-dev",
-        "libdrm-dev",
-        "libxdamage-dev",
-        "libxcomposite-dev",
-        "libxrandr-dev",
-        "gdk-pixbuf-dev",
-        "pango-dev",
-        "cairo-dev",
-        "gobject-introspection-dev",
-        "libxext-dev",
-        "eudev-dev",
-        "cogl=1.22.2-r0",
+        "cogl=1.22.4-r0",
         "pc:cairo>=1.10",
         "pc:egl",
         "pc:gbm",
@@ -36454,6 +36455,9 @@
         "pc:gmodule-no-export-2.0",
         "pc:gobject-2.0",
         "pc:libdrm",
+        "pc:wayland-client>=1.0.0",
+        "pc:wayland-egl>=1.0.0",
+        "pc:wayland-server>=1.1.90",
         "pc:x11",
         "pc:xcomposite>=0.4",
         "pc:xdamage",
@@ -36463,15 +36467,15 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:cogl-1.0=1.22.2",
+        "pc:cogl-1.0=1.22.4",
         "pc:cogl-2.0-experimental=2.0.0",
-        "pc:cogl-gl-1.0=1.22.2",
-        "pc:cogl-gles2-1.0=1.22.2",
+        "pc:cogl-gl-1.0=1.22.4",
+        "pc:cogl-gles2-1.0=1.22.4",
         "pc:cogl-gles2-2.0-experimental=2.0.0",
-        "pc:cogl-pango-1.0=1.22.2",
-        "pc:cogl-pango-2.0-experimental=1.22.2",
-        "pc:cogl-path-1.0=1.22.2",
-        "pc:cogl-path-2.0-experimental=1.22.2"
+        "pc:cogl-pango-1.0=1.22.4",
+        "pc:cogl-pango-2.0-experimental=1.22.4",
+        "pc:cogl-path-1.0=1.22.4",
+        "pc:cogl-path-2.0-experimental=1.22.4"
       ]
     },
     "json-glib-doc": {
@@ -41758,11 +41762,12 @@
     },
     "faad2-dev": {
       "versions": {
-        "2.7-r8": 1557224104
+        "2.7-r8": 1557224104,
+        "2.8.8-r0": 1559230388
       },
       "origin": "faad2",
       "dependencies": [
-        "faad2=2.7-r8"
+        "faad2-libs=2.8.8-r0"
       ]
     },
     "lua-posix": {
@@ -41848,20 +41853,22 @@
     },
     "userspace-rcu": {
       "versions": {
-        "0.10.2-r0": 1557040533
+        "0.10.2-r0": 1557040533,
+        "0.11.0-r0": 1559230547
       },
       "origin": "userspace-rcu",
       "dependencies": [
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "so:liburcu-bp.so.6=6.0.0",
-        "so:liburcu-cds.so.6=6.0.0",
-        "so:liburcu-common.so.6=6.0.0",
-        "so:liburcu-mb.so.6=6.0.0",
-        "so:liburcu-qsbr.so.6=6.0.0",
-        "so:liburcu-signal.so.6=6.0.0",
-        "so:liburcu.so.6=6.0.0"
+        "so:liburcu-bp.so.5=5.1.0",
+        "so:liburcu-cds.so.5=5.1.0",
+        "so:liburcu-common.so.5=5.1.0",
+        "so:liburcu-mb.so.5=5.1.0",
+        "so:liburcu-memb.so.5=5.1.0",
+        "so:liburcu-qsbr.so.5=5.1.0",
+        "so:liburcu-signal.so.5=5.1.0",
+        "so:liburcu.so.5=5.1.0"
       ]
     },
     "perl-extutils-pkgconfig-doc": {
@@ -41884,7 +41891,8 @@
     },
     "fping": {
       "versions": {
-        "4.1-r0": 1557091846
+        "4.1-r0": 1557091846,
+        "4.2-r0": 1559231494
       },
       "origin": "fping",
       "dependencies": [
@@ -42114,14 +42122,15 @@
     },
     "faad2": {
       "versions": {
-        "2.7-r8": 1557224106
+        "2.7-r8": 1557224106,
+        "2.8.8-r0": 1559230388
       },
       "origin": "faad2",
       "dependencies": [
-        "so:libc.musl-armv7.so.1"
+        "so:libc.musl-armv7.so.1",
+        "so:libfaad.so.2"
       ],
       "provides": [
-        "so:libfaad.so.2=2.0.0",
         "cmd:faad"
       ]
     },
@@ -49973,7 +49982,8 @@
     },
     "faad2-doc": {
       "versions": {
-        "2.7-r8": 1557224105
+        "2.7-r8": 1557224105,
+        "2.8.8-r0": 1559230388
       },
       "origin": "faad2"
     },
@@ -52886,7 +52896,8 @@
     },
     "gcr-lang": {
       "versions": {
-        "3.28.0-r0": 1557091783
+        "3.28.0-r0": 1557091783,
+        "3.28.1-r0": 1559231221
       },
       "origin": "gcr"
     },
@@ -54280,20 +54291,21 @@
     },
     "userspace-rcu-dev": {
       "versions": {
-        "0.10.2-r0": 1557040531
+        "0.10.2-r0": 1557040531,
+        "0.11.0-r0": 1559230546
       },
       "origin": "userspace-rcu",
       "dependencies": [
         "pkgconfig",
-        "userspace-rcu=0.10.2-r0"
+        "userspace-rcu=0.11.0-r0"
       ],
       "provides": [
-        "pc:liburcu-bp=0.10.2",
-        "pc:liburcu-cds=0.10.2",
-        "pc:liburcu-mb=0.10.2",
-        "pc:liburcu-qsbr=0.10.2",
-        "pc:liburcu-signal=0.10.2",
-        "pc:liburcu=0.10.2"
+        "pc:liburcu-bp=0.11.0",
+        "pc:liburcu-cds=0.11.0",
+        "pc:liburcu-mb=0.11.0",
+        "pc:liburcu-qsbr=0.11.0",
+        "pc:liburcu-signal=0.11.0",
+        "pc:liburcu=0.11.0"
       ]
     },
     "atkmm": {
@@ -54566,13 +54578,12 @@
     },
     "faac": {
       "versions": {
-        "1.28-r12": 1557165079
+        "1.28-r12": 1557165079,
+        "1.29.9.2-r0": 1559230126
       },
       "origin": "faac",
       "dependencies": [
-        "so:libc.musl-armv7.so.1",
-        "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libc.musl-armv7.so.1"
       ],
       "provides": [
         "so:libfaac.so.0=0.0.0",
@@ -57310,12 +57321,13 @@
     },
     "d-feet": {
       "versions": {
-        "0.3.13-r1": 1557128557
+        "0.3.13-r1": 1557128557,
+        "0.3.14-r0": 1559230330
       },
       "origin": "d-feet",
       "dependencies": [
-        "python2",
-        "py-gobject3"
+        "python3",
+        "py3-gobject3"
       ],
       "provides": [
         "cmd:d-feet"
@@ -62934,11 +62946,12 @@
     },
     "faac-dev": {
       "versions": {
-        "1.28-r12": 1557165078
+        "1.28-r12": 1557165078,
+        "1.29.9.2-r0": 1559230125
       },
       "origin": "faac",
       "dependencies": [
-        "faac=1.28-r12"
+        "faac=1.29.9.2-r0"
       ]
     },
     "py3-alabaster": {
@@ -63666,7 +63679,8 @@
     },
     "faac-doc": {
       "versions": {
-        "1.28-r12": 1557165078
+        "1.28-r12": 1557165078,
+        "1.29.9.2-r0": 1559230126
       },
       "origin": "faac"
     },
@@ -64286,12 +64300,15 @@
     },
     "gcr": {
       "versions": {
-        "3.28.0-r0": 1557091785
+        "3.28.0-r0": 1557091785,
+        "3.28.1-r0": 1559231221
       },
       "origin": "gcr",
       "dependencies": [
         "so:libc.musl-armv7.so.1",
         "so:libcairo.so.2",
+        "so:libgck-1.so.0",
+        "so:libgcr-base-3.so.1",
         "so:libgcrypt.so.20",
         "so:libgdk-3.so.0",
         "so:libgdk_pixbuf-2.0.so.0",
@@ -64300,12 +64317,9 @@
         "so:libgobject-2.0.so.0",
         "so:libgtk-3.so.0",
         "so:libintl.so.8",
-        "so:libp11-kit.so.0",
         "so:libpango-1.0.so.0"
       ],
       "provides": [
-        "so:libgck-1.so.0=0.0.0",
-        "so:libgcr-base-3.so.1=1.0.0",
         "so:libgcr-ui-3.so.1=1.0.0",
         "cmd:gcr-viewer"
       ]
@@ -65475,7 +65489,8 @@
     },
     "cogl-lang": {
       "versions": {
-        "1.22.2-r0": 1557151069
+        "1.22.2-r0": 1557151069,
+        "1.22.4-r0": 1559230456
       },
       "origin": "cogl"
     },
@@ -65541,7 +65556,8 @@
     },
     "fping-doc": {
       "versions": {
-        "4.1-r0": 1557091846
+        "4.1-r0": 1557091846,
+        "4.2-r0": 1559231494
       },
       "origin": "fping"
     },
@@ -69528,6 +69544,56 @@
       "versions": {
         "1.3.20190211-r0": 1559227972
       }
+    },
+    "gcr-base": {
+      "origin": "gcr",
+      "versions": {
+        "3.28.1-r0": 1559231221
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libgcrypt.so.20",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libp11-kit.so.0"
+      ],
+      "provides": [
+        "so:libgck-1.so.0=0.0.0",
+        "so:libgcr-base-3.so.1=1.0.0"
+      ]
+    },
+    "faac-static": {
+      "origin": "faac",
+      "versions": {
+        "1.29.9.2-r0": 1559230125
+      }
+    },
+    "userspace-rcu-static": {
+      "origin": "userspace-rcu",
+      "versions": {
+        "0.11.0-r0": 1559230546
+      }
+    },
+    "faad2-static": {
+      "origin": "faad2",
+      "versions": {
+        "2.8.8-r0": 1559230388
+      }
+    },
+    "faad2-libs": {
+      "origin": "faad2",
+      "versions": {
+        "2.8.8-r0": 1559230388
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "so:libfaad.so.2=2.0.0",
+        "so:libfaad_drm.so.2=2.0.0"
+      ]
     }
   },
   "provide": {
@@ -73417,7 +73483,7 @@
         "version": "1.1.0"
       },
       "libfaad.so.2": {
-        "package": "faad2",
+        "package": "faad2-libs",
         "version": "2.0.0"
       },
       "libxkbfile.so.1": {
@@ -75225,11 +75291,11 @@
         "version": "1.0.0"
       },
       "libgck-1.so.0": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "0.0.0"
       },
       "libgcr-base-3.so.1": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "1.0.0"
       },
       "libgcr-ui-3.so.1": {
@@ -75707,6 +75773,42 @@
       "libdc1394.so.25": {
         "package": "libdc1394",
         "version": "25.0.0"
+      },
+      "liburcu-bp.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-cds.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-common.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-mb.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-memb.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-qsbr.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu-signal.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "liburcu.so.5": {
+        "package": "userspace-rcu",
+        "version": "5.1.0"
+      },
+      "libfaad_drm.so.2": {
+        "package": "faad2-libs",
+        "version": "2.0.0"
       }
     },
     "package": {

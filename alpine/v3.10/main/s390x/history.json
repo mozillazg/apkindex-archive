@@ -2110,11 +2110,12 @@
     },
     "faac-dev": {
       "versions": {
-        "1.28-r12": 1556988565
+        "1.28-r12": 1556988565,
+        "1.29.9.2-r0": 1559230205
       },
       "origin": "faac",
       "dependencies": [
-        "faac=1.28-r12"
+        "faac=1.29.9.2-r0"
       ]
     },
     "perl-module-implementation": {
@@ -4924,7 +4925,8 @@
     },
     "fping-doc": {
       "versions": {
-        "4.1-r0": 1557154961
+        "4.1-r0": 1557154961,
+        "4.2-r0": 1559230311
       },
       "origin": "fping"
     },
@@ -7010,7 +7012,8 @@
     },
     "gcr-lang": {
       "versions": {
-        "3.28.0-r0": 1557134920
+        "3.28.0-r0": 1557134920,
+        "3.28.1-r0": 1559230507
       },
       "origin": "gcr"
     },
@@ -16934,12 +16937,15 @@
     },
     "gcr": {
       "versions": {
-        "3.28.0-r0": 1557134929
+        "3.28.0-r0": 1557134929,
+        "3.28.1-r0": 1559230507
       },
       "origin": "gcr",
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libcairo.so.2",
+        "so:libgck-1.so.0",
+        "so:libgcr-base-3.so.1",
         "so:libgcrypt.so.20",
         "so:libgdk-3.so.0",
         "so:libgdk_pixbuf-2.0.so.0",
@@ -16948,12 +16954,9 @@
         "so:libgobject-2.0.so.0",
         "so:libgtk-3.so.0",
         "so:libintl.so.8",
-        "so:libp11-kit.so.0",
         "so:libpango-1.0.so.0"
       ],
       "provides": [
-        "so:libgck-1.so.0=0.0.0",
-        "so:libgcr-base-3.so.1=1.0.0",
         "so:libgcr-ui-3.so.1=1.0.0",
         "cmd:gcr-viewer"
       ]
@@ -28099,7 +28102,8 @@
     },
     "cogl": {
       "versions": {
-        "1.22.2-r0": 1557151967
+        "1.22.2-r0": 1557151967,
+        "1.22.4-r0": 1559230191
       },
       "origin": "cogl",
       "dependencies": [
@@ -28119,7 +28123,10 @@
         "so:libgobject-2.0.so.0",
         "so:libintl.so.8",
         "so:libpango-1.0.so.0",
-        "so:libpangocairo-1.0.so.0"
+        "so:libpangocairo-1.0.so.0",
+        "so:libwayland-client.so.0",
+        "so:libwayland-egl.so.1",
+        "so:libwayland-server.so.0"
       ],
       "provides": [
         "so:libcogl-gles2.so.20=20.4.2",
@@ -35521,9 +35528,13 @@
     },
     "adwaita-icon-theme": {
       "versions": {
-        "3.31.1-r0": 1557154229
+        "3.31.1-r0": 1557154229,
+        "3.32.0-r0": 1559230695
       },
-      "origin": "adwaita-icon-theme"
+      "origin": "adwaita-icon-theme",
+      "dependencies": [
+        "librsvg"
+      ]
     },
     "perl-scope-guard": {
       "versions": {
@@ -41918,7 +41929,8 @@
     },
     "acpica": {
       "versions": {
-        "20181213-r0": 1557045708
+        "20181213-r0": 1557045708,
+        "20190405-r0": 1559230727
       },
       "origin": "acpica",
       "dependencies": [
@@ -42071,23 +42083,12 @@
     },
     "cogl-dev": {
       "versions": {
-        "1.22.2-r0": 1557151963
+        "1.22.2-r0": 1557151963,
+        "1.22.4-r0": 1559230191
       },
       "origin": "cogl",
       "dependencies": [
-        "glib-dev",
-        "mesa-dev",
-        "libdrm-dev",
-        "libxdamage-dev",
-        "libxcomposite-dev",
-        "libxrandr-dev",
-        "gdk-pixbuf-dev",
-        "pango-dev",
-        "cairo-dev",
-        "gobject-introspection-dev",
-        "libxext-dev",
-        "eudev-dev",
-        "cogl=1.22.2-r0",
+        "cogl=1.22.4-r0",
         "pc:cairo>=1.10",
         "pc:egl",
         "pc:gbm",
@@ -42095,6 +42096,9 @@
         "pc:gmodule-no-export-2.0",
         "pc:gobject-2.0",
         "pc:libdrm",
+        "pc:wayland-client>=1.0.0",
+        "pc:wayland-egl>=1.0.0",
+        "pc:wayland-server>=1.1.90",
         "pc:x11",
         "pc:xcomposite>=0.4",
         "pc:xdamage",
@@ -42104,15 +42108,15 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:cogl-1.0=1.22.2",
+        "pc:cogl-1.0=1.22.4",
         "pc:cogl-2.0-experimental=2.0.0",
-        "pc:cogl-gl-1.0=1.22.2",
-        "pc:cogl-gles2-1.0=1.22.2",
+        "pc:cogl-gl-1.0=1.22.4",
+        "pc:cogl-gles2-1.0=1.22.4",
         "pc:cogl-gles2-2.0-experimental=2.0.0",
-        "pc:cogl-pango-1.0=1.22.2",
-        "pc:cogl-pango-2.0-experimental=1.22.2",
-        "pc:cogl-path-1.0=1.22.2",
-        "pc:cogl-path-2.0-experimental=1.22.2"
+        "pc:cogl-pango-1.0=1.22.4",
+        "pc:cogl-pango-2.0-experimental=1.22.4",
+        "pc:cogl-path-1.0=1.22.4",
+        "pc:cogl-path-2.0-experimental=1.22.4"
       ]
     },
     "perl-convert-uulib": {
@@ -46136,13 +46140,12 @@
     },
     "faac": {
       "versions": {
-        "1.28-r12": 1556988566
+        "1.28-r12": 1556988566,
+        "1.29.9.2-r0": 1559230206
       },
       "origin": "faac",
       "dependencies": [
-        "so:libc.musl-s390x.so.1",
-        "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libc.musl-s390x.so.1"
       ],
       "provides": [
         "so:libfaac.so.0=0.0.0",
@@ -47337,19 +47340,21 @@
     },
     "adwaita-icon-theme-dev": {
       "versions": {
-        "3.31.1-r0": 1557154227
+        "3.31.1-r0": 1557154227,
+        "3.32.0-r0": 1559230694
       },
       "origin": "adwaita-icon-theme",
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:adwaita-icon-theme=3.31.1"
+        "pc:adwaita-icon-theme=3.32.0"
       ]
     },
     "iasl": {
       "versions": {
-        "20181213-r0": 1557045707
+        "20181213-r0": 1557045707,
+        "20190405-r0": 1559230727
       },
       "origin": "acpica",
       "dependencies": [
@@ -48060,7 +48065,8 @@
     },
     "faac-doc": {
       "versions": {
-        "1.28-r12": 1556988565
+        "1.28-r12": 1556988565,
+        "1.29.9.2-r0": 1559230206
       },
       "origin": "faac"
     },
@@ -49679,7 +49685,8 @@
     },
     "fping": {
       "versions": {
-        "4.1-r0": 1557154962
+        "4.1-r0": 1557154962,
+        "4.2-r0": 1559230311
       },
       "origin": "fping",
       "dependencies": [
@@ -50514,7 +50521,8 @@
     },
     "ttf-liberation": {
       "versions": {
-        "2.00.1-r1": 1557014432
+        "2.00.1-r1": 1557014432,
+        "2.00.5-r0": 1559230515
       },
       "origin": "ttf-liberation",
       "dependencies": [
@@ -51562,7 +51570,8 @@
     },
     "gcr-doc": {
       "versions": {
-        "3.28.0-r0": 1557134912
+        "3.28.0-r0": 1557134912,
+        "3.28.1-r0": 1559230506
       },
       "origin": "gcr"
     },
@@ -56646,15 +56655,13 @@
     },
     "gcr-dev": {
       "versions": {
-        "3.28.0-r0": 1557134906
+        "3.28.0-r0": 1557134906,
+        "3.28.1-r0": 1559230506
       },
       "origin": "gcr",
       "dependencies": [
-        "glib-dev",
-        "gtk+3.0-dev",
-        "libgcrypt-dev",
-        "p11-kit-dev",
-        "gcr=3.28.0-r0",
+        "gcr-base=3.28.1-r0",
+        "gcr=3.28.1-r0",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gobject-2.0",
@@ -56663,10 +56670,10 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gck-1=3.28.0",
-        "pc:gcr-3=3.28.0",
-        "pc:gcr-base-3=3.28.0",
-        "pc:gcr-ui-3=3.28.0"
+        "pc:gck-1=3.28.1",
+        "pc:gcr-3=3.28.1",
+        "pc:gcr-base-3=3.28.1",
+        "pc:gcr-ui-3=3.28.1"
       ]
     },
     "cmocka": {
@@ -58395,7 +58402,8 @@
     },
     "cogl-lang": {
       "versions": {
-        "1.22.2-r0": 1557151965
+        "1.22.2-r0": 1557151965,
+        "1.22.4-r0": 1559230191
       },
       "origin": "cogl"
     },
@@ -68927,6 +68935,31 @@
         "so:libfaad.so.2=2.0.0",
         "so:libfaad_drm.so.2=2.0.0"
       ]
+    },
+    "faac-static": {
+      "origin": "faac",
+      "versions": {
+        "1.29.9.2-r0": 1559230205
+      }
+    },
+    "gcr-base": {
+      "origin": "gcr",
+      "versions": {
+        "3.28.1-r0": 1559230507
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcrypt.so.20",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libp11-kit.so.0"
+      ],
+      "provides": [
+        "so:libgck-1.so.0=0.0.0",
+        "so:libgcr-base-3.so.1=1.0.0"
+      ]
     }
   },
   "provide": {
@@ -70328,11 +70361,11 @@
         "version": "0.82.1"
       },
       "libgck-1.so.0": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "0.0.0"
       },
       "libgcr-base-3.so.1": {
-        "package": "gcr",
+        "package": "gcr-base",
         "version": "1.0.0"
       },
       "libgcr-ui-3.so.1": {
