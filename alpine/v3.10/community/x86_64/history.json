@@ -19376,14 +19376,18 @@
     "monkeysphere": {
       "origin": "monkeysphere",
       "versions": {
-        "0.41-r2": 1557857329
+        "0.41-r2": 1557857329,
+        "0.44-r0": 1559284929
       },
       "dependencies": [
         "gnupg",
-        "libressl",
+        "cmd:openssl",
+        "openssh-keygen",
         "perl",
         "perl-crypt-openssl-bignum",
         "perl-crypt-openssl-rsa",
+        "bash",
+        "lockfile-progs",
         "so:libassuan.so.0",
         "so:libc.musl-x86_64.so.1",
         "so:libgcrypt.so.20",
@@ -19813,7 +19817,8 @@
     "gtksourceview-doc": {
       "origin": "gtksourceview",
       "versions": {
-        "3.24.9-r0": 1557432049
+        "3.24.9-r0": 1557432049,
+        "3.24.11-r0": 1559284701
       }
     },
     "sway-bash-completion": {
@@ -25319,7 +25324,8 @@
     "monkeysphere-doc": {
       "origin": "monkeysphere",
       "versions": {
-        "0.41-r2": 1557857328
+        "0.41-r2": 1557857328,
+        "0.44-r0": 1559284929
       }
     },
     "luarocks": {
@@ -25492,7 +25498,8 @@
     "gtksourceview": {
       "origin": "gtksourceview",
       "versions": {
-        "3.24.9-r0": 1557432051
+        "3.24.9-r0": 1557432051,
+        "3.24.11-r0": 1559284702
       },
       "dependencies": [
         "so:libatk-1.0.so.0",
@@ -25777,7 +25784,8 @@
     "compton-doc": {
       "origin": "compton",
       "versions": {
-        "6.2-r0": 1557794723
+        "6.2-r0": 1557794723,
+        "6.2-r1": 1559283946
       }
     },
     "libsass-dev": {
@@ -33065,14 +33073,15 @@
     "libnumbertext-dev": {
       "origin": "libnumbertext",
       "versions": {
-        "1.0.3-r0": 1557431996
+        "1.0.3-r0": 1557431996,
+        "1.0.5-r0": 1559283937
       },
       "dependencies": [
-        "libnumbertext=1.0.3-r0",
+        "libnumbertext=1.0.5-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libnumbertext=1.0.3"
+        "pc:libnumbertext=1.0.5"
       ]
     },
     "docker-fish-completion": {
@@ -39162,7 +39171,8 @@
     "libnumbertext": {
       "origin": "libnumbertext",
       "versions": {
-        "1.0.3-r0": 1557431997
+        "1.0.3-r0": 1557431997,
+        "1.0.5-r0": 1559283937
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -42789,12 +42799,13 @@
     "gtksourceview-dev": {
       "origin": "gtksourceview",
       "versions": {
-        "3.24.9-r0": 1557432048
+        "3.24.9-r0": 1557432048,
+        "3.24.11-r0": 1559284701
       },
       "dependencies": [
         "gtk+3.0-dev",
         "libxml2-dev",
-        "gtksourceview=3.24.9-r0",
+        "gtksourceview=3.24.11-r0",
         "pc:gio-2.0>=2.48",
         "pc:glib-2.0>=2.48",
         "pc:gtk+-3.0>=3.20",
@@ -42802,7 +42813,7 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gtksourceview-3.0=3.24.9"
+        "pc:gtksourceview-3.0=3.24.11"
       ]
     },
     "qt5-qtvirtualkeyboard": {
@@ -43931,11 +43942,12 @@
     "tg": {
       "origin": "tg",
       "versions": {
-        "1.3.1-r11": 1557417782
+        "1.3.1-r11": 1557417782,
+        "1.3.1-r12": 1559283979
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libconfig.so.9",
+        "so:libconfig.so.11",
         "so:libcrypto.so.1.1",
         "so:libevent-2.1.so.6",
         "so:libjansson.so.4",
@@ -45629,7 +45641,8 @@
     "gtksourceview-lang": {
       "origin": "gtksourceview",
       "versions": {
-        "3.24.9-r0": 1557432050
+        "3.24.9-r0": 1557432050,
+        "3.24.11-r0": 1559284701
       }
     },
     "cfengine": {
@@ -46764,14 +46777,15 @@
     "compton": {
       "origin": "compton",
       "versions": {
-        "6.2-r0": 1557794724
+        "6.2-r0": 1557794724,
+        "6.2-r1": 1559283946
       },
       "dependencies": [
         "so:libGL.so.1",
         "so:libX11-xcb.so.1",
         "so:libX11.so.6",
         "so:libc.musl-x86_64.so.1",
-        "so:libconfig.so.9",
+        "so:libconfig.so.11",
         "so:libdbus-1.so.3",
         "so:libev.so.4",
         "so:libpcre.so.1",
