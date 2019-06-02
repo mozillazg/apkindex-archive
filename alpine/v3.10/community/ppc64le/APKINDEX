@@ -1,18 +1,3 @@
-C:Q1MuwtVXpuhv/5/UTSPSKny8GsX3c=
-P:gvfs-smb
-V:1.36.2-r1
-A:ppc64le
-S:46512
-I:196608
-T:Windows fileshare support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407831
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libsmbclient.so.0
-
 C:Q1wxI02y/QX3df28f/23jZWNvMPBs=
 P:extra-cmake-modules-doc
 V:5.58.0-r1
@@ -210,21 +195,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557608561
 c:39b4ddf54d4b28292cdeb2c7146f33d1a22c6c81
 i:docs libvisio=0.1.6-r5
-
-C:Q1y/ltlxg7F3ywaFGnkeIJcanDSSo=
-P:gvfs-nfs
-V:1.36.2-r1
-A:ppc64le
-S:21780
-I:98304
-T:NFS support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407830
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libnfs.so.12
 
 C:Q1zK+qsMqbQ677zgY0xHVYOTpDbjo=
 P:garcon-dev
@@ -1083,6 +1053,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557759293
 c:e6646bd43c370a6784fa06e98791b3ca8e257c70
 i:openrc cntlm=0.92.3-r3
+
+C:Q1IQ6pECPXUYr3fCiU8XjlCstZON8=
+P:gvfs
+V:1.40.1-r0
+A:ppc64le
+S:587242
+I:2113536
+T:Backends for the gio framework in GLib
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490609
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:/bin/sh so:libbluray.so.2 so:libc.musl-ppc64le.so.1 so:libgcr-base-3.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libintl.so.8 so:libpolkit-gobject-1.so.0 so:libsecret-1.so.0 so:libsoup-2.4.so.1 so:libudisks2.so.0
+p:so:libgvfscommon.so=0 so:libgvfsdaemon.so=0
 
 C:Q1YlQtl29pvSdD3cAte1GnuDq6h/k=
 P:mpd-openrc
@@ -2022,6 +2008,21 @@ c:ac38d6ec5f31b924c07705d46afff042beebcf13
 D:boost-dev librevenge-dev zlib-dev icu-dev libwpd-dev libwpg-dev libmspub=0.1.4-r3 pc:icu-i18n pc:librevenge-0.0 pc:zlib pkgconfig
 p:pc:libmspub-0.1=0.1.4
 
+C:Q1dnO5sVRHv+kxSeh6AynUmUB13Do=
+P:gvfs-dav
+V:1.40.1-r0
+A:ppc64le
+S:40098
+I:151552
+T:WebDAV support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libsoup-2.4.so.1 so:libxml2.so.2
+
 C:Q1CJYu1ux0pW/CScf/Hf67PNDWf2Q=
 P:spacefm-gtk3-doc
 V:1.0.6-r0
@@ -2258,20 +2259,6 @@ t:1559150323
 c:61e4723a0317995acbe4262708693206e1906257
 D:so:libQt5Core.so.5 so:libQt5Network.so.5 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libQt5XmlPatterns.so.5=5.12.3
-
-C:Q1TY9AsNXG1NLTntilA5ZLz3hO8eg=
-P:libgdata-doc
-V:0.17.9-r1
-A:ppc64le
-S:558492
-I:5558272
-T:access library for gdata (documentation)
-U:http://live.gnome.org/libgdata
-L:LGPL
-o:libgdata
-t:1557673806
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-i:docs libgdata=0.17.9-r1
 
 C:Q10CvxBM8/lsOom6nucwww2oTwtk4=
 P:nextcloud-systemtags
@@ -3477,6 +3464,21 @@ t:1557690477
 c:1bd1ae0e1731c99d7f44a6593d8ff77481fbf059
 i:docs swaylock=1.3-r3
 
+C:Q1l/Te4Mqf9LePUOFQaRJSIAMszwA=
+P:py3-z3
+V:4.8.5-r0
+A:ppc64le
+S:92778
+I:618496
+T:Python bindings for z3
+U:https://github.com/Z3Prover/z3
+L:MIT
+o:z3
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1559491579
+c:ba8467f158379d1e915ce2d842acaa2464289d70
+D:python3
+
 C:Q1mLtadjuyujwsZZYE7h3W7l8n9t8=
 P:libfilezilla
 V:0.16.0-r0
@@ -3570,21 +3572,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1558953821
 c:8db5ef696e21868072f1b7d511df8490c53fe652
 i:docs perl-business-isbn=3.004-r1
-
-C:Q17MVekwMkWXUacaZo2QrnB/e8HRY=
-P:gnuplot-doc
-V:5.2.6-r1
-A:ppc64le
-S:139496
-I:434176
-T:Utility for plotting graphs (documentation)
-U:http://www.gnuplot.info/
-L:MIT
-o:gnuplot
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1557688721
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-i:docs gnuplot=5.2.6-r1
 
 C:Q1rYbJuG6zUNHW6uJhHrfanGMBWgs=
 P:perl-proc-waitstat
@@ -5655,21 +5642,6 @@ t:1557992892
 c:e6032f7eb8e0fe50ee09f469acdd174855041c0e
 D:so:libc.musl-ppc64le.so.1 so:libr_main.so.3.5.0
 p:cmd:r2 cmd:r2agent cmd:r2pm cmd:rabin2 cmd:radare2 cmd:radiff2 cmd:rafind2 cmd:ragg2 cmd:rahash2 cmd:rarun2 cmd:rasm2 cmd:rax2
-
-C:Q13wr7MQY/7YABzn4YHbG7w17rcdc=
-P:gvfs-cdda
-V:1.36.2-r1
-A:ppc64le
-S:13639
-I:73728
-T:CDDA support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407829
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libcdio.so.18 so:libcdio_cdda.so.2 so:libcdio_paranoia.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1ZLhO8Bw2hkAa6G9FzJ/5xsLO5F4=
 P:quazip-doc
@@ -9551,6 +9523,22 @@ c:dcedaed3e5d35a1c15a707f03d8f8f78123051e0
 D:ibus=1.5.20-r1 pc:gio-2.0 pc:gobject-2.0 pkgconfig
 p:pc:ibus-1.0=1.5.20
 
+C:Q1SsiNVe079QZLXfrHxFthednKkhs=
+P:libplist
+V:2.0.0-r2
+A:ppc64le
+S:27778
+I:73728
+T:A library to handle Apple Property List format whereas it's binary or XML
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
+D:so:libc.musl-ppc64le.so.1
+p:so:libplist.so.3=3.1.0
+
 C:Q1Ld0ONEsjQBNeF3ERm2UQf5GFYzs=
 P:fio
 V:3.13-r1
@@ -10099,21 +10087,6 @@ t:1557330428
 c:554674f570fbe8c000edc65546d91a5d51ed3004
 i:docs scdoc=1.9.4-r1
 
-C:Q1KGKkWcdE4V1P+2A4J5hizlRrMRo=
-P:gvfs-mtp
-V:1.36.2-r1
-A:ppc64le
-S:26954
-I:98304
-T:MTP support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407830
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libmtp.so.9 so:libusb-1.0.so.0
-
 C:Q1GnYB8zHE26sswG2DzTPtaKbtBrw=
 P:boost-build
 V:1.69.0-r0
@@ -10542,22 +10515,6 @@ c:c5bef70e8fd6d269459cbc12af131359e20928ca
 D:clang llvm so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:cmd:afl-analyze cmd:afl-clang-fast cmd:afl-clang-fast++ cmd:afl-cmin cmd:afl-fuzz cmd:afl-gotcpu cmd:afl-plot cmd:afl-showmap cmd:afl-tmin cmd:afl-whatsup
 
-C:Q15fZ+6SqUDosI9LNjIYhcp/WUd/w=
-P:libplist-dev
-V:2.0.0-r1
-A:ppc64le
-S:149736
-I:823296
-T:A library to handle Apple Property List format whereas it's binary or XML (development files)
-U:http://libimobiledevice.org/
-L:GPL-2.0 LGPL-2.1
-o:libplist
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558010008
-c:a705e59b07b8d3c4816be2e3609187c072b7836e
-D:libxml2-dev glib-dev libplist++=2.0.0-r1 libplist=2.0.0-r1 pkgconfig
-p:pc:libplist++=2.0.0 pc:libplist=2.0.0
-
 C:Q1NzQm8wCSLsyywuBJB8PkTNdFYN8=
 P:ir_keytable
 V:1.16.6-r0
@@ -10833,21 +10790,6 @@ c:16d9d254b29bb73b2a732dfba82ff28ae1509616
 D:so:libc.musl-ppc64le.so.1 so:libglib-2.0.so.0 so:libpulse.so.0 so:libpulsecommon-12.2.so
 p:so:libpulse-mainloop-glib.so.0=0.0.5
 
-C:Q12pzh2XLkngQyxhRzSP65iZoUWUE=
-P:gvfs-archive
-V:1.36.2-r1
-A:ppc64le
-S:14209
-I:77824
-T:Archiving support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407829
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libarchive.so.13 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
-
 C:Q1vQU6lBWoE6qNm8Kur3QVQ9kZt+E=
 P:mtex2mml-fixtures
 V:1.3.1-r1
@@ -10940,6 +10882,21 @@ t:1557363551
 c:5075582b1544bfe9c33386943f72ff9bd74e2a98
 D:pkgconfig xbps=0.53-r1
 p:pc:libxbps=0.53
+
+C:Q1W/BopvOhNU8AjD/Llvp6Y2crcMI=
+P:gnome-online-accounts-lang
+V:3.32.0-r0
+A:ppc64le
+S:277934
+I:1892352
+T:Languages for package gnome-online-accounts
+U:https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+L:GPL-2.0-or-later
+o:gnome-online-accounts
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490295
+c:cbe1c6c8a287ec0a7c4005f35604835414bbb7da
+i:gnome-online-accounts=3.32.0-r0 lang
 
 C:Q1bDf0jDrsLpxTTseqWWbhcoBwEQ4=
 P:tomcat-native
@@ -11211,6 +11168,21 @@ t:1557511406
 c:1c0c11a967c503a9828f3ee95f8b4145b480d2bf
 D:so:libc.musl-ppc64le.so.1
 p:so:libmpack.so.0=0.0.0
+
+C:Q1oR1eIFq/q3B1dwvdN5gg6B61lTQ=
+P:py-libplist
+V:2.0.0-r2
+A:ppc64le
+S:50961
+I:225280
+T:Python bindings for libplist
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
+D:so:libc.musl-ppc64le.so.1 so:libplist.so.3 so:libpython2.7.so.1.0
 
 C:Q1IuLYcdTeXIgVg6TDZ5mDFFkvIbA=
 P:libmwaw
@@ -12901,22 +12873,6 @@ t:1558701450
 c:4d14e5baa264877afa1dbf976908f710b050752f
 i:docs ubridge=0.9.16-r0
 
-C:Q115XJwNQ7qpeI7yuSu9pClqhMl34=
-P:uhttpmock-dev
-V:0.5.1-r1
-A:ppc64le
-S:4941
-I:53248
-T:HTTP web service mocking library (development files)
-U:http://gitorious.org/uhttpmock/
-L:LGPL-2.0
-o:uhttpmock
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557673752
-c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
-D:pc:gio-2.0>=2.36.0 pc:glib-2.0>=2.31.0 pc:gobject-2.0 pc:libsoup-2.4>=2.37.91 pkgconfig uhttpmock=0.5.1-r1
-p:pc:libuhttpmock-0.0=0.5.1
-
 C:Q1x7oXnUfPjosT6OiHzrROstgnxns=
 P:libcoro
 V:6.513-r0
@@ -13085,6 +13041,21 @@ t:1557688786
 c:2226b3270ab615ff3d53fc46bb9d05af20df7c0d
 D:py3-gobject3 mate-menus
 p:cmd:mozo
+
+C:Q1SBnu8I0fgDm3KARQYVU1L8cumMQ=
+P:z3-dev
+V:4.8.5-r0
+A:ppc64le
+S:82633
+I:536576
+T:Theorem prover from Microsoft Research (development files)
+U:https://github.com/Z3Prover/z3
+L:MIT
+o:z3
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1559491579
+c:ba8467f158379d1e915ce2d842acaa2464289d70
+D:z3=4.8.5-r0
 
 C:Q1Xd0wErQKXeCNbUxq39WxmIYNQ2g=
 P:nextcloud-sharebymail
@@ -13364,6 +13335,20 @@ t:1557363648
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:gtk+2.0-dev dbus-glib-dev audacious=3.10-r0 pkgconfig
 p:pc:audacious=3.10
+
+C:Q1G44Ha1oJIgItbl8ur7+MblPQpdQ=
+P:gvfs-dev
+V:1.40.1-r0
+A:ppc64le
+S:2972
+I:28672
+T:Backends for the gio framework in GLib (development files)
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490607
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
 
 C:Q1vf+vGpC2MFFH1Ry3Z7/rzKa46S4=
 P:ecryptfs-utils-dev
@@ -15146,6 +15131,22 @@ c:58f3facf9efc381ae66d548f9432f5634b95ed5c
 D:so:libc.musl-ppc64le.so.1 so:libgcrypt.so.20 so:libgnutls.so.30 so:libgpg-error.so.0 so:libintl.so.8 so:libstdc++.so.6
 p:so:libgwengui-cpp.so.0=0.0.0 so:libgwenhywfar.so.60=60.18.0 cmd:gct-tool cmd:gsa cmd:mklistdoc cmd:typemaker cmd:typemaker2 cmd:xmlmerge
 
+C:Q1jzFkxgqCLV9q4bmYdf186mSnK3M=
+P:uhttpmock-dev
+V:0.5.1-r2
+A:ppc64le
+S:4970
+I:53248
+T:HTTP web service mocking library (development files)
+U:https://gitlab.com/uhttpmock/uhttpmock
+L:LGPL-2.1-or-later
+o:uhttpmock
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490238
+c:13129b99661d439847296d2609e361ccda81e0b4
+D:pc:gio-2.0>=2.36.0 pc:glib-2.0>=2.31.0 pc:gobject-2.0 pc:libsoup-2.4>=2.37.91 pkgconfig uhttpmock=0.5.1-r2
+p:pc:libuhttpmock-0.0=0.5.1
+
 C:Q1Y5BqWIIPUvCAm6zDW3B/jNHid7M=
 P:tesseract-ocr-data-nor
 V:4.0.0-r2
@@ -16236,6 +16237,22 @@ t:1557511089
 c:0152e9a82417e9f8a6aa3f4fc00910980e501688
 i:docs ruby-rdiscount=2.2.0.1-r2
 
+C:Q1/7A/2WJOvepMkdFBWihCiPZQbzw=
+P:libgdata
+V:0.17.9-r2
+A:ppc64le
+S:345671
+I:1196032
+T:access library for gdata
+U:https://wiki.gnome.org/Projects/libgdata
+L:LGPL-2.1-or-later
+o:libgdata
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490371
+c:b4d01daa0a5f345aeb990551278b0efd89e94d8e
+D:gsettings-desktop-schemas so:libc.musl-ppc64le.so.1 so:libgcr-base-3.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgoa-1.0.so.0 so:libgobject-2.0.so.0 so:libjson-glib-1.0.so.0 so:liboauth.so.0 so:libsoup-2.4.so.1 so:libxml2.so.2
+p:so:libgdata.so.22=22.3.0
+
 C:Q1gJl+goUUNpgv3sSvpmZIADchO40=
 P:py3-async-timeout-gns3
 V:2.0.1-r1
@@ -17201,6 +17218,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557433017
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs alien=8.95-r0
+
+C:Q1mz92zyxQ7yeFRqsMAVz9Jlm9E80=
+P:gnome-online-accounts-dev
+V:3.32.0-r0
+A:ppc64le
+S:423659
+I:3137536
+T:Single sign-on framework for GNOME (development files)
+U:https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+L:GPL-2.0-or-later
+o:gnome-online-accounts
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490295
+c:cbe1c6c8a287ec0a7c4005f35604835414bbb7da
+D:gnome-online-accounts=3.32.0-r0 pc:gio-2.0 pc:gtk+-3.0 pkgconfig
+p:pc:goa-1.0=3.32.0 pc:goa-backend-1.0=3.32.0
 
 C:Q13QhrFFa5jEHnjdm09vhyr/Xg8j4=
 P:mate-session-manager
@@ -20154,20 +20187,6 @@ c:0c7d3793391202eff0009c1dac768d4f2449b356
 D:so:libc.musl-ppc64le.so.1
 p:cmd:nanddump cmd:nandtest cmd:nandwrite cmd:nftl_format cmd:nftldump
 
-C:Q1X/k2JSXryT3Bb7YJKXQO5J3AL9A=
-P:libgdata-lang
-V:0.17.9-r1
-A:ppc64le
-S:157894
-I:1286144
-T:Languages for package libgdata
-U:http://live.gnome.org/libgdata
-L:LGPL
-o:libgdata
-t:1557673806
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-i:libgdata=0.17.9-r1 lang
-
 C:Q1BL+05EZMOjS0Zss4UZ8YT2nEySU=
 P:cpio
 V:2.12-r3
@@ -20308,6 +20327,21 @@ m:André Klitzing <aklitzing@gmail.com>
 t:1557683691
 c:337063f678815c538c9a7581a75d83a4b1bf5c50
 i:pdfgrep=2.1.2-r1 zsh
+
+C:Q1egOt/2pkGhpYYesezpbcHH7CD/I=
+P:gvfs-smb
+V:1.40.1-r0
+A:ppc64le
+S:47064
+I:196608
+T:Windows fileshare support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libsmbclient.so.0
 
 C:Q1PJ8n2uaPcrRM3+eZcdAnCZRZio4=
 P:perl-unicode-normalize
@@ -20478,6 +20512,21 @@ c:596fad074a57f889e292d4f9a855e5f3ff74682c
 D:ca-certificates so:libQtCore.so.4 so:libQtGui.so.4 so:libQtHelp.so.4 so:libQtNetwork.so.4 so:libQtSql.so.4 so:libQtWebKit.so.4 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:assistant
 
+C:Q1JnMRyzRCckpNQcQxRCGogpBjUcQ=
+P:uhttpmock-doc
+V:0.5.1-r2
+A:ppc64le
+S:28009
+I:294912
+T:HTTP web service mocking library (documentation)
+U:https://gitlab.com/uhttpmock/uhttpmock
+L:LGPL-2.1-or-later
+o:uhttpmock
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490238
+c:13129b99661d439847296d2609e361ccda81e0b4
+i:docs uhttpmock=0.5.1-r2
+
 C:Q1AMXqWc0qPMWekobMH/C9+DwwhiQ=
 P:libpsl-dev
 V:0.21.0-r0
@@ -20602,6 +20651,22 @@ t:1557687604
 c:97c9993c33ae9d2b8d0414343d426f8a146ea7aa
 D:so:libc.musl-ppc64le.so.1 so:libnet.so.1 so:libpcap.so.1
 p:cmd:dhcp_probe
+
+C:Q1TWhP4+ORMpQCr/tjoRSywTSn72M=
+P:libgdata-dev
+V:0.17.9-r2
+A:ppc64le
+S:270533
+I:3244032
+T:access library for gdata (development files)
+U:https://wiki.gnome.org/Projects/libgdata
+L:LGPL-2.1-or-later
+o:libgdata
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490370
+c:b4d01daa0a5f345aeb990551278b0efd89e94d8e
+D:libgdata=0.17.9-r2 pc:gcr-base-3 pc:gio-2.0>=2.44.0 pc:glib-2.0>=2.44.0 pc:goa-1.0>=3.8 pc:gobject-2.0 pc:gthread-2.0 pc:json-glib-1.0>=0.15 pc:libsoup-2.4>=2.42.0 pc:libxml-2.0 pc:oauth>=0.9.4 pkgconfig
+p:pc:libgdata=0.17.9
 
 C:Q1z70+jfYuhDPuaOK+o5mmudZXLjk=
 P:yad-lang
@@ -22511,6 +22576,22 @@ c:aa84930631b516dd73ced7ebe5fe1b3d25eea663
 D:lua5.3 lua5.3-filesystem
 i:lua-depgraph=0.2.0-r0 lua5.3
 
+C:Q1mjbiQwSOUMwVyc4nLT0cuWoGkkA=
+P:libgdata-lang
+V:0.17.9-r2
+A:ppc64le
+S:157789
+I:1286144
+T:Languages for package libgdata
+U:https://wiki.gnome.org/Projects/libgdata
+L:LGPL-2.1-or-later
+o:libgdata
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490371
+c:b4d01daa0a5f345aeb990551278b0efd89e94d8e
+D:gsettings-desktop-schemas
+i:libgdata=0.17.9-r2 lang
+
 C:Q1bvIMo9xCd7dLVldCgoTnZQiipgY=
 P:claws-mail-dev
 V:3.17.3-r6
@@ -22768,6 +22849,22 @@ t:1559191650
 c:53379ee8d477e7700b22db2d00ac9d35ce250e85
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstapp-1.0.so.0 so:libgstaudio-1.0.so.0 so:libgstbase-1.0.so.0 so:libgstreamer-1.0.so.0 so:libgstvideo-1.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:libjson-glib-1.0.so.0 so:liblz4.so.1 so:libopus.so.0 so:libpixman-1.so.0 so:libsasl2.so.3 so:libssl.so.1.1 so:libusb-1.0.so.0 so:libusbredirhost.so.1 so:libusbredirparser.so.1 so:libz.so.1
 p:so:libspice-client-glib-2.0.so.8=8.6.0
+
+C:Q1bSXLE7sI5oWh6W7Xf+xrICV3iCE=
+P:libusbmuxd-dev
+V:1.0.10-r1
+A:ppc64le
+S:21803
+I:102400
+T:USB Multiplex Daemon (development files)
+U:https://marcansoft.com/blog/iphonelinux/usbmuxd/
+L:LGPL-2.1-or-later
+o:libusbmuxd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559490458
+c:61b989984e0f4b9487f5e5a4dc05117a3cdd1f9f
+D:libusbmuxd=1.0.10-r1 pkgconfig
+p:pc:libusbmuxd=1.0.10
 
 C:Q13lSKyRNWWSb+5jYjeYN4EH6DYvE=
 P:font-noto-telugu
@@ -23337,21 +23434,6 @@ c:b141deb61dfbb41ff2ecfd4d6c560fa3d108ef69
 D:so:libc.musl-ppc64le.so.1 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjson-c.so.4
 p:so:libmypaint-1.3.so.0=0.0.0
 
-C:Q17Zl+GIUKmVCxEw0UYklWhPZf6iY=
-P:gvfs-gphoto2
-V:1.36.2-r1
-A:ppc64le
-S:58373
-I:245760
-T:gphoto2 support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407830
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgphoto2.so.6 so:libgphoto2_port.so.12 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
-
 C:Q1sYbvRDALMeXrEX0JH3xENlOSyTk=
 P:php7-sysvshm
 V:7.2.19-r0
@@ -23877,6 +23959,22 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557558753
 c:2baefec61d7066e65679580e25c58d417882a69c
 
+C:Q1vwY2hoGMXcm31Vi+EDTZ3SogTSo=
+P:libplist-dev
+V:2.0.0-r2
+A:ppc64le
+S:9464
+I:110592
+T:A library to handle Apple Property List format whereas it's binary or XML (development files)
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
+D:libplist++=2.0.0-r2 libplist=2.0.0-r2 pkgconfig
+p:pc:libplist++=2.0.0 pc:libplist=2.0.0
+
 C:Q1hfSK6G8QQBV4jy1K2qFcbmW1VQI=
 P:remind
 V:03.01.16-r0
@@ -24080,6 +24178,21 @@ t:1557475336
 c:ccd33192f2fee72deb1942b5428408b818928a68
 i:docs racktables=0.21.2-r0
 
+C:Q15qbTlM0bXXpTTJb2VjB1JbBrUvI=
+P:gvfs-fuse
+V:1.40.1-r0
+A:ppc64le
+S:16408
+I:65536
+T:FUSE support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libfuse.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so
+
 C:Q1TCer+YPpJgZ7pmhA0+WlhjZuuuE=
 P:shadow-dbg
 V:4.6-r2
@@ -24277,6 +24390,21 @@ m:Stefan Wagner <stw@bit-strickerei.de>
 t:1557686746
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-ppc64le.so.1 so:libglib-2.0.so.0 so:libloudmouth-1.so.0
+
+C:Q1953x9VmatlBKBoiTXzoEGW5LcHg=
+P:gvfs-gphoto2
+V:1.40.1-r0
+A:ppc64le
+S:59825
+I:249856
+T:gphoto2 support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgphoto2.so.6 so:libgphoto2_port.so.12 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1GOm4+wO3s5++txNny/GGf4nvPnk=
 P:jailkit-doc
@@ -25078,6 +25206,20 @@ t:1559328598
 c:20c1c922f89223ca2b89f2d7e73aff2476d3aef3
 D:so:libBasicUsageEnvironment.so.1 so:libUsageEnvironment.so.3 so:libasound.so.2 so:libavc1394.so.0 so:libbluray.so.2 so:libc.musl-ppc64le.so.1 so:libcddb.so.2 so:libdc1394.so.25 so:libdvbpsi.so.10 so:libdvdnav.so.4 so:libdvdread.so.4 so:libgcc_s.so.1 so:libgcrypt.so.20 so:libgroupsock.so.8 so:libliveMedia.so.66 so:libraw1394.so.11 so:librom1394.so.0 so:libsmbclient.so.0 so:libstdc++.so.6 so:libvlccore.so.9
 
+C:Q1V4JO+Hk0tUxw8n/8Ga4naZyYbDc=
+P:uhttpmock-static
+V:0.5.1-r2
+A:ppc64le
+S:26194
+I:110592
+T:HTTP web service mocking library (static library)
+U:https://gitlab.com/uhttpmock/uhttpmock
+L:LGPL-2.1-or-later
+o:uhttpmock
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490237
+c:13129b99661d439847296d2609e361ccda81e0b4
+
 C:Q1eL4gdsCLzK6a/TOz7ll6JMn1noU=
 P:qt5-qtconnectivity-dev
 V:5.12.3-r0
@@ -25863,21 +26005,6 @@ t:1557661814
 c:4c76f4f5e907ba3c2c71bb650ee77786788c8756
 i:docs elixir=1.8.1-r0
 
-C:Q1YuaJCkopS7UCKoxwZWbED4sCxts=
-P:py-libplist
-V:2.0.0-r1
-A:ppc64le
-S:50963
-I:225280
-T:Python bindings for libplist
-U:http://libimobiledevice.org/
-L:GPL-2.0 LGPL-2.1
-o:libplist
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558010009
-c:a705e59b07b8d3c4816be2e3609187c072b7836e
-D:so:libc.musl-ppc64le.so.1 so:libplist.so.3 so:libpython2.7.so.1.0
-
 C:Q1YweRO312Btoe9FRvnSwEGOf/fzM=
 P:nuttcp
 V:8.1.4-r0
@@ -26586,21 +26713,6 @@ t:1559155243
 c:61e4723a0317995acbe4262708693206e1906257
 D:qt5-qtmultimedia so:libQt5Core.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:so:libQt5TextToSpeech.so.5=5.12.3
-
-C:Q1855bp/mlE/asgtpB4A+pfqAlTJU=
-P:gvfs-dav
-V:1.36.2-r1
-A:ppc64le
-S:39682
-I:151552
-T:WebDAV support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407829
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libsoup-2.4.so.1 so:libxml2.so.2
 
 C:Q1xJ63snsTXk7G/iVJ9XDNACoGbd4=
 P:libtorrent
@@ -27643,6 +27755,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557611383
 c:1518a0b9803e126bee2472c66e9bfc845cbdfa71
 
+C:Q1Je/i7D5UE+3TAZG3Y4owKHPTrCo=
+P:gnuplot
+V:5.2.7-r0
+A:ppc64le
+S:980452
+I:2682880
+T:Utility for plotting graphs
+U:http://www.gnuplot.info/
+L:MIT
+o:gnuplot
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1559491686
+c:626c2d3467df8fd905a3c1381d1bb6037e135169
+D:so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:liblua-5.3.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libreadline.so.8
+p:cmd:gnuplot
+
 C:Q1pofDQm/Z0pJi/rNU9qOZFRaB6T0=
 P:libreoffice-lang-mni
 V:6.2.3.2-r2
@@ -28014,6 +28142,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557468950
 c:8a095c98f13c99a0e38d9413395d9cd08a98c924
 i:docs gtkmm3=3.24.1-r0
+
+C:Q1qRSnwQdcQGlr1l2LQt4YEO6DZWw=
+P:z3
+V:4.8.5-r0
+A:ppc64le
+S:21743236
+I:54439936
+T:Theorem prover from Microsoft Research
+U:https://github.com/Z3Prover/z3
+L:MIT
+o:z3
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1559491579
+c:ba8467f158379d1e915ce2d842acaa2464289d70
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libz3.so.4.8=4.8.5.0 cmd:z3
 
 C:Q1ChuoiPp/TQMaZpneUt/iW0ZE/2k=
 P:mpv-doc
@@ -28763,6 +28907,21 @@ t:1557399509
 c:d673b9f58884ccd1d22d538fa78cbc46c8cf8d7a
 D:/bin/sh so:libc.musl-ppc64le.so.1
 p:cmd:dash
+
+C:Q1pANW8uWoLbaHe/yofkccY3TMVe8=
+P:gvfs-afc
+V:1.40.1-r0
+A:ppc64le
+S:54981
+I:229376
+T:Apple mobile devices support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libimobiledevice.so.6 so:libintl.so.8 so:libplist.so.3
 
 C:Q1mH31wV1e2H2SnNPFjUAcRVoX+hE=
 P:moonscript
@@ -30691,6 +30850,22 @@ c:0ed7c699488308a22493b1507712473a2c5815f3
 D:glade=3.22.1-r0 pc:gtk+-3.0>=2.91.2 pc:libxml-2.0>=2.4.0 pkgconfig
 p:pc:gladeui-2.0=3.22.1
 
+C:Q1si4XNrI706A6mndVvk8JsM4CP2k=
+P:gnome-online-accounts
+V:3.32.0-r0
+A:ppc64le
+S:259884
+I:1052672
+T:Single sign-on framework for GNOME
+U:https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+L:GPL-2.0-or-later
+o:gnome-online-accounts
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490295
+c:cbe1c6c8a287ec0a7c4005f35604835414bbb7da
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libjavascriptcoregtk-4.0.so.18 so:libjson-glib-1.0.so.0 so:librest-0.7.so.0 so:libsecret-1.so.0 so:libsoup-2.4.so.1 so:libwebkit2gtk-4.0.so.37 so:libxml2.so.2
+p:so:libgoa-1.0.so.0=0.0.0 so:libgoa-backend-1.0.so.1=1.0.0
+
 C:Q1kgqwtkZZOXyQqGsp59A16M8jbYo=
 P:py-apipkg
 V:1.5-r2
@@ -31295,22 +31470,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557362217
 c:309f6e65d8ddfeb8189f9bfb85e960d5ebbfc09e
 D:perl-clone
-
-C:Q1UqfsjmmbyB48MYoBP+guuSfbpVM=
-P:gnuplot
-V:5.2.6-r1
-A:ppc64le
-S:980063
-I:2678784
-T:Utility for plotting graphs
-U:http://www.gnuplot.info/
-L:MIT
-o:gnuplot
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1557688722
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:liblua-5.3.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libreadline.so.8
-p:cmd:gnuplot
 
 C:Q12zrh7PyvwGMk98Qa92xtMf5den8=
 P:nodejs-current-doc
@@ -33993,6 +34152,21 @@ c:2749c1ba2ad7717f0de87d70f33420e99e8f90e4
 D:pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pc:gthread-2.0 pkgconfig tumbler=0.2.4-r0
 p:pc:tumbler-1=0.2.4
 
+C:Q1bqxAh12G9rNSnJzz1tA5N9XyeVc=
+P:gnuplot-doc
+V:5.2.7-r0
+A:ppc64le
+S:142498
+I:442368
+T:Utility for plotting graphs (documentation)
+U:http://www.gnuplot.info/
+L:MIT
+o:gnuplot
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1559491686
+c:626c2d3467df8fd905a3c1381d1bb6037e135169
+i:docs gnuplot=5.2.7-r0
+
 C:Q1wLHCE12Uml25VrNTd9UgX1R48sc=
 P:claws-mail-plugins-bogofilter
 V:3.17.3-r6
@@ -34037,22 +34211,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1558089734
 c:d514f030d6f9ba064278a0e604f8985f33a05c84
 D:python3 py3-urwid
-
-C:Q1U9iceTqw6Zc/whEJKjFx5ctXCTQ=
-P:libplist++
-V:2.0.0-r1
-A:ppc64le
-S:21686
-I:81920
-T:C++ bindings to libplist
-U:http://libimobiledevice.org/
-L:GPL-2.0 LGPL-2.1
-o:libplist
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558010009
-c:a705e59b07b8d3c4816be2e3609187c072b7836e
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libplist.so.3 so:libstdc++.so.6
-p:so:libplist++.so.3=3.1.0
 
 C:Q15AKAJ0XNoJ+v+mmrkdqB0s4oy4Y=
 P:yarn
@@ -34100,21 +34258,6 @@ t:1557472166
 c:d18dcf5e30f3f258ac1a0ed36832f883efe5b22b
 D:so:libc.musl-ppc64le.so.1
 p:so:libbluray.so.2=2.1.1 cmd:bd_info
-
-C:Q1eZznykH460PUtb1OZSXkQdlks38=
-P:gvfs-avahi
-V:1.36.2-r1
-A:ppc64le
-S:15015
-I:98304
-T:DNS-SD support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407829
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1WsX9PKJKlks0iCGh2SgVcFptesA=
 P:libshairport-dev
@@ -34935,21 +35078,6 @@ c:35c4fd0f021249f857f92a2daf3dde95bb2226b3
 D:curl-dev libssh2-dev libgit2-0.27=0.27.8-r0 pc:openssl pc:zlib pkgconfig
 p:pc:libgit2=0.27.8
 
-C:Q1gk4Ja4lcVZVFT9s+8Zxhm7EIvIk=
-P:gvfs-afp
-V:1.36.2-r1
-A:ppc64le
-S:88990
-I:307200
-T:AFP support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407829
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
-
 C:Q1wxKslvn6ZCePPKRv0K8tjctk+gs=
 P:lua5.2-depgraph
 V:0.2.0-r0
@@ -35446,6 +35574,22 @@ c:4559dfe24ed0f5f1c76888a072e238e8535368a7
 k:100
 D:php7 php7-xml
 p:php-pear cmd:pear cmd:pear7 cmd:peardev cmd:peardev7 cmd:pecl cmd:pecl7
+
+C:Q1ZjhRxOxvBSI8kCd9U5/QFpOUO70=
+P:libplist++
+V:2.0.0-r2
+A:ppc64le
+S:21676
+I:81920
+T:C++ bindings to libplist
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libplist.so.3 so:libstdc++.so.6
+p:so:libplist++.so.3=3.1.0
 
 C:Q1No+rHw90BeKinIKyNK6ySxbIIzM=
 P:xmltv-doc
@@ -37024,6 +37168,21 @@ t:1557689177
 c:0baaa9aa68900db37d238246fb1cfd09ff4c4aa2
 i:docs x11vnc=0.9.14-r5
 
+C:Q18uOVthfCXsvzgEC9PCR8QugjJx0=
+P:gvfs-nfs
+V:1.40.1-r0
+A:ppc64le
+S:21896
+I:98304
+T:NFS support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libnfs.so.12
+
 C:Q1HFsFD0Cz3VaBoTUuyaUh6km32iU=
 P:mate-user-guide
 V:1.22.0-r0
@@ -37547,6 +37706,22 @@ t:1557678328
 c:dd62370811166385acdd8983329f7feed272eee1
 i:openrc quassel-core=0.13.1-r3
 
+C:Q1x/BqnD5gmfYfhyR5aPDeFOYDX2c=
+P:libplist-util
+V:2.0.0-r2
+A:ppc64le
+S:4895
+I:28672
+T:Util for libplist
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
+D:so:libc.musl-ppc64le.so.1 so:libplist.so.3
+p:cmd:plistutil
+
 C:Q1F1rAUqkbxzj97ZPMnAVsDeQEFqI=
 P:alpine-desktop
 V:2.6-r0
@@ -38048,6 +38223,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1557681165
 c:cb8c901d59cadc7442b9a588fda3fa9b6c8908f3
 
+C:Q1FYZxzAiP+JENnJJAmWvxwd4nVV8=
+P:gnome-online-accounts-doc
+V:3.32.0-r0
+A:ppc64le
+S:2852
+I:24576
+T:Single sign-on framework for GNOME (documentation)
+U:https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+L:GPL-2.0-or-later
+o:gnome-online-accounts
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490295
+c:cbe1c6c8a287ec0a7c4005f35604835414bbb7da
+i:docs gnome-online-accounts=3.32.0-r0
+
 C:Q1djBsyoyDD77txR/coyoXSIkMqdU=
 P:py2-mysqlclient
 V:1.3.14-r1
@@ -38264,6 +38454,20 @@ m:tcely <knot+aports@tcely.33mail.com>
 t:1559297377
 c:baa1921e0082cdd2e1f8a74889060b002295b46b
 i:docs knot=2.8.1-r1
+
+C:Q1Q2VmDRwTyShGknmo0f7IeIoACJw=
+P:libplist-static
+V:2.0.0-r2
+A:ppc64le
+S:140608
+I:724992
+T:A library to handle Apple Property List format whereas it's binary or XML (static library)
+U:http://libimobiledevice.org/
+L:GPL-2.0-or-later LGPL-2.1-or-later
+o:libplist
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490441
+c:14f65b6fd3049eaed3cfe7a11a1d280c6a5ab991
 
 C:Q1RVgNAY4QaOambJ9+UyMMuNTalnM=
 P:py-skywriter-hat
@@ -39106,22 +39310,6 @@ t:1557645901
 c:24d42df93ce078756e50b902f7425f92b40fe808
 i:docs bluefish=2.2.10-r1
 
-C:Q10GwFi73wH94arLWXDO1EDaSxhcI=
-P:uhttpmock
-V:0.5.1-r1
-A:ppc64le
-S:22802
-I:77824
-T:HTTP web service mocking library
-U:http://gitorious.org/uhttpmock/
-L:LGPL-2.0
-o:uhttpmock
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557673754
-c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libsoup-2.4.so.1
-p:so:libuhttpmock-0.0.so.0=0.2.1
-
 C:Q1g7zsZ48VC7tHchR5vQhwbyZD5qQ=
 P:virt-manager-doc
 V:2.1.0-r1
@@ -39905,22 +40093,6 @@ c:ebe18dcb685d03b85e2866ffd03a407a980d73f1
 D:gwenhywfar ktoblzcheck so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libgwenhywfar.so.60 so:libintl.so.8 so:libstdc++.so.6
 p:so:libaqbanking.so.35=35.6.8 so:libaqbankingpp.so.0=0.0.0 so:libaqhbci.so.24=24.0.1 so:libaqofxconnect.so.7=7.0.2 cmd:aqbanking-cli cmd:aqhbci-tool4 cmd:hbcixml3
 
-C:Q1ww00MJvjIr0A9pRgoHe5QCDcpSw=
-P:libplist
-V:2.0.0-r1
-A:ppc64le
-S:27805
-I:73728
-T:A library to handle Apple Property List format whereas it's binary or XML
-U:http://libimobiledevice.org/
-L:GPL-2.0 LGPL-2.1
-o:libplist
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558010009
-c:a705e59b07b8d3c4816be2e3609187c072b7836e
-D:so:libc.musl-ppc64le.so.1
-p:so:libplist.so.3=3.1.0
-
 C:Q1hCjaOCBdc7IZzXyFU5OuY0UK4Nw=
 P:xapian-bindings-perl
 V:1.4.11-r1
@@ -40092,6 +40264,22 @@ c:3bd11bada1d15254e1a24b922dcbf041ff549033
 D:so:libavcodec.so.58 so:libavutil.so.56 so:libc.musl-ppc64le.so.1 so:libgsl.so.23 so:libgslcblas.so.0 so:libpng16.so.16 so:libportaudio.so.2 so:libudev.so.1 so:libusb-1.0.so.0 so:libv4l2.so.0
 p:so:libgviewaudio-2.0.so.2=2.0.0 so:libgviewencoder-2.0.so.2=2.0.0 so:libgviewrender-2.0.so.2=2.0.0 so:libgviewv4l2core-2.0.so.2=2.0.0
 
+C:Q1w165S4ujJKmCHzKWJltXpMzGwx4=
+P:libimobiledevice-dev
+V:1.2.0-r3
+A:ppc64le
+S:34173
+I:270336
+T:Library that talks the protocols to support iPhone and iPod Touch devices on Linux (development files)
+U:http://libimobiledevice.org/
+L:LGPL-2.1-or-later
+o:libimobiledevice
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559490508
+c:f55f02836c1c99a815f30191557049b93b808167
+D:libimobiledevice=1.2.0-r3 pc:libplist>=1.11 pc:libusbmuxd>=1.0.9 pc:openssl>=0.9.8 pkgconfig
+p:pc:libimobiledevice-1.0=1.2.0
+
 C:Q1tOVo8nc11tP+be6/bJE5benhC9Y=
 P:libreoffice-lang-ar
 V:6.2.3.2-r2
@@ -40151,21 +40339,6 @@ t:1557475853
 c:7c7e19adf5222185900ca9e37582622856d1ecc3
 D:libtorrent=0.13.7-r1 pkgconfig
 p:pc:libtorrent=0.13.7
-
-C:Q155HbGiyVEkqjZk9s9HYxHvRnWUI=
-P:gvfs-lang
-V:1.36.2-r1
-A:ppc64le
-S:1126745
-I:4247552
-T:Languages for package gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407828
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-i:gvfs=1.36.2-r1 lang
 
 C:Q1OJL7gSJ98Zt8g9TL/Ui/oEQAHrY=
 P:caddy
@@ -40465,6 +40638,21 @@ t:1557642667
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libktoblzcheck.so.1=1.5.26 cmd:ktoblzcheck
+
+C:Q1fvHP38lRGGy0Ke/vzjGhhKIeT48=
+P:gvfs-goa
+V:1.40.1-r0
+A:ppc64le
+S:59454
+I:253952
+T:GNOME Online Accounts support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgdata.so.22 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgoa-1.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1j0dO1REp6CBJ/68NEMdJrVh2+TM=
 P:influxdb
@@ -41797,6 +41985,21 @@ t:1557678573
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:volumeicon=0.5.1-r0 lang
 
+C:Q17Hrw3HBldaWwtWVWRAE/2hOy4Ec=
+P:gvfs-mtp
+V:1.40.1-r0
+A:ppc64le
+S:28486
+I:102400
+T:MTP support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libmtp.so.9 so:libusb-1.0.so.0
+
 C:Q1P2pO9AvBUp9RKMPMlfnjZf6YURs=
 P:chicken-dev
 V:5.0.0-r0
@@ -42389,6 +42592,21 @@ c:4559dfe24ed0f5f1c76888a072e238e8535368a7
 k:100
 D:php7-common so:libc.musl-ppc64le.so.1
 p:php-sysvsem
+
+C:Q1R+NUGM9jYRq79ZjaSJKFbADtSzU=
+P:gvfs-avahi
+V:1.40.1-r0
+A:ppc64le
+S:15188
+I:98304
+T:DNS-SD support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1rFU4YCeX2tphwxmN+gYVw02dUDM=
 P:tpm
@@ -46573,6 +46791,20 @@ t:1557602539
 c:fc008fd775a75a373199951ff6aaa166f4374716
 D:python3
 
+C:Q1/EVAUD7xB1TZ3LNznTLSNKAlns4=
+P:libgdata-static
+V:0.17.9-r2
+A:ppc64le
+S:565481
+I:2736128
+T:access library for gdata (static library)
+U:https://wiki.gnome.org/Projects/libgdata
+L:LGPL-2.1-or-later
+o:libgdata
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490370
+c:b4d01daa0a5f345aeb990551278b0efd89e94d8e
+
 C:Q1vgZa4Cvo6mYCuQ9Ma+3isufZ2aE=
 P:apt-dater-host-doc
 V:1.0.1-r1
@@ -46816,6 +47048,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559328599
 c:20c1c922f89223ca2b89f2d7e73aff2476d3aef3
 D:so:libc.musl-ppc64le.so.1 so:libdvbpsi.so.10 so:libebml.so.4 so:libgcc_s.so.1 so:libgcrypt.so.20 so:libmatroska.so.6 so:libogg.so.0 so:libstdc++.so.6 so:libvlccore.so.9 so:libvorbis.so.0 so:libz.so.1
+
+C:Q1Nm1AwDQPHfWaJrswUyXJWZ4RwrM=
+P:uhttpmock
+V:0.5.1-r2
+A:ppc64le
+S:22800
+I:77824
+T:HTTP web service mocking library
+U:https://gitlab.com/uhttpmock/uhttpmock
+L:LGPL-2.1-or-later
+o:uhttpmock
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559490238
+c:13129b99661d439847296d2609e361ccda81e0b4
+D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libsoup-2.4.so.1
+p:so:libuhttpmock-0.0.so.0=0.2.1
 
 C:Q163Ac20/0ma/Eo9+Czze3kkum+L0=
 P:salt-syndic-openrc
@@ -47186,6 +47434,21 @@ t:1557362632
 c:3cabf99ba10405ba37bbd3ee3db6416b7efae394
 D:zlib-dev pcsc-lite-dev openssl-dev readline-dev opensc=0.19.0-r2 pkgconfig
 p:pc:opensc-pkcs11=0.19.0
+
+C:Q1O1hg+yo1YNXtZ/ExkbUny5dwWAM=
+P:gvfs-lang
+V:1.40.1-r0
+A:ppc64le
+S:1108472
+I:4206592
+T:Languages for package gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490607
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+i:gvfs=1.40.1-r0 lang
 
 C:Q1z6w3FthS9PmGvxycw6w/nfjl/AI=
 P:llvm5-test-utils
@@ -48349,6 +48612,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558033347
 c:85d6ca80cee50c832028ef127739b2c7a1caac37
 D:so:libc.musl-ppc64le.so.1 so:libgdk-3.so.0 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0
+
+C:Q1J9Ncojd/wzsTam3xwy2JjKFkzrA=
+P:libimobiledevice
+V:1.2.0-r3
+A:ppc64le
+S:189512
+I:634880
+T:Library that talks the protocols to support iPhone and iPod Touch devices on Linux
+U:http://libimobiledevice.org/
+L:LGPL-2.1-or-later
+o:libimobiledevice
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559490508
+c:f55f02836c1c99a815f30191557049b93b808167
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libplist.so.3 so:libssl.so.1.1 so:libusbmuxd.so.4
+p:so:libimobiledevice.so.6=6.0.0 cmd:idevice_id cmd:idevicebackup cmd:idevicebackup2 cmd:idevicecrashreport cmd:idevicedate cmd:idevicedebug cmd:idevicedebugserverproxy cmd:idevicediagnostics cmd:ideviceenterrecovery cmd:ideviceimagemounter cmd:ideviceinfo cmd:idevicename cmd:idevicenotificationproxy cmd:idevicepair cmd:ideviceprovision cmd:idevicescreenshot cmd:idevicesyslog
 
 C:Q1z63K1CfdJPhbqNuJ6feQTH+728k=
 P:pdns-backend-geoip
@@ -50129,21 +50408,6 @@ t:1557342606
 c:18a355feef818f1fdfa581067d5b846e2ddc7888
 D:so:libabiword-3.0.so so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libstdc++.so.6
 
-C:Q1ZCfrumCPIqDu/zPl99sWIAwipVg=
-P:libgdata-dev
-V:0.17.9-r1
-A:ppc64le
-S:624019
-I:3469312
-T:access library for gdata (development files)
-U:http://live.gnome.org/libgdata
-L:LGPL
-o:libgdata
-t:1557673805
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:libgdata=0.17.9-r1 pc:gio-2.0>=2.44.0 pc:glib-2.0>=2.44.0 pc:gobject-2.0 pc:gthread-2.0 pc:json-glib-1.0>=0.15 pc:libsoup-2.4>=2.42.0 pc:libxml-2.0 pc:oauth>=0.9.4 pkgconfig
-p:pc:libgdata=0.17.9
-
 C:Q1hpPms5gapQdlvpGhwLuBO6cFiLI=
 P:stunnel-doc
 V:5.48-r0
@@ -50314,21 +50578,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557362159
 c:6fa749907548b069635759f8a8c667620595bc50
 D:perl-text-diff
-
-C:Q11xT0Jsob1FUVU/uaLKmPxu7rvX4=
-P:py3-z3
-V:4.8.4-r1
-A:ppc64le
-S:90776
-I:606208
-T:Python bindings for z3
-U:https://github.com/Z3Prover/z3
-L:MIT
-o:z3
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1557433767
-c:d4e90670f3ee33728c05efc46333fccb3c02fd47
-D:python3
 
 C:Q127I2ZQZJOWjYJkmHhUAXP88ILq0=
 P:bspwm
@@ -51049,6 +51298,21 @@ t:1557734011
 c:f55ea0907bd33d1c0407e12928326a4b88bdc0b6
 i:docs oscam=1.20_svn20190430-r0
 
+C:Q1DJudnXNd53id2yKdvOlS1Xp99sc=
+P:libgdata-doc
+V:0.17.9-r2
+A:ppc64le
+S:558501
+I:5558272
+T:access library for gdata (documentation)
+U:https://wiki.gnome.org/Projects/libgdata
+L:LGPL-2.1-or-later
+o:libgdata
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490370
+c:b4d01daa0a5f345aeb990551278b0efd89e94d8e
+i:docs libgdata=0.17.9-r2
+
 C:Q18vWAj+THNVNTimgNI0Wt/fo0VTI=
 P:py-evtx
 V:0.6.1-r1
@@ -51429,21 +51693,6 @@ t:1557363726
 c:e188dea95d7dbca76a4f72bf639a97ba4f8584c2
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libltdl.so.7 so:libxml2.so.2 so:libxslt.so.1
 p:so:libxmlsec1-openssl.so.1=1.2.28 so:libxmlsec1.so.1=1.2.28 cmd:xmlsec1
-
-C:Q10fqCNV79OMHsRaLc4wA5dotxNqY=
-P:gvfs-fuse
-V:1.36.2-r1
-A:ppc64le
-S:16408
-I:65536
-T:FUSE support for gvfs
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407830
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:so:libc.musl-ppc64le.so.1 so:libfuse.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so
 
 C:Q1EQfDDhJTV0MvN3QgmCtEgSyTf5I=
 P:qt5-qtwayland-dev
@@ -51982,6 +52231,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557408636
 c:cb5921909815c262d070c1ff149bb9790ae311d1
 i:docs perl-module-runtime-conflicts=0.003-r1
+
+C:Q18kc5sKQxM603B1CVl32N35S8WJU=
+P:gvfs-afp
+V:1.40.1-r0
+A:ppc64le
+S:89258
+I:303104
+T:AFP support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1J6cQzSd3HA8SfRkZZl8kgG6hxPk=
 P:libowfat-doc
@@ -55554,6 +55818,21 @@ c:6379d517873cd6c37ee104384b77b748f9f8ccc4
 D:so:libc.musl-ppc64le.so.1
 i:lua5.2 lua-lunix=20150923-r1
 
+C:Q1ZqDya6GCs/F9CBXHG6fiCnD4aQ8=
+P:gvfs-cdda
+V:1.40.1-r0
+A:ppc64le
+S:13812
+I:73728
+T:CDDA support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libc.musl-ppc64le.so.1 so:libcdio.so.18 so:libcdio_cdda.so.2 so:libcdio_paranoia.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
+
 C:Q1KZllTOYaDOKkjRGH5U6ahUDm8eI=
 P:network-manager-applet-lang
 V:1.8.18-r3
@@ -56122,6 +56401,21 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1557408072
 c:0e19375e070acd4d57a884385942b6c375de26c2
 i:docs exempi=2.5.0-r1
+
+C:Q11bPHaPCl8sPxaEYBn6ohCcjv0xE=
+P:gvfs-archive
+V:1.40.1-r0
+A:ppc64le
+S:14392
+I:77824
+T:Archiving support for gvfs
+U:https://wiki.gnome.org/Projects/gvfs
+L:LGPL-2.0-or-later
+o:gvfs
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1559490608
+c:d94ac655f0a8375ac824f3ee23ce1e434e4afb59
+D:so:libarchive.so.13 so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8
 
 C:Q1l+fvCqXpgLYPMmLoqyshtKPun5g=
 P:libreoffice-lang-tr
@@ -57473,21 +57767,6 @@ t:1557484835
 c:f164da39d1b80378ea475908c29c36c3508f72a1
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libcoap-2-openssl.so.0=0.1.0 cmd:coap-client cmd:coap-rd cmd:coap-server
-
-C:Q15qSTkoswu6rKoNRYKnxNgE3a5Ts=
-P:libgdata
-V:0.17.9-r1
-A:ppc64le
-S:298124
-I:1011712
-T:access library for gdata
-U:http://live.gnome.org/libgdata
-L:LGPL
-o:libgdata
-t:1557673806
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libjson-glib-1.0.so.0 so:liboauth.so.0 so:libsoup-2.4.so.1 so:libxml2.so.2
-p:so:libgdata.so.22=22.3.0
 
 C:Q1hx5Ypon0AZe0vNqrpaQaF182WkM=
 P:libpurple-oscar
@@ -59626,22 +59905,6 @@ c:970b2a27c9010b2c15eb8964099062ef13e9f8bb
 D:gst-plugins-good so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libdbus-1.so.3 so:libdbus-glib-1.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgstaudio-1.0.so.0 so:libgstpbutils-1.0.so.0 so:libgstreamer-1.0.so.0 so:libgsttag-1.0.so.0 so:libgstvideo-1.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libnotify.so.4 so:libtag_c.so.0 so:libxfce4ui-2.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.3
 p:cmd:parole
 
-C:Q1mgVawFQ1/KMjW1/kZEeNxqKZKQ4=
-P:z3
-V:4.8.4-r1
-A:ppc64le
-S:21319694
-I:53469184
-T:Theorem prover from Microsoft Research
-U:https://github.com/Z3Prover/z3
-L:MIT
-o:z3
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1557433768
-c:d4e90670f3ee33728c05efc46333fccb3c02fd47
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libgomp.so.1 so:libstdc++.so.6
-p:so:libz3.so.4.8=4.8.4.0 cmd:z3
-
 C:Q16tuMRLlMcuNgF4IFVZyAzRyjA3M=
 P:py-django-compressor
 V:2.2-r1
@@ -60749,22 +61012,6 @@ t:1557674325
 c:8f90b14ff2dda631858b504175bb49907e549125
 i:docs repmgr=4.2.0-r0
 
-C:Q1pweaTDrjr4scGPeCSeDD12IXILI=
-P:gvfs
-V:1.36.2-r1
-A:ppc64le
-S:580513
-I:2080768
-T:Backends for the gio framework in GLib
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407831
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libgcr-base-3.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libintl.so.8 so:libpolkit-gobject-1.so.0 so:libsecret-1.so.0 so:libsoup-2.4.so.1 so:libudisks2.so.0
-p:so:libgvfscommon.so=0 so:libgvfsdaemon.so=0
-
 C:Q1WLzLzI+0hMRcZH5EdocAkQFgz4I=
 P:volumeicon
 V:0.5.1-r0
@@ -61656,6 +61903,21 @@ t:1557660464
 c:1435670b417d0aa5d3ab0d961b7621764d7cf3fe
 D:ansible py3-yaml py3-six py3-ruamel.yaml py3-setuptools
 p:py3-ansible-lint=4.1.0-r1 cmd:ansible-lint
+
+C:Q1vwQtifFr+2gHUM3D6xYAk1ZjB0s=
+P:libimobiledevice-doc
+V:1.2.0-r3
+A:ppc64le
+S:11091
+I:90112
+T:Library that talks the protocols to support iPhone and iPod Touch devices on Linux (documentation)
+U:http://libimobiledevice.org/
+L:LGPL-2.1-or-later
+o:libimobiledevice
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559490508
+c:f55f02836c1c99a815f30191557049b93b808167
+i:docs libimobiledevice=1.2.0-r3
 
 C:Q1QkgcTaxu3REfPMaUcjY5E7vzeVA=
 P:py-ruffus
@@ -63669,22 +63931,6 @@ t:1557648167
 c:58fdbcde11d63e8b63945f40b28fab5b65409681
 i:docs xfce4-notifyd=0.4.4-r0
 
-C:Q1YySUIhzdXWComfPVxR602AfGgPU=
-P:libplist-util
-V:2.0.0-r1
-A:ppc64le
-S:4864
-I:28672
-T:Util for libplist
-U:http://libimobiledevice.org/
-L:GPL-2.0 LGPL-2.1
-o:libplist
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558010009
-c:a705e59b07b8d3c4816be2e3609187c072b7836e
-D:so:libc.musl-ppc64le.so.1 so:libplist.so.3
-p:cmd:plistutil
-
 C:Q1F53OdbBKGrlvnzAMe7o77N1ogmw=
 P:outils-rdate
 V:0.8-r1
@@ -64422,20 +64668,6 @@ c:7c5193a0383824b7ffc0469bf31adea698fce685
 D:python3 libmagic
 i:py-magic=0.4.15-r1 python3
 
-C:Q1pcvZoRHzy2LBffwoQFU1smIC6lU=
-P:gvfs-dev
-V:1.36.2-r1
-A:ppc64le
-S:2954
-I:28672
-T:Backends for the gio framework in GLib (development files)
-U:http://ftp.gnome.org/pub/gnome/sources/gvfs/1.36/
-L:GPL
-o:gvfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557407828
-c:fdf7cf087d639c589077c5a51f01cc6f25ca0fc6
-
 C:Q1uUQzrE8zdMIjpdajqtTbRaniJnU=
 P:orage-lang
 V:4.12.1-r2
@@ -64622,21 +64854,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557482841
 c:c3e685320315cf6d88cccaef50b6f669e6483bde
 i:docs libselinux=2.8-r0
-
-C:Q1bonhcv00SoRhWECAMhsjp5XyBgU=
-P:z3-dev
-V:4.8.4-r1
-A:ppc64le
-S:81075
-I:528384
-T:Theorem prover from Microsoft Research (development files)
-U:https://github.com/Z3Prover/z3
-L:MIT
-o:z3
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1557433767
-c:d4e90670f3ee33728c05efc46333fccb3c02fd47
-D:z3=4.8.4-r1
 
 C:Q1HwtPPXb7PRXfiU81Ul7/r8L/Ovs=
 P:munin
@@ -64972,21 +65189,6 @@ t:1557408899
 c:b1274f164d3742fc5a47f4ab85a91baef72338ec
 i:docs perl-text-glob=0.11-r1
 
-C:Q1c5WsoYRmpEL/iIPhTQbGVnxJNKQ=
-P:uhttpmock-doc
-V:0.5.1-r1
-A:ppc64le
-S:28042
-I:294912
-T:HTTP web service mocking library (documentation)
-U:http://gitorious.org/uhttpmock/
-L:LGPL-2.0
-o:uhttpmock
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557673753
-c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
-i:docs uhttpmock=0.5.1-r1
-
 C:Q1I6URhnFljM4kLhHSTZAfP5li+aA=
 P:stow-doc
 V:2.2.2-r0
@@ -65049,6 +65251,22 @@ t:1557643190
 c:db7e7d2aed1bb6b47f131c820e6d95776612736c
 D:so:libc.musl-ppc64le.so.1 so:libmbedcrypto.so.3 so:libmbedtls.so.12 so:libmbedx509.so.0 so:libneko.so.2 so:libpcre.so.1 so:libsqlite3.so.0 so:libz.so.1
 p:cmd:neko cmd:nekoc cmd:nekoml cmd:nekotools
+
+C:Q1OMJ1/52ulfkzt9SKcVYFlDbf/nw=
+P:libusbmuxd
+V:1.0.10-r1
+A:ppc64le
+S:21402
+I:81920
+T:USB Multiplex Daemon
+U:https://marcansoft.com/blog/iphonelinux/usbmuxd/
+L:LGPL-2.1-or-later
+o:libusbmuxd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559490458
+c:61b989984e0f4b9487f5e5a4dc05117a3cdd1f9f
+D:libplist libusb so:libc.musl-ppc64le.so.1 so:libplist.so.3
+p:so:libusbmuxd.so.4=4.0.0 cmd:iproxy
 
 C:Q1XdhHi4FlmQnXYRm/0GwyD098JW0=
 P:libreoffice-impress
