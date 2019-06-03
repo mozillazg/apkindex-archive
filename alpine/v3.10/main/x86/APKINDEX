@@ -4963,22 +4963,6 @@ t:1557067659
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86.so.1 so:libpam.so.0
 
-C:Q14wWdYTtBNjXfh0L7zbkjNg18dkg=
-P:dhclient
-V:4.4.1-r3
-A:x86
-S:1166456
-I:2891776
-T:ISC dhcp client
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080429
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-D:coreutils iproute2 run-parts so:libc.musl-x86.so.1
-p:cmd:dhclient cmd:dhclient-script
-
 C:Q1hhHooY70DDBrpjjwDmvvLgI9hJU=
 P:libdnet-dev
 V:1.12-r7
@@ -8694,23 +8678,6 @@ c:b35536c00d1f39c0ac216b82af60a7b363093b47
 D:so:libc.musl-x86.so.1 so:libffi.so.6
 p:so:libwayland-client.so.0=0.3.0
 
-C:Q1e0k4uo4fr5quwgBWcl7mWstZFFw=
-P:dhcp-server-ldap
-V:4.4.1-r3
-A:x86
-S:5143689
-I:11636736
-T:ISC dhcpd server with LDAP support
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080430
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-k:100
-D:!dhcp-server-vanilla dhcp so:libc.musl-x86.so.1 so:libkrb5.so.3 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:dhcp-server cmd:dhcpd
-
 C:Q1fFcDfX+9O85l4JYpF709w9b/fB0=
 P:xcb-util
 V:0.4.0-r1
@@ -9233,6 +9200,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557175912
 c:a30fa52b6ec5fb5457a2bdc8eee3475fc2732b6b
 i:docs cabextract=1.9.1-r0
+
+C:Q1+/I5tpr9Vv5zkDRMOnwSyDqOZ9o=
+P:dhcp-openrc
+V:4.4.1-r4
+A:x86
+S:3237
+I:24576
+T:ISC Dynamic Host Configuration Protocol (DHCP) (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556156
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+i:openrc dhcp=4.4.1-r4
 
 C:Q1bYQS3NrogBkqSUDujj/almy6F8k=
 P:atf-doc
@@ -16877,20 +16859,6 @@ t:1556948608
 c:6ce172033ea152971ef00ce0ff29ff6fb533db25
 D:python2
 
-C:Q19fsQtM3gsCUdGmuOP7A2c9YZY2A=
-P:dhcp-dev
-V:4.4.1-r3
-A:x86
-S:2317130
-I:3604480
-T:ISC Dynamic Host Configuration Protocol (DHCP) (development files)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080427
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-
 C:Q1trZvRD9roqT62hHRBI776sJll1s=
 P:binutils-dev
 V:2.31.1-r2
@@ -17964,6 +17932,24 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558434984
 c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
 D:collectd so:libc.musl-x86.so.1 so:libyajl.so.2
+
+C:Q1OSg2/t3aDfZCk6q6UMQIR8kxHPg=
+P:dhcp-server-vanilla
+V:4.4.1-r4
+A:x86
+S:1284241
+I:3137536
+T:ISC dhcpd server
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556157
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+k:200
+D:!dhcp-server-ldap dhcp so:libc.musl-x86.so.1
+p:dhcp-server cmd:dhcpd
+i:dhcp=4.4.1-r4
 
 C:Q1jX0vJE69tR7HOJ91+8idMI2upjE=
 P:faac-doc
@@ -21081,6 +21067,23 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1558977774
 c:40437ec074e6bde2cf18c969099795b0079141dc
 D:so:libc.musl-x86.so.1 so:libperl.so
+
+C:Q1o5OjqJQ93Rud5wkZSKv4fl1ttIY=
+P:dhcp-server-ldap
+V:4.4.1-r4
+A:x86
+S:5143471
+I:11636736
+T:ISC dhcpd server with LDAP support
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556158
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+k:100
+D:!dhcp-server-vanilla dhcp so:libc.musl-x86.so.1 so:libkrb5.so.3 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:dhcp-server cmd:dhcpd
 
 C:Q1ZGkzeZcUnPpyyZQHNcVJKmL44co=
 P:py-mako
@@ -29630,21 +29633,6 @@ t:1556990115
 c:a56f34a2f923eca0267ce95752c06f38130ec64c
 i:docs libsexy=0.1.11-r8
 
-C:Q1Jrs5wkaX64eB/UlewiqTCz2J2jo=
-P:dhcp-doc
-V:4.4.1-r3
-A:x86
-S:132952
-I:184320
-T:ISC Dynamic Host Configuration Protocol (DHCP) (documentation)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080427
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-i:docs dhcp=4.4.1-r3
-
 C:Q1l9t1WgbuvM7Rj1Ru2oHmNaRrpaQ=
 P:udns-dev
 V:0.4-r1
@@ -32171,21 +32159,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557579429
 c:7457cc43972e1efa70816f29a5410c98343617cc
 D:perl so:libc.musl-x86.so.1
-
-C:Q1KWR6cmvUSaguc30ohDdS/CagdbQ=
-P:dhcp-server
-V:4.4.1-r3
-A:x86
-S:1202
-I:4096
-T:ISC dhcpd server (virtual)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080430
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-D:dhcp-server-vanilla
 
 C:Q1EN2UuHiZfOhNm+rJ3yu9XYFFMJQ=
 P:re2c
@@ -43539,6 +43512,20 @@ t:1557591106
 c:3c086e1b4b07d77e88b3da369b22a0f5305bb503
 D:nginx so:libc.musl-x86.so.1
 
+C:Q1B3Hyka6GLssfbaauwZFhw8795ew=
+P:dhcp-dev
+V:4.4.1-r4
+A:x86
+S:2317021
+I:3604480
+T:ISC Dynamic Host Configuration Protocol (DHCP) (development files)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556155
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+
 C:Q1GNjq1g6hNY5HV+2FmpDjR72Lqmw=
 P:libtirpc-dev
 V:1.1.4-r0
@@ -44135,6 +44122,22 @@ t:1556719440
 c:bd9ae94668cd102f854b1679c5cca616835dc9e6
 D:so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
 i:py-markupsafe=1.1.1-r1 python2
+
+C:Q1jWHONpKM7/OuTrrhmd6fFM00TJA=
+P:dhcp
+V:4.4.1-r4
+A:x86
+S:1105494
+I:2748416
+T:ISC Dynamic Host Configuration Protocol (DHCP)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556158
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+D:/bin/sh so:libc.musl-x86.so.1
+p:cmd:omshell
 
 C:Q1T8/7NauGcRPSsHBiWLDIT2v7kjI=
 P:espeak
@@ -46178,6 +46181,22 @@ t:1557147405
 c:7c6369df8c7fc0e4ba73bf3571296c2dfb684ffd
 D:so:libLLVM-7.so so:libc.musl-x86.so.1 so:libclang.so.7 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxml2.so.2
 p:cmd:c-index-test cmd:clang cmd:clang++ cmd:clang-7 cmd:clang-check cmd:clang-cl cmd:clang-cpp cmd:clang-format cmd:clang-func-mapping cmd:clang-import-test cmd:clang-offload-bundler cmd:clang-refactor cmd:clang-rename cmd:diagtool cmd:git-clang-format cmd:hmaptool
+
+C:Q1D4bAgo3MLke7IKMO6DbOuhBvFfI=
+P:dhclient
+V:4.4.1-r4
+A:x86
+S:1166426
+I:2891776
+T:ISC dhcp client
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556157
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+D:coreutils iproute2 run-parts so:libc.musl-x86.so.1
+p:cmd:dhclient cmd:dhclient-script
 
 C:Q1gkZb84I8MQG4tFOOons8sVZLAu8=
 P:hiredis-dev
@@ -48863,6 +48882,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557158185
 c:1f2c339bdf9888b2aec001df83c8d0e12c0a4113
 i:docs rtmpdump=2.4_git20160909-r6
+
+C:Q1vvqWDji5GVB3ihnvEk/CxXWzzKI=
+P:dhcrelay-openrc
+V:4.4.1-r4
+A:x86
+S:2179
+I:24576
+T:ISC Dynamic Host Configuration Protocol (DHCP) (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556157
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+i:openrc dhcrelay=4.4.1-r4
 
 C:Q1MMAkw3P49aOCX9AEjj8cMuRtHak=
 P:cogl
@@ -53994,22 +54028,6 @@ t:1557058537
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libmng=2.0.3-r1
 
-C:Q1PG03bjlnM4CuAzTM8Phe3Jxaw1E=
-P:dhcp
-V:4.4.1-r3
-A:x86
-S:1105513
-I:2748416
-T:ISC Dynamic Host Configuration Protocol (DHCP)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080430
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-D:dhcp-server /bin/sh so:libc.musl-x86.so.1
-p:cmd:omshell
-
 C:Q1gKaM6hxUItukuzUkdwjMKcwwqHI=
 P:iaxmodem
 V:1.3.0-r0
@@ -55953,6 +55971,22 @@ t:1557056918
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core gross
 
+C:Q1vKYdGOpnqmUiKmvJI7vTWXPvFUE=
+P:dhcrelay
+V:4.4.1-r4
+A:x86
+S:1105349
+I:2727936
+T:ISC dhcp relay server
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556157
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+D:so:libc.musl-x86.so.1
+p:cmd:dhcrelay
+
 C:Q1rciXkK259SmGx4T6QNZ3KHQ3Rl4=
 P:rsyslog-udpspoof
 V:8.1904.0-r0
@@ -56041,20 +56075,6 @@ o:py-curl
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557145984
 c:ad018ae70f0167b0b1a86151ebbfd2b5d9a31675
-
-C:Q18vn/k3KAOkhmvXJG6xpR6DQp3RA=
-P:dhcp-dbg
-V:4.4.1-r3
-A:x86
-S:13445228
-I:30011392
-T:ISC Dynamic Host Configuration Protocol (DHCP) (debug symbols)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080428
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
 
 C:Q11P2WvrLjjrPl3ivjqr4ckLFxT9Q=
 P:openldap-overlay-dds
@@ -60395,23 +60415,6 @@ m:A. Wilcox <awilfox@adelielinux.org>
 t:1556880426
 c:feea2abb07fcad826355c37b47efc7b68153f916
 i:docs sharutils=4.15.2-r0
-
-C:Q1hJJKhf5xWxLEbfGDaOXbVOo03r4=
-P:dhcp-server-vanilla
-V:4.4.1-r3
-A:x86
-S:1284266
-I:3137536
-T:ISC dhcpd server
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080429
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-k:200
-D:!dhcp-server-ldap dhcp so:libc.musl-x86.so.1
-p:dhcp-server cmd:dhcpd
 
 C:Q1ZlFd++4mosW5VwDGcHTx2JTssMw=
 P:fish
@@ -71459,21 +71462,6 @@ o:py-tornado
 t:1557220560
 c:9200e0034774fe39cb3438b99ca29d1de16de25e
 
-C:Q19ZpvOGHr6MeUL57yOpsbqMD6jAU=
-P:dhcp-openrc
-V:4.4.1-r3
-A:x86
-S:3240
-I:24576
-T:ISC Dynamic Host Configuration Protocol (DHCP) (OpenRC init scripts)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080428
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-i:openrc dhcp=4.4.1-r3
-
 C:Q1hqHl35WFsmdmVUw1K/nBJTlEQNE=
 P:xf86-video-i128
 V:1.4.0-r0
@@ -72141,6 +72129,21 @@ t:1557151007
 c:e3f530b87462b5aa7c95bf2444f0549ab11944f3
 D:pc:sdl2>=2.0.8 pkgconfig sdl2_image=2.0.4-r0
 p:pc:SDL2_image=2.0.4
+
+C:Q1eLQV2b4AawMmZPHJ0UM9iz8VOlg=
+P:dhcp-doc
+V:4.4.1-r4
+A:x86
+S:132891
+I:184320
+T:ISC Dynamic Host Configuration Protocol (DHCP) (documentation)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556155
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
+i:docs dhcp=4.4.1-r4
 
 C:Q1Skekul0SkjVHtlucc60fA1vLggM=
 P:halberd
@@ -74168,22 +74171,6 @@ t:1557261464
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-x86.so.1 so:libnetsnmp.so.35
 p:rsyslog-omsnmp=8.1904.0-r0
-
-C:Q1CYfDsmamig0LlqHKnC2WfZXqkWw=
-P:dhcrelay
-V:4.4.1-r3
-A:x86
-S:1105394
-I:2727936
-T:ISC dhcp relay server
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080429
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-D:so:libc.musl-x86.so.1
-p:cmd:dhcrelay
 
 C:Q1vd221vwcykC1usT/YOZInx1FGH8=
 P:tiff-tools
@@ -77999,21 +77986,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557149264
 c:eab5e0278879bd898bcd01840b63318263745003
 D:py3-unidecode py3-unidecode=1.0.23-r1
-
-C:Q1yZYqpkH5zyHoVGmxzEjst9IWWyc=
-P:dhcrelay-openrc
-V:4.4.1-r3
-A:x86
-S:2188
-I:24576
-T:ISC Dynamic Host Configuration Protocol (DHCP) (OpenRC init scripts)
-U:https://www.isc.org/
-L:MPL-2.0
-o:dhcp
-m:tcely <dhcp+aports@tcely.33mail.com>
-t:1557080429
-c:ebfe96355b4d0b48d126a7382b62089faa96a210
-i:openrc dhcrelay=4.4.1-r3
 
 C:Q1Co8l3KVlXJvNFJmYicEXFc8fRL0=
 P:json-c
@@ -82334,6 +82306,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556914853
 c:1a1040a1832017427efbef87995e6d0bb216b6da
 i:docs perl-module-build-tiny=0.039-r0
+
+C:Q1zwg7VvIw7eg+YOBe+Muif8L6jq4=
+P:dhcp-dbg
+V:4.4.1-r4
+A:x86
+S:13444225
+I:30011392
+T:ISC Dynamic Host Configuration Protocol (DHCP) (debug symbols)
+U:https://www.isc.org/
+L:MPL-2.0
+o:dhcp
+m:tcely <dhcp+aports@tcely.33mail.com>
+t:1559556156
+c:7acad73d439f9ef183ee84326a3cf422c42ec7eb
 
 C:Q1ErDiZ3BvbHhr28ZQm8KN4co9IRc=
 P:py3-purl
