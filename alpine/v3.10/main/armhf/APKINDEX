@@ -9866,22 +9866,6 @@ t:1557141461
 c:99ec9e1c84e338629cf1b27b0fdc808bde4d8564
 i:docs iperf3=3.6-r0
 
-C:Q1rO0PYtFdEeGkfNPJdHMBNqVAJVo=
-P:heimdal
-V:7.5.0-r3
-A:armhf
-S:284125
-I:856064
-T:An implementation of Kerberos 5
-U:http://www.h5l.org/
-L:BSD
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556950157
-c:2c412c422820efc7b4c29f67cac374cee7a20120
-D:krb5-conf so:libasn1.so.8 so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libgssapi.so.3 so:libhcrypto.so.4 so:libhdb.so.9 so:libheimbase.so.1 so:libheimntlm.so.0 so:libhx509.so.5 so:libkadm5clnt.so.7 so:libkadm5srv.so.8 so:libkafs.so.0 so:libkdc.so.2 so:libkrb5.so.26 so:libotp.so.0 so:libreadline.so.8 so:libroken.so.18 so:libsl.so.0 so:libwind.so.0
-p:cmd:afslog cmd:bsearch cmd:gsstool cmd:heimdal cmd:heimtools cmd:hprop cmd:hpropd cmd:hxtool cmd:idn-lookup cmd:iprop-log cmd:ipropd-master cmd:ipropd-slave cmd:kadmin cmd:kadmind cmd:kcm cmd:kdc cmd:kdestroy cmd:kf cmd:kfd cmd:kgetcred cmd:kimpersonate cmd:kinit cmd:klist cmd:kpasswd cmd:kpasswdd cmd:kstash cmd:kswitch cmd:ktutil cmd:otp cmd:otpprint cmd:pagsh cmd:su
-
 C:Q1HR6jb76hsxstTu/Fb6oaDA73R0A=
 P:automake
 V:1.16.1-r0
@@ -29909,21 +29893,6 @@ t:1557172215
 c:eab5640b9d78e35f17c381353535a1ea1bfaf65d
 i:docs postfix=3.4.5-r0
 
-C:Q1Nj/bG2jZoBuuM30tthNHCMVYFuk=
-P:heimdal-openrc
-V:7.5.0-r3
-A:armhf
-S:2012
-I:24576
-T:An implementation of Kerberos 5 (OpenRC init scripts)
-U:http://www.h5l.org/
-L:BSD
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556950156
-c:2c412c422820efc7b4c29f67cac374cee7a20120
-i:openrc heimdal=7.5.0-r3
-
 C:Q1FgY85v+2EcQTpK2y6oi3Uhklyfk=
 P:asterisk-alsa
 V:16.3.0-r0
@@ -33505,6 +33474,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557237810
 c:ab5d6426ab2a280dc8509d5fea2e05e1f22390a7
 i:docs librevenge=0.0.4-r2
+
+C:Q16/l5APwqXN5cv0/MJI+zfwKoS+w=
+P:heimdal-libs
+V:7.5.0-r4
+A:armhf
+S:998387
+I:2461696
+T:Heimdal libraries
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1559658213
+c:aa2d24fab1e16e497512004aa40a11c032fcab73
+D:krb5-conf so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libdb-5.3.so so:libreadline.so.8 so:libsqlite3.so.0
+p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libotp.so.0=0.1.5 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
 
 C:Q1rBO849yWXg8U6nwYAjiVUGBCOy8=
 P:acf-openssl
@@ -47682,6 +47667,22 @@ c:a3bac7d93644ed50c16817ef65a1dc8206af7409
 D:python2
 i:py-urllib3=1.25.3-r0 python2
 
+C:Q1lLpiRq9u3op7SJOmZPG5yzZfDrE=
+P:heimdal-dev
+V:7.5.0-r4
+A:armhf
+S:1433698
+I:5169152
+T:An implementation of Kerberos 5 (development files)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1559658213
+c:aa2d24fab1e16e497512004aa40a11c032fcab73
+D:openssl-dev e2fsprogs-dev db-dev heimdal-libs=7.5.0-r4 pkgconfig
+p:pc:heimdal-gssapi=7.5.0 pc:heimdal-kadm-client=7.5.0 pc:heimdal-kadm-server=7.5.0 pc:heimdal-krb5=7.5.0 pc:kadm-client=7.5.0 pc:kadm-server=7.5.0 pc:kafs=7.5.0 pc:krb5-gssapi=7.5.0 pc:krb5=7.5.0 cmd:krb5-config
+
 C:Q1l4o5Y2IG4R2ciQMjEg0NkV7wFSI=
 P:py-libbytesize
 V:2.0-r1
@@ -51619,6 +51620,22 @@ c:0c33d2f1956fdd0c3045b70d9351b8b7f07ddcc5
 D:so:libasyncns.so.0 so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libidn.so.12 so:libintl.so.8
 p:so:libloudmouth-1.so.0=0.1.0
 
+C:Q1sDKAdfsAZk4TLHDw4rENcIqbS9s=
+P:heimdal
+V:7.5.0-r4
+A:armhf
+S:284178
+I:856064
+T:An implementation of Kerberos 5
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1559658213
+c:aa2d24fab1e16e497512004aa40a11c032fcab73
+D:krb5-conf so:libasn1.so.8 so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libgssapi.so.3 so:libhcrypto.so.4 so:libhdb.so.9 so:libheimbase.so.1 so:libheimntlm.so.0 so:libhx509.so.5 so:libkadm5clnt.so.7 so:libkadm5srv.so.8 so:libkafs.so.0 so:libkdc.so.2 so:libkrb5.so.26 so:libotp.so.0 so:libreadline.so.8 so:libroken.so.18 so:libsl.so.0 so:libwind.so.0
+p:cmd:afslog cmd:bsearch cmd:gsstool cmd:heimdal cmd:heimtools cmd:hprop cmd:hpropd cmd:hxtool cmd:idn-lookup cmd:iprop-log cmd:ipropd-master cmd:ipropd-slave cmd:kadmin cmd:kadmind cmd:kcm cmd:kdc cmd:kdestroy cmd:kf cmd:kfd cmd:kgetcred cmd:kimpersonate cmd:kinit cmd:klist cmd:kpasswd cmd:kpasswdd cmd:kstash cmd:kswitch cmd:ktutil cmd:otp cmd:otpprint cmd:pagsh cmd:su
+
 C:Q1ka14Eys08KJkCYghmpE3mpYhRZo=
 P:byacc
 V:20180609-r0
@@ -53932,21 +53949,6 @@ c:5616885c5e67ed09846062b0ba064473615fc366
 D:so:libc.musl-armhf.so.1
 p:so:libmupdf.so.0=0 so:libmupdfthird.so.0=0
 
-C:Q10m6MYFsbgCTcLanw/lDUVzenKPA=
-P:heimdal-doc
-V:7.5.0-r3
-A:armhf
-S:475297
-I:3850240
-T:An implementation of Kerberos 5 (documentation)
-U:http://www.h5l.org/
-L:BSD
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556950154
-c:2c412c422820efc7b4c29f67cac374cee7a20120
-i:docs heimdal=7.5.0-r3
-
 C:Q1Iz0yHy/GT/ZsLSgiIsOCfLreB0w=
 P:tinyproxy-openrc
 V:1.10.0-r2
@@ -55957,6 +55959,21 @@ o:xen
 t:1558938032
 c:4cafe4f7ac5e95424824e1ef5835b409f1fe48e7
 i:docs xen=4.12.0-r2
+
+C:Q15o98KmVkT95bvwVWBCDt0HEp2lY=
+P:heimdal-doc
+V:7.5.0-r4
+A:armhf
+S:475953
+I:3850240
+T:An implementation of Kerberos 5 (documentation)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1559658211
+c:aa2d24fab1e16e497512004aa40a11c032fcab73
+i:docs heimdal=7.5.0-r4
 
 C:Q1J5YNFzmu6yhWO/bwTx4QvzuUfx8=
 P:perl-module-util
@@ -71609,22 +71626,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557131385
 c:8858727755d8ef124e06706a10416da12432c3ef
 
-C:Q1suMpPDFO1zHWqfJlAEBn5Bk8WGI=
-P:heimdal-dev
-V:7.5.0-r3
-A:armhf
-S:1433442
-I:5169152
-T:An implementation of Kerberos 5 (development files)
-U:http://www.h5l.org/
-L:BSD
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556950155
-c:2c412c422820efc7b4c29f67cac374cee7a20120
-D:openssl-dev e2fsprogs-dev db-dev heimdal-libs=7.5.0-r3 pkgconfig
-p:pc:heimdal-gssapi=7.5.0 pc:heimdal-kadm-client=7.5.0 pc:heimdal-kadm-server=7.5.0 pc:heimdal-krb5=7.5.0 pc:kadm-client=7.5.0 pc:kadm-server=7.5.0 pc:kafs=7.5.0 pc:krb5-gssapi=7.5.0 pc:krb5=7.5.0 cmd:krb5-config
-
 C:Q15KFRrUF+uKT2UuKXq5reZ2g9B0I=
 P:openldap-dev
 V:2.4.47-r2
@@ -71870,6 +71871,21 @@ t:1559130728
 c:fa40f1448539a367f6d13b48c64b79d64d16105c
 D:so:libc.musl-armhf.so.1
 p:so:libcom_err.so.2=2.1
+
+C:Q1mvQnhRZWtXL5pOXoAySGf2ZUO5Y=
+P:heimdal-openrc
+V:7.5.0-r4
+A:armhf
+S:2003
+I:24576
+T:An implementation of Kerberos 5 (OpenRC init scripts)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1559658213
+c:aa2d24fab1e16e497512004aa40a11c032fcab73
+i:openrc heimdal=7.5.0-r4
 
 C:Q1uzOvoyLOr7fa4g57FwZSpPQd9bA=
 P:libmikmod-dev
@@ -80023,22 +80039,6 @@ t:1558435597
 c:47edd290d1ad530be52e98617325c29417d47cf1
 D:samba-server=4.10.3-r0 samba-client=4.10.3-r0 samba-common-tools=4.10.3-r0 so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcliauth-samba4.so so:libclidns-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc.so.0 so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libhcrypto-samba4.so.5 so:libhx509-samba4.so.5 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libnetif-samba4.so so:libnpa-tstream-samba4.so so:libpam.so.0 so:libpopt.so.0 so:libpython3.7m.so.1.0 so:libreplace-samba4.so so:libroken-samba4.so.19 so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-python.cpython-37m-arm-linux-gnueabihf-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsmb-transport-samba4.so so:libsmbclient-raw-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libwbclient.so.0
 p:so:libHDB-SAMBA4-samba4.so=0 so:libLIBWBCLIENT-OLD-samba4.so=0 so:libauth-unix-token-samba4.so=0 so:libauth4-samba4.so=0 so:libcluster-samba4.so=0 so:libdb-glue-samba4.so=0 so:libdcerpc-samr.so.0=0.0.1 so:libdcerpc-server.so.0=0.0.1 so:libdnsserver-common-samba4.so=0 so:libdsdb-module-samba4.so=0 so:libhdb-samba4.so.11=11.0.2 so:libkdc-samba4.so.2=2.0.0 so:libpac-samba4.so=0 so:libposix-eadb-samba4.so=0 so:libprocess-model-samba4.so=0 so:libsamba-policy.cpython-37m-arm-linux-gnueabihf.so.0=0.0.1 so:libscavenge-dns-records-samba4.so=0 so:libservice-samba4.so=0 so:libshares-samba4.so=0
-
-C:Q1HN6eGlCzTWOKHNqyIifu+JC+j0c=
-P:heimdal-libs
-V:7.5.0-r3
-A:armhf
-S:998306
-I:2461696
-T:Heimdal libraries
-U:http://www.h5l.org/
-L:BSD
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556950156
-c:2c412c422820efc7b4c29f67cac374cee7a20120
-D:krb5-conf so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libdb-5.3.so so:libreadline.so.8 so:libsqlite3.so.0
-p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libotp.so.0=0.1.5 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
 
 C:Q1XOqybjFKyzlPrrrNM6xaHa+EaIo=
 P:xf86-video-modesetting
