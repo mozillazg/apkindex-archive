@@ -53738,7 +53738,8 @@
       "origin": "cups-filters",
       "versions": {
         "1.22.5-r1": 1558350081,
-        "1.22.5-r2": 1558987644
+        "1.22.5-r2": 1558987644,
+        "1.24.0-r0": 1559644146
       },
       "dependencies": [
         "poppler-utils",
@@ -53812,15 +53813,16 @@
       "origin": "cups-filters",
       "versions": {
         "1.22.5-r1": 1558350080,
-        "1.22.5-r2": 1558987643
+        "1.22.5-r2": 1558987643,
+        "1.24.0-r0": 1559644145
       },
       "dependencies": [
-        "cups-filters-libs=1.22.5-r2",
+        "cups-filters-libs=1.24.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcupsfilters=1.22.5",
-        "pc:libfontembed=1.22.5"
+        "pc:libcupsfilters=1.24.0",
+        "pc:libfontembed=1.24.0"
       ]
     },
     "qpdf-doc": {
@@ -53833,7 +53835,8 @@
       "origin": "cups-filters",
       "versions": {
         "1.22.5-r1": 1558350080,
-        "1.22.5-r2": 1558987644
+        "1.22.5-r2": 1558987644,
+        "1.24.0-r0": 1559644146
       },
       "dependencies": [
         "poppler-utils",
@@ -53856,7 +53859,8 @@
       "origin": "cups-filters",
       "versions": {
         "1.22.5-r1": 1558350080,
-        "1.22.5-r2": 1558987644
+        "1.22.5-r2": 1558987644,
+        "1.24.0-r0": 1559644145
       }
     },
     "qpdf-fix-qdf": {
@@ -55506,6 +55510,96 @@
       ],
       "provides": [
         "pc:mpv=1.101.0"
+      ]
+    },
+    "flatpak": {
+      "origin": "flatpak",
+      "versions": {
+        "1.4.0-r1": 1559644018
+      },
+      "dependencies": [
+        "bubblewrap",
+        "/bin/sh",
+        "so:libXau.so.6",
+        "so:libappstream-glib.so.8",
+        "so:libarchive.so.13",
+        "so:libc.musl-aarch64.so.1",
+        "so:libdconf.so.1",
+        "so:libfuse.so.2",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libintl.so.8",
+        "so:libjson-glib-1.0.so.0",
+        "so:libostree-1.so.1",
+        "so:libpolkit-agent-1.so.0",
+        "so:libpolkit-gobject-1.so.0",
+        "so:libseccomp.so.2",
+        "so:libsoup-2.4.so.1",
+        "so:libxml2.so.2"
+      ],
+      "provides": [
+        "so:libflatpak.so.0=0.10400.0",
+        "cmd:flatpak",
+        "cmd:flatpak-bisect",
+        "cmd:flatpak-coredumpctl"
+      ]
+    },
+    "flatpak-builder-doc": {
+      "origin": "flatpak-builder",
+      "versions": {
+        "1.0.7-r0": 1559644051
+      }
+    },
+    "flatpak-dev": {
+      "origin": "flatpak",
+      "versions": {
+        "1.4.0-r1": 1559644018
+      },
+      "dependencies": [
+        "flatpak=1.4.0-r1",
+        "pc:gio-2.0",
+        "pc:gio-unix-2.0",
+        "pc:glib-2.0",
+        "pc:ostree-1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:flatpak=1.4.0"
+      ]
+    },
+    "flatpak-lang": {
+      "origin": "flatpak",
+      "versions": {
+        "1.4.0-r1": 1559644018
+      },
+      "dependencies": [
+        "bubblewrap"
+      ]
+    },
+    "flatpak-builder": {
+      "origin": "flatpak-builder",
+      "versions": {
+        "1.0.7-r0": 1559644051
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libcurl.so.4",
+        "so:libelf.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libintl.so.8",
+        "so:libjson-glib-1.0.so.0",
+        "so:libostree-1.so.1",
+        "so:libsoup-2.4.so.1",
+        "so:libxml2.so.2",
+        "so:libyaml-0.so.2"
+      ],
+      "provides": [
+        "cmd:flatpak-builder"
       ]
     }
   },
@@ -60866,6 +60960,10 @@
       "libimobiledevice.so.6": {
         "package": "libimobiledevice",
         "version": "6.0.0"
+      },
+      "libflatpak.so.0": {
+        "package": "flatpak",
+        "version": "0.10400.0"
       }
     },
     "package": {
