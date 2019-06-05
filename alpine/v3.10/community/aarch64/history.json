@@ -1239,10 +1239,12 @@
     "libgweather-lang": {
       "origin": "libgweather",
       "versions": {
-        "3.28.2-r0": 1557861891
+        "3.28.2-r0": 1557861891,
+        "3.32.1-r0": 1559761958
       },
       "dependencies": [
-        "tzdata"
+        "tzdata",
+        "gsettings-desktop-schemas"
       ]
     },
     "postgresql-plpgsql_check": {
@@ -4219,7 +4221,8 @@
     "alsa-plugins-jack": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610828
+        "1.1.8-r1": 1557610828,
+        "1.1.9-r0": 1559763397
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -5710,11 +5713,13 @@
     "colord": {
       "origin": "colord",
       "versions": {
-        "1.4.4-r2": 1557695932
+        "1.4.4-r2": 1557695932,
+        "1.4.4-r3": 1559762188
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
+        "so:libdbus-1.so.3",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
@@ -5724,6 +5729,7 @@
         "so:libintl.so.8",
         "so:liblcms2.so.2",
         "so:libpolkit-gobject-1.so.0",
+        "so:libsane.so.1",
         "so:libsqlite3.so.0",
         "so:libudev.so.1"
       ],
@@ -7612,7 +7618,8 @@
     "alsa-plugins-lavrate": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610827
+        "1.1.8-r1": 1557610827,
+        "1.1.9-r0": 1559763397
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -8391,7 +8398,8 @@
     "pulseaudio-bluez": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610786
+        "12.2-r2": 1557610786,
+        "12.2-r3": 1559762424
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -11332,7 +11340,8 @@
     "pulseaudio-bash-completion": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610788
+        "12.2-r2": 1557610788,
+        "12.2-r3": 1559762425
       }
     },
     "gnome-icon-theme": {
@@ -14242,7 +14251,8 @@
     "libgweather-doc": {
       "origin": "libgweather",
       "versions": {
-        "3.28.2-r0": 1557861890
+        "3.28.2-r0": 1557861890,
+        "3.32.1-r0": 1559761958
       }
     },
     "vlc-plugins-control": {
@@ -19423,7 +19433,8 @@
     "alsa-plugins-a52": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610828
+        "1.1.8-r1": 1557610828,
+        "1.1.9-r0": 1559763397
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -19913,7 +19924,8 @@
     "pulseaudio": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610789
+        "12.2-r2": 1557610789,
+        "12.2-r3": 1559762426
       },
       "dependencies": [
         "/bin/sh",
@@ -20653,13 +20665,19 @@
     "pulseaudio-dev": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610785
+        "12.2-r2": 1557610785,
+        "12.2-r3": 1559762423
       },
       "dependencies": [
-        "libpulse-mainloop-glib=12.2-r2",
-        "libpulse=12.2-r2",
+        "libpulse-mainloop-glib=12.2-r3",
+        "libpulse=12.2-r3",
         "pc:glib-2.0",
         "pkgconfig"
+      ],
+      "provides": [
+        "pc:libpulse-mainloop-glib=12.2",
+        "pc:libpulse-simple=12.2",
+        "pc:libpulse=12.2"
       ]
     },
     "perl-getopt-argvfile-doc": {
@@ -21155,7 +21173,8 @@
     "libpulse-mainloop-glib": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610786
+        "12.2-r2": 1557610786,
+        "12.2-r3": 1559762424
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -22150,7 +22169,8 @@
     "pulseaudio-zsh-completion": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610788
+        "12.2-r2": 1557610788,
+        "12.2-r3": 1559762426
       }
     },
     "libowfat": {
@@ -25424,10 +25444,11 @@
     "glade-dev": {
       "origin": "glade",
       "versions": {
-        "3.22.1-r0": 1557332923
+        "3.22.1-r0": 1557332923,
+        "3.22.1-r1": 1559761864
       },
       "dependencies": [
-        "glade=3.22.1-r0",
+        "glade=3.22.1-r1",
         "pc:gtk+-3.0>=2.91.2",
         "pc:libxml-2.0>=2.4.0",
         "pkgconfig"
@@ -25515,10 +25536,12 @@
     "libgweather": {
       "origin": "libgweather",
       "versions": {
-        "3.28.2-r0": 1557861892
+        "3.28.2-r0": 1557861892,
+        "3.32.1-r0": 1559761959
       },
       "dependencies": [
         "tzdata",
+        "gsettings-desktop-schemas",
         "so:libc.musl-aarch64.so.1",
         "so:libgdk_pixbuf-2.0.so.0",
         "so:libgeocode-glib.so.0",
@@ -28476,7 +28499,8 @@
     "alsa-plugins-pulse": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610827
+        "1.1.8-r1": 1557610827,
+        "1.1.9-r0": 1559763397
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -30906,7 +30930,8 @@
     "glade-doc": {
       "origin": "glade",
       "versions": {
-        "3.22.1-r0": 1557332924
+        "3.22.1-r0": 1557332924,
+        "3.22.1-r1": 1559761864
       }
     },
     "tvheadend-satellites-xml": {
@@ -33731,7 +33756,8 @@
     "glade-lang": {
       "origin": "glade",
       "versions": {
-        "3.22.1-r0": 1557332925
+        "3.22.1-r0": 1557332925,
+        "3.22.1-r1": 1559761864
       }
     },
     "tesseract-ocr-data-spa": {
@@ -34818,7 +34844,8 @@
     "colord-lang": {
       "origin": "colord",
       "versions": {
-        "1.4.4-r2": 1557695931
+        "1.4.4-r2": 1557695931,
+        "1.4.4-r3": 1559762187
       }
     },
     "texmf-dist-publishers": {
@@ -38570,7 +38597,8 @@
     "pulseaudio-utils": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610787
+        "12.2-r2": 1557610787,
+        "12.2-r3": 1559762425
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -39601,7 +39629,8 @@
     "colord-dev": {
       "origin": "colord",
       "versions": {
-        "1.4.4-r2": 1557695931
+        "1.4.4-r2": 1557695931,
+        "1.4.4-r3": 1559762187
       },
       "dependencies": [
         "dconf-dev",
@@ -39611,7 +39640,9 @@
         "polkit-dev",
         "eudev-dev",
         "libgudev-dev",
-        "colord=1.4.4-r2",
+        "vala",
+        "sane-dev",
+        "colord=1.4.4-r3",
         "pc:gio-2.0",
         "pc:gobject-2.0",
         "pc:gusb",
@@ -39869,7 +39900,8 @@
     "gnome-keyring-lang": {
       "origin": "gnome-keyring",
       "versions": {
-        "3.28.2-r0": 1557490030
+        "3.28.2-r0": 1557490030,
+        "3.28.2-r1": 1559760910
       }
     },
     "perl-test-easy": {
@@ -40297,7 +40329,8 @@
     "pulseaudio-jack": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610787
+        "12.2-r2": 1557610787,
+        "12.2-r3": 1559762425
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -40947,7 +40980,8 @@
     "pulseaudio-doc": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610785
+        "12.2-r2": 1557610785,
+        "12.2-r3": 1559762424
       }
     },
     "iptstate": {
@@ -42853,10 +42887,11 @@
     "libgweather-dev": {
       "origin": "libgweather",
       "versions": {
-        "3.28.2-r0": 1557861889
+        "3.28.2-r0": 1557861889,
+        "3.32.1-r0": 1559761958
       },
       "dependencies": [
-        "libgweather=3.28.2-r0",
+        "libgweather=3.32.1-r0",
         "pc:geocode-glib-1.0",
         "pc:gio-2.0",
         "pc:gtk+-3.0",
@@ -42865,7 +42900,7 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gweather-3.0=3.28.2"
+        "pc:gweather-3.0=3.32.1"
       ]
     },
     "mate-backgrounds-lang": {
@@ -43472,7 +43507,8 @@
     "pulseaudio-openrc": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610788
+        "12.2-r2": 1557610788,
+        "12.2-r3": 1559762425
       }
     },
     "unit-php7": {
@@ -44009,7 +44045,8 @@
     "libpulse": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610786
+        "12.2-r2": 1557610786,
+        "12.2-r3": 1559762424
       },
       "dependencies": [
         "so:libX11-xcb.so.1",
@@ -44647,7 +44684,8 @@
     "gnome-keyring-doc": {
       "origin": "gnome-keyring",
       "versions": {
-        "3.28.2-r0": 1557490031
+        "3.28.2-r0": 1557490031,
+        "3.28.2-r1": 1559760911
       }
     },
     "py3-hglib": {
@@ -45150,7 +45188,8 @@
     "alsa-plugins-doc": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610826
+        "1.1.8-r1": 1557610826,
+        "1.1.9-r0": 1559763397
       }
     },
     "lua5.3-lpeg_patterns": {
@@ -45588,7 +45627,8 @@
     "pulseaudio-zeroconf": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610787
+        "12.2-r2": 1557610787,
+        "12.2-r3": 1559762425
       },
       "dependencies": [
         "so:libavahi-client.so.3",
@@ -46491,7 +46531,8 @@
     "alsa-plugins": {
       "origin": "alsa-plugins",
       "versions": {
-        "1.1.8-r1": 1557610828
+        "1.1.8-r1": 1557610828,
+        "1.1.9-r0": 1559763398
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -50313,7 +50354,8 @@
     "pulseaudio-alsa": {
       "origin": "pulseaudio",
       "versions": {
-        "12.2-r2": 1557610787
+        "12.2-r2": 1557610787,
+        "12.2-r3": 1559762424
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -52273,7 +52315,8 @@
     "gnome-keyring": {
       "origin": "gnome-keyring",
       "versions": {
-        "3.28.2-r0": 1557490031
+        "3.28.2-r0": 1557490031,
+        "3.28.2-r1": 1559760911
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -52285,7 +52328,8 @@
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
-        "so:libintl.so.8"
+        "so:libintl.so.8",
+        "so:libpam.so.0"
       ],
       "provides": [
         "cmd:gnome-keyring",
@@ -52953,7 +52997,8 @@
     "glade": {
       "origin": "glade",
       "versions": {
-        "3.22.1-r0": 1557332927
+        "3.22.1-r0": 1557332927,
+        "3.22.1-r1": 1559761865
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -52968,6 +53013,7 @@
         "so:libintl.so.8",
         "so:libpango-1.0.so.0",
         "so:libpangocairo-1.0.so.0",
+        "so:libwebkit2gtk-4.0.so.37",
         "so:libxml2.so.2"
       ],
       "provides": [
@@ -55797,6 +55843,1920 @@
         "wxgtk-base-dev=3.0.4-r4",
         "wxgtk3-media=3.0.4-r4",
         "wxgtk3=3.0.4-r4"
+      ]
+    },
+    "sane-backend-hp4200": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762092
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-artec_eplus48u": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762087
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "mcabber-dev": {
+      "origin": "mcabber",
+      "versions": {
+        "1.1.0-r2": 1559767948
+      },
+      "dependencies": [
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:loudmouth-1.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:mcabber=1.1.0"
+      ]
+    },
+    "sane-backend-agfafocus": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762086
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "py3-gpgme": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767831
+      },
+      "dependencies": [
+        "gnupg",
+        "gpgme",
+        "python3",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgpgme.so.11",
+        "so:libpython3.7m.so.1.0"
+      ]
+    },
+    "pacman-doc": {
+      "origin": "pacman",
+      "versions": {
+        "5.1.3-r0": 1559767993
+      }
+    },
+    "openjdk10-jdk": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763263
+      },
+      "dependencies": [
+        "openjdk10-jre",
+        "so:libc.musl-aarch64.so.1",
+        "so:openjdk10:libjli.so"
+      ]
+    },
+    "openjdk11-jmods": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764342
+      }
+    },
+    "udisks2-lang": {
+      "origin": "udisks2",
+      "versions": {
+        "2.8.2-r1": 1559768263
+      }
+    },
+    "sane-backend-s9036": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "mcabber": {
+      "origin": "mcabber",
+      "versions": {
+        "1.1.0-r2": 1559767948
+      },
+      "dependencies": [
+        "beep",
+        "so:libc.musl-aarch64.so.1",
+        "so:libenchant.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libidn.so.12",
+        "so:libloudmouth-1.so.0",
+        "so:libncursesw.so.6",
+        "so:libotr.so.2",
+        "so:libpanelw.so.6"
+      ],
+      "provides": [
+        "cmd:mcabber"
+      ]
+    },
+    "sane-backend-abaton": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762086
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-teco2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-pieusb": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762096
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk9-dbg": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761673
+      },
+      "dependencies": [
+        "openjdk9-jdk"
+      ]
+    },
+    "sane-backend-dc210": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762089
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8"
+      ]
+    },
+    "sane-backend-microtek": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-kvs20xx": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "volume_key-dev": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1559768034
+      },
+      "dependencies": [
+        "volume_key=0.3.12-r0"
+      ]
+    },
+    "sane-backend-epjitsu": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762090
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-doc": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762085
+      }
+    },
+    "libblockdev-dev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1559768094
+      },
+      "dependencies": [
+        "libblockdev=2.21-r0",
+        "pc:glib-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:blockdev-utils=2.21",
+        "pc:blockdev=2.21"
+      ]
+    },
+    "sane": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762102
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ],
+      "provides": [
+        "so:libsane.so.1=1.0.27"
+      ]
+    },
+    "sane-backend-magicolor": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762094
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libnetsnmp.so.35",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-tamarack": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-dev": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762086
+      },
+      "dependencies": [
+        "pkgconfig",
+        "sane=1.0.27-r2"
+      ],
+      "provides": [
+        "pc:sane-backends=1.0.27",
+        "cmd:sane-config"
+      ]
+    },
+    "volume_key-doc": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1559768034
+      }
+    },
+    "sane-backend-as6e": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762087
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-gphoto2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgphoto2.so.6",
+        "so:libgphoto2_port.so.12",
+        "so:libjpeg.so.8"
+      ]
+    },
+    "sane-backend-microtek2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "openjdk9-demos": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761673
+      }
+    },
+    "sane-backend-lexmark": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762094
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk11-demos": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764342
+      }
+    },
+    "gpgme-doc": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767831
+      }
+    },
+    "openjdk10-jmods": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763260
+      }
+    },
+    "sane-backend-net": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762096
+      },
+      "dependencies": [
+        "sane",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-pixma": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762096
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-apple": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762086
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-sceptre": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-hp5400": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762092
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-kvs1025": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-canon": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762087
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-st400": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762098
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "pacman-lang": {
+      "origin": "pacman",
+      "versions": {
+        "5.1.3-r0": 1559767993
+      },
+      "dependencies": [
+        "libarchive-tools"
+      ]
+    },
+    "sane-backend-sm3840": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762098
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-sm3600": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762098
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-kodakaio": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "udisks2-libs": {
+      "origin": "udisks2",
+      "versions": {
+        "2.8.2-r1": 1559768264
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0"
+      ],
+      "provides": [
+        "so:libudisks2.so.0=0.0.0"
+      ]
+    },
+    "pacman": {
+      "origin": "pacman",
+      "versions": {
+        "5.1.3-r0": 1559767994
+      },
+      "dependencies": [
+        "libarchive-tools",
+        "so:libarchive.so.13",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libcurl.so.4",
+        "so:libgpgme.so.11",
+        "so:libintl.so.8"
+      ],
+      "provides": [
+        "so:libalpm.so.11=11.0.3",
+        "cmd:cleanupdelta",
+        "cmd:makepkg",
+        "cmd:makepkg-template",
+        "cmd:pacman",
+        "cmd:pacman-conf",
+        "cmd:pacman-db-upgrade",
+        "cmd:pacman-key",
+        "cmd:pkgdelta",
+        "cmd:repo-add",
+        "cmd:repo-elephant",
+        "cmd:repo-remove",
+        "cmd:testpkg",
+        "cmd:vercmp"
+      ]
+    },
+    "openjdk10-jre": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763261
+      },
+      "dependencies": [
+        "openjdk10-jre-headless",
+        "so:libX11.so.6",
+        "so:libXext.so.6",
+        "so:libXi.so.6",
+        "so:libXrender.so.1",
+        "so:libXtst.so.6",
+        "so:libasound.so.2",
+        "so:libc.musl-aarch64.so.1",
+        "so:libfreetype.so.6",
+        "so:libgif.so.7",
+        "so:libjpeg.so.8",
+        "so:liblcms2.so.2",
+        "so:libpng16.so.16",
+        "so:openjdk10:libawt.so",
+        "so:openjdk10:libjava.so",
+        "so:openjdk10:libjvm.so"
+      ],
+      "provides": [
+        "so:openjdk10:libawt_xawt.so=0",
+        "so:openjdk10:libfontmanager.so=0",
+        "so:openjdk10:libjavajpeg.so=0",
+        "so:openjdk10:libjawt.so=0",
+        "so:openjdk10:libjsoundalsa.so=0",
+        "so:openjdk10:liblcms.so=0",
+        "so:openjdk10:libsplashscreen.so=0"
+      ]
+    },
+    "udisks2": {
+      "origin": "udisks2",
+      "versions": {
+        "2.8.2-r1": 1559768264
+      },
+      "dependencies": [
+        "so:libacl.so.1",
+        "so:libatasmart.so.4",
+        "so:libbd_utils.so.2",
+        "so:libblockdev.so.2",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgudev-1.0.so.0",
+        "so:libmount.so.1",
+        "so:libpolkit-agent-1.so.0",
+        "so:libpolkit-gobject-1.so.0",
+        "so:libudisks2.so.0"
+      ],
+      "provides": [
+        "cmd:udisksctl",
+        "cmd:umount.udisks2"
+      ]
+    },
+    "openjdk10": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763263
+      },
+      "dependencies": [
+        "openjdk10-jmods",
+        "openjdk10-demos",
+        "openjdk10-doc",
+        "openjdk10-jdk"
+      ]
+    },
+    "sane-backend-test": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1559768094
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libbytesize.so.1",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libdevmapper.so.1.02",
+        "so:libdmraid.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libkmod.so.2",
+        "so:libmount.so.1",
+        "so:libndctl.so.6",
+        "so:libnss3.so",
+        "so:libparted-fs-resize.so.0",
+        "so:libparted.so.2",
+        "so:libsmime3.so",
+        "so:libudev.so.1",
+        "so:libuuid.so.1",
+        "so:libvolume_key.so.1",
+        "so:libyaml-0.so.2"
+      ],
+      "provides": [
+        "so:libbd_btrfs.so.2=2.0.0",
+        "so:libbd_crypto.so.2=2.0.0",
+        "so:libbd_dm.so.2=2.0.0",
+        "so:libbd_fs.so.2=2.0.0",
+        "so:libbd_kbd.so.2=2.0.0",
+        "so:libbd_loop.so.2=2.0.0",
+        "so:libbd_lvm-dbus.so.2=2.0.0",
+        "so:libbd_lvm.so.2=2.0.0",
+        "so:libbd_mdraid.so.2=2.0.0",
+        "so:libbd_mpath.so.2=2.0.0",
+        "so:libbd_nvdimm.so.2=2.0.0",
+        "so:libbd_part.so.2=2.0.0",
+        "so:libbd_part_err.so.2=2.0.0",
+        "so:libbd_swap.so.2=2.0.0",
+        "so:libbd_utils.so.2=2.1.0",
+        "so:libbd_vdo.so.2=2.0.0",
+        "so:libblockdev.so.2=2.0.0",
+        "cmd:lvm-cache-stats"
+      ]
+    },
+    "sane-udev": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762101
+      }
+    },
+    "sylpheed-lang": {
+      "origin": "sylpheed",
+      "versions": {
+        "3.7.0-r2": 1559767903
+      },
+      "dependencies": [
+        "pinentry-gtk"
+      ]
+    },
+    "sane-backend-nec": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-ma1509": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762094
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk10-jre-headless": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763261
+      },
+      "dependencies": [
+        "java-common",
+        "java-cacerts",
+        "so:libc.musl-aarch64.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:openjdk10:libattach.so=0",
+        "so:openjdk10:libawt.so=0",
+        "so:openjdk10:libawt_headless.so=0",
+        "so:openjdk10:libdt_socket.so=0",
+        "so:openjdk10:libextnet.so=0",
+        "so:openjdk10:libinstrument.so=0",
+        "so:openjdk10:libj2gss.so=0",
+        "so:openjdk10:libj2pcsc.so=0",
+        "so:openjdk10:libj2pkcs11.so=0",
+        "so:openjdk10:libjaas_unix.so=0",
+        "so:openjdk10:libjava.so=0",
+        "so:openjdk10:libjdwp.so=0",
+        "so:openjdk10:libjimage.so=0",
+        "so:openjdk10:libjli.so=0",
+        "so:openjdk10:libjsig.so=0",
+        "so:openjdk10:libjsound.so=0",
+        "so:openjdk10:libjvm.so=0",
+        "so:openjdk10:libmanagement.so=0",
+        "so:openjdk10:libmanagement_agent.so=0",
+        "so:openjdk10:libmanagement_ext.so=0",
+        "so:openjdk10:libmlib_image.so=0",
+        "so:openjdk10:libnet.so=0",
+        "so:openjdk10:libnio.so=0",
+        "so:openjdk10:libprefs.so=0",
+        "so:openjdk10:librmi.so=0",
+        "so:openjdk10:libsctp.so=0",
+        "so:openjdk10:libsunec.so=0",
+        "so:openjdk10:libunpack.so=0",
+        "so:openjdk10:libverify.so=0",
+        "so:openjdk10:libzip.so=0"
+      ]
+    },
+    "openjdk9-jmods": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761673
+      }
+    },
+    "openjdk11-dbg": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764343
+      },
+      "dependencies": [
+        "openjdk11-jdk"
+      ]
+    },
+    "openjdk11-jre-headless": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764343
+      },
+      "dependencies": [
+        "java-common",
+        "java-cacerts",
+        "so:libc.musl-aarch64.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:openjdk11:libattach.so=0",
+        "so:openjdk11:libawt.so=0",
+        "so:openjdk11:libawt_headless.so=0",
+        "so:openjdk11:libdt_socket.so=0",
+        "so:openjdk11:libextnet.so=0",
+        "so:openjdk11:libinstrument.so=0",
+        "so:openjdk11:libj2gss.so=0",
+        "so:openjdk11:libj2pcsc.so=0",
+        "so:openjdk11:libj2pkcs11.so=0",
+        "so:openjdk11:libjaas.so=0",
+        "so:openjdk11:libjava.so=0",
+        "so:openjdk11:libjdwp.so=0",
+        "so:openjdk11:libjimage.so=0",
+        "so:openjdk11:libjli.so=0",
+        "so:openjdk11:libjsig.so=0",
+        "so:openjdk11:libjvm.so=0",
+        "so:openjdk11:libmanagement.so=0",
+        "so:openjdk11:libmanagement_agent.so=0",
+        "so:openjdk11:libmanagement_ext.so=0",
+        "so:openjdk11:libmlib_image.so=0",
+        "so:openjdk11:libnet.so=0",
+        "so:openjdk11:libnio.so=0",
+        "so:openjdk11:libprefs.so=0",
+        "so:openjdk11:librmi.so=0",
+        "so:openjdk11:libsctp.so=0",
+        "so:openjdk11:libsunec.so=0",
+        "so:openjdk11:libunpack.so=0",
+        "so:openjdk11:libverify.so=0",
+        "so:openjdk11:libzip.so=0"
+      ]
+    },
+    "openjdk11": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764345
+      },
+      "dependencies": [
+        "openjdk11-jmods",
+        "openjdk11-demos",
+        "openjdk11-doc",
+        "openjdk11-jdk"
+      ]
+    },
+    "sane-backend-canon_dr": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "gpgmepp": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767831
+      },
+      "dependencies": [
+        "gnupg",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgpgme.so.11",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libgpgmepp.so.6=6.9.0"
+      ]
+    },
+    "sane-backend-hs2p": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762092
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-dell1600n_net": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762089
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8",
+        "so:libtiff.so.5"
+      ]
+    },
+    "sane-backend-sp15c": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762098
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "openjdk9-doc": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761673
+      }
+    },
+    "sane-backend-hp3900": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libtiff.so.5",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-cardscan": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk11-doc": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764342
+      }
+    },
+    "sane-backend-coolscan2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "gpgme-dev": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767830
+      },
+      "dependencies": [
+        "qt5-qtbase-dev",
+        "gpgme=1.13.0-r2",
+        "gpgmepp=1.13.0-r2",
+        "pc:glib-2.0",
+        "pc:gpg-error",
+        "pc:libassuan",
+        "pkgconfig",
+        "qgpgme=1.13.0-r2"
+      ],
+      "provides": [
+        "pc:gpgme-glib=1.13.0",
+        "pc:gpgme=1.13.0",
+        "cmd:gpgme-config"
+      ]
+    },
+    "sane-backend-plustek": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-gt68xx": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-genesys": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk10-dbg": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763261
+      },
+      "dependencies": [
+        "openjdk10-jdk"
+      ]
+    },
+    "sane-backend-avision": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762087
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-hpljm1005": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762092
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-saned": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762101
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libc.musl-aarch64.so.1",
+        "so:libsane.so.1"
+      ],
+      "provides": [
+        "cmd:saned"
+      ]
+    },
+    "sane-backend-p5": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762101
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "dzen": {
+      "origin": "dzen",
+      "versions": {
+        "0.9.5-r3": 1559769909
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libXft.so.2",
+        "so:libXinerama.so.1",
+        "so:libXpm.so.4",
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "cmd:dzen2"
+      ]
+    },
+    "sane-backend-dc25": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762089
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "openjdk9-jdk": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761675
+      },
+      "dependencies": [
+        "openjdk9-jre",
+        "so:libc.musl-aarch64.so.1",
+        "so:openjdk9:libjli.so"
+      ]
+    },
+    "openjdk9-src": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761674
+      },
+      "dependencies": [
+        "openjdk9-jre-headless"
+      ]
+    },
+    "sane-backend-dc240": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762089
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8"
+      ]
+    },
+    "sane-backend-dmc": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762089
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-mustek_usb": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk10-demos": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763260
+      }
+    },
+    "openjdk11-jdk": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764345
+      },
+      "dependencies": [
+        "openjdk11-jre",
+        "so:libc.musl-aarch64.so.1",
+        "so:openjdk11:libjli.so"
+      ]
+    },
+    "sane-backends": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762101
+      },
+      "dependencies": [
+        "sane-utils",
+        "sane-saned",
+        "sane-backend-abaton",
+        "sane-backend-agfafocus",
+        "sane-backend-apple",
+        "sane-backend-artec",
+        "sane-backend-artec_eplus48u",
+        "sane-backend-as6e",
+        "sane-backend-avision",
+        "sane-backend-bh",
+        "sane-backend-canon",
+        "sane-backend-canon630u",
+        "sane-backend-canon_dr",
+        "sane-backend-cardscan",
+        "sane-backend-coolscan",
+        "sane-backend-coolscan2",
+        "sane-backend-coolscan3",
+        "sane-backend-dc25",
+        "sane-backend-dc210",
+        "sane-backend-dc240",
+        "sane-backend-dell1600n_net",
+        "sane-backend-dmc",
+        "sane-backend-epjitsu",
+        "sane-backend-epson",
+        "sane-backend-epson2",
+        "sane-backend-epsonds",
+        "sane-backend-fujitsu",
+        "sane-backend-genesys",
+        "sane-backend-gphoto2",
+        "sane-backend-gt68xx",
+        "sane-backend-hp",
+        "sane-backend-hp3500",
+        "sane-backend-hp3900",
+        "sane-backend-hp4200",
+        "sane-backend-hp5400",
+        "sane-backend-hp5590",
+        "sane-backend-hpljm1005",
+        "sane-backend-hs2p",
+        "sane-backend-ibm",
+        "sane-backend-kodak",
+        "sane-backend-kodakaio",
+        "sane-backend-kvs1025",
+        "sane-backend-kvs20xx",
+        "sane-backend-kvs40xx",
+        "sane-backend-leo",
+        "sane-backend-lexmark",
+        "sane-backend-ma1509",
+        "sane-backend-magicolor",
+        "sane-backend-matsushita",
+        "sane-backend-microtek",
+        "sane-backend-microtek2",
+        "sane-backend-mustek",
+        "sane-backend-mustek_usb",
+        "sane-backend-mustek_usb2",
+        "sane-backend-nec",
+        "sane-backend-net",
+        "sane-backend-niash",
+        "sane-backend-pie",
+        "sane-backend-pieusb",
+        "sane-backend-pixma",
+        "sane-backend-plustek",
+        "sane-backend-ricoh",
+        "sane-backend-rts8891",
+        "sane-backend-s9036",
+        "sane-backend-sceptre",
+        "sane-backend-sharp",
+        "sane-backend-sm3600",
+        "sane-backend-sm3840",
+        "sane-backend-snapscan",
+        "sane-backend-sp15c",
+        "sane-backend-st400",
+        "sane-backend-stv680",
+        "sane-backend-tamarack",
+        "sane-backend-teco1",
+        "sane-backend-teco2",
+        "sane-backend-teco3",
+        "sane-backend-u12",
+        "sane-backend-umax",
+        "sane-backend-umax1220u",
+        "sane-backend-v4l",
+        "sane-backend-xerox_mfp",
+        "sane-backend-p5"
+      ]
+    },
+    "sane-backend-teco3": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "openjdk10-doc": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763260
+      }
+    },
+    "sane-backend-teco1": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "openjdk11-src": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764343
+      },
+      "dependencies": [
+        "openjdk11-jre-headless"
+      ]
+    },
+    "sane-backend-stv680": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762099
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "udisks2-dev": {
+      "origin": "udisks2",
+      "versions": {
+        "2.8.2-r1": 1559768263
+      },
+      "dependencies": [
+        "gobject-introspection-dev",
+        "polkit-dev",
+        "libatasmart-dev",
+        "libgudev-dev",
+        "acl-dev",
+        "pc:gio-2.0",
+        "pc:glib-2.0",
+        "pc:gobject-2.0",
+        "pkgconfig",
+        "udisks2-libs=2.8.2-r1"
+      ],
+      "provides": [
+        "pc:udisks2=2.8.2"
+      ]
+    },
+    "sane-backend-fujitsu": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762090
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-xerox_mfp": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762100
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-matsushita": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762094
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "py3-volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1559768034
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libnss3.so",
+        "so:libpython3.7m.so.1.0",
+        "so:libsmime3.so",
+        "so:libvolume_key.so.1"
+      ]
+    },
+    "sane-backend-hp3500": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-ibm": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-utils": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762101
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8",
+        "so:libpng16.so.16",
+        "so:libsane.so.1",
+        "so:libusb-1.0.so.0"
+      ],
+      "provides": [
+        "cmd:gamma4scanimage",
+        "cmd:sane-find-scanner",
+        "cmd:scanimage",
+        "cmd:umax_pp"
+      ]
+    },
+    "udisks2-doc": {
+      "origin": "udisks2",
+      "versions": {
+        "2.8.2-r1": 1559768263
+      }
+    },
+    "qgpgme": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767831
+      },
+      "dependencies": [
+        "gnupg",
+        "so:libQt5Core.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgpg-error.so.0",
+        "so:libgpgmepp.so.6",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libqgpgme.so.7=7.3.3"
+      ]
+    },
+    "sylpheed": {
+      "origin": "sylpheed",
+      "versions": {
+        "3.7.0-r2": 1559767903
+      },
+      "dependencies": [
+        "pinentry-gtk",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcairo.so.2",
+        "so:libcrypto.so.1.1",
+        "so:libgdk-x11-2.0.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libgtk-x11-2.0.so.0",
+        "so:libintl.so.8",
+        "so:liblber-2.4.so.2",
+        "so:libldap-2.4.so.2",
+        "so:libpango-1.0.so.0",
+        "so:libpangocairo-1.0.so.0",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "so:libsylph-0.so.1=1.3.0",
+        "so:libsylpheed-plugin-0.so.1=1.3.0",
+        "cmd:sylpheed"
+      ]
+    },
+    "openjdk11-jre": {
+      "origin": "openjdk11",
+      "versions": {
+        "11.0.4_p4-r1": 1559764343
+      },
+      "dependencies": [
+        "openjdk11-jre-headless",
+        "so:libX11.so.6",
+        "so:libXext.so.6",
+        "so:libXi.so.6",
+        "so:libXrender.so.1",
+        "so:libXtst.so.6",
+        "so:libasound.so.2",
+        "so:libc.musl-aarch64.so.1",
+        "so:libfreetype.so.6",
+        "so:libgif.so.7",
+        "so:libjpeg.so.8",
+        "so:liblcms2.so.2",
+        "so:libpng16.so.16",
+        "so:openjdk11:libawt.so",
+        "so:openjdk11:libjava.so"
+      ],
+      "provides": [
+        "so:openjdk11:libawt_xawt.so=0",
+        "so:openjdk11:libfontmanager.so=0",
+        "so:openjdk11:libjavajpeg.so=0",
+        "so:openjdk11:libjawt.so=0",
+        "so:openjdk11:libjsound.so=0",
+        "so:openjdk11:liblcms.so=0",
+        "so:openjdk11:libsplashscreen.so=0"
+      ]
+    },
+    "sane-backend-sharp": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-mustek_usb2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-hp5590": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762092
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-rts8891": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-coolscan": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sylpheed-dev": {
+      "origin": "sylpheed",
+      "versions": {
+        "3.7.0-r2": 1559767903
+      },
+      "dependencies": [
+        "sylpheed=3.7.0-r2"
+      ]
+    },
+    "pacman-dev": {
+      "origin": "pacman",
+      "versions": {
+        "5.1.3-r0": 1559767993
+      },
+      "dependencies": [
+        "gettext-dev",
+        "gpgme-dev",
+        "pacman=5.1.3-r0",
+        "pc:libarchive",
+        "pc:libcrypto",
+        "pc:libcurl",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libalpm=11.0.3"
+      ]
+    },
+    "sane-backend-canon630u": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-u12": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762100
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-v4l": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762100
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libv4l1.so.0"
+      ]
+    },
+    "sane-backend-hp": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762091
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-niash": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762096
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "gpgme": {
+      "origin": "gpgme",
+      "versions": {
+        "1.13.0-r2": 1559767831
+      },
+      "dependencies": [
+        "gnupg",
+        "so:libassuan.so.0",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgpg-error.so.0"
+      ],
+      "provides": [
+        "so:libgpgme.so.11=11.22.0",
+        "cmd:gpgme-json",
+        "cmd:gpgme-tool"
+      ]
+    },
+    "sane-backend-umax1220u": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762100
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-epsonds": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762090
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libjpeg.so.8",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "openjdk10-src": {
+      "origin": "openjdk10",
+      "versions": {
+        "10.0.2_p13-r0": 1559763261
+      },
+      "dependencies": [
+        "openjdk10-jre-headless"
+      ]
+    },
+    "py3-libblockdev": {
+      "origin": "libblockdev",
+      "versions": {
+        "2.21-r0": 1559768094
+      }
+    },
+    "volume_key": {
+      "origin": "volume_key",
+      "versions": {
+        "0.3.12-r0": 1559768034
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libc.musl-aarch64.so.1",
+        "so:libcryptsetup.so.12",
+        "so:libglib-2.0.so.0",
+        "so:libgpgme.so.11",
+        "so:libintl.so.8",
+        "so:libnspr4.so",
+        "so:libnss3.so",
+        "so:libplc4.so",
+        "so:libsmime3.so"
+      ],
+      "provides": [
+        "so:libvolume_key.so.1=1.2.3",
+        "cmd:volume_key"
+      ]
+    },
+    "openjdk9": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761675
+      },
+      "dependencies": [
+        "openjdk9-jmods",
+        "openjdk9-demos",
+        "openjdk9-doc",
+        "openjdk9-dbg",
+        "openjdk9-jdk"
+      ]
+    },
+    "sane-backend-kodak": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-kvs40xx": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762093
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-epson": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762090
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "dzen-gadgets": {
+      "origin": "dzen",
+      "versions": {
+        "0.9.5-r3": 1559769909
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "cmd:dbar",
+        "cmd:gcpubar",
+        "cmd:gdbar",
+        "cmd:textwidth"
+      ]
+    },
+    "openjdk9-jre": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761674
+      },
+      "dependencies": [
+        "openjdk9-jre-headless",
+        "so:libX11.so.6",
+        "so:libXext.so.6",
+        "so:libXi.so.6",
+        "so:libXrender.so.1",
+        "so:libXtst.so.6",
+        "so:libasound.so.2",
+        "so:libc.musl-aarch64.so.1",
+        "so:libfreetype.so.6",
+        "so:libgif.so.7",
+        "so:libjpeg.so.8",
+        "so:liblcms2.so.2",
+        "so:libpng16.so.16",
+        "so:openjdk9:libawt.so",
+        "so:openjdk9:libjava.so",
+        "so:openjdk9:libjvm.so"
+      ],
+      "provides": [
+        "so:openjdk9:libawt_xawt.so=0",
+        "so:openjdk9:libfontmanager.so=0",
+        "so:openjdk9:libjavajpeg.so=0",
+        "so:openjdk9:libjawt.so=0",
+        "so:openjdk9:libjsoundalsa.so=0",
+        "so:openjdk9:liblcms.so=0",
+        "so:openjdk9:libsplashscreen.so=0"
+      ]
+    },
+    "sane-backend-coolscan3": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762088
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-epson2": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762090
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-leo": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762094
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-snapscan": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762098
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-bh": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762087
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "mcabber-doc": {
+      "origin": "mcabber",
+      "versions": {
+        "1.1.0-r2": 1559767948
+      }
+    },
+    "openjdk9-jre-headless": {
+      "origin": "openjdk9",
+      "versions": {
+        "9.0.4_p12-r1": 1559761674
+      },
+      "dependencies": [
+        "java-common",
+        "java-cacerts",
+        "so:libc.musl-aarch64.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:openjdk9:libattach.so=0",
+        "so:openjdk9:libawt.so=0",
+        "so:openjdk9:libawt_headless.so=0",
+        "so:openjdk9:libdt_socket.so=0",
+        "so:openjdk9:libinstrument.so=0",
+        "so:openjdk9:libj2gss.so=0",
+        "so:openjdk9:libj2pcsc.so=0",
+        "so:openjdk9:libj2pkcs11.so=0",
+        "so:openjdk9:libjaas_unix.so=0",
+        "so:openjdk9:libjava.so=0",
+        "so:openjdk9:libjdwp.so=0",
+        "so:openjdk9:libjimage.so=0",
+        "so:openjdk9:libjli.so=0",
+        "so:openjdk9:libjsig.so=0",
+        "so:openjdk9:libjsound.so=0",
+        "so:openjdk9:libjvm.so=0",
+        "so:openjdk9:libmanagement.so=0",
+        "so:openjdk9:libmanagement_agent.so=0",
+        "so:openjdk9:libmanagement_ext.so=0",
+        "so:openjdk9:libmlib_image.so=0",
+        "so:openjdk9:libnet.so=0",
+        "so:openjdk9:libnio.so=0",
+        "so:openjdk9:libprefs.so=0",
+        "so:openjdk9:librmi.so=0",
+        "so:openjdk9:libsctp.so=0",
+        "so:openjdk9:libsunec.so=0",
+        "so:openjdk9:libunpack.so=0",
+        "so:openjdk9:libverify.so=0",
+        "so:openjdk9:libzip.so=0"
+      ]
+    },
+    "sane-backend-artec": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762086
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-mustek": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762095
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-ricoh": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762097
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
+      ]
+    },
+    "sane-backend-umax": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762100
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1",
+        "so:libusb-1.0.so.0"
+      ]
+    },
+    "sane-backend-pie": {
+      "origin": "sane",
+      "versions": {
+        "1.0.27-r2": 1559762096
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-aarch64.so.1"
       ]
     }
   },
@@ -61161,6 +63121,546 @@
       "libflatpak.so.0": {
         "package": "flatpak",
         "version": "0.10400.0"
+      },
+      "libsane.so.1": {
+        "package": "sane",
+        "version": "1.0.27"
+      },
+      "libudisks2.so.0": {
+        "package": "udisks2-libs",
+        "version": "0.0.0"
+      },
+      "libalpm.so.11": {
+        "package": "pacman",
+        "version": "11.0.3"
+      },
+      "openjdk10:libawt_xawt.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:libfontmanager.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:libjavajpeg.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:libjawt.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:libjsoundalsa.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:liblcms.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "openjdk10:libsplashscreen.so": {
+        "package": "openjdk10-jre",
+        "version": "0"
+      },
+      "libbd_btrfs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_crypto.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_dm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_fs.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_kbd.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_loop.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm-dbus.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_lvm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mdraid.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_mpath.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_nvdimm.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_part_err.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_swap.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libbd_utils.so.2": {
+        "package": "libblockdev",
+        "version": "2.1.0"
+      },
+      "libbd_vdo.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "libblockdev.so.2": {
+        "package": "libblockdev",
+        "version": "2.0.0"
+      },
+      "openjdk10:libattach.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libawt.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libawt_headless.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libdt_socket.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libextnet.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libinstrument.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libj2gss.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libj2pcsc.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libj2pkcs11.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjaas_unix.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjava.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjdwp.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjimage.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjli.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjsig.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjsound.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libjvm.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libmanagement.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libmanagement_agent.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libmanagement_ext.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libmlib_image.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libnet.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libnio.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libprefs.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:librmi.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libsctp.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libsunec.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libunpack.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libverify.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk10:libzip.so": {
+        "package": "openjdk10-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libattach.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libawt.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libawt_headless.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libdt_socket.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libextnet.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libinstrument.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libj2gss.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libj2pcsc.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libj2pkcs11.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjaas.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjava.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjdwp.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjimage.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjli.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjsig.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libjvm.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libmanagement.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libmanagement_agent.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libmanagement_ext.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libmlib_image.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libnet.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libnio.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libprefs.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:librmi.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libsctp.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libsunec.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libunpack.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libverify.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "openjdk11:libzip.so": {
+        "package": "openjdk11-jre-headless",
+        "version": "0"
+      },
+      "libgpgmepp.so.6": {
+        "package": "gpgmepp",
+        "version": "6.9.0"
+      },
+      "libqgpgme.so.7": {
+        "package": "qgpgme",
+        "version": "7.3.3"
+      },
+      "libsylph-0.so.1": {
+        "package": "sylpheed",
+        "version": "1.3.0"
+      },
+      "libsylpheed-plugin-0.so.1": {
+        "package": "sylpheed",
+        "version": "1.3.0"
+      },
+      "openjdk11:libawt_xawt.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:libfontmanager.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:libjavajpeg.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:libjawt.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:libjsound.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:liblcms.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "openjdk11:libsplashscreen.so": {
+        "package": "openjdk11-jre",
+        "version": "0"
+      },
+      "libgpgme.so.11": {
+        "package": "gpgme",
+        "version": "11.22.0"
+      },
+      "libvolume_key.so.1": {
+        "package": "volume_key",
+        "version": "1.2.3"
+      },
+      "openjdk9:libawt_xawt.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libfontmanager.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libjavajpeg.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libjawt.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libjsoundalsa.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:liblcms.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libsplashscreen.so": {
+        "package": "openjdk9-jre",
+        "version": "0"
+      },
+      "openjdk9:libattach.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libawt.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libawt_headless.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libdt_socket.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libinstrument.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libj2gss.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libj2pcsc.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libj2pkcs11.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjaas_unix.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjava.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjdwp.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjimage.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjli.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjsig.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjsound.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libjvm.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libmanagement.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libmanagement_agent.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libmanagement_ext.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libmlib_image.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libnet.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libnio.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libprefs.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:librmi.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libsctp.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libsunec.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libunpack.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libverify.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
+      },
+      "openjdk9:libzip.so": {
+        "package": "openjdk9-jre-headless",
+        "version": "0"
       }
     },
     "package": {
