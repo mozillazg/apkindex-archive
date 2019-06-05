@@ -4455,7 +4455,8 @@
     },
     "musl": {
       "versions": {
-        "1.1.22-r0": 1556880645
+        "1.1.22-r0": 1556880645,
+        "1.1.22-r2": 1559762559
       },
       "origin": "musl",
       "provides": [
@@ -5159,7 +5160,8 @@
     },
     "musl-dbg": {
       "versions": {
-        "1.1.22-r0": 1556880645
+        "1.1.22-r0": 1556880645,
+        "1.1.22-r2": 1559762559
       },
       "origin": "musl"
     },
@@ -6925,7 +6927,8 @@
     },
     "dhcpcd-dbus": {
       "versions": {
-        "0.6.1-r3": 1557215972
+        "0.6.1-r3": 1557215972,
+        "0.6.1-r4": 1559760467
       },
       "origin": "dhcpcd-dbus",
       "dependencies": [
@@ -7640,7 +7643,8 @@
     },
     "giblib": {
       "versions": {
-        "1.2.4-r10": 1557118299
+        "1.2.4-r10": 1557118299,
+        "1.2.4-r11": 1559760554
       },
       "origin": "giblib",
       "dependencies": [
@@ -8053,7 +8057,8 @@
     },
     "giblib-doc": {
       "versions": {
-        "1.2.4-r10": 1557118297
+        "1.2.4-r10": 1557118297,
+        "1.2.4-r11": 1559760554
       },
       "origin": "giblib"
     },
@@ -15782,7 +15787,8 @@
       "versions": {
         "2.9.13-r0": 1557167700,
         "2.9.13-r1": 1558358489,
-        "2.9.13-r2": 1558982496
+        "2.9.13-r2": 1558982496,
+        "2.9.13-r3": 1559762671
       },
       "origin": "snort"
     },
@@ -20120,12 +20126,13 @@
       "versions": {
         "2.9.13-r0": 1557167700,
         "2.9.13-r1": 1558358490,
-        "2.9.13-r2": 1558982496
+        "2.9.13-r2": 1558982496,
+        "2.9.13-r3": 1559762672
       },
       "origin": "snort",
       "dependencies": [
         "pkgconfig",
-        "snort=2.9.13-r2"
+        "snort=2.9.13-r3"
       ],
       "provides": [
         "pc:snort=2.9.13",
@@ -36440,11 +36447,12 @@
     },
     "libc6-compat": {
       "versions": {
-        "1.1.22-r0": 1556880645
+        "1.1.22-r0": 1556880645,
+        "1.1.22-r2": 1559762559
       },
       "origin": "musl",
       "dependencies": [
-        "musl=1.1.22-r0"
+        "musl=1.1.22-r2"
       ]
     },
     "dahdi-tools-doc": {
@@ -37805,19 +37813,20 @@
     },
     "musl-utils": {
       "versions": {
-        "1.1.22-r0": 1556880645
+        "1.1.22-r0": 1556880645,
+        "1.1.22-r2": 1559762559
       },
       "origin": "musl",
       "dependencies": [
         "scanelf",
-        "musl=1.1.22-r0",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
         "cmd:getconf",
         "cmd:getent",
         "cmd:iconv",
-        "cmd:ldconfig"
+        "cmd:ldconfig",
+        "cmd:ldd"
       ]
     },
     "freeradius-lib": {
@@ -39178,11 +39187,14 @@
     "daq": {
       "versions": {
         "2.0.6-r2": 1557167617,
-        "2.0.6-r3": 1558982320
+        "2.0.6-r3": 1558982320,
+        "2.0.6-r4": 1559762353
       },
       "origin": "daq",
       "dependencies": [
         "so:libc.musl-armhf.so.1",
+        "so:libdnet.so.1",
+        "so:libnetfilter_queue.so.1",
         "so:libpcap.so.1",
         "so:libsfbpf.so.0"
       ],
@@ -49959,7 +49971,8 @@
       "versions": {
         "2.9.13-r0": 1557167701,
         "2.9.13-r1": 1558358490,
-        "2.9.13-r2": 1558982497
+        "2.9.13-r2": 1558982497,
+        "2.9.13-r3": 1559762672
       },
       "origin": "snort"
     },
@@ -52435,7 +52448,8 @@
     },
     "giblib-dev": {
       "versions": {
-        "1.2.4-r10": 1557118298
+        "1.2.4-r10": 1557118298,
+        "1.2.4-r11": 1559760554
       },
       "origin": "giblib",
       "dependencies": [
@@ -52444,7 +52458,7 @@
         "zlib-dev",
         "libx11-dev",
         "libxext-dev",
-        "giblib=1.2.4-r10",
+        "giblib=1.2.4-r11",
         "pkgconfig"
       ],
       "provides": [
@@ -56869,11 +56883,12 @@
     "daq-dev": {
       "versions": {
         "2.0.6-r2": 1557167615,
-        "2.0.6-r3": 1558982320
+        "2.0.6-r3": 1558982320,
+        "2.0.6-r4": 1559762353
       },
       "origin": "daq",
       "dependencies": [
-        "daq=2.0.6-r3"
+        "daq=2.0.6-r4"
       ],
       "provides": [
         "cmd:daq-modules-config"
@@ -57650,7 +57665,8 @@
       "versions": {
         "2.9.13-r0": 1557167701,
         "2.9.13-r1": 1558358490,
-        "2.9.13-r2": 1558982497
+        "2.9.13-r2": 1558982497,
+        "2.9.13-r3": 1559762672
       },
       "origin": "snort",
       "dependencies": [
@@ -57658,6 +57674,7 @@
         "so:libc.musl-armhf.so.1",
         "so:libdnet.so.1",
         "so:liblzma.so.5",
+        "so:libnetfilter_queue.so.1",
         "so:libpcap.so.1",
         "so:libpcre.so.1",
         "so:libsfbpf.so.0",
@@ -64499,11 +64516,12 @@
     },
     "musl-dev": {
       "versions": {
-        "1.1.22-r0": 1556880644
+        "1.1.22-r0": 1556880644,
+        "1.1.22-r2": 1559762558
       },
       "origin": "musl",
       "dependencies": [
-        "musl=1.1.22-r0"
+        "musl=1.1.22-r2"
       ]
     },
     "pcre2-tools": {
@@ -69602,7 +69620,8 @@
     "daq-static": {
       "origin": "daq",
       "versions": {
-        "2.0.6-r3": 1558982319
+        "2.0.6-r3": 1558982319,
+        "2.0.6-r4": 1559762353
       }
     },
     "libbytesize-doc": {
@@ -69685,7 +69704,8 @@
     "daq-sfbpf": {
       "origin": "daq",
       "versions": {
-        "2.0.6-r3": 1558982320
+        "2.0.6-r3": 1558982320,
+        "2.0.6-r4": 1559762353
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
