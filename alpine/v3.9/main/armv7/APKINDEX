@@ -8916,22 +8916,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545914402
 c:c857899e89107d1c9482cb0edd6d13091c0fd604
 
-C:Q1MlkkU87lRMvZ9Z7GFHY8mqXMR0I=
-P:libvirt-client
-V:4.10.0-r1
-A:armv7
-S:591250
-I:1208320
-T:libvirt client package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051645
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libreadline.so.7 so:libtirpc.so.3 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
-p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
-
 C:Q1BZN642QLnKv0BN7MXH/6cUfEhdY=
 P:linux-firmware-rockchip
 V:20190322-r0
@@ -9758,6 +9742,22 @@ t:1546442249
 c:2cd9f0f5d3212025f20b8ed0000eeb547d1a8cb5
 D:xkeyboard-config iso-codes so:libX11.so.6 so:libXi.so.6 so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libxkbfile.so.1 so:libxml2.so.2
 p:so:libxklavier.so.16=16.4.0
+
+C:Q1wOjpswGx5speortsmFY7Ulmm3fo=
+P:libvirt
+V:4.10.0-r3
+A:armv7
+S:1519717
+I:3383296
+T:A virtualization API for several hypervisor and container systems
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724110
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:lvm2 /bin/sh so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libparted.so.2 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2 so:libyajl.so.2
+p:cmd:virtlockd cmd:virtlogd
 
 C:Q1oX6nJviz3SFfzto9r7Bfcizp/p4=
 P:libxt-dev
@@ -10862,6 +10862,22 @@ t:1548636904
 c:8190aae00739bc46d5ee8a804d3c96cb24e9e540
 D:so:libc.musl-armv7.so.1 so:libgnutls.so.30
 p:so:librelp.so.0=0.4.0
+
+C:Q1MlwBa/v+HbrLvpPlwHKdN6zQtmY=
+P:libvirt-qemu
+V:4.10.0-r3
+A:armv7
+S:590791
+I:1282048
+T:QEMU driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt-daemon=4.10.0-r3 libvirt-common-drivers=4.10.0-r3 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=4.10.0-r3 qemu
 
 C:Q1039KBO9qsdum5q5LDmLfn/1viHg=
 P:lua5.3-bit32
@@ -12723,22 +12739,6 @@ c:696f422d8dffdc1259bf70093f20e8cc2db6d974
 D:so:libc.musl-armv7.so.1 so:libncursesw.so.6
 p:cmd:ncdu
 
-C:Q1QwfAqni2vK+vkv8NFBAEOA4MTWU=
-P:libvirt-dev
-V:4.10.0-r1
-A:armv7
-S:213996
-I:1404928
-T:A virtualization API for several hypervisor and container systems (development files)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051644
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libtirpc-dev libvirt-libs=4.10.0-r1 pkgconfig
-p:pc:libvirt-admin=4.10.0 pc:libvirt-lxc=4.10.0 pc:libvirt-qemu=4.10.0 pc:libvirt=4.10.0
-
 C:Q1dHTMR8QuOSPWztgnH9l5qLxtxP8=
 P:perl-term-readkey-doc
 V:2.37-r1
@@ -13888,6 +13888,22 @@ t:1545292807
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libz.so.1
 p:so:libminizip.so.1=1.0.0
+
+C:Q1toZZAhsqf4ZncQ/r/7gh0Lhh4Ss=
+P:libvirt-client
+V:4.10.0-r3
+A:armv7
+S:590998
+I:1208320
+T:libvirt client package
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libreadline.so.7 so:libtirpc.so.3 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
+p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
 
 C:Q1Ch+VZb0jEvI+o5DmNaoRmixM2Qo=
 P:openldap-doc
@@ -18115,6 +18131,21 @@ t:1545250026
 c:9513b5116c59c2e82592b569d1d9dbe6abc4c1a1
 i:docs perl-date-calc=6.4-r1
 
+C:Q1h95kFf+3peDWTP6k6Mg9mQTBpxk=
+P:libvirt-uml
+V:4.10.0-r3
+A:armv7
+S:66179
+I:188416
+T:UML driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt-daemon=4.10.0-r3 libvirt-common-drivers=4.10.0-r3 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0
+
 C:Q1qHDw7/KwIhsM3e7hNhgELSXx+j4=
 P:acl
 V:2.2.52-r5
@@ -21735,22 +21766,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:liblua.so.5
 p:cmd:haserl-lua5.1
 
-C:Q1XN/keQYPO/wA34ziCtdEYvrHJOc=
-P:libvirt-qemu
-V:4.10.0-r1
-A:armv7
-S:590611
-I:1282048
-T:QEMU driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt-daemon=4.10.0-r1 libvirt-common-drivers=4.10.0-r1 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
-i:libvirt-daemon=4.10.0-r1 qemu
-
 C:Q177hMsvfIzzlBMDoZAkBhWOS+KI0=
 P:dbus-glib
 V:0.108-r1
@@ -23219,21 +23234,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545355994
 c:cb48ccefc55f6512811dc9ae5074c5fa2595444e
 i:msmtp=1.8.1-r1 lang
-
-C:Q1Ydqz2RkpTdGjtCGbiPWM5+IXK2g=
-P:libvirt-uml
-V:4.10.0-r1
-A:armv7
-S:66164
-I:188416
-T:UML driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt-daemon=4.10.0-r1 libvirt-common-drivers=4.10.0-r1 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0
 
 C:Q1UlwEhueLqDEPl2jtFTsjKL6nSqc=
 P:libdvdcss-doc
@@ -25648,21 +25648,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1548094628
 c:f67b5889b0d14b7f5ae115d80df1ded23252612d
 i:docs sshfs=3.5.1-r0
-
-C:Q1KAfDA9It3nUnonlv/6QglyFUOPs=
-P:libvirt-bash-completion
-V:4.10.0-r1
-A:armv7
-S:2587
-I:24576
-T:Bash completions for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-i:libvirt=4.10.0-r1 bash-completion
 
 C:Q1+bc+EWCJmDALeyklZfMhPna0vgI=
 P:kyua-doc
@@ -29112,6 +29097,21 @@ c:5e501b0e9403a912350ade906bd3f7396c505d70
 D:so:libc.musl-armv7.so.1
 p:so:libpcre2-8.so.0=0.7.1 so:libpcre2-posix.so.2=2.0.1
 
+C:Q1N61LvbMMKrr6rpliJy0K7Jdw5eU=
+P:libvirt-bash-completion
+V:4.10.0-r3
+A:armv7
+S:2585
+I:24576
+T:Bash completions for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724110
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+i:libvirt=4.10.0-r3 bash-completion
+
 C:Q1ygVs+jC4NkWBF4IiJXldSgJpi00=
 P:perl-sub-exporter-doc
 V:0.987-r0
@@ -30985,22 +30985,6 @@ t:1542893898
 c:c6a9a17f4164572f308708d3bbf7ebcd1662d609
 D:npth=1.6-r0
 p:cmd:npth-config
-
-C:Q1th5MuXvOfFoMiGtKPNqhlQFXwUY=
-P:libvirt-libs
-V:4.10.0-r1
-A:armv7
-S:1389557
-I:2756608
-T:A virtualization API for several hypervisor and container systems (libraries)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051644
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:lvm2 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-p:so:libvirt-admin.so.0=0.4010.0 so:libvirt-lxc.so.0=0.4010.0 so:libvirt-qemu.so.0=0.4010.0 so:libvirt.so.0=0.4010.0
 
 C:Q15/smd6mZtvKGFgF7sevLSzOiZqc=
 P:font-bitstream-speedo
@@ -39349,6 +39333,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542453649
 c:a4242e97d4a33e05b5678fc2fabc361310bc5184
 
+C:Q1BmPtYnGL9C5TX2Q7nBhv/mUoE9s=
+P:hostapd-openrc
+V:2.7-r3
+A:armv7
+S:2075
+I:24576
+T:daemon for wireless software access points (OpenRC init scripts)
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559724704
+c:15604368388fdc2804ed11c919a38b25b4201ca9
+i:openrc hostapd=2.7-r3
+
 C:Q1ntx2G8MzPR/5iHUFMdshD+Z8iso=
 P:collectd-ping
 V:5.8.0-r3
@@ -40053,22 +40052,6 @@ t:1544797120
 c:93dac8e6c22aa22fee0ac52e2bea0bbd4dfda6a2
 i:docs fish=2.7.1-r0
 
-C:Q1e/VtrQJgILb/E3TsXp1ZVHK+ZI0=
-P:libvirt-lang
-V:4.10.0-r1
-A:armv7
-S:4453137
-I:18767872
-T:Languages for package libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051645
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:lvm2
-i:libvirt=4.10.0-r1 lang
-
 C:Q1nEWfDCAfeSyYGoFpzOhOOsiuq04=
 P:perl-plack
 V:1.0033-r0
@@ -40518,22 +40501,6 @@ m:G.J.R. Timmer <gjr.timmer@gmail.com>
 t:1545345194
 c:e528cf1d7e35ba116384c8ebf94391657821efbb
 D:so:libc.musl-armv7.so.1 so:libpq.so.5
-
-C:Q1iJwhLs0hxPxlOHlvfuQo2o2NJRw=
-P:libvirt
-V:4.10.0-r1
-A:armv7
-S:1520006
-I:3379200
-T:A virtualization API for several hypervisor and container systems
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:lvm2 /bin/sh so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libparted.so.2 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2 so:libyajl.so.2
-p:cmd:virtlockd cmd:virtlogd
 
 C:Q1ahDV6d9SON7x5TuzjmFSPbxPmjI=
 P:rsyslog-mmsequence
@@ -42225,6 +42192,22 @@ t:1546944024
 c:aad36dcf3a57ed14c9241182dbe94a7b16c2faee
 D:bacula so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libsqlite3.so.0
 p:so:libbaccats-sqlite3-9.4.1.so=0
+
+C:Q1W32JFE/+u5kWW1AVQOieUKdZbTM=
+P:libvirt-lang
+V:4.10.0-r3
+A:armv7
+S:4453081
+I:18767872
+T:Languages for package libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:lvm2
+i:libvirt=4.10.0-r3 lang
 
 C:Q1DBT/4+s4meWkcDVox5Kcqon71EM=
 P:bash-dev
@@ -44483,22 +44466,6 @@ t:1558696584
 c:d5dd5c1cd07c3de03ff7f39175a8a2a36215bd4c
 D:mariadb-common=10.3.15-r0 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:myisam_ftdump cmd:mysql cmd:mysql_find_rows cmd:mysql_fix_extensions cmd:mysql_waitpid cmd:mysqlaccess cmd:mysqladmin cmd:mysqlcheck cmd:mysqldump cmd:mysqldumpslow cmd:mysqlimport cmd:mysqlshow
-
-C:Q1UyCJTFyH/O3NwUYfxBqfFnf+Ocs=
-P:hostapd
-V:2.7-r2
-A:armv7
-S:396986
-I:798720
-T:daemon for wireless software access points
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559722714
-c:6cb240bc23a7e1565dd7c7a1f44bdf80206b9d95
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.1.1
-p:cmd:hostapd cmd:hostapd_cli cmd:nt_password_hash
 
 C:Q1peUDhfSx/i1gVVDg6cCd1WQ4N9Y=
 P:makedepend
@@ -47779,21 +47746,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545254686
 c:7e6fbe1a9a64371fd292a62b2f64112ffd31e0a2
 i:docs sdl=1.2.15-r9
-
-C:Q17Tx1uu8s0Hpkc9/V+YsurmUY63A=
-P:libvirt-doc
-V:4.10.0-r1
-A:armv7
-S:2364318
-I:7892992
-T:A virtualization API for several hypervisor and container systems (documentation)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051645
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-i:docs libvirt=4.10.0-r1
 
 C:Q1kHxDwTPQSeJkD0rxzyG9fNzVeYc=
 P:openipmi-dev
@@ -52767,21 +52719,6 @@ t:1545257954
 c:f84ea5cb8c84f26285d13d1f9aeebf6c0fffc2f4
 D:recode=3.6-r2
 
-C:Q1zxI+4y3S+A8zTGU9dQtr6/E3HNE=
-P:libvirt-static
-V:4.10.0-r1
-A:armv7
-S:4098753
-I:10649600
-T:libvirt static libraries
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051644
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:lvm2
-
 C:Q1scoLBusUmA8ODVRT93k0LdS14MM=
 P:liblockfile-doc
 V:1.14-r0
@@ -53778,21 +53715,6 @@ t:1545070415
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl
 
-C:Q10xjCKYmoexI7/3bERG7jNORV1zw=
-P:libvirt-vbox
-V:4.10.0-r1
-A:armv7
-S:133619
-I:303104
-T:VirtualBox driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt-daemon=4.10.0-r1 libvirt-common-drivers=4.10.0-r1 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
-
 C:Q1pAe5/wdqbUBpwZwOuSZ55+J8IWU=
 P:perl-test-warn-doc
 V:0.36-r0
@@ -54442,21 +54364,6 @@ t:1546972368
 c:4eec1f62f4475b971ceb6b0f2c2315a800d27dc6
 D:so:libbearssl.so.0 so:libc.musl-armv7.so.1 so:libs6.so.2.7 so:libs6dns.so.2.3 so:libskarnet.so.2.7
 p:so:libs6net.so.2.3=2.3.0.3 so:libsbearssl.so.2.3=2.3.0.3 cmd:minidentd cmd:s6-clockadd cmd:s6-clockview cmd:s6-getservbyname cmd:s6-ident-client cmd:s6-sntpclock cmd:s6-taiclock cmd:s6-taiclockd cmd:s6-tcpclient cmd:s6-tcpserver cmd:s6-tcpserver-access cmd:s6-tcpserver4 cmd:s6-tcpserver4-socketbinder cmd:s6-tcpserver4d cmd:s6-tcpserver6 cmd:s6-tcpserver6-socketbinder cmd:s6-tcpserver6d cmd:s6-tlsc cmd:s6-tlsclient cmd:s6-tlsd cmd:s6-tlsserver
-
-C:Q1Gtu7Cbi6qvn8Q6MLxkqsuXGg7oQ=
-P:hostapd-openrc
-V:2.7-r2
-A:armv7
-S:2058
-I:24576
-T:daemon for wireless software access points (OpenRC init scripts)
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559722714
-c:6cb240bc23a7e1565dd7c7a1f44bdf80206b9d95
-i:openrc hostapd=2.7-r2
 
 C:Q1TCpyxCamrOPUwen5D2b4JA48GNE=
 P:u-boot-all
@@ -58353,6 +58260,22 @@ t:1546422566
 c:26b4eabc5fe2c4f636f2688bb50811f84d2d890f
 D:/bin/sh so:libc.musl-armv7.so.1 so:libnetsnmpagent.so.35 so:libyajl.so.2
 p:cmd:collectd cmd:collectdmon
+
+C:Q1o2Ix7cg0sbbakMSeUlutd70fjMM=
+P:libvirt-daemon
+V:4.10.0-r3
+A:armv7
+S:134995
+I:409600
+T:libvirt daemon package
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt-client bridge-utils dmidecode dnsmasq ebtables ip6tables iptables so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
+p:cmd:libvirtd
 
 C:Q1lERAy1aHcCXxQQi0Vf1toJyMxDc=
 P:ruby-minitest
@@ -64227,6 +64150,22 @@ t:1544796816
 c:c7ebdf42aaaf67a511dd629cabbc674420673b60
 D:uwsgi so:libc.musl-armv7.so.1
 
+C:Q1qgtf6gaLYbxrRuTIcJ0j4Sisf0Q=
+P:hostapd
+V:2.7-r3
+A:armv7
+S:396996
+I:798720
+T:daemon for wireless software access points
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559724705
+c:15604368388fdc2804ed11c919a38b25b4201ca9
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.1.1
+p:cmd:hostapd cmd:hostapd_cli cmd:nt_password_hash
+
 C:Q1qyGypIMGhoa5Fsr369zVdjkj3VU=
 P:alpine-keys
 V:2.1-r1
@@ -66385,6 +66324,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxinerama=1.1.4-r1 pc:x11 pc:xext pc:xineramaproto pkgconfig
 p:pc:xinerama=1.1.4
 
+C:Q18Dk/OH4J3iCnfPNT+UW2LTMoWOQ=
+P:libvirt-dev
+V:4.10.0-r3
+A:armv7
+S:213933
+I:1404928
+T:A virtualization API for several hypervisor and container systems (development files)
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724108
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libtirpc-dev libvirt-libs=4.10.0-r3 pkgconfig
+p:pc:libvirt-admin=4.10.0 pc:libvirt-lxc=4.10.0 pc:libvirt-qemu=4.10.0 pc:libvirt=4.10.0
+
 C:Q1Ib3lFZzE3h7LHei56OZ0ySWXAC0=
 P:qemu-ppc
 V:3.1.0-r3
@@ -67477,6 +67432,21 @@ t:1557160811
 c:8b903beb77c68c97ba0aa36e58b6750edc06ca78
 D:so:libc.musl-armv7.so.1 so:libmagic.so.1
 p:cmd:file
+
+C:Q103BTWl/xKSzYt01U0pShTnrNkfs=
+P:hostapd-doc
+V:2.7-r3
+A:armv7
+S:3360
+I:32768
+T:daemon for wireless software access points (documentation)
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1559724704
+c:15604368388fdc2804ed11c919a38b25b4201ca9
+i:docs hostapd=2.7-r3
 
 C:Q1ZlT+T5lYnJDaB3oOY/4QTMCN4So=
 P:speexdsp-doc
@@ -68622,6 +68592,21 @@ t:1555953585
 c:137dfb961be0d810855d3943508d525a2e46be7e
 D:dnssec-root
 p:cmd:migrate-dnscache-to-unbound
+
+C:Q1trnPsqKGA8LdTzUTdnaCC9JlEcU=
+P:libvirt-static
+V:4.10.0-r3
+A:armv7
+S:4099343
+I:10649600
+T:libvirt static libraries
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724108
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:lvm2
 
 C:Q1WPmWz4lhe/wObx+Bh+cVcEH3g7g=
 P:varnish-doc
@@ -73169,22 +73154,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:gtk-engines-clearlooks gtk-engines-crux gtk-engines-industrial gtk-engines-mist gtk-engines-redmond gtk-engines-thinice
 i:gtk-engines=2.21.0-r2 lang
 
-C:Q1nqWQtOARIKHIt1fZmmIiuz39u8g=
-P:libvirt-lxc
-V:4.10.0-r1
-A:armv7
-S:171950
-I:425984
-T:LXC driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051645
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt-daemon=4.10.0-r1 libvirt-common-drivers=4.10.0-r1 so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
-i:libvirt-daemon=4.10.0-r1 lxc
-
 C:Q1AaDyV9/WB6Ni17EP9rftacbhclE=
 P:dbus-glib-dev
 V:0.108-r1
@@ -74388,21 +74357,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557162503
 c:ebd55722b9637f4559c94b13e5e061ffef9fb4a3
 i:docs lua5.3=5.3.5-r2
-
-C:Q1nG4VmdAIFBELPzLGMfZGmWsEgaM=
-P:hostapd-doc
-V:2.7-r2
-A:armv7
-S:3360
-I:32768
-T:daemon for wireless software access points (documentation)
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559722714
-c:6cb240bc23a7e1565dd7c7a1f44bdf80206b9d95
-i:docs hostapd=2.7-r2
 
 C:Q100zoP0HzqbZ4KG0hMYZMvS1jUrI=
 P:alpine-git-mirror-syncd
@@ -76578,6 +76532,21 @@ t:1545225111
 c:69b397fceefdd1ae05560b1559d03a1195b4211b
 i:udisks2=2.6.5-r1 lang
 
+C:Q17LlNWE9cBEqkHOuFmqsS4W6OeDw=
+P:libvirt-common-drivers
+V:4.10.0-r3
+A:armv7
+S:407458
+I:798720
+T:Common libvirt daemon drivers
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724110
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:lvm2 so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q1PTp3lXoa45PF96w8SEuq6/4Z7eI=
 P:pinentry
 V:1.1.0-r0
@@ -76886,6 +76855,21 @@ t:1543229801
 c:6d2dc8194bf78753b8be2432549387630a7d5759
 D:perl-html-tree perl-font-afm
 
+C:Q1r+/9hspUHOYLr7YIjzca1k5856M=
+P:libvirt-doc
+V:4.10.0-r3
+A:armv7
+S:2364412
+I:7892992
+T:A virtualization API for several hypervisor and container systems (documentation)
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724108
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+i:docs libvirt=4.10.0-r3
+
 C:Q1wNUGb4yNP9l0d8aybPlmwc96fn4=
 P:cd-discid-doc
 V:1.4-r2
@@ -77173,6 +77157,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545408308
 c:951f18d4d334262df7bb5a8109b9611db22a6b64
 i:btrfs-progs=4.19.1-r0 bash-completion
+
+C:Q1GVeA44aZrL9DAGhoYTubbuQfd2c=
+P:libvirt-libs
+V:4.10.0-r3
+A:armv7
+S:1389389
+I:2756608
+T:A virtualization API for several hypervisor and container systems (libraries)
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724108
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:lvm2 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libssh2.so.1 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
+p:so:libvirt-admin.so.0=0.4010.0 so:libvirt-lxc.so.0=0.4010.0 so:libvirt-qemu.so.0=0.4010.0 so:libvirt.so.0=0.4010.0
 
 C:Q1+zwWFQtbMXjs5CE5KrUcjKvJsUw=
 P:perl-text-wrapper-doc
@@ -77820,6 +77820,22 @@ t:1551107215
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 D:qemu so:libaio.so.1 so:libc.musl-armv7.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libstdc++.so.6 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-riscv64
+
+C:Q1GwDGTmSHYXHABjh8rTRGB864DFQ=
+P:libvirt-lxc
+V:4.10.0-r3
+A:armv7
+S:171957
+I:425984
+T:LXC driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724109
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt-daemon=4.10.0-r3 libvirt-common-drivers=4.10.0-r3 so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=4.10.0-r3 lxc
 
 C:Q13NSCG63hjoMEc0t9fpElbB+iR44=
 P:memcached-dev
@@ -80957,22 +80973,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1542300245
 c:836b98b3c7314d216566a7f1bfba21a6996905ae
 i:docs perl-html-tagset=3.20-r1
-
-C:Q1/gkZTIKoz+q96nFM1X9rc9fJYxY=
-P:libvirt-daemon
-V:4.10.0-r1
-A:armv7
-S:135164
-I:409600
-T:libvirt daemon package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051645
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:libvirt-client bridge-utils dmidecode dnsmasq ebtables ip6tables iptables so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
-p:cmd:libvirtd
 
 C:Q1P/t+3NxCdAAiBh0cf+X+jD34lAI=
 P:libksba
@@ -84140,6 +84140,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libc.musl-armv7.so.1
 p:so:libXext.so.6=6.4.0
 
+C:Q12CB7GRAy8OLSdQRROObovbExQ/U=
+P:libvirt-vbox
+V:4.10.0-r3
+A:armv7
+S:133580
+I:303104
+T:VirtualBox driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1559724110
+c:cdc0c3d09edf5dbe8c468112e605850df5253c2d
+D:libvirt-daemon=4.10.0-r3 libvirt-common-drivers=4.10.0-r3 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q1G4Qecw29x3IE4O5+QK8V/+dSOo0=
 P:lighttpd-mod_webdav
 V:1.4.52-r0
@@ -84476,21 +84491,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556801694
 c:7645039412595e4776a776dc6d036eb08a91e319
 D:python3 py3-ply
-
-C:Q1EzAZ8ZQCRuIgu0eSxIG6sX67uc8=
-P:libvirt-common-drivers
-V:4.10.0-r1
-A:armv7
-S:407335
-I:798720
-T:Common libvirt daemon drivers
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1547051646
-c:f8a5b7fb9c95fa6fee62d1f64993fe78c4b9c2af
-D:lvm2 so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
 
 C:Q1RWjtvvL7d0V1gAev9uDNZVVrkCA=
 P:hunspell-dev
