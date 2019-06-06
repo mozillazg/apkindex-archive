@@ -2272,35 +2272,39 @@
     },
     "clutter-dev": {
       "versions": {
-        "1.26.2-r2": 1557152076
+        "1.26.2-r2": 1557152076,
+        "1.26.2-r3": 1559775636
       },
       "origin": "clutter",
       "dependencies": [
         "gdk-pixbuf-dev",
         "json-glib-dev",
         "atk-dev",
-        "pango-dev",
         "mesa-dev",
         "libxcomposite-dev",
         "libxi-dev",
         "cairo-dev",
-        "cogl-dev",
-        "clutter=1.26.2-r2",
+        "clutter=1.26.2-r3",
         "pc:atk",
         "pc:atk>=2.5.3",
         "pc:cairo-gobject>=1.14.0",
         "pc:cogl-1.0>=1.21.2",
         "pc:cogl-pango-1.0",
         "pc:cogl-path-1.0",
+        "pc:gdk-3.0",
+        "pc:gdk-pixbuf-2.0",
         "pc:gio-2.0>=2.44.0",
         "pc:json-glib-1.0>=0.12.0",
         "pc:pangocairo>=1.30",
         "pc:pangoft2",
+        "pc:wayland-client",
+        "pc:wayland-cursor",
         "pc:x11",
         "pc:xcomposite>=0.4",
         "pc:xdamage",
         "pc:xext",
         "pc:xi",
+        "pc:xkbcommon",
         "pkgconfig"
       ],
       "provides": [
@@ -2308,7 +2312,9 @@
         "pc:clutter-1.0=1.26.2",
         "pc:clutter-cogl-1.0=1.26.2",
         "pc:clutter-egl-1.0=1.26.2",
+        "pc:clutter-gdk-1.0=1.26.2",
         "pc:clutter-glx-1.0=1.26.2",
+        "pc:clutter-wayland-1.0=1.26.2",
         "pc:clutter-x11-1.0=1.26.2"
       ]
     },
@@ -2865,7 +2871,8 @@
     "samba-common-libs": {
       "versions": {
         "4.10.2-r0": 1557230769,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776815
       },
       "origin": "samba",
       "dependencies": [
@@ -3838,7 +3845,8 @@
     },
     "perl-carp-clan-doc": {
       "versions": {
-        "6.06-r1": 1557160607
+        "6.06-r1": 1557160607,
+        "6.07-r0": 1559775255
       },
       "origin": "perl-carp-clan"
     },
@@ -4343,7 +4351,8 @@
     },
     "gdk-pixbuf": {
       "versions": {
-        "2.36.11-r2": 1556978238
+        "2.36.11-r2": 1556978238,
+        "2.38.1-r0": 1559775472
       },
       "origin": "gdk-pixbuf",
       "dependencies": [
@@ -4361,8 +4370,8 @@
         "so:libtiff.so.5"
       ],
       "provides": [
-        "so:libgdk_pixbuf-2.0.so.0=0.3611.0",
-        "so:libgdk_pixbuf_xlib-2.0.so.0=0.3611.0",
+        "so:libgdk_pixbuf-2.0.so.0=0.3800.1",
+        "so:libgdk_pixbuf_xlib-2.0.so.0=0.3800.1",
         "cmd:gdk-pixbuf-csource",
         "cmd:gdk-pixbuf-pixdata",
         "cmd:gdk-pixbuf-query-loaders",
@@ -6285,7 +6294,8 @@
     "samba-pidl": {
       "versions": {
         "4.10.2-r0": 1557230783,
-        "4.10.3-r0": 1558435952
+        "4.10.3-r0": 1558435952,
+        "4.10.4-r1": 1559776819
       },
       "origin": "samba",
       "dependencies": [
@@ -8180,19 +8190,20 @@
     },
     "musl-utils": {
       "versions": {
-        "1.1.22-r0": 1556303899
+        "1.1.22-r0": 1556303899,
+        "1.1.22-r2": 1559773536
       },
       "origin": "musl",
       "dependencies": [
         "scanelf",
-        "musl=1.1.22-r0",
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
         "cmd:getconf",
         "cmd:getent",
         "cmd:iconv",
-        "cmd:ldconfig"
+        "cmd:ldconfig",
+        "cmd:ldd"
       ]
     },
     "nagios-plugins-all": {
@@ -8639,7 +8650,8 @@
       "versions": {
         "1.6.2-r2": 1556990819,
         "1.8.2-r0": 1558979165,
-        "1.8.2-r1": 1559028412
+        "1.8.2-r1": 1559028412,
+        "1.8.3-r0": 1559773914
       },
       "origin": "iptables"
     },
@@ -8770,7 +8782,8 @@
     },
     "alsa-lib": {
       "versions": {
-        "1.1.8-r0": 1556968450
+        "1.1.8-r0": 1556968450,
+        "1.1.9-r0": 1559773506
       },
       "origin": "alsa-lib",
       "dependencies": [
@@ -10602,7 +10615,8 @@
     "samba-libs-py3": {
       "versions": {
         "4.10.2-r0": 1557230789,
-        "4.10.3-r0": 1558435953
+        "4.10.3-r0": 1558435953,
+        "4.10.4-r1": 1559776820
       },
       "origin": "samba",
       "dependencies": [
@@ -12379,7 +12393,8 @@
     "libsmbclient": {
       "versions": {
         "4.10.2-r0": 1557230770,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776816
       },
       "origin": "samba",
       "dependencies": [
@@ -14631,7 +14646,8 @@
     },
     "nss": {
       "versions": {
-        "3.43-r1": 1557260175
+        "3.43-r1": 1557260175,
+        "3.44-r0": 1559773888
       },
       "origin": "nss",
       "dependencies": [
@@ -14644,15 +14660,15 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libfreebl3.so=43",
-        "so:libgtestutil.so.43=43",
-        "so:libnss3.so=43",
-        "so:libnssckbi.so=43",
-        "so:libnssdbm3.so=43",
-        "so:libnssutil3.so=43",
-        "so:libsmime3.so=43",
-        "so:libsoftokn3.so=43",
-        "so:libssl3.so=43"
+        "so:libfreebl3.so=44",
+        "so:libgtestutil.so.44=44",
+        "so:libnss3.so=44",
+        "so:libnssckbi.so=44",
+        "so:libnssdbm3.so=44",
+        "so:libnssutil3.so=44",
+        "so:libsmime3.so=44",
+        "so:libsoftokn3.so=44",
+        "so:libssl3.so=44"
       ]
     },
     "perl-libwww-doc": {
@@ -15271,7 +15287,8 @@
     "samba-common-server-libs": {
       "versions": {
         "4.10.2-r0": 1557230768,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776815
       },
       "origin": "samba",
       "dependencies": [
@@ -15402,7 +15419,8 @@
     },
     "py2-redis": {
       "versions": {
-        "2.10.6-r1": 1557083438
+        "2.10.6-r1": 1557083438,
+        "3.2.1-r0": 1559773947
       },
       "origin": "py-redis",
       "dependencies": [
@@ -15650,11 +15668,12 @@
     "daq-dev": {
       "versions": {
         "2.0.6-r2": 1556993174,
-        "2.0.6-r3": 1558984181
+        "2.0.6-r3": 1558984181,
+        "2.0.6-r4": 1559775700
       },
       "origin": "daq",
       "dependencies": [
-        "daq=2.0.6-r3"
+        "daq=2.0.6-r4"
       ],
       "provides": [
         "cmd:daq-modules-config"
@@ -16491,13 +16510,14 @@
     },
     "nss-dev": {
       "versions": {
-        "3.43-r1": 1557260174
+        "3.43-r1": 1557260174,
+        "3.44-r0": 1559773887
       },
       "origin": "nss",
       "dependencies": [
         "nss",
         "nspr-dev",
-        "pc:nspr>=3.43",
+        "pc:nspr>=3.44",
         "pkgconfig",
         "so:libc.musl-s390x.so.1",
         "so:libgcc_s.so.1",
@@ -16507,12 +16527,12 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgtest1.so.43=43",
-        "so:libnsssysinit.so=43",
-        "pc:mozilla-nss=3.43",
-        "pc:nss-softokn=3.43",
-        "pc:nss-util=3.43",
-        "pc:nss=3.43",
+        "so:libgtest1.so.44=44",
+        "so:libnsssysinit.so=44",
+        "pc:mozilla-nss=3.44",
+        "pc:nss-softokn=3.44",
+        "pc:nss-util=3.44",
+        "pc:nss=3.44",
         "cmd:nss-config"
       ]
     },
@@ -17073,14 +17093,15 @@
     },
     "nodejs-dev": {
       "versions": {
-        "10.15.3-r0": 1557248309
+        "10.15.3-r0": 1557248309,
+        "10.16.0-r0": 1559775227
       },
       "origin": "nodejs",
       "dependencies": [
         "libuv"
       ],
       "provides": [
-        "nodejs-lts-dev=10.15.3"
+        "nodejs-lts-dev=10.16.0"
       ]
     },
     "ruby-etc": {
@@ -17327,7 +17348,8 @@
     },
     "py-redis": {
       "versions": {
-        "2.10.6-r1": 1557083439
+        "2.10.6-r1": 1557083439,
+        "3.2.1-r0": 1559773948
       },
       "origin": "py-redis"
     },
@@ -20323,7 +20345,8 @@
     },
     "cups-lang": {
       "versions": {
-        "2.2.10-r0": 1556987977
+        "2.2.10-r0": 1556987977,
+        "2.2.11-r0": 1559775524
       },
       "origin": "cups",
       "dependencies": [
@@ -21169,7 +21192,8 @@
     "samba-doc": {
       "versions": {
         "4.10.2-r0": 1557230764,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776814
       },
       "origin": "samba"
     },
@@ -22342,7 +22366,8 @@
     },
     "vte3": {
       "versions": {
-        "0.52.2-r0": 1557127651
+        "0.52.2-r0": 1557127651,
+        "0.56.1-r0": 1559776946
       },
       "origin": "vte3",
       "dependencies": [
@@ -22365,7 +22390,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libvte-2.91.so.0=0.5200.2",
+        "so:libvte-2.91.so.0=0.5600.1",
         "cmd:vte-2.91"
       ]
     },
@@ -22629,7 +22654,8 @@
     },
     "alsa-lib-dbg": {
       "versions": {
-        "1.1.8-r0": 1556968449
+        "1.1.8-r0": 1556968449,
+        "1.1.9-r0": 1559773505
       },
       "origin": "alsa-lib"
     },
@@ -24601,7 +24627,8 @@
     },
     "at-spi2-atk": {
       "versions": {
-        "2.26.2-r1": 1557045960
+        "2.26.2-r1": 1557045960,
+        "2.32.0-r0": 1559775344
       },
       "origin": "at-spi2-atk",
       "dependencies": [
@@ -25202,7 +25229,8 @@
     "samba-server-libs": {
       "versions": {
         "4.10.2-r0": 1557230783,
-        "4.10.3-r0": 1558435952
+        "4.10.3-r0": 1558435952,
+        "4.10.4-r1": 1559776818
       },
       "origin": "samba",
       "dependencies": [
@@ -25611,7 +25639,8 @@
     },
     "cups-client": {
       "versions": {
-        "2.2.10-r0": 1556987977
+        "2.2.10-r0": 1556987977,
+        "2.2.11-r0": 1559775524
       },
       "origin": "cups",
       "dependencies": [
@@ -25756,7 +25785,8 @@
       "versions": {
         "2.9.13-r0": 1557169544,
         "2.9.13-r1": 1558358469,
-        "2.9.13-r2": 1558984392
+        "2.9.13-r2": 1558984392,
+        "2.9.13-r3": 1559775812
       },
       "origin": "snort",
       "dependencies": [
@@ -25764,6 +25794,7 @@
         "so:libc.musl-s390x.so.1",
         "so:libdnet.so.1",
         "so:liblzma.so.5",
+        "so:libnetfilter_queue.so.1",
         "so:libpcap.so.1",
         "so:libpcre.so.1",
         "so:libsfbpf.so.0",
@@ -25892,18 +25923,24 @@
     },
     "at-spi2-core-dev": {
       "versions": {
-        "2.28.0-r1": 1557045941
+        "2.28.0-r1": 1557045941,
+        "2.32.0-r0": 1559775329
       },
       "origin": "at-spi2-core",
       "dependencies": [
-        "libxtst-dev",
-        "at-spi2-core=2.28.0-r1",
+        "at-spi2-core=2.32.0-r0",
         "pc:dbus-1",
+        "pc:dbus-1>=1.5",
         "pc:glib-2.0",
+        "pc:glib-2.0>=2.32.0",
+        "pc:gobject-2.0>=2.0.0",
+        "pc:x11",
+        "pc:xi",
+        "pc:xtst",
         "pkgconfig"
       ],
       "provides": [
-        "pc:atspi-2=2.28.0"
+        "pc:atspi-2=2.32.0"
       ]
     },
     "lua-cqueues": {
@@ -27492,12 +27529,12 @@
     "samba-server": {
       "versions": {
         "4.10.2-r0": 1557230782,
-        "4.10.3-r0": 1558435952
+        "4.10.3-r0": 1558435952,
+        "4.10.4-r1": 1559776818
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.3-r0",
-        "samba-initscript=4.10.3-r0",
+        "samba-common=4.10.4-r1",
         "so:libCHARSET3-samba4.so",
         "so:libauth-samba4.so",
         "so:libc.musl-s390x.so.1",
@@ -27786,7 +27823,8 @@
     },
     "alsa-utils-dbg": {
       "versions": {
-        "1.1.8-r0": 1557260623
+        "1.1.8-r0": 1557260623,
+        "1.1.9-r0": 1559775276
       },
       "origin": "alsa-utils",
       "dependencies": [
@@ -28910,7 +28948,8 @@
     },
     "clutter": {
       "versions": {
-        "1.26.2-r2": 1557152078
+        "1.26.2-r2": 1557152078,
+        "1.26.2-r3": 1559775637
       },
       "origin": "clutter",
       "dependencies": [
@@ -28926,6 +28965,7 @@
         "so:libcogl-path.so.20",
         "so:libcogl.so.20",
         "so:libfontconfig.so.1",
+        "so:libgdk-3.so.0",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
@@ -28934,7 +28974,11 @@
         "so:libjson-glib-1.0.so.0",
         "so:libpango-1.0.so.0",
         "so:libpangocairo-1.0.so.0",
-        "so:libpangoft2-1.0.so.0"
+        "so:libpangoft2-1.0.so.0",
+        "so:libwayland-client.so.0",
+        "so:libwayland-cursor.so.0",
+        "so:libwayland-server.so.0",
+        "so:libxkbcommon.so.0"
       ],
       "provides": [
         "so:libclutter-1.0.so.0=0.2600.2"
@@ -29242,7 +29286,8 @@
     },
     "nodejs": {
       "versions": {
-        "10.15.3-r0": 1557248312
+        "10.15.3-r0": 1557248312,
+        "10.16.0-r0": 1559775231
       },
       "origin": "nodejs",
       "dependencies": [
@@ -29257,7 +29302,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "nodejs-lts=10.15.3",
+        "nodejs-lts=10.16.0",
         "cmd:node"
       ]
     },
@@ -29923,7 +29968,8 @@
     },
     "vte3-doc": {
       "versions": {
-        "0.52.2-r0": 1557127651
+        "0.52.2-r0": 1557127651,
+        "0.56.1-r0": 1559776946
       },
       "origin": "vte3"
     },
@@ -29989,7 +30035,8 @@
     },
     "atk-lang": {
       "versions": {
-        "2.30.0-r0": 1556919570
+        "2.30.0-r0": 1556919570,
+        "2.32.0-r0": 1559775311
       },
       "origin": "atk"
     },
@@ -30203,15 +30250,16 @@
     },
     "npm": {
       "versions": {
-        "10.15.3-r0": 1557248310
+        "10.15.3-r0": 1557248310,
+        "10.16.0-r0": 1559775229
       },
       "origin": "nodejs",
       "dependencies": [
         "nodejs"
       ],
       "provides": [
-        "nodejs-npm=10.15.3-r0",
-        "nodejs-current-npm=10.15.3-r0",
+        "nodejs-npm=10.16.0-r0",
+        "nodejs-current-npm=10.16.0-r0",
         "cmd:npm",
         "cmd:npx"
       ]
@@ -30586,11 +30634,12 @@
     "samba-client": {
       "versions": {
         "4.10.2-r0": 1557230772,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776816
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.3-r0",
+        "samba-common=4.10.4-r1",
         "so:libCHARSET3-samba4.so",
         "so:libaddns-samba4.so",
         "so:libarchive.so.13",
@@ -31443,7 +31492,8 @@
     "libwbclient": {
       "versions": {
         "4.10.2-r0": 1557230774,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
@@ -32589,7 +32639,8 @@
     },
     "vte3-lang": {
       "versions": {
-        "0.52.2-r0": 1557127651
+        "0.52.2-r0": 1557127651,
+        "0.56.1-r0": 1559776946
       },
       "origin": "vte3"
     },
@@ -34593,22 +34644,23 @@
     "samba-dev": {
       "versions": {
         "4.10.2-r0": 1557230761,
-        "4.10.3-r0": 1558435949
+        "4.10.3-r0": 1558435949,
+        "4.10.4-r1": 1559776812
       },
       "origin": "samba",
       "dependencies": [
-        "libsmbclient=4.10.3-r0",
-        "libwbclient=4.10.3-r0",
+        "libsmbclient=4.10.4-r1",
+        "libwbclient=4.10.4-r1",
         "pc:ldb",
         "pc:talloc",
         "pc:tevent",
         "pkgconfig",
-        "samba-client-libs=4.10.3-r0",
-        "samba-common-libs=4.10.3-r0",
-        "samba-common-server-libs=4.10.3-r0",
-        "samba-dc-libs=4.10.3-r0",
-        "samba-libnss-winbind=4.10.3-r0",
-        "samba-libs=4.10.3-r0"
+        "samba-client-libs=4.10.4-r1",
+        "samba-common-libs=4.10.4-r1",
+        "samba-common-server-libs=4.10.4-r1",
+        "samba-dc-libs=4.10.4-r1",
+        "samba-libnss-winbind=4.10.4-r1",
+        "samba-libs=4.10.4-r1"
       ],
       "provides": [
         "pc:dcerpc=0.0.1",
@@ -35806,7 +35858,8 @@
     },
     "giblib-doc": {
       "versions": {
-        "1.2.4-r10": 1557078010
+        "1.2.4-r10": 1557078010,
+        "1.2.4-r11": 1559776960
       },
       "origin": "giblib"
     },
@@ -35862,7 +35915,8 @@
     "samba-winbind-clients": {
       "versions": {
         "4.10.2-r0": 1557230775,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
@@ -37470,7 +37524,8 @@
     },
     "gdk-pixbuf-doc": {
       "versions": {
-        "2.36.11-r2": 1556978235
+        "2.36.11-r2": 1556978235,
+        "2.38.1-r0": 1559775471
       },
       "origin": "gdk-pixbuf"
     },
@@ -39234,7 +39289,8 @@
     },
     "alsa-utils": {
       "versions": {
-        "1.1.8-r0": 1557260625
+        "1.1.8-r0": 1557260625,
+        "1.1.9-r0": 1559775276
       },
       "origin": "alsa-utils",
       "dependencies": [
@@ -40340,7 +40396,8 @@
     },
     "alsa-utils-openrc": {
       "versions": {
-        "1.1.8-r0": 1557260624
+        "1.1.8-r0": 1557260624,
+        "1.1.9-r0": 1559775276
       },
       "origin": "alsa-utils"
     },
@@ -41084,12 +41141,13 @@
       "versions": {
         "2.9.13-r0": 1557169544,
         "2.9.13-r1": 1558358469,
-        "2.9.13-r2": 1558984391
+        "2.9.13-r2": 1558984391,
+        "2.9.13-r3": 1559775811
       },
       "origin": "snort",
       "dependencies": [
         "pkgconfig",
-        "snort=2.9.13-r2"
+        "snort=2.9.13-r3"
       ],
       "provides": [
         "pc:snort=2.9.13",
@@ -41312,7 +41370,8 @@
     },
     "cups": {
       "versions": {
-        "2.2.10-r0": 1556987978
+        "2.2.10-r0": 1556987978,
+        "2.2.11-r0": 1559775525
       },
       "origin": "cups",
       "dependencies": [
@@ -41321,7 +41380,7 @@
         "openssl",
         "dbus",
         "/bin/sh",
-        "cups-client=2.2.10-r0",
+        "cups-client=2.2.11-r0",
         "so:libavahi-client.so.3",
         "so:libavahi-common.so.3",
         "so:libc.musl-s390x.so.1",
@@ -41378,7 +41437,8 @@
     },
     "nodejs-doc": {
       "versions": {
-        "10.15.3-r0": 1557248310
+        "10.15.3-r0": 1557248310,
+        "10.16.0-r0": 1559775229
       },
       "origin": "nodejs"
     },
@@ -41770,7 +41830,8 @@
       "versions": {
         "1.6.2-r2": 1556990820,
         "1.8.2-r0": 1558979166,
-        "1.8.2-r1": 1559028413
+        "1.8.2-r1": 1559028413,
+        "1.8.3-r0": 1559773914
       },
       "origin": "iptables",
       "dependencies": [
@@ -41780,8 +41841,8 @@
       ],
       "provides": [
         "ebtables",
-        "so:libip4tc.so.0=0.1.0",
-        "so:libip6tc.so.0=0.1.0",
+        "so:libip4tc.so.2=2.0.0",
+        "so:libip6tc.so.2=2.0.0",
         "so:libipq.so.0=0.0.0",
         "so:libiptc.so.0=0.0.0",
         "so:libxtables.so.12=12.2.0",
@@ -41891,11 +41952,12 @@
     },
     "libc6-compat": {
       "versions": {
-        "1.1.22-r0": 1556303899
+        "1.1.22-r0": 1556303899,
+        "1.1.22-r2": 1559773536
       },
       "origin": "musl",
       "dependencies": [
-        "musl=1.1.22-r0"
+        "musl=1.1.22-r2"
       ]
     },
     "uwsgi-graylog2": {
@@ -42157,7 +42219,8 @@
     "samba-winbind-krb5-locator": {
       "versions": {
         "4.10.2-r0": 1557230775,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
@@ -42211,7 +42274,8 @@
     },
     "atk": {
       "versions": {
-        "2.30.0-r0": 1556919571
+        "2.30.0-r0": 1556919571,
+        "2.32.0-r0": 1559775312
       },
       "origin": "atk",
       "dependencies": [
@@ -42221,7 +42285,7 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "so:libatk-1.0.so.0=0.23009.1"
+        "so:libatk-1.0.so.0=0.23209.1"
       ]
     },
     "chrony-doc": {
@@ -44266,11 +44330,12 @@
     },
     "musl-dev": {
       "versions": {
-        "1.1.22-r0": 1556303898
+        "1.1.22-r0": 1556303898,
+        "1.1.22-r2": 1559773536
       },
       "origin": "musl",
       "dependencies": [
-        "musl=1.1.22-r0"
+        "musl=1.1.22-r2"
       ]
     },
     "py-constantly": {
@@ -45063,7 +45128,8 @@
     "samba-test": {
       "versions": {
         "4.10.2-r0": 1557230788,
-        "4.10.3-r0": 1558435953
+        "4.10.3-r0": 1558435953,
+        "4.10.4-r1": 1559776819
       },
       "origin": "samba",
       "dependencies": [
@@ -46681,7 +46747,8 @@
     },
     "vte3-dev": {
       "versions": {
-        "0.52.2-r0": 1557127651
+        "0.52.2-r0": 1557127651,
+        "0.56.1-r0": 1559776946
       },
       "origin": "vte3",
       "dependencies": [
@@ -46695,10 +46762,10 @@
         "pc:pango>=1.22.0",
         "pc:zlib",
         "pkgconfig",
-        "vte3=0.52.2-r0"
+        "vte3=0.56.1-r0"
       ],
       "provides": [
-        "pc:vte-2.91=0.52.2"
+        "pc:vte-2.91=0.56.1"
       ]
     },
     "glade3-dev": {
@@ -47137,7 +47204,8 @@
     "py3-samba": {
       "versions": {
         "4.10.2-r0": 1557230787,
-        "4.10.3-r0": 1558435952
+        "4.10.3-r0": 1558435952,
+        "4.10.4-r1": 1559776819
       },
       "origin": "samba",
       "dependencies": [
@@ -47610,7 +47678,8 @@
     },
     "clutter-lang": {
       "versions": {
-        "1.26.2-r2": 1557152077
+        "1.26.2-r2": 1557152077,
+        "1.26.2-r3": 1559775637
       },
       "origin": "clutter"
     },
@@ -47785,19 +47854,22 @@
     },
     "gdk-pixbuf-dev": {
       "versions": {
-        "2.36.11-r2": 1556978234
+        "2.36.11-r2": 1556978234,
+        "2.38.1-r0": 1559775471
       },
       "origin": "gdk-pixbuf",
       "dependencies": [
-        "gdk-pixbuf=2.36.11-r2",
+        "shared-mime-info",
+        "gdk-pixbuf=2.38.1-r0",
+        "pc:gio-2.0>=2.38.0",
         "pc:gmodule-no-export-2.0",
-        "pc:gobject-2.0",
-        "pc:libpng16",
+        "pc:gobject-2.0>=2.38.0",
+        "pc:x11",
         "pkgconfig"
       ],
       "provides": [
-        "pc:gdk-pixbuf-2.0=2.36.11",
-        "pc:gdk-pixbuf-xlib-2.0=2.36.11"
+        "pc:gdk-pixbuf-2.0=2.38.1",
+        "pc:gdk-pixbuf-xlib-2.0=2.38.1"
       ]
     },
     "apache2-proxy-html": {
@@ -48751,7 +48823,8 @@
     },
     "nss-tools": {
       "versions": {
-        "3.43-r1": 1557260175
+        "3.43-r1": 1557260175,
+        "3.44-r0": 1559773887
       },
       "origin": "nss",
       "dependencies": [
@@ -49247,7 +49320,8 @@
       "versions": {
         "2.9.13-r0": 1557169543,
         "2.9.13-r1": 1558358469,
-        "2.9.13-r2": 1558984391
+        "2.9.13-r2": 1558984391,
+        "2.9.13-r3": 1559775811
       },
       "origin": "snort"
     },
@@ -50671,7 +50745,8 @@
     },
     "cups-libs": {
       "versions": {
-        "2.2.10-r0": 1556987976
+        "2.2.10-r0": 1556987976,
+        "2.2.11-r0": 1559775524
       },
       "origin": "cups",
       "dependencies": [
@@ -50893,11 +50968,12 @@
       "versions": {
         "1.6.2-r2": 1556990818,
         "1.8.2-r0": 1558979165,
-        "1.8.2-r1": 1559028412
+        "1.8.2-r1": 1559028412,
+        "1.8.3-r0": 1559773913
       },
       "origin": "iptables",
       "dependencies": [
-        "iptables=1.8.2-r1",
+        "iptables=1.8.3-r0",
         "so:libc.musl-s390x.so.1",
         "so:libxtables.so.12"
       ]
@@ -51387,7 +51463,8 @@
     "pam-winbind": {
       "versions": {
         "4.10.2-r0": 1557230777,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
@@ -51625,7 +51702,8 @@
     "samba-libs": {
       "versions": {
         "4.10.2-r0": 1557230790,
-        "4.10.3-r0": 1558435953
+        "4.10.3-r0": 1558435953,
+        "4.10.4-r1": 1559776820
       },
       "origin": "samba",
       "dependencies": [
@@ -52160,7 +52238,8 @@
     },
     "alsaconf": {
       "versions": {
-        "1.1.8-r0": 1557260621
+        "1.1.8-r0": 1557260621,
+        "1.1.9-r0": 1559775276
       },
       "origin": "alsa-utils",
       "dependencies": [
@@ -52244,7 +52323,8 @@
     },
     "at-spi2-core-dbg": {
       "versions": {
-        "2.28.0-r1": 1557045940
+        "2.28.0-r1": 1557045940,
+        "2.32.0-r0": 1559775329
       },
       "origin": "at-spi2-core"
     },
@@ -52279,7 +52359,8 @@
     },
     "giblib": {
       "versions": {
-        "1.2.4-r10": 1557078012
+        "1.2.4-r10": 1557078012,
+        "1.2.4-r11": 1559776960
       },
       "origin": "giblib",
       "dependencies": [
@@ -52896,7 +52977,8 @@
     },
     "at-spi2-core": {
       "versions": {
-        "2.28.0-r1": 1557045941
+        "2.28.0-r1": 1557045941,
+        "2.32.0-r0": 1559775330
       },
       "origin": "at-spi2-core",
       "dependencies": [
@@ -53980,7 +54062,8 @@
     },
     "perl-carp-clan": {
       "versions": {
-        "6.06-r1": 1557160610
+        "6.06-r1": 1557160610,
+        "6.07-r0": 1559775256
       },
       "origin": "perl-carp-clan",
       "dependencies": [
@@ -54469,7 +54552,8 @@
     },
     "cups-doc": {
       "versions": {
-        "2.2.10-r0": 1556987975
+        "2.2.10-r0": 1556987975,
+        "2.2.11-r0": 1559775524
       },
       "origin": "cups"
     },
@@ -54659,11 +54743,14 @@
     "daq": {
       "versions": {
         "2.0.6-r2": 1556993178,
-        "2.0.6-r3": 1558984181
+        "2.0.6-r3": 1558984181,
+        "2.0.6-r4": 1559775701
       },
       "origin": "daq",
       "dependencies": [
         "so:libc.musl-s390x.so.1",
+        "so:libdnet.so.1",
+        "so:libnetfilter_queue.so.1",
         "so:libpcap.so.1",
         "so:libsfbpf.so.0"
       ],
@@ -55372,14 +55459,15 @@
     "samba-dc": {
       "versions": {
         "4.10.2-r0": 1557230779,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776818
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.3-r0",
-        "samba-server=4.10.3-r0",
-        "samba-winbind=4.10.3-r0",
-        "py3-samba=4.10.3-r0",
+        "samba-common=4.10.4-r1",
+        "samba-server=4.10.4-r1",
+        "samba-winbind=4.10.4-r1",
+        "py3-samba=4.10.4-r1",
         "tdb",
         "so:libMESSAGING-samba4.so",
         "so:libasn1util-samba4.so",
@@ -55779,19 +55867,18 @@
     },
     "at-spi2-atk-dev": {
       "versions": {
-        "2.26.2-r1": 1557045959
+        "2.26.2-r1": 1557045959,
+        "2.32.0-r0": 1559775344
       },
       "origin": "at-spi2-atk",
       "dependencies": [
-        "dbus-dev",
-        "atk-dev",
-        "at-spi2-atk=2.26.2-r1",
+        "at-spi2-atk=2.32.0-r0",
         "pc:atspi-2",
         "pc:gobject-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:atk-bridge-2.0=2.26.2"
+        "pc:atk-bridge-2.0=2.31.92"
       ]
     },
     "pcre-doc": {
@@ -57028,7 +57115,8 @@
     },
     "at-spi2-core-lang": {
       "versions": {
-        "2.28.0-r1": 1557045941
+        "2.28.0-r1": 1557045941,
+        "2.32.0-r0": 1559775330
       },
       "origin": "at-spi2-core"
     },
@@ -57584,11 +57672,12 @@
     "samba-winbind": {
       "versions": {
         "4.10.2-r0": 1557230774,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
-        "samba-common=4.10.3-r0",
+        "samba-common=4.10.4-r1",
         "so:libMESSAGING-samba4.so",
         "so:libads-samba4.so",
         "so:libasn1util-samba4.so",
@@ -57835,7 +57924,8 @@
       "versions": {
         "2.9.13-r0": 1557169544,
         "2.9.13-r1": 1558358469,
-        "2.9.13-r2": 1558984392
+        "2.9.13-r2": 1558984392,
+        "2.9.13-r3": 1559775812
       },
       "origin": "snort"
     },
@@ -58562,7 +58652,8 @@
     },
     "musl": {
       "versions": {
-        "1.1.22-r0": 1556303899
+        "1.1.22-r0": 1556303899,
+        "1.1.22-r2": 1559773536
       },
       "origin": "musl",
       "provides": [
@@ -59129,7 +59220,8 @@
     },
     "ipptool": {
       "versions": {
-        "2.2.10-r0": 1556987976
+        "2.2.10-r0": 1556987976,
+        "2.2.11-r0": 1559775524
       },
       "origin": "cups",
       "dependencies": [
@@ -60241,7 +60333,8 @@
     "samba-libnss-winbind": {
       "versions": {
         "4.10.2-r0": 1557230776,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776817
       },
       "origin": "samba",
       "dependencies": [
@@ -60302,16 +60395,17 @@
     },
     "atk-dev": {
       "versions": {
-        "2.30.0-r0": 1556919569
+        "2.30.0-r0": 1556919569,
+        "2.32.0-r0": 1559775311
       },
       "origin": "atk",
       "dependencies": [
-        "atk=2.30.0-r0",
+        "atk=2.32.0-r0",
         "pc:gobject-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:atk=2.30.0"
+        "pc:atk=2.32.0"
       ]
     },
     "postgresql-plpython2": {
@@ -60972,7 +61066,8 @@
     },
     "atk-doc": {
       "versions": {
-        "2.30.0-r0": 1556919570
+        "2.30.0-r0": 1556919570,
+        "2.32.0-r0": 1559775311
       },
       "origin": "atk"
     },
@@ -61223,7 +61318,8 @@
     },
     "clutter-doc": {
       "versions": {
-        "1.26.2-r2": 1557152077
+        "1.26.2-r2": 1557152077,
+        "1.26.2-r3": 1559775636
       },
       "origin": "clutter"
     },
@@ -61262,7 +61358,8 @@
     },
     "gdk-pixbuf-dbg": {
       "versions": {
-        "2.36.11-r2": 1556978237
+        "2.36.11-r2": 1556978237,
+        "2.38.1-r0": 1559775472
       },
       "origin": "gdk-pixbuf",
       "dependencies": [
@@ -61293,7 +61390,8 @@
     "samba-heimdal-libs": {
       "versions": {
         "4.10.2-r0": 1557230778,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776818
       },
       "origin": "samba",
       "dependencies": [
@@ -61358,14 +61456,15 @@
     },
     "cups-dev": {
       "versions": {
-        "2.2.10-r0": 1556987975
+        "2.2.10-r0": 1556987975,
+        "2.2.11-r0": 1559775523
       },
       "origin": "cups",
       "dependencies": [
         "libgcrypt-dev",
         "gnutls-dev",
         "zlib-dev",
-        "cups-libs=2.2.10-r0"
+        "cups-libs=2.2.11-r0"
       ],
       "provides": [
         "cmd:cups-config"
@@ -62035,7 +62134,8 @@
     },
     "musl-dbg": {
       "versions": {
-        "1.1.22-r0": 1556303899
+        "1.1.22-r0": 1556303899,
+        "1.1.22-r2": 1559773536
       },
       "origin": "musl"
     },
@@ -62116,7 +62216,8 @@
     "samba-common": {
       "versions": {
         "4.10.2-r0": 1557230766,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776814
       },
       "origin": "samba"
     },
@@ -62333,15 +62434,16 @@
     },
     "alsa-lib-dev": {
       "versions": {
-        "1.1.8-r0": 1556968449
+        "1.1.8-r0": 1556968449,
+        "1.1.9-r0": 1559773505
       },
       "origin": "alsa-lib",
       "dependencies": [
-        "alsa-lib=1.1.8-r0",
+        "alsa-lib=1.1.9-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:alsa=1.1.8"
+        "pc:alsa=1.1.9"
       ]
     },
     "acf-lvm2": {
@@ -62411,7 +62513,8 @@
     },
     "gdk-pixbuf-lang": {
       "versions": {
-        "2.36.11-r2": 1556978236
+        "2.36.11-r2": 1556978236,
+        "2.38.1-r0": 1559775471
       },
       "origin": "gdk-pixbuf",
       "dependencies": [
@@ -63184,20 +63287,21 @@
       "versions": {
         "1.6.2-r2": 1556990819,
         "1.8.2-r0": 1558979165,
-        "1.8.2-r1": 1559028412
+        "1.8.2-r1": 1559028412,
+        "1.8.3-r0": 1559773914
       },
       "origin": "iptables",
       "dependencies": [
         "linux-headers",
-        "iptables=1.8.2-r1",
+        "iptables=1.8.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libip4tc=1.8.2",
-        "pc:libip6tc=1.8.2",
-        "pc:libipq=1.8.2",
-        "pc:libiptc=1.8.2",
-        "pc:xtables=1.8.2"
+        "pc:libip4tc=1.8.3",
+        "pc:libip6tc=1.8.3",
+        "pc:libipq=1.8.3",
+        "pc:libiptc=1.8.3",
+        "pc:xtables=1.8.3"
       ]
     },
     "ulogd-pgsql": {
@@ -63423,7 +63527,8 @@
     },
     "alsa-utils-doc": {
       "versions": {
-        "1.1.8-r0": 1557260620
+        "1.1.8-r0": 1557260620,
+        "1.1.9-r0": 1559775276
       },
       "origin": "alsa-utils"
     },
@@ -63723,7 +63828,8 @@
     "samba-common-tools": {
       "versions": {
         "4.10.2-r0": 1557230767,
-        "4.10.3-r0": 1558435950
+        "4.10.3-r0": 1558435950,
+        "4.10.4-r1": 1559776814
       },
       "origin": "samba",
       "dependencies": [
@@ -63978,7 +64084,8 @@
     },
     "dhcpcd-dbus": {
       "versions": {
-        "0.6.1-r3": 1557077321
+        "0.6.1-r3": 1557077321,
+        "0.6.1-r4": 1559775649
       },
       "origin": "dhcpcd-dbus",
       "dependencies": [
@@ -64203,13 +64310,14 @@
     "samba": {
       "versions": {
         "4.10.2-r0": 1557230791,
-        "4.10.3-r0": 1558435953
+        "4.10.3-r0": 1558435953,
+        "4.10.4-r1": 1559776820
       },
       "origin": "samba",
       "dependencies": [
-        "samba-server=4.10.3-r0",
-        "samba-client=4.10.3-r0",
-        "samba-common-tools=4.10.3-r0"
+        "samba-server=4.10.4-r1",
+        "samba-client=4.10.4-r1",
+        "samba-common-tools=4.10.4-r1"
       ]
     },
     "docbook-xsl": {
@@ -64496,13 +64604,14 @@
     "samba-dc-libs": {
       "versions": {
         "4.10.2-r0": 1557230781,
-        "4.10.3-r0": 1558435952
+        "4.10.3-r0": 1558435952,
+        "4.10.4-r1": 1559776818
       },
       "origin": "samba",
       "dependencies": [
-        "samba-server=4.10.3-r0",
-        "samba-client=4.10.3-r0",
-        "samba-common-tools=4.10.3-r0",
+        "samba-server=4.10.4-r1",
+        "samba-client=4.10.4-r1",
+        "samba-common-tools=4.10.4-r1",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
         "so:libasn1-samba4.so.8",
@@ -65406,7 +65515,8 @@
     },
     "py3-redis": {
       "versions": {
-        "2.10.6-r1": 1557083439
+        "2.10.6-r1": 1557083439,
+        "3.2.1-r0": 1559773947
       },
       "origin": "py-redis",
       "dependencies": [
@@ -67385,7 +67495,8 @@
     "samba-client-libs": {
       "versions": {
         "4.10.2-r0": 1557230773,
-        "4.10.3-r0": 1558435951
+        "4.10.3-r0": 1558435951,
+        "4.10.4-r1": 1559776816
       },
       "origin": "samba",
       "dependencies": [
@@ -67953,7 +68064,8 @@
     },
     "nss-static": {
       "versions": {
-        "3.43-r1": 1557260174
+        "3.43-r1": 1557260174,
+        "3.44-r0": 1559773887
       },
       "origin": "nss"
     },
@@ -68107,7 +68219,8 @@
     },
     "giblib-dev": {
       "versions": {
-        "1.2.4-r10": 1557078011
+        "1.2.4-r10": 1557078011,
+        "1.2.4-r11": 1559776960
       },
       "origin": "giblib",
       "dependencies": [
@@ -68116,7 +68229,7 @@
         "zlib-dev",
         "libx11-dev",
         "libxext-dev",
-        "giblib=1.2.4-r10",
+        "giblib=1.2.4-r11",
         "pkgconfig"
       ],
       "provides": [
@@ -68906,7 +69019,8 @@
     "daq-sfbpf": {
       "origin": "daq",
       "versions": {
-        "2.0.6-r3": 1558984181
+        "2.0.6-r3": 1558984181,
+        "2.0.6-r4": 1559775700
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -69003,7 +69117,8 @@
     "daq-static": {
       "origin": "daq",
       "versions": {
-        "2.0.6-r3": 1558984181
+        "2.0.6-r3": 1558984181,
+        "2.0.6-r4": 1559775700
       }
     },
     "py3-volume_key": {
@@ -69035,13 +69150,15 @@
     "iptables-openrc": {
       "origin": "iptables",
       "versions": {
-        "1.8.2-r1": 1559028412
+        "1.8.2-r1": 1559028412,
+        "1.8.3-r0": 1559773914
       }
     },
     "ip6tables-openrc": {
       "origin": "iptables",
       "versions": {
-        "1.8.2-r1": 1559028413
+        "1.8.2-r1": 1559028413,
+        "1.8.3-r0": 1559773914
       }
     },
     "perl-socket6-doc": {
@@ -69295,6 +69412,18 @@
       "origin": "shorewall",
       "versions": {
         "5.2.3.3-r0": 1559754749
+      }
+    },
+    "cups-openrc": {
+      "origin": "cups",
+      "versions": {
+        "2.2.11-r0": 1559775525
+      }
+    },
+    "samba-server-openrc": {
+      "origin": "samba",
+      "versions": {
+        "4.10.4-r1": 1559776814
       }
     }
   },
@@ -69666,11 +69795,11 @@
       },
       "libgdk_pixbuf-2.0.so.0": {
         "package": "gdk-pixbuf",
-        "version": "0.3611.0"
+        "version": "0.3800.1"
       },
       "libgdk_pixbuf_xlib-2.0.so.0": {
         "package": "gdk-pixbuf",
-        "version": "0.3611.0"
+        "version": "0.3800.1"
       },
       "libaudit.so.1": {
         "package": "audit-libs",
@@ -70394,7 +70523,7 @@
       },
       "libfreebl3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libgtestutil.so.43": {
         "package": "nss",
@@ -70402,31 +70531,31 @@
       },
       "libnss3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libnssckbi.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libnssdbm3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libnssutil3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libsmime3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libsoftokn3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libssl3.so": {
         "package": "nss",
-        "version": "43"
+        "version": "44"
       },
       "libexecinfo.so.1": {
         "package": "libexecinfo",
@@ -70646,7 +70775,7 @@
       },
       "libnsssysinit.so": {
         "package": "nss-dev",
-        "version": "43"
+        "version": "44"
       },
       "libnvpair.so.1": {
         "package": "zfs-libs",
@@ -71278,7 +71407,7 @@
       },
       "libvte-2.91.so.0": {
         "package": "vte3",
-        "version": "0.5200.2"
+        "version": "0.5600.1"
       },
       "libfastjson.so.4": {
         "package": "libfastjson",
@@ -72950,7 +73079,7 @@
       },
       "libatk-1.0.so.0": {
         "package": "atk",
-        "version": "0.23009.1"
+        "version": "0.23209.1"
       },
       "libxmlrpc_client++.so.8": {
         "package": "xmlrpc-c-client++",
@@ -75443,6 +75572,22 @@
       "libconfig.so.11": {
         "package": "libconfig",
         "version": "11.0.2"
+      },
+      "libgtest1.so.44": {
+        "package": "nss-dev",
+        "version": "44"
+      },
+      "libgtestutil.so.44": {
+        "package": "nss",
+        "version": "44"
+      },
+      "libip4tc.so.2": {
+        "package": "iptables",
+        "version": "2.0.0"
+      },
+      "libip6tc.so.2": {
+        "package": "iptables",
+        "version": "2.0.0"
       }
     },
     "package": {
@@ -75560,7 +75705,7 @@
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "10.15.3"
+        "version": "10.16.0"
       },
       "py2-uritemplate.py": {
         "package": "py2-uritemplate",
@@ -75664,15 +75809,15 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "10.15.3"
+        "version": "10.16.0"
       },
       "nodejs-npm": {
         "package": "npm",
-        "version": "10.15.3-r0"
+        "version": "10.16.0-r0"
       },
       "nodejs-current-npm": {
         "package": "npm",
-        "version": "10.15.3-r0"
+        "version": "10.16.0-r0"
       },
       "perl-yaml-xs": {
         "package": "perl-yaml-libyaml",
