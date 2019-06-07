@@ -2844,7 +2844,8 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514467,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       }
     },
     "php7-shmop": {
@@ -11299,7 +11300,8 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514465,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -11639,7 +11641,8 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514466,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -14124,7 +14127,8 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514467,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       },
       "dependencies": [
         "/bin/sh",
@@ -14961,7 +14965,8 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514467,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       }
     },
     "xdvik": {
@@ -43474,18 +43479,22 @@
       "origin": "knot",
       "versions": {
         "2.8.1-r0": 1557514466,
-        "2.8.1-r1": 1559297876
+        "2.8.1-r1": 1559297876,
+        "2.8.2-r0": 1559905507
       },
       "dependencies": [
-        "knot-libs=2.8.1-r1",
+        "knot",
+        "knot-libs-static",
+        "knot-utils",
+        "knot-libs=2.8.2-r0",
         "pc:gnutls>=3.3",
         "pkgconfig"
       ],
       "provides": [
-        "pc:knotd=2.8.1",
-        "pc:libdnssec=2.8.1",
-        "pc:libknot=2.8.1",
-        "pc:libzscanner=2.8.1"
+        "pc:knotd=2.8.2",
+        "pc:libdnssec=2.8.2",
+        "pc:libknot=2.8.2",
+        "pc:libzscanner=2.8.2"
       ]
     },
     "llvm5-test-utils": {
@@ -56677,6 +56686,12 @@
       "provides": [
         "cmd:rpm2cpio"
       ]
+    },
+    "knot-libs-static": {
+      "origin": "knot",
+      "versions": {
+        "2.8.2-r0": 1559905507
+      }
     }
   },
   "provide": {
