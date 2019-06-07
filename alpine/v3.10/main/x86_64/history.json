@@ -369,16 +369,15 @@
     },
     "py-twisted": {
       "versions": {
-        "17.1.0-r1": 1557084430
+        "17.1.0-r1": 1557084430,
+        "19.2.1-r0": 1559926436
       },
       "origin": "py-twisted",
       "dependencies": [
         "py-crypto",
         "py-zope-interface",
         "py-constantly",
-        "py-incremental",
-        "so:libc.musl-x86_64.so.1",
-        "so:libpython2.7.so.1.0"
+        "py-incremental"
       ],
       "provides": [
         "cmd:cftp",
@@ -56139,7 +56138,8 @@
     },
     "py-twisted-doc": {
       "versions": {
-        "17.1.0-r1": 1557084429
+        "17.1.0-r1": 1557084429,
+        "19.2.1-r0": 1559926435
       },
       "origin": "py-twisted"
     },
@@ -70923,6 +70923,58 @@
       "versions": {
         "2.32.0-r1": 1559797318
       }
+    },
+    "py3-twisted": {
+      "origin": "py-twisted",
+      "versions": {
+        "19.2.1-r0": 1559926435
+      },
+      "dependencies": [
+        "py3-crypto",
+        "py3-zope-interface",
+        "py3-constantly",
+        "py3-incremental",
+        "python3",
+        "so:libc.musl-x86_64.so.1",
+        "so:libpython3.7m.so.1.0"
+      ],
+      "provides": [
+        "cmd:cftp",
+        "cmd:ckeygen",
+        "cmd:conch",
+        "cmd:mailmail",
+        "cmd:pyhtmlizer",
+        "cmd:tkconch",
+        "cmd:trial",
+        "cmd:twist",
+        "cmd:twistd"
+      ]
+    },
+    "py2-twisted": {
+      "origin": "py-twisted",
+      "versions": {
+        "19.2.1-r0": 1559926428
+      },
+      "dependencies": [
+        "py2-crypto",
+        "py2-zope-interface",
+        "py2-constantly",
+        "py2-incremental",
+        "python2",
+        "so:libc.musl-x86_64.so.1",
+        "so:libpython2.7.so.1.0"
+      ],
+      "provides": [
+        "cmd:cftp",
+        "cmd:ckeygen",
+        "cmd:conch",
+        "cmd:mailmail",
+        "cmd:pyhtmlizer",
+        "cmd:tkconch",
+        "cmd:trial",
+        "cmd:twist",
+        "cmd:twistd"
+      ]
     }
   },
   "provide": {
