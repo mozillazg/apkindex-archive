@@ -8089,7 +8089,8 @@
     "xe-guest-utilities-udev": {
       "origin": "xe-guest-utilities",
       "versions": {
-        "7.11.0-r0": 1557683943
+        "7.11.0-r0": 1557683943,
+        "7.12.0-r0": 1560093578
       },
       "dependencies": [
         "udev"
@@ -15083,7 +15084,8 @@
     "xe-guest-utilities": {
       "origin": "xe-guest-utilities",
       "versions": {
-        "7.11.0-r0": 1557683944
+        "7.11.0-r0": 1557683944,
+        "7.12.0-r0": 1560093579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1"
@@ -15091,7 +15093,12 @@
       "provides": [
         "cmd:xe-daemon",
         "cmd:xe-linux-distribution",
-        "cmd:xenstore"
+        "cmd:xenstore",
+        "cmd:xenstore-exists",
+        "cmd:xenstore-list",
+        "cmd:xenstore-read",
+        "cmd:xenstore-rm",
+        "cmd:xenstore-write"
       ]
     },
     "nextcloud-activity": {
@@ -19829,7 +19836,8 @@
     "offlineimap": {
       "origin": "offlineimap",
       "versions": {
-        "7.2.3-r0": 1557341311
+        "7.2.3-r0": 1557341311,
+        "7.2.4-r0": 1560091877
       },
       "dependencies": [
         "python2",
@@ -28056,7 +28064,8 @@
     "xe-guest-utilities-openrc": {
       "origin": "xe-guest-utilities",
       "versions": {
-        "7.11.0-r0": 1557683943
+        "7.11.0-r0": 1557683943,
+        "7.12.0-r0": 1560093579
       }
     },
     "qt5-qtbase-mysql": {
@@ -46223,7 +46232,8 @@
     "offlineimap-doc": {
       "origin": "offlineimap",
       "versions": {
-        "7.2.3-r0": 1557341310
+        "7.2.3-r0": 1557341310,
+        "7.2.4-r0": 1560091877
       }
     },
     "i3wm-dev": {
@@ -57783,6 +57793,31 @@
       "provides": [
         "cmd:scrot"
       ]
+    },
+    "gnome-themes-extra-lang": {
+      "origin": "gnome-themes-extra",
+      "versions": {
+        "3.28-r0": 1560092704
+      },
+      "dependencies": [
+        "ttf-cantarell",
+        "librsvg",
+        "adwaita-gtk2-theme"
+      ]
+    },
+    "gnome-themes-extra": {
+      "origin": "gnome-themes-extra",
+      "versions": {
+        "3.28-r0": 1560092705
+      },
+      "dependencies": [
+        "ttf-cantarell",
+        "librsvg",
+        "adwaita-gtk2-theme"
+      ],
+      "provides": [
+        "gnome-themes-standard=3.28-r0"
+      ]
     }
   },
   "provide": {
@@ -63924,6 +63959,10 @@
       "py-sphinxcontrib-webcolors": {
         "package": "py3-webcolors",
         "version": "1.9.1-r0"
+      },
+      "gnome-themes-standard": {
+        "package": "gnome-themes-extra",
+        "version": "3.28-r0"
       }
     }
   }
