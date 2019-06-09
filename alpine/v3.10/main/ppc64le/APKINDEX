@@ -274,22 +274,6 @@ t:1557063153
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q11YhxlswiMJAlQ3BsJqmVDZK07rE=
-P:dbus-x11
-V:1.12.14-r0
-A:ppc64le
-S:12182
-I:45056
-T:X11 add-ons for D-BUS
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987208
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-D:dbus=1.12.14-r0 so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3
-p:cmd:dbus-launch
-
 C:Q1Gz1sF8gaZKOvPh4DaYKlPJBqj4c=
 P:libev-doc
 V:4.25-r0
@@ -1373,6 +1357,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557062988
 c:60eb89d6a116718372f0c795c86b6abde053db18
 i:docs perl-class-accessor=0.51-r0
+
+C:Q1DA5rTW+YPGcPj4tikTKJoJNDVwY=
+P:dbus
+V:1.12.14-r1
+A:ppc64le
+S:161709
+I:581632
+T:Freedesktop.org message bus system
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+D:/bin/sh so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libexpat.so.1
+p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
 
 C:Q1LQsKuGizmUz3LxK8CLEgjhYzNbo=
 P:musl
@@ -5458,22 +5458,6 @@ t:1559026391
 c:9bcc351e36d97ca4af68e32aa51104eb7f8f399c
 D:libmatroska=1.5.2-r0 pc:libebml pkgconfig
 p:pc:libmatroska=1.5.2
-
-C:Q1D4+qjoDSW4LjmA1tu+DW5Gt9S/4=
-P:dbus-libs
-V:1.12.14-r0
-A:ppc64le
-S:137753
-I:380928
-T:D-BUS access libraries
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987208
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-D:so:libc.musl-ppc64le.so.1
-p:so:libdbus-1.so.3=3.19.10
 
 C:Q10oTSUv8sh6nGma6x0PL/PjvNQkk=
 P:openrc-bash-completion
@@ -15229,6 +15213,22 @@ t:1559029316
 c:0ac1d3c8084cefe9c0a612fca53f177af341a275
 i:docs perl-encode=3.01-r0
 
+C:Q102rPywEcXYTluH4RcmEvaVXdSDs=
+P:dbus-libs
+V:1.12.14-r1
+A:ppc64le
+S:137725
+I:380928
+T:D-BUS access libraries
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+D:so:libc.musl-ppc64le.so.1
+p:so:libdbus-1.so.3=3.19.10
+
 C:Q1ebWptnvEiraHA7+WGh3dyG41ueA=
 P:perl-regexp-ipv6-doc
 V:0.03-r0
@@ -19337,21 +19337,6 @@ t:1557001613
 c:0522906bfa4e70b64ba52f3761c4a11610bac902
 D:so:libX11.so.6 so:libXi.so.6 so:libXtst.so.6 so:libc.musl-ppc64le.so.1 so:libevdev.so.2
 p:cmd:synclient cmd:syndaemon
-
-C:Q174pdVGgHauzr5vvXJ5zea6KgX6A=
-P:dbus-doc
-V:1.12.14-r0
-A:ppc64le
-S:235772
-I:724992
-T:Freedesktop.org message bus system (documentation)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987208
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-i:docs dbus=1.12.14-r0
 
 C:Q1dS/YeiFzxg/PkrU0uvd4MM1Lv9I=
 P:nagios-plugins-icmp
@@ -55537,6 +55522,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556980858
 c:9653fc90b928b912f9c8e71ae1dc1b5c4ce31315
 
+C:Q1/7ByUfbWC+SbfZvGnIkVHBNRvtA=
+P:dbus-dev
+V:1.12.14-r1
+A:ppc64le
+S:28185
+I:217088
+T:Freedesktop.org message bus system (development files)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+D:util-linux-dev dbus-libs=1.12.14-r1 pkgconfig
+p:pc:dbus-1=1.12.14
+
 C:Q1UP03tc/iO/C0Rf6H4xD2vHHlwII=
 P:openldap-overlay-collect
 V:2.4.47-r2
@@ -61643,6 +61644,22 @@ c:09335491ac1dee80b41fcc69b7681b3b73ee09fb
 D:so:libc.musl-ppc64le.so.1
 p:cmd:spamc
 
+C:Q1qs7OTf8lYmNA6mE3liLoikZLFlc=
+P:dbus-x11
+V:1.12.14-r1
+A:ppc64le
+S:12178
+I:45056
+T:X11 add-ons for D-BUS
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+D:dbus=1.12.14-r1 so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3
+p:cmd:dbus-launch
+
 C:Q1G6Y6mJ9rg9FfsL8h2TanToQHi7I=
 P:attr
 V:2.4.48-r0
@@ -63200,22 +63217,6 @@ o:py-simplejson
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557245908
 c:60cb9d64b17e4ec8150166ec896bf20f8ff3e076
-
-C:Q1IsScAE/EkshqOqFtEneUhsC38R0=
-P:dbus-dev
-V:1.12.14-r0
-A:ppc64le
-S:28189
-I:217088
-T:Freedesktop.org message bus system (development files)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987208
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-D:util-linux-dev dbus-libs=1.12.14-r0 pkgconfig
-p:pc:dbus-1=1.12.14
 
 C:Q180Tk+CYfA0Xh4z8prEJAYECLhgc=
 P:gtkspell-lang
@@ -66756,22 +66757,6 @@ c:8ebf7cef8bbc0a6eb6f81525a36e9429ea763edb
 D:py2-crypto
 i:py-ecdsa=0.13.2-r0 python2
 
-C:Q1+C1L3V8FCR6Pz5eKq0+x+K2td6g=
-P:dbus
-V:1.12.14-r0
-A:ppc64le
-S:161813
-I:581632
-T:Freedesktop.org message bus system
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987209
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libexpat.so.1
-p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
-
 C:Q1OoH3irVuYqm4PXpseMthYHbvfo8=
 P:protobuf-dev
 V:3.6.1-r1
@@ -67788,21 +67773,6 @@ t:1557128170
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-ppc64le.so.1 so:libintl.so.8
 p:cmd:indent
-
-C:Q1JRdc2ocLKM93QhSowhjjw8HldoQ=
-P:dbus-openrc
-V:1.12.14-r0
-A:ppc64le
-S:1959
-I:16384
-T:Freedesktop.org message bus system (OpenRC init scripts)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558987209
-c:41c08339ae256ff4cecdc64b12eda8c6dd9dd59e
-i:openrc dbus=1.12.14-r0
 
 C:Q1NayiR2s9SsvuXrPTq8sEClZVr4Q=
 P:libnotify
@@ -72539,6 +72509,21 @@ o:perl-module-install
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556980660
 c:9a00814fd79b720533b8cf78f5b98241833e0e05
+
+C:Q1DlKWjDWnUuC7HT0ZB4oIBSmb/A0=
+P:dbus-openrc
+V:1.12.14-r1
+A:ppc64le
+S:1834
+I:16384
+T:Freedesktop.org message bus system (OpenRC init scripts)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+i:openrc dbus=1.12.14-r1
 
 C:Q10U38WZEkC7pDuXhgZoO4S9ARC6Y=
 P:libsmbclient
@@ -82371,6 +82356,21 @@ t:1556991832
 c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.3 so:libc.musl-ppc64le.so.1 so:libpq.so.5
 i:lua-sql-postgres=2.3.5-r2 lua5.3
+
+C:Q1v8VyRSU4Ftq6oo1uhL5wwwZSEPQ=
+P:dbus-doc
+V:1.12.14-r1
+A:ppc64le
+S:235786
+I:724992
+T:Freedesktop.org message bus system (documentation)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560083443
+c:ed65a96365fee561e0638656cc274926e1acde8d
+i:docs dbus=1.12.14-r1
 
 C:Q1AZWbA97yFy61NkitbVTXzJRRyFk=
 P:nfdump-dbg
