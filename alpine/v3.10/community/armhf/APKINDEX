@@ -1203,6 +1203,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1560261058
 c:f4450055f49f2eec37c5a3fceaa0caa1427e1104
 
+C:Q1pW6l/NXUzHywmWr0tGZuM7jHhFs=
+P:lld
+V:8.0.0-r0
+A:armhf
+S:829228
+I:2015232
+T:The LLVM Linker
+U:https://llvm.org
+L:NCSA
+o:lld
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560273640
+c:22a88a05589d3c21d97d53390e39ae7334bd8539
+D:so:libLLVM-8.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:ld.lld cmd:ld64.lld cmd:lld cmd:lld-link cmd:wasm-ld
+
 C:Q11vZmR3dCcgXMBtapIT7dZdrSYWo=
 P:abiword-plugin-mht
 V:3.0.2-r4
@@ -2320,22 +2336,6 @@ m:tcely <botan+aports@tcely.33mail.com>
 t:1557363778
 c:41fc7ad58ba5f7049465562e1974bf08e5e93835
 i:docs botan=2.9.0-r1
-
-C:Q1y1JW2nWkzYpq11JYe6DuEoHOh6k=
-P:beanstalkd
-V:1.10-r0
-A:armhf
-S:28604
-I:98304
-T:Beanstalk is a simple, fast work queue
-U:http://kr.github.io/beanstalkd/
-L:MIT
-o:beanstalkd
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557597675
-c:d1bbf07a534c7cd70cb28c748dad9a9e768f403b
-D:/bin/sh so:libc.musl-armhf.so.1
-p:cmd:beanstalkd
 
 C:Q1+7/aY378zlI4Q5hv6pI/v0Vb9AI=
 P:gpgme-dev
@@ -3471,6 +3471,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557991531
 c:675455fb881e9d682b03712e8906e616d23461d9
 D:nextcloud php7-sqlite3 php7-pdo_sqlite
+
+C:Q1vKoZ/FBe4PGl9ScnsTj8Q1oUhqg=
+P:llvm-libunwind
+V:8.0.0-r0
+A:armhf
+S:10269
+I:36864
+T:LLVM version of libunwind library
+U:http://llvm.org/
+L:BSD
+o:llvm-libunwind
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560273694
+c:6b97255861b352f234f2be310ecd7c49cf296ed1
+D:so:libc.musl-armhf.so.1
+p:so:libunwind.so.1=1.0
 
 C:Q17+Qb5ZyS5aCx2gqXlUuDt85c9ik=
 P:libreoffice-lang-dz
@@ -5394,22 +5410,6 @@ o:ttf-inconsolata
 m:Stefan Wagner <stw@bit-strickerei.de>
 t:1557564589
 c:27284aa113519a78189c48d381bde42e241b13f8
-
-C:Q1RK72xFWH7wu/D345T7dbxv9KUHU=
-P:lld
-V:7.0.1-r1
-A:armhf
-S:781833
-I:1892352
-T:The LLVM Linker
-U:http://llvm.org
-L:NCSA
-o:lld
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1558972461
-c:643a96e63dfb199c5516b499a4b9d6e7c024a6d4
-D:so:libLLVM-7.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:ld.lld cmd:ld64.lld cmd:lld cmd:lld-link cmd:wasm-ld
 
 C:Q1ZhOaBkHckrF1fPOdPdP8DVK0EFY=
 P:opendkim
@@ -8425,22 +8425,6 @@ t:1557565063
 c:ef30b993c9bf202b9f13ece302a30785f583d8ad
 i:docs perl-term-progressbar=2.22-r0
 
-C:Q1KsEyue/3OhTWweBGL1kwxrFS7pE=
-P:greenbone-security-assistant
-V:8.0.0-r3
-A:armhf
-S:3378802
-I:16035840
-T:Greenbone Security Assistant (gsa) - OpenVAS web frontend
-U:http://www.openvas.org/
-L:GPL-2.0
-o:greenbone-security-assistant
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1559545371
-c:97fe70e0e45c08ab16cb8be1e4b0dd54dddf6983
-D:wget so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgvm_base.so.10 so:libgvm_gmp.so.10 so:libgvm_util.so.10 so:libmicrohttpd.so.12 so:libxml2.so.2
-p:cmd:gsad
-
 C:Q1T9wfyBuSPYDp8npwf8Odba3FbGI=
 P:libgdata-doc
 V:0.17.9-r2
@@ -9409,21 +9393,6 @@ t:1557482697
 c:4f7d05c6e0218565be67b7cda6dbca2086ff52c2
 D:python2
 i:py-opengl=3.1.3b2-r1 python2
-
-C:Q1B+sbUnI0LSsKVzKOpcPJSMxww6E=
-P:greenbone-security-assistant-doc
-V:8.0.0-r3
-A:armhf
-S:2862
-I:24576
-T:Greenbone Security Assistant (gsa) - OpenVAS web frontend (documentation)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:greenbone-security-assistant
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1559545370
-c:97fe70e0e45c08ab16cb8be1e4b0dd54dddf6983
-i:docs greenbone-security-assistant=8.0.0-r3
 
 C:Q1SvfsxRgwvJV3sSG2Oep/A/JFsW8=
 P:geany-doc
@@ -13881,21 +13850,6 @@ c:4c76f4f5e907ba3c2c71bb650ee77786788c8756
 D:erlang erlang-inets erlang-ssl erlang-public-key erlang-asn1 erlang-sasl erlang-erl-interface erlang-dev erlang-dialyzer erlang-erts erlang-hipe
 p:cmd:elixir cmd:elixirc cmd:iex cmd:mix
 
-C:Q1kt870RTZpLQc1j3TH1U/beCzteo=
-P:gvm-libs-doc
-V:10.0.0-r0
-A:armhf
-S:532742
-I:4251648
-T:Greenbone Vulnerability Management Libraries (documentation)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvm-libs
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557486770
-c:6beec712cebc7f39e7795193d74f6aaf67265b52
-i:docs gvm-libs=10.0.0-r0
-
 C:Q1dA9bdT0Z106c80UExJZio/v44wQ=
 P:graphicsmagick-dev
 V:1.3.31-r1
@@ -15142,22 +15096,6 @@ c:d9d43a32dfb9877bb499a078d78fec0b30ce9c03
 D:bubblewrap
 i:gnome-desktop=3.32.2-r0 lang
 
-C:Q1fGb4Kv8qalqclwJruO0dHsLyGhY=
-P:gvmd
-V:8.0.0-r2
-A:armhf
-S:926655
-I:4091904
-T:Greenbone Vulnerability Manager
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvmd
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557677917
-c:59596e5b58e5e2b5e07cccbc47ac76352fc656b6
-D:rsync sqlite libxslt sed gnutls-utils so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgpgme.so.11 so:libgvm_base.so.10 so:libgvm_gmp.so.10 so:libgvm_osp.so.10 so:libgvm_util.so.10 so:libical.so.3 so:libsqlite3.so.0
-p:cmd:database-statistics-sqlite cmd:greenbone-certdata-sync cmd:greenbone-scapdata-sync cmd:gvm-manage-certs cmd:gvm-migrate-to-postgres cmd:gvm-portnames-update cmd:gvmd cmd:gvmd-sqlite
-
 C:Q1nEPagt/mLWy1AkkDHql7rb/tfyU=
 P:udevil-lang
 V:0.4.4-r2
@@ -15387,22 +15325,6 @@ t:1557319923
 c:18a355feef818f1fdfa581067d5b846e2ddc7888
 D:so:libabiword-3.0.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgsf-1.so.114 so:libstdc++.so.6
 
-C:Q1RWjda1UC78E+krOqIekHbxeprgc=
-P:gvm-libs
-V:10.0.0-r0
-A:armhf
-S:67725
-I:180224
-T:Greenbone Vulnerability Management Libraries
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvm-libs
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557486770
-c:6beec712cebc7f39e7795193d74f6aaf67265b52
-D:so:libassuan.so.0 so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgpg-error.so.0 so:libgpgme.so.11 so:libhiredis.so.0.14 so:libintl.so.8 so:libldap-2.4.so.2 so:libssh.so.4 so:libuuid.so.1 so:libz.so.1
-p:so:libgvm_base.so.10=10.0.0 so:libgvm_gmp.so.10=10.0.0 so:libgvm_osp.so.10=10.0.0 so:libgvm_util.so.10=10.0.0
-
 C:Q1R8LXqBwJeq76ZmojGnm9fKm4VpY=
 P:lua5.3-luassert
 V:1.7.10-r1
@@ -15631,20 +15553,20 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557422946
 c:f4b302aae276098fd11af86e3d619d56809919bd
 
-C:Q1slTThEaIvRDikCJOGjtLuJNSHBc=
-P:llvm-libunwind-dev
-V:7.0.1-r0
+C:Q10isSJ/1zSYkOw/LefaX++05zxPM=
+P:gvmd-doc
+V:8.0.0-r3
 A:armhf
-S:29709
-I:135168
-T:LLVM version of libunwind library (development files)
-U:http://llvm.org/
-L:BSD
-o:llvm-libunwind
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1557689511
-c:3c1b4c4949c0c0f431d2a0330aa69b37f668d9f5
-D:!libunwind-dev llvm-libunwind=7.0.1-r0
+S:118675
+I:1216512
+T:Greenbone Vulnerability Manager (documentation)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvmd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273552
+c:f04759ea9dabd95eedb7401010b981d6224667a0
+i:docs gvmd=8.0.0-r3
 
 C:Q1toNS7/j4nfUIchJFHcutsrUJRX4=
 P:libcec
@@ -17805,6 +17727,22 @@ t:1558980720
 c:76101df71bb6a850450aeaeb35dd9a1dfcf98bb1
 i:faenza-icon-theme=1.3.1-r5 imagemagick
 
+C:Q1EH8/6Vh2B0HXIKL3GZHxmQfKKaA=
+P:greenbone-security-assistant
+V:8.0.0-r4
+A:armhf
+S:3378795
+I:16035840
+T:Greenbone Security Assistant (gsa) - OpenVAS web frontend
+U:http://www.openvas.org/
+L:GPL-2.0
+o:greenbone-security-assistant
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273435
+c:7fae9a86baf13f3a0b3079d807d030a7df941b9c
+D:wget so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgvm_base.so.10 so:libgvm_gmp.so.10 so:libgvm_util.so.10 so:libmicrohttpd.so.12 so:libxml2.so.2
+p:cmd:gsad
+
 C:Q1IGGpuhVanjdv/P0T+aw4vryhhy0=
 P:salt-minion-openrc
 V:2019.2.0-r3
@@ -18709,21 +18647,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1558120709
 c:6c4dd139c5288b130554aef42e9ef5ece086c7b0
 i:docs nbd=3.18-r1
-
-C:Q1uG/g6M1BhZmnGXVcATEfzS49A7E=
-P:gvmd-doc
-V:8.0.0-r2
-A:armhf
-S:118654
-I:1216512
-T:Greenbone Vulnerability Manager (documentation)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvmd
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557677916
-c:59596e5b58e5e2b5e07cccbc47ac76352fc656b6
-i:docs gvmd=8.0.0-r2
 
 C:Q1ib+hNU3vJL1dRcjFtVMGwJBQ0/o=
 P:networkmanager
@@ -23324,22 +23247,6 @@ c:c9c95c143671e443a8f59ddc71d587c35546ccf8
 D:dbus
 i:elogind=241.3-r0 bash-completion
 
-C:Q1RrWCn7ARwLJkFG4bSgTtSF46sAA=
-P:llvm-libunwind
-V:7.0.1-r0
-A:armhf
-S:10276
-I:36864
-T:LLVM version of libunwind library
-U:http://llvm.org/
-L:BSD
-o:llvm-libunwind
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1557689511
-c:3c1b4c4949c0c0f431d2a0330aa69b37f668d9f5
-D:so:libc.musl-armhf.so.1
-p:so:libunwind.so.1=1.0
-
 C:Q1eHZZGX0AS6sCwoWZqNfyuW2isbw=
 P:qt5-qtxmlpatterns-dev
 V:5.12.3-r0
@@ -27557,21 +27464,6 @@ c:3105f51a0f3482228c39a8cc49c27a2a4d7567d8
 D:go-bindata so:libc.musl-armhf.so.1
 p:cmd:go-bindata-assetfs
 
-C:Q1PNKR3HcnFBb5YPX6UrwZpRUZLLU=
-P:openvas-scanner-openrc
-V:6.0.0-r2
-A:armhf
-S:2219
-I:24576
-T:OpenVAS remote network security scanner (OpenRC init scripts)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:openvas-scanner
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557828197
-c:a6ad0fb3706b9a6acdf065194c04c3174c0aa0a6
-i:openrc openvas-scanner=6.0.0-r2
-
 C:Q1fBkIZ1K89/mN3rHZBie1EMK36GE=
 P:perl-hash-merge-simple-doc
 V:0.051-r1
@@ -29112,22 +29004,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557434200
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs vorbis-tools=1.4.0-r0
-
-C:Q1oW6eml05yUwABjT2R+vECrXaBDg=
-P:openvas-scanner
-V:6.0.0-r2
-A:armhf
-S:263475
-I:688128
-T:OpenVAS remote network security scanner
-U:http://www.openvas.org/
-L:GPL-2.0
-o:openvas-scanner
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557828197
-c:a6ad0fb3706b9a6acdf065194c04c3174c0aa0a6
-D:redis nmap coreutils openssl util-linux so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libgpg-error.so.0 so:libgpgme.so.11 so:libgvm_base.so.10 so:libgvm_util.so.10 so:libksba.so.8 so:libnetsnmp.so.35 so:libpcap.so.1 so:libssh.so.4
-p:cmd:greenbone-nvt-sync cmd:openvas-nasl cmd:openvas-nasl-lint cmd:openvassd
 
 C:Q1AQtEWHpJjU29vhxHksLn/Nv+99E=
 P:faenza-icon-theme-emacs
@@ -33858,6 +33734,21 @@ t:1558111956
 c:d514f030d6f9ba064278a0e604f8985f33a05c84
 D:python3 py3-urwid
 
+C:Q10iQK7eXuVulIDcK0h6eM3lgq7ck=
+P:gvm-libs-doc
+V:10.0.0-r1
+A:armhf
+S:532972
+I:4251648
+T:Greenbone Vulnerability Management Libraries (documentation)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvm-libs
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273077
+c:20c15752a27689a0ab37a1f60919488215b8a49f
+i:docs gvm-libs=10.0.0-r1
+
 C:Q1E9pTNqFNQ/kKP2Xuy93PFP5lDGk=
 P:libmpdclient-doc
 V:2.16-r0
@@ -37188,21 +37079,6 @@ c:0d03eacd156511e9a307a49453b24d935a197f26
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libgd.so.3 so:libz.so.1
 p:cmd:wcmgr cmd:webalizer cmd:webazolver
 
-C:Q1kSsoTsQhs6XUrs95HA8ODFaR1WU=
-P:greenbone-security-assistant-openrc
-V:8.0.0-r3
-A:armhf
-S:1924
-I:24576
-T:Greenbone Security Assistant (gsa) - OpenVAS web frontend (OpenRC init scripts)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:greenbone-security-assistant
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1559545370
-c:97fe70e0e45c08ab16cb8be1e4b0dd54dddf6983
-i:openrc greenbone-security-assistant=8.0.0-r3
-
 C:Q1JvcQ4TbrEsagXu+Zca9LAjtB0n8=
 P:fwknop-doc
 V:2.6.10-r0
@@ -37402,6 +37278,20 @@ t:1557366356
 c:ce4d84fb1d4a1a9072295cf6c3dd0d1084604f4e
 D:python3
 i:py-configargparse=0.14.0-r1 python3
+
+C:Q18pvoS77e2vKyptmMq9qVOVBeaCc=
+P:lld-dev
+V:8.0.0-r0
+A:armhf
+S:38848
+I:229376
+T:The LLVM Linker (development files)
+U:https://llvm.org
+L:NCSA
+o:lld
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560273640
+c:22a88a05589d3c21d97d53390e39ae7334bd8539
 
 C:Q15X8ugvRmrYzT/KgVmiGTucipV9s=
 P:font-noto
@@ -37631,20 +37521,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557400580
 c:5fcf9eb2802c57bb047905e3047d391142e52041
 i:docs perl-class-factory-util=1.7-r1
-
-C:Q1G1iqQAoCQz7gQPmK0av8hco5548=
-P:lld-dev
-V:7.0.1-r1
-A:armhf
-S:1981836
-I:8679424
-T:The LLVM Linker (development files)
-U:http://llvm.org
-L:NCSA
-o:lld
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1558972461
-c:643a96e63dfb199c5516b499a4b9d6e7c024a6d4
 
 C:Q1Dp5wWPcxKQIWGXmUntQmAe6krlg=
 P:perl-term-progressbar
@@ -39411,6 +39287,21 @@ t:1557368094
 c:337063f678815c538c9a7581a75d83a4b1bf5c50
 i:pdfgrep=2.1.2-r1 bash-completion
 
+C:Q1f16kgLQDlCYmndWuEbkrR1nVsnE=
+P:beanstalkd-doc
+V:1.10-r1
+A:armhf
+S:3119
+I:24576
+T:Beanstalk is a simple, fast work queue (documentation)
+U:http://kr.github.io/beanstalkd/
+L:MIT
+o:beanstalkd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273650
+c:dc8728692ca552cf91611d229a3643a18e0d5e7b
+i:docs beanstalkd=1.10-r1
+
 C:Q1wUduTGed8sCBKrOA4JZ38YWF7ys=
 P:ffmpeg-libs
 V:4.1.3-r1
@@ -39610,6 +39501,21 @@ o:faenza-icon-theme
 t:1558980726
 c:76101df71bb6a850450aeaeb35dd9a1dfcf98bb1
 i:faenza-icon-theme=1.3.1-r5 libreoffice-math
+
+C:Q1FRQXtgzudWfXVZzbzZhjlKvYdkk=
+P:openvas-scanner-openrc
+V:6.0.0-r3
+A:armhf
+S:2214
+I:24576
+T:OpenVAS remote network security scanner (OpenRC init scripts)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:openvas-scanner
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273575
+c:2243ba2c525b4bb701c039c9438e3b6c4a3bb304
+i:openrc openvas-scanner=6.0.0-r3
 
 C:Q1p2X2RVeCIeP1phssVfeTYsunOdk=
 P:dvdauthor
@@ -40069,6 +39975,21 @@ m:Alan Lacerda <alacerda@alpinelinux.org>
 t:1559231941
 c:2ee13a8651b29bc78e176701b46d6302eaf2fe49
 i:docs eom=1.22.1-r0
+
+C:Q1Bprh4tqWscg/AVmnEjoH36Bvkpw=
+P:gvmd-openrc
+V:8.0.0-r3
+A:armhf
+S:1937
+I:24576
+T:Greenbone Vulnerability Manager (OpenRC init scripts)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvmd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273552
+c:f04759ea9dabd95eedb7401010b981d6224667a0
+i:openrc gvmd=8.0.0-r3
 
 C:Q1SJiAvzrXAWdHWDhMGx7tlNEkkpA=
 P:perl-spiffy
@@ -44836,6 +44757,22 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1559508825
 c:d8ad38c42754e52a43e6b2e339517d6381a2a9ef
 
+C:Q1UgZ+7nXaTpLwHFS8XsF8Qn0e0+0=
+P:beanstalkd
+V:1.10-r1
+A:armhf
+S:28582
+I:98304
+T:Beanstalk is a simple, fast work queue
+U:http://kr.github.io/beanstalkd/
+L:MIT
+o:beanstalkd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273650
+c:dc8728692ca552cf91611d229a3643a18e0d5e7b
+D:/bin/sh so:libc.musl-armhf.so.1
+p:cmd:beanstalkd
+
 C:Q1JZo1H0LkRRG9TJYb3CqxKgE0Keg=
 P:podofo-doc
 V:0.9.6-r1
@@ -45553,6 +45490,20 @@ t:1559836466
 c:910260caa380265ef611ef08ad48712604d8d8fc
 D:tzdata gsettings-desktop-schemas so:libc.musl-armhf.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgeocode-glib.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libsoup-2.4.so.1 so:libxml2.so.2
 p:so:libgweather-3.so.15=15.0.0
+
+C:Q1M0lZNFbHJ3PjlHA+2/CyQ3GB7f0=
+P:lld-static
+V:8.0.0-r0
+A:armhf
+S:2045040
+I:8855552
+T:The LLVM Linker (static library)
+U:https://llvm.org
+L:NCSA
+o:lld
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560273640
+c:22a88a05589d3c21d97d53390e39ae7334bd8539
 
 C:Q1pp0usyugWzmqdMQaYo+1Cll2Qe8=
 P:openjdk8-jre
@@ -47713,6 +47664,21 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1560243271
 c:183bf0fb85bed898cfe4001d3fb730bb58c25cb2
 i:swaylock=1.4-r0 zsh
+
+C:Q1eCPzwRYVbMV4SJ4AsIwyx/yKpo0=
+P:openvas-scanner-doc
+V:6.0.0-r3
+A:armhf
+S:82405
+I:311296
+T:OpenVAS remote network security scanner (documentation)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:openvas-scanner
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273575
+c:2243ba2c525b4bb701c039c9438e3b6c4a3bb304
+i:docs openvas-scanner=6.0.0-r3
 
 C:Q1SsoLxEBg8j5BITl1Hv97rMen2v0=
 P:libmateweather-doc
@@ -50163,6 +50129,21 @@ t:1557470662
 c:35ea0a07c88a23a90e11589bc4c84603972dfba8
 D:python3
 p:cmd:ospd-acunetix
+
+C:Q18BRT05xXfwufb+hYGMDupWtSzXo=
+P:greenbone-security-assistant-doc
+V:8.0.0-r4
+A:armhf
+S:2850
+I:24576
+T:Greenbone Security Assistant (gsa) - OpenVAS web frontend (documentation)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:greenbone-security-assistant
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273435
+c:7fae9a86baf13f3a0b3079d807d030a7df941b9c
+i:docs greenbone-security-assistant=8.0.0-r4
 
 C:Q10CY0l78mvi/IkvniM+d+OLEszs8=
 P:libwps-dev
@@ -53422,21 +53403,6 @@ c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:perl-xml-parser
 p:cmd:xmlmantohtml cmd:xmltoman
 
-C:Q1VZP9+IijRyb9auz83l0GMxymsug=
-P:gvmd-openrc
-V:8.0.0-r2
-A:armhf
-S:1928
-I:24576
-T:Greenbone Vulnerability Manager (OpenRC init scripts)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvmd
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557677917
-c:59596e5b58e5e2b5e07cccbc47ac76352fc656b6
-i:openrc gvmd=8.0.0-r2
-
 C:Q1h4pHC4PjoFdKossD9FVeXu1y/6w=
 P:py-parso
 V:0.4.0-r0
@@ -54466,22 +54432,6 @@ c:6779c97b046384457378db0a0ffe0c4d8c433745
 D:so:libavcodec.so.58 so:libavformat.so.58 so:libavresample.so.4 so:libavutil.so.56 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libkeyfinder.so.2 so:libstdc++.so.6
 p:cmd:keyfinder-cli
 
-C:Q1k8NXME+QN8Jgsyrf4lILAgV8pRc=
-P:gvm-libs-dev
-V:10.0.0-r0
-A:armhf
-S:19794
-I:208896
-T:Greenbone Vulnerability Management Libraries (development files)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:gvm-libs
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557486768
-c:6beec712cebc7f39e7795193d74f6aaf67265b52
-D:gvm-libs=10.0.0-r0 pc:gio-2.0>=2.42.1 pc:glib-2.0>=2.42.0 pc:glib-2.0>=2.42.1 pc:gnutls>=3.2.15 pc:uuid>=2.25.0 pc:zlib>=1.2.8 pkgconfig
-p:pc:libgvm_base=10.0.0 pc:libgvm_gmp=10.0.0 pc:libgvm_osp=10.0.0 pc:libgvm_util=10.0.0
-
 C:Q1VA3kNdltuPYai+HW9WW063LL0rc=
 P:tesseract-ocr-data-ell
 V:4.0.0-r2
@@ -55034,21 +54984,6 @@ o:audacious
 t:1557319976
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:docs audacious=3.10-r0
-
-C:Q1TQs/HnxRHFYozwsoQDkUQUtBKS4=
-P:beanstalkd-doc
-V:1.10-r0
-A:armhf
-S:3122
-I:24576
-T:Beanstalk is a simple, fast work queue (documentation)
-U:http://kr.github.io/beanstalkd/
-L:MIT
-o:beanstalkd
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557597673
-c:d1bbf07a534c7cd70cb28c748dad9a9e768f403b
-i:docs beanstalkd=1.10-r0
 
 C:Q1XyRK3xW1n7p5ouXgUSUGq/9o3zs=
 P:uthash-dev
@@ -56923,6 +56858,22 @@ t:1557680285
 c:080bc4539da884ff321834b7d8b80465e53869b9
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libpcap.so.1 so:libstdc++.so.6
 p:cmd:nethogs
+
+C:Q1KkZoLXtGfhZULTgj0pSD+dTZ4fA=
+P:gvm-libs
+V:10.0.0-r1
+A:armhf
+S:67701
+I:180224
+T:Greenbone Vulnerability Management Libraries
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvm-libs
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273077
+c:20c15752a27689a0ab37a1f60919488215b8a49f
+D:so:libassuan.so.0 so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgpg-error.so.0 so:libgpgme.so.11 so:libhiredis.so.0.14 so:libintl.so.8 so:libldap-2.4.so.2 so:libssh.so.4 so:libuuid.so.1 so:libz.so.1
+p:so:libgvm_base.so.10=10.0.0 so:libgvm_gmp.so.10=10.0.0 so:libgvm_osp.so.10=10.0.0 so:libgvm_util.so.10=10.0.0
 
 C:Q1n+zN7KLPuaJfrMFf4EML8WLH8+g=
 P:pulseaudio-jack
@@ -59218,6 +59169,22 @@ c:472493c915defc06061dab2fff1f03c3a9fbe83c
 D:so:libboost_filesystem.so.1.69.0 so:libboost_iostreams.so.1.69.0 so:libboost_program_options.so.1.69.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblzma.so.5 so:libstdc++.so.6
 p:cmd:innoextract
 
+C:Q1WJvJQlCrRz4QfGiAcSSy4aCAp7I=
+P:gvmd
+V:8.0.0-r3
+A:armhf
+S:926710
+I:4091904
+T:Greenbone Vulnerability Manager
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvmd
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273552
+c:f04759ea9dabd95eedb7401010b981d6224667a0
+D:rsync sqlite libxslt sed gnutls-utils so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgpgme.so.11 so:libgvm_base.so.10 so:libgvm_gmp.so.10 so:libgvm_osp.so.10 so:libgvm_util.so.10 so:libical.so.3 so:libsqlite3.so.0
+p:cmd:database-statistics-sqlite cmd:greenbone-certdata-sync cmd:greenbone-scapdata-sync cmd:gvm-manage-certs cmd:gvm-migrate-to-postgres cmd:gvm-portnames-update cmd:gvmd cmd:gvmd-sqlite
+
 C:Q1mdry2hksX0bwHgcCDcfFNpzXqeQ=
 P:swaybg
 V:1.0-r0
@@ -59861,6 +59828,21 @@ c:e5bce08f307d563f1c82d22257e76bf9f0bf48fe
 D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcares.so.2 so:libgcrypt.so.20 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:liblua-5.2.so.0 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcap.so.1 so:libz.so.1
 p:so:libwireshark.so.12=12.0.2 so:libwiretap.so.9=9.0.2 so:libwscodecs.so.2=2.0.0 so:libwsutil.so.10=10.0.0 cmd:capinfos cmd:captype cmd:dumpcap cmd:editcap cmd:idl2wrs cmd:mergecap cmd:randpkt cmd:rawshark cmd:reordercap cmd:sharkd cmd:text2pcap
 
+C:Q1rPZEHWbCB4ZoCbmRPtt8LiJYAu8=
+P:greenbone-security-assistant-openrc
+V:8.0.0-r4
+A:armhf
+S:1949
+I:24576
+T:Greenbone Security Assistant (gsa) - OpenVAS web frontend (OpenRC init scripts)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:greenbone-security-assistant
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273435
+c:7fae9a86baf13f3a0b3079d807d030a7df941b9c
+i:openrc greenbone-security-assistant=8.0.0-r4
+
 C:Q1Qkpfq90h7tT4dwDggWbT0TwcPQQ=
 P:ucl-dev
 V:1.03-r1
@@ -60248,6 +60230,22 @@ m:Alan Lacerda <alacerda@alpinelinux.org>
 t:1557322747
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:mate-common
+
+C:Q1oYw2SjCefhFaVSXYDdTWfECwmw0=
+P:gvm-libs-dev
+V:10.0.0-r1
+A:armhf
+S:19781
+I:208896
+T:Greenbone Vulnerability Management Libraries (development files)
+U:http://www.openvas.org/
+L:GPL-2.0
+o:gvm-libs
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273075
+c:20c15752a27689a0ab37a1f60919488215b8a49f
+D:gvm-libs=10.0.0-r1 pc:gio-2.0>=2.42.1 pc:glib-2.0>=2.42.0 pc:glib-2.0>=2.42.1 pc:gnutls>=3.2.15 pc:uuid>=2.25.0 pc:zlib>=1.2.8 pkgconfig
+p:pc:libgvm_base=10.0.0 pc:libgvm_gmp=10.0.0 pc:libgvm_osp=10.0.0 pc:libgvm_util=10.0.0
 
 C:Q1Uq2kW442ljrsakqsKQNZ1VoJrqo=
 P:py3-ruffus
@@ -64485,21 +64483,6 @@ t:1558373447
 c:13434c7b4fb1e9cbda74045e18148abce3d6d784
 D:texmf-dist-most texmf-dist-lang
 
-C:Q1gIFEYflrbWYAijzC/CdZeoDecew=
-P:openvas-scanner-doc
-V:6.0.0-r2
-A:armhf
-S:82441
-I:311296
-T:OpenVAS remote network security scanner (documentation)
-U:http://www.openvas.org/
-L:GPL-2.0
-o:openvas-scanner
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557828197
-c:a6ad0fb3706b9a6acdf065194c04c3174c0aa0a6
-i:docs openvas-scanner=6.0.0-r2
-
 C:Q1obTgZz1GZYap3gaiEPCIEU6FjC4=
 P:perl-strictures-doc
 V:2.000006-r0
@@ -64933,6 +64916,21 @@ t:1557599912
 c:87819d5073ce46963c91ddc684b596d0fee40e43
 D:so:libc.musl-armhf.so.1 so:libdnet.so.1 so:libevent-2.1.so.6 so:libpcap.so.1
 p:cmd:scanssh
+
+C:Q1u28MP3vSs78FNycAz/zV4XAqUtU=
+P:llvm-libunwind-dev
+V:8.0.0-r0
+A:armhf
+S:30386
+I:139264
+T:LLVM version of libunwind library (development files)
+U:http://llvm.org/
+L:BSD
+o:llvm-libunwind
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560273694
+c:6b97255861b352f234f2be310ecd7c49cf296ed1
+D:!libunwind-dev llvm-libunwind=8.0.0-r0
 
 C:Q17lIJiaDVrIAeacdl7faSVoSKDEs=
 P:virt-viewer
@@ -66197,6 +66195,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558793091
 c:992923303074cdb52436dd7edbb76bebe2ad9e5f
 i:openrc lightdm=1.28.0-r3
+
+C:Q1cEn8x3vc55Iwbdv0kK33iWVuRkI=
+P:openvas-scanner
+V:6.0.0-r3
+A:armhf
+S:263465
+I:688128
+T:OpenVAS remote network security scanner
+U:http://www.openvas.org/
+L:GPL-2.0
+o:openvas-scanner
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560273575
+c:2243ba2c525b4bb701c039c9438e3b6c4a3bb304
+D:redis nmap coreutils openssl util-linux so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libgpg-error.so.0 so:libgpgme.so.11 so:libgvm_base.so.10 so:libgvm_util.so.10 so:libksba.so.8 so:libnetsnmp.so.35 so:libpcap.so.1 so:libssh.so.4
+p:cmd:greenbone-nvt-sync cmd:openvas-nasl cmd:openvas-nasl-lint cmd:openvassd
 
 C:Q1YXUmWmEQz1CuzS6WpZHLvzmno2w=
 P:sane-backend-mustek_usb2

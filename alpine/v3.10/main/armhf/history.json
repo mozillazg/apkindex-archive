@@ -3034,7 +3034,8 @@
     },
     "mesa-glapi": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272585
       },
       "origin": "mesa",
       "dependencies": [
@@ -3306,20 +3307,20 @@
     },
     "llvm7-dev": {
       "versions": {
-        "7.0.1-r4": 1556994440
+        "7.0.1-r4": 1556994440,
+        "7.0.1-r5": 1560266545
       },
       "origin": "llvm7",
       "dependencies": [
-        "llvm7=7.0.1-r4",
-        "llvm7-libs=7.0.1-r4",
+        "llvm7=7.0.1-r5",
+        "llvm7-libs=7.0.1-r5",
         "so:libLLVM-7.so",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm-dev=7.0.1-r4",
-        "cmd:llvm-config"
+        "cmd:llvm7-config"
       ]
     },
     "fftw": {
@@ -3787,12 +3788,13 @@
     },
     "mesa-dri-freedreno": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272578
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -4591,12 +4593,13 @@
     },
     "mesa-dri-swrast": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272581
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -4973,7 +4976,8 @@
     },
     "mesa-gbm": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272598
       },
       "origin": "mesa",
       "dependencies": [
@@ -4981,8 +4985,7 @@
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libexpat.so.1",
-        "so:libwayland-server.so.0",
-        "so:libz.so.1"
+        "so:libwayland-server.so.0"
       ],
       "provides": [
         "so:libgbm.so.1=1.0.0"
@@ -6522,12 +6525,13 @@
     },
     "mesa-xatracker": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272594
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libdrm_nouveau.so.2",
@@ -6537,7 +6541,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libxatracker.so.2=2.4.0"
+        "so:libxatracker.so.2=2.5.0"
       ]
     },
     "perl-cps-doc": {
@@ -6663,13 +6667,14 @@
     },
     "clang": {
       "versions": {
-        "7.0.1-r1": 1557220442
+        "7.0.1-r1": 1557220442,
+        "8.0.0-r0": 1560272890
       },
       "origin": "clang",
       "dependencies": [
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
-        "so:libclang.so.7",
+        "so:libclang.so.8",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6",
         "so:libxml2.so.2"
@@ -6678,12 +6683,12 @@
         "cmd:c-index-test",
         "cmd:clang",
         "cmd:clang++",
-        "cmd:clang-7",
+        "cmd:clang-8",
         "cmd:clang-check",
         "cmd:clang-cl",
         "cmd:clang-cpp",
+        "cmd:clang-extdef-mapping",
         "cmd:clang-format",
-        "cmd:clang-func-mapping",
         "cmd:clang-import-test",
         "cmd:clang-offload-bundler",
         "cmd:clang-refactor",
@@ -7238,12 +7243,13 @@
     },
     "mesa-dri-nouveau": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272575
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
@@ -8473,7 +8479,8 @@
     },
     "mesa-gl": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272589
       },
       "origin": "mesa",
       "dependencies": [
@@ -8494,8 +8501,7 @@
         "so:libxcb-present.so.0",
         "so:libxcb-sync.so.1",
         "so:libxcb.so.1",
-        "so:libxshmfence.so.1",
-        "so:libz.so.1"
+        "so:libxshmfence.so.1"
       ],
       "provides": [
         "so:libGL.so.1=1.2.0"
@@ -10763,7 +10769,8 @@
     },
     "clang-static": {
       "versions": {
-        "7.0.1-r1": 1557220439
+        "7.0.1-r1": 1557220439,
+        "8.0.0-r0": 1560272888
       },
       "origin": "clang"
     },
@@ -11167,7 +11174,8 @@
     },
     "mesa": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272604
       },
       "origin": "mesa"
     },
@@ -11617,12 +11625,13 @@
     },
     "mesa-dri-vc4": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272601
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -16478,7 +16487,8 @@
     },
     "mesa-egl": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272587
       },
       "origin": "mesa",
       "dependencies": [
@@ -16497,8 +16507,7 @@
         "so:libxcb-sync.so.1",
         "so:libxcb-xfixes.so.0",
         "so:libxcb.so.1",
-        "so:libxshmfence.so.1",
-        "so:libz.so.1"
+        "so:libxshmfence.so.1"
       ],
       "provides": [
         "so:libEGL.so.1=1.0.0"
@@ -23686,7 +23695,8 @@
     },
     "clang-doc": {
       "versions": {
-        "7.0.1-r1": 1557220441
+        "7.0.1-r1": 1557220441,
+        "8.0.0-r0": 1560272889
       },
       "origin": "clang"
     },
@@ -27256,7 +27266,8 @@
     },
     "llvm7-libs": {
       "versions": {
-        "7.0.1-r4": 1556994439
+        "7.0.1-r4": 1556994439,
+        "7.0.1-r5": 1560266544
       },
       "origin": "llvm7",
       "dependencies": [
@@ -29561,12 +29572,13 @@
     },
     "mesa-dri-ati": {
       "versions": {
-        "18.3.5-r2": 1556996556
+        "18.3.5-r2": 1556996556,
+        "19.0.6-r0": 1560272571
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
@@ -35725,11 +35737,12 @@
     },
     "clang-analyzer": {
       "versions": {
-        "7.0.1-r1": 1557220441
+        "7.0.1-r1": 1557220441,
+        "8.0.0-r0": 1560272889
       },
       "origin": "clang",
       "dependencies": [
-        "clang=7.0.1-r1",
+        "clang=8.0.0-r0",
         "perl",
         "python2"
       ],
@@ -36285,7 +36298,8 @@
     },
     "mesa-gles": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272592
       },
       "origin": "mesa",
       "dependencies": [
@@ -39708,7 +39722,8 @@
     },
     "mesa-dev": {
       "versions": {
-        "18.3.5-r2": 1556996556
+        "18.3.5-r2": 1556996556,
+        "19.0.6-r0": 1560272566
       },
       "origin": "mesa",
       "dependencies": [
@@ -39717,14 +39732,15 @@
         "libxdamage-dev",
         "libxcb-dev",
         "libxshmfence-dev",
-        "mesa-egl=18.3.5-r2",
-        "mesa-gbm=18.3.5-r2",
-        "mesa-gl=18.3.5-r2",
-        "mesa-glapi=18.3.5-r2",
-        "mesa-gles=18.3.5-r2",
-        "mesa-osmesa=18.3.5-r2",
-        "mesa-xatracker=18.3.5-r2",
+        "mesa-egl=19.0.6-r0",
+        "mesa-gbm=19.0.6-r0",
+        "mesa-gl=19.0.6-r0",
+        "mesa-glapi=19.0.6-r0",
+        "mesa-gles=19.0.6-r0",
+        "mesa-osmesa=19.0.6-r0",
+        "mesa-xatracker=19.0.6-r0",
         "pc:libdrm>=2.4.75",
+        "pc:libdrm>=2.4.98",
         "pc:x11",
         "pc:x11-xcb",
         "pc:xcb",
@@ -39737,14 +39753,14 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:dri=18.3.5",
-        "pc:egl=18.3.5",
-        "pc:gbm=18.3.5",
-        "pc:gl=18.3.5",
-        "pc:glesv1_cm=18.3.5",
-        "pc:glesv2=18.3.5",
-        "pc:osmesa=8",
-        "pc:xatracker=2.4.0"
+        "pc:dri=19.0.6",
+        "pc:egl=19.0.6",
+        "pc:gbm=19.0.6",
+        "pc:gl=19.0.6",
+        "pc:glesv1_cm=19.0.6",
+        "pc:glesv2=19.0.6",
+        "pc:osmesa=8.0.0",
+        "pc:xatracker=2.5.0"
       ]
     },
     "hdparm-doc": {
@@ -42924,7 +42940,8 @@
     },
     "llvm7-static": {
       "versions": {
-        "7.0.1-r4": 1556994439
+        "7.0.1-r4": 1556994439,
+        "7.0.1-r5": 1560266544
       },
       "origin": "llvm7",
       "provides": [
@@ -44072,17 +44089,18 @@
     },
     "clang-libs": {
       "versions": {
-        "7.0.1-r1": 1557220441
+        "7.0.1-r1": 1557220441,
+        "8.0.0-r0": 1560272889
       },
       "origin": "clang",
       "dependencies": [
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libclang.so.7=7"
+        "so:libclang.so.8=8"
       ]
     },
     "lua-ldap": {
@@ -44483,12 +44501,13 @@
     },
     "mesa-dri-virtio": {
       "versions": {
-        "18.3.5-r2": 1556996557
+        "18.3.5-r2": 1556996557,
+        "19.0.6-r0": 1560272583
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -51511,7 +51530,8 @@
     },
     "llvm7": {
       "versions": {
-        "7.0.1-r4": 1556994442
+        "7.0.1-r4": 1556994442,
+        "7.0.1-r5": 1560266547
       },
       "origin": "llvm7",
       "dependencies": [
@@ -51521,60 +51541,59 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm=7.0.1-r4",
-        "cmd:bugpoint",
-        "cmd:dsymutil",
-        "cmd:llc",
-        "cmd:lli",
-        "cmd:llvm-ar",
-        "cmd:llvm-as",
-        "cmd:llvm-bcanalyzer",
-        "cmd:llvm-c-test",
-        "cmd:llvm-cat",
-        "cmd:llvm-cfi-verify",
-        "cmd:llvm-cov",
-        "cmd:llvm-cvtres",
-        "cmd:llvm-cxxdump",
-        "cmd:llvm-cxxfilt",
-        "cmd:llvm-diff",
-        "cmd:llvm-dis",
-        "cmd:llvm-dlltool",
-        "cmd:llvm-dwarfdump",
-        "cmd:llvm-dwp",
-        "cmd:llvm-exegesis",
-        "cmd:llvm-extract",
-        "cmd:llvm-lib",
-        "cmd:llvm-link",
-        "cmd:llvm-lto",
-        "cmd:llvm-lto2",
-        "cmd:llvm-mc",
-        "cmd:llvm-mca",
-        "cmd:llvm-modextract",
-        "cmd:llvm-mt",
-        "cmd:llvm-nm",
-        "cmd:llvm-objcopy",
-        "cmd:llvm-objdump",
-        "cmd:llvm-opt-report",
-        "cmd:llvm-pdbutil",
-        "cmd:llvm-profdata",
-        "cmd:llvm-ranlib",
-        "cmd:llvm-rc",
-        "cmd:llvm-readelf",
-        "cmd:llvm-readobj",
-        "cmd:llvm-rtdyld",
-        "cmd:llvm-size",
-        "cmd:llvm-split",
-        "cmd:llvm-stress",
-        "cmd:llvm-strings",
-        "cmd:llvm-strip",
-        "cmd:llvm-symbolizer",
-        "cmd:llvm-tblgen",
-        "cmd:llvm-undname",
-        "cmd:llvm-xray",
-        "cmd:opt",
-        "cmd:sancov",
-        "cmd:sanstats",
-        "cmd:verify-uselistorder"
+        "cmd:bugpoint7",
+        "cmd:dsymutil7",
+        "cmd:llc7",
+        "cmd:lli7",
+        "cmd:llvm7-ar",
+        "cmd:llvm7-as",
+        "cmd:llvm7-bcanalyzer",
+        "cmd:llvm7-c-test",
+        "cmd:llvm7-cat",
+        "cmd:llvm7-cfi-verify",
+        "cmd:llvm7-cov",
+        "cmd:llvm7-cvtres",
+        "cmd:llvm7-cxxdump",
+        "cmd:llvm7-cxxfilt",
+        "cmd:llvm7-diff",
+        "cmd:llvm7-dis",
+        "cmd:llvm7-dlltool",
+        "cmd:llvm7-dwarfdump",
+        "cmd:llvm7-dwp",
+        "cmd:llvm7-exegesis",
+        "cmd:llvm7-extract",
+        "cmd:llvm7-lib",
+        "cmd:llvm7-link",
+        "cmd:llvm7-lto",
+        "cmd:llvm7-lto2",
+        "cmd:llvm7-mc",
+        "cmd:llvm7-mca",
+        "cmd:llvm7-modextract",
+        "cmd:llvm7-mt",
+        "cmd:llvm7-nm",
+        "cmd:llvm7-objcopy",
+        "cmd:llvm7-objdump",
+        "cmd:llvm7-opt-report",
+        "cmd:llvm7-pdbutil",
+        "cmd:llvm7-profdata",
+        "cmd:llvm7-ranlib",
+        "cmd:llvm7-rc",
+        "cmd:llvm7-readelf",
+        "cmd:llvm7-readobj",
+        "cmd:llvm7-rtdyld",
+        "cmd:llvm7-size",
+        "cmd:llvm7-split",
+        "cmd:llvm7-stress",
+        "cmd:llvm7-strings",
+        "cmd:llvm7-strip",
+        "cmd:llvm7-symbolizer",
+        "cmd:llvm7-tblgen",
+        "cmd:llvm7-undname",
+        "cmd:llvm7-xray",
+        "cmd:opt7",
+        "cmd:sancov7",
+        "cmd:sanstats7",
+        "cmd:verify-uselistorder7"
       ]
     },
     "mt-st-doc": {
@@ -58588,12 +58607,13 @@
     },
     "mesa-vulkan-ati": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272599
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-armhf.so.1",
         "so:libdrm.so.2",
@@ -62990,12 +63010,13 @@
     },
     "mesa-osmesa": {
       "versions": {
-        "18.3.5-r2": 1556996558
+        "18.3.5-r2": 1556996558,
+        "19.0.6-r0": 1560272596
       },
       "origin": "mesa",
       "dependencies": [
         "mesa",
-        "so:libLLVM-7.so",
+        "so:libLLVM-8.so",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libglapi.so.0",
@@ -63455,7 +63476,8 @@
     },
     "llvm7-test-utils": {
       "versions": {
-        "7.0.1-r4": 1556994442
+        "7.0.1-r4": 1556994442,
+        "7.0.1-r5": 1560266546
       },
       "origin": "llvm7",
       "dependencies": [
@@ -63466,8 +63488,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm-test-utils=7.0.1-r4",
-        "lit=0.7.1-r4",
+        "lit=0.7.1-r5",
         "cmd:lit"
       ]
     },
@@ -67755,12 +67776,13 @@
     },
     "clang-dev": {
       "versions": {
-        "7.0.1-r1": 1557220440
+        "7.0.1-r1": 1557220440,
+        "8.0.0-r0": 1560272889
       },
       "origin": "clang",
       "dependencies": [
-        "clang=7.0.1-r1",
-        "clang-libs=7.0.1-r1"
+        "clang=8.0.0-r0",
+        "clang-libs=8.0.0-r0"
       ]
     },
     "xvinfo-doc": {
@@ -70554,6 +70576,138 @@
       "provides": [
         "so:libhunspell-1.7.so.0=0.0.1"
       ]
+    },
+    "llvm8-libs": {
+      "origin": "llvm8",
+      "versions": {
+        "8.0.0-r0": 1560262961
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libffi.so.6",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libxml2.so.2",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libLLVM-8.so=0"
+      ]
+    },
+    "llvm8": {
+      "origin": "llvm8",
+      "versions": {
+        "8.0.0-r0": 1560262963
+      },
+      "dependencies": [
+        "so:libLLVM-8.so",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "llvm=8.0.0-r0",
+        "cmd:bugpoint",
+        "cmd:dsymutil",
+        "cmd:llc",
+        "cmd:lli",
+        "cmd:llvm-ar",
+        "cmd:llvm-as",
+        "cmd:llvm-bcanalyzer",
+        "cmd:llvm-c-test",
+        "cmd:llvm-cat",
+        "cmd:llvm-cfi-verify",
+        "cmd:llvm-cov",
+        "cmd:llvm-cvtres",
+        "cmd:llvm-cxxdump",
+        "cmd:llvm-cxxfilt",
+        "cmd:llvm-cxxmap",
+        "cmd:llvm-diff",
+        "cmd:llvm-dis",
+        "cmd:llvm-dlltool",
+        "cmd:llvm-dwarfdump",
+        "cmd:llvm-dwp",
+        "cmd:llvm-elfabi",
+        "cmd:llvm-exegesis",
+        "cmd:llvm-extract",
+        "cmd:llvm-lib",
+        "cmd:llvm-link",
+        "cmd:llvm-lto",
+        "cmd:llvm-lto2",
+        "cmd:llvm-mc",
+        "cmd:llvm-mca",
+        "cmd:llvm-modextract",
+        "cmd:llvm-mt",
+        "cmd:llvm-nm",
+        "cmd:llvm-objcopy",
+        "cmd:llvm-objdump",
+        "cmd:llvm-opt-report",
+        "cmd:llvm-pdbutil",
+        "cmd:llvm-profdata",
+        "cmd:llvm-ranlib",
+        "cmd:llvm-rc",
+        "cmd:llvm-readelf",
+        "cmd:llvm-readobj",
+        "cmd:llvm-rtdyld",
+        "cmd:llvm-size",
+        "cmd:llvm-split",
+        "cmd:llvm-stress",
+        "cmd:llvm-strings",
+        "cmd:llvm-strip",
+        "cmd:llvm-symbolizer",
+        "cmd:llvm-tblgen",
+        "cmd:llvm-undname",
+        "cmd:llvm-xray",
+        "cmd:opt",
+        "cmd:sancov",
+        "cmd:sanstats",
+        "cmd:verify-uselistorder"
+      ]
+    },
+    "llvm8-test-utils": {
+      "origin": "llvm8",
+      "versions": {
+        "8.0.0-r0": 1560262963
+      },
+      "dependencies": [
+        "python3",
+        "py3-setuptools",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "llvm-test-utils=8.0.0-r0",
+        "lit=0.8.0-r0",
+        "cmd:lit"
+      ]
+    },
+    "llvm8-static": {
+      "origin": "llvm8",
+      "versions": {
+        "8.0.0-r0": 1560262960
+      },
+      "provides": [
+        "llvm-static=8.0.0-r0"
+      ]
+    },
+    "llvm8-dev": {
+      "origin": "llvm8",
+      "versions": {
+        "8.0.0-r0": 1560262961
+      },
+      "dependencies": [
+        "llvm8=8.0.0-r0",
+        "llvm8-libs=8.0.0-r0",
+        "so:libLLVM-8.so",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "llvm-dev=8.0.0-r0",
+        "cmd:llvm-config"
+      ]
     }
   },
   "provide": {
@@ -71064,7 +71218,7 @@
       },
       "libxatracker.so.2": {
         "package": "mesa-xatracker",
-        "version": "2.4.0"
+        "version": "2.5.0"
       },
       "lib90_sieve_plugin.so": {
         "package": "dovecot-pigeonhole-plugin",
@@ -76865,6 +77019,14 @@
       "libhunspell-1.7.so.0": {
         "package": "libhunspell",
         "version": "0.0.1"
+      },
+      "libclang.so.8": {
+        "package": "clang-libs",
+        "version": "8"
+      },
+      "libLLVM-8.so": {
+        "package": "llvm8-libs",
+        "version": "0"
       }
     },
     "package": {
@@ -76993,8 +77155,8 @@
         "version": "176"
       },
       "llvm-dev": {
-        "package": "llvm7-dev",
-        "version": "7.0.1-r4"
+        "package": "llvm8-dev",
+        "version": "8.0.0-r0"
       },
       "quagga-nhrp": {
         "package": "quagga",
@@ -77237,8 +77399,8 @@
         "version": "1.1.33-r1"
       },
       "llvm-static": {
-        "package": "llvm7-static",
-        "version": "7.0.1-r4"
+        "package": "llvm8-static",
+        "version": "8.0.0-r0"
       },
       "py3-uritemplate.py": {
         "package": "py3-uritemplate",
@@ -77309,8 +77471,8 @@
         "version": "8.1904.0-r0"
       },
       "llvm": {
-        "package": "llvm7",
-        "version": "7.0.1-r4"
+        "package": "llvm8",
+        "version": "8.0.0-r0"
       },
       "lua-feedparser-common": {
         "package": "lua-feedparser",
@@ -77417,12 +77579,12 @@
         "version": 0
       },
       "llvm-test-utils": {
-        "package": "llvm7-test-utils",
-        "version": "7.0.1-r4"
+        "package": "llvm8-test-utils",
+        "version": "8.0.0-r0"
       },
       "lit": {
         "package": "llvm7-test-utils",
-        "version": "0.7.1-r4"
+        "version": "0.7.1-r5"
       },
       "rsyslog-ommysql": {
         "package": "rsyslog-mysql",
