@@ -56968,6 +56968,100 @@
       "versions": {
         "2.1.0-r1": 1560242837
       }
+    },
+    "gnome-bluetooth-dev": {
+      "origin": "gnome-bluetooth",
+      "versions": {
+        "3.32.1-r1": 1560246170
+      },
+      "dependencies": [
+        "gnome-bluetooth-libs=3.32.1-r1",
+        "pc:gio-2.0",
+        "pc:gtk+-3.0>=3.12.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:gnome-bluetooth-1.0=3.32.1"
+      ]
+    },
+    "gnome-bluetooth": {
+      "origin": "gnome-bluetooth",
+      "versions": {
+        "3.32.1-r1": 1560246170
+      },
+      "dependencies": [
+        "hicolor-icon-theme",
+        "bluez>=5",
+        "so:libc.musl-armhf.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgnome-bluetooth.so.13",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8"
+      ],
+      "provides": [
+        "cmd:bluetooth-sendto"
+      ]
+    },
+    "gnome-bluetooth-lang": {
+      "origin": "gnome-bluetooth",
+      "versions": {
+        "3.32.1-r1": 1560246170
+      },
+      "dependencies": [
+        "hicolor-icon-theme",
+        "bluez>=5"
+      ]
+    },
+    "gnome-bluetooth-libs": {
+      "origin": "gnome-bluetooth",
+      "versions": {
+        "3.32.1-r1": 1560246170
+      },
+      "dependencies": [
+        "so:libatk-1.0.so.0",
+        "so:libc.musl-armhf.so.1",
+        "so:libcanberra-gtk3.so.0",
+        "so:libcanberra.so.0",
+        "so:libgdk-3.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8",
+        "so:libnotify.so.4",
+        "so:libudev.so.1"
+      ],
+      "provides": [
+        "so:libgnome-bluetooth.so.13=13.0.2"
+      ]
+    },
+    "xdriinfo": {
+      "origin": "xdriinfo",
+      "versions": {
+        "1.0.6-r0": 1560248526
+      },
+      "dependencies": [
+        "so:libGL.so.1",
+        "so:libX11.so.6",
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "cmd:xdriinfo"
+      ]
+    },
+    "xdriinfo-doc": {
+      "origin": "xdriinfo",
+      "versions": {
+        "1.0.6-r0": 1560248526
+      }
+    },
+    "gnome-bluetooth-doc": {
+      "origin": "gnome-bluetooth",
+      "versions": {
+        "3.32.1-r1": 1560246170
+      }
     }
   },
   "provide": {
@@ -62431,6 +62525,10 @@
       "libwlroots.so.3": {
         "package": "wlroots",
         "version": "3.4.1"
+      },
+      "libgnome-bluetooth.so.13": {
+        "package": "gnome-bluetooth-libs",
+        "version": "13.0.2"
       }
     },
     "package": {
