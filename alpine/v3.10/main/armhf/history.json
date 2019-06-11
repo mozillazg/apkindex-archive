@@ -10627,7 +10627,8 @@
     },
     "nss-pam-ldapd": {
       "versions": {
-        "0.9.8-r0": 1557147411
+        "0.9.8-r0": 1557147411,
+        "0.9.10-r0": 1560229179
       },
       "origin": "nss-pam-ldapd",
       "dependencies": [
@@ -18474,7 +18475,8 @@
     },
     "nss-pam-ldapd-doc": {
       "versions": {
-        "0.9.8-r0": 1557147408
+        "0.9.8-r0": 1557147408,
+        "0.9.10-r0": 1560229179
       },
       "origin": "nss-pam-ldapd"
     },
@@ -21817,10 +21819,12 @@
     "py3-mako": {
       "versions": {
         "1.0.7-r1": 1556994500,
-        "1.0.11-r0": 1559750310
+        "1.0.11-r0": 1559750310,
+        "1.0.12-r0": 1560229277
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python3"
       ],
       "provides": [
@@ -27501,10 +27505,12 @@
     "py2-mako": {
       "versions": {
         "1.0.7-r1": 1556994499,
-        "1.0.11-r0": 1559750309
+        "1.0.11-r0": 1559750309,
+        "1.0.12-r0": 1560229276
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python2"
       ],
       "provides": [
@@ -29136,7 +29142,8 @@
     },
     "speexdsp-doc": {
       "versions": {
-        "1.2_rc3-r5": 1556993546
+        "1.2_rc3-r5": 1556993546,
+        "1.2.0-r0": 1560229268
       },
       "origin": "speexdsp"
     },
@@ -32628,9 +32635,13 @@
     "py-mako": {
       "versions": {
         "1.0.7-r1": 1556994500,
-        "1.0.11-r0": 1559750310
+        "1.0.11-r0": 1559750310,
+        "1.0.12-r0": 1560229277
       },
-      "origin": "py-mako"
+      "origin": "py-mako",
+      "dependencies": [
+        "py-markupsafe"
+      ]
     },
     "cryptsetup1-dev": {
       "versions": {
@@ -49670,12 +49681,16 @@
     },
     "speexdsp-dev": {
       "versions": {
-        "1.2_rc3-r5": 1556993542
+        "1.2_rc3-r5": 1556993542,
+        "1.2.0-r0": 1560229268
       },
       "origin": "speexdsp",
       "dependencies": [
         "pkgconfig",
-        "speexdsp=1.2_rc3-r5"
+        "speexdsp=1.2.0-r0"
+      ],
+      "provides": [
+        "pc:speexdsp=1.2.0"
       ]
     },
     "rdesktop-doc": {
@@ -59774,14 +59789,15 @@
     },
     "speexdsp": {
       "versions": {
-        "1.2_rc3-r5": 1556993549
+        "1.2_rc3-r5": 1556993549,
+        "1.2.0-r0": 1560229268
       },
       "origin": "speexdsp",
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "so:libspeexdsp.so.1=1.5.0"
+        "so:libspeexdsp.so.1=1.5.1"
       ]
     },
     "pwgen": {
@@ -70489,6 +70505,12 @@
       "versions": {
         "0.9.64-r0": 1560155307
       }
+    },
+    "nss-pam-ldapd-openrc": {
+      "origin": "nss-pam-ldapd",
+      "versions": {
+        "0.9.10-r0": 1560229179
+      }
     }
   },
   "provide": {
@@ -75831,7 +75853,7 @@
       },
       "libspeexdsp.so.1": {
         "package": "speexdsp",
-        "version": "1.5.0"
+        "version": "1.5.1"
       },
       "libperditiondb_gdbm.so.0": {
         "package": "perdition",

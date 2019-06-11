@@ -12470,7 +12470,8 @@
     },
     "nss-pam-ldapd": {
       "versions": {
-        "0.9.8-r0": 1557088688
+        "0.9.8-r0": 1557088688,
+        "0.9.10-r0": 1560229179
       },
       "origin": "nss-pam-ldapd",
       "dependencies": [
@@ -15385,10 +15386,12 @@
     "py3-mako": {
       "versions": {
         "1.0.7-r1": 1556991021,
-        "1.0.11-r0": 1559750442
+        "1.0.11-r0": 1559750442,
+        "1.0.12-r0": 1560229184
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python3"
       ],
       "provides": [
@@ -17771,9 +17774,13 @@
     "py-mako": {
       "versions": {
         "1.0.7-r1": 1556991022,
-        "1.0.11-r0": 1559750442
+        "1.0.11-r0": 1559750442,
+        "1.0.12-r0": 1560229184
       },
-      "origin": "py-mako"
+      "origin": "py-mako",
+      "dependencies": [
+        "py-markupsafe"
+      ]
     },
     "json-glib-dev": {
       "versions": {
@@ -40092,10 +40099,12 @@
     "py2-mako": {
       "versions": {
         "1.0.7-r1": 1556991020,
-        "1.0.11-r0": 1559750441
+        "1.0.11-r0": 1559750441,
+        "1.0.12-r0": 1560229184
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python2"
       ],
       "provides": [
@@ -50352,14 +50361,15 @@
     },
     "speexdsp": {
       "versions": {
-        "1.2_rc3-r5": 1557056607
+        "1.2_rc3-r5": 1557056607,
+        "1.2.0-r0": 1560229205
       },
       "origin": "speexdsp",
       "dependencies": [
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
-        "so:libspeexdsp.so.1=1.5.0"
+        "so:libspeexdsp.so.1=1.5.1"
       ]
     },
     "gamin": {
@@ -54043,7 +54053,8 @@
     },
     "nss-pam-ldapd-doc": {
       "versions": {
-        "0.9.8-r0": 1557088685
+        "0.9.8-r0": 1557088685,
+        "0.9.10-r0": 1560229179
       },
       "origin": "nss-pam-ldapd"
     },
@@ -58124,12 +58135,16 @@
     },
     "speexdsp-dev": {
       "versions": {
-        "1.2_rc3-r5": 1557056600
+        "1.2_rc3-r5": 1557056600,
+        "1.2.0-r0": 1560229205
       },
       "origin": "speexdsp",
       "dependencies": [
         "pkgconfig",
-        "speexdsp=1.2_rc3-r5"
+        "speexdsp=1.2.0-r0"
+      ],
+      "provides": [
+        "pc:speexdsp=1.2.0"
       ]
     },
     "scanelf": {
@@ -61314,7 +61329,8 @@
     },
     "speexdsp-doc": {
       "versions": {
-        "1.2_rc3-r5": 1557056604
+        "1.2_rc3-r5": 1557056604,
+        "1.2.0-r0": 1560229205
       },
       "origin": "speexdsp"
     },
@@ -70822,6 +70838,12 @@
       "versions": {
         "0.9.64-r0": 1560155307
       }
+    },
+    "nss-pam-ldapd-openrc": {
+      "origin": "nss-pam-ldapd",
+      "versions": {
+        "0.9.10-r0": 1560229179
+      }
     }
   },
   "provide": {
@@ -75360,7 +75382,7 @@
       },
       "libspeexdsp.so.1": {
         "package": "speexdsp",
-        "version": "1.5.0"
+        "version": "1.5.1"
       },
       "libfam.so.0": {
         "package": "gamin",

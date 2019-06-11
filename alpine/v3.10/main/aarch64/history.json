@@ -13640,10 +13640,12 @@
     "py2-mako": {
       "versions": {
         "1.0.7-r1": 1557004575,
-        "1.0.11-r0": 1559750709
+        "1.0.11-r0": 1559750709,
+        "1.0.12-r0": 1560229213
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python2"
       ],
       "provides": [
@@ -14281,10 +14283,12 @@
     "py3-mako": {
       "versions": {
         "1.0.7-r1": 1557004577,
-        "1.0.11-r0": 1559750711
+        "1.0.11-r0": 1559750711,
+        "1.0.12-r0": 1560229215
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python3"
       ],
       "provides": [
@@ -30386,7 +30390,8 @@
     },
     "speexdsp-doc": {
       "versions": {
-        "1.2_rc3-r5": 1557061531
+        "1.2_rc3-r5": 1557061531,
+        "1.2.0-r0": 1560229200
       },
       "origin": "speexdsp"
     },
@@ -33360,7 +33365,8 @@
     },
     "nss-pam-ldapd-doc": {
       "versions": {
-        "0.9.8-r0": 1557001798
+        "0.9.8-r0": 1557001798,
+        "0.9.10-r0": 1560229327
       },
       "origin": "nss-pam-ldapd"
     },
@@ -42466,7 +42472,8 @@
     },
     "nss-pam-ldapd": {
       "versions": {
-        "0.9.8-r0": 1557001803
+        "0.9.8-r0": 1557001803,
+        "0.9.10-r0": 1560229328
       },
       "origin": "nss-pam-ldapd",
       "dependencies": [
@@ -43260,9 +43267,13 @@
     "py-mako": {
       "versions": {
         "1.0.7-r1": 1557004578,
-        "1.0.11-r0": 1559750711
+        "1.0.11-r0": 1559750711,
+        "1.0.12-r0": 1560229215
       },
-      "origin": "py-mako"
+      "origin": "py-mako",
+      "dependencies": [
+        "py-markupsafe"
+      ]
     },
     "fontconfig": {
       "versions": {
@@ -54866,12 +54877,16 @@
     },
     "speexdsp-dev": {
       "versions": {
-        "1.2_rc3-r5": 1557061524
+        "1.2_rc3-r5": 1557061524,
+        "1.2.0-r0": 1560229200
       },
       "origin": "speexdsp",
       "dependencies": [
         "pkgconfig",
-        "speexdsp=1.2_rc3-r5"
+        "speexdsp=1.2.0-r0"
+      ],
+      "provides": [
+        "pc:speexdsp=1.2.0"
       ]
     },
     "py2-itsdangerous": {
@@ -57386,14 +57401,15 @@
     },
     "speexdsp": {
       "versions": {
-        "1.2_rc3-r5": 1557061538
+        "1.2_rc3-r5": 1557061538,
+        "1.2.0-r0": 1560229201
       },
       "origin": "speexdsp",
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "so:libspeexdsp.so.1=1.5.0"
+        "so:libspeexdsp.so.1=1.5.1"
       ]
     },
     "libmaa-dev": {
@@ -70500,6 +70516,12 @@
       "versions": {
         "0.9.64-r0": 1560155338
       }
+    },
+    "nss-pam-ldapd-openrc": {
+      "origin": "nss-pam-ldapd",
+      "versions": {
+        "0.9.10-r0": 1560229328
+      }
     }
   },
   "provide": {
@@ -75714,7 +75736,7 @@
       },
       "libspeexdsp.so.1": {
         "package": "speexdsp",
-        "version": "1.5.0"
+        "version": "1.5.1"
       },
       "libatomic.so.1": {
         "package": "libatomic",

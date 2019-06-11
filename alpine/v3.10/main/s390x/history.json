@@ -11644,7 +11644,8 @@
     },
     "nss-pam-ldapd-doc": {
       "versions": {
-        "0.9.8-r0": 1557203794
+        "0.9.8-r0": 1557203794,
+        "0.9.10-r0": 1560229171
       },
       "origin": "nss-pam-ldapd"
     },
@@ -37362,10 +37363,12 @@
     "py3-mako": {
       "versions": {
         "1.0.7-r1": 1557042504,
-        "1.0.11-r0": 1559750785
+        "1.0.11-r0": 1559750785,
+        "1.0.12-r0": 1560229260
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python3"
       ],
       "provides": [
@@ -53436,10 +53439,12 @@
     "py2-mako": {
       "versions": {
         "1.0.7-r1": 1557042504,
-        "1.0.11-r0": 1559750785
+        "1.0.11-r0": 1559750785,
+        "1.0.12-r0": 1560229260
       },
       "origin": "py-mako",
       "dependencies": [
+        "py-markupsafe",
         "python2"
       ],
       "provides": [
@@ -55009,12 +55014,16 @@
     },
     "speexdsp-dev": {
       "versions": {
-        "1.2_rc3-r5": 1556989014
+        "1.2_rc3-r5": 1556989014,
+        "1.2.0-r0": 1560229188
       },
       "origin": "speexdsp",
       "dependencies": [
         "pkgconfig",
-        "speexdsp=1.2_rc3-r5"
+        "speexdsp=1.2.0-r0"
+      ],
+      "provides": [
+        "pc:speexdsp=1.2.0"
       ]
     },
     "syslog-ng-json": {
@@ -55983,9 +55992,13 @@
     "py-mako": {
       "versions": {
         "1.0.7-r1": 1557042505,
-        "1.0.11-r0": 1559750785
+        "1.0.11-r0": 1559750785,
+        "1.0.12-r0": 1560229260
       },
-      "origin": "py-mako"
+      "origin": "py-mako",
+      "dependencies": [
+        "py-markupsafe"
+      ]
     },
     "perl-inline-doc": {
       "versions": {
@@ -56371,7 +56384,8 @@
     },
     "nss-pam-ldapd": {
       "versions": {
-        "0.9.8-r0": 1557203796
+        "0.9.8-r0": 1557203796,
+        "0.9.10-r0": 1560229171
       },
       "origin": "nss-pam-ldapd",
       "dependencies": [
@@ -61073,7 +61087,8 @@
     },
     "speexdsp-doc": {
       "versions": {
-        "1.2_rc3-r5": 1556989017
+        "1.2_rc3-r5": 1556989017,
+        "1.2.0-r0": 1560229189
       },
       "origin": "speexdsp"
     },
@@ -62722,14 +62737,15 @@
     },
     "speexdsp": {
       "versions": {
-        "1.2_rc3-r5": 1556989020
+        "1.2_rc3-r5": 1556989020,
+        "1.2.0-r0": 1560229189
       },
       "origin": "speexdsp",
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libspeexdsp.so.1=1.5.0"
+        "so:libspeexdsp.so.1=1.5.1"
       ]
     },
     "cyrus-sasl-digestmd5": {
@@ -69613,6 +69629,12 @@
       "versions": {
         "0.9.64-r0": 1560155306
       }
+    },
+    "nss-pam-ldapd-openrc": {
+      "origin": "nss-pam-ldapd",
+      "versions": {
+        "0.9.10-r0": 1560229171
+      }
     }
   },
   "provide": {
@@ -75051,7 +75073,7 @@
       },
       "libspeexdsp.so.1": {
         "package": "speexdsp",
-        "version": "1.5.0"
+        "version": "1.5.1"
       },
       "libevtlog-3.19.so.0": {
         "package": "syslog-ng",
