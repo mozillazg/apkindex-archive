@@ -3820,11 +3820,12 @@
     },
     "enchant-dev": {
       "versions": {
-        "1.6.0-r13": 1557087889
+        "1.6.0-r13": 1557087889,
+        "1.6.0-r14": 1560255345
       },
       "origin": "enchant",
       "dependencies": [
-        "enchant=1.6.0-r13",
+        "enchant=1.6.0-r14",
         "pc:glib-2.0",
         "pc:gmodule-no-export-2.0",
         "pkgconfig"
@@ -21704,15 +21705,16 @@
     },
     "hunspell-dev": {
       "versions": {
-        "1.6.2-r2": 1557087851
+        "1.6.2-r2": 1557087851,
+        "1.7.0-r0": 1560255309
       },
       "origin": "hunspell",
       "dependencies": [
-        "hunspell=1.6.2-r2",
+        "libhunspell=1.7.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:hunspell=1.6.2"
+        "pc:hunspell=1.7.0"
       ]
     },
     "tk": {
@@ -22031,19 +22033,20 @@
     },
     "hunspell": {
       "versions": {
-        "1.6.2-r2": 1557087853
+        "1.6.2-r2": 1557087853,
+        "1.7.0-r0": 1560255310
       },
       "origin": "hunspell",
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
         "so:libgcc_s.so.1",
+        "so:libhunspell-1.7.so.0",
         "so:libintl.so.8",
         "so:libncursesw.so.6",
         "so:libreadline.so.8",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libhunspell-1.6.so.0=0.0.1",
         "cmd:affixcompress",
         "cmd:analyze",
         "cmd:chmorph",
@@ -25829,7 +25832,8 @@
     },
     "hunspell-lang": {
       "versions": {
-        "1.6.2-r2": 1557087852
+        "1.6.2-r2": 1557087852,
+        "1.7.0-r0": 1560255310
       },
       "origin": "hunspell"
     },
@@ -54124,7 +54128,8 @@
     },
     "hunspell-doc": {
       "versions": {
-        "1.6.2-r2": 1557087852
+        "1.6.2-r2": 1557087852,
+        "1.7.0-r0": 1560255310
       },
       "origin": "hunspell"
     },
@@ -66012,7 +66017,8 @@
     },
     "enchant": {
       "versions": {
-        "1.6.0-r13": 1557087895
+        "1.6.0-r13": 1557087895,
+        "1.6.0-r14": 1560255346
       },
       "origin": "enchant",
       "dependencies": [
@@ -66021,7 +66027,7 @@
         "so:libgcc_s.so.1",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
-        "so:libhunspell-1.6.so.0",
+        "so:libhunspell-1.7.so.0",
         "so:libstdc++.so.6"
       ],
       "provides": [
@@ -66824,7 +66830,8 @@
     },
     "enchant-doc": {
       "versions": {
-        "1.6.0-r13": 1557087892
+        "1.6.0-r13": 1557087892,
+        "1.6.0-r14": 1560255346
       },
       "origin": "enchant"
     },
@@ -70544,6 +70551,20 @@
       "versions": {
         "1.3.14-r0": 1560248569
       }
+    },
+    "libhunspell": {
+      "origin": "hunspell",
+      "versions": {
+        "1.7.0-r0": 1560255310
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libhunspell-1.7.so.0=0.0.1"
+      ]
     }
   },
   "provide": {
@@ -76799,6 +76820,10 @@
       "libopcodes-2.32.so": {
         "package": "binutils",
         "version": "0"
+      },
+      "libhunspell-1.7.so.0": {
+        "package": "libhunspell",
+        "version": "0.0.1"
       }
     },
     "package": {
