@@ -53860,10 +53860,11 @@
         "4.19.45-r2": 1558702034,
         "4.19.47-r2": 1559544939,
         "4.19.48-r0": 1559731110,
-        "4.19.49-r0": 1560161327
+        "4.19.49-r0": 1560161327,
+        "4.19.50-r0": 1560335699
       },
       "dependencies": [
-        "linux-vanilla=4.19.49-r0"
+        "linux-vanilla=4.19.50-r0"
       ]
     },
     "hylafaxplus-doc": {
@@ -57317,6 +57318,106 @@
       ],
       "provides": [
         "pc:xfce4-screensaver=0.1.4"
+      ]
+    },
+    "weechat-lua": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-armhf.so.1",
+        "so:liblua.so.5"
+      ]
+    },
+    "weechat-spell": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "weechat",
+        "so:libaspell.so.15",
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "weechat-aspell=2.5-r0"
+      ]
+    },
+    "weechat-python": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-armhf.so.1"
+      ]
+    },
+    "weechat": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336279
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libcurl.so.4",
+        "so:libgcrypt.so.20",
+        "so:libgnutls.so.30",
+        "so:libncursesw.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:weechat",
+        "cmd:weechat-curses",
+        "cmd:weechat-headless"
+      ]
+    },
+    "weechat-ruby": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-armhf.so.1",
+        "so:libruby.so.2.5"
+      ]
+    },
+    "weechat-perl": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-armhf.so.1",
+        "so:libperl.so"
+      ]
+    },
+    "weechat-dev": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336278
+      },
+      "dependencies": [
+        "cmake",
+        "libintl",
+        "ncurses-dev",
+        "gnutls-dev",
+        "libgcrypt-dev",
+        "curl-dev",
+        "aspell-dev",
+        "lua-dev",
+        "perl-dev",
+        "python2-dev",
+        "ruby-dev",
+        "zlib-dev",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:weechat=2.5"
       ]
     }
   },
@@ -63379,6 +63480,10 @@
       "gnome-themes-standard": {
         "package": "gnome-themes-extra",
         "version": "3.28-r1"
+      },
+      "weechat-aspell": {
+        "package": "weechat-spell",
+        "version": "2.5-r0"
       }
     }
   }

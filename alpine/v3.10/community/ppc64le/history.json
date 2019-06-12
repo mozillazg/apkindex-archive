@@ -58290,6 +58290,106 @@
         "so:libglib-2.0.so.0",
         "so:libpython3.7m.so.1.0"
       ]
+    },
+    "weechat-python": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-ppc64le.so.1"
+      ]
+    },
+    "weechat-ruby": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libruby.so.2.5"
+      ]
+    },
+    "weechat-lua": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-ppc64le.so.1",
+        "so:liblua.so.5"
+      ]
+    },
+    "weechat-perl": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libperl.so"
+      ]
+    },
+    "weechat-spell": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "weechat",
+        "so:libaspell.so.15",
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "weechat-aspell=2.5-r0"
+      ]
+    },
+    "weechat-dev": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335934
+      },
+      "dependencies": [
+        "cmake",
+        "libintl",
+        "ncurses-dev",
+        "gnutls-dev",
+        "libgcrypt-dev",
+        "curl-dev",
+        "aspell-dev",
+        "lua-dev",
+        "perl-dev",
+        "python2-dev",
+        "ruby-dev",
+        "zlib-dev",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:weechat=2.5"
+      ]
+    },
+    "weechat": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560335935
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcurl.so.4",
+        "so:libgcrypt.so.20",
+        "so:libgnutls.so.30",
+        "so:libncursesw.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:weechat",
+        "cmd:weechat-curses",
+        "cmd:weechat-headless"
+      ]
     }
   },
   "provide": {
@@ -64783,6 +64883,10 @@
       "gnome-themes-standard": {
         "package": "gnome-themes-extra",
         "version": "3.28-r1"
+      },
+      "weechat-aspell": {
+        "package": "weechat-spell",
+        "version": "2.5-r0"
       }
     }
   }

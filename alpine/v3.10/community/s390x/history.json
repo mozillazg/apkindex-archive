@@ -50009,10 +50009,11 @@
         "4.19.45-r2": 1558702032,
         "4.19.47-r2": 1559545591,
         "4.19.48-r0": 1559732895,
-        "4.19.49-r0": 1560162121
+        "4.19.49-r0": 1560162121,
+        "4.19.50-r0": 1560336597
       },
       "dependencies": [
-        "linux-vanilla=4.19.49-r0"
+        "linux-vanilla=4.19.50-r0"
       ]
     },
     "mopidy": {
@@ -53779,6 +53780,157 @@
       "origin": "xfce4-screensaver",
       "versions": {
         "0.1.4-r0": 1560331541
+      }
+    },
+    "weechat-spell": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336751
+      },
+      "dependencies": [
+        "weechat",
+        "so:libaspell.so.15",
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "weechat-aspell=2.5-r0"
+      ]
+    },
+    "hexchat": {
+      "origin": "hexchat",
+      "versions": {
+        "2.14.2-r1": 1560336782
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libc.musl-s390x.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libdbus-glib-1.so.2",
+        "so:libgdk-x11-2.0.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-x11-2.0.so.0",
+        "so:libintl.so.8",
+        "so:liblua-5.3.so.0",
+        "so:libnotify.so.4",
+        "so:libpango-1.0.so.0",
+        "so:libproxy.so.1",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "cmd:hexchat"
+      ]
+    },
+    "hexchat-lang": {
+      "origin": "hexchat",
+      "versions": {
+        "2.14.2-r1": 1560336782
+      }
+    },
+    "weechat-lua": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336751
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-s390x.so.1",
+        "so:liblua.so.5"
+      ]
+    },
+    "hexchat-python": {
+      "origin": "hexchat",
+      "versions": {
+        "2.14.2-r1": 1560336782
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libpython3.7m.so.1.0"
+      ]
+    },
+    "weechat-perl": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336751
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-s390x.so.1",
+        "so:libperl.so"
+      ]
+    },
+    "weechat-dev": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336751
+      },
+      "dependencies": [
+        "cmake",
+        "libintl",
+        "ncurses-dev",
+        "gnutls-dev",
+        "libgcrypt-dev",
+        "curl-dev",
+        "aspell-dev",
+        "lua-dev",
+        "perl-dev",
+        "python2-dev",
+        "ruby-dev",
+        "zlib-dev",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:weechat=2.5"
+      ]
+    },
+    "weechat-ruby": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336752
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-s390x.so.1",
+        "so:libruby.so.2.5"
+      ]
+    },
+    "weechat-python": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336752
+      },
+      "dependencies": [
+        "weechat",
+        "so:libc.musl-s390x.so.1"
+      ]
+    },
+    "weechat": {
+      "origin": "weechat",
+      "versions": {
+        "2.5-r0": 1560336752
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libcurl.so.4",
+        "so:libgcrypt.so.20",
+        "so:libgnutls.so.30",
+        "so:libncursesw.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:weechat",
+        "cmd:weechat-curses",
+        "cmd:weechat-headless"
+      ]
+    },
+    "hexchat-doc": {
+      "origin": "hexchat",
+      "versions": {
+        "2.14.2-r1": 1560336782
       }
     }
   },
@@ -58773,6 +58925,10 @@
       "gnome-themes-standard": {
         "package": "gnome-themes-extra",
         "version": "3.28-r1"
+      },
+      "weechat-aspell": {
+        "package": "weechat-spell",
+        "version": "2.5-r0"
       }
     }
   }
