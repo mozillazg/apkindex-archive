@@ -34066,7 +34066,8 @@
     "go": {
       "origin": "go",
       "versions": {
-        "1.12.5-r0": 1557323760
+        "1.12.5-r0": 1557323760,
+        "1.12.6-r0": 1560361945
       },
       "dependencies": [
         "binutils",
@@ -34074,7 +34075,9 @@
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "go-bootstrap=1.12.5-r0"
+        "go-bootstrap=1.12.6-r0",
+        "cmd:go",
+        "cmd:gofmt"
       ]
     },
     "lua5.3-coxpcall": {
@@ -51252,7 +51255,8 @@
     "go-doc": {
       "origin": "go",
       "versions": {
-        "1.12.5-r0": 1557323758
+        "1.12.5-r0": 1557323758,
+        "1.12.6-r0": 1560361943
       }
     },
     "py2-pytest-xdist": {
@@ -57529,6 +57533,18 @@
         "cmd:xscreensaver-getimage-video",
         "cmd:xscreensaver-text"
       ]
+    },
+    "micro-tetris": {
+      "origin": "micro-tetris",
+      "versions": {
+        "1.2.1-r1": 1560361957
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "cmd:tetris"
+      ]
     }
   },
   "provide": {
@@ -63357,7 +63373,7 @@
       },
       "go-bootstrap": {
         "package": "go",
-        "version": "1.12.5-r0"
+        "version": "1.12.6-r0"
       },
       "php-zip": {
         "package": "php7-zip",

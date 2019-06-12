@@ -4855,7 +4855,8 @@
     "go": {
       "origin": "go",
       "versions": {
-        "1.12.5-r0": 1557319008
+        "1.12.5-r0": 1557319008,
+        "1.12.6-r0": 1560361863
       },
       "dependencies": [
         "binutils",
@@ -4863,7 +4864,9 @@
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "go-bootstrap=1.12.5-r0"
+        "go-bootstrap=1.12.6-r0",
+        "cmd:go",
+        "cmd:gofmt"
       ]
     },
     "libradosstriper": {
@@ -43783,7 +43786,8 @@
     "go-doc": {
       "origin": "go",
       "versions": {
-        "1.12.5-r0": 1557319006
+        "1.12.5-r0": 1557319006,
+        "1.12.6-r0": 1560361862
       }
     },
     "yersinia-doc": {
@@ -61306,6 +61310,18 @@
         "cmd:xscreensaver-getimage-video",
         "cmd:xscreensaver-text"
       ]
+    },
+    "micro-tetris": {
+      "origin": "micro-tetris",
+      "versions": {
+        "1.2.1-r1": 1560361645
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:tetris"
+      ]
     }
   },
   "provide": {
@@ -68106,7 +68122,7 @@
       },
       "go-bootstrap": {
         "package": "go",
-        "version": "1.12.5-r0"
+        "version": "1.12.6-r0"
       },
       "php-posix": {
         "package": "php7-posix",
