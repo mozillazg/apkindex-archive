@@ -731,6 +731,22 @@ t:1557209445
 c:2f90419c5292571dcfc3201393d096eda23bc178
 i:docs perl-test-without=0.10-r0
 
+C:Q1YGZJbU20g4AcH2s9H9kG1l9tm88=
+P:sessreg
+V:1.1.2-r0
+A:aarch64
+S:5190
+I:24576
+T:manage utmp/wtmp entries for non-init clients
+U:https://wiki.freedesktop.org/xorg/
+L:ICU
+o:sessreg
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344261
+c:76a40018a2c3508e0c0634770258383526e135a9
+D:so:libc.musl-aarch64.so.1
+p:cmd:sessreg
+
 C:Q1gpYK/LJmo05e/z/SYF3LRVjTa+c=
 P:protobuf-c
 V:1.3.0-r6
@@ -3490,6 +3506,21 @@ t:1557145872
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-cache-simple-timedexpiry=0.27-r1
 
+C:Q1Ta2QswsVsYQwx2T3dyk82Wpk2ME=
+P:lxdm-openrc
+V:0.5.3-r2
+A:aarch64
+S:1481
+I:16384
+T:LXDE desktop login manager (OpenRC init scripts)
+U:https://wiki.lxde.org/en/LXDM
+L:GPL-3.0-or-later
+o:lxdm
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344470
+c:9ea6f9fda71ccc2330c62a51d37b8831f50fe5f2
+i:openrc lxdm=0.5.3-r2
+
 C:Q17s/0o/1NLO9hIo/Aemd8OMaCNHA=
 P:libguess
 V:1.2-r0
@@ -6204,22 +6235,6 @@ c:f82b04f0cec7fe6af7841f73765a1d882ec41098
 D:so:libbsd.so.0 so:libc.musl-aarch64.so.1
 p:so:libasr.so.0=0.0.2
 
-C:Q1RP8qCE3YhTdqootUMh4jDZheL/o=
-P:lm_sensors-sensord
-V:3.4.0-r6
-A:aarch64
-S:13522
-I:45056
-T:sensord daemon
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155018
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-D:bash sysfsutils so:libc.musl-aarch64.so.1 so:librrd.so.8 so:libsensors.so.4
-p:cmd:sensord
-
 C:Q1Jvp59Tnm5KwYe6v6jlmnn/l54e8=
 P:perl-error
 V:0.17027-r0
@@ -6650,6 +6665,22 @@ t:1557176903
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libotr3 so:libc.musl-aarch64.so.1 so:libgcrypt.so.20 so:libotr.so.2
 p:cmd:otr_mackey cmd:otr_modify cmd:otr_parse cmd:otr_readforge cmd:otr_remac cmd:otr_sesskeys
+
+C:Q1DRSqacuOmrNrhAoXTPj8XFDMzL8=
+P:lm_sensors-detect
+V:3.4.0-r7
+A:aarch64
+S:49659
+I:245760
+T:Detection/migration scripts for lm_sensors
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344348
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+D:perl
+p:cmd:sensors-conf-convert cmd:sensors-detect
 
 C:Q1DwhD+XiLq5U4Az7OE+N0wRLf9ZM=
 P:freeswitch-sounds-fr-fr-sibylle-8000
@@ -8988,21 +9019,6 @@ c:1446e1874e708ae7ba677c9af1d68a74d8e901fb
 D:gawk wget libxslt /bin/sh so:libc.musl-aarch64.so.1 so:libconfig.so.11 so:libmariadb.so.3 so:libsqlite3.so.0
 p:cmd:cvechecker cmd:cvegenversdat cmd:cvereport cmd:cverules cmd:pullcves
 
-C:Q1g+RZn5Pjr9raBRcUEL+xt2+HOhw=
-P:lxdm
-V:0.5.3-r1
-A:aarch64
-S:144038
-I:520192
-T:LXDE desktop login manager
-U:https://wiki.lxde.org/en/LXDM
-L:GPL
-o:lxdm
-t:1557151964
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:bash so:libX11.so.6 so:libc.musl-aarch64.so.1 so:libcairo.so.2 so:libck-connector.so.0 so:libdbus-1.so.3 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libxcb.so.1
-p:cmd:lxdm cmd:lxdm-binary cmd:lxdm-config
-
 C:Q1FP+WSAHB7K3pC0PqXTPURNyycRw=
 P:perl-test-mocktime
 V:0.17-r0
@@ -9016,22 +9032,6 @@ o:perl-test-mocktime
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557149830
 c:0aee1dd8737017cad88bcd5ae1d1abac5adb2c9a
-
-C:Q1RRskhokXEMzOXor5sb85de8Nd0U=
-P:lm_sensors-sensord-openrc
-V:3.4.0-r6
-A:aarch64
-S:1936
-I:24576
-T:sensord daemon (OpenRC init scripts)
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155022
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-D:bash sysfsutils
-i:lm_sensors-sensord=3.4.0-r6 openrc
 
 C:Q1aZ3Gr9zE1ezVrVoC5v5MLwxsMSc=
 P:libmodplug-doc
@@ -10896,6 +10896,22 @@ t:1560269137
 c:2fdb25103eb9eb413ea266dbb250170b845837b0
 D:llvm7=7.0.1-r5 llvm7-libs=7.0.1-r5 so:libLLVM-7.so so:libc.musl-aarch64.so.1 so:libstdc++.so.6
 p:cmd:llvm7-config
+
+C:Q153gCcwwCgHi+J3cAdSvg40bcGUA=
+P:wireless-tools
+V:30_pre9-r1
+A:aarch64
+S:133857
+I:327680
+T:Open Source wireless tools
+U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+L:GPL-2.0-only
+o:wireless-tools
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560344734
+c:5b043bf056b9af4ae6a50428a460350fa4942bc3
+D:so:libc.musl-aarch64.so.1
+p:cmd:ifrename cmd:iwconfig cmd:iwevent cmd:iwgetid cmd:iwlist cmd:iwpriv cmd:iwspy
 
 C:Q1yvPEVUHf69sArYwqA5e1yhFUYHQ=
 P:perl-net-telnet
@@ -13219,22 +13235,6 @@ t:1557120655
 c:81b763bf74215acaa84f8947e97291ac59dc3a3c
 D:sngtc_client=1.3.9-r0
 
-C:Q1OOF+3RcsslDpArtJ0r44FNylHFA=
-P:wireless-tools
-V:30_pre9-r0
-A:aarch64
-S:133891
-I:327680
-T:Open Source wireless tools
-U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
-L:GPL-2.0
-o:wireless-tools
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557084306
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-D:so:libc.musl-aarch64.so.1
-p:cmd:ifrename cmd:iwconfig cmd:iwevent cmd:iwgetid cmd:iwlist cmd:iwpriv cmd:iwspy
-
 C:Q1eIcm/tznthIhAdMLW1ynr98EM2E=
 P:lua-lxc
 V:3.0.2-r0
@@ -13882,21 +13882,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1557225957
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core mdadm
-
-C:Q1Q7SqyYUOXLaZsmLft4Fz+vjoRGI=
-P:wireless-tools-doc
-V:30_pre9-r0
-A:aarch64
-S:90981
-I:241664
-T:Open Source wireless tools (documentation)
-U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
-L:GPL-2.0
-o:wireless-tools
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557084298
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-i:docs wireless-tools=30_pre9-r0
 
 C:Q101I34Ph9dUiMRHYMLX29ATx5CS4=
 P:py-django-pipeline
@@ -14933,22 +14918,6 @@ t:1557219273
 c:b60d437158115c32aa5591a97a51d78c6495f325
 i:openrc ulogd=2.0.7-r0
 
-C:Q1q6huznUnUpUkACviYB3Kd8FDt60=
-P:sessreg
-V:1.1.1-r1
-A:aarch64
-S:5160
-I:24576
-T:manage utmp/wtmp entries for non-init clients
-U:http://xorg.freedesktop.org/
-L:custom
-o:sessreg
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557152666
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-aarch64.so.1
-p:cmd:sessreg
-
 C:Q1H54sXt/Ch6fqVFMK/oGCxlsXoDA=
 P:sysstat
 V:11.6.0-r0
@@ -15130,6 +15099,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556999902
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:sysfsutils=2.1.0-r8
+
+C:Q1pO449+SZf5/ARjUmzEx8C9eZVcA=
+P:libshout-static
+V:2.4.3-r1
+A:aarch64
+S:55074
+I:200704
+T:Library for accessing a shoutcast/icecast server (static library)
+U:https://icecast.org/
+L:GPL-2.0-only
+o:libshout
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560345186
+c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
 
 C:Q1Rp8wce7hew26aONwbKPVW1vLiaE=
 P:xf86-video-amdgpu
@@ -15364,20 +15347,6 @@ t:1558435748
 c:73124fc4eae5b99951d5850cd6b1b168c6851de4
 D:so:libc.musl-aarch64.so.1
 p:so:libts.so.0=0.10.1 cmd:ts_calibrate cmd:ts_conf cmd:ts_finddev cmd:ts_harvest cmd:ts_print cmd:ts_print_mt cmd:ts_print_raw cmd:ts_test cmd:ts_test_mt cmd:ts_uinput cmd:ts_verify
-
-C:Q1LmmUmk3q6qWScF5zq+qKoPwCzRs=
-P:libshout-static
-V:2.4.3-r0
-A:aarch64
-S:55091
-I:200704
-T:Library for accessing a shoutcast/icecast server (static library)
-U:http://www.icecast.org/
-L:LGPL-2.1
-o:libshout
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1560075380
-c:3e4864e9ed5c266b5fb748205a4a71eb57cf5d0c
 
 C:Q18I68sbu29U/mkOpl8nVkh1FKhN0=
 P:lua5.1-alt-getopt
@@ -16808,21 +16777,6 @@ t:1556998714
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs perl-net-snmp=6.0.1-r2
 
-C:Q15cXNVJ4X42EVLZQY35d04ULZ1EA=
-P:libshout-doc
-V:2.4.3-r0
-A:aarch64
-S:13088
-I:65536
-T:Library for accessing a shoutcast/icecast server (documentation)
-U:http://www.icecast.org/
-L:LGPL-2.1
-o:libshout
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1560075380
-c:3e4864e9ed5c266b5fb748205a4a71eb57cf5d0c
-i:docs libshout=2.4.3-r0
-
 C:Q1By8DWI8F+EdF9T3ihFUkt13tWwc=
 P:imap
 V:2007f-r9
@@ -16979,6 +16933,20 @@ t:1557141627
 c:8d46b570aba5067fb64ab7437b18b7716ecc340d
 D:so:libc.musl-aarch64.so.1
 p:so:libivykis.so.0=0.5.5
+
+C:Q1IPHrnKDoghB3+mtd9H8FqLMZafs=
+P:wireless-tools-dev
+V:30_pre9-r1
+A:aarch64
+S:35049
+I:122880
+T:Open Source wireless tools (development files)
+U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+L:GPL-2.0-only
+o:wireless-tools
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560344733
+c:5b043bf056b9af4ae6a50428a460350fa4942bc3
 
 C:Q16D2jIOTp38b8lxngAKzBazupNDA=
 P:py2-pillow
@@ -17425,22 +17393,6 @@ t:1557039984
 c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-aarch64.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:so:libavahi-glib.so.1=1.0.2 so:libavahi-gobject.so.0=0.0.5
-
-C:Q1eNSC+FBt5RAjys+zS1r4keQbT7Y=
-P:lm_sensors
-V:3.4.0-r6
-A:aarch64
-S:45222
-I:172032
-T:Collection of user space tools for general SMBus access and hardware monitoring.
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155026
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-D:bash sysfsutils so:libc.musl-aarch64.so.1
-p:so:libsensors.so.4=4.4.0 cmd:fancontrol cmd:pwmconfig cmd:sensors
 
 C:Q1Oel9UhQeHRim5ERJlJwN2Glr5IU=
 P:heimdal-openrc
@@ -18851,21 +18803,6 @@ t:1557580107
 c:9264f4d474872c480177e016ba7a296ecebe0414
 i:docs perl-params-util=1.07-r6
 
-C:Q1pkybP7iwWr3UyL7yq6lSCN2ChVU=
-P:lxpolkit
-V:0.1.0-r1
-A:aarch64
-S:29475
-I:811008
-T:Simple PolicyKit authentication agent
-U:http://lxde.org/
-L:GPL-2.0-or-later
-o:lxpolkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557220235
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libc.musl-aarch64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0
-
 C:Q1yUxHzJhYTsr3KRGNKC/yd+qW1a0=
 P:openssh-keygen
 V:8.0_p1-r0
@@ -19033,20 +18970,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1557209592
 c:e268cc0c93020db0aaee53d5342d253f34d80ef9
 D:perl-net-ssleay perl-io-socket-ssl perl-digest-hmac
-
-C:Q1P8uL3sOf7mTe6ZghDQQdJXgEa+k=
-P:py-yaml
-V:5.1-r0
-A:aarch64
-S:1166
-I:4096
-T:Python bindings for YAML
-U:http://pyyaml.org
-L:MIT
-o:py-yaml
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1557138861
-c:03cf07824ef86c1ab20bb6ad350f618a42b1402e
 
 C:Q1cNBuIcISJ28Dd6j8E9kKCK+CFYQ=
 P:perl-convert-binhex
@@ -20165,6 +20088,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557002447
 c:8a12e7ebbcd3ad628c46fad276e0ba94300a3119
 
+C:Q1QaPM7RZ3KqHZ10W2JiapQ3xbvvQ=
+P:lm_sensors-dev
+V:3.4.0-r7
+A:aarch64
+S:33921
+I:135168
+T:Collection of user space tools for general SMBus access and hardware monitoring. (development files)
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344348
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+D:lm_sensors=3.4.0-r7
+
 C:Q1k8cw6GBplwe6yAW+kIk/enLFW5w=
 P:udisks-dev
 V:1.0.5-r3
@@ -21173,22 +21111,6 @@ t:1557247724
 c:4915451a022511db466f97826f675eaba0bb1ccd
 D:zsh
 i:zsh=5.7.1-r0 imagemagick
-
-C:Q1NB+u22AjOIJ7KR8DwJRW8uqVFrs=
-P:multisort
-V:1.1-r0
-A:aarch64
-S:5029
-I:24576
-T:Tool to merge multiple logfiles
-U:https://www.xach.com/multisort/
-L:GPL-2.0
-o:multisort
-m:Timo Teräs <timo.teras@iki.fi>
-t:1557138499
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-D:so:libc.musl-aarch64.so.1
-p:cmd:multisort
 
 C:Q11CZlH7NFbf574u3Dl0cWd7J3jOo=
 P:acf-core
@@ -23207,6 +23129,22 @@ t:1556878489
 c:3cd48b869ba6eefb0d8dc2afd8e7ec55762c8fc6
 D:lua5.1 so:libc.musl-aarch64.so.1
 i:lua-filesystem=1.7.0.2-r0 lua5.1
+
+C:Q1tlWDEB43y1e5eMX4pUQVrtOnEn8=
+P:libshout
+V:2.4.3-r1
+A:aarch64
+S:47449
+I:135168
+T:Library for accessing a shoutcast/icecast server
+U:https://icecast.org/
+L:GPL-2.0-only
+o:libshout
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560345186
+c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libogg.so.0 so:libspeex.so.1 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0
+p:so:libshout.so.3=3.2.0
 
 C:Q1F1LV+XwKTAhQGQQIxNy3yWzxqFY=
 P:uwsgi-carbon
@@ -25609,22 +25547,6 @@ c:fb4e19bf049c744def4ba273408a41fe0c03c37a
 D:perl-dist-checkconflicts perl-package-stash-xs perl-module-implementation
 p:cmd:package-stash-conflicts
 
-C:Q1ylRVHfPV+cyuUdErqFwxZGwAdJs=
-P:lm_sensors-detect
-V:3.4.0-r6
-A:aarch64
-S:49674
-I:245760
-T:Detection/migration scripts for lm_sensors
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155014
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-D:perl
-p:cmd:sensors-conf-convert cmd:sensors-detect
-
 C:Q1yhAFQTpMxIhdOa8YYYbF9pnAMII=
 P:libnjb-dev
 V:2.2.7-r4
@@ -27503,21 +27425,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559028188
 c:0b04368fef83aec9820cc0c7a8e9be24efeab1a1
 i:openrc lighttpd=1.4.54-r0
-
-C:Q1MSxYbtsbV3sN9nai1Xcux1qM88U=
-P:sessreg-doc
-V:1.1.1-r1
-A:aarch64
-S:3372
-I:24576
-T:manage utmp/wtmp entries for non-init clients (documentation)
-U:http://xorg.freedesktop.org/
-L:custom
-o:sessreg
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557152663
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-i:docs sessreg=1.1.1-r1
 
 C:Q148h8WMOea6+8t9CkCQs7VZt+Ku0=
 P:xauth
@@ -34815,22 +34722,6 @@ t:1557133611
 c:87c443db8dd4907c90a4b6077c6d61946fc30816
 D:git perl /bin/sh
 
-C:Q1mxI/C6VXK/EVVqSUC8z1jJ5eOfU=
-P:libshout
-V:2.4.3-r0
-A:aarch64
-S:47462
-I:135168
-T:Library for accessing a shoutcast/icecast server
-U:http://www.icecast.org/
-L:LGPL-2.1
-o:libshout
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1560075381
-c:3e4864e9ed5c266b5fb748205a4a71eb57cf5d0c
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libogg.so.0 so:libspeex.so.1 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0
-p:so:libshout.so.3=3.2.0
-
 C:Q1rB561CEnXFQYUbJfayTdBjev4ig=
 P:perl-data-hexdump
 V:0.02-r1
@@ -35011,22 +34902,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557244313
 c:a09eb83bf131ec19924bc89e8d9bff92f79d6511
 D:f2fs-tools-libs=1.12.0-r0
-
-C:Q1uOxrXVOxmBk2O+f1+TELFqfuiUM=
-P:paxmark
-V:0.11-r0
-A:aarch64
-S:1803
-I:16384
-T:Manage PaX marking of executables
-U:http://alpinelinux.org
-L:GPL
-o:paxmark
-m:Timo Teräs <timo.teras@iki.fi>
-t:1556623920
-c:40717070ed6131295cecf8232bae5d1993911a98
-D:attr
-p:cmd:paxmark cmd:paxmark.sh
 
 C:Q1GJY3O/0chVUfFklkFALlgBA3Wuo=
 P:mdocml-apropos
@@ -38183,6 +38058,21 @@ t:1557247294
 c:710fe41f132c62a570799836d0c2dc9216eb9211
 i:docs libxrandr=1.5.2-r0
 
+C:Q1083bsS9h/U7GvvU4YaN++3gpons=
+P:lxpolkit-lang
+V:0.1.0-r2
+A:aarch64
+S:21366
+I:753664
+T:Languages for package lxpolkit
+U:https://lxde.org/
+L:GPL-2.0-or-later
+o:lxpolkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344421
+c:d223148e361ad24fcf76f836a96837e2bdc23e66
+i:lxpolkit=0.1.0-r2 lang
+
 C:Q1tDgeFdnuzBbKWftRFVBC7vYCrZM=
 P:gdbm-dev
 V:1.13-r1
@@ -38273,6 +38163,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1557588305
 c:3c086e1b4b07d77e88b3da369b22a0f5305bb503
 i:vim nginx=1.16.0-r2
+
+C:Q18AM0ix6eJOMgZlnlr9FTdIHbLb8=
+P:lm_sensors
+V:3.4.0-r7
+A:aarch64
+S:45188
+I:172032
+T:Collection of user space tools for general SMBus access and hardware monitoring.
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344349
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+D:bash sysfsutils so:libc.musl-aarch64.so.1
+p:so:libsensors.so.4=4.4.0 cmd:fancontrol cmd:pwmconfig cmd:sensors
 
 C:Q1ww//9/NloVY36x1JBfnrCslXj0o=
 P:perl-control-x10
@@ -38716,20 +38622,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557588402
 c:da0726114919617fc3ce555cbd00fd5040e9708a
 D:perl perl-dbi so:libc.musl-aarch64.so.1 so:libmariadb.so.3
-
-C:Q1+pJrS4BVD5LMkcglCD1Et6oIzes=
-P:wireless-tools-dev
-V:30_pre9-r0
-A:aarch64
-S:35039
-I:122880
-T:Open Source wireless tools (development files)
-U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
-L:GPL-2.0
-o:wireless-tools
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557084289
-c:63f5e7d295659a855709901ce22a3e5f40fce455
 
 C:Q1rTCyzezS+0DfWknBZFPdyAft4oU=
 P:protobuf-c-dev
@@ -39474,21 +39366,6 @@ t:1557042040
 c:bc8c7687c1019e752ac9c9e8bb36c748f6eca543
 i:docs perl-extutils-pkgconfig=1.16-r1
 
-C:Q1QUF4NYMkaMgfl5wtAOK/HX7AweU=
-P:py3-yaml
-V:5.1-r0
-A:aarch64
-S:91344
-I:454656
-T:Python bindings for YAML (for python3)
-U:http://pyyaml.org
-L:MIT
-o:py-yaml
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1557138860
-c:03cf07824ef86c1ab20bb6ad350f618a42b1402e
-i:py-yaml=5.1-r0 python3
-
 C:Q1g3NcRguBtXWxW3UdXoAbsMTWXJI=
 P:jansson
 V:2.12-r0
@@ -39655,23 +39532,6 @@ o:perl-javascript-minifier
 m:Timo Teräs <timo.teras@iki.fi>
 t:1557161879
 c:4ad9034d2b820272f10b323dbbe9a5939e994b3a
-
-C:Q17sv2UEWERsPpnUYGRFKZiwd1+v4=
-P:py3-pytest
-V:4.5.0-r1
-A:aarch64
-S:489551
-I:1761280
-T:A python test library (for python3)
-U:https://docs.pytest.org/en/latest/
-L:MIT
-o:pytest
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1559649106
-c:6e1765a4aa69e514744d9cdd12c6d743caad38eb
-D:py3-atomicwrites py3-py py3-six py3-attrs py3-more-itertools py3-pluggy py3-wcwidth py3-setuptools python3
-p:cmd:py.test-3 cmd:pytest-3
-i:pytest=4.5.0-r1 python3
 
 C:Q1wV4EfhIbff4l7FSt7rT6/3E/vzU=
 P:heimdal-libs
@@ -42602,21 +42462,6 @@ t:1556916412
 c:3ef36af16a82d8aa67b3c2ec01515eb95f974856
 i:docs perl-eval-closure=0.14-r0
 
-C:Q1IG+Z7gIDU2Fv2fDzXlqRS4yflN8=
-P:lm_sensors-dev
-V:3.4.0-r6
-A:aarch64
-S:33918
-I:135168
-T:Collection of user space tools for general SMBus access and hardware monitoring. (development files)
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155007
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-D:lm_sensors=3.4.0-r6
-
 C:Q1glYDmc1KX69C5U3VMBVdwQsfHBc=
 P:qemu-microblazeel
 V:4.0.0-r0
@@ -43585,6 +43430,21 @@ c:302749e2d5084f8f091e4614d4393b0d98961c7d
 D:iproute2 /bin/sh so:libc.musl-aarch64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgmp.so.10 so:libsqlite3.so.0
 p:so:libcharon.so.0=0.0.0 so:libradius.so.0=0.0.0 so:libsimaka.so.0=0.0.0 so:libstrongswan.so.0=0.0.0 so:libtls.so.0=0.0.0 so:libvici.so.0=0.0.0 cmd:charon-cmd cmd:ipsec cmd:pki cmd:swanctl
 
+C:Q19Te8j31QofOt2JNrFUbj99j0yHU=
+P:wireless-tools-doc
+V:30_pre9-r1
+A:aarch64
+S:90914
+I:241664
+T:Open Source wireless tools (documentation)
+U:http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+L:GPL-2.0-only
+o:wireless-tools
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560344734
+c:5b043bf056b9af4ae6a50428a460350fa4942bc3
+i:docs wireless-tools=30_pre9-r1
+
 C:Q1RlgGjWBTPR+siI5eCKK6GO/t1KI=
 P:perl-data-uuid-doc
 V:1.224-r1
@@ -43890,6 +43750,23 @@ t:1559760799
 c:759d703bbcd604ea2cec8089c162274dda332a8d
 D:imlib2-dev freetype-dev zlib-dev libx11-dev libxext-dev giblib=1.2.4-r11 pkgconfig
 p:pc:giblib=1.2.4 cmd:giblib-config
+
+C:Q17Vnkq962DRes/uEyBrYgZyNDY3E=
+P:py3-pytest
+V:4.6.3-r0
+A:aarch64
+S:492418
+I:1761280
+T:A python test library (for python3)
+U:https://docs.pytest.org/en/latest/
+L:MIT
+o:pytest
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344223
+c:1b6e71f7878112a0061e9c8d409fb0d9d3c65412
+D:py3-atomicwrites py3-py py3-six py3-attrs py3-more-itertools py3-pluggy py3-wcwidth py3-setuptools python3
+p:cmd:py.test-3 cmd:pytest-3
+i:pytest=4.6.3-r0 python3
 
 C:Q1/+aGycGUiOEQD3xLOqyLBXwBPvU=
 P:gnats
@@ -45728,21 +45605,6 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:xcb-util-dev pkgconfig xcb-util-wm=0.4.1-r1
 p:pc:xcb-ewmh=0.4.1 pc:xcb-icccm=0.4.1
 
-C:Q1wOpSvZm344jgzT3WFtZ1ITrrUek=
-P:lm_sensors-doc
-V:3.4.0-r6
-A:aarch64
-S:24347
-I:73728
-T:Collection of user space tools for general SMBus access and hardware monitoring. (documentation)
-U:http://www.lm-sensors.org/
-L:LGPL-2.1+, GPL-2.0+
-o:lm_sensors
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557155011
-c:aa4c2e5ed32a1a8e3c387a41c9580715ac7660ed
-i:docs lm_sensors=3.4.0-r6
-
 C:Q1cpZtbffsmH4wZTkaynqzBY1sbtk=
 P:fetchmailconf
 V:6.3.26-r14
@@ -46585,21 +46447,6 @@ t:1557227833
 c:f0c7d3cb136b30eeeb61a518c2c36fdaab6f1cfa
 i:docs vsftpd=3.0.3-r6
 
-C:Q1kUWI1Z6m+vfwAVzibFDxu6EScIk=
-P:lxdm-lang
-V:0.5.3-r1
-A:aarch64
-S:28388
-I:569344
-T:Languages for package lxdm
-U:https://wiki.lxde.org/en/LXDM
-L:GPL
-o:lxdm
-t:1557151963
-c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-D:bash
-i:lxdm=0.5.3-r1 lang
-
 C:Q1YlmGNulAUw+F4KKt6okAvXUjeUc=
 P:json-c0.12-dev
 V:0.12.1-r2
@@ -46951,6 +46798,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1559284517
 c:1446e1874e708ae7ba677c9af1d68a74d8e901fb
 i:docs cvechecker=3.9-r2
+
+C:Q1vPpl32n8jlrprpIeU5PUZ/D3NJA=
+P:lxpolkit
+V:0.1.0-r2
+A:aarch64
+S:9550
+I:69632
+T:Simple PolicyKit authentication agent
+U:https://lxde.org/
+L:GPL-2.0-or-later
+o:lxpolkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344421
+c:d223148e361ad24fcf76f836a96837e2bdc23e66
+D:so:libc.musl-aarch64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0
 
 C:Q1D/xf5VpPNtcJCThrIUoROW2YgUI=
 P:graphviz
@@ -50362,6 +50224,20 @@ D:python2
 p:cmd:chardetect
 i:py-chardet=3.0.4-r1 python2
 
+C:Q1QPWj2HPR2lCacCFJfnCNyL4/8dw=
+P:py-yaml
+V:5.1.1-r0
+A:aarch64
+S:1172
+I:4096
+T:Python bindings for YAML
+U:http://pyyaml.org
+L:MIT
+o:py-yaml
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344183
+c:297542c9fc6da738f14fc081f84ec5b8810bd786
+
 C:Q1Q5Th6tD2wrr7eLMRQZ8LKSmANsA=
 P:linux-firmware-rtl_nic
 V:20190322-r1
@@ -51313,6 +51189,22 @@ t:1556991671
 c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libboost_context.so.1.69.0 so:libboost_thread.so.1.69.0 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1
 p:so:libboost_coroutine.so.1.69.0=1.69.0
+
+C:Q1e40I/x5Rhq8CQb0wJ08AgQ+oFUM=
+P:lm_sensors-sensord
+V:3.4.0-r7
+A:aarch64
+S:13533
+I:45056
+T:sensord daemon
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344349
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+D:bash sysfsutils so:libc.musl-aarch64.so.1 so:librrd.so.8 so:libsensors.so.4
+p:cmd:sensord
 
 C:Q1oJF4SFrVacok6wDsWfmd+JmjKhU=
 P:unbound-doc
@@ -55874,23 +55766,6 @@ c:81b763bf74215acaa84f8947e97291ac59dc3a3c
 D:so:libc.musl-aarch64.so.1 so:libortp.so.13
 p:so:libsngtc_node.so=0 cmd:sngtc_client
 
-C:Q1ozo8B2nzJIOF+Ah7CkmdQUQdy74=
-P:py2-pytest
-V:4.5.0-r1
-A:aarch64
-S:503905
-I:1867776
-T:A python test library (for python2)
-U:https://docs.pytest.org/en/latest/
-L:MIT
-o:pytest
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1559649113
-c:6e1765a4aa69e514744d9cdd12c6d743caad38eb
-D:py2-atomicwrites py2-py py2-six py2-attrs py2-more-itertools py2-pluggy py2-wcwidth py2-setuptools py2-funcsigs py2-pathlib2 python2
-p:cmd:py.test-2 cmd:pytest-2
-i:pytest=4.5.0-r1 python2
-
 C:Q1U9vrIzPWFAbDtejOdxrAXdNJfsY=
 P:libseccomp-doc
 V:2.4.1-r0
@@ -57228,6 +57103,22 @@ t:1558357509
 c:213ada016f2d6e6cd4d1965c64593afe427725b0
 D:/bin/sh so:libc.musl-aarch64.so.1
 p:cmd:cjdroute
+
+C:Q1UmQ2TNNGcLXXf23MOXpgHAAGo8g=
+P:libshout-dev
+V:2.4.3-r1
+A:aarch64
+S:7309
+I:57344
+T:Library for accessing a shoutcast/icecast server (development files)
+U:https://icecast.org/
+L:GPL-2.0-only
+o:libshout
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560345186
+c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
+D:libshout=2.4.3-r1 pc:libssl pc:ogg pc:speex pc:theora pc:vorbis pkgconfig
+p:pc:shout=2.4.3
 
 C:Q11mAUgId71bXxwkBGwyLmHGE/pDg=
 P:krb5-doc
@@ -60139,6 +60030,21 @@ c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.3 so:libc.musl-aarch64.so.1 so:libmariadb.so.3
 i:lua-sql-mysql=2.3.5-r2 lua5.3
 
+C:Q1H4Qfo8ObyQfuLftkMobTidQWuyI=
+P:pytest
+V:4.6.3-r0
+A:aarch64
+S:1332
+I:12288
+T:A python test library
+U:https://docs.pytest.org/en/latest/
+L:MIT
+o:pytest
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344230
+c:1b6e71f7878112a0061e9c8d409fb0d9d3c65412
+D:py3-pytest py3-pytest=4.6.3-r0
+
 C:Q1wqWag+Dn7VKjQb6S/peEEONnJTw=
 P:slibtool
 V:0.5.26-r0
@@ -63036,6 +62942,22 @@ t:1557154209
 c:a752e63bd4811d0b656d656f69d5f4f2c9a36090
 D:so:libc.musl-aarch64.so.1 so:libodbc.so.2
 
+C:Q1zWkP5qCvfnHK89S8ley9d7UN1+E=
+P:lxdm
+V:0.5.3-r2
+A:aarch64
+S:143719
+I:512000
+T:LXDE desktop login manager
+U:https://wiki.lxde.org/en/LXDM
+L:GPL-3.0-or-later
+o:lxdm
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344470
+c:9ea6f9fda71ccc2330c62a51d37b8831f50fe5f2
+D:bash so:libX11.so.6 so:libc.musl-aarch64.so.1 so:libcairo.so.2 so:libck-connector.so.0 so:libdbus-1.so.3 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libxcb.so.1
+p:cmd:lxdm cmd:lxdm-binary cmd:lxdm-config
+
 C:Q1X6qnhxuwdZCQXn4sIMcpNJqdGT8=
 P:libgsf-lang
 V:1.14.46-r0
@@ -64131,6 +64053,38 @@ t:1557177558
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs sendpage=1.0.3-r5
 
+C:Q1vvPerliIyKDICDI14wMDreUpYYE=
+P:py2-yaml
+V:5.1.1-r0
+A:aarch64
+S:96786
+I:495616
+T:Python bindings for YAML (for python2)
+U:http://pyyaml.org
+L:MIT
+o:py-yaml
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344183
+c:297542c9fc6da738f14fc081f84ec5b8810bd786
+i:py-yaml=5.1.1-r0 python2
+
+C:Q10XvJqmpS+oe2NZrFDUUJW/B9Yec=
+P:py2-pytest
+V:4.6.3-r0
+A:aarch64
+S:507125
+I:1867776
+T:A python test library (for python2)
+U:https://docs.pytest.org/en/latest/
+L:MIT
+o:pytest
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344230
+c:1b6e71f7878112a0061e9c8d409fb0d9d3c65412
+D:py2-atomicwrites py2-py py2-six py2-attrs py2-more-itertools py2-pluggy py2-wcwidth py2-setuptools py2-funcsigs py2-pathlib2 python2
+p:cmd:py.test-2 cmd:pytest-2
+i:pytest=4.6.3-r0 python2
+
 C:Q16ke5P3q7jSXg62VCbVkFa0+FSQc=
 P:libtls-standalone-dbg
 V:2.9.1-r0
@@ -64375,6 +64329,21 @@ t:1557168147
 c:292be74e1dbc26886793b0941c3ff2c16036aefc
 D:lua5.1 so:libc.musl-aarch64.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.2-r1 lua5.1
+
+C:Q1h+zrjpg8BiF1BvfxNPgc/ow848k=
+P:py3-yaml
+V:5.1.1-r0
+A:aarch64
+S:91361
+I:454656
+T:Python bindings for YAML (for python3)
+U:http://pyyaml.org
+L:MIT
+o:py-yaml
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1560344183
+c:297542c9fc6da738f14fc081f84ec5b8810bd786
+i:py-yaml=5.1.1-r0 python3
 
 C:Q12H6Gq3awcSQQ8trpNpn3iAzAmPM=
 P:mosh-client
@@ -65769,6 +65738,21 @@ c:a18fc6715874db5d73f9649ea98f1df76f9092cc
 D:pixman=0.38.4-r0 pkgconfig
 p:pc:pixman-1=0.38.4
 
+C:Q1pfJtYlj+y7GD1KrHwN5TC7yVM0w=
+P:sessreg-doc
+V:1.1.2-r0
+A:aarch64
+S:3377
+I:24576
+T:manage utmp/wtmp entries for non-init clients (documentation)
+U:https://wiki.freedesktop.org/xorg/
+L:ICU
+o:sessreg
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344261
+c:76a40018a2c3508e0c0634770258383526e135a9
+i:docs sessreg=1.1.2-r0
+
 C:Q1NwuUi1DRpSlqaUY9fDcqz9ncKnM=
 P:icu-libs
 V:64.2-r0
@@ -66577,21 +66561,6 @@ t:1557135916
 c:36a4e1b24e8b7e54d6dc2a6a1b50bf23e37a45a2
 D:py3-pbr py3-six python3
 i:py-mock=2.0.0-r4 python3
-
-C:Q1ASI9dbsxyfyC1fOWLf+dnqA9jNE=
-P:pytest
-V:4.5.0-r1
-A:aarch64
-S:1326
-I:12288
-T:A python test library
-U:https://docs.pytest.org/en/latest/
-L:MIT
-o:pytest
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1559649113
-c:6e1765a4aa69e514744d9cdd12c6d743caad38eb
-D:py3-pytest py3-pytest=4.5.0-r1
 
 C:Q1sXxQnIg/SEBtwijCk5dQRZYM5tM=
 P:openbox-gnome
@@ -67593,6 +67562,21 @@ t:1556917338
 c:e7341b5ba167195aa648a599808d157dafa9e3aa
 D:so:libc.musl-aarch64.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
 p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
+
+C:Q1fjCMt3+yOd7Ris3Y8OokQIxYwQM=
+P:libshout-doc
+V:2.4.3-r1
+A:aarch64
+S:13092
+I:65536
+T:Library for accessing a shoutcast/icecast server (documentation)
+U:https://icecast.org/
+L:GPL-2.0-only
+o:libshout
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1560345186
+c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
+i:docs libshout=2.4.3-r1
 
 C:Q1/6l77hPgAhtTvWhcTJoKjVJwkzo=
 P:subunit-libs
@@ -69724,21 +69708,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1557219893
 c:64ae787df08451c0d0e9f0e934e461ff5f342c99
 i:docs fsarchiver=0.8.5-r0
-
-C:Q1/9RWJI7i1VWDysJWntJlafgvUzQ=
-P:py2-yaml
-V:5.1-r0
-A:aarch64
-S:96796
-I:495616
-T:Python bindings for YAML (for python2)
-U:http://pyyaml.org
-L:MIT
-o:py-yaml
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1557138859
-c:03cf07824ef86c1ab20bb6ad350f618a42b1402e
-i:py-yaml=5.1-r0 python2
 
 C:Q1z/Lt8mCmW++r6ASZVej/nsSc0eo=
 P:gnokii-dev
@@ -72611,6 +72580,22 @@ t:1557128463
 c:163e2083ab9656e013615e8ec4804678b6ca06e9
 D:so:libc.musl-aarch64.so.1 so:libpcap.so.1
 p:cmd:ngrep
+
+C:Q1IJQ5rCWW20K+0PqEUC2hkPL6Us0=
+P:lxdm-lang
+V:0.5.3-r2
+A:aarch64
+S:28180
+I:569344
+T:Languages for package lxdm
+U:https://wiki.lxde.org/en/LXDM
+L:GPL-3.0-or-later
+o:lxdm
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344470
+c:9ea6f9fda71ccc2330c62a51d37b8831f50fe5f2
+D:bash
+i:lxdm=0.5.3-r2 lang
 
 C:Q18S02F/5l5W5dLi8iKdfuw9JI6Pk=
 P:uwsgi-router_hash
@@ -80075,6 +80060,22 @@ t:1557179058
 c:caec29f551955d6a6392943708652db0f8bc4a17
 i:openrc haveged=1.9.4-r4
 
+C:Q13ZW+lUlSmrJUSS8bDs84edUtcWY=
+P:multisort
+V:1.1-r1
+A:aarch64
+S:5029
+I:24576
+T:Tool to merge multiple logfiles
+U:https://www.xach.com/multisort/
+L:GPL-2.0-or-later
+o:multisort
+m:Timo Teräs <timo.teras@iki.fi>
+t:1560344491
+c:b2518de80493229d1fb9f7b469501011e76686f5
+D:so:libc.musl-aarch64.so.1
+p:cmd:multisort
+
 C:Q1TjPmZDfM0dI61/4+vCGOyLdlwi0=
 P:lua-sql
 V:2.3.5-r2
@@ -80650,6 +80651,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560270282
 c:a5ed25b5fb8b785cdfb72c294466b39347fc7a8f
 D:mesa so:libLLVM-8.so so:libc.musl-aarch64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1
+
+C:Q12GnyITzuGzv8Y6dyRmOADGiJkgI=
+P:lm_sensors-doc
+V:3.4.0-r7
+A:aarch64
+S:24340
+I:73728
+T:Collection of user space tools for general SMBus access and hardware monitoring. (documentation)
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344348
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+i:docs lm_sensors=3.4.0-r7
 
 C:Q1im1n9isqs3q7dTe2QUv7SO34Xa8=
 P:rng-tools-doc
@@ -83795,6 +83811,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557037220
 c:834ff08917471c7eca8be7fc68198f5ecb90c204
 
+C:Q17r08u4qrpCnDHhETo6k5IvwZ9pc=
+P:lm_sensors-sensord-openrc
+V:3.4.0-r7
+A:aarch64
+S:1945
+I:24576
+T:sensord daemon (OpenRC init scripts)
+U:https://github.com/lm-sensors/lm-sensors
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:lm_sensors
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560344349
+c:f8e8f9696d4c7e91e7fb426f5edb46d35ad3f973
+D:bash sysfsutils
+i:lm_sensors-sensord=3.4.0-r7 openrc
+
 C:Q1AlA5mj0PgfkDB7JfpaHrTxhvNaQ=
 P:apache-mod-fcgid
 V:2.3.9-r2
@@ -84844,6 +84876,22 @@ t:1557222219
 c:4f0aef0bc5e3f74f8b60f8500ea975f52be98b08
 i:docs logcheck=1.3.20-r1
 
+C:Q1LHugIn4ML4EGI28CKsPup4JPMZc=
+P:paxmark
+V:0.11-r1
+A:aarch64
+S:1807
+I:16384
+T:Manage PaX marking of executables
+U:https://alpinelinux.org
+L:GPL-2.0-or-later
+o:paxmark
+m:Timo Teräs <timo.teras@iki.fi>
+t:1560344576
+c:a876d9a1c46750d3f3da912cc541629567acc396
+D:attr
+p:cmd:paxmark cmd:paxmark.sh
+
 C:Q1v/SH0Y/TaRSt+g4ciTkCBuEbpX4=
 P:perl-async-mergepoint
 V:0.04-r0
@@ -85317,22 +85365,6 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1557003268
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:mcpp-libs=2.7.2-r1
-
-C:Q1CE9s+t8NWz92trbyrsveQN92Fbw=
-P:libshout-dev
-V:2.4.3-r0
-A:aarch64
-S:7304
-I:57344
-T:Library for accessing a shoutcast/icecast server (development files)
-U:http://www.icecast.org/
-L:LGPL-2.1
-o:libshout
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1560075380
-c:3e4864e9ed5c266b5fb748205a4a71eb57cf5d0c
-D:libshout=2.4.3-r0 pc:libssl pc:ogg pc:speex pc:theora pc:vorbis pkgconfig
-p:pc:shout=2.4.3
 
 C:Q1fNpZMnzMWpb9YwDjDaWfQeQRUiE=
 P:perl-config-inifiles-doc
