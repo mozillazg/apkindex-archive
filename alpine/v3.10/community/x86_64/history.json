@@ -2710,7 +2710,8 @@
     "gimp": {
       "origin": "gimp",
       "versions": {
-        "2.10.10-r0": 1557851276
+        "2.10.10-r0": 1557851276,
+        "2.10.12-r0": 1560508804
       },
       "dependencies": [
         "dbus",
@@ -2752,15 +2753,15 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libgimp-2.0.so.0=0.1000.10",
-        "so:libgimpbase-2.0.so.0=0.1000.10",
-        "so:libgimpcolor-2.0.so.0=0.1000.10",
-        "so:libgimpconfig-2.0.so.0=0.1000.10",
-        "so:libgimpmath-2.0.so.0=0.1000.10",
-        "so:libgimpmodule-2.0.so.0=0.1000.10",
-        "so:libgimpthumb-2.0.so.0=0.1000.10",
-        "so:libgimpui-2.0.so.0=0.1000.10",
-        "so:libgimpwidgets-2.0.so.0=0.1000.10",
+        "so:libgimp-2.0.so.0=0.1000.12",
+        "so:libgimpbase-2.0.so.0=0.1000.12",
+        "so:libgimpcolor-2.0.so.0=0.1000.12",
+        "so:libgimpconfig-2.0.so.0=0.1000.12",
+        "so:libgimpmath-2.0.so.0=0.1000.12",
+        "so:libgimpmodule-2.0.so.0=0.1000.12",
+        "so:libgimpthumb-2.0.so.0=0.1000.12",
+        "so:libgimpui-2.0.so.0=0.1000.12",
+        "so:libgimpwidgets-2.0.so.0=0.1000.12",
         "cmd:gimp",
         "cmd:gimp-2.10",
         "cmd:gimp-console",
@@ -7779,14 +7780,15 @@
     "babl-dev": {
       "origin": "babl",
       "versions": {
-        "0.1.62-r0": 1557508176
+        "0.1.62-r0": 1557508176,
+        "0.1.66-r0": 1560508580
       },
       "dependencies": [
-        "babl=0.1.62-r0",
+        "babl=0.1.66-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:babl=0.1.62"
+        "pc:babl=0.1.66"
       ]
     },
     "xfce4-power-manager-lang": {
@@ -8713,14 +8715,15 @@
     "gimp-dev": {
       "origin": "gimp",
       "versions": {
-        "2.10.10-r0": 1557851274
+        "2.10.10-r0": 1557851274,
+        "2.10.12-r0": 1560508802
       },
       "dependencies": [
-        "gimp=2.10.10-r0",
+        "gimp=2.10.12-r0",
         "pc:cairo>=1.12.2",
         "pc:gdk-pixbuf-2.0",
         "pc:gdk-pixbuf-2.0>=2.30.8",
-        "pc:gegl-0.4>=0.4.14",
+        "pc:gegl-0.4>=0.4.16",
         "pc:gtk+-2.0>=2.24.32",
         "pkgconfig",
         "so:libc.musl-x86_64.so.1",
@@ -8728,9 +8731,9 @@
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "pc:gimp-2.0=2.10.10",
-        "pc:gimpthumb-2.0=2.10.10",
-        "pc:gimpui-2.0=2.10.10",
+        "pc:gimp-2.0=2.10.12",
+        "pc:gimpthumb-2.0=2.10.12",
+        "pc:gimpui-2.0=2.10.12",
         "cmd:gimptool-2.0"
       ]
     },
@@ -16101,7 +16104,8 @@
     "gimp-doc": {
       "origin": "gimp",
       "versions": {
-        "2.10.10-r0": 1557851274
+        "2.10.10-r0": 1557851274,
+        "2.10.12-r0": 1560508803
       }
     },
     "php7-pecl-gmagick": {
@@ -20712,7 +20716,8 @@
     "gimp-lang": {
       "origin": "gimp",
       "versions": {
-        "2.10.10-r0": 1557851275
+        "2.10.10-r0": 1557851275,
+        "2.10.12-r0": 1560508803
       },
       "dependencies": [
         "dbus"
@@ -42774,13 +42779,14 @@
     "babl": {
       "origin": "babl",
       "versions": {
-        "0.1.62-r0": 1557508177
+        "0.1.62-r0": 1557508177,
+        "0.1.66-r0": 1560508580
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libbabl-0.1.so.0=0.161.1"
+        "so:libbabl-0.1.so.0=0.165.1"
       ]
     },
     "lua5.2-hiredis": {
@@ -61438,6 +61444,91 @@
       "versions": {
         "0.3.7-r2": 1560368279
       }
+    },
+    "gparted-doc": {
+      "origin": "gparted",
+      "versions": {
+        "1.0.0-r0": 1560511367
+      }
+    },
+    "libetpan-dev": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511771
+      },
+      "dependencies": [
+        "cyrus-sasl-dev",
+        "db-dev",
+        "libetpan=1.9.3-r0"
+      ],
+      "provides": [
+        "cmd:libetpan-config"
+      ]
+    },
+    "libetpan": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511771
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libdb-5.3.so",
+        "so:libgnutls.so.30",
+        "so:libsasl2.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libetpan.so.20=20.4.0"
+      ]
+    },
+    "gparted": {
+      "origin": "gparted",
+      "versions": {
+        "1.0.0-r0": 1560511368
+      },
+      "dependencies": [
+        "e2fsprogs",
+        "ntfs-3g-progs",
+        "so:libatkmm-1.6.so.1",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcairomm-1.0.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgdk-3.so.0",
+        "so:libgdkmm-3.0.so.1",
+        "so:libgiomm-2.4.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libglibmm-2.4.so.1",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libgtkmm-3.0.so.1",
+        "so:libintl.so.8",
+        "so:libpangomm-1.4.so.1",
+        "so:libparted-fs-resize.so.0",
+        "so:libparted.so.2",
+        "so:libsigc-2.0.so.0",
+        "so:libstdc++.so.6",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "cmd:gparted",
+        "cmd:gpartedbin"
+      ]
+    },
+    "libetpan-doc": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511771
+      }
+    },
+    "gparted-lang": {
+      "origin": "gparted",
+      "versions": {
+        "1.0.0-r0": 1560511367
+      },
+      "dependencies": [
+        "e2fsprogs",
+        "ntfs-3g-progs"
+      ]
     }
   },
   "provide": {
@@ -61560,39 +61651,39 @@
       },
       "libgimp-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpbase-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpcolor-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpconfig-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpmath-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpmodule-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpthumb-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpui-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "libgimpwidgets-2.0.so.0": {
         "package": "gimp",
-        "version": "0.1000.10"
+        "version": "0.1000.12"
       },
       "librgw.so.2": {
         "package": "ceph",
@@ -65872,7 +65963,7 @@
       },
       "libbabl-0.1.so.0": {
         "package": "babl",
-        "version": "0.161.1"
+        "version": "0.165.1"
       },
       "libjffi-1.2.so": {
         "package": "java-jffi-native",
@@ -68169,6 +68260,10 @@
       "libtest-c67398173a129ca5.so": {
         "package": "rust",
         "version": "0"
+      },
+      "libetpan.so.20": {
+        "package": "libetpan",
+        "version": "20.4.0"
       }
     },
     "package": {
