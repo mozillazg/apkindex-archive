@@ -57725,6 +57725,43 @@
         "cmd:gparted",
         "cmd:gpartedbin"
       ]
+    },
+    "libetpan-doc": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511778
+      }
+    },
+    "libetpan": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511778
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libdb-5.3.so",
+        "so:libgcc_s.so.1",
+        "so:libgnutls.so.30",
+        "so:libsasl2.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libetpan.so.20=20.4.0"
+      ]
+    },
+    "libetpan-dev": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511778
+      },
+      "dependencies": [
+        "cyrus-sasl-dev",
+        "db-dev",
+        "libetpan=1.9.3-r0"
+      ],
+      "provides": [
+        "cmd:libetpan-config"
+      ]
     }
   },
   "provide": {
@@ -63196,6 +63233,10 @@
       "libgnome-bluetooth.so.13": {
         "package": "gnome-bluetooth-libs",
         "version": "13.0.2"
+      },
+      "libetpan.so.20": {
+        "package": "libetpan",
+        "version": "20.4.0"
       }
     },
     "package": {

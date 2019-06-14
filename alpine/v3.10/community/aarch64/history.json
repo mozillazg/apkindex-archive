@@ -59124,6 +59124,42 @@
         "e2fsprogs",
         "ntfs-3g-progs"
       ]
+    },
+    "libetpan-dev": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511834
+      },
+      "dependencies": [
+        "cyrus-sasl-dev",
+        "db-dev",
+        "libetpan=1.9.3-r0"
+      ],
+      "provides": [
+        "cmd:libetpan-config"
+      ]
+    },
+    "libetpan-doc": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511834
+      }
+    },
+    "libetpan": {
+      "origin": "libetpan",
+      "versions": {
+        "1.9.3-r0": 1560511834
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libdb-5.3.so",
+        "so:libgnutls.so.30",
+        "so:libsasl2.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libetpan.so.20=20.4.0"
+      ]
     }
   },
   "provide": {
@@ -65035,6 +65071,10 @@
       "libcassandra.so.2": {
         "package": "cassandra-cpp-driver",
         "version": "2.10.0"
+      },
+      "libetpan.so.20": {
+        "package": "libetpan",
+        "version": "20.4.0"
       }
     },
     "package": {
