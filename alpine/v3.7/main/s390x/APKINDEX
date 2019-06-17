@@ -28,20 +28,6 @@ t:1510685988
 c:40557f570728f81fccfdb4ce97b061fa57b13629
 D:nagios-plugins so:libc.musl-s390x.so.1
 
-C:Q1nipO08bLdTIk+vyhpwtiA6AVDww=
-P:glib-dbg
-V:2.54.2-r0
-A:s390x
-S:3516743
-I:10637312
-T:Common C routines used by Gtk+ and other libs (debug symbols)
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911176
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-
 C:Q1u3olceaBJuJgKfgjwznhZih8JoQ=
 P:acf-unbound
 V:0.1.0-r2
@@ -1481,6 +1467,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509456463
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs apg=2.2.3-r3
+
+C:Q1Rzdh+RqCfnp1Coh6zq33xsphsQo=
+P:glib-dev
+V:2.54.2-r1
+A:s390x
+S:512359
+I:3543040
+T:Common C routines used by Gtk+ and other libs (development files)
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764902
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+D:perl python2 gettext-dev zlib-dev bzip2-dev libffi-dev util-linux-dev glib=2.54.2-r1 pc:libpcre pkgconfig so:libc.musl-s390x.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
+p:pc:gio-2.0=2.54.2 pc:gio-unix-2.0=2.54.2 pc:glib-2.0=2.54.2 pc:gmodule-2.0=2.54.2 pc:gmodule-export-2.0=2.54.2 pc:gmodule-no-export-2.0=2.54.2 pc:gobject-2.0=2.54.2 pc:gthread-2.0=2.54.2 cmd:gdbus-codegen cmd:glib-compile-resources cmd:glib-genmarshal cmd:glib-gettextize cmd:glib-mkenums cmd:gobject-query cmd:gresource cmd:gtester cmd:gtester-report
 
 C:Q1uQFo137aRiuKvd9Q70uGjBJWSdw=
 P:nagios-plugins-disk_smb
@@ -4431,6 +4433,21 @@ c:fc22ab4fd31b719b3fe5a77dbe226c306e94d888
 D:so:libc.musl-s390x.so.1 so:libtiff.so.5
 p:cmd:fax2ps cmd:fax2tiff cmd:pal2rgb cmd:ppm2tiff cmd:raw2tiff cmd:tiff2bw cmd:tiff2pdf cmd:tiff2ps cmd:tiff2rgba cmd:tiffcmp cmd:tiffcp cmd:tiffcrop cmd:tiffdither cmd:tiffdump cmd:tiffinfo cmd:tiffmedian cmd:tiffset cmd:tiffsplit
 
+C:Q1vR+Gqdrl+/wHaAXYh7uUsFe7P1c=
+P:dbus-doc
+V:1.10.28-r0
+A:s390x
+S:89469
+I:159744
+T:Freedesktop.org message bus system (documentation)
+U:http://www.freedesktop.org/Software/dbus
+L:GPL custom
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560765653
+c:f85fc6d35df663ffa71b00201dcbde8cb5727322
+i:docs dbus=1.10.28-r0
+
 C:Q1S35Qn3A2DX3O/qs2u9x+gWkNuq4=
 P:xf86-input-synaptics-doc
 V:1.9.0-r1
@@ -5788,22 +5805,6 @@ o:py-six
 m:William Pitcock <nenolod@dereferenced.org>
 t:1509436934
 c:c33b843632cb98b0ea08392692f913400ab67e5a
-
-C:Q17GXm9tbDOM2pBLD6IatJ4IosNp0=
-P:dbus-dev
-V:1.10.24-r0
-A:s390x
-S:24933
-I:200704
-T:Freedesktop.org message bus system (development files)
-U:http://www.freedesktop.org/Software/dbus
-L:GPL custom
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509500576
-c:95956a6f8dc93966d0a124d87784a8ff4eac42c7
-D:util-linux-dev dbus-libs=1.10.24-r0 pkgconfig
-p:pc:dbus-1=1.10.24
 
 C:Q1MxhxMl/uNXAYcIQUWRwWcQ4LU5I=
 P:py-hoedown
@@ -8289,6 +8290,22 @@ c:2218406f489bae8f24540f3ed119e2cb8bd5e565
 D:so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libintl.so.8
 p:so:libaim.so=0 so:libicq.so=0 so:liboscar.so.0=0.0.0
 
+C:Q1ixHG6g0YqLIbiNzhpQWkw8nRWog=
+P:dbus-x11
+V:1.10.28-r0
+A:s390x
+S:11808
+I:40960
+T:X11-requiring add-ons for D-BUS
+U:http://www.freedesktop.org/Software/dbus
+L:GPL custom
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560765653
+c:f85fc6d35df663ffa71b00201dcbde8cb5727322
+D:dbus=1.10.28-r0 so:libX11.so.6 so:libc.musl-s390x.so.1 so:libdbus-1.so.3
+p:cmd:dbus-launch
+
 C:Q10CqIsArm2aRv00yujfTvTdIFZM0=
 P:perl-test-requires
 V:0.10-r0
@@ -9024,6 +9041,22 @@ c:c43bfe9a1948ccd0d8e04a03858b6092f50ec0cc
 D:perl
 p:cmd:aclocal cmd:aclocal-1.15 cmd:automake cmd:automake-1.15
 
+C:Q1ZjJxcETWRK00ljR/ZchiFKAV6ZE=
+P:dbus-dev
+V:1.10.28-r0
+A:s390x
+S:24949
+I:200704
+T:Freedesktop.org message bus system (development files)
+U:http://www.freedesktop.org/Software/dbus
+L:GPL custom
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560765653
+c:f85fc6d35df663ffa71b00201dcbde8cb5727322
+D:util-linux-dev dbus-libs=1.10.28-r0 pkgconfig
+p:pc:dbus-1=1.10.28
+
 C:Q1Cjdu/zK2BbFWkM7PJkOHqhIgcrk=
 P:mpc1
 V:1.0.3-r1
@@ -9302,6 +9335,20 @@ t:1509473849
 c:6a1e77ab240706cd3f5491e7accc331bade304c4
 D:so:libavahi-gobject.so.0 so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libphodav-2.0.so.0 so:libsoup-2.4.so.1
 p:cmd:chezdav
+
+C:Q15X1cvDB9GO2Bo1F27B2oGa+mqNY=
+P:glib-dbg
+V:2.54.2-r1
+A:s390x
+S:3519293
+I:10600448
+T:Common C routines used by Gtk+ and other libs (debug symbols)
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764901
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
 
 C:Q1z2pShusNPc54GJQzVWoBgkXg6Yg=
 P:libquvi-scripts-doc
@@ -15980,22 +16027,6 @@ c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:so:libc.musl-s390x.so.1 so:libusb-0.1.so.4
 p:so:libnjb.so.5=5.1.1
 
-C:Q1npC8nDoLrCU2JwXHd2ooSjK8R/g=
-P:dbus
-V:1.10.24-r0
-A:s390x
-S:143536
-I:528384
-T:Freedesktop.org message bus system
-U:http://www.freedesktop.org/Software/dbus
-L:GPL custom
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509500576
-c:95956a6f8dc93966d0a124d87784a8ff4eac42c7
-D:/bin/sh so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libexpat.so.1
-p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
-
 C:Q1uEERPWUV3ZYLOgCHZNfm/VT94yQ=
 P:libunistring
 V:0.9.7-r0
@@ -22397,21 +22428,6 @@ c:34beb0c38596e2e22c2004c89a5e119f7fd90b8d
 D:shared-mime-info gtk-update-icon-cache /bin/sh so:libX11.so.6 so:libXcomposite.so.1 so:libXcursor.so.1 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXi.so.6 so:libXinerama.so.1 so:libXrandr.so.2 so:libatk-1.0.so.0 so:libatk-bridge-2.0.so.0 so:libc.musl-s390x.so.1 so:libcairo-gobject.so.2 so:libcairo.so.2 so:libcups.so.2 so:libepoxy.so.0 so:libfontconfig.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libharfbuzz.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0
 p:so:libgailutil-3.so.0=0.0.0 so:libgdk-3.so.0=0.2200.21 so:libgtk-3.so.0=0.2200.21 cmd:gtk-builder-tool cmd:gtk-encode-symbolic-svg cmd:gtk-launch cmd:gtk-query-immodules-3.0 cmd:gtk-query-settings cmd:gtk3-demo cmd:gtk3-demo-application cmd:gtk3-icon-browser cmd:gtk3-widget-factory
 
-C:Q1vnWL+PHrupMjw93a0g/JkmpSr1o=
-P:glib-lang
-V:2.54.2-r0
-A:s390x
-S:2513099
-I:9400320
-T:Languages for package glib
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911177
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-i:glib=2.54.2-r0 lang
-
 C:Q1iMp0faJOPpTm6Wvrc2fZ60HFluU=
 P:perl-file-remove-doc
 V:1.57-r0
@@ -22548,6 +22564,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509631472
 c:b2065cb574726c106a00a45f9b9b8c5e8f73e37a
 i:docs xf86-video-dummy=0.3.8-r0
+
+C:Q169TD/tzi7DfysWrKT2mpeUUUoKA=
+P:dbus-libs
+V:1.10.28-r0
+A:s390x
+S:134417
+I:356352
+T:Libraries for acces D-BUS
+U:http://www.freedesktop.org/Software/dbus
+L:GPL custom
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560765653
+c:f85fc6d35df663ffa71b00201dcbde8cb5727322
+D:so:libc.musl-s390x.so.1
+p:so:libdbus-1.so.3=3.14.16
 
 C:Q1+UKdE9akLcmlmfr1vmeea9THZxE=
 P:py3-markupsafe
@@ -23815,21 +23847,6 @@ t:1509451917
 c:977b4f4f13992628fda57b5a25c8b3a195854804
 D:so:libc.musl-s390x.so.1 so:libraw1394.so.11
 p:cmd:dumpiso cmd:sendiso cmd:testlibraw
-
-C:Q1uOW8Ijg0xQayBy4+SG/OIVL7Sb8=
-P:dbus-doc
-V:1.10.24-r0
-A:s390x
-S:89182
-I:163840
-T:Freedesktop.org message bus system (documentation)
-U:http://www.freedesktop.org/Software/dbus
-L:GPL custom
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509500576
-c:95956a6f8dc93966d0a124d87784a8ff4eac42c7
-i:docs dbus=1.10.24-r0
 
 C:Q1m7j0KCCkNsn3jBa1g6GH04gctes=
 P:mpeg2dec
@@ -35139,21 +35156,6 @@ c:109fe2c68050fe0e884e375dcfc3e8851274aa33
 D:lua-lustache-common lua5.3 lua-lustache-common=1.3.1-r1
 i:lua-lustache=1.3.1-r1 lua5.3
 
-C:Q19vcRL/F0qboJdR2q3Gj6pRT+A88=
-P:glib-bash-completion
-V:2.54.2-r0
-A:s390x
-S:3102
-I:36864
-T:Bash completion for glib
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911177
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-i:glib=2.54.2-r0 bash-completion
-
 C:Q1/tMkbkI8mF3BeUzow3WOUjGC5mQ=
 P:rest
 V:0.8.1-r0
@@ -45233,6 +45235,21 @@ t:1509436777
 c:836b98b3c7314d216566a7f1bfba21a6996905ae
 i:docs perl-http-date=6.02-r1
 
+C:Q1DfohIeXxNuNUQBCqxUZRcho9NWU=
+P:glib-bash-completion
+V:2.54.2-r1
+A:s390x
+S:3109
+I:36864
+T:Bash completion for glib
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764902
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+i:glib=2.54.2-r1 bash-completion
+
 C:Q1ImtLk31OZGQ+j96g/C3sRmV9jzY=
 P:hostapd
 V:2.6-r5
@@ -47672,6 +47689,21 @@ c:b2065cb574726c106a00a45f9b9b8c5e8f73e37a
 D:scrnsaverproto libxext-dev libx11-dev libxscrnsaver=1.2.2-r1 pc:scrnsaverproto pc:x11 pc:xext pkgconfig
 p:pc:xscrnsaver=1.2.2
 
+C:Q1zkOp1xPIwg9MHDuVbsQ7p/GWsmA=
+P:glib-doc
+V:2.54.2-r1
+A:s390x
+S:2207455
+I:20844544
+T:Common C routines used by Gtk+ and other libs (documentation)
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764901
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+i:docs glib=2.54.2-r1
+
 C:Q19PTxfSMtyMBLgRHRrvhjUNmV+bY=
 P:nfs-utils-dbg
 V:2.1.1-r4
@@ -47822,22 +47854,6 @@ t:1509630790
 c:34beb0c38596e2e22c2004c89a5e119f7fd90b8d
 D:so:libc.musl-s390x.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libz.so.1
 p:so:libgcab-1.0.so.0=0.0.0 cmd:gcab
-
-C:Q1Bxig55frNz0m8xzLw/Jz4cOP9CY=
-P:glib
-V:2.54.2-r0
-A:s390x
-S:1223904
-I:3457024
-T:Common C routines used by Gtk+ and other libs
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911177
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-D:/bin/sh so:libc.musl-s390x.so.1 so:libffi.so.6 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
-p:so:libgio-2.0.so.0=0.5400.2 so:libglib-2.0.so.0=0.5400.2 so:libgmodule-2.0.so.0=0.5400.2 so:libgobject-2.0.so.0=0.5400.2 so:libgthread-2.0.so.0=0.5400.2 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
 
 C:Q1oeOekT4rt4Cz0SWAct9QC9rknD8=
 P:perl-test-longstring
@@ -49126,22 +49142,6 @@ t:1511922919
 c:0160b354922658c082871c5c96a8200bc1a5f540
 i:docs nghttp2=1.28.0-r0
 
-C:Q1g+pbS+/xIunANJQopxe8nTYBB74=
-P:glib-dev
-V:2.54.2-r0
-A:s390x
-S:512603
-I:3567616
-T:Common C routines used by Gtk+ and other libs (development files)
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911177
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-D:perl python2 gettext-dev zlib-dev bzip2-dev libffi-dev util-linux-dev glib=2.54.2-r0 pc:libpcre pkgconfig so:libc.musl-s390x.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
-p:pc:gio-2.0=2.54.2 pc:gio-unix-2.0=2.54.2 pc:glib-2.0=2.54.2 pc:gmodule-2.0=2.54.2 pc:gmodule-export-2.0=2.54.2 pc:gmodule-no-export-2.0=2.54.2 pc:gobject-2.0=2.54.2 pc:gthread-2.0=2.54.2 cmd:gdbus-codegen cmd:glib-compile-resources cmd:glib-genmarshal cmd:glib-gettextize cmd:glib-mkenums cmd:gobject-query cmd:gresource cmd:gtester cmd:gtester-report
-
 C:Q1M4eSMDydrtribuDxzVyjvwpUoYQ=
 P:net-snmp-perl
 V:5.7.3-r10
@@ -49947,22 +49947,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509501383
 c:9de02233aa4a696ed1a51bd9649a1eb127c85d88
 i:docs logrotate=3.13.0-r0
-
-C:Q1xjpIaymbyrpLhCEnNGlBdY5V7Yo=
-P:dbus-x11
-V:1.10.24-r0
-A:s390x
-S:11792
-I:40960
-T:X11-requiring add-ons for D-BUS
-U:http://www.freedesktop.org/Software/dbus
-L:GPL custom
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509500576
-c:95956a6f8dc93966d0a124d87784a8ff4eac42c7
-D:dbus=1.10.24-r0 so:libX11.so.6 so:libc.musl-s390x.so.1 so:libdbus-1.so.3
-p:cmd:dbus-launch
 
 C:Q1NPSdyzvRvMxuQ4Di2uVcYpsTbhI=
 P:lua5.2-cqueues
@@ -54909,22 +54893,6 @@ c:6e7538b44516363af70431bc3159959f06fd4072
 D:lua5.2 so:libc.musl-s390x.so.1
 i:lua-xml=130610-r5 lua5.2
 
-C:Q1haINGIyVgeJ9uGq/3YeC4JFE2Rg=
-P:dbus-libs
-V:1.10.24-r0
-A:s390x
-S:133993
-I:364544
-T:Libraries for acces D-BUS
-U:http://www.freedesktop.org/Software/dbus
-L:GPL custom
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509500576
-c:95956a6f8dc93966d0a124d87784a8ff4eac42c7
-D:so:libc.musl-s390x.so.1
-p:so:libdbus-1.so.3=3.14.14
-
 C:Q1Ku+rUOhjULXTP5T//aeROXZ3iFg=
 P:scrnsaverproto-doc
 V:1.2.2-r2
@@ -56401,6 +56369,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509372678
 c:89181803432a956fd2e673efcc2e83bb28277614
 i:docs kbproto=1.0.7-r2
+
+C:Q1mF/9kuk8BzMvUVM/2gIs8CN1LPs=
+P:glib
+V:2.54.2-r1
+A:s390x
+S:1225777
+I:3411968
+T:Common C routines used by Gtk+ and other libs
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764902
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+D:/bin/sh so:libc.musl-s390x.so.1 so:libffi.so.6 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
+p:so:libgio-2.0.so.0=0.5400.2 so:libglib-2.0.so.0=0.5400.2 so:libgmodule-2.0.so.0=0.5400.2 so:libgobject-2.0.so.0=0.5400.2 so:libgthread-2.0.so.0=0.5400.2 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
 
 C:Q1UUNpDRYht1i72xT04kFIfEdF+wg=
 P:perl-eval-closure-doc
@@ -69952,6 +69936,22 @@ c:0276094a8c64e5dbdbbc7ac05dfb6d4613ddb820
 D:libatomic_ops=7.4.8-r0 pkgconfig
 p:pc:atomic_ops=7.4.8
 
+C:Q1i4U+ONmLyY3Zw6q/rYF1FitXr5M=
+P:dbus
+V:1.10.28-r0
+A:s390x
+S:145577
+I:516096
+T:Freedesktop.org message bus system
+U:http://www.freedesktop.org/Software/dbus
+L:GPL custom
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560765653
+c:f85fc6d35df663ffa71b00201dcbde8cb5727322
+D:/bin/sh so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libexpat.so.1
+p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
+
 C:Q1YTbCRFgdWC5TnmaopxktndGyfcU=
 P:halberd
 V:0.2.4-r1
@@ -70568,6 +70568,21 @@ t:1510685303
 c:e1f3cb66e72d20bbbaed7039edd3c9940057cf73
 D:libarchive-dev curl-dev libressl-dev gpgme-dev gettext-dev pacman=5.0.2-r1 pkgconfig
 p:pc:libalpm=10.0.2
+
+C:Q1PW/1ipJlZ6AvKkstGfHqKmPlfHo=
+P:glib-lang
+V:2.54.2-r1
+A:s390x
+S:2515999
+I:9138176
+T:Languages for package glib
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764902
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+i:glib=2.54.2-r1 lang
 
 C:Q1MhJD8JkIcbJZ069+id2OE3Clvv8=
 P:perl-cgi-fast
@@ -73275,21 +73290,6 @@ c:3ee8c77ba06cdad39615b0cf6d1467e8d3cf839e
 D:pc:openssl pkgconfig
 p:pc:luacrypto=0.3.1
 
-C:Q1Q0Dtl2o1VSjskaQJAzjOXO7NTEw=
-P:glib-doc
-V:2.54.2-r0
-A:s390x
-S:2206550
-I:21270528
-T:Common C routines used by Gtk+ and other libs (documentation)
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911176
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-i:docs glib=2.54.2-r0
-
 C:Q1v2E2caKJalqfJKRcoFiCKob1mxU=
 P:libsndfile-dev
 V:1.0.28-r4
@@ -73415,6 +73415,21 @@ t:1509474182
 c:72bce2ba9e5c17a628a94ffea6e0aa232f7eda5b
 D:jq
 p:cmd:setup-box
+
+C:Q1H42Sy13CbyU9xhTPF68IZVG4YhY=
+P:glib-static
+V:2.54.2-r1
+A:s390x
+S:6975397
+I:25001984
+T:glib static libraries
+U:https://developer.gnome.org/glib/
+L:GPL
+o:glib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560764902
+c:6d61c0096ba308d340d865f9fc295ac6e88e1277
+D:gettext-static
 
 C:Q1LJpVUV+MPXB0FpxtwMQGQMP6GI4=
 P:lockfile-progs-doc
@@ -79672,21 +79687,6 @@ t:1509466513
 c:baaca341e05b6ef2ac614ea99effce98eac93a58
 D:perl
 p:cmd:sensors-conf-convert cmd:sensors-detect
-
-C:Q1/cqy1nMxzEO5aRyikpMztfC35sE=
-P:glib-static
-V:2.54.2-r0
-A:s390x
-S:8002090
-I:28782592
-T:glib static libraries
-U:https://developer.gnome.org/glib/
-L:GPL
-o:glib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1509911176
-c:4786f0bd1d37698051fdf176d95e48e98079f5a7
-D:gettext-static
 
 C:Q1d2/qhuaRV0MWbqHAAdY94O4V5yA=
 P:cryptsetup-dev
