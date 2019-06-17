@@ -3348,6 +3348,22 @@ c:90fc75cfa0f7eb99e8bfdc1e7bfde36b80d436bd
 D:logrotate
 i:squid=4.6-r1 lang-ja
 
+C:Q16NMrd2nI0HPZCzEd6UCDw7OcJ7c=
+P:libheif-tools
+V:1.3.2-r2
+A:s390x
+S:30574
+I:118784
+T:ISO/IEC 23008-12:2017 HEIF file format decoder and encoder (tools)
+U:https://www.libde265.org
+L:LGPL-3.0-or-later
+o:libheif
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560779549
+c:ab8cb73992d03ba1b3a91be55b1d859dc355b6bd
+D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libheif.so.1 so:libjpeg.so.8 so:libpng16.so.16 so:libstdc++.so.6
+p:cmd:heif-convert cmd:heif-enc cmd:heif-info cmd:heif-thumbnailer
+
 C:Q1Y1FvQhTSw4M3mSCvDpwg/lOoKiw=
 P:xf86-input-keyboard-doc
 V:1.9.0-r1
@@ -7837,6 +7853,22 @@ t:1560508005
 c:ace7331ad9ec031cd70f2778907b58cc2afb4e07
 i:lxc=3.1.0-r2 bash-completion
 
+C:Q1peqqdrRLBA1oMrxoxuaky03g8ls=
+P:yaml
+V:0.2.2-r1
+A:s390x
+S:41862
+I:126976
+T:YAML 1.1 parser and emitter written in C
+U:https://pyyaml.org/wiki/LibYAML
+L:MIT
+o:yaml
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560779241
+c:c8438e68b6cafc398b62191e490c156858f7b963
+D:so:libc.musl-s390x.so.1
+p:so:libyaml-0.so.2=2.0.6
+
 C:Q1R/lfMJB4Bt4WXe5Gi0HbeLy9coU=
 P:logcheck-doc
 V:1.3.20-r1
@@ -12120,22 +12152,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556894603
 c:0e0abb0c41bb198105c4c8f881bb53157f1c09d4
 i:docs popt=1.16-r7
-
-C:Q1O83J5P+JDpw8uqGtX9MzAYnBcs0=
-P:imagemagick-libs
-V:7.0.8.44-r0
-A:s390x
-S:1127942
-I:3465216
-T:Collection of tools and libraries for many image formats (libraries)
-U:https://www.imagemagick.org/
-L:ImageMagick
-o:imagemagick
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120153
-c:b86c9d69ef22f66add28b947c238717d4e78c015
-D:so:libX11.so.6 so:libXext.so.6 so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:liblcms2.so.2 so:libltdl.so.7 so:libxml2.so.2 so:libz.so.1
-p:so:libMagickCore-7.Q16HDRI.so.6=6.0.0 so:libMagickWand-7.Q16HDRI.so.6=6.0.0
 
 C:Q1cxIpFryApb0uouTgmojlrzCZcI4=
 P:lua5.1-subprocess
@@ -17446,22 +17462,6 @@ c:f2a9dde5c47ddda67fa90a802dcd7c33b0d2ac65
 D:libxkbfile=1.1.0-r0 pc:kbproto pc:x11 pkgconfig
 p:pc:xkbfile=1.1.0
 
-C:Q1CPBNhEBS0Q1Y1PLSWB2bPSYwfwU=
-P:yaml
-V:0.2.2-r0
-A:s390x
-S:41881
-I:126976
-T:YAML 1.1 parser and emitter written in C
-U:http://pyyaml.org/wiki/LibYAML
-L:MIT
-o:yaml
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556895371
-c:81369f8adf260f9e4bea178a6745c6a7c857b983
-D:so:libc.musl-s390x.so.1
-p:so:libyaml-0.so.2=2.0.6
-
 C:Q12x8/MylxKE3YQfoAd4r/GJ4TjEs=
 P:lua5.2-lxc
 V:3.0.2-r0
@@ -17616,6 +17616,22 @@ t:1557215657
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-s390x.so.1
 p:cmd:wipe
+
+C:Q1Ibv2em3WqPGAEBJAEsOb3IQsA80=
+P:x265
+V:3.0-r0
+A:s390x
+S:40521
+I:131072
+T:Open Source H265/HEVC video encoder
+U:http://x265.org
+L:GPL-2.0-or-later
+o:x265
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560779481
+c:9d821ddfa1cd820ecd0559be77e762b37ed9412a
+D:so:libc.musl-s390x.so.1 so:libstdc++.so.6 so:libx265.so.169
+p:cmd:x265
 
 C:Q1TQm99/Gjyrl17BYFedvMIbQdoCs=
 P:libxau-doc
@@ -17966,6 +17982,22 @@ t:1557246360
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-s390x.so.1
 p:cmd:aoe-discover cmd:aoe-flush cmd:aoe-interfaces cmd:aoe-mkdevs cmd:aoe-mkshelf cmd:aoe-revalidate cmd:aoe-sancheck cmd:aoe-stat cmd:aoe-version cmd:aoecfg cmd:aoeping cmd:coraid-update
+
+C:Q12DgtGtI8+jjldFJRN8Lj5k5rJUo=
+P:imagemagick
+V:7.0.8.49-r1
+A:s390x
+S:1106909
+I:4214784
+T:Collection of tools and libraries for many image formats
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796125
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+D:so:libMagickCore-7.Q16HDRI.so.6 so:libMagickWand-7.Q16HDRI.so.6 so:libX11.so.6 so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgs.so.9 so:libheif.so.1 so:libjpeg.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:librsvg-2.so.2 so:libtiff.so.5 so:libwebp.so.7 so:libwebpmux.so.3 so:libxml2.so.2 so:libz.so.1
+p:cmd:animate cmd:compare cmd:composite cmd:conjure cmd:convert cmd:display cmd:identify cmd:import cmd:magick cmd:magick-script cmd:mogrify cmd:montage cmd:stream
 
 C:Q1XDUAPyZIh9nQogMRxlXpJFvoGo8=
 P:font-cursor-misc
@@ -19263,6 +19295,22 @@ c:d57d6aa9e65fc2db98bd4ee83eb8ca40ffa7a481
 D:ppp-daemon so:libc.musl-s390x.so.1
 p:cmd:pppoe-discovery
 
+C:Q1ZAP7ZI4U6f6TockToEV/7jPXJTc=
+P:x265-dev
+V:3.0-r0
+A:s390x
+S:1309261
+I:4673536
+T:Open Source H265/HEVC video encoder (development files)
+U:http://x265.org
+L:GPL-2.0-or-later
+o:x265
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560779481
+c:9d821ddfa1cd820ecd0559be77e762b37ed9412a
+D:pkgconfig x265-libs=3.0-r0
+p:pc:x265=3.0
+
 C:Q12AOxgv8FNMOKmkKfyH1q/D230GI=
 P:scons
 V:3.0.5-r0
@@ -19886,6 +19934,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557599157
 c:d564402cad1d39a96d1c906803c58f061dea235c
 D:so:libc.musl-s390x.so.1
+
+C:Q1Ytw8XRqE3f4laanfUlRZCAY4JsI=
+P:libheif-dev
+V:1.3.2-r2
+A:s390x
+S:233191
+I:1150976
+T:ISO/IEC 23008-12:2017 HEIF file format decoder and encoder (development files)
+U:https://www.libde265.org
+L:LGPL-3.0-or-later
+o:libheif
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560779549
+c:ab8cb73992d03ba1b3a91be55b1d859dc355b6bd
+D:x265-dev libde265-dev libheif=1.3.2-r2 pkgconfig
+p:pc:libheif=1.3.2
 
 C:Q16V1yhoVDa1EEGk8SFhaBVXUnDzw=
 P:vte3-dev
@@ -21713,20 +21777,6 @@ c:ac7a3163569192228eecdbc294b522833ceb8d28
 D:atk-dev gdk-pixbuf-dev glib-dev libepoxy-dev libxext-dev libxi-dev libxinerama-dev wayland-protocols wayland-libs-client wayland-libs-cursor libxkbcommon-dev gtk+3.0=3.24.8-r0 pc:atk pc:atk-bridge-2.0 pc:atk>=2.15.1 pc:cairo pc:cairo-gobject>=1.14.0 pc:cairo-xlib pc:cairo>=1.14.0 pc:epoxy>=1.4 pc:fontconfig pc:fribidi>=0.19.7 pc:gdk-pixbuf-2.0>=2.30.0 pc:gio-2.0>=2.53.4 pc:gio-unix-2.0>=2.53.4 pc:pango pc:pangocairo pc:pangoft2 pc:wayland-client>=1.9.91 pc:wayland-cursor>=1.9.91 pc:wayland-egl pc:wayland-protocols>=1.12 pc:x11 pc:xcomposite pc:xcursor pc:xdamage pc:xext pc:xfixes pc:xi pc:xinerama pc:xkbcommon>=0.2.0 pc:xrandr pkgconfig
 p:pc:gail-3.0=3.24.8 pc:gdk-3.0=3.24.8 pc:gdk-wayland-3.0=3.24.8 pc:gdk-x11-3.0=3.24.8 pc:gtk+-3.0=3.24.8 pc:gtk+-unix-print-3.0=3.24.8 pc:gtk+-wayland-3.0=3.24.8 pc:gtk+-x11-3.0=3.24.8
 
-C:Q1Pv1/CDb7S+8MGlrT6X1jvTbQJdk=
-P:tango-icon-theme
-V:0.8.90-r4
-A:s390x
-S:2089686
-I:10752000
-T:The Tango Desktop Project exists to create a consistent user experience
-U:http://tango.freedesktop.org
-L:CC-BY-SA-2.5
-o:tango-icon-theme
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120190
-c:63f5e7d295659a855709901ce22a3e5f40fce455
-
 C:Q1kbDZCN1vLIAMK4ubyY7uk1kjJtg=
 P:opus-doc
 V:1.3.1-r0
@@ -22111,22 +22161,6 @@ t:1557065785
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-s390x.so.1 so:libpng16.so.16
 p:so:libqrencode.so.4=4.0.2 cmd:qrencode
-
-C:Q1WxR4cRLDxK7QMK2Uv6SOe2+zsW8=
-P:imagemagick
-V:7.0.8.44-r0
-A:s390x
-S:1108771
-I:4648960
-T:Collection of tools and libraries for many image formats
-U:https://www.imagemagick.org/
-L:ImageMagick
-o:imagemagick
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120153
-c:b86c9d69ef22f66add28b947c238717d4e78c015
-D:so:libMagickCore-7.Q16HDRI.so.6 so:libMagickWand-7.Q16HDRI.so.6 so:libX11.so.6 so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgs.so.9 so:libjpeg.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:librsvg-2.so.2 so:libtiff.so.5 so:libwebp.so.7 so:libwebpmux.so.3 so:libxml2.so.2 so:libz.so.1
-p:cmd:animate cmd:compare cmd:composite cmd:conjure cmd:convert cmd:display cmd:identify cmd:import cmd:magick cmd:magick-script cmd:mogrify cmd:montage cmd:stream
 
 C:Q1uGu5yrmUive//aJgH74Npinu6B4=
 P:ttf-linux-libertine-doc
@@ -29231,6 +29265,22 @@ c:921b19a85202d8ee7826659d256577e1533202a9
 D:so:libc.musl-s390x.so.1 so:libcares.so.2 so:libcrypto.so.1.1
 p:cmd:sipsak
 
+C:Q1g6K+8MtGj2nI0rscRedd4RzlVbM=
+P:libde265
+V:1.0.3-r0
+A:s390x
+S:303766
+I:786432
+T:Open h.265 video codec implementation
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560779527
+c:075593cfef8e4df6056ea7de388137a68335ea69
+D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libde265.so.0=0.0.10 cmd:dec265
+
 C:Q1sBY1+awon5oax4gCW73Z0Ii77LE=
 P:liblognorm
 V:2.0.6-r1
@@ -29262,6 +29312,22 @@ t:1556895351
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:libxslt perl-yaml-syck perl-test-pod bash docbook-xsl so:libc.musl-s390x.so.1
 p:cmd:xmlif cmd:xmlto
+
+C:Q1f7UJ9YRdywxszGBxtYOpc9x+mac=
+P:imagemagick-c++
+V:7.0.8.49-r1
+A:s390x
+S:181484
+I:671744
+T:ImageMagick Magick++ library (C++ bindings)
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796124
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+D:so:libMagickCore-7.Q16HDRI.so.6 so:libMagickWand-7.Q16HDRI.so.6 so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libMagick++-7.Q16HDRI.so.4=4.0.0
 
 C:Q11NzvJkE3a00sXvo3JaDx5KlchkA=
 P:fstrm-doc
@@ -31675,22 +31741,6 @@ c:90fc75cfa0f7eb99e8bfdc1e7bfde36b80d436bd
 D:logrotate
 i:squid=4.6-r1 lang-it
 
-C:Q1/1flSa50VZs7858gXT/quexFxnY=
-P:imagemagick-dev
-V:7.0.8.44-r0
-A:s390x
-S:145942
-I:1175552
-T:Collection of tools and libraries for many image formats (development files)
-U:https://www.imagemagick.org/
-L:ImageMagick
-o:imagemagick
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120153
-c:b86c9d69ef22f66add28b947c238717d4e78c015
-D:imagemagick-c++=7.0.8.44-r0 imagemagick-libs=7.0.8.44-r0 pkgconfig
-p:pc:ImageMagick-7.Q16HDRI=7.0.8 pc:ImageMagick=7.0.8 pc:Magick++-7.Q16HDRI=7.0.8 pc:Magick++=7.0.8 pc:MagickCore-7.Q16HDRI=7.0.8 pc:MagickCore=7.0.8 pc:MagickWand-7.Q16HDRI=7.0.8 pc:MagickWand=7.0.8 cmd:Magick++-config cmd:MagickCore-config cmd:MagickWand-config
-
 C:Q1HmbJXyQps01Pc3V8YIBl1frnO+E=
 P:compat-pvgrub
 V:1-r0
@@ -33335,22 +33385,6 @@ t:1557600938
 c:1be1f0e18e9b690402f2dc4acc845ca32a81477b
 D:so:libc.musl-s390x.so.1 so:libfreeswitch.so.1 so:libpq.so.5
 
-C:Q1E0vNLTgjg6rLhdjM3djjgMcPYVk=
-P:yaml-dev
-V:0.2.2-r0
-A:s390x
-S:57923
-I:241664
-T:YAML 1.1 parser and emitter written in C (development files)
-U:http://pyyaml.org/wiki/LibYAML
-L:MIT
-o:yaml
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556895370
-c:81369f8adf260f9e4bea178a6745c6a7c857b983
-D:pkgconfig yaml=0.2.2-r0
-p:pc:yaml-0.1=0.2.2
-
 C:Q1J7SC94Bema0L45rcmXrsDKGQ9qs=
 P:nginx-mod-devel-kit
 V:1.16.0-r2
@@ -33661,6 +33695,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558961504
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-s390x.so.1
+
+C:Q1ycLzSD4fHhVj8Di6JtuHkhdDth8=
+P:imagemagick-libs
+V:7.0.8.49-r1
+A:s390x
+S:1123222
+I:3465216
+T:Collection of tools and libraries for many image formats (libraries)
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796125
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+D:so:libX11.so.6 so:libXext.so.6 so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:liblcms2.so.2 so:libltdl.so.7 so:libxml2.so.2 so:libz.so.1
+p:so:libMagickCore-7.Q16HDRI.so.6=6.0.0 so:libMagickWand-7.Q16HDRI.so.6=6.0.0
 
 C:Q17Zh1osmn3ccLPAsp5heFXfdCDuc=
 P:bzip2-dev
@@ -34340,6 +34390,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557134323
 c:31d7be985845ca15592e3a88182e7420df7c46ac
 i:lxterminal=0.3.2-r0 lang
+
+C:Q1MZoR9VKgG2EnGfMil13q7wjR9GA=
+P:yaml-dev
+V:0.2.2-r1
+A:s390x
+S:57915
+I:241664
+T:YAML 1.1 parser and emitter written in C (development files)
+U:https://pyyaml.org/wiki/LibYAML
+L:MIT
+o:yaml
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560779241
+c:c8438e68b6cafc398b62191e490c156858f7b963
+D:pkgconfig yaml=0.2.2-r1
+p:pc:yaml-0.1=0.2.2
 
 C:Q1i8Hjf9t9dnWS56WM0Xlf0nSp1Lk=
 P:linux-firmware-av7110
@@ -35822,6 +35888,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559047952
 c:036c18348a90dde720bdd8bbdea1a501f6eb70d1
 i:docs zfs=0.8.0-r1
+
+C:Q1LL7Z1rZnRxGT1RumwdlXmpERcbc=
+P:imagemagick-perlmagick
+V:7.0.8.49-r1
+A:s390x
+S:92941
+I:438272
+T:PerlMagick Perl Modules for ImageMagick
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796125
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+D:so:libMagickCore-7.Q16HDRI.so.6 so:libc.musl-s390x.so.1
 
 C:Q1eBIzATWEDAMLPZ4dxs+pNxWfdXI=
 P:perl-test-warnings-doc
@@ -38658,6 +38739,22 @@ o:zd1211-firmware
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557134376
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
+
+C:Q119Z2QVSwi3fbo/5uEkT1L6iV2GM=
+P:x265-libs
+V:3.0-r0
+A:s390x
+S:1192381
+I:3993600
+T:Open Source H265/HEVC video encoder (libraries)
+U:http://x265.org
+L:GPL-2.0-or-later
+o:x265
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560779481
+c:9d821ddfa1cd820ecd0559be77e762b37ed9412a
+D:so:libc.musl-s390x.so.1 so:libstdc++.so.6
+p:so:libx265.so.169=169
 
 C:Q11JfWduxfcjdK4RjqvflXQk50S/Y=
 P:clucene-contribs
@@ -50395,6 +50492,20 @@ t:1557292889
 c:7db0cffa928906995136ca58c0b542c295fc0c26
 i:docs xf86-video-savage=2.3.9-r3
 
+C:Q1lMoa7xvwTFZ1tKCXjm9r4oKZJFg=
+P:imagemagick-perlmagick-doc
+V:7.0.8.49-r1
+A:s390x
+S:1508
+I:24576
+T:PerlMagick Perl Module Documentation for ImageMagick
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796125
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+
 C:Q1IJKjjLApdndAoj9yEepWlNbfpEw=
 P:bash-dev
 V:5.0.0-r0
@@ -58282,21 +58393,6 @@ c:d7d8dcb792fc6267eccd6cfce264b8e7ed020aa1
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:wget
 
-C:Q1AK0g9OtyuWPxrgxp4KI46zJJ7Mo=
-P:imagemagick-doc
-V:7.0.8.44-r0
-A:s390x
-S:5813787
-I:13611008
-T:Collection of tools and libraries for many image formats (documentation)
-U:https://www.imagemagick.org/
-L:ImageMagick
-o:imagemagick
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120152
-c:b86c9d69ef22f66add28b947c238717d4e78c015
-i:docs imagemagick=7.0.8.44-r0
-
 C:Q1Xvo17FqzMOTi27V1amivqO7eNtw=
 P:hypermail
 V:2.3.0-r4
@@ -61626,6 +61722,21 @@ c:1245056475ad59a71c91494d1e1820f323e22911
 D:so:libFLAC.so.8 so:libasound.so.2 so:libc.musl-s390x.so.1 so:libogg.so.0 so:libvorbis.so.0 so:libvorbisenc.so.2
 p:so:libsndfile.so.1=1.0.28 cmd:sndfile-cmp cmd:sndfile-concat cmd:sndfile-convert cmd:sndfile-deinterleave cmd:sndfile-info cmd:sndfile-interleave cmd:sndfile-metadata-get cmd:sndfile-metadata-set cmd:sndfile-play cmd:sndfile-salvage
 
+C:Q1CwKBAamd6Leh4tLBMi2RpMUD71I=
+P:imagemagick-doc
+V:7.0.8.49-r1
+A:s390x
+S:5817660
+I:13623296
+T:Collection of tools and libraries for many image formats (documentation)
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796124
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+i:docs imagemagick=7.0.8.49-r1
+
 C:Q1P9ha5OfnQJrgDWuaF8WOnM5O6qY=
 P:apache2-webdav
 V:2.4.39-r0
@@ -62550,6 +62661,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557124881
 c:bdaa9eb015d20e4539353d48dc00a624bfb2797c
 i:docs rpcbind=1.2.5-r0
+
+C:Q1v6EpCLRTKLMBuxg4fwcga8Kd6Hc=
+P:imagemagick-dev
+V:7.0.8.49-r1
+A:s390x
+S:147962
+I:1196032
+T:Collection of tools and libraries for many image formats (development files)
+U:https://www.imagemagick.org/
+L:ImageMagick
+o:imagemagick
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1560796124
+c:c1de8d501c273ee0093c11abcf4e53c5ec0668c7
+D:imagemagick-c++=7.0.8.49-r1 imagemagick-libs=7.0.8.49-r1 pkgconfig
+p:pc:ImageMagick-7.Q16HDRI=7.0.8 pc:ImageMagick=7.0.8 pc:Magick++-7.Q16HDRI=7.0.8 pc:Magick++=7.0.8 pc:MagickCore-7.Q16HDRI=7.0.8 pc:MagickCore=7.0.8 pc:MagickWand-7.Q16HDRI=7.0.8 pc:MagickWand=7.0.8 cmd:Magick++-config cmd:MagickCore-config cmd:MagickWand-config
 
 C:Q1p+vn4uWJyoRCb972HKf+MiogcT0=
 P:gitolite
@@ -72258,6 +72385,22 @@ t:1559025628
 c:6aedd2a4398bdd26fda170b25e29720bf3a1a24b
 i:openrc s6=2.8.0.1-r0
 
+C:Q1HONP2OysfO/XnI1WWoVDgb6q5BU=
+P:libheif
+V:1.3.2-r2
+A:s390x
+S:136424
+I:413696
+T:ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+U:https://www.libde265.org
+L:LGPL-3.0-or-later
+o:libheif
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560779549
+c:ab8cb73992d03ba1b3a91be55b1d859dc355b6bd
+D:so:libc.musl-s390x.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6 so:libx265.so.169
+p:so:libheif.so.1=1.3.2
+
 C:Q1S26DlSl0auGVNA280aXjSLliEUY=
 P:qemu-system-sparc64
 V:4.0.0-r1
@@ -81645,6 +81788,22 @@ t:1557206108
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-locale-maketext-lexicon=1.00-r0
 
+C:Q14abtnAoETPvA9qBbF5NmIC2HmsY=
+P:libde265-dev
+V:1.0.3-r0
+A:s390x
+S:433241
+I:1720320
+T:Open h.265 video codec implementation (development files)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1560779527
+c:075593cfef8e4df6056ea7de388137a68335ea69
+D:libde265=1.0.3-r0 pkgconfig
+p:pc:libde265=1.0.3
+
 C:Q1jE9DWMzDpH6jvw0qhtRlpNR1D9g=
 P:py3-purl
 V:1.5-r1
@@ -83222,22 +83381,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557224757
 c:c1a63a05ae198b35e680243101ff6efa7006423d
 i:docs perl-file-which=1.23-r0
-
-C:Q1L9X3ihYu2zyfwu5ddmHVVn38mEI=
-P:imagemagick-c++
-V:7.0.8.44-r0
-A:s390x
-S:181474
-I:671744
-T:ImageMagick Magick++ library (C++ bindings)
-U:https://www.imagemagick.org/
-L:ImageMagick
-o:imagemagick
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557120153
-c:b86c9d69ef22f66add28b947c238717d4e78c015
-D:so:libMagickCore-7.Q16HDRI.so.6 so:libMagickWand-7.Q16HDRI.so.6 so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libMagick++-7.Q16HDRI.so.4=4.0.0
 
 C:Q1+76Lv4Qkt414Gm1uvFEcQoCuul0=
 P:librsync-dev
