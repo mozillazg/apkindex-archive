@@ -13398,7 +13398,8 @@
       "versions": {
         "1.8.0-r0": 1557641661,
         "1.8.1-r0": 1558434372,
-        "1.8.2-r0": 1559165739
+        "1.8.2-r0": 1559165739,
+        "1.8.2-r1": 1560882406
       }
     },
     "drupal7-doc": {
@@ -36436,7 +36437,8 @@
       "versions": {
         "1.8.0-r0": 1557641662,
         "1.8.1-r0": 1558434373,
-        "1.8.2-r0": 1559165740
+        "1.8.2-r0": 1559165740,
+        "1.8.2-r1": 1560882407
       },
       "dependencies": [
         "git",
@@ -55663,13 +55665,18 @@
       ]
     },
     "py3-pytest-cov": {
-      "origin": "pytest-cov",
+      "origin": "py3-pytest-cov",
       "versions": {
-        "2.6.1-r2": 1559508223
+        "2.6.1-r2": 1559508223,
+        "2.7.1-r0": 1560880856
       },
       "dependencies": [
         "pytest",
-        "py-coverage"
+        "py3-pytest",
+        "py3-coverage"
+      ],
+      "provides": [
+        "pytest-cov=2.7.1-r0"
       ]
     },
     "pytest-cov": {
@@ -64352,6 +64359,10 @@
       "py-webcolors": {
         "package": "py3-webcolors",
         "version": "1.9.1-r1"
+      },
+      "pytest-cov": {
+        "package": "py3-pytest-cov",
+        "version": "2.7.1-r0"
       }
     }
   }
