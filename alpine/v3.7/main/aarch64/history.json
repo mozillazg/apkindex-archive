@@ -5191,19 +5191,20 @@
     },
     "libvirt-dev": {
       "versions": {
-        "3.9.0-r1": 1510081847
+        "3.9.0-r1": 1510081847,
+        "5.5.0-r0": 1562165685
       },
       "origin": "libvirt",
       "dependencies": [
         "libtirpc-dev",
-        "libvirt-client=3.9.0-r1",
+        "libvirt-client=5.5.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libvirt-admin=3.9.0",
-        "pc:libvirt-lxc=3.9.0",
-        "pc:libvirt-qemu=3.9.0",
-        "pc:libvirt=3.9.0"
+        "pc:libvirt-admin=5.5.0",
+        "pc:libvirt-lxc=5.5.0",
+        "pc:libvirt-qemu=5.5.0",
+        "pc:libvirt=5.5.0"
       ]
     },
     "openvpn": {
@@ -14137,14 +14138,17 @@
     },
     "libvirt-vbox": {
       "versions": {
-        "3.9.0-r1": 1510081850
+        "3.9.0-r1": 1510081850,
+        "5.5.0-r0": 1562165687
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -18087,7 +18091,8 @@
     },
     "libvirt-common-drivers": {
       "versions": {
-        "3.9.0-r1": 1510081850
+        "3.9.0-r1": 1510081850,
+        "5.5.0-r0": 1562165687
       },
       "origin": "libvirt",
       "dependencies": [
@@ -18095,11 +18100,13 @@
         "so:libblkid.so.1",
         "so:libc.musl-aarch64.so.1",
         "so:libdbus-1.so.3",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
         "so:libnetcf.so.1",
         "so:libpcap.so.1",
         "so:libpciaccess.so.0",
         "so:libudev.so.1",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -21043,7 +21050,8 @@
     },
     "libvirt-daemon": {
       "versions": {
-        "3.9.0-r1": 1510081848
+        "3.9.0-r1": 1510081848,
+        "5.5.0-r0": 1562165686
       },
       "origin": "libvirt",
       "dependencies": [
@@ -21058,7 +21066,6 @@
         "so:libdbus-1.so.3",
         "so:libintl.so.8",
         "so:libtirpc.so.3",
-        "so:libvirt-admin.so.0",
         "so:libvirt-lxc.so.0",
         "so:libvirt-qemu.so.0",
         "so:libvirt.so.0"
@@ -25725,7 +25732,8 @@
     },
     "libvirt-client": {
       "versions": {
-        "3.9.0-r1": 1510081848
+        "3.9.0-r1": 1510081848,
+        "5.5.0-r0": 1562165686
       },
       "origin": "libvirt",
       "dependencies": [
@@ -25738,6 +25746,7 @@
         "so:libcurl.so.4",
         "so:libdbus-1.so.3",
         "so:libdevmapper.so.1.02",
+        "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
         "so:libintl.so.8",
         "so:libnl-3.so.200",
@@ -25748,10 +25757,10 @@
         "so:libyajl.so.2"
       ],
       "provides": [
-        "so:libvirt-admin.so.0=0.3009.0",
-        "so:libvirt-lxc.so.0=0.3009.0",
-        "so:libvirt-qemu.so.0=0.3009.0",
-        "so:libvirt.so.0=0.3009.0",
+        "so:libvirt-admin.so.0=0.5005.0",
+        "so:libvirt-lxc.so.0=0.5005.0",
+        "so:libvirt-qemu.so.0=0.5005.0",
+        "so:libvirt.so.0=0.5005.0",
         "cmd:virsh",
         "cmd:virt-admin",
         "cmd:virt-host-validate",
@@ -26560,15 +26569,18 @@
     },
     "libvirt-qemu": {
       "versions": {
-        "3.9.0-r1": 1510081849
+        "3.9.0-r1": 1510081849,
+        "5.5.0-r0": 1562165687
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
         "so:libintl.so.8",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -31607,7 +31619,8 @@
     },
     "libvirt-static": {
       "versions": {
-        "3.9.0-r1": 1510081847
+        "3.9.0-r1": 1510081847,
+        "5.5.0-r0": 1562165684
       },
       "origin": "libvirt",
       "dependencies": [
@@ -32797,7 +32810,8 @@
     },
     "libvirt-lang": {
       "versions": {
-        "3.9.0-r1": 1510081849
+        "3.9.0-r1": 1510081849,
+        "5.5.0-r0": 1562165686
       },
       "origin": "libvirt",
       "dependencies": [
@@ -39151,23 +39165,21 @@
     },
     "libvirt": {
       "versions": {
-        "3.9.0-r1": 1510081850
+        "3.9.0-r1": 1510081850,
+        "5.5.0-r0": 1562165688
       },
       "origin": "libvirt",
       "dependencies": [
         "lvm2",
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
-        "so:libcap-ng.so.0",
-        "so:libdbus-1.so.3",
         "so:libdevmapper.so.1.02",
-        "so:libgnutls.so.30",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
         "so:libparted.so.2",
-        "so:libsasl2.so.3",
         "so:libtirpc.so.3",
-        "so:libxml2.so.2",
-        "so:libyajl.so.2"
+        "so:libvirt.so.0",
+        "so:libxml2.so.2"
       ],
       "provides": [
         "cmd:virtlockd",
@@ -39836,14 +39848,13 @@
     },
     "libvirt-uml": {
       "versions": {
-        "3.9.0-r1": 1510081849
+        "3.9.0-r1": 1510081849,
+        "5.5.0-r0": 1562165687
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
-        "so:libc.musl-aarch64.so.1",
-        "so:libintl.so.8"
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0"
       ]
     },
     "nspr-dev": {
@@ -48626,25 +48637,22 @@
     },
     "libvirt-lxc": {
       "versions": {
-        "3.9.0-r1": 1510081849
+        "3.9.0-r1": 1510081849,
+        "5.5.0-r0": 1562165686
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libblkid.so.1",
         "so:libc.musl-aarch64.so.1",
         "so:libcap-ng.so.0",
-        "so:libdbus-1.so.3",
-        "so:libdevmapper.so.1.02",
         "so:libfuse.so.2",
-        "so:libgnutls.so.30",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
-        "so:libnl-3.so.200",
-        "so:libsasl2.so.3",
         "so:libtirpc.so.3",
-        "so:libxml2.so.2",
-        "so:libyajl.so.2"
+        "so:libvirt.so.0",
+        "so:libxml2.so.2"
       ]
     },
     "py3-bluez": {
@@ -55892,7 +55900,8 @@
     },
     "libvirt-doc": {
       "versions": {
-        "3.9.0-r1": 1510081848
+        "3.9.0-r1": 1510081848,
+        "5.5.0-r0": 1562165685
       },
       "origin": "libvirt"
     },
@@ -72245,19 +72254,19 @@
       },
       "libvirt-admin.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt-lxc.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt-qemu.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libhashkit.so.2": {
         "package": "libmemcached-libs",

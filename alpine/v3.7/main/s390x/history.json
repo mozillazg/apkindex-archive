@@ -4276,19 +4276,20 @@
     },
     "libvirt-dev": {
       "versions": {
-        "3.9.0-r1": 1510081869
+        "3.9.0-r1": 1510081869,
+        "5.5.0-r0": 1562166389
       },
       "origin": "libvirt",
       "dependencies": [
         "libtirpc-dev",
-        "libvirt-client=3.9.0-r1",
+        "libvirt-client=5.5.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libvirt-admin=3.9.0",
-        "pc:libvirt-lxc=3.9.0",
-        "pc:libvirt-qemu=3.9.0",
-        "pc:libvirt=3.9.0"
+        "pc:libvirt-admin=5.5.0",
+        "pc:libvirt-lxc=5.5.0",
+        "pc:libvirt-qemu=5.5.0",
+        "pc:libvirt=5.5.0"
       ]
     },
     "libsasl": {
@@ -15071,7 +15072,8 @@
     },
     "libvirt-lang": {
       "versions": {
-        "3.9.0-r1": 1510081871
+        "3.9.0-r1": 1510081871,
+        "5.5.0-r0": 1562166392
       },
       "origin": "libvirt",
       "dependencies": [
@@ -16824,14 +16826,13 @@
     },
     "libvirt-uml": {
       "versions": {
-        "3.9.0-r1": 1510081874
+        "3.9.0-r1": 1510081874,
+        "5.5.0-r0": 1562166393
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
-        "so:libc.musl-s390x.so.1",
-        "so:libintl.so.8"
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0"
       ]
     },
     "perl-namespace-clean-doc": {
@@ -23482,7 +23483,8 @@
     },
     "libvirt-daemon": {
       "versions": {
-        "3.9.0-r1": 1510081871
+        "3.9.0-r1": 1510081871,
+        "5.5.0-r0": 1562166391
       },
       "origin": "libvirt",
       "dependencies": [
@@ -23497,7 +23499,6 @@
         "so:libdbus-1.so.3",
         "so:libintl.so.8",
         "so:libtirpc.so.3",
-        "so:libvirt-admin.so.0",
         "so:libvirt-lxc.so.0",
         "so:libvirt-qemu.so.0",
         "so:libvirt.so.0"
@@ -25695,14 +25696,17 @@
     },
     "libvirt-vbox": {
       "versions": {
-        "3.9.0-r1": 1510081874
+        "3.9.0-r1": 1510081874,
+        "5.5.0-r0": 1562166394
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -34531,7 +34535,8 @@
     },
     "libvirt-static": {
       "versions": {
-        "3.9.0-r1": 1510081869
+        "3.9.0-r1": 1510081869,
+        "5.5.0-r0": 1562166388
       },
       "origin": "libvirt",
       "dependencies": [
@@ -34988,7 +34993,8 @@
     },
     "libvirt-client": {
       "versions": {
-        "3.9.0-r1": 1510081871
+        "3.9.0-r1": 1510081871,
+        "5.5.0-r0": 1562166391
       },
       "origin": "libvirt",
       "dependencies": [
@@ -35001,6 +35007,7 @@
         "so:libcurl.so.4",
         "so:libdbus-1.so.3",
         "so:libdevmapper.so.1.02",
+        "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
         "so:libintl.so.8",
         "so:libnl-3.so.200",
@@ -35011,10 +35018,10 @@
         "so:libyajl.so.2"
       ],
       "provides": [
-        "so:libvirt-admin.so.0=0.3009.0",
-        "so:libvirt-lxc.so.0=0.3009.0",
-        "so:libvirt-qemu.so.0=0.3009.0",
-        "so:libvirt.so.0=0.3009.0",
+        "so:libvirt-admin.so.0=0.5005.0",
+        "so:libvirt-lxc.so.0=0.5005.0",
+        "so:libvirt-qemu.so.0=0.5005.0",
+        "so:libvirt.so.0=0.5005.0",
         "cmd:virsh",
         "cmd:virt-admin",
         "cmd:virt-host-validate",
@@ -36774,23 +36781,21 @@
     },
     "libvirt": {
       "versions": {
-        "3.9.0-r1": 1510081875
+        "3.9.0-r1": 1510081875,
+        "5.5.0-r0": 1562166395
       },
       "origin": "libvirt",
       "dependencies": [
         "lvm2",
         "/bin/sh",
         "so:libc.musl-s390x.so.1",
-        "so:libcap-ng.so.0",
-        "so:libdbus-1.so.3",
         "so:libdevmapper.so.1.02",
-        "so:libgnutls.so.30",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
         "so:libparted.so.2",
-        "so:libsasl2.so.3",
         "so:libtirpc.so.3",
-        "so:libxml2.so.2",
-        "so:libyajl.so.2"
+        "so:libvirt.so.0",
+        "so:libxml2.so.2"
       ],
       "provides": [
         "cmd:virtlockd",
@@ -42422,7 +42427,8 @@
     },
     "libvirt-common-drivers": {
       "versions": {
-        "3.9.0-r1": 1510081875
+        "3.9.0-r1": 1510081875,
+        "5.5.0-r0": 1562166394
       },
       "origin": "libvirt",
       "dependencies": [
@@ -42430,11 +42436,13 @@
         "so:libblkid.so.1",
         "so:libc.musl-s390x.so.1",
         "so:libdbus-1.so.3",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
         "so:libnetcf.so.1",
         "so:libpcap.so.1",
         "so:libpciaccess.so.0",
         "so:libudev.so.1",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -48476,25 +48484,22 @@
     },
     "libvirt-lxc": {
       "versions": {
-        "3.9.0-r1": 1510081872
+        "3.9.0-r1": 1510081872,
+        "5.5.0-r0": 1562166392
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libblkid.so.1",
         "so:libc.musl-s390x.so.1",
         "so:libcap-ng.so.0",
-        "so:libdbus-1.so.3",
-        "so:libdevmapper.so.1.02",
         "so:libfuse.so.2",
-        "so:libgnutls.so.30",
+        "so:libgcc_s.so.1",
         "so:libintl.so.8",
-        "so:libnl-3.so.200",
-        "so:libsasl2.so.3",
         "so:libtirpc.so.3",
-        "so:libxml2.so.2",
-        "so:libyajl.so.2"
+        "so:libvirt.so.0",
+        "so:libxml2.so.2"
       ]
     },
     "squid-lang-da": {
@@ -60906,15 +60911,18 @@
     },
     "libvirt-qemu": {
       "versions": {
-        "3.9.0-r1": 1510081873
+        "3.9.0-r1": 1510081873,
+        "5.5.0-r0": 1562166393
       },
       "origin": "libvirt",
       "dependencies": [
-        "libvirt-daemon=3.9.0-r1",
-        "libvirt-common-drivers=3.9.0-r1",
+        "libvirt-daemon=5.5.0-r0",
+        "libvirt-common-drivers=5.5.0-r0",
         "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
         "so:libgnutls.so.30",
         "so:libintl.so.8",
+        "so:libvirt.so.0",
         "so:libxml2.so.2"
       ]
     },
@@ -63974,7 +63982,8 @@
     },
     "libvirt-doc": {
       "versions": {
-        "3.9.0-r1": 1510081870
+        "3.9.0-r1": 1510081870,
+        "5.5.0-r0": 1562166390
       },
       "origin": "libvirt"
     },
@@ -72665,19 +72674,19 @@
       },
       "libvirt-admin.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt-lxc.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt-qemu.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libvirt.so.0": {
         "package": "libvirt-client",
-        "version": "0.3009.0"
+        "version": "0.5005.0"
       },
       "libisns.so.0": {
         "package": "open-isns-lib",

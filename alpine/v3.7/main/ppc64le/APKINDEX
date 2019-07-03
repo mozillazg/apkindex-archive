@@ -4263,21 +4263,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1511990624
 c:315c00b89fbc706fde9ca1cb9b8966ba7124c0cf
 
-C:Q1988uoZB89J0G49XrrRzxxo0cOmQ=
-P:libvirt-common-drivers
-V:3.9.0-r1
-A:ppc64le
-S:537416
-I:1286144
-T:Common libvirt daemon drivers
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081702
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:lvm2 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libxml2.so.2
-
 C:Q1qLW4zIgb1lJlRWCzJksWtz2Fu7w=
 P:freeradius-sqlite
 V:3.0.15-r4
@@ -4676,6 +4661,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1509670720
 c:6f01aefa8951cd83e0e88afcdeb3e40e892518a7
 i:docs joe=4.5-r0
+
+C:Q11WQxJVNZq+89nrU0MI3t2xxiO+c=
+P:libvirt-daemon
+V:5.5.0-r0
+A:ppc64le
+S:137376
+I:593920
+T:libvirt daemon package
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt-client bridge-utils dmidecode dnsmasq ebtables ip6tables iptables so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
+p:cmd:libvirtd
 
 C:Q1lqYNDJUW8942KgXbToZVfOJsPNA=
 P:haserl-lua5.2
@@ -8451,6 +8452,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1511925919
 c:c25fa76c6b6ec59d4d222e2feafc7065e1c9435c
 
+C:Q1JtAiiNZq65cC/japZ7CoxRm6MK0=
+P:libvirt-client
+V:5.5.0-r0
+A:ppc64le
+S:2184926
+I:6578176
+T:libvirt client package
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165523
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libreadline.so.7 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
+p:so:libvirt-admin.so.0=0.5005.0 so:libvirt-lxc.so.0=0.5005.0 so:libvirt-qemu.so.0=0.5005.0 so:libvirt.so.0=0.5005.0 cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
+
 C:Q1N80X4iDJj9p2grJL1vgxauzfPYw=
 P:squid-lang-fr
 V:3.5.27-r0
@@ -10921,6 +10938,22 @@ t:1510260616
 c:cae1457f282b59e888df8c3a0299c33ec1a3a81c
 D:so:libc.musl-ppc64le.so.1 so:libjson-c.so.2 so:libsyslog-ng-3.9.so.0
 
+C:Q1n0SGobPsF55ibCWTnffKsZpVT5A=
+P:libvirt
+V:5.5.0-r0
+A:ppc64le
+S:585363
+I:2117632
+T:A virtualization API for several hypervisor and container systems
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:lvm2 /bin/sh so:libc.musl-ppc64le.so.1 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libintl.so.8 so:libparted.so.2 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
+p:cmd:virtlockd cmd:virtlogd
+
 C:Q1kKPDQJ3arV80QgU7+X9tz7CzPc4=
 P:py2-pillow
 V:4.3.0-r0
@@ -11994,6 +12027,21 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1509644203
 c:c23461ad432320ace985ada13b83b1317abcbeeb
 i:docs perl-cps=0.18-r0
+
+C:Q1cJDLHdxZu6Svg+pdnDRzii2UVMo=
+P:libvirt-static
+V:5.5.0-r0
+A:ppc64le
+S:4669811
+I:19046400
+T:libvirt static libraries
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165523
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:lvm2
 
 C:Q1YR/bMGmE4t0F3zKM5PfsxaS0EsE=
 P:apache2-mod-wsgi
@@ -23352,6 +23400,22 @@ c:a53f414ea86477a8592aca0843b7fcd9ab60ab2b
 D:so:libc.musl-ppc64le.so.1
 p:cmd:json_reformat cmd:json_verify
 
+C:Q1fPCQ2sHKSFDbEBY6Ct0+f8RoaZ0=
+P:libvirt-dev
+V:5.5.0-r0
+A:ppc64le
+S:239866
+I:1589248
+T:A virtualization API for several hypervisor and container systems (development files)
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165523
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libtirpc-dev libvirt-client=5.5.0-r0 pkgconfig
+p:pc:libvirt-admin=5.5.0 pc:libvirt-lxc=5.5.0 pc:libvirt-qemu=5.5.0 pc:libvirt=5.5.0
+
 C:Q1cK+sFlsxRronBPVYPbzAEQ/Mfoc=
 P:libtirpc-doc
 V:1.0.1-r2
@@ -29328,21 +29392,6 @@ c:4a690d5214929772b9aa82f90e9b457a32ef9634
 D:libev=4.24-r0 pkgconfig
 p:pc:libev=4.24
 
-C:Q16m8Kwv/1fofg/xo0KZT1mAkBxYI=
-P:libvirt-doc
-V:3.9.0-r1
-A:ppc64le
-S:2328296
-I:7667712
-T:A virtualization API for several hypervisor and container systems (documentation)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-i:docs libvirt=3.9.0-r1
-
 C:Q1fIMw7diN/aIjpt/cP4Rs3r5hP9Y=
 P:py-alabaster
 V:0.7.10-r0
@@ -34133,22 +34182,6 @@ t:1509645308
 c:7b8d41699ae88a726e7203d0ba67c025e4ae5169
 D:acf-core freeradius>3
 
-C:Q11iwYX0PxbixtALGyhC1sfN428XM=
-P:libvirt-lxc
-V:3.9.0-r1
-A:ppc64le
-S:801573
-I:2138112
-T:LXC driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt-daemon=3.9.0-r1 libvirt-common-drivers=3.9.0-r1 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libfuse.so.2 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-i:libvirt-daemon=3.9.0-r1 lxc
-
 C:Q1N+i2cnBfVEdIAD0Y2tuV/sy0Y5c=
 P:xfce4-skel
 V:4.12.0-r1
@@ -34865,21 +34898,6 @@ c:ab744645dd6495c41364ede3712737ddc11a01cd
 D:hicolor-icon-theme so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libnotify.so.4 so:libxfce4ui-2.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.2
 p:cmd:xfce4-notifyd-config
 
-C:Q1tfsQtGIH6T8dW2oQ+EnbkXxhAkc=
-P:libvirt-vbox
-V:3.9.0-r1
-A:ppc64le
-S:181201
-I:679936
-T:VirtualBox driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081702
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt-daemon=3.9.0-r1 libvirt-common-drivers=3.9.0-r1 so:libc.musl-ppc64le.so.1 so:libintl.so.8 so:libxml2.so.2
-
 C:Q19atALeDVBYmpHevrccd2xyUusWQ=
 P:readline-dev
 V:7.0.003-r0
@@ -35376,6 +35394,22 @@ t:1509664909
 c:984e775850b46fa972fa173155fdb2593a0c0465
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:so:librevenge-0.0.so.0=0.0.4 so:librevenge-generators-0.0.so.0=0.0.4 so:librevenge-stream-0.0.so.0=0.0.4
+
+C:Q1+pwebKRDgXZ616TR5+9vAlxMfNo=
+P:libvirt-lang
+V:5.5.0-r0
+A:ppc64le
+S:4396899
+I:18370560
+T:Languages for package libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:lvm2
+i:libvirt=5.5.0-r0 lang
 
 C:Q1rDCd8DRtJ3rjHv1sltWMWl77p6Q=
 P:sems-voicebox
@@ -43225,22 +43259,6 @@ c:8397d850ffb89f8c51c9079af7c73f0b0c6f8caf
 D:so:libc.musl-ppc64le.so.1
 p:cmd:bunzip2 cmd:bzcat cmd:bzcmp cmd:bzdiff cmd:bzegrep cmd:bzfgrep cmd:bzgrep cmd:bzip2 cmd:bzip2recover cmd:bzless cmd:bzmore
 
-C:Q116E2jpKg+51/bLUdddZnznS0Bfk=
-P:libvirt-daemon
-V:3.9.0-r1
-A:ppc64le
-S:175951
-I:704512
-T:libvirt daemon package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt-client bridge-utils dmidecode dnsmasq ebtables ip6tables iptables so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
-p:cmd:libvirtd
-
 C:Q1Z7dAwDVsFqbxrlxJKd6ze8Irc8c=
 P:lzip-doc
 V:1.19-r1
@@ -44886,6 +44904,22 @@ t:1509651724
 c:4fa7d32dfcdaf3511c6af4bc1479a2102e14345a
 D:perl-extutils-config
 
+C:Q1soZzw8g/VdmHSsGkEP2IZ4TKqsk=
+P:libvirt-lxc
+V:5.5.0-r0
+A:ppc64le
+S:188142
+I:602112
+T:LXC driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt-daemon=5.5.0-r0 libvirt-common-drivers=5.5.0-r0 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=5.5.0-r0 lxc
+
 C:Q1089DhSsz5e0EZsHJRkWW60EhxiU=
 P:py-django-widget-tweaks
 V:1.4.1-r0
@@ -45855,21 +45889,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1510260825
 c:cc8e0e85076bc0310d2e250246d45cdb4d8177e1
 i:docs partimage=0.6.9-r4
-
-C:Q1UfwAkjvbztEF3rCFRDzDGvkfqp0=
-P:libvirt-static
-V:3.9.0-r1
-A:ppc64le
-S:4351433
-I:17764352
-T:libvirt static libraries
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:lvm2
 
 C:Q1oln4KA8vxAuUI3TDl+hwU90L6YA=
 P:abiword-plugin-paint
@@ -47863,22 +47882,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509661020
 c:b2065cb574726c106a00a45f9b9b8c5e8f73e37a
 i:docs xf86-input-mouse=1.9.2-r0
-
-C:Q1FXnsjeJCjV7Q+oM/0SGhfukjaEU=
-P:libvirt-lang
-V:3.9.0-r1
-A:ppc64le
-S:4626498
-I:19316736
-T:Languages for package libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:lvm2
-i:libvirt=3.9.0-r1 lang
 
 C:Q1dfDTO8qLlBnLNkz5JkvsRKMWD+s=
 P:samba-doc
@@ -52739,21 +52742,6 @@ c:e0bcf63051bb3bd1aec6b3a7bd16019e77bfb46d
 D:gnome-mime-data
 i:gnome-vfs=2.24.4-r6 lang
 
-C:Q1lWH73k4XzYn6eoFnKHJNYSjdZ9Q=
-P:libvirt-uml
-V:3.9.0-r1
-A:ppc64le
-S:88335
-I:274432
-T:UML driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081702
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt-daemon=3.9.0-r1 libvirt-common-drivers=3.9.0-r1 so:libc.musl-ppc64le.so.1 so:libintl.so.8
-
 C:Q1VofUZjhm7iDjerBID6p4g91GHYc=
 P:perl-module-install
 V:1.18-r0
@@ -52783,22 +52771,6 @@ t:1551364330
 c:ffe869c26d70961d4295aaaf937fd6e3db23baea
 D:py2-asn1 py2-cryptography py2-bcrypt py2-pynacl python2
 i:py-paramiko=2.4.2-r0 python2
-
-C:Q1Tf0DFRAsGshEhpIvl0nXVTq4AzA=
-P:libvirt-qemu
-V:3.9.0-r1
-A:ppc64le
-S:592219
-I:1728512
-T:QEMU driver for libvirt
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt-daemon=3.9.0-r1 libvirt-common-drivers=3.9.0-r1 so:libc.musl-ppc64le.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libxml2.so.2
-i:libvirt-daemon=3.9.0-r1 qemu
 
 C:Q1AEA3E0cVX5RXir515q+pleA4u6Q=
 P:texinfo
@@ -58702,6 +58674,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1509649807
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl-params-validate
+
+C:Q1dJqiwrmepirLx+xj5yn/ko16HQ8=
+P:libvirt-qemu
+V:5.5.0-r0
+A:ppc64le
+S:624520
+I:1855488
+T:QEMU driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt-daemon=5.5.0-r0 libvirt-common-drivers=5.5.0-r0 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=5.5.0-r0 qemu
 
 C:Q1uNVwuY/AMVOB8wVY9P85BEmkFnA=
 P:libmaxminddb-dev
@@ -68416,22 +68404,6 @@ t:1509646060
 c:38f13ff3e3211bfbe2cf360c70b40384be53a050
 i:docs s6-dns=2.2.0.1-r0
 
-C:Q1sAM4lc/+1RU9nBuWbOkqBDAK/ZA=
-P:libvirt-client
-V:3.9.0-r1
-A:ppc64le
-S:1939725
-I:5828608
-T:libvirt client package
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgnutls.so.30 so:libintl.so.8 so:libnl-3.so.200 so:libreadline.so.7 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-p:so:libvirt-admin.so.0=0.3009.0 so:libvirt-lxc.so.0=0.3009.0 so:libvirt-qemu.so.0=0.3009.0 so:libvirt.so.0=0.3009.0 cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-xml-validate
-
 C:Q14UMyvAcj27jFjM8jjIezfMRQlxU=
 P:file-dev
 V:5.32-r0
@@ -69058,6 +69030,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551903505
 c:8b6518facdb281063eee3fea57c9219e5bdde158
 D:alpine-baselayout alpine-conf apk-tools busybox busybox-suid busybox-initscripts openrc libc-utils alpine-keys
+
+C:Q1cWvFLhwSOVkkRCDQO9y9TwAeDsc=
+P:libvirt-vbox
+V:5.5.0-r0
+A:ppc64le
+S:141221
+I:466944
+T:VirtualBox driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt-daemon=5.5.0-r0 libvirt-common-drivers=5.5.0-r0 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
 
 C:Q1ggoRe5eObM2I4+SV2UvSb+Cij78=
 P:jemalloc-doc
@@ -70009,6 +69996,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1511925919
 c:c25fa76c6b6ec59d4d222e2feafc7065e1c9435c
 D:so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0 so:libuuid.so.1 so:libxml2.so.2
+
+C:Q14VxOicnEmW6wNdaIe9w25HhevfY=
+P:libvirt-common-drivers
+V:5.5.0-r0
+A:ppc64le
+S:476530
+I:1241088
+T:Common libvirt daemon drivers
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:lvm2 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
 
 C:Q1g9L6bfBNs3ZYp5qlkQVA+uKm+LM=
 P:ruby-irb
@@ -75775,6 +75777,21 @@ c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:libgssglue=0.4-r0 pkgconfig
 p:pc:libgssglue=0.4
 
+C:Q1Y1gw5GSprQEnLV8K5fuoPu+wBak=
+P:libvirt-doc
+V:5.5.0-r0
+A:ppc64le
+S:2581457
+I:9457664
+T:A virtualization API for several hypervisor and container systems (documentation)
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165523
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+i:docs libvirt=5.5.0-r0
+
 C:Q19WLP6ryhwOQxT7WZu0hYPbjcXMU=
 P:ruby-bigdecimal
 V:2.4.6-r0
@@ -77247,6 +77264,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509632474
 c:64a2d0970ef65d86845a284b6bc63603f05282e5
 i:docs perl-sub-install=0.928-r0
+
+C:Q1oKnGFquUBjsBQ+AZPTRkfnJnES4=
+P:libvirt-uml
+V:5.5.0-r0
+A:ppc64le
+S:1308
+I:32768
+T:UML driver for libvirt
+U:http://libvirt.org/
+L:LGPL
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562165524
+c:8cad441d0bb3d51026cb0231485848ce9a821e6a
+D:libvirt-daemon=5.5.0-r0 libvirt-common-drivers=5.5.0-r0
 
 C:Q1Is8p5Lk1vf0RkzVfoJYTi/T+/b4=
 P:sdl2_ttf-dev
@@ -78955,22 +78987,6 @@ c:3eacd5f9a6ab42f7ca84f780c57a1172a928a9d9
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.42 so:libz.so.1
 p:so:libssh2.so.1=1.0.1
 
-C:Q1g8BDkHB2Uby9GGvrn7B51PcW1Yo=
-P:libvirt-dev
-V:3.9.0-r1
-A:ppc64le
-S:208896
-I:1372160
-T:A virtualization API for several hypervisor and container systems (development files)
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081701
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:libtirpc-dev libvirt-client=3.9.0-r1 pkgconfig
-p:pc:libvirt-admin=3.9.0 pc:libvirt-lxc=3.9.0 pc:libvirt-qemu=3.9.0 pc:libvirt=3.9.0
-
 C:Q1R8wPkSU6+2AkS4yhljtFDcgDXXM=
 P:libao-dev
 V:1.2.0-r2
@@ -79755,22 +79771,6 @@ t:1510682606
 c:acf8d280036809b82e5524727382482ce6933255
 D:clang=5.0.0-r0 perl python2
 p:cmd:scan-build cmd:scan-view
-
-C:Q1uMIdVYvQArI/HX0q4ikDtFDdX5M=
-P:libvirt
-V:3.9.0-r1
-A:ppc64le
-S:1358443
-I:3866624
-T:A virtualization API for several hypervisor and container systems
-U:http://libvirt.org/
-L:LGPL
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1510081702
-c:cbd5c0c0f015c198a3b5441ce7e49d6e57c92343
-D:lvm2 /bin/sh so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgnutls.so.30 so:libintl.so.8 so:libparted.so.2 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-p:cmd:virtlockd cmd:virtlogd
 
 C:Q1KDoX4Oi9mkpLjLvx87TNths0QKc=
 P:pacman-lang
