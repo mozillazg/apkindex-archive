@@ -3511,21 +3511,6 @@ c:1c582242e08990c798e6dccddd7436a3934ed588
 D:qemu so:libaio.so.1 so:libasound.so.2 so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcurl.so.4 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libncursesw.so.6 so:libnettle.so.6 so:libnfs.so.11 so:libpixman-1.so.0 so:libpng16.so.16 so:libsnappy.so.1 so:libspice-server.so.1 so:libssh2.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libz.so.1
 p:cmd:qemu-system-cris
 
-C:Q1IMYROMiiyZHrXWVjkeWqvd8TV4A=
-P:patchwork-mysql
-V:1.1.3-r0
-A:aarch64
-S:1181
-I:4096
-T:patchwork mysql support
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839774
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:py-mysqldb
-
 C:Q1EYPNcl2u13GrjyrArlKaoCkMIzA=
 P:gdk-pixbuf-lang
 V:2.36.10-r0
@@ -3647,6 +3632,22 @@ o:perl-crypt-ssleay
 t:1510265015
 c:c48357168bfc4934fdcfdc4717e1e848cd9ff805
 D:perl-path-class perl-try-tiny so:libc.musl-aarch64.so.1 so:libcrypto.so.42 so:libssl.so.44
+
+C:Q1eBrKhIhmGpa6Y2UGzO3smBTmTqg=
+P:pwclient
+V:1.1.3-r1
+A:aarch64
+S:8352
+I:40960
+T:command-line client for patchwork
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:python2
+p:cmd:pwclient
 
 C:Q1HuZww0xCfvpfSB9Sdt+/HCWR3WU=
 P:py2-idna
@@ -4790,6 +4791,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509178779
 c:0dfa037fde5f70b635fdde5be93bf6df3cc662ff
 D:so:libc.musl-aarch64.so.1 so:libintl.so.8 so:libzfs.so.2
+
+C:Q1+lU3p50cLqLc5oyES42Uj7NraeM=
+P:patchwork-doc
+V:1.1.3-r1
+A:aarch64
+S:8329
+I:40960
+T:Web-based patch tracking system (documentation)
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+i:docs patchwork=1.1.3-r1
 
 C:Q1O40iTUoQHH9SHvu1sY62pXdYbSQ=
 P:iwlwifi-1000-ucode
@@ -10654,21 +10670,6 @@ c:1301e6ae134309fb1ba5b5167df1ce392f78673f
 D:cmake pkgconfig soxr=0.1.2-r0
 p:pc:soxr-lsr=0.1.2 pc:soxr=0.1.2
 
-C:Q1Y4VO/kxY/aGzKNE1SyRqu4isGe8=
-P:patchwork-postgresql
-V:1.1.3-r0
-A:aarch64
-S:1187
-I:4096
-T:patchwork postgresql support
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839776
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:py-psycopg2
-
 C:Q19gvobnHZQJgcTGHMtVLIo6eAYoc=
 P:farstream
 V:0.2.8-r2
@@ -12727,21 +12728,6 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1509180997
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 
-C:Q1YPCGyMimz2siDjZnLyuqUS1dUKk=
-P:patchwork
-V:1.1.3-r0
-A:aarch64
-S:323299
-I:1748992
-T:Web-based patch tracking system
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839780
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:py-django py-django-registration git py-psycopg2
-
 C:Q1YTym8tyzQehhQsVFOHMOzXqNWi8=
 P:aconf-doc
 V:0.6.5-r0
@@ -13291,22 +13277,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509153646
 c:b77181c7805be2a6fcef22051c4469ef0e2d3708
 D:iniparser=4.0-r1
-
-C:Q1MSw/bm/gawIwJhIMjYgw3XCxwOk=
-P:patchwork-uwsgi-apache2
-V:1.1.3-r0
-A:aarch64
-S:1469
-I:20480
-T:patchwork apache2 wsgi support
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839770
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:apache2 apache2-mod-wsgi
-i:patchwork=1.1.3-r0 apache2-mod-wsgi
 
 C:Q1Yp7/uFeUUybx/iD0WVEk7p13Cy4=
 P:ipsec-tools-doc
@@ -24161,6 +24131,21 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1509151390
 c:4d71026f8f9aecab1ee19d423a1826bb74a1b90d
 D:bsd-compat-headers linux-headers dahdi-linux-dev newt-dev dahdi-tools=2.11.1-r0
+
+C:Q1s8FdXJfcQnBBN0nnJboqaCIEAOI=
+P:patchwork-mysql
+V:1.1.3-r1
+A:aarch64
+S:1180
+I:4096
+T:patchwork mysql support
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:py-mysqldb
 
 C:Q11e0TCdsTuREDX8EqTV+erY7yHGc=
 P:gst-plugins-base0.10-lang
@@ -38365,6 +38350,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509200068
 c:109fe2c68050fe0e884e375dcfc3e8851274aa33
 
+C:Q1gbQK5hDDTg8YiDVStdmDIosrnRQ=
+P:patchwork-uwsgi-nginx
+V:1.1.3-r1
+A:aarch64
+S:2287
+I:32768
+T:patchwork nginx wsgi support
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:nginx uwsgi-python
+i:nginx patchwork uwsgi
+
 C:Q1I1DWOUcSxAm4t+0iBygd4UQodiw=
 P:uwsgi-ping
 V:2.0.17-r0
@@ -38981,6 +38982,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1511387859
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 i:docs libnice=0.1.14-r2
+
+C:Q1ewVVYPkLQ/+72Sbq4gXPVfeoF6E=
+P:patchwork
+V:1.1.3-r1
+A:aarch64
+S:321245
+I:1748992
+T:Web-based patch tracking system
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223426
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:py-django py-django-registration git py-psycopg2
 
 C:Q1ze9hoIX8NU/dRhKN6LiOLz9B2IU=
 P:boost-doc
@@ -43460,21 +43476,6 @@ t:1509169653
 c:c18b35140d6160530980ddae341d9aa45fe118fa
 D:python2 py-httplib2
 
-C:Q1RC9FR2CMslH+lgRi3NQTDljEUjs=
-P:patchwork-doc
-V:1.1.3-r0
-A:aarch64
-S:8319
-I:40960
-T:Web-based patch tracking system (documentation)
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839769
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-i:docs patchwork=1.1.3-r0
-
 C:Q1ZbN6/SNXvOxAHQ2c2WxmY/RZ10s=
 P:fish
 V:2.6.0-r2
@@ -45359,6 +45360,22 @@ t:1509190476
 c:48e584605b6216241b9c5165701caf60a50eee4c
 D:so:libaspell.so.15 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libhunspell-1.6.so.0 so:libstdc++.so.6
 p:so:libenchant.so.1=1.6.0 cmd:enchant cmd:enchant-lsmod
+
+C:Q1xWCJqiejD0fq8jyIcVvh7ovgB1s=
+P:patchwork-uwsgi-apache2
+V:1.1.3-r1
+A:aarch64
+S:1483
+I:20480
+T:patchwork apache2 wsgi support
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:apache2 apache2-mod-wsgi
+i:patchwork=1.1.3-r1 apache2-mod-wsgi
 
 C:Q1hg4UnTkWftamAycwUtaIaM31Z64=
 P:py-country
@@ -47945,22 +47962,6 @@ t:1509142438
 c:fcac7d246dcc54f1e1e3d2126adc0bab74f7e796
 D:p11-kit=0.23.2-r2 pkgconfig
 p:pc:p11-kit-1=0.23.2
-
-C:Q1o287d64GgyfvTHn7OBsPZ4eaov4=
-P:patchwork-uwsgi-nginx
-V:1.1.3-r0
-A:aarch64
-S:2231
-I:32768
-T:patchwork nginx wsgi support
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839772
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:nginx uwsgi-python
-i:nginx patchwork uwsgi
 
 C:Q1NKCwbC0KHPSzc9ll73KabA6qgAo=
 P:libuv-dbg
@@ -74761,6 +74762,21 @@ c:ab744645dd6495c41364ede3712737ddc11a01cd
 D:pkgconfig swish-e=2.4.7-r8
 p:pc:swish-e=2.4.7 cmd:swish-config
 
+C:Q1HK3KJM6rJtHzpeB1Ka3NkREaUeE=
+P:patchwork-postgresql
+V:1.1.3-r1
+A:aarch64
+S:1185
+I:4096
+T:patchwork postgresql support
+U:https://github.com/getpatchwork/patchwork
+L:GPL
+o:patchwork
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1562223425
+c:2980b18bfd45cb88d294fcdef0b77ca724f61749
+D:py-psycopg2
+
 C:Q1fWkva4W3up6ViWG+Fj8m6l/ObF0=
 P:mp3splt-doc
 V:2.6.2-r0
@@ -83176,22 +83192,6 @@ t:1509641993
 c:5b6cf59cdf4c352e5d68a083554c0bc1f688338c
 D:so:libc.musl-aarch64.so.1 so:libcairo.so.2 so:libexiv2.so.14 so:libgcc_s.so.1 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:liblcms2.so.2 so:liblua.so.5 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libstdc++.so.6 so:libtiff.so.5
 p:cmd:geeqie
-
-C:Q1dZUC+iNCUIo9DsQ3TOUNCDYUJd4=
-P:pwclient
-V:1.1.3-r0
-A:aarch64
-S:8335
-I:40960
-T:command-line client for patchwork
-U:https://github.com/getpatchwork/patchwork
-L:GPL
-o:patchwork
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1509839778
-c:b4a647d6f803b29cf5f03f4ac3491aa8b3bf0c8a
-D:python2
-p:cmd:pwclient
 
 C:Q1h4blun51KPwdGZ2cyIfNlundUmw=
 P:perl-socket-getaddrinfo-doc
