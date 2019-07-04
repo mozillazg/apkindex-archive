@@ -2556,22 +2556,6 @@ c:b330e4c76dcf128b04ce82f0852cafd4e14a6300
 D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libcurl.so.4 so:libssh2.so.1 so:libssl.so.45 so:libz.so.1
 p:libgit2-libs so:libgit2.so.27=0.27.3
 
-C:Q1kvr3RI0FIGZ0QeHwtESGsqJxK5s=
-P:libbz2
-V:1.0.6-r6
-A:aarch64
-S:27204
-I:69632
-T:Shared library for bz2
-U:http://sources.redhat.com/bzip2
-L:BSD
-o:bzip2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1524811637
-c:8397d850ffb89f8c51c9079af7c73f0b0c6f8caf
-D:so:libc.musl-aarch64.so.1
-p:so:libbz2.so.1=1.0.6
-
 C:Q1xIo3URsK9gWj65l3FmG31Yoa/eY=
 P:py3-setuptools
 V:39.1.0-r0
@@ -22739,6 +22723,21 @@ c:ebcbfd35408ff99a8ca089825f418d4d0b336a93
 D:so:libc.musl-aarch64.so.1 so:libexpat.so.1
 i:lua5.2 lua-expat=1.3.0-r2
 
+C:Q1yZI/OgTJ6MXJVmgdrO7BaSw5KwA=
+P:bzip2-doc
+V:1.0.6-r7
+A:aarch64
+S:12367
+I:57344
+T:A high-quality data compression program (documentation)
+U:http://sources.redhat.com/bzip2
+L:BSD
+o:bzip2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1562268445
+c:48ec283be13e799c70aae6c045c2c93e39d262a0
+i:docs bzip2=1.0.6-r7
+
 C:Q1+vSGjc0sjkSmrLA4a9lyg/2NLzM=
 P:ferm
 V:2.4.1-r0
@@ -23311,6 +23310,22 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-aarch64.so.1 so:libncursesw.so.6
 p:so:liboping.so.0=0.3.0 cmd:noping cmd:oping
 
+C:Q1+g60an5acFACoxfun3NNcdYltCI=
+P:bzip2
+V:1.0.6-r7
+A:aarch64
+S:114326
+I:274432
+T:A high-quality data compression program
+U:http://sources.redhat.com/bzip2
+L:BSD
+o:bzip2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1562268445
+c:48ec283be13e799c70aae6c045c2c93e39d262a0
+D:so:libc.musl-aarch64.so.1
+p:cmd:bunzip2 cmd:bzcat cmd:bzcmp cmd:bzdiff cmd:bzegrep cmd:bzfgrep cmd:bzgrep cmd:bzip2 cmd:bzip2recover cmd:bzless cmd:bzmore
+
 C:Q1O3UEw3oOvRhH5YYnFg2x6f5iX20=
 P:bwm-ng
 V:0.6.1-r3
@@ -23867,21 +23882,6 @@ t:1525276233
 c:309c27b1560d8433039479102faa9f606797d211
 D:so:libc.musl-aarch64.so.1 so:libcrypto.so.43 so:libreadline.so.7 so:libssl.so.45
 p:cmd:filan cmd:procan cmd:socat
-
-C:Q1U/E5dXTxkBo2w++VIXzVXlIJu58=
-P:bzip2-dev
-V:1.0.6-r6
-A:aarch64
-S:30231
-I:90112
-T:A high-quality data compression program (development files)
-U:http://sources.redhat.com/bzip2
-L:BSD
-o:bzip2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1524811633
-c:8397d850ffb89f8c51c9079af7c73f0b0c6f8caf
-D:libbz2=1.0.6-r6
 
 C:Q1A0yhdGGdDX9NkJwhkbygpIfOJN4=
 P:zeromq
@@ -63678,21 +63678,6 @@ t:1526293063
 c:6e3af9edc71b5d04b7ca53588c7bf2590a015799
 i:docs fltk=1.3.4-r2
 
-C:Q1g7pFepLuhT1hC0dlgiGI0YqDaBU=
-P:bzip2-doc
-V:1.0.6-r6
-A:aarch64
-S:12340
-I:57344
-T:A high-quality data compression program (documentation)
-U:http://sources.redhat.com/bzip2
-L:BSD
-o:bzip2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1524811635
-c:8397d850ffb89f8c51c9079af7c73f0b0c6f8caf
-i:docs bzip2=1.0.6-r6
-
 C:Q1M5EYNQbJ0MF1zZlpVywBA3HAXPU=
 P:socat-doc
 V:1.7.3.2-r4
@@ -72315,6 +72300,21 @@ t:1525269821
 c:ad39c56621b7296c8e9edec39fd2a1d885ecfde4
 D:so:libc.musl-aarch64.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libnl-idiag-3.so.200 so:libnl-nf-3.so.200 so:libnl-route-3.so.200
 p:so:libnl-cli-3.so.200=200.23.0 cmd:genl-ctrl-list cmd:idiag-socket-details cmd:nf-ct-add cmd:nf-ct-list cmd:nf-exp-add cmd:nf-exp-delete cmd:nf-exp-list cmd:nf-log cmd:nf-monitor cmd:nf-queue cmd:nl-addr-add cmd:nl-addr-delete cmd:nl-addr-list cmd:nl-class-add cmd:nl-class-delete cmd:nl-class-list cmd:nl-classid-lookup cmd:nl-cls-add cmd:nl-cls-delete cmd:nl-cls-list cmd:nl-fib-lookup cmd:nl-link-enslave cmd:nl-link-ifindex2name cmd:nl-link-list cmd:nl-link-name2ifindex cmd:nl-link-release cmd:nl-link-set cmd:nl-link-stats cmd:nl-list-caches cmd:nl-list-sockets cmd:nl-monitor cmd:nl-neigh-add cmd:nl-neigh-delete cmd:nl-neigh-list cmd:nl-neightbl-list cmd:nl-pktloc-lookup cmd:nl-qdisc-add cmd:nl-qdisc-delete cmd:nl-qdisc-list cmd:nl-route-add cmd:nl-route-delete cmd:nl-route-get cmd:nl-route-list cmd:nl-rule-list cmd:nl-tctree-list cmd:nl-util-addr
+
+C:Q1rarWHBXMAWJMDAKE6f+dKKPPHiY=
+P:bzip2-dev
+V:1.0.6-r7
+A:aarch64
+S:30237
+I:90112
+T:A high-quality data compression program (development files)
+U:http://sources.redhat.com/bzip2
+L:BSD
+o:bzip2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1562268445
+c:48ec283be13e799c70aae6c045c2c93e39d262a0
+D:libbz2=1.0.6-r7
 
 C:Q1zqpaRE8KlQNQyoEngOoM4Egb34g=
 P:sfdisk
@@ -82389,22 +82389,6 @@ t:1525289082
 c:d4492c53e1fb76d013f67d75f5cbb9c436fc2c29
 i:docs dhcp=4.4.1-r1
 
-C:Q1YeSl8cT7Q5A0pUWGRWir4+0GMlU=
-P:bzip2
-V:1.0.6-r6
-A:aarch64
-S:116283
-I:274432
-T:A high-quality data compression program
-U:http://sources.redhat.com/bzip2
-L:BSD
-o:bzip2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1524811638
-c:8397d850ffb89f8c51c9079af7c73f0b0c6f8caf
-D:so:libc.musl-aarch64.so.1
-p:cmd:bunzip2 cmd:bzcat cmd:bzcmp cmd:bzdiff cmd:bzegrep cmd:bzfgrep cmd:bzgrep cmd:bzip2 cmd:bzip2recover cmd:bzless cmd:bzmore
-
 C:Q1It3ZaXC3H8XYmZGLdrF4btCJPa4=
 P:linux-firmware-cxgb3
 V:20180615-r2
@@ -83114,6 +83098,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1541067419
 c:4354b4ac726e3cbbe68c3a244551629ac8f92efa
 i:docs rp-pppoe=3.12-r1
+
+C:Q1Llx4rTMjmZKJSzZ/0tTqk7CAc9Y=
+P:libbz2
+V:1.0.6-r7
+A:aarch64
+S:27187
+I:69632
+T:Shared library for bz2
+U:http://sources.redhat.com/bzip2
+L:BSD
+o:bzip2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1562268445
+c:48ec283be13e799c70aae6c045c2c93e39d262a0
+D:so:libc.musl-aarch64.so.1
+p:so:libbz2.so.1=1.0.6
 
 C:Q1kLmF+lviPmFOg6Q3CZlz0dWseDY=
 P:jbig2dec
