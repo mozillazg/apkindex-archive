@@ -181,22 +181,6 @@ c:9ada7a3cdcc410163314f9867ecdb51663fbff95
 D:pkgconfig
 p:pc:libsparsehash=2.0.2
 
-C:Q1kmd5m3aa6Z5YnfRyVBJh7tPa37s=
-P:heimdal
-V:7.5.0-r2
-A:x86_64
-S:325294
-I:987136
-T:An implementation of Kerberos 5
-U:http://www.h5l.org/
-L:BSD-3-Clause
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1559659129
-c:5ee28b356b1b4aebf9d9fafa32c82c7519cbecd9
-D:krb5-conf so:libasn1.so.8 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libgssapi.so.3 so:libhcrypto.so.4 so:libhdb.so.9 so:libheimbase.so.1 so:libheimntlm.so.0 so:libhx509.so.5 so:libkadm5clnt.so.7 so:libkadm5srv.so.8 so:libkafs.so.0 so:libkdc.so.2 so:libkrb5.so.26 so:libotp.so.0 so:libreadline.so.7 so:libroken.so.18 so:libsl.so.0 so:libwind.so.0
-p:cmd:afslog cmd:bsearch cmd:gsstool cmd:heimdal cmd:heimtools cmd:hprop cmd:hpropd cmd:hxtool cmd:idn-lookup cmd:iprop-log cmd:ipropd-master cmd:ipropd-slave cmd:kadmin cmd:kadmind cmd:kcm cmd:kdc cmd:kdestroy cmd:kf cmd:kfd cmd:kgetcred cmd:kimpersonate cmd:kinit cmd:klist cmd:kpasswd cmd:kpasswdd cmd:kstash cmd:kswitch cmd:ktutil cmd:otp cmd:otpprint cmd:pagsh cmd:su
-
 C:Q1Nek1qEJ/KIionB7pK+xzlaic9QM=
 P:lcms2-dev
 V:2.9-r1
@@ -8903,6 +8887,22 @@ o:coova-chilli
 t:1525208214
 c:dadaa45850f30bdbb8ae3e71b92f229f32db8546
 i:docs coova-chilli=1.4-r1
+
+C:Q1IejQFlMF5e+EbRuWWT7jR8+K7ck=
+P:heimdal-dev
+V:7.5.0-r3
+A:x86_64
+S:1566400
+I:6660096
+T:An implementation of Kerberos 5 (development files)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1562861988
+c:e8ebbb3123154e0d2dfd574d9eea59dd51ffe205
+D:libressl-dev e2fsprogs-dev db-dev heimdal-libs=7.5.0-r3 pkgconfig
+p:pc:heimdal-gssapi=7.5.0 pc:heimdal-kadm-client=7.5.0 pc:heimdal-kadm-server=7.5.0 pc:heimdal-krb5=7.5.0 pc:kadm-client=7.5.0 pc:kadm-server=7.5.0 pc:kafs=7.5.0 pc:krb5-gssapi=7.5.0 pc:krb5=7.5.0 cmd:krb5-config
 
 C:Q18iFlVgT55ODytEjU0O7jh1K2NTw=
 P:openjpeg-dev
@@ -24821,22 +24821,6 @@ t:1526289563
 c:8a158b2ef1e7dd8b2631352f5caf6739d2081b6f
 i:gst-plugins-base0.10=0.10.36-r4 lang
 
-C:Q1/BXoc161N4FL+SH5aJ5m4sEtEak=
-P:heimdal-dev
-V:7.5.0-r2
-A:x86_64
-S:1565326
-I:6656000
-T:An implementation of Kerberos 5 (development files)
-U:http://www.h5l.org/
-L:BSD-3-Clause
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1559659128
-c:5ee28b356b1b4aebf9d9fafa32c82c7519cbecd9
-D:libressl-dev e2fsprogs-dev db-dev heimdal-libs=7.5.0-r2 pkgconfig
-p:pc:heimdal-gssapi=7.5.0 pc:heimdal-kadm-client=7.5.0 pc:heimdal-kadm-server=7.5.0 pc:heimdal-krb5=7.5.0 pc:kadm-client=7.5.0 pc:kadm-server=7.5.0 pc:kafs=7.5.0 pc:krb5-gssapi=7.5.0 pc:krb5=7.5.0 cmd:krb5-config
-
 C:Q1kAPOrXhtX/3edZlqf2mqobvYyQM=
 P:perl-server-starter
 V:0.15-r1
@@ -29358,6 +29342,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525213658
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs nload=0.7.4-r3
+
+C:Q128f+T1X1E9YjkBXZZY9fVm8QdX0=
+P:heimdal-openrc
+V:7.5.0-r3
+A:x86_64
+S:2002
+I:24576
+T:An implementation of Kerberos 5 (OpenRC init scripts)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1562861989
+c:e8ebbb3123154e0d2dfd574d9eea59dd51ffe205
+D:krb5-conf
+i:openrc heimdal=7.5.0-r3
 
 C:Q1jG4CgeBUTpRn+AAEXNCTFjHdSNg=
 P:asterisk
@@ -34655,6 +34655,21 @@ t:1553682008
 c:00a38c79f80d900e61363f6602749b6b4589beb1
 D:libssh2=1.8.2-r0 pc:libcrypto pc:libssl pc:zlib pkgconfig
 p:pc:libssh2=1.8.2
+
+C:Q150ly5TQ39HeacVCXwrv5gOsNH44=
+P:heimdal-doc
+V:7.5.0-r3
+A:x86_64
+S:461737
+I:3850240
+T:An implementation of Kerberos 5 (documentation)
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1562861987
+c:e8ebbb3123154e0d2dfd574d9eea59dd51ffe205
+i:docs heimdal=7.5.0-r3
 
 C:Q1K2NXwjdFcclC8+aqpmXmXpvQh04=
 P:aoetools-doc
@@ -56824,6 +56839,22 @@ t:1525169691
 c:f6c359d96820617a11e98082f3bdce88281ca08e
 i:docs less=530-r0
 
+C:Q1gtcRioex8odrDsECDfYMpuu48dY=
+P:heimdal
+V:7.5.0-r3
+A:x86_64
+S:325316
+I:987136
+T:An implementation of Kerberos 5
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1562861989
+c:e8ebbb3123154e0d2dfd574d9eea59dd51ffe205
+D:krb5-conf so:libasn1.so.8 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libgssapi.so.3 so:libhcrypto.so.4 so:libhdb.so.9 so:libheimbase.so.1 so:libheimntlm.so.0 so:libhx509.so.5 so:libkadm5clnt.so.7 so:libkadm5srv.so.8 so:libkafs.so.0 so:libkdc.so.2 so:libkrb5.so.26 so:libotp.so.0 so:libreadline.so.7 so:libroken.so.18 so:libsl.so.0 so:libwind.so.0
+p:cmd:afslog cmd:bsearch cmd:gsstool cmd:heimdal cmd:heimtools cmd:hprop cmd:hpropd cmd:hxtool cmd:idn-lookup cmd:iprop-log cmd:ipropd-master cmd:ipropd-slave cmd:kadmin cmd:kadmind cmd:kcm cmd:kdc cmd:kdestroy cmd:kf cmd:kfd cmd:kgetcred cmd:kimpersonate cmd:kinit cmd:klist cmd:kpasswd cmd:kpasswdd cmd:kstash cmd:kswitch cmd:ktutil cmd:otp cmd:otpprint cmd:pagsh cmd:su
+
 C:Q1KGo98s8eSBZQ0hHtxTrPJCKqLXw=
 P:perl-encode-doc
 V:2.93-r0
@@ -60366,21 +60397,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1527844811
 c:f2abbe83ab2dcb11c6a60cc57e8afdc8ee812d18
 p:cmd:qemu-arm
-
-C:Q1RA0TO4hkQVzs/yiSvH4HhsIc0sM=
-P:heimdal-doc
-V:7.5.0-r2
-A:x86_64
-S:461218
-I:3850240
-T:An implementation of Kerberos 5 (documentation)
-U:http://www.h5l.org/
-L:BSD-3-Clause
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1559659127
-c:5ee28b356b1b4aebf9d9fafa32c82c7519cbecd9
-i:docs heimdal=7.5.0-r2
 
 C:Q15oJ4touB63edr5um3dXeZGqgijs=
 P:gradm
@@ -66421,6 +66437,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1525194578
 c:e541f145131460a0c1d69801eddda288714aeb92
 D:so:libc.musl-x86_64.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
+C:Q1tzquwrQJ93w5+Trv76MeZRY9KLw=
+P:heimdal-libs
+V:7.5.0-r3
+A:x86_64
+S:1173146
+I:3117056
+T:Heimdal libraries
+U:http://www.h5l.org/
+L:BSD-3-Clause
+o:heimdal
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1562861989
+c:e8ebbb3123154e0d2dfd574d9eea59dd51ffe205
+D:krb5-conf so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libdb-5.3.so so:libreadline.so.7 so:libsqlite3.so.0
+p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libotp.so.0=0.1.5 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
 
 C:Q1Cjjz0VAc9/SfkA95h4Z51XzhHQM=
 P:nagios-plugins-disk
@@ -73576,22 +73608,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1527844813
 c:f2abbe83ab2dcb11c6a60cc57e8afdc8ee812d18
 p:cmd:qemu-s390x
-
-C:Q1d5qb4gGPpt58BKlsXx8M2dI1jD4=
-P:heimdal-libs
-V:7.5.0-r2
-A:x86_64
-S:1172137
-I:3117056
-T:Heimdal libraries
-U:http://www.h5l.org/
-L:BSD-3-Clause
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1559659128
-c:5ee28b356b1b4aebf9d9fafa32c82c7519cbecd9
-D:krb5-conf so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libdb-5.3.so so:libreadline.so.7 so:libsqlite3.so.0
-p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libotp.so.0=0.1.5 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
 
 C:Q1rQalZpvKS/RmbQoQEvQ9/pfwMKw=
 P:xfbdev
@@ -82352,22 +82368,6 @@ t:1525226759
 c:952982904a5b1d4fc466533649072aaf1ca8259e
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.43 so:libssl.so.45
 p:so:libmowgli-2.so.0=0.0.0
-
-C:Q1Wflp+sUZc0wU9w0cVi+lQSB7YVk=
-P:heimdal-openrc
-V:7.5.0-r2
-A:x86_64
-S:2018
-I:24576
-T:An implementation of Kerberos 5 (OpenRC init scripts)
-U:http://www.h5l.org/
-L:BSD-3-Clause
-o:heimdal
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1559659128
-c:5ee28b356b1b4aebf9d9fafa32c82c7519cbecd9
-D:krb5-conf
-i:openrc heimdal=7.5.0-r2
 
 C:Q1iqHVv+EQSvmljGiMX9Mt+Y/tFyc=
 P:perl-test-without-module
