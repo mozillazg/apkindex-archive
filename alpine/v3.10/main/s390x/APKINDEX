@@ -2303,22 +2303,6 @@ t:1558988461
 c:9b66908680f8af2a07d51f961b9b362de77017b3
 i:docs ninja=1.9.0-r1
 
-C:Q1gxfcif88z1IcOiRGiKSp7iUbWV4=
-P:avahi-libs
-V:0.7-r1
-A:s390x
-S:45371
-I:135168
-T:Libraries for avahi run-time use
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987909
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libintl.so.8
-p:so:libavahi-client.so.3=3.2.9 so:libavahi-common.so.3=3.5.3
-
 C:Q1PQC8rpFZFpZQAsro/Pl3pH+INsw=
 P:acf-dnsmasq
 V:0.7.1-r0
@@ -3742,6 +3726,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560760476
 c:0db404de2509cf2630edad83c9b948f478f14003
 D:so:libSDL2-2.0.so.0 so:libc.musl-s390x.so.1
+
+C:Q1qYFf13lHKz0pe4Q6ayftlAtmB0o=
+P:avahi-tools
+V:0.7-r2
+A:s390x
+S:22752
+I:94208
+T:Command line tools for mDNS browsing and publishing
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libgdbm.so.4 so:libintl.so.8
+p:cmd:avahi-browse cmd:avahi-browse-domains cmd:avahi-publish cmd:avahi-publish-address cmd:avahi-publish-service cmd:avahi-resolve cmd:avahi-resolve-address cmd:avahi-resolve-host-name cmd:avahi-set-host-name
 
 C:Q1S27KaohMtvG+BMyfyGtOKjN7UNg=
 P:libmicrohttpd-doc
@@ -9421,6 +9421,22 @@ c:bd4f1c7f641d8ad400ce3b655d950e628cc1257f
 D:lua5.2 so:libc.musl-s390x.so.1
 i:lua-stringy=0.5.0-r1 lua5.2
 
+C:Q1HQ726dVeBcRzqs/0PK+bIGpvC9E=
+P:avahi
+V:0.7-r2
+A:s390x
+S:160423
+I:598016
+T:A multicast/unicast DNS-SD framework
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:/bin/sh so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libcap.so.2 so:libdaemon.so.0 so:libdbus-1.so.3 so:libexpat.so.1
+p:so:libavahi-core.so.7=7.0.2 cmd:avahi-daemon cmd:avahi-discover cmd:avahi-dnsconfd
+
 C:Q1tEfuLMYr4IVzJA5ojZC9c1r/N1s=
 P:linux-firmware-bnx2x
 V:20190322-r1
@@ -11526,22 +11542,6 @@ t:1557169902
 c:e796e88c66047ab649eb848679f89cc5ed4c6312
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
 p:cmd:oid2name cmd:pg_archivecleanup cmd:pg_standby cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_xlogdump cmd:pgbench cmd:vacuumlo
-
-C:Q1QJzRnIAKl1TtdiU0oQqcRil9u+Q=
-P:avahi-dev
-V:0.7-r1
-A:s390x
-S:297599
-I:1495040
-T:A multicast/unicast DNS-SD framework (development files)
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987905
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:gdbm-dev avahi-compat-howl=0.7-r1 avahi-compat-libdns_sd=0.7-r1 avahi-glib=0.7-r1 avahi-libs=0.7-r1 avahi=0.7-r1 pc:glib-2.0 pc:gobject-2.0 pkgconfig
-p:pc:avahi-client=0.7 pc:avahi-compat-howl=0.9.8 pc:avahi-compat-libdns_sd=0.7 pc:avahi-core=0.7 pc:avahi-glib=0.7 pc:avahi-gobject=0.7 pc:howl=0.9.8 pc:libdns_sd=0.7
 
 C:Q1Qx20P34lQ1eJqYIZuAvIyulN/gs=
 P:zlib-doc
@@ -15273,6 +15273,22 @@ c:3bc921aac8eeeb07f7c706507b030ad44f5f93f5
 D:lua5.2
 i:lua-optarg=0.2-r1 lua5.2
 
+C:Q1WHhjIW5Iyh8iKGvjlcjdGg0DlWk=
+P:avahi-dev
+V:0.7-r2
+A:s390x
+S:297707
+I:1495040
+T:A multicast/unicast DNS-SD framework (development files)
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345725
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:gdbm-dev avahi-compat-howl=0.7-r2 avahi-compat-libdns_sd=0.7-r2 avahi-glib=0.7-r2 avahi-libs=0.7-r2 avahi=0.7-r2 pc:glib-2.0 pc:gobject-2.0 pkgconfig
+p:pc:avahi-client=0.7 pc:avahi-compat-howl=0.9.8 pc:avahi-compat-libdns_sd=0.7 pc:avahi-core=0.7 pc:avahi-glib=0.7 pc:avahi-gobject=0.7 pc:howl=0.9.8 pc:libdns_sd=0.7
+
 C:Q17lmWyLy40iHxxFHNvflMLycIFl0=
 P:augeas
 V:1.11.0-r1
@@ -17026,6 +17042,22 @@ t:1557046459
 c:27080a4cec5ad92dd797447338047c8a029289e8
 D:so:libc.musl-s390x.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:so:libgee-0.8.so.2=2.6.1
+
+C:Q1cA0V7FSRKUYsDPQldZmpcrokvSY=
+P:avahi-compat-libdns_sd
+V:0.7-r2
+A:s390x
+S:14756
+I:49152
+T:Libraries for Apple Bonjour mDNSResponder compatibility
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1
+p:so:libdns_sd.so.1=1.0.0
 
 C:Q11cV4+37xEbq+slsOuhLjhbNHamw=
 P:perl-namespace-clean-doc
@@ -21234,22 +21266,6 @@ t:1557169904
 c:e796e88c66047ab649eb848679f89cc5ed4c6312
 D:bash libpq /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1
 p:postgresql so:postgresql-bdr:libecpg.so.6=6.6 so:postgresql-bdr:libecpg_compat.so.3=3.6 so:postgresql-bdr:libpgtypes.so.3=3.5 cmd:createlang cmd:droplang cmd:ecpg cmd:initdb cmd:pg_config cmd:pg_controldata cmd:pg_ctl cmd:pg_receivexlog cmd:pg_resetxlog cmd:postgres cmd:postmaster
-
-C:Q1FSgCPQXST1o73HsqpBQEwTxQss0=
-P:py2-avahi
-V:0.7-r1
-A:s390x
-S:5441
-I:57344
-T:Python 2 bindings for avahi
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987913
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:avahi=0.7-r1 python2
-p:py-avahi=0.7-r1
 
 C:Q1qv4JWqdus+5z484MELRu0LgWLJI=
 P:linux-firmware-cxgb3
@@ -25775,22 +25791,6 @@ t:1557597588
 c:cd3502e4357a142ec72e294d8bc82bc7bc22b639
 D:perl so:libc.musl-s390x.so.1
 
-C:Q1YUiXLnb5ZnOMSZhLPpfJd+mts2o=
-P:avahi
-V:0.7-r1
-A:s390x
-S:160406
-I:598016
-T:A multicast/unicast DNS-SD framework
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987914
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:/bin/sh so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libcap.so.2 so:libdaemon.so.0 so:libdbus-1.so.3 so:libexpat.so.1
-p:so:libavahi-core.so.7=7.0.2 cmd:avahi-daemon cmd:avahi-discover cmd:avahi-dnsconfd
-
 C:Q11EDvN+vbKca9JNqqC42W7qR9yFU=
 P:openldap-overlay-dyngroup
 V:2.4.47-r2
@@ -27964,21 +27964,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1556302085
 c:6b6a51b1195aa960f53a890259836507684eefc2
 i:docs unzip=6.0-r4
-
-C:Q1tU6i/BAIRN812tDVneYUpNIxY/c=
-P:avahi-doc
-V:0.7-r1
-A:s390x
-S:16623
-I:77824
-T:A multicast/unicast DNS-SD framework (documentation)
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987906
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-i:docs avahi=0.7-r1
 
 C:Q1/oLzOM8NvR/HDeoxBzCNfmk5E5E=
 P:py-snowballstemmer
@@ -30350,22 +30335,6 @@ c:0f6eedd5ddf96230eafe8071a8f80e2f5c164a31
 D:so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libdevmapper.so.1.02 so:libncursesw.so.6 so:libreadline.so.8 so:libuuid.so.1
 p:so:libparted-fs-resize.so.0=0.0.1 so:libparted.so.2=2.0.1 cmd:parted cmd:partprobe
 
-C:Q1viiE5CYxNwOgzNg+3BtKduQQW+8=
-P:avahi-compat-libdns_sd
-V:0.7-r1
-A:s390x
-S:14765
-I:49152
-T:Libraries for Apple Bonjour mDNSResponder compatibility
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987911
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1
-p:so:libdns_sd.so.1=1.0.0
-
 C:Q1X4GO2Ze50jPwMRorFEF1Fo32Uy8=
 P:libva-dev
 V:2.4.1-r0
@@ -30566,6 +30535,21 @@ t:1557169343
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libSDL-1.2.so.0 so:libc.musl-s390x.so.1
 p:so:libSDL_mixer-1.2.so.0=0.12.0
+
+C:Q12I1xj2WIDGPCzpmVPwOECKqMSzo=
+P:avahi-doc
+V:0.7-r2
+A:s390x
+S:16621
+I:77824
+T:A multicast/unicast DNS-SD framework (documentation)
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345725
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+i:docs avahi=0.7-r2
 
 C:Q1Zv4FRVn6Sg0HuuEAh5OkE9WyQYk=
 P:acf-lib
@@ -33208,22 +33192,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557244883
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs cdrkit=1.1.11-r2
-
-C:Q15hHIrIcGdR9Nr054c1X2UgwnTvA=
-P:avahi-tools
-V:0.7-r1
-A:s390x
-S:22767
-I:94208
-T:Command line tools for mDNS browsing and publishing
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987907
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libgdbm.so.4 so:libintl.so.8
-p:cmd:avahi-browse cmd:avahi-browse-domains cmd:avahi-publish cmd:avahi-publish-address cmd:avahi-publish-service cmd:avahi-resolve cmd:avahi-resolve-address cmd:avahi-resolve-host-name cmd:avahi-set-host-name
 
 C:Q1XpMEYYrYeXAXWj3eTpriDMM92Vg=
 P:gmp-doc
@@ -41361,6 +41329,22 @@ t:1557205750
 c:165ed7fca607c6196243385a7d2cdd1c2aef68f7
 D:cmocka=1.1.5-r0 pkgconfig
 p:pc:cmocka=1.1.5
+
+C:Q1zKtDf21f0dsS4u9PBeqv4enroTY=
+P:avahi-compat-howl
+V:0.7-r2
+A:s390x
+S:21666
+I:73728
+T:Libraries for howl compatibility
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1
+p:so:libhowl.so.0=0.0.0
 
 C:Q1W/P7o0p7auzoNBbJVrS45s3MO+g=
 P:py3-requests
@@ -53471,21 +53455,6 @@ t:1556895581
 c:228ad274b6dd232df47e251fe4ebdbe787d5a933
 D:ruby
 
-C:Q1rWlhnzsJrgdqyfk+72R3Putc/Hs=
-P:avahi-lang
-V:0.7-r1
-A:s390x
-S:138790
-I:1093632
-T:Languages for package avahi
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987912
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-i:avahi=0.7-r1 lang
-
 C:Q19ZVCaEzIGbfqgtSYNuVzpjMU+hg=
 P:xev-doc
 V:1.2.3-r0
@@ -55549,22 +55518,6 @@ t:1557212685
 c:af573d23087024d2642fc42f4109a64f7b3f69c8
 D:pkgconfig libgsasl=1.8.0-r3
 p:pc:libgsasl=1.8.0
-
-C:Q1GLt9YXBTs62g+2+FOdFnMsW8PTA=
-P:avahi-compat-howl
-V:0.7-r1
-A:s390x
-S:21681
-I:73728
-T:Libraries for howl compatibility
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987910
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1
-p:so:libhowl.so.0=0.0.0
 
 C:Q1d59y7DTF+NCMpPVYIVxh/V+CdvA=
 P:perl-convert-binhex
@@ -58239,6 +58192,22 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557225186
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-s390x.so.1 so:libpython2.7.so.1.0
+
+C:Q1wuwdfmFkhRVPUlBBob57K5/9c/A=
+P:avahi-libs
+V:0.7-r2
+A:s390x
+S:45337
+I:135168
+T:Libraries for avahi run-time use
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libintl.so.8
+p:so:libavahi-client.so.3=3.2.9 so:libavahi-common.so.3=3.5.3
 
 C:Q1c8zt6tpwkMsL15gurt4Qf4bPTGU=
 P:libfdisk
@@ -72535,6 +72504,21 @@ c:bf68d51d2a0d0616951e1f50950d87b7b7969e23
 D:so:libc.musl-s390x.so.1 so:libz.so.1
 p:so:group_file.so=0 so:libsudo_noexec.so=0 so:libsudo_util.so.0=0.0.0 so:sudoers.so=0 so:system_group.so=0 cmd:cvtsudoers cmd:sudo cmd:sudoedit cmd:sudoreplay cmd:visudo
 
+C:Q1bZ0vnA0et14C7awvf/JEDfJaiGU=
+P:avahi-lang
+V:0.7-r2
+A:s390x
+S:138760
+I:1093632
+T:Languages for package avahi
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+i:avahi=0.7-r2 lang
+
 C:Q1X4qtuc2DhvEpjIWjtu//H9P0vMU=
 P:libpciaccess-dev
 V:0.14-r0
@@ -79452,6 +79436,22 @@ t:1556968463
 c:561f7e51a6421b22a1ed7e40c559149d24cd6832
 D:cdparanoia-libs=10.2-r7
 
+C:Q1LU0bSUNtL9ZgSXE+raqmV+5rCp4=
+P:py2-avahi
+V:0.7-r2
+A:s390x
+S:5430
+I:57344
+T:Python 2 bindings for avahi
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:avahi=0.7-r2 python2
+p:py-avahi=0.7-r2
+
 C:Q1wtpuTSO59Zw9WP81d0SYbsSDezE=
 P:dialog-doc
 V:1.3.20190211-r0
@@ -80378,6 +80378,22 @@ t:1559715355
 c:5000ff06e26f8e780cec024850772451991b14d4
 D:freeradius=3.0.19-r2 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libfreeradius-eap.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.1.1 so:libtalloc.so.2
 p:freeradius3-eap=3.0.19-r2 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_leap.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient
+
+C:Q1yMHmQU8Q0/zTnW1tjBegWN2pCoE=
+P:avahi-glib
+V:0.7-r2
+A:s390x
+S:21801
+I:77824
+T:Glib libraries and GObject wrapper for avahi
+U:https://www.avahi.org/
+L:LGPL-2.0-or-later
+o:avahi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563345726
+c:02fd5297c8c53f1a397702e43b64d56f9cc574c9
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libavahi-glib.so.1=1.0.2 so:libavahi-gobject.so.0=0.0.5
 
 C:Q12FnBlOB/3g3gSUMVfSzTR6fhPp8=
 P:krb5-dev
@@ -83583,22 +83599,6 @@ t:1556980080
 c:c40cb872fd00e29521b07a5ed63347585c5392f3
 D:aspell
 p:cmd:ispell cmd:spell
-
-C:Q18QX/9ZV3mpPT4ttT314avPhx/U0=
-P:avahi-glib
-V:0.7-r1
-A:s390x
-S:21845
-I:77824
-T:Glib libraries and GObject wrapper for avahi
-U:https://www.avahi.org/
-L:LGPL-2.0-or-later
-o:avahi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556987908
-c:0c0f6f5c48a4fc84c75aa7ac7890cf23f35427a4
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libavahi-glib.so.1=1.0.2 so:libavahi-gobject.so.0=0.0.5
 
 C:Q1rzH8Iq+UcblRRTh3T9caVKvbHYw=
 P:qemu-lang
