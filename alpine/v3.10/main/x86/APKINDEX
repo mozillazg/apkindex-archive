@@ -303,22 +303,6 @@ t:1557579442
 c:31f125fa61aaf5d037787186696536be937c7c9b
 i:docs perl-crypt-openssl-rsa=0.31-r2
 
-C:Q1/tohOS77Wwpzi+BedXOQCnFlWVw=
-P:mozjs60-dev
-V:60.7.0-r0
-A:x86
-S:540615
-I:2486272
-T:standalone mozilla javascript engine (development files)
-U:https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Releases/60
-L:MPL-2.0
-o:mozjs60
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1560099967
-c:9f870494f4194c82e6cc5bdc9faa4c5fa0bf37b9
-D:icu-dev nspr-dev libffi-dev readline-dev mozjs60=60.7.0-r0 pc:nspr>=4.9.2 pkgconfig
-p:pc:mozjs-60=60.7.0 cmd:js60-config
-
 C:Q1rxQUmXmvnmKLkdKb2NxdeAE4sV0=
 P:lz4
 V:1.9.1-r0
@@ -7347,22 +7331,6 @@ D:python3
 p:cmd:futurize cmd:pasteurize
 i:py-future=0.17.1-r0 python3
 
-C:Q1jfC/LhB8NCpik/K2F2R7i9S+Ikw=
-P:mozjs60
-V:60.7.0-r0
-A:x86
-S:6129580
-I:13848576
-T:standalone mozilla javascript engine
-U:https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Releases/60
-L:MPL-2.0
-o:mozjs60
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1560099967
-c:9f870494f4194c82e6cc5bdc9faa4c5fa0bf37b9
-D:so:libc.musl-x86.so.1 so:libffi.so.6 so:libgcc_s.so.1 so:libicui18n.so.64 so:libicuuc.so.64 so:libnspr4.so so:libreadline.so.8 so:libstdc++.so.6 so:libz.so.1
-p:so:libmozjs-60.so.0=0 cmd:js60
-
 C:Q1T80v0RZrleoHJRFFnBVZCOanzi0=
 P:lua5.2-sql-postgres
 V:2.3.5-r2
@@ -8136,6 +8104,22 @@ t:1557261464
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:/bin/sh so:libc.musl-x86.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
 p:cmd:rsyslogd
+
+C:Q1jzbeM9bCru/rxtMLcABn0Cq0DR0=
+P:alpine-git-mirror-syncd
+V:0.3.1-r0
+A:x86
+S:4417
+I:49152
+T:Lua script that listens on MQTT and synchronizes Git mirrors when notified about changes
+U:https://github.com/jirutka/alpine-git-mirror-syncd
+L:MIT
+o:alpine-git-mirror-syncd
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1563636344
+c:89d08624812aeb86d863d03b7e13e66c501a9c08
+D:ca-certificates git lua5.1 lua5.1-cjson lua5.1-mosquitto
+p:cmd:git-mirror-syncd
 
 C:Q1wdJrjtZXjMZBQIFmGbppmi+I5j8=
 P:nagios-plugins-mrtg
@@ -17829,6 +17813,22 @@ t:1556719330
 c:b65c2c0c9a5606eabd0361fa4e03c981bd0f17be
 D:py-olefile
 
+C:Q1fjRhs1Y6r4y/qQfZTtM2CLLCnas=
+P:mozjs60
+V:60.7.2-r0
+A:x86
+S:6129065
+I:13848576
+T:standalone mozilla javascript engine
+U:https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Releases/60
+L:MPL-2.0
+o:mozjs60
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1563636330
+c:72af7569b6fac904d1e7365c6ecd19943759c5ef
+D:so:libc.musl-x86.so.1 so:libffi.so.6 so:libgcc_s.so.1 so:libicui18n.so.64 so:libicuuc.so.64 so:libnspr4.so so:libreadline.so.8 so:libstdc++.so.6 so:libz.so.1
+p:so:libmozjs-60.so.0=0 cmd:js60
+
 C:Q1UQDg3ueAhd/+QRNa8zJzn5lJpeg=
 P:xf86-video-savage
 V:2.3.9-r3
@@ -20884,6 +20884,22 @@ c:afdbfca33da6efdf88e383effbd4a75795ca1534
 D:py2-oauthlib py2-requests python2
 i:py-requests-oauthlib=1.0.0-r1 python2
 
+C:Q1olXAGt6x7JNwvYOSwYGKB9QIhLU=
+P:keyutils
+V:1.6-r1
+A:x86
+S:32580
+I:135168
+T:Linux Key Management Utilities
+U:http://people.redhat.com/~dhowells/keyutils/
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:keyutils
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563636343
+c:08b8bd25aaa87ed087affa15e039d4e7ffa5e3ca
+D:so:libc.musl-x86.so.1 so:libkeyutils.so.1
+p:cmd:key.dns_resolver cmd:keyctl cmd:request-key
+
 C:Q1o5OjqJQ93Rud5wkZSKv4fl1ttIY=
 P:dhcp-server-ldap
 V:4.4.1-r4
@@ -22716,6 +22732,21 @@ t:1557000134
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:ncurses-terminfo-base so:libc.musl-x86.so.1
 p:so:libformw.so.5=5.9 so:libmenuw.so.5=5.9 so:libncursesw.so.5=5.9 so:libpanelw.so.5=5.9
+
+C:Q1Ux9T9vR++8R7jWF77236x510W5E=
+P:keyutils-dev
+V:1.6-r1
+A:x86
+S:4310
+I:28672
+T:Linux Key Management Utilities (development files)
+U:http://people.redhat.com/~dhowells/keyutils/
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:keyutils
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563636342
+c:08b8bd25aaa87ed087affa15e039d4e7ffa5e3ca
+D:keyutils-libs=1.6-r1
 
 C:Q1w/3ibYoal3O1TqeGSQ4ZWvbEVhc=
 P:termrec-dev
@@ -36414,6 +36445,22 @@ c:806b209c6f9e07ef5e4543c50d564b900ab5cdd4
 D:so:libc.musl-x86.so.1 so:libdb-5.3.so so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libicui18n.so.64 so:libicuuc.so.64 so:libstdc++.so.6
 p:so:libical-glib.so.3=3.0.5 so:libical.so.3=3.0.5 so:libical_cxx.so.3=3.0.5 so:libicalss.so.3=3.0.5 so:libicalss_cxx.so.3=3.0.5 so:libicalvcal.so.3=3.0.5
 
+C:Q1ZN8W5LUDRNTxTinh7IaZlieW1/0=
+P:keyutils-libs
+V:1.6-r1
+A:x86
+S:7938
+I:36864
+T:Key utilities library
+U:http://people.redhat.com/~dhowells/keyutils/
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:keyutils
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563636343
+c:08b8bd25aaa87ed087affa15e039d4e7ffa5e3ca
+D:so:libc.musl-x86.so.1
+p:so:libkeyutils.so.1=1.8
+
 C:Q1qcYDSTLjgn/3WBtKBNwZv5c+7gw=
 P:perl-dbd-mysql
 V:4.050-r1
@@ -45322,6 +45369,22 @@ t:1557154255
 c:1dd75242af95b7d5267b8ecffc54d5b715c2b2a2
 D:apk-tools
 
+C:Q1W3noc+o9vPNs4a9wXBb9rwWsS9s=
+P:mozjs60-dev
+V:60.7.2-r0
+A:x86
+S:540728
+I:2486272
+T:standalone mozilla javascript engine (development files)
+U:https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Releases/60
+L:MPL-2.0
+o:mozjs60
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1563636330
+c:72af7569b6fac904d1e7365c6ecd19943759c5ef
+D:icu-dev nspr-dev libffi-dev readline-dev mozjs60=60.7.2-r0 pc:nspr>=4.9.2 pkgconfig
+p:pc:mozjs-60=60.7.2 cmd:js60-config
+
 C:Q1LFipExPZjPxPu39UkeyziYXFUDU=
 P:mariadb-mytop
 V:10.3.16-r0
@@ -45618,21 +45681,6 @@ t:1557246986
 c:bc1d89f01dff303b5272324190d795218d2fbf3c
 D:so:libX11.so.6 so:libc.musl-x86.so.1
 p:so:libXdamage.so.1=1.1.0
-
-C:Q1FQcVsXL4F95/yQ9dgyF9UTyOP8g=
-P:keyutils-dev
-V:1.6-r0
-A:x86
-S:4310
-I:28672
-T:Linux Key Management Utilities (development files)
-U:http://people.redhat.com/~dhowells/keyutils/
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:keyutils
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556980394
-c:31d53e1c0f3eae446c3726c7d937ffaef3933565
-D:keyutils-libs=1.6-r0
 
 C:Q1l/fj5FgTGPyBKEXdxQ7MQouixek=
 P:py-hgtools
@@ -55374,22 +55422,6 @@ t:1558961531
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
 
-C:Q1dFLCObW8sY6fzsqWN1a6PtXM/wA=
-P:keyutils-libs
-V:1.6-r0
-A:x86
-S:7941
-I:36864
-T:Key utilities library
-U:http://people.redhat.com/~dhowells/keyutils/
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:keyutils
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556980395
-c:31d53e1c0f3eae446c3726c7d937ffaef3933565
-D:so:libc.musl-x86.so.1
-p:so:libkeyutils.so.1=1.8
-
 C:Q1x/gm9zdBFfzAsZp6tXY8x4bOFSg=
 P:perl-future
 V:0.40-r0
@@ -61987,22 +62019,6 @@ t:1557037023
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
 
-C:Q1kHUECe2aPGqW8IYMl7nHZruZQww=
-P:keyutils
-V:1.6-r0
-A:x86
-S:32598
-I:135168
-T:Linux Key Management Utilities
-U:http://people.redhat.com/~dhowells/keyutils/
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:keyutils
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556980396
-c:31d53e1c0f3eae446c3726c7d937ffaef3933565
-D:so:libc.musl-x86.so.1 so:libkeyutils.so.1
-p:cmd:key.dns_resolver cmd:keyctl cmd:request-key
-
 C:Q1YYCPEaPMAPzppWia5fZUkNcuSjs=
 P:fortify-headers
 V:1.1-r0
@@ -67839,21 +67855,6 @@ c:50c742e66bdcf3ce6b2ea64b7442401bf0e701d5
 D:bacula so:libc.musl-x86.so.1 so:libmariadb.so.3
 p:so:libbaccats-mysql-9.4.3.so=0
 
-C:Q1SDMUmdQ83Nc/tWJyLxOz60Rv0NU=
-P:keyutils-doc
-V:1.6-r0
-A:x86
-S:56803
-I:180224
-T:Linux Key Management Utilities (documentation)
-U:http://people.redhat.com/~dhowells/keyutils/
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:keyutils
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556980395
-c:31d53e1c0f3eae446c3726c7d937ffaef3933565
-i:docs keyutils=1.6-r0
-
 C:Q1emJohi1q9H1wXu26BJaTqamocsw=
 P:fontconfig-dev
 V:2.13.1-r0
@@ -71730,6 +71731,21 @@ o:btrfs-progs
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560337597
 c:bc73b4387fe2340ab9e3ffd3736ef836b87ca2fc
+
+C:Q18W6GIXYbnBU5QCO5yWEuBZwGXLo=
+P:keyutils-doc
+V:1.6-r1
+A:x86
+S:56761
+I:180224
+T:Linux Key Management Utilities (documentation)
+U:http://people.redhat.com/~dhowells/keyutils/
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:keyutils
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563636343
+c:08b8bd25aaa87ed087affa15e039d4e7ffa5e3ca
+i:docs keyutils=1.6-r1
 
 C:Q1g+Oae/VsAExsTZtorA+DUCHCqbw=
 P:fftw-double-libs
@@ -78855,22 +78871,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557579486
 c:740134a27403d8640c25df59f41f96c91e545da5
 D:so:libc.musl-x86.so.1
-
-C:Q11qsfkietc7U3okbehFxQjQBNu9M=
-P:alpine-git-mirror-syncd
-V:0.3.0-r0
-A:x86
-S:4406
-I:45056
-T:Lua script that listens on MQTT and synchronizes Git mirrors when notified about changes
-U:https://github.com/jirutka/alpine-git-mirror-syncd
-L:MIT
-o:alpine-git-mirror-syncd
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1557063292
-c:a669363bc4104f929ddfe059a31e2566dff74027
-D:ca-certificates git lua5.1 lua5.1-cjson lua5.1-mosquitto
-p:cmd:git-mirror-syncd
 
 C:Q1eWcbGKVDKLKbdabeIUF/+clkt6Y=
 P:lua5.2-lzlib
