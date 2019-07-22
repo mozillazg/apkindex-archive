@@ -403,6 +403,22 @@ c:660eb0418cf27c047c3b58a6661d29bce7a258c5
 D:so:libc.musl-aarch64.so.1
 p:cmd:dhcpcd
 
+C:Q10M+EZcXV3l121m28LWkv08qf3io=
+P:polkit
+V:0.105-r9
+A:aarch64
+S:112898
+I:548864
+T:Application development toolkit for controlling system-wide privileges
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792499
+c:982c3b6a30eca5ff7cf8d069f774084391a699dc
+D:so:libc.musl-aarch64.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
+
 C:Q1Ak5h7q3aLvjKDrspAS1221yXE8o=
 P:icu
 V:59.1-r1
@@ -747,6 +763,21 @@ t:1509180450
 c:a53f414ea86477a8592aca0843b7fcd9ab60ab2b
 D:so:libc.musl-aarch64.so.1
 p:cmd:json_reformat cmd:json_verify
+
+C:Q1lFAJViFyj5w6KrOU7KQX2FappN8=
+P:libjpeg-turbo-doc
+V:1.5.3-r3
+A:aarch64
+S:119780
+I:385024
+T:accelerated baseline JPEG compression and decompression library (documentation)
+U:http://libjpeg-turbo.virtualgl.org/
+L:GPL
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792652
+c:39308e8b51397113cb0b9426f3bce50e289e896e
+i:docs libjpeg-turbo=1.5.3-r3
 
 C:Q1Zi6mMI9dZVyrCYE6X6j53VbEiq4=
 P:perl-data-ical-doc
@@ -1270,22 +1301,6 @@ o:musl
 m:Timo Teräs <timo.teras@iki.fi>
 t:1518035861
 c:944a45f26d02bb803737af70cf5f012194796146
-
-C:Q1lgSuwMn92XyxVxUBzYYTkQ8xD6U=
-P:polkit-dev
-V:0.105-r8
-A:aarch64
-S:35115
-I:446464
-T:Application development toolkit for controlling system-wide privileges (development files)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1551781354
-c:0b52876162f2412968ff130fbb6ab254a1afad01
-D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r8
-p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
 
 C:Q12naH4369VYPpBIu2QUioB6VjSBg=
 P:perl-mime-types-doc
@@ -6010,6 +6025,22 @@ c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl-mailtools perl-net-snpp perl-device-serialport perl-dbi perl-sys-hostname-long perl-test-mockobject
 p:cmd:email2page cmd:sendmail2snpp cmd:sendpage cmd:sendpage-db cmd:snpp
 
+C:Q1Z9FZflM852VdHd6iwat3j8+TsBw=
+P:mercurial
+V:4.5.2-r1
+A:aarch64
+S:3546350
+I:12820480
+T:A scalable distributed SCM tool
+U:https://www.mercurial-scm.org/
+L:GPL2+
+o:mercurial
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792069
+c:87765f5b665bb32c812b026658f7b2fdc4d1c816
+D:so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
+p:cmd:hg cmd:hgeditor cmd:hgk
+
 C:Q1GYJRkcSYB3thrNG150utPnJjyu8=
 P:perl-role-basic-doc
 V:0.13-r0
@@ -6376,6 +6407,21 @@ t:1509145048
 c:864c9abace01d8d3bc554e662a52bd70b78eef9d
 i:docs libxrandr=1.5.1-r1
 
+C:Q1Z84Ck2AwgLTfbT2DCO62Qhao2Y0=
+P:mercurial-zsh-completion
+V:4.5.2-r1
+A:aarch64
+S:11995
+I:65536
+T:Zsh completions for mercurial
+U:https://www.mercurial-scm.org/
+L:GPL2+
+o:mercurial
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792068
+c:87765f5b665bb32c812b026658f7b2fdc4d1c816
+i:mercurial=4.5.2-r1 zsh
+
 C:Q1ePN3KiTjfCgwbs9SzSYH/ZxQ1DA=
 P:qemu-alpha
 V:2.10.1-r3
@@ -6419,22 +6465,6 @@ o:perl-file-slurp
 m:Timo Teräs <timo.teras@iki.fi>
 t:1509159676
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
-
-C:Q13kBU5lgk2cl+2mfdA/DE9wGGZQA=
-P:libjpeg-turbo-utils
-V:1.5.3-r2
-A:aarch64
-S:57212
-I:176128
-T:Utilities for manipulating JPEG images
-U:http://libjpeg-turbo.virtualgl.org/
-L:GPL
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1537879760
-c:01568379c03fee752d2d2db8bf4f352c547192a8
-D:so:libc.musl-aarch64.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
-p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
 
 C:Q1nnoawV2Fmk5+kGO1RiNrRKhFd5E=
 P:attr-doc
@@ -7719,6 +7749,22 @@ c:7e49fb6d7a1acceae74c684646afcb58270b2988
 D:openrc=0.24.1-r4 pkgconfig
 p:pc:einfo=0.24.1 pc:openrc=0.24.1
 
+C:Q1REshcZEWUx2u/A64EHCYy1e2Zuw=
+P:libjpeg-turbo
+V:1.5.3-r3
+A:aarch64
+S:203231
+I:479232
+T:accelerated baseline JPEG compression and decompression library
+U:http://libjpeg-turbo.virtualgl.org/
+L:GPL
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792653
+c:39308e8b51397113cb0b9426f3bce50e289e896e
+D:so:libc.musl-aarch64.so.1
+p:so:libjpeg.so.8=8.1.2 so:libturbojpeg.so.0=0.1.0
+
 C:Q1FgEejSo/Mpxh2NQ/dZinsPlwRB4=
 P:pkgconf
 V:1.3.10-r0
@@ -7993,6 +8039,21 @@ t:1510258452
 c:287a2cf8bd89e566363066eb67b6caa737bf94d7
 D:python2 libevent=2.1.8-r2 pkgconfig
 p:cmd:event_rpcgen.py
+
+C:Q1FUBwVDbma/6j67bYc8eZz/PfL1Q=
+P:mercurial-doc
+V:4.5.2-r1
+A:aarch64
+S:154333
+I:188416
+T:A scalable distributed SCM tool (documentation)
+U:https://www.mercurial-scm.org/
+L:GPL2+
+o:mercurial
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792068
+c:87765f5b665bb32c812b026658f7b2fdc4d1c816
+i:docs mercurial=4.5.2-r1
 
 C:Q1h/ICcIhNQ7HhgWHvsUDArtafGnc=
 P:sysklogd-doc
@@ -9140,22 +9201,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509453975
 c:8593a9a22b4517146c16208e0c9ee1382a0cb997
 i:docs perl-list-allutils=0.14-r0
-
-C:Q1Sy5voGl8xMazwmyqME7CwfgosZA=
-P:mercurial
-V:4.5.2-r0
-A:aarch64
-S:3547099
-I:12816384
-T:A scalable distributed SCM tool
-U:https://www.mercurial-scm.org/
-L:GPL2+
-o:mercurial
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1532937216
-c:1e8949049413dd8713037a019c1d834ed4c00aba
-D:so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
-p:cmd:hg cmd:hgeditor cmd:hgk
 
 C:Q1XOjuWunhfwRT6sHTB0TLNkYo1QA=
 P:uwsgi-pty
@@ -11285,6 +11330,21 @@ t:1509200357
 c:7cc8e9775b2ac057396105d645d0b28cc9cc3578
 D:!inotify-tools-inc so:libc.musl-aarch64.so.1
 p:so:libinotifytools.so.0=0.4.1 cmd:inotifywait cmd:inotifywatch
+
+C:Q1ckkkyYt5NP/3gVwxo6v1n9+um3w=
+P:mercurial-bash-completion
+V:4.5.2-r1
+A:aarch64
+S:5231
+I:36864
+T:Bash completions for mercurial
+U:https://www.mercurial-scm.org/
+L:GPL2+
+o:mercurial
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792068
+c:87765f5b665bb32c812b026658f7b2fdc4d1c816
+i:mercurial=4.5.2-r1 bash-completion
 
 C:Q1QwVK528NcVhdfb/rJIL6VwvWq/0=
 P:collectd-ascent
@@ -14160,21 +14220,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1531901038
 c:98215e479882b7bbf540e8afb166a2b5c3504ed8
 i:docs znc=1.7.1-r0
-
-C:Q18GHLnoSpyBsakOE2M9D12UOZ5Ps=
-P:mercurial-zsh-completion
-V:4.5.2-r0
-A:aarch64
-S:11993
-I:65536
-T:Zsh completions for mercurial
-U:https://www.mercurial-scm.org/
-L:GPL2+
-o:mercurial
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1532937215
-c:1e8949049413dd8713037a019c1d834ed4c00aba
-i:mercurial=4.5.2-r0 zsh
 
 C:Q1Yp0mBhHTbeOFr1rTwLw986a8YDU=
 P:abiword-plugin-hrtext
@@ -18011,21 +18056,6 @@ t:1509174778
 c:3599c997e74f8d103ac2728a6b6453880dc92baa
 D:so:libc.musl-aarch64.so.1
 
-C:Q17hEL2AHJXKZmL3ntXquD0ocx1jw=
-P:mercurial-vim
-V:4.5.2-r0
-A:aarch64
-S:2622
-I:32768
-T:Vim syntax for mercurial
-U:https://www.mercurial-scm.org/
-L:GPL2+
-o:mercurial
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1532937215
-c:1e8949049413dd8713037a019c1d834ed4c00aba
-i:vim mercurial=4.5.2-r0
-
 C:Q1wA6LKjwRjz4R2B0oQ632RE6wV9M=
 P:thunar-vcs-plugin-lang
 V:0.1.4-r6
@@ -19147,21 +19177,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1509198543
 c:16e6a80e21e75bf61c4a1a738133a1425848d300
 i:docs perl-net-telnet=3.04-r0
-
-C:Q1WLr7ncznSLgPiwJqm32Xqyk8ZrA=
-P:libjpeg-turbo-doc
-V:1.5.3-r2
-A:aarch64
-S:119829
-I:385024
-T:accelerated baseline JPEG compression and decompression library (documentation)
-U:http://libjpeg-turbo.virtualgl.org/
-L:GPL
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1537879760
-c:01568379c03fee752d2d2db8bf4f352c547192a8
-i:docs libjpeg-turbo=1.5.3-r2
 
 C:Q1Cy4nMe6rgK76O4BFX66Y60G4M1U=
 P:live-media-utils
@@ -20645,21 +20660,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1509181249
 c:6147b03e609db7876138e776d8057f97eae9ecc2
 i:docs perl-test-harness=3.39-r0
-
-C:Q1xgStIE+C4uq6pZjEqLabLSZ6dF0=
-P:mercurial-doc
-V:4.5.2-r0
-A:aarch64
-S:154346
-I:188416
-T:A scalable distributed SCM tool (documentation)
-U:https://www.mercurial-scm.org/
-L:GPL2+
-o:mercurial
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1532937214
-c:1e8949049413dd8713037a019c1d834ed4c00aba
-i:docs mercurial=4.5.2-r0
 
 C:Q1TFmw8Gkc8eMdCMy69HhkaSoV/W0=
 P:dropbear-ssh
@@ -22769,6 +22769,22 @@ t:1510922877
 c:957c515e9347dda1a578ec63007a5ebe729762cb
 D:so:libc.musl-aarch64.so.1 so:libpam.so.0 so:libpam_misc.so.0
 p:cmd:vlock
+
+C:Q1rjLVy3DLayJ9qrh5+/m9IRniwJA=
+P:polkit-dev
+V:0.105-r9
+A:aarch64
+S:35118
+I:446464
+T:Application development toolkit for controlling system-wide privileges (development files)
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792498
+c:982c3b6a30eca5ff7cf8d069f774084391a699dc
+D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r9
+p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
 
 C:Q1rxxxr5FkBsNPv0lryxMuLBhemYY=
 P:libxext-dev
@@ -32268,6 +32284,21 @@ t:1509197681
 c:41284ba64ec535489c59d070762813f11fb6871c
 D:rpcbind
 
+C:Q1wtEgarSIYFqyjTucO5GVrKdVwDg=
+P:polkit-lang
+V:0.105-r9
+A:aarch64
+S:2180
+I:28672
+T:Languages for package polkit
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792499
+c:982c3b6a30eca5ff7cf8d069f774084391a699dc
+i:polkit=0.105-r9 lang
+
 C:Q1M7rjJzxZf1BM9veJCZWkMT1RXYs=
 P:perl-test2-plugin-nowarnings
 V:0.06-r0
@@ -38248,21 +38279,6 @@ c:7d41594eb73a867e822e96bc884dee1865cd7e97
 D:so:libc.musl-aarch64.so.1
 p:cmd:mail
 
-C:Q1fRBdkC6baMjqryknBY8cu2o9zRs=
-P:mercurial-bash-completion
-V:4.5.2-r0
-A:aarch64
-S:5230
-I:36864
-T:Bash completions for mercurial
-U:https://www.mercurial-scm.org/
-L:GPL2+
-o:mercurial
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1532937215
-c:1e8949049413dd8713037a019c1d834ed4c00aba
-i:mercurial=4.5.2-r0 bash-completion
-
 C:Q1L1nkxQwBE1xpX8DH5VpWc2ZAgCA=
 P:cmake
 V:3.9.5-r0
@@ -40821,22 +40837,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1509124747
 c:ae1f4c098467a4071d568bb0268eef3b4a617f88
 
-C:Q1FO0Qsw79CfP/TMdxf7uuJsYrT/A=
-P:polkit
-V:0.105-r8
-A:aarch64
-S:112910
-I:548864
-T:Application development toolkit for controlling system-wide privileges
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1551781354
-c:0b52876162f2412968ff130fbb6ab254a1afad01
-D:so:libc.musl-aarch64.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
-
 C:Q1xDekEDQn3nAHA7uAAjkKh+DC750=
 P:xf86-video-chips
 V:1.2.7-r0
@@ -41206,6 +41206,22 @@ c:1697a0c40bf4b94de03afba1d558ac2095c6dbcc
 D:scanelf so:libc.musl-aarch64.so.1 so:libcap.so.2
 p:cmd:dumpelf cmd:pspax cmd:scanmacho cmd:symtree
 
+C:Q1G0fnqLaGnXP0FFZ7cVp7ZECfWks=
+P:libjpeg-turbo-dev
+V:1.5.3-r3
+A:aarch64
+S:285718
+I:905216
+T:accelerated baseline JPEG compression and decompression library (development files)
+U:http://libjpeg-turbo.virtualgl.org/
+L:GPL
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792653
+c:39308e8b51397113cb0b9426f3bce50e289e896e
+D:libjpeg-turbo=1.5.3-r3 pkgconfig
+p:pc:libjpeg=1.5.3 pc:libturbojpeg=1.5.3
+
 C:Q1sG6S9E5bT41faVbDa+zS1XMyUWQ=
 P:vanessa_socket-dev
 V:0.0.13-r0
@@ -41531,6 +41547,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1522160560
 c:1adc3a18674f8f49b8e6adb30f0ff2afd8f78969
 D:uwsgi so:libc.musl-aarch64.so.1
+
+C:Q1gfoIhcEDfvH64WsGipeAsEtLPoI=
+P:mercurial-vim
+V:4.5.2-r1
+A:aarch64
+S:2605
+I:32768
+T:Vim syntax for mercurial
+U:https://www.mercurial-scm.org/
+L:GPL2+
+o:mercurial
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792068
+c:87765f5b665bb32c812b026658f7b2fdc4d1c816
+i:vim mercurial=4.5.2-r1
 
 C:Q1RIMXH0LASzcRfhJSuhJUtfz2a8M=
 P:libxkbcommon-dev
@@ -42500,21 +42531,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1509165218
 c:c18b35140d6160530980ddae341d9aa45fe118fa
 D:python2 so:libc.musl-aarch64.so.1 so:libpython2.7.so.1.0
-
-C:Q1TX0FZaRVucPQEd+2mY1RRBs2fsg=
-P:polkit-lang
-V:0.105-r8
-A:aarch64
-S:2184
-I:28672
-T:Languages for package polkit
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1551781354
-c:0b52876162f2412968ff130fbb6ab254a1afad01
-i:polkit=0.105-r8 lang
 
 C:Q1AY1ZX4ERXuE2IheknZfabHdfuPM=
 P:bitlbee
@@ -45611,22 +45627,6 @@ o:lua-feedparser
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1509173314
 c:449f35b3f52623ea72318090470be8eb70e991a2
-
-C:Q15wMKcjuYDB/LfD53EZC5Ll2kzmk=
-P:libjpeg-turbo-dev
-V:1.5.3-r2
-A:aarch64
-S:285747
-I:905216
-T:accelerated baseline JPEG compression and decompression library (development files)
-U:http://libjpeg-turbo.virtualgl.org/
-L:GPL
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1537879760
-c:01568379c03fee752d2d2db8bf4f352c547192a8
-D:libjpeg-turbo=1.5.3-r2 pkgconfig
-p:pc:libjpeg=1.5.3 pc:libturbojpeg=1.5.3
 
 C:Q1uN8IyKZrgwkDU0Qbxrnmzp/GRTE=
 P:py2-flask-oauthlib
@@ -55014,22 +55014,6 @@ t:1509194439
 c:18c2bfa54bf603c41225d2c3f1c1ad3f695255e0
 D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:unrar
-
-C:Q1KC75oPwFPbtNgqstImCChkfuUdc=
-P:libjpeg-turbo
-V:1.5.3-r2
-A:aarch64
-S:203240
-I:479232
-T:accelerated baseline JPEG compression and decompression library
-U:http://libjpeg-turbo.virtualgl.org/
-L:GPL
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1537879760
-c:01568379c03fee752d2d2db8bf4f352c547192a8
-D:so:libc.musl-aarch64.so.1
-p:so:libjpeg.so.8=8.1.2 so:libturbojpeg.so.0=0.1.0
 
 C:Q1jMboy5bK/AJHPLpecA/FeoIXyoI=
 P:cpufrequtils-doc
@@ -66872,6 +66856,22 @@ t:1509167529
 c:9c6ea25636eb5c3d3297951eed8c17cdfec8178a
 i:libxfce4util=4.12.1-r4 lang
 
+C:Q107bFQ2sOt0p6a/71URcxYw74u6o=
+P:libjpeg-turbo-utils
+V:1.5.3-r3
+A:aarch64
+S:57314
+I:176128
+T:Utilities for manipulating JPEG images
+U:http://libjpeg-turbo.virtualgl.org/
+L:GPL
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792653
+c:39308e8b51397113cb0b9426f3bce50e289e896e
+D:so:libc.musl-aarch64.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
+p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
+
 C:Q112ERba/bHah/E6N69vvYvwWNWpk=
 P:lua-posix-doc
 V:33.4.0-r0
@@ -73139,21 +73139,6 @@ t:1509130553
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl perl-test-simple
 
-C:Q1E6DQNwFie05ROBq1a/vBh6EtbJ8=
-P:polkit-doc
-V:0.105-r8
-A:aarch64
-S:19989
-I:61440
-T:Application development toolkit for controlling system-wide privileges (documentation)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1551781354
-c:0b52876162f2412968ff130fbb6ab254a1afad01
-i:docs polkit=0.105-r8
-
 C:Q1Q8bWSbZ+vZSMQfuisM1HdLc3Yi8=
 P:perl-gd-doc
 V:2.67-r0
@@ -73837,6 +73822,21 @@ t:1509635733
 c:b67e362240cc8a8fe7e0798a51c79fc164dcbaea
 D:so:libX11.so.6 so:libc.musl-aarch64.so.1 so:libgdk-x11-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
 p:so:libkeybinder.so.0=0.1.0
+
+C:Q1tzuWVMEu1Q7V8OpBoA74TYOkqzc=
+P:polkit-doc
+V:0.105-r9
+A:aarch64
+S:20033
+I:61440
+T:Application development toolkit for controlling system-wide privileges (documentation)
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563792499
+c:982c3b6a30eca5ff7cf8d069f774084391a699dc
+i:docs polkit=0.105-r9
 
 C:Q16gORYv0GC76poV0+19VHjNm4ulY=
 P:clutter-dev
