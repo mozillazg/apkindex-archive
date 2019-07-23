@@ -412,6 +412,22 @@ c:dd592906931a0d72d098e6385832a370bbb221c2
 D:samba-common=4.7.6-r3 samba-server=4.7.6-r3 samba-winbind=4.7.6-r3 py-samba=4.7.6-r3 so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-x86_64.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-credentials-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.1 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
 p:so:libsmbpasswdparser-samba4.so=0 cmd:samba cmd:samba-tool cmd:samba_dnsupdate cmd:samba_kcc cmd:samba_spnupdate cmd:samba_upgradedns
 
+C:Q1/6DZ+8p15A09QCHPsg5MBKo2yoA=
+P:zeromq-dev
+V:4.2.5-r1
+A:x86_64
+S:378474
+I:1769472
+T:The ZeroMQ messaging library and tools (development files)
+U:http://www.zeromq.org/
+L:LGPLv3+ with exceptions
+o:zeromq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563908216
+c:cea68283f6fb219e133352b64b4e2f39cc002604
+D:libzmq=4.2.5-r1 pkgconfig
+p:pc:libzmq=4.2.5
+
 C:Q1QcXkMg24jOmLe10HElYTc3Er1wQ=
 P:upower
 V:0.99.6-r0
@@ -1551,22 +1567,6 @@ t:1509491018
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:pkgconfig
 p:pc:pm-utils=1.4.1
-
-C:Q16p5PNBOaYP3i+DMlrDM/8irv6oU=
-P:zeromq
-V:4.2.5-r0
-A:x86_64
-S:3540
-I:24576
-T:The ZeroMQ messaging library and tools
-U:http://www.zeromq.org/
-L:LGPLv3+ with exceptions
-o:zeromq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549279390
-c:9ee02b0dc1aa3d52466d89e31d5dcfc346ffed8b
-D:so:libc.musl-x86_64.so.1 so:libzmq.so.5
-p:cmd:curve_keygen
 
 C:Q1S6a11NjzjzdA7EZvX1cdMsFAJHA=
 P:lua5.1-libs
@@ -8045,6 +8045,22 @@ t:1509494181
 c:cecf6595e2b48c42853e36a3b59c087812b5f737
 D:libguess=1.2-r0 pkgconfig
 p:pc:libguess=1.2
+
+C:Q1O88LW4tn4DsmA05H4am8zz0QkDk=
+P:libzmq
+V:4.2.5-r1
+A:x86_64
+S:181297
+I:450560
+T:The ZeroMQ messaging library and tools (libraries)
+U:http://www.zeromq.org/
+L:LGPLv3+ with exceptions
+o:zeromq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563908217
+c:cea68283f6fb219e133352b64b4e2f39cc002604
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libsodium.so.23 so:libstdc++.so.6
+p:so:libzmq.so.5=5.1.5
 
 C:Q1HBPG1xKB2PaR3Uy2FZsSy+kyjIc=
 P:lua5.3-stringy
@@ -15397,22 +15413,6 @@ t:1548491443
 c:5cfdd452b362cbbfe18efc625b108a7e89d86765
 D:krb5-conf so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.11 so:libkdb5.so.8 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
 p:so:libkdb_ldap.so.1=1.0
-
-C:Q1NihFHvF2kWAkD1lZAVMF+YQCeMY=
-P:zeromq-dev
-V:4.2.5-r0
-A:x86_64
-S:378471
-I:1765376
-T:The ZeroMQ messaging library and tools (development files)
-U:http://www.zeromq.org/
-L:LGPLv3+ with exceptions
-o:zeromq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549279389
-c:9ee02b0dc1aa3d52466d89e31d5dcfc346ffed8b
-D:libzmq=4.2.5-r0 pkgconfig
-p:pc:libzmq=4.2.5
 
 C:Q1d/R9BGxCKVxlbyh9+DAAmhXvzQI=
 P:lua5.3-feedparser
@@ -34642,6 +34642,22 @@ c:de2552b0dd8fbf08fa3872414d578f2fc17bdc34
 D:jasper-libs=2.0.14-r0 pkgconfig
 p:pc:jasper=2.0.14
 
+C:Q1d8JQpwWBzZrWrdKQhQCA8gNijSY=
+P:zeromq
+V:4.2.5-r1
+A:x86_64
+S:3533
+I:24576
+T:The ZeroMQ messaging library and tools
+U:http://www.zeromq.org/
+L:LGPLv3+ with exceptions
+o:zeromq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563908217
+c:cea68283f6fb219e133352b64b4e2f39cc002604
+D:so:libc.musl-x86_64.so.1 so:libzmq.so.5
+p:cmd:curve_keygen
+
 C:Q1OXtp0vYaU/VqpqkuCA5i/964Lzg=
 P:xf86-video-s3virge-doc
 V:1.10.7-r1
@@ -44868,21 +44884,6 @@ t:1522154657
 c:1adc3a18674f8f49b8e6adb30f0ff2afd8f78969
 D:uwsgi so:libc.musl-x86_64.so.1
 
-C:Q1iVFv7RxDWxYI/gVR5ZvyYjgfrp4=
-P:patch-doc
-V:2.7.5-r2
-A:x86_64
-S:13505
-I:32768
-T:Utility to apply diffs to files (documentation)
-U:https://www.gnu.org/software/patch/patch.html
-L:GPL
-o:patch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1519825694
-c:4310bf3835fa8fd644da776342ec67e394bebd8b
-i:docs patch=2.7.5-r2
-
 C:Q1mr1ljB12p3WZ9QC8zFtuZcf0Xag=
 P:libsecret-dev
 V:0.18.5-r0
@@ -52992,6 +52993,21 @@ c:d5d7f497cf3800dc58b5190c9f3790d6576700cd
 D:python2 so:libc.musl-x86_64.so.1 so:libpython2.7.so.1.0
 i:py-zope-interface=4.3.2-r1 python2
 
+C:Q1mAj3E3Cwiou/VpO8c/GrK2pb/7I=
+P:zeromq-doc
+V:4.2.5-r1
+A:x86_64
+S:130312
+I:307200
+T:The ZeroMQ messaging library and tools (documentation)
+U:http://www.zeromq.org/
+L:LGPLv3+ with exceptions
+o:zeromq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563908217
+c:cea68283f6fb219e133352b64b4e2f39cc002604
+i:docs zeromq=4.2.5-r1
+
 C:Q1emGm4Cb6Sp1XbJBjq6mtn85uLdo=
 P:py-werkzeug
 V:0.11.15-r2
@@ -55824,22 +55840,6 @@ o:asterisk
 m:Timo Teras <timo.teras@iki.fi>
 t:1537795342
 c:678e9f64046d21ee8e24ddd43a7f1e6bdf149b06
-
-C:Q1irGId/cmAU3o3/E2iTdBSuiSmr0=
-P:patch
-V:2.7.5-r2
-A:x86_64
-S:72848
-I:159744
-T:Utility to apply diffs to files
-U:https://www.gnu.org/software/patch/patch.html
-L:GPL
-o:patch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1519825694
-c:4310bf3835fa8fd644da776342ec67e394bebd8b
-D:so:libc.musl-x86_64.so.1
-p:cmd:patch
 
 C:Q1XJA1MbmkNXP4uv2BWs8i00VD438=
 P:cyrus-sasl-gssapi
@@ -66527,6 +66527,22 @@ t:1510068298
 c:fd88daf468cf586a7d98d721cbe5197add0d2e6b
 D:acf-core clamav
 
+C:Q1wb83yjfD1Q8ihdJs6tnU92cTDj0=
+P:patch
+V:2.7.5-r3
+A:x86_64
+S:73990
+I:159744
+T:Utility to apply diffs to files
+U:https://www.gnu.org/software/patch/patch.html
+L:GPL
+o:patch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563906801
+c:1d883b90c2617f701a473458f6bea95c5488513b
+D:so:libc.musl-x86_64.so.1
+p:cmd:patch
+
 C:Q1chpxx2qLH7EZJgnvGN8zkn0xD78=
 P:ssmtp
 V:2.64-r12
@@ -72086,21 +72102,6 @@ m:Natanael Copa <ncopa@alpinlinux.org>
 t:1509480076
 c:e3b247c49a79b8a03d70ad32b89ba93dd69e6534
 i:lua5.2 lua-alt-getopt=0.7-r8
-
-C:Q1tM7cwxzPlkDOQD1L2HGv4nxT0j0=
-P:zeromq-doc
-V:4.2.5-r0
-A:x86_64
-S:130358
-I:307200
-T:The ZeroMQ messaging library and tools (documentation)
-U:http://www.zeromq.org/
-L:LGPLv3+ with exceptions
-o:zeromq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549279390
-c:9ee02b0dc1aa3d52466d89e31d5dcfc346ffed8b
-i:docs zeromq=4.2.5-r0
 
 C:Q1tYKRZksGQWZ7U6NLs8XAOOO+phk=
 P:libev-dev
@@ -78441,22 +78442,6 @@ c:25cda9a81dc32280916a50e8f2e00120e189323f
 D:lua5.3 lua5.3-libs=5.3.5-r2 pkgconfig
 p:pc:lua5.3=5.3.5
 
-C:Q1u1LuSIbP3E7XJ7BIxh1q3l+e79s=
-P:libzmq
-V:4.2.5-r0
-A:x86_64
-S:181270
-I:450560
-T:The ZeroMQ messaging library and tools (libraries)
-U:http://www.zeromq.org/
-L:LGPLv3+ with exceptions
-o:zeromq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549279390
-c:9ee02b0dc1aa3d52466d89e31d5dcfc346ffed8b
-D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libsodium.so.23 so:libstdc++.so.6
-p:so:libzmq.so.5=5.1.5
-
 C:Q1jG7UMD7KSo13m1kQXHwTA5cxYa0=
 P:perl-switch
 V:2.17-r0
@@ -81316,6 +81301,21 @@ m:Lucas Ramage <ramage.lucas@openmailbox.org>
 t:1510573048
 c:82f0232422801814719b13b5423812ce62f850c7
 D:bash
+
+C:Q1K32y6aQuX1/lmf83BOin/SYg9VU=
+P:patch-doc
+V:2.7.5-r3
+A:x86_64
+S:13518
+I:32768
+T:Utility to apply diffs to files (documentation)
+U:https://www.gnu.org/software/patch/patch.html
+L:GPL
+o:patch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1563906800
+c:1d883b90c2617f701a473458f6bea95c5488513b
+i:docs patch=2.7.5-r3
 
 C:Q1rj9E6Z/VyRDzBDAyZx+l5cNi9QM=
 P:perl-cpan-meta-check
