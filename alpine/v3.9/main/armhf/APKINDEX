@@ -21695,21 +21695,6 @@ c:065f2876051f76809327b30c47239ed3b8db0bd5
 D:freeradius=3.0.17-r5 so:libc.musl-armhf.so.1
 p:freeradius3-sql=3.0.17-r5 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
 
-C:Q1SvGuLBNTdU9py34gxFhqc2fU8AQ=
-P:libgcrypt-doc
-V:1.8.4-r0
-A:armhf
-S:84580
-I:364544
-T:general purpose crypto library based on the code used in GnuPG (documentation)
-U:http://www.gnupg.org
-L:LGPL
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545905001
-c:d5087fccbdde2cf853b89a43b07658fc56465f62
-i:docs libgcrypt=1.8.4-r0
-
 C:Q1XRALjcrDc49/ZtOMVvH0UjWv8rs=
 P:bind-libs
 V:9.12.4_p2-r0
@@ -50869,22 +50854,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-armhf.so.1 so:libvanessa_logger.so.0
 p:so:libvanessa_adt.so.1=1.0.0
 
-C:Q1+m6WdNfSSzx0q17B5BiCLPDOxGs=
-P:libgcrypt-dev
-V:1.8.4-r0
-A:armhf
-S:22873
-I:114688
-T:general purpose crypto library based on the code used in GnuPG (development files)
-U:http://www.gnupg.org
-L:LGPL
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545905001
-c:d5087fccbdde2cf853b89a43b07658fc56465f62
-D:libgpg-error-dev libgcrypt=1.8.4-r0
-p:cmd:libgcrypt-config
-
 C:Q13zRA4zpkOMM14OUQPRssqPZvQr0=
 P:mini_httpd
 V:1.29-r2
@@ -69262,6 +69231,22 @@ c:d2fdf5fecb22ebf5afc7b32258330f17b8e9a949
 D:fuse3=3.2.6-r1 pkgconfig
 p:pc:fuse3=3.2.6
 
+C:Q1hdRXLrSU4pDw/RQGHRBTANinhHs=
+P:libgcrypt
+V:1.8.4-r1
+A:armhf
+S:370085
+I:749568
+T:general purpose crypto library based on the code used in GnuPG
+U:http://www.gnupg.org
+L:LGPL
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1564328026
+c:5b4846da350aac758d8d91420167fd99e33bcdea
+D:so:libc.musl-armhf.so.1 so:libgpg-error.so.0
+p:so:libgcrypt.so.20=20.2.4 cmd:dumpsexp cmd:hmac256 cmd:mpicalc
+
 C:Q1JqZLjE85g4fE+4BwGavg6qqo2XU=
 P:py3-lxc
 V:3.0.3-r0
@@ -77480,22 +77465,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:rtnppd so:libc.musl-armhf.so.1 so:libpq.so.5
 p:cmd:rtapd cmd:vsnppd
 
-C:Q1cezI+9H3BfEHYA/2psRQMlhPOU4=
-P:libgcrypt
-V:1.8.4-r0
-A:armhf
-S:369946
-I:753664
-T:general purpose crypto library based on the code used in GnuPG
-U:http://www.gnupg.org
-L:LGPL
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545905001
-c:d5087fccbdde2cf853b89a43b07658fc56465f62
-D:so:libc.musl-armhf.so.1 so:libgpg-error.so.0
-p:so:libgcrypt.so.20=20.2.4 cmd:dumpsexp cmd:hmac256 cmd:mpicalc
-
 C:Q1Ua9rUsliXgH0PUd2rjhYpiO1Y0I=
 P:linux-firmware-edgeport
 V:20190322-r0
@@ -80363,6 +80332,21 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1545216727
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl-list-moreutils perl-sub-install perl-params-util perl-test-fatal perl-test-requires perl-package-stash perl-test-warnings perl-sub-name
+
+C:Q1JdXjM8w3VLj+Ya2Nf6HZOIIqRQc=
+P:libgcrypt-doc
+V:1.8.4-r1
+A:armhf
+S:84571
+I:364544
+T:general purpose crypto library based on the code used in GnuPG (documentation)
+U:http://www.gnupg.org
+L:LGPL
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1564328026
+c:5b4846da350aac758d8d91420167fd99e33bcdea
+i:docs libgcrypt=1.8.4-r1
 
 C:Q1VmvpjyaPO1/cHnMftSxT03GjibM=
 P:json-glib-doc
@@ -83573,6 +83557,22 @@ t:1545305926
 c:2a2572492cc0207aaf0dded092ae8df1ad85dd22
 D:findmnt so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1 so:libuuid.so.1 so:libz.so.1
 p:cmd:addpart cmd:agetty cmd:blkdiscard cmd:blkzone cmd:blockdev cmd:cal cmd:chcpu cmd:chmem cmd:choom cmd:chrt cmd:col cmd:colcrt cmd:colrm cmd:column cmd:ctrlaltdel cmd:delpart cmd:dmesg cmd:eject cmd:fallocate cmd:fdformat cmd:fdisk cmd:fincore cmd:findfs cmd:flock cmd:fsck cmd:fsck.cramfs cmd:fsck.minix cmd:fsfreeze cmd:fstrim cmd:getopt cmd:hexdump cmd:hwclock cmd:ionice cmd:ipcmk cmd:ipcrm cmd:ipcs cmd:isosize cmd:ldattach cmd:linux32 cmd:linux64 cmd:logger cmd:look cmd:losetup cmd:lsblk cmd:lscpu cmd:lsipc cmd:lslocks cmd:lslogins cmd:lsmem cmd:lsns cmd:mesg cmd:mkfs cmd:mkfs.bfs cmd:mkfs.cramfs cmd:mkfs.minix cmd:mkswap cmd:more cmd:mount cmd:mountpoint cmd:namei cmd:nologin cmd:nsenter cmd:partx cmd:pivot_root cmd:prlimit cmd:raw cmd:readprofile cmd:rename cmd:renice cmd:resizepart cmd:rev cmd:rfkill cmd:rtcwake cmd:script cmd:scriptreplay cmd:setarch cmd:setsid cmd:setterm cmd:swaplabel cmd:swapoff cmd:swapon cmd:switch_root cmd:taskset cmd:ul cmd:umount cmd:uname26 cmd:unshare cmd:utmpdump cmd:uuidgen cmd:uuidparse cmd:wall cmd:wdctl cmd:whereis cmd:wipefs cmd:zramctl
+
+C:Q13qftPyTwgflbm+zGV5Vl7FinjfM=
+P:libgcrypt-dev
+V:1.8.4-r1
+A:armhf
+S:22867
+I:114688
+T:general purpose crypto library based on the code used in GnuPG (development files)
+U:http://www.gnupg.org
+L:LGPL
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1564328026
+c:5b4846da350aac758d8d91420167fd99e33bcdea
+D:libgpg-error-dev libgcrypt=1.8.4-r1
+p:cmd:libgcrypt-config
 
 C:Q1MKzJr/HTd/DmeDAi62yMVJDKhmk=
 P:ruby-bundler
