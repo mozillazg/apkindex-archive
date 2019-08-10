@@ -6247,6 +6247,22 @@ c:497a285ee1242b9bb7295c4bd420d2e482ef3f62
 D:so:liba52.so.0 so:libc.musl-ppc64le.so.1 so:libcdio.so.18 so:libdvdread.so.4 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgstaudio-1.0.so.0 so:libgstbase-1.0.so.0 so:libgstpbutils-1.0.so.0 so:libgstreamer-1.0.so.0 so:libgstriff-1.0.so.0 so:libgstrtp-1.0.so.0 so:libgstrtsp-1.0.so.0 so:libgstsdp-1.0.so.0 so:libgsttag-1.0.so.0 so:libgstvideo-1.0.so.0 so:libintl.so.8 so:libmpeg2.so.0 so:liborc-0.4.so.0 so:libx264.so.152
 p:so:libgsta52dec.so=0 so:libgstasf.so=0 so:libgstcdio.so=0 so:libgstdvdlpcmdec.so=0 so:libgstdvdread.so=0 so:libgstdvdsub.so=0 so:libgstmpeg2dec.so=0 so:libgstrealmedia.so=0 so:libgstx264.so=0 so:libgstxingmux.so=0
 
+C:Q1DBmclWIX4iWSTwlZpmND4+uVleg=
+P:exempi-libs
+V:2.5.1-r0
+A:ppc64le
+S:529661
+I:1404928
+T:A library to parse XMP metadata (libraries)
+U:https://libopenraw.freedesktop.org/wiki/Exempi/
+L:BSD-3-Clause
+o:exempi
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1565467488
+c:e0f73e7ea07bf9a059502c63340ddc82d959dbdb
+D:so:libc.musl-ppc64le.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
+p:so:libexempi.so.8=8.0.0
+
 C:Q1zfnKncygN8hrYktJVYCdKlLSzWU=
 P:networkmanager
 V:1.18.1-r2
@@ -6651,22 +6667,6 @@ t:1557683970
 c:bd5b4ea8aa685483faa8c9cde54138d5bc45a584
 D:so:libc.musl-ppc64le.so.1 so:libevent_core-2.1.so.6
 p:cmd:redsocks
-
-C:Q1CzbHXYw8s05jIIvSsWsiz00vi5c=
-P:exempi
-V:2.5.0-r1
-A:ppc64le
-S:8208
-I:40960
-T:A library to parse XMP metadata
-U:https://libopenraw.freedesktop.org/wiki/Exempi/
-L:BSD-3-Clause
-o:exempi
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1557408072
-c:0e19375e070acd4d57a884385942b6c375de26c2
-D:so:libc.musl-ppc64le.so.1 so:libexempi.so.8 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:exempi
 
 C:Q1Th5GSzPfqHrInMO+JvQKOBlrU+E=
 P:inkscape-view
@@ -23643,6 +23643,22 @@ c:cdaa392bd5a5eaae0bd59c829288fa7dd634802b
 D:bash
 p:cmd:todo.sh
 
+C:Q1ooXKSrWOXvKrpDp/b7j8H6Dmafo=
+P:exempi-dev
+V:2.5.1-r0
+A:ppc64le
+S:1140416
+I:5025792
+T:A library to parse XMP metadata (development files)
+U:https://libopenraw.freedesktop.org/wiki/Exempi/
+L:BSD-3-Clause
+o:exempi
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1565467488
+c:e0f73e7ea07bf9a059502c63340ddc82d959dbdb
+D:exempi-libs=2.5.1-r0 pkgconfig
+p:pc:exempi-2.0=2.5.1
+
 C:Q1lF82QVsTzMT4zmfUCWRchSrb5AE=
 P:albatross-themes
 V:1.7.4-r0
@@ -37184,22 +37200,6 @@ t:1557599062
 c:4a132b6d0f1299c95eb0fb7364313f387fcdec35
 i:docs xmltv=0.6.1-r0
 
-C:Q1SEkYvX1hf3mqeqaJ/wD8aXsVFfo=
-P:exempi-libs
-V:2.5.0-r1
-A:ppc64le
-S:529761
-I:1404928
-T:A library to parse XMP metadata (libraries)
-U:https://libopenraw.freedesktop.org/wiki/Exempi/
-L:BSD-3-Clause
-o:exempi
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1557408072
-c:0e19375e070acd4d57a884385942b6c375de26c2
-D:so:libc.musl-ppc64le.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
-p:so:libexempi.so.8=8.0.0
-
 C:Q1eRDyg85EtxvBzxgyQyyZe7EFbNI=
 P:runc
 V:1.0.0_rc8-r0
@@ -38647,6 +38647,21 @@ c:97f2689fe74f4b464f03f4d1a60f24320d6d2c1b
 D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libmbim-glib.so.4
 p:so:libqmi-glib.so.5=5.4.0 cmd:qmi-firmware-update cmd:qmi-network cmd:qmicli
 
+C:Q1lBcq7W+dsT+FIcKwthnaOmUUuH4=
+P:exempi-doc
+V:2.5.1-r0
+A:ppc64le
+S:2135
+I:24576
+T:A library to parse XMP metadata (documentation)
+U:https://libopenraw.freedesktop.org/wiki/Exempi/
+L:BSD-3-Clause
+o:exempi
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1565467488
+c:e0f73e7ea07bf9a059502c63340ddc82d959dbdb
+i:docs exempi=2.5.1-r0
+
 C:Q1NoDMfP3ZXRsX4Q3lz2Qdra4xM8E=
 P:py3-msgpack
 V:0.6.1-r4
@@ -38708,22 +38723,6 @@ t:1557410162
 c:5e00acaac2f6aefc7932a4588ae0a5f4fb46b409
 D:lua5.2 so:libc.musl-ppc64le.so.1
 i:lua-term=0.07-r1 lua5.2
-
-C:Q1QtSE3GoPQXnEj7e3CmnBFqx48yk=
-P:exempi-dev
-V:2.5.0-r1
-A:ppc64le
-S:1140360
-I:5025792
-T:A library to parse XMP metadata (development files)
-U:https://libopenraw.freedesktop.org/wiki/Exempi/
-L:BSD-3-Clause
-o:exempi
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1557408072
-c:0e19375e070acd4d57a884385942b6c375de26c2
-D:exempi-libs=2.5.0-r1 pkgconfig
-p:pc:exempi-2.0=2.5.0
 
 C:Q1VHWOrvDnCCuLnztdQ23il1bv/30=
 P:font-noto-arabic
@@ -44260,6 +44259,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560063528
 c:68f0dec09adf16dc3aee20b1a8e6ee282291f57e
 i:docs scrot=0.9.1-r0
+
+C:Q1X/mf5c3yV6fNVM12nIdbpYrtGj4=
+P:exempi
+V:2.5.1-r0
+A:ppc64le
+S:8191
+I:40960
+T:A library to parse XMP metadata
+U:https://libopenraw.freedesktop.org/wiki/Exempi/
+L:BSD-3-Clause
+o:exempi
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1565467488
+c:e0f73e7ea07bf9a059502c63340ddc82d959dbdb
+D:so:libc.musl-ppc64le.so.1 so:libexempi.so.8 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:exempi
 
 C:Q1FTlMtCKyEGak2jy7zMPvfxOWyXA=
 P:xdriinfo-doc
@@ -59227,21 +59242,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557411467
 c:3ce302210e5b0a911d9657215d691b8fe4e5b9b5
 i:docs perl-number-compare=0.03-r1
-
-C:Q1oezQS/H+uA527UM5fqa7Z2Fxvmc=
-P:exempi-doc
-V:2.5.0-r1
-A:ppc64le
-S:2146
-I:24576
-T:A library to parse XMP metadata (documentation)
-U:https://libopenraw.freedesktop.org/wiki/Exempi/
-L:BSD-3-Clause
-o:exempi
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1557408072
-c:0e19375e070acd4d57a884385942b6c375de26c2
-i:docs exempi=2.5.0-r1
 
 C:Q14V3AVgIetXdhOUL4yquVp43XYOA=
 P:libreoffice-lang-gu
