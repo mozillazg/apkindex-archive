@@ -2283,22 +2283,6 @@ c:321a72ae9b473e699193d590236781aff03f1623
 D:so:libatk-1.0.so.0 so:libc.musl-armhf.so.1 so:libcairo-gobject.so.2 so:libcairo.so.2 so:libgcc_s.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpcre2-8.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libvte-2.91.so.0=0.5200.2 cmd:vte-2.91
 
-C:Q13EmdWTw2MxEPJC7zZuliQR2GeEI=
-P:cups-dev
-V:2.2.10-r0
-A:armhf
-S:45075
-I:266240
-T:The CUPS Printing System (development files)
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919020
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.2.10-r0
-p:cmd:cups-config
-
 C:Q1fPOYHtt05Ml8YLVu5zXhQ2jJZPg=
 P:krb5-libs
 V:1.15.5-r0
@@ -7725,22 +7709,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1543242385
 c:e3884fbde941e42651d3a137bd20e9e09660714c
 i:docs perl-time-modules=2013.0912-r0
-
-C:Q18jKIWJM43RElwcwMVdeK2hdr1Z0=
-P:cups-lang
-V:2.2.10-r0
-A:armhf
-S:589148
-I:3313664
-T:Languages for package cups
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919021
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:cups-client poppler-utils openssl dbus
-i:cups=2.2.10-r0 lang
 
 C:Q15Jdq5ByUO50WvjiCOw98KJjKKBY=
 P:ngrep-dbg
@@ -18067,6 +18035,22 @@ t:1543002402
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs py-urlgrabber=3.10.1-r1
 
+C:Q1IOq0nCwFTOki5hvIVHogE9jggaU=
+P:ipptool
+V:2.2.12-r0
+A:armhf
+S:5970419
+I:6508544
+T:Perform internet printing protocol requests
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207040
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:so:libc.musl-armhf.so.1 so:libcups.so.2
+p:cmd:ipptool
+
 C:Q1YtQQ3/SqAJ2jB+9musqmBMZFs3Q=
 P:asterisk-cdr-mysql
 V:15.7.1-r0
@@ -23520,22 +23504,6 @@ c:03a75153438f6a04fbe36b16930c16bf19b3d9f3
 D:lzo=2.10-r2 pkgconfig
 p:pc:lzo2=2.10
 
-C:Q106JoIhdjQMoTVj2laCo9T2GOcDs=
-P:cups-libs
-V:2.2.10-r0
-A:armhf
-S:207216
-I:462848
-T:CUPS libraries
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919020
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
-p:so:libcups.so.2=2 so:libcupsimage.so.2=2
-
 C:Q1hnaaEj3avXmCEScN35bF5Uzd4/Q=
 P:snownews
 V:1.5.12-r8
@@ -24371,6 +24339,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1545299904
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:apache2 so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libkrb5.so.3
+
+C:Q1S58UiBpOt06bRrrjrUVyrbWrcWE=
+P:cups-client
+V:2.2.12-r0
+A:armhf
+S:243546
+I:684032
+T:CUPS command-line client programs
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207040
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:accept cmd:cancel cmd:cupsaccept cmd:cupsaddsmb cmd:cupsctl cmd:cupsdisable cmd:cupsenable cmd:cupstestdsc cmd:cupstestppd cmd:ippfind cmd:lp cmd:lpadmin cmd:lpc cmd:lpinfo cmd:lpmove cmd:lpoptions cmd:lpq cmd:lpr cmd:lprm cmd:lpstat cmd:ppdc cmd:ppdhtml cmd:ppdi cmd:ppdmerge cmd:ppdpo cmd:reject
 
 C:Q1HHADeyluQhJ40b3WEAgbhP11+Z4=
 P:lua-microlight
@@ -35172,6 +35156,21 @@ t:1543924547
 c:9db7b60601c0aa7c1805b4da8da4f9b3f67aac4e
 D:so:libc.musl-armhf.so.1 so:libcgraph.so.6 so:libgcc_s.so.1 so:libgvc.so.6 so:liblua-5.3.so.0
 p:lua-graphviz=2.40.1-r1
+
+C:Q1YBc7J5v3NcWswpqWsZb7OMej8dg=
+P:cups-doc
+V:2.2.12-r0
+A:armhf
+S:91636
+I:233472
+T:The CUPS Printing System (documentation)
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207040
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+i:docs cups=2.2.12-r0
 
 C:Q1crqYG8hMFzoLUBLGFBUuxhj0Uug=
 P:py-django-simple-captcha
@@ -48403,6 +48402,22 @@ t:1542498550
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs pptpd=1.4.0-r1
 
+C:Q1pIgeoBJgqjoHA9LFrDRV7gJarUk=
+P:cups-lang
+V:2.2.12-r0
+A:armhf
+S:589341
+I:3313664
+T:Languages for package cups
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207041
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:cups-client poppler-utils openssl dbus
+i:cups=2.2.12-r0 lang
+
 C:Q1bNAQHz3JTm/sn7SmO9x5RTtegpA=
 P:cdw-doc
 V:0.8.1-r0
@@ -49721,6 +49736,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542496749
 c:c47d9caac9685e1a5d73f5908b1149ca26bdaf72
 i:docs perl-filesys-notify-simple=0.13-r0
+
+C:Q19WC7nMxmu2WivOPT4Dy4XJUB/6I=
+P:cups-dev
+V:2.2.12-r0
+A:armhf
+S:45164
+I:266240
+T:The CUPS Printing System (development files)
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207040
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.2.12-r0
+p:cmd:cups-config
 
 C:Q1iYJ4M4bZ4O3PAkk51DMjhMdGbis=
 P:squid-lang-th
@@ -52386,22 +52417,6 @@ m:jv <jens@eisfair.org>
 t:1548541818
 c:121d7221567166c6053f54d4585096e0629c7a1b
 D:syslog-ng=3.19.1-r0
-
-C:Q1iozS3CeVFziRgudoB6U8ReQNhRE=
-P:cups-client
-V:2.2.10-r0
-A:armhf
-S:243043
-I:684032
-T:CUPS command-line client programs
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919021
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:accept cmd:cancel cmd:cupsaccept cmd:cupsaddsmb cmd:cupsctl cmd:cupsdisable cmd:cupsenable cmd:cupstestdsc cmd:cupstestppd cmd:ippfind cmd:lp cmd:lpadmin cmd:lpc cmd:lpinfo cmd:lpmove cmd:lpoptions cmd:lpq cmd:lpr cmd:lprm cmd:lpstat cmd:ppdc cmd:ppdhtml cmd:ppdi cmd:ppdmerge cmd:ppdpo cmd:reject
 
 C:Q1On/OKoXiv/zCS5gZZUAU871vGbY=
 P:py-pbr
@@ -59162,6 +59177,22 @@ t:1545294789
 c:b3b6f601097e624447dd5ab41dbdd4c95076cdb6
 D:gtkspell=2.0.16-r7 pc:gtk+-2.0 pkgconfig
 p:pc:gtkspell-2.0=2.0.16
+
+C:Q1D3KcmQEeKlAUDumiAJbhYhOd/wE=
+P:cups-libs
+V:2.2.12-r0
+A:armhf
+S:208363
+I:466944
+T:CUPS libraries
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207040
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
+p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
 C:Q1YBXMHJHRm9vFjFgZZcobzWk+i6E=
 P:libatomic_ops-doc
@@ -66433,21 +66464,6 @@ t:1544814489
 c:ca93d24a0026cfc1cac5229df60475ce936cf5ba
 D:eudev so:libaio.so.1 so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02 so:libjson-c.so.4 so:libreadline.so.7 so:libudev.so.1 so:liburcu.so.6
 p:so:libdmmp.so.0.2.0=0.2.0 so:libmpathcmd.so.0=0 so:libmpathpersist.so.0=0 so:libmultipath.so.0=0 cmd:kpartx cmd:mpathpersist cmd:multipath cmd:multipathd
-
-C:Q1o/PwW+UD/klXMjllZYodgbOTmUo=
-P:cups-doc
-V:2.2.10-r0
-A:armhf
-S:91655
-I:233472
-T:The CUPS Printing System (documentation)
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919020
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-i:docs cups=2.2.10-r0
 
 C:Q1JcQXniQoTb75AXbGDEaeDvU5G7M=
 P:fuse-dev
@@ -77792,22 +77808,6 @@ c:a374181d8547ed5bc42a2ce8f90de95a332ea68f
 D:ca-certificates-cacert so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libtls-standalone.so.1=1.0.0
 
-C:Q18ooSbk7mwr4T6OlKAof0tqNnJLs=
-P:cups
-V:2.2.10-r0
-A:armhf
-S:1248800
-I:5611520
-T:The CUPS Printing System
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919021
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.2.10-r0 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0
-p:cmd:cupsd cmd:cupsfilter
-
 C:Q1VUtZJcEbiUx5v+uk2dKXbSrCR2E=
 P:ircii-doc
 V:20111115-r4
@@ -80691,22 +80691,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545307253
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 p:cmd:resolvconf
-
-C:Q13ll70so1VBn+yXbwxEo7CiQWmrw=
-P:ipptool
-V:2.2.10-r0
-A:armhf
-S:5970488
-I:6508544
-T:Perform internet printing protocol requests
-U:https://www.cups.org/
-L:GPL LGPL-2.0-or-later
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545919020
-c:591cd7b56df7c6236860c3aa0a430fdac9f743b7
-D:so:libc.musl-armhf.so.1 so:libcups.so.2
-p:cmd:ipptool
 
 C:Q1IWIxnRTV3VKKzo/u8G3jlzzjfzk=
 P:slim-themes
@@ -85662,6 +85646,22 @@ t:1544794362
 c:5cc54c68a10c5a80dd5d690eec7f903f25835d2c
 D:at-spi2-atk-dev atk-dev cairo-dev fontconfig-dev gdk-pixbuf-dev glib-dev libepoxy-dev libx11-dev libxcomposite-dev libxcursor-dev libxdamage-dev libxext-dev libxfixes-dev libxi-dev libxinerama-dev libxrandr-dev pango-dev wayland-protocols wayland-libs-client wayland-libs-cursor wayland-dev libxkbcommon-dev gtk+3.0=3.24.1-r0 pc:atk pc:atk-bridge-2.0 pc:atk>=2.15.1 pc:cairo pc:cairo-gobject>=1.14.0 pc:cairo-xlib pc:cairo>=1.14.0 pc:epoxy>=1.4 pc:fontconfig pc:gdk-pixbuf-2.0>=2.30.0 pc:gio-2.0>=2.53.4 pc:gio-unix-2.0>=2.53.4 pc:pango pc:pangocairo pc:pangoft2 pc:wayland-client>=1.9.91 pc:wayland-cursor>=1.9.91 pc:wayland-egl pc:x11 pc:xcomposite pc:xcursor pc:xdamage pc:xext pc:xfixes pc:xi pc:xinerama pc:xkbcommon>=0.2.0 pc:xrandr pkgconfig
 p:pc:gail-3.0=3.24.1 pc:gdk-3.0=3.24.1 pc:gdk-wayland-3.0=3.24.1 pc:gdk-x11-3.0=3.24.1 pc:gtk+-3.0=3.24.1 pc:gtk+-unix-print-3.0=3.24.1 pc:gtk+-wayland-3.0=3.24.1 pc:gtk+-x11-3.0=3.24.1
+
+C:Q1YHRKySfoQtjyzLrcvciPDqQBVE4=
+P:cups
+V:2.2.12-r0
+A:armhf
+S:1249022
+I:5611520
+T:The CUPS Printing System
+U:https://www.cups.org/
+L:GPL LGPL-2.0-or-later
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566207041
+c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
+D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.2.12-r0 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0
+p:cmd:cupsd cmd:cupsfilter
 
 C:Q1ojMCrlJIH20xVRCe037aox9tpW4=
 P:flashcache-utils
