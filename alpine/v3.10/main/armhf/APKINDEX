@@ -427,21 +427,6 @@ c:cb2429259083d1719ad58c771209908f567a682d
 D:so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libmpfr.so.4
 p:so:libmpc.so.3=3.1.0
 
-C:Q1UEa692JGyhT33UBjZT9apjsWtmg=
-P:apache2-proxy-html
-V:2.4.39-r0
-A:armhf
-S:20939
-I:81920
-T:HTML and XML content filters for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134208
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 so:libc.musl-armhf.so.1 so:libxml2.so.2
-
 C:Q14n/vJiDorb5NsNkE1pkrF865awY=
 P:lua5.3-b64
 V:0.1-r2
@@ -2596,6 +2581,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557140307
 c:1f0af7530595329a7ca8b94d3ea35987fd17db62
 
+C:Q1La/rUdssAMEKOogf2S0xhu6vCYA=
+P:raspberrypi-bootloader-experimental
+V:1.20190718-r0
+A:armhf
+S:2187475
+I:3813376
+T:Experimental firmware with additional codecs
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1566290869
+c:df7bd3a1fa5bc33327d4ffa4a7528bc608c3b29e
+
 C:Q1cYKL7pWNAIOrn06Y5c9Nr+yYxFc=
 P:make
 V:4.2.1-r2
@@ -2656,6 +2655,22 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1557169936
 c:55146d855940585ac1a54440860a15069d54d590
 D:s6-rc=0.5.0.0-r0
+
+C:Q1uAqK4Xx54e0mkNbdVs5jJ8qkc9I=
+P:apache2
+V:2.4.41-r0
+A:armhf
+S:748606
+I:2338816
+T:A high performance Unix-based HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291337
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libz.so.1
+p:cmd:fcgistarter cmd:httpd cmd:suexec
 
 C:Q1rOvKUv+DSsQ42G99X4bfgmSMWdg=
 P:uvncrepeater
@@ -3835,21 +3850,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1559751840
 c:5572823477a1387d56d05e9b47df3ccfcbd79787
 
-C:Q1hZOmH1oOrn8b0IqEnqn9m2W+C4o=
-P:linux-rpi-dev
-V:4.19.66-r0
-A:armhf
-S:17046051
-I:117886976
-T:Headers and script for third party modules for rpi kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565771357
-c:2c0780079d9eeacdfe08631b2b36b8725d27e96a
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
 C:Q1lp9kx5ZvNFSjMFNMN57375rAlfM=
 P:xf86-input-mouse-dev
 V:1.9.3-r1
@@ -4278,21 +4278,6 @@ c:a5ed25b5fb8b785cdfb72c294466b39347fc7a8f
 D:mesa so:libc.musl-armhf.so.1 so:libglapi.so.0
 p:so:libGLESv1_CM.so.1=1.1.0 so:libGLESv2.so.2=2.0.0
 
-C:Q1KJp+QxcDrhfjGfLxGSPPWKXsdog=
-P:apache2-ssl
-V:2.4.39-r0
-A:armhf
-S:84355
-I:237568
-T:SSL/TLS module for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134208
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 openssl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-
 C:Q1qhvfBHZOQK16cPQuSPg1+mapWts=
 P:perl-io-async-doc
 V:0.72-r0
@@ -4366,6 +4351,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1565769122
 c:45003dac9059e38b73687135bba6c67874b992a2
 D:nginx so:libc.musl-armhf.so.1
+
+C:Q1QPZ8b9OcUXlvPjzOfi88MuP7uQs=
+P:apache2-ctl
+V:2.4.41-r0
+A:armhf
+S:2882
+I:16384
+T:Apache control script
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291334
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:lynx
+p:cmd:apachectl
 
 C:Q1NAWavEW0ZhPwa049ik2PzgMXPjQ=
 P:avahi-doc
@@ -5131,6 +5132,21 @@ t:1557151695
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins net-snmp-tools so:libc.musl-armhf.so.1
 
+C:Q1ntc4IoBPiMCMlUNKPI6aIjhvujQ=
+P:apache2-proxy
+V:2.4.41-r0
+A:armhf
+S:157962
+I:483328
+T:Proxy modules for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 so:libc.musl-armhf.so.1
+
 C:Q1X07IBlDtUbkvYsyi0TC45lnbACA=
 P:xf86-video-r128-doc
 V:6.12.0-r0
@@ -5880,6 +5896,22 @@ o:ghostscript
 m:Cameron Banta <cbanta@gmail.com>
 t:1565700584
 c:ee8b04b44683cef9674d15880a2ff533d01e36b4
+
+C:Q1yTu+85WfiOn9rhOMe9lObGG0pPE=
+P:apache2-dev
+V:2.4.41-r0
+A:armhf
+S:209959
+I:1048576
+T:A high performance Unix-based HTTP server (development files)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291335
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:perl apr-util-dev
+p:cmd:apxs
 
 C:Q1PMc2RFm6K4Na9sia+jLliDiY8HE=
 P:c-ares
@@ -7794,6 +7826,21 @@ t:1557209461
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:rpcbind so:libc.musl-armhf.so.1 so:libfl.so.2 so:libtirpc.so.3
 p:cmd:unfsd
+
+C:Q1pjLcYVHDIHo4XtwJs80Kvi5LQ3U=
+P:linux-rpi2-dev
+V:4.19.67-r0
+A:armhf
+S:17058281
+I:118042624
+T:Headers and script for third party modules for rpi2 kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566290684
+c:e2cda094053c1e4b30d3451e629888d2e7aa55e1
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1DsuvTzWFmgaEkns7kVuslJjX0Ew=
 P:the_silver_searcher-doc
@@ -9757,6 +9804,20 @@ t:1557129145
 c:6895452f9306041d563023e9fae6b77ac6c27dae
 p:gnupg-doc=1.4.23-r0
 i:docs gnupg1=1.4.23-r0
+
+C:Q1FL9Aplx90r5iFfaTNmrw4Y/OaGk=
+P:raspberrypi-bootloader-debug
+V:1.20190718-r0
+A:armhf
+S:2684303
+I:4878336
+T:Debug firmware
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1566290869
+c:df7bd3a1fa5bc33327d4ffa4a7528bc608c3b29e
 
 C:Q1RpY5dJNSyOwTrVG8Dhgjl41rq/o=
 P:libatomic_ops
@@ -13029,6 +13090,21 @@ t:1560956809
 c:2241a45c4df5576d6816d9c22c92e05f82e26384
 i:docs libxp=1.0.3-r3
 
+C:Q1dw4q5JGYfuyOwnobhGgujZA914U=
+P:apache2-proxy-html
+V:2.4.41-r0
+A:armhf
+S:20932
+I:81920
+T:HTML and XML content filters for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 so:libc.musl-armhf.so.1 so:libxml2.so.2
+
 C:Q1OutXl00rHrQsL5WBDk9BCm30oEw=
 P:nload
 V:0.7.4-r3
@@ -13367,6 +13443,21 @@ o:makedepend
 t:1556994458
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:docs makedepend=1.0.5-r2
+
+C:Q1EWRmSzV/SfGWfR7wt4DVVlw9JdY=
+P:apache2-ssl
+V:2.4.41-r0
+A:armhf
+S:84453
+I:237568
+T:SSL/TLS module for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 openssl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 
 C:Q1Aviu3WmHuqeAQ3U+fBuS9d4SGpk=
 P:rlog
@@ -17594,6 +17685,21 @@ D:py3-unidecode python2
 p:cmd:unidecode-2
 i:py-unidecode=1.0.23-r1 python2
 
+C:Q1f2g0n6YTR8cDd//tRPBNkLIkl80=
+P:apache2-ldap
+V:2.4.41-r0
+A:armhf
+S:40929
+I:139264
+T:LDAP authentication/authorization module for the Apache HTTP Server
+U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 apr-util-ldap so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+
 C:Q1wBMD242mP/vpQxEKdzWvvgtkPO0=
 P:libcdio++
 V:2.0.0-r0
@@ -18133,21 +18239,6 @@ t:1557130301
 c:9d45ba52bd3df90188adbf982f6f146d63b74016
 D:so:libbluetooth.so.3 so:libc.musl-armhf.so.1 so:libpython2.7.so.1.0
 i:py-bluez=0.22-r2 python2
-
-C:Q1fi5TpUYmOwuVO/IlRqnHIF7MAZQ=
-P:apache2-lua
-V:2.4.39-r0
-A:armhf
-S:42184
-I:131072
-T:Lua support for the Apache HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134207
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 so:libc.musl-armhf.so.1 so:liblua.so.5
 
 C:Q1cGpabR9dXV/zEMB3jEysIyYltXs=
 P:uwsgi-transformation_tofile
@@ -23424,22 +23515,6 @@ c:60a428a4c1d968e35626e302d12d9c4711100612
 D:so:libc.musl-armhf.so.1
 p:so:liblinenoise.so.0=0.0.0
 
-C:Q1HBjtsvDwfD/QuQ4JElZBtfrCAmU=
-P:apache2-utils
-V:2.4.39-r0
-A:armhf
-S:67388
-I:221184
-T:Apache utility programs for webservers
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134209
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ab cmd:checkgid cmd:dbmmanage cmd:htcacheclean cmd:htdbm cmd:htdigest cmd:htpasswd cmd:httxt2dbm cmd:logresolve cmd:rotatelogs
-
 C:Q1/yjtng+N3EcZAv6u1OPw0Lmpv+I=
 P:perl-inline-c-doc
 V:0.81-r1
@@ -25217,21 +25292,6 @@ c:5ebc9830126968e5db601ffd0ab1df2a069d784e
 D:python2
 i:py-imagesize=1.1.0-r1 python2
 
-C:Q1R6u7vSGgAJrXxeqYFYa5Dty855A=
-P:linux-rpi
-V:4.19.66-r0
-A:armhf
-S:23500888
-I:63881216
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565771411
-c:2c0780079d9eeacdfe08631b2b36b8725d27e96a
-D:mkinitfs linux-firmware-brcm
-
 C:Q1uTgYX7tu0rsiP4dpsQWYr2bUEkU=
 P:rrdcollect-doc
 V:0.2.10-r1
@@ -26081,21 +26141,6 @@ t:1557216503
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs xcmsdb=1.0.5-r0
 
-C:Q15V2z44ASiQYLDap60M/ahv/U4bA=
-P:apache2-ldap
-V:2.4.39-r0
-A:armhf
-S:40953
-I:139264
-T:LDAP authentication/authorization module for the Apache HTTP Server
-U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134207
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 apr-util-ldap so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-
 C:Q1pwKvkjyED8zNXTLstzBRuu/dxDQ=
 P:p11-kit-server
 V:0.23.16.1-r0
@@ -26863,6 +26908,21 @@ t:1557248893
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:indent=2.2.12-r0 lang
 
+C:Q13B6n9CJxmklz4FZJgTi1Dt5zbto=
+P:linux-rpi-dev
+V:4.19.67-r0
+A:armhf
+S:17052382
+I:117886976
+T:Headers and script for third party modules for rpi kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566290635
+c:e2cda094053c1e4b30d3451e629888d2e7aa55e1
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
+
 C:Q1zkpE3Op38RUJnV/N2PIOYVhdRCA=
 P:libnl3-doc
 V:3.4.0-r0
@@ -26967,22 +27027,6 @@ t:1557168147
 c:f4bb87b557d45b6cb569a3b2a2b36615a78942f0
 D:expat boost libaio so:libaio.so.1 so:libc.musl-armhf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:cache_check cmd:cache_dump cmd:cache_metadata_size cmd:cache_repair cmd:cache_restore cmd:cache_writeback cmd:era_check cmd:era_dump cmd:era_invalidate cmd:era_restore cmd:pdata_tools cmd:thin_check cmd:thin_delta cmd:thin_dump cmd:thin_ls cmd:thin_metadata_size cmd:thin_repair cmd:thin_restore cmd:thin_rmap
-
-C:Q1ct9Yxmk9SNMV61bB1R3CUmzA5Zc=
-P:apache2-dev
-V:2.4.39-r0
-A:armhf
-S:207690
-I:1036288
-T:A high performance Unix-based HTTP server (development files)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134205
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:perl apr-util-dev
-p:cmd:apxs
 
 C:Q1QnskqL03FKV1XY+Xpwm3kpwJUhQ=
 P:vblade-doc
@@ -28111,6 +28155,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557133375
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs txt2man=1.6.0-r0
+
+C:Q1c6sXHEQN64WmbALTGAgoLnH1YEI=
+P:apache2-lua
+V:2.4.41-r0
+A:armhf
+S:42190
+I:131072
+T:Lua support for the Apache HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 so:libc.musl-armhf.so.1 so:liblua.so.5
 
 C:Q11YoJRf5GLVqZVu8HdNub5WiFU3w=
 P:termrec-doc
@@ -29249,6 +29308,20 @@ t:1557172215
 c:eab5640b9d78e35f17c381353535a1ea1bfaf65d
 i:docs postfix=3.4.5-r0
 
+C:Q1dUD5/D1MV0oLfnDJq1HJdKUaajc=
+P:raspberrypi-bootloader-cutdown
+V:1.20190718-r0
+A:armhf
+S:404037
+I:700416
+T:Cut-down firmware for lower memory settings
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1566290869
+c:df7bd3a1fa5bc33327d4ffa4a7528bc608c3b29e
+
 C:Q1FgY85v+2EcQTpK2y6oi3Uhklyfk=
 P:asterisk-alsa
 V:16.3.0-r0
@@ -29508,6 +29581,21 @@ t:1556896666
 c:191c9ea9f07dee7b40b7f15b24ecc5e1af753430
 D:so:libc.musl-armhf.so.1
 p:so:libpcre.so.1=1.2.11 so:libpcreposix.so.0=0.0.6
+
+C:Q1Py3Zt71LyiAcp3ZHA3iiCXfVbUE=
+P:apache2-webdav
+V:2.4.41-r0
+A:armhf
+S:61369
+I:176128
+T:WebDAV support for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:apache2 so:libc.musl-armhf.so.1
 
 C:Q1gYunyEp5r5OIrmZ0lnOpQziMvcE=
 P:gconf-doc
@@ -30033,6 +30121,21 @@ t:1556986325
 c:1e6321cc3fb65c895e96f5b1ebe476ddbc55de1a
 D:so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libverto.so.1
 p:so:libverto-glib.so.1=1.0.0
+
+C:Q1EeKMVsfnEYXW9KMXbnHHkrBSa2Q=
+P:apache2-doc
+V:2.4.41-r0
+A:armhf
+S:5906667
+I:25346048
+T:A high performance Unix-based HTTP server (documentation)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291335
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+i:docs apache2=2.4.41-r0
 
 C:Q1JAZU56PeRiDIqP17lCF6yBNGuAw=
 P:lua5.3-sqlite
@@ -31740,22 +31843,6 @@ m:Alan Lacerda <alacerda@alpinelinux.org>
 t:1557174290
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:jq
-
-C:Q1AZ3nLU9iGCpGh+NdqsxUO4Rh0es=
-P:apache2
-V:2.4.39-r0
-A:armhf
-S:747758
-I:2338816
-T:A high performance Unix-based HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134210
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libz.so.1
-p:cmd:fcgistarter cmd:httpd cmd:suexec
 
 C:Q1Qk0vbi5GK5+j9MFZtJGOp6uUrgU=
 P:krb5
@@ -34377,21 +34464,6 @@ t:1557120821
 c:7d17c90e04304a4c22279de4ed0b3c68cbffd9a5
 D:libsecret=0.18.8-r0 pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pkgconfig
 p:pc:libsecret-1=0.18.8 pc:libsecret-unstable=0.18.8
-
-C:Q1CJNzhVEyEomm2+GxEToBu6uMYAs=
-P:apache2-webdav
-V:2.4.39-r0
-A:armhf
-S:61294
-I:176128
-T:WebDAV support for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134209
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 so:libc.musl-armhf.so.1
 
 C:Q1S6P/t/WAhXdkzy/O1VFC29qrUkI=
 P:giblib-doc
@@ -38090,6 +38162,21 @@ t:1558435698
 c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
 D:collectd so:libc.musl-armhf.so.1 so:libgcrypt.so.20
 
+C:Q1Va8j69Cp0sE7Lig0IBLl9WZNcOM=
+P:apache2-http2
+V:2.4.41-r0
+A:armhf
+S:85449
+I:229376
+T:HTTP/2 transport layer for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291335
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
+
 C:Q1aqeY//N4uE2fAQ6l0afBhEoWdoE=
 P:gtk-doc
 V:1.30-r0
@@ -38694,21 +38781,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556895780
 c:228ad274b6dd232df47e251fe4ebdbe787d5a933
 D:ruby-libs
-
-C:Q1xWK/QBZYORsPG3CZ0sIqOt+1urw=
-P:apache2-doc
-V:2.4.39-r0
-A:armhf
-S:5875315
-I:25186304
-T:A high performance Unix-based HTTP server (documentation)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134205
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-i:docs apache2=2.4.39-r0
 
 C:Q1BgXZjwEFZF2bKI9MwBGzoGf3vuE=
 P:ksymoops
@@ -42973,21 +43045,6 @@ c:6e7538b44516363af70431bc3159959f06fd4072
 D:lua5.2 so:libc.musl-armhf.so.1
 i:lua-xml=130610-r5 lua5.2
 
-C:Q1DEVxUt6IoGXNgfUIzitXaOTpoic=
-P:apache2-proxy
-V:2.4.39-r0
-A:armhf
-S:156596
-I:475136
-T:Proxy modules for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134208
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:apache2 so:libc.musl-armhf.so.1
-
 C:Q1vDllvltrPknCEdmPxrVMm75vDi0=
 P:pam-pgsql-doc
 V:0.7.3.2-r0
@@ -45617,6 +45674,21 @@ t:1556886575
 c:532ad69c86ff75989b44487546bf8d129d69257b
 D:lua5.2-mosquitto
 i:lua5.2 lua-mqtt-publish=0.3-r0
+
+C:Q1U5FukBzKgrlCi7wVIVc8A8Fvpac=
+P:raspberrypi-bootloader-doc
+V:1.20190718-r0
+A:armhf
+S:2277
+I:24576
+T:Bootloader files for the Raspberry Pi (documentation)
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1566290869
+c:df7bd3a1fa5bc33327d4ffa4a7528bc608c3b29e
+i:docs raspberrypi-bootloader=1.20190718-r0
 
 C:Q15Jd0JlmoMB7LrfWwKkkCvcNTplg=
 P:pciutils-dev
@@ -52770,21 +52842,6 @@ c:0e31088488fe1dea60548fbaf017a71cf6e4562a
 D:guile gc-dev guile-libs=2.0.14-r0 pkgconfig
 p:pc:guile-2.0=2.0.14 cmd:guile-config
 
-C:Q1IpshH35amk3mkO83xqSpenhFki4=
-P:apache2-http2
-V:2.4.39-r0
-A:armhf
-S:84445
-I:225280
-T:HTTP/2 transport layer for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134206
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
-
 C:Q1QxggYNU4o75wOUDtbsBzy3VDru0=
 P:git-subtree-doc
 V:2.22.0-r0
@@ -54577,20 +54634,6 @@ D:python3
 p:cmd:gunicorn cmd:gunicorn_paster
 i:py-gunicorn=19.7.1-r2 python3
 
-C:Q1pCoFCGV3IDwLnJy96qPeTnBUn+M=
-P:raspberrypi-bootloader
-V:1.20190620-r0
-A:armhf
-S:1677979
-I:2949120
-T:Bootloader files for the Raspberry Pi
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1562865859
-c:2506c73d417fcfe010c2257ff16a33ac4b9f1df5
-
 C:Q1BOi2C9tC8s1UjvjlLJGVB3/vWKs=
 P:perl-test2-plugin-nowarnings-doc
 V:0.07-r0
@@ -55332,21 +55375,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557150742
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs cppunit=1.14.0-r0
-
-C:Q1Tp7ZoLJtNgvdMQ7gjaxR6wc7pTU=
-P:linux-rpi2-dev
-V:4.19.66-r0
-A:armhf
-S:17053451
-I:118042624
-T:Headers and script for third party modules for rpi2 kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565771403
-c:2c0780079d9eeacdfe08631b2b36b8725d27e96a
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1/z1ILlrN2W0vM/mCD4VO0OARSyM=
 P:fftw-dev
@@ -56560,6 +56588,22 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-armhf.so.1 so:libfuse.so.2
 p:cmd:mount.unionfs cmd:unionfs cmd:unionfsctl
 
+C:Q1N5paZaIWiykoIvJYIbNp7m9lXzo=
+P:apache2-utils
+V:2.4.41-r0
+A:armhf
+S:67398
+I:221184
+T:Apache utility programs for webservers
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291336
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
+D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ab cmd:checkgid cmd:dbmmanage cmd:htcacheclean cmd:htdbm cmd:htdigest cmd:htpasswd cmd:httxt2dbm cmd:logresolve cmd:rotatelogs
+
 C:Q1CFy3EmgcD4rPEM1ShPXaUrGTOjs=
 P:bind-openrc
 V:9.14.3-r0
@@ -56948,20 +56992,6 @@ t:1556996217
 c:b35536c00d1f39c0ac216b82af60a7b363093b47
 D:so:libc.musl-armhf.so.1 so:libwayland-client.so.0
 p:so:libwayland-cursor.so.0=0.0.0
-
-C:Q1bokajYxDC+ruzhBnL28HAh1Hpbk=
-P:raspberrypi-bootloader-cutdown
-V:1.20190620-r0
-A:armhf
-S:404056
-I:700416
-T:Cut-down firmware for lower memory settings
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1562865859
-c:2506c73d417fcfe010c2257ff16a33ac4b9f1df5
 
 C:Q1AH6PEeOE7Is6yIOwGI8v84jGenE=
 P:perl-filesys-notify-simple-doc
@@ -57367,20 +57397,6 @@ t:1559041519
 c:ba20d6eb1d6cf29898c4ec012fc238cdc3ca24f1
 p:linux-firmware-any
 
-C:Q1BtWwuChBvTrCBBFaESR4R1AuHhQ=
-P:apache2-icons
-V:2.4.39-r0
-A:armhf
-S:166515
-I:1368064
-T:Apache Public Domain Icons
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134207
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-
 C:Q1bUiBq5YG63VN4bSVq7l4tKpY+8E=
 P:perl-pod-coverage
 V:0.23-r0
@@ -57784,20 +57800,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1557217366
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core iproute2-qos acf-alpine-baselayout>=0.5.7
-
-C:Q17UZA1k0foUmlOx7l1EtpU1WmgnA=
-P:raspberrypi-bootloader-debug
-V:1.20190620-r0
-A:armhf
-S:2684198
-I:4878336
-T:Debug firmware
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1562865859
-c:2506c73d417fcfe010c2257ff16a33ac4b9f1df5
 
 C:Q17WIW+Io1GNm3/re4o+9zINRxS4A=
 P:pixman-static
@@ -59518,22 +59520,6 @@ t:1556918690
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libc.musl-armhf.so.1
 p:so:libXfixes.so.3=3.1.0
-
-C:Q1In+odeYdNDbLi3WIXNdUHWI5RPk=
-P:apache2-ctl
-V:2.4.39-r0
-A:armhf
-S:2847
-I:16384
-T:Apache control script
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134204
-c:9d23763439dabef4a81c7cc9c061b69048df9708
-D:lynx
-p:cmd:apachectl
 
 C:Q1o6JVjlOVSG/HGk11FC3CsHfDCUw=
 P:py2-openvswitch
@@ -64581,6 +64567,21 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1556952114
 c:507c0cb7c38590dc2e5d4050c06f4a73646ab47b
 
+C:Q1qWWoJ9iooWF4r3BqebJ/U/yKP9o=
+P:linux-rpi
+V:4.19.67-r0
+A:armhf
+S:23503622
+I:63885312
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566290692
+c:e2cda094053c1e4b30d3451e629888d2e7aa55e1
+D:mkinitfs linux-firmware-brcm
+
 C:Q13JxvTkCYQ+eVg1dBnNlHpT+xK2c=
 P:py3-sphinx
 V:1.8.4-r1
@@ -67367,21 +67368,6 @@ c:bc9063689679ee74989d9091be6ad19425431d19
 D:/bin/sh so:libc.musl-armhf.so.1
 p:cmd:radvd cmd:radvdump
 
-C:Q1xzWAwL5qn6Rz+Ju/lxKglcgn70g=
-P:raspberrypi-bootloader-doc
-V:1.20190620-r0
-A:armhf
-S:2281
-I:24576
-T:Bootloader files for the Raspberry Pi (documentation)
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1562865859
-c:2506c73d417fcfe010c2257ff16a33ac4b9f1df5
-i:docs raspberrypi-bootloader=1.20190620-r0
-
 C:Q1aC8qyNn/rkki35ROMXMVqGDHRqs=
 P:cryptsetup1-libs
 V:1.7.5-r4
@@ -68128,21 +68114,6 @@ t:1557212409
 c:27080a4cec5ad92dd797447338047c8a029289e8
 D:libgee=0.20.1-r0 pc:glib-2.0 pc:gobject-2.0 pkgconfig
 p:pc:gee-0.8=0.20.1
-
-C:Q1tudYJzZU4na2PXBHUPUMGD1LrFA=
-P:linux-rpi2
-V:4.19.66-r0
-A:armhf
-S:23602703
-I:64380928
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565771372
-c:2c0780079d9eeacdfe08631b2b36b8725d27e96a
-D:mkinitfs linux-firmware-brcm
 
 C:Q1puI3cfd0404t9bjvPYJggP6Y96M=
 P:perl-test-script-doc
@@ -69377,20 +69348,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1557589019
 c:954b17e61556ba87913d94d0a0e4fe6dc8d97947
 D:kamailio so:libc.musl-armhf.so.1
-
-C:Q1FXKypOes9WhrjOzoT8JLx7+JR5c=
-P:apache2-error
-V:2.4.39-r0
-A:armhf
-S:42749
-I:282624
-T:Apache Multi Language Custom Error Documents
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1557134206
-c:9d23763439dabef4a81c7cc9c061b69048df9708
 
 C:Q1OBQvEWFhTpuXdZI6HI6JAB0TQsE=
 P:nodejs-dev
@@ -74583,6 +74540,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:xorgproto libxkbui=1.0.2-r9 pc:kbproto pc:x11 pc:xt pkgconfig
 p:pc:xkbui=1.0.2
 
+C:Q1GSMsBZ72308tU1CLCrRrwZg3Sh0=
+P:linux-rpi2
+V:4.19.67-r0
+A:armhf
+S:23605473
+I:64380928
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566290651
+c:e2cda094053c1e4b30d3451e629888d2e7aa55e1
+D:mkinitfs linux-firmware-brcm
+
 C:Q1SnoJ3GeYoZHisHBNH0doROMkE/c=
 P:perl-unix-syslog-doc
 V:1.1-r12
@@ -75941,6 +75913,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557088452
 c:727a1b01d1aea34d92f04a72cbfd7246df08e650
 i:docs procps=3.3.15-r0
+
+C:Q1msc2xiER0A6b+kZmPEUuczZDEeE=
+P:apache2-error
+V:2.4.41-r0
+A:armhf
+S:42741
+I:282624
+T:Apache Multi Language Custom Error Documents
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291335
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
 
 C:Q1K/jGL2m2ddqaHc7N5SWhJS8uGd8=
 P:perl-cgi-fast
@@ -80230,6 +80216,20 @@ o:lua-bit32
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556949396
 c:a0ee2862670faefb2926e275237e5e60ecbe75ba
+
+C:Q12lAqtXGB7F5GHOZ7gOFY48lpPz0=
+P:apache2-icons
+V:2.4.41-r0
+A:armhf
+S:166132
+I:1368064
+T:Apache Public Domain Icons
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1566291335
+c:f69ef91711a9edd270c57081b8cd8230ad8fed24
 
 C:Q13Ld0T5yvKB0hBQBrSrTxhM5bXVY=
 P:py2-lxml
@@ -85245,20 +85245,6 @@ c:d116833524b26f18815a0d72c9d7219d8707f137
 D:py3-asn1 py3-cryptography py3-bcrypt py3-pynacl python3
 i:py-paramiko=2.4.2-r1 python3
 
-C:Q1xSXKLp60cXNgPkRIBfCml+2Zvcs=
-P:raspberrypi-bootloader-experimental
-V:1.20190620-r0
-A:armhf
-S:2187539
-I:3813376
-T:Experimental firmware with additional codecs
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1562865859
-c:2506c73d417fcfe010c2257ff16a33ac4b9f1df5
-
 C:Q19QfBu8oUyUrtI7V4n1uDRefTiuA=
 P:qemu-img
 V:4.0.0-r1
@@ -86168,6 +86154,20 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557047057
 c:6d2dc8194bf78753b8be2432549387630a7d5759
 i:docs perl-html-format=2.12-r0
+
+C:Q1+uEMnB8l3IVCJZlCghYJ3dvn1Bg=
+P:raspberrypi-bootloader
+V:1.20190718-r0
+A:armhf
+S:1677884
+I:2949120
+T:Bootloader files for the Raspberry Pi
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1566290869
+c:df7bd3a1fa5bc33327d4ffa4a7528bc608c3b29e
 
 C:Q1kDTNA/QQcSWkGCl5r3Lmy8Ctkb0=
 P:libressl2.7-libssl
