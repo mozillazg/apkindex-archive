@@ -409,6 +409,22 @@ t:1545390390
 c:20568ea6a2f27206c1dfe66c8d6ca4cedf20f7c6
 i:docs ghi=1.2.0-r3
 
+C:Q1YIQoLb2rXXM9UyN4jMyDfJgXiEo=
+P:freeradius-sqlite
+V:3.0.17-r6
+A:x86
+S:18595
+I:172032
+T:SQLite module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius-sql=3.0.17-r6 so:libc.musl-x86.so.1 so:libsqlite3.so.0
+p:freeradius3-sqlite=3.0.17-r6 so:rlm_sql_sqlite.so=0
+
 C:Q1gTgQ1d12sk1psQikzrP1A/+AMJE=
 P:libqrencode
 V:4.0.2-r0
@@ -842,6 +858,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545144919
 c:976c5da194eec8b2301ffdeb9f721e15cfb81ed4
 D:perl perl-text-reform
+
+C:Q1P51hTmXioScC2i0uyhKRCk3uXw0=
+P:freeradius-mssql
+V:3.0.17-r6
+A:x86
+S:5333
+I:53248
+T:MSSQL module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius-sql=3.0.17-r6
+p:freeradius3-mssql=3.0.17-r6
 
 C:Q1tOvj2qiU0WNGW/CgRi7vgWQ7moc=
 P:proxychains-ng
@@ -1489,6 +1521,22 @@ o:perl-exporter
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1542984057
 c:3c078164cbee63f23cae391b06cbbd47065cbed1
+
+C:Q19flqCy5UKd5I/PRl3jDYyQfyehk=
+P:freeradius-rest
+V:3.0.17-r6
+A:x86
+S:21662
+I:73728
+T:REST module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libcurl.so.4 so:libjson-c.so.4
+p:so:rlm_rest.so=0
 
 C:Q198w2xrThdVoY7yFU87hKMXxLBgo=
 P:py2-django
@@ -3514,22 +3562,6 @@ c:f0e3243cbf435b49ddcc0a65ae57d023f98b171c
 D:so:libc.musl-x86.so.1
 p:so:libfdt.so.1=0
 
-C:Q1rnMpvc1Mpe+HT2Y49VOZqOiSOg4=
-P:freeradius-ldap
-V:3.0.17-r5
-A:x86
-S:36102
-I:114688
-T:LDAP module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libldap-2.4.so.2
-p:freeradius3-ldap=3.0.17-r5 so:rlm_ldap.so=0
-
 C:Q1IAAUNvcpXH8QmJ8ZBTX/rzMJmHg=
 P:yajl
 V:2.1.0-r0
@@ -3669,6 +3701,21 @@ t:1545163518
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libasound.so.2 so:libc.musl-x86.so.1 so:libfaac.so.0 so:libgcc_s.so.1 so:libmp3lame.so.0 so:libogg.so.0 so:libstdc++.so.6 so:libvorbis.so.0 so:libvorbisenc.so.2
 p:cmd:darkice
+
+C:Q1Tl9hQXEyfBBEf5txUjrQvfX6zw8=
+P:freeradius-doc
+V:3.0.17-r6
+A:x86
+S:1235205
+I:5304320
+T:RADIUS (Remote Authentication Dial-In User Service) server (documentation)
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309955
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+i:docs freeradius=3.0.17-r6
 
 C:Q1E91Ney+rN35ius8p6g023qrb8Z8=
 P:py3-constantly
@@ -6089,22 +6136,6 @@ c:17bb28059bbb00e41c2f32227e54e237551b601d
 D:busybox>=1.28.2-r1 apk-tools>=2.9.1 lddtree>=1.25 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libcryptsetup.so.12 so:libkmod.so.2
 p:cmd:bootchartd cmd:mkinitfs cmd:nlplug-findfs
 
-C:Q1cj+xPw5kiSgGJ+owavrFsS5TmlM=
-P:freeradius
-V:3.0.17-r5
-A:x86
-S:620629
-I:2543616
-T:RADIUS (Remote Authentication Dial-In User Service) server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556202000
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libfreeradius-dhcp.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.4 so:libpcap.so.1 so:libreadline.so.7 so:libssl.so.1.1 so:libtalloc.so.2
-p:freeradius3=3.0.17-r5 so:proto_dhcp.so=0 so:proto_vmps.so=0 so:rlm_always.so=0 so:rlm_attr_filter.so=0 so:rlm_cache.so=0 so:rlm_cache_rbtree.so=0 so:rlm_chap.so=0 so:rlm_counter.so=0 so:rlm_cram.so=0 so:rlm_date.so=0 so:rlm_detail.so=0 so:rlm_dhcp.so=0 so:rlm_digest.so=0 so:rlm_dynamic_clients.so=0 so:rlm_exec.so=0 so:rlm_expiration.so=0 so:rlm_expr.so=0 so:rlm_files.so=0 so:rlm_ippool.so=0 so:rlm_linelog.so=0 so:rlm_logintime.so=0 so:rlm_mschap.so=0 so:rlm_otp.so=0 so:rlm_pap.so=0 so:rlm_passwd.so=0 so:rlm_preprocess.so=0 so:rlm_radutmp.so=0 so:rlm_realm.so=0 so:rlm_replicate.so=0 so:rlm_soh.so=0 so:rlm_sometimes.so=0 so:rlm_test.so=0 so:rlm_unix.so=0 so:rlm_unpack.so=0 so:rlm_utf8.so=0 so:rlm_wimax.so=0 cmd:dhcpclient cmd:map_unit cmd:rad_counter cmd:radattr cmd:radcrypt cmd:raddebug cmd:radiusd cmd:radlast cmd:radmin cmd:radsniff cmd:radsqlrelay cmd:radtest cmd:radwho cmd:radzap cmd:rlm_ippool_tool cmd:smbencrypt
-
 C:Q1kh6YJ3DuVW2PkZf5kpyc+1vbh7A=
 P:lua-cjson
 V:2.1.0-r8
@@ -7475,22 +7506,6 @@ t:1545921333
 c:a1a3fd0238ae1c2a46ab402e9967162f2d1b1460
 D:/bin/sh so:libc.musl-x86.so.1 so:libcap.so.2
 p:cmd:chronyc cmd:chronyd
-
-C:Q1ztjma5IiUb1SnPSgVIQyr1yTT14=
-P:freeradius-sql
-V:3.0.17-r5
-A:x86
-S:41332
-I:184320
-T:SQL module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1
-p:freeradius3-sql=3.0.17-r5 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
 
 C:Q13oxXyCaeeIbHoqr5ZNeVC8gZUd4=
 P:yasm
@@ -10892,6 +10907,22 @@ c:727a1b01d1aea34d92f04a72cbfd7246df08e650
 D:so:libc.musl-x86.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libprocps.so.7
 p:cmd:free cmd:pgrep cmd:pidof cmd:pkill cmd:pmap cmd:ps cmd:pwdx cmd:slabtop cmd:sysctl cmd:tload cmd:top cmd:uptime cmd:vmstat cmd:w cmd:watch
 
+C:Q1q8OiFLWt4G2j/1VGHlyU/jtoz3U=
+P:freeradius-lib
+V:3.0.17-r6
+A:x86
+S:465120
+I:2179072
+T:Freeradius shared libraries
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpcap.so.1 so:libssl.so.1.1 so:libtalloc.so.2
+p:so:libfreeradius-dhcp.so=0 so:libfreeradius-eap.so=0 so:libfreeradius-radius.so=0 so:libfreeradius-server.so=0
+
 C:Q1vSXIY8kHOqwS9YVo/1dtpQ6o9qs=
 P:py2-mock
 V:2.0.0-r3
@@ -12931,22 +12962,6 @@ t:1543230980
 c:9c63848b584bab4478e05725b9880a01d8ca38e4
 D:so:libc.musl-x86.so.1 so:libproxy.so.1
 p:cmd:proxy
-
-C:Q1B4mVFWx6r32x3zACoFwTqrb7wOw=
-P:freeradius-checkrad
-V:3.0.17-r5
-A:x86
-S:13524
-I:53248
-T:Check if a user is (still) logged in on a certain port
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:perl perl-net-telnet perl-snmp-session net-snmp-tools
-p:cmd:checkrad
 
 C:Q1F+CNks6wO47+NOK+awnHLASbgyo=
 P:check-dev
@@ -19510,6 +19525,22 @@ t:1547126448
 c:a2cfb9d906813e89c6963cf296babe0abf0041bf
 i:mc=4.8.22-r0 lang
 
+C:Q1H2K6Pi23dEoWtOlLR4keowmR0kg=
+P:freeradius-redis
+V:3.0.17-r6
+A:x86
+S:9008
+I:61440
+T:Redis modules for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libhiredis.so.0.14
+p:so:rlm_redis.so=0 so:rlm_rediswho.so=0
+
 C:Q14PN8tg4vcGG+TSJ7BQ1wMkB5ncQ=
 P:libusb-dev
 V:1.0.22-r0
@@ -19555,22 +19586,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1543241775
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs perl-test-identity=0.01-r0
-
-C:Q1NdGf/L8tOG69Z23F0LH+UfniWEQ=
-P:freeradius-unixodbc
-V:3.0.17-r5
-A:x86
-S:7151
-I:36864
-T:ODBC module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libodbc.so.2
-p:freeradius3-unixodbc=3.0.17-r5 so:rlm_sql_unixodbc.so=0
 
 C:Q1aoRUBpXeg9vEubDUZcojT5C8S54=
 P:py-gtk-doc
@@ -20313,22 +20328,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1545427578
 c:593b926a0233cbb19a47882bd2c22346cb7a5530
 i:docs myrepos=1.20180726-r0
-
-C:Q1TBLfKi+vYMhi6VqJH3jyiq2tJ/g=
-P:freeradius-rest
-V:3.0.17-r5
-A:x86
-S:21683
-I:73728
-T:REST module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libcurl.so.4 so:libjson-c.so.4
-p:so:rlm_rest.so=0
 
 C:Q17E0i6PaNHM9TrKMiqh2B6hoMpMk=
 P:snappy-dev
@@ -22923,6 +22922,22 @@ t:1545665333
 c:ed5980a756a61aff37036538eb476cd7920fd95f
 D:zsh
 i:zsh=5.6.2-r0 rsync
+
+C:Q13QGePuDf1RzkUgpeIBKIXKih3SU=
+P:freeradius-mysql
+V:3.0.17-r6
+A:x86
+S:19475
+I:192512
+T:MySQL module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius-sql=3.0.17-r6 so:libc.musl-x86.so.1 so:libmariadb.so.3
+p:freeradius3-mysql=3.0.17-r6 so:rlm_sql_mysql.so=0
 
 C:Q1H8qZDW1DwqVLuKlU6vXpBdDtyLg=
 P:libvirt-uml
@@ -25662,6 +25677,22 @@ t:1553681859
 c:e6bacb23e0d3981b6b97d5361eeb7932a8a8f576
 D:libssh2=1.8.2-r0 pc:libcrypto pc:libssl pc:zlib pkgconfig
 p:pc:libssh2=1.8.2
+
+C:Q1USXr985+1HlgNr/HoLRHlT+TUBA=
+P:freeradius-ldap
+V:3.0.17-r6
+A:x86
+S:36109
+I:114688
+T:LDAP module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libldap-2.4.so.2
+p:freeradius3-ldap=3.0.17-r6 so:rlm_ldap.so=0
 
 C:Q1orpIzsKwUun3DUJpndzHf5cRx6Y=
 P:libintl
@@ -29690,22 +29721,6 @@ t:1545919351
 c:7fcb91421c07f667a299e08339b8069ed47a9661
 i:docs nghttp2=1.35.1-r0
 
-C:Q1MZatYil1nyz/YOONj0wcj6SsLP0=
-P:freeradius-krb5
-V:3.0.17-r5
-A:x86
-S:7582
-I:40960
-T:Kerberos module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libcom_err.so.2 so:libkrb5.so.3
-p:freeradius3-krb5=3.0.17-r5 so:rlm_krb5.so=0
-
 C:Q1MS/3XBbXH0333QhVIxoO1aB4W/0=
 P:asterisk-doc
 V:15.7.1-r0
@@ -33682,6 +33697,22 @@ t:1548542868
 c:121d7221567166c6053f54d4585096e0629c7a1b
 D:so:libc.musl-x86.so.1 so:libsyslog-ng-3.19.so.0
 
+C:Q1DaYlztUrkHJPrMMZX4H37JFPb+4=
+P:freeradius-eap
+V:3.0.17-r6
+A:x86
+S:165883
+I:577536
+T:EAP module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libfreeradius-eap.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.1.1 so:libtalloc.so.2
+p:freeradius3-eap=3.0.17-r6 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_leap.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient
+
 C:Q10m3atF67dZvIqLDYyMwVVOa2P/A=
 P:libsexy-dev
 V:0.1.11-r8
@@ -34613,22 +34644,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545063378
 c:3e794c73f0f3a27275077889bdac0106bf107daf
 D:so:libc.musl-x86.so.1 so:libmariadb.so.3
-
-C:Q1wJdi0xEMSSkzf+0ECICK2+dt29k=
-P:freeradius-python
-V:3.0.17-r5
-A:x86
-S:646865
-I:1675264
-T:Python module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 python2 so:libc.musl-x86.so.1
-p:freeradius3-python=3.0.17-r5 so:rlm_python.so=0
 
 C:Q1MOKJGnaDmxUPLUus8TuXXJrsW8Q=
 P:libcrystalhd
@@ -40903,22 +40918,6 @@ c:3212792a0d66c68f455901f20c218dcde1dfaf24
 D:python3
 p:cmd:futurize cmd:pasteurize
 i:py-future=0.17.0-r0 python3
-
-C:Q1mPL77L28Ffsa+IjqWms2MLgxFZY=
-P:freeradius-redis
-V:3.0.17-r5
-A:x86
-S:9021
-I:61440
-T:Redis modules for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libhiredis.so.0.14
-p:so:rlm_redis.so=0 so:rlm_rediswho.so=0
 
 C:Q1eD3QPhgapv3WrSWU688ZNVnt490=
 P:lua5.3-openrc
@@ -47484,6 +47483,20 @@ t:1545061107
 c:71e889091a8b1435f51f11f7aabdd52a1d5a6508
 i:docs freetds=1.00.104-r0
 
+C:Q1M1wBo5Om0EuB9EqxPX4yflDULOc=
+P:freeradius-dev
+V:3.0.17-r6
+A:x86
+S:3656463
+I:6234112
+T:RADIUS (Remote Authentication Dial-In User Service) server (development files)
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+
 C:Q1ZVEoKkZffDsaAl1ntSppYfV6Tos=
 P:py2-py
 V:1.5.3-r0
@@ -47622,6 +47635,22 @@ t:1542902313
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libc.musl-x86.so.1
 p:so:libxkbfile.so.1=1.0.2
+
+C:Q1wnGPP4mQSb8virpgOsDo3cx3fgY=
+P:freeradius-sql
+V:3.0.17-r6
+A:x86
+S:41332
+I:184320
+T:SQL module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1
+p:freeradius3-sql=3.0.17-r6 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
 
 C:Q1xFLYTO4MdPGo/Y4eqgbo+oR/Gwg=
 P:perl-file-remove
@@ -47852,22 +47881,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545665331
 c:ed5980a756a61aff37036538eb476cd7920fd95f
 D:zsh so:libc.musl-x86.so.1
-
-C:Q1hFZUD8tCb4hVHRaohH6loUij9XI=
-P:freeradius-radclient
-V:3.0.17-r5
-A:x86
-S:17452
-I:53248
-T:Client for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:so:libc.musl-x86.so.1 so:libfreeradius-radius.so so:libtalloc.so.2
-p:freeradius3-radclient=3.0.17-r5 cmd:radclient
 
 C:Q1WsqZvExLizj8vFP/zxa9YL7V5Ks=
 P:sshfs
@@ -48724,20 +48737,6 @@ t:1545069780
 c:b2e715c2b675eb9497c1dbc6a8e9dde30aa3e3d6
 D:lua5.1-socket so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 i:lua5.1 lua-sec=0.7-r1
-
-C:Q1dE+xg6/qIsq6Txp+phDEEv+hv/w=
-P:freeradius-dev
-V:3.0.17-r5
-A:x86
-S:3656499
-I:6234112
-T:RADIUS (Remote Authentication Dial-In User Service) server (development files)
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
 
 C:Q11E8jOftta9dByvJb4J65HiA8hag=
 P:libmilter
@@ -51861,6 +51860,22 @@ t:1545356288
 c:727f02ca95ff2beeccac23fa9963b518f4c2fa2b
 i:docs perl-datetime-format-natural=1.06-r0
 
+C:Q1tCBlrS5pc409FwwKep0B2MmNMJY=
+P:freeradius
+V:3.0.17-r6
+A:x86
+S:620672
+I:2543616
+T:RADIUS (Remote Authentication Dial-In User Service) server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libfreeradius-dhcp.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.4 so:libpcap.so.1 so:libreadline.so.7 so:libssl.so.1.1 so:libtalloc.so.2
+p:freeradius3=3.0.17-r6 so:proto_dhcp.so=0 so:proto_vmps.so=0 so:rlm_always.so=0 so:rlm_attr_filter.so=0 so:rlm_cache.so=0 so:rlm_cache_rbtree.so=0 so:rlm_chap.so=0 so:rlm_counter.so=0 so:rlm_cram.so=0 so:rlm_date.so=0 so:rlm_detail.so=0 so:rlm_dhcp.so=0 so:rlm_digest.so=0 so:rlm_dynamic_clients.so=0 so:rlm_exec.so=0 so:rlm_expiration.so=0 so:rlm_expr.so=0 so:rlm_files.so=0 so:rlm_ippool.so=0 so:rlm_linelog.so=0 so:rlm_logintime.so=0 so:rlm_mschap.so=0 so:rlm_otp.so=0 so:rlm_pap.so=0 so:rlm_passwd.so=0 so:rlm_preprocess.so=0 so:rlm_radutmp.so=0 so:rlm_realm.so=0 so:rlm_replicate.so=0 so:rlm_soh.so=0 so:rlm_sometimes.so=0 so:rlm_test.so=0 so:rlm_unix.so=0 so:rlm_unpack.so=0 so:rlm_utf8.so=0 so:rlm_wimax.so=0 cmd:dhcpclient cmd:map_unit cmd:rad_counter cmd:radattr cmd:radcrypt cmd:raddebug cmd:radiusd cmd:radlast cmd:radmin cmd:radsniff cmd:radsqlrelay cmd:radtest cmd:radwho cmd:radzap cmd:rlm_ippool_tool cmd:smbencrypt
+
 C:Q1tX+xthhEsdDsf5nCInuaq5lqIm0=
 P:libxpm-dev
 V:3.5.12-r0
@@ -53433,6 +53448,22 @@ t:1542926326
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl
 
+C:Q1UO0RS6ajXvRtszhLOii+PTZeMRk=
+P:freeradius-unixodbc
+V:3.0.17-r6
+A:x86
+S:7158
+I:36864
+T:ODBC module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libodbc.so.2
+p:freeradius3-unixodbc=3.0.17-r6 so:rlm_sql_unixodbc.so=0
+
 C:Q1mDANs0EXuhi1C9F7PrRKnevO/gg=
 P:lua-ldap
 V:1.2.3-r5
@@ -53612,6 +53643,22 @@ o:asterisk
 m:Timo Teras <timo.teras@iki.fi>
 t:1546247596
 c:04e63b7eebdee737b366fec36a0b089364551fc0
+
+C:Q1cYVDDhVOOYetRUEh6euvW/vRVWE=
+P:freeradius-perl
+V:3.0.17-r6
+A:x86
+S:18004
+I:77824
+T:Perl module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 perl so:libc.musl-x86.so.1 so:libperl.so
+p:freeradius3-perl=3.0.17-r6 so:rlm_perl.so=0
 
 C:Q15PM4gOVTRvI/UxbpDmkRGuaCiiQ=
 P:perl-test-notabs
@@ -54650,6 +54697,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxinerama=1.1.4-r1 pc:x11 pc:xext pc:xineramaproto pkgconfig
 p:pc:xinerama=1.1.4
 
+C:Q1E+Vk+n9kpdR9tgEnHxnR5RWFcL8=
+P:freeradius-radclient
+V:3.0.17-r6
+A:x86
+S:17458
+I:53248
+T:Client for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:so:libc.musl-x86.so.1 so:libfreeradius-radius.so so:libtalloc.so.2
+p:freeradius3-radclient=3.0.17-r6 cmd:radclient
+
 C:Q1pIeJ2uPafn4FyJG5Tj8Syin7lEw=
 P:perl-sub-identify
 V:0.14-r1
@@ -55536,6 +55599,22 @@ t:1542272864
 c:ed7e984d31911fe3201a16581f39f14f074dc4a0
 D:so:libc.musl-x86.so.1
 p:so:libfakeroot-0.so=0 cmd:faked cmd:fakeroot
+
+C:Q1rfMI5sZtqO/6m1zPtPVxnXCN/58=
+P:freeradius-postgresql
+V:3.0.17-r6
+A:x86
+S:26979
+I:200704
+T:PostgreSQL module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius-sql=3.0.17-r6 so:libc.musl-x86.so.1 so:libpq.so.5
+p:freeradius3-postgresql=3.0.17-r6 so:rlm_sql_postgresql.so=0
 
 C:Q1zqYzOXsClCZw4Vp5yZ0FmDspuK4=
 P:opensp-doc
@@ -57082,6 +57161,22 @@ c:69b397fceefdd1ae05560b1559d03a1195b4211b
 D:gobject-introspection-dev polkit-dev libatasmart-dev libgudev-dev acl-dev pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pkgconfig udisks2-libs=2.6.5-r1
 p:pc:udisks2=2.6.5
 
+C:Q10DuKsTEFNafXz3QKZHGEKht3u1w=
+P:freeradius-krb5
+V:3.0.17-r6
+A:x86
+S:7576
+I:40960
+T:Kerberos module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libcom_err.so.2 so:libkrb5.so.3
+p:freeradius3-krb5=3.0.17-r6 so:rlm_krb5.so=0
+
 C:Q1AaBnIqBGgY2zt4dmPiRpKE4vTHM=
 P:dbus-x11
 V:1.10.28-r0
@@ -57221,22 +57316,6 @@ t:1545667779
 c:f8a0593fbe2fee420d567a4433d1682069448eba
 D:so:libc.musl-x86.so.1 so:libexif.so.12 so:libgphoto2.so.6 so:libgphoto2_port.so.12 so:libintl.so.8 so:libpopt.so.0
 p:cmd:gphoto2
-
-C:Q1GNYVEJl9EXESEcL5MF4W5Z9OluY=
-P:freeradius-mssql
-V:3.0.17-r5
-A:x86
-S:5361
-I:53248
-T:MSSQL module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius-sql=3.0.17-r5
-p:freeradius3-mssql=3.0.17-r5
 
 C:Q1uMyLPxN88pE/EgrHIKbk8JKWtss=
 P:lua-socket
@@ -57481,22 +57560,6 @@ t:1545140884
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86.so.1
 p:so:libfaad.so.2=2.0.0 cmd:faad
-
-C:Q1G4Hcrr6ZXLiFKSMEC2aiiLKPF+U=
-P:freeradius-lib
-V:3.0.17-r5
-A:x86
-S:465182
-I:2179072
-T:Freeradius shared libraries
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpcap.so.1 so:libssl.so.1.1 so:libtalloc.so.2
-p:so:libfreeradius-dhcp.so=0 so:libfreeradius-eap.so=0 so:libfreeradius-radius.so=0 so:libfreeradius-server.so=0
 
 C:Q1YXoOCK/AHdx2H+TBJAwzzFaQmmY=
 P:herbstluftwm-bash-completion
@@ -62919,21 +62982,6 @@ t:1547111929
 c:2fa868f587e3b04dba99bb0eb26947db9dd07a6f
 p:cmd:apk.static
 
-C:Q13tczSI4pMdk0BmRZJrRyz3Pdmlo=
-P:freeradius-doc
-V:3.0.17-r5
-A:x86
-S:1234993
-I:5304320
-T:RADIUS (Remote Authentication Dial-In User Service) server (documentation)
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-i:docs freeradius=3.0.17-r5
-
 C:Q17wPyf2RYrOKdlIH8khoq2BLQk5k=
 P:awstats-doc
 V:7.7-r0
@@ -63561,20 +63609,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545119476
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs iftop=0.17-r7
-
-C:Q1P1dKNEZ47OzjfMB887xdk2I0JJk=
-P:freeradius-dbg
-V:3.0.17-r5
-A:x86
-S:4271289
-I:9945088
-T:RADIUS (Remote Authentication Dial-In User Service) server (debug symbols)
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201997
-c:065f2876051f76809327b30c47239ed3b8db0bd5
 
 C:Q1P9yvHMSTNmhVp59CwlA9YinyJCY=
 P:kbd
@@ -64265,6 +64299,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545161490
 c:31d7be985845ca15592e3a88182e7420df7c46ac
 i:lxterminal=0.3.2-r0 lang
+
+C:Q17XWbQVVcpOIGYRRidWcshdPDGxU=
+P:freeradius-checkrad
+V:3.0.17-r6
+A:x86
+S:13538
+I:53248
+T:Check if a user is (still) logged in on a certain port
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:perl perl-net-telnet perl-snmp-session net-snmp-tools
+p:cmd:checkrad
 
 C:Q1PpiMBq//suosN8687/9Y0vh4djU=
 P:gnome-vfs-dev
@@ -66002,6 +66052,22 @@ t:1545120186
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libSDL-1.2.so.0 so:libc.musl-x86.so.1
 p:so:libSDL_image-1.2.so.0=0.8.4
+
+C:Q1o1oDaZ5wVnrYP1+7uBBv6PiMUkc=
+P:freeradius-python
+V:3.0.17-r6
+A:x86
+S:648537
+I:1679360
+T:Python module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309956
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 python2 so:libc.musl-x86.so.1
+p:freeradius3-python=3.0.17-r6 so:rlm_python.so=0
 
 C:Q1tQacCnosVB5Ifqy03bTWSVxPyzM=
 P:perl-sub-quote-doc
@@ -68173,22 +68239,6 @@ t:1545069501
 c:64eba79a99582525e3b6afcdfa2dc43781fa5334
 i:docs orbit2=2.14.19-r4
 
-C:Q1A5RsfTpbXu7jFXs6L55ogj5639Q=
-P:freeradius-pam
-V:3.0.17-r5
-A:x86
-S:5158
-I:36864
-T:PAM module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libpam.so.0
-p:freeradius3-pam=3.0.17-r5 so:rlm_pam.so=0
-
 C:Q1fiT/STS6eXwRqY9SjYL1d/+TYjU=
 P:mqtt-exec-dbg
 V:0.4-r4
@@ -68481,22 +68531,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542820304
 c:a5cc7ce5789fddc04372361e619eabe05ed9038a
 i:docs cmake=3.13.0-r0
-
-C:Q17Bdl01z2ZU1rSITu9OBPtprM7s0=
-P:freeradius-perl
-V:3.0.17-r5
-A:x86
-S:18004
-I:77824
-T:Perl module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 perl so:libc.musl-x86.so.1 so:libperl.so
-p:freeradius3-perl=3.0.17-r5 so:rlm_perl.so=0
 
 C:Q1HZlu5mAjzbEb2RUMfjfa3aAip+w=
 P:sysfsutils-dev
@@ -70440,6 +70474,20 @@ c:587e85e1fa40b5a1a7fa2d230cd766c6ebc20256
 D:p11-kit=0.23.14-r0 pkgconfig
 p:pc:p11-kit-1=0.23.14
 
+C:Q1m74Q9NrQ5NpqSRj0HwMlsiBgK/g=
+P:freeradius-dbg
+V:3.0.17-r6
+A:x86
+S:4276648
+I:9961472
+T:RADIUS (Remote Authentication Dial-In User Service) server (debug symbols)
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309955
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+
 C:Q1vQWIz42LYnZyy9n14S8/mnp2GD8=
 P:alpine-ipxe-ipxe_efi
 V:1.0_git20180825-r1
@@ -71809,22 +71857,6 @@ c:1e41289fef92764e4e773b7e92e0a344ff0f101e
 D:python2 py-meld3 py-setuptools
 p:cmd:echo_supervisord_conf cmd:pidproxy cmd:supervisorctl cmd:supervisord
 
-C:Q1qDBvOSklT0Uzu+/Tk8A/0jdGeog=
-P:freeradius-postgresql
-V:3.0.17-r5
-A:x86
-S:27016
-I:200704
-T:PostgreSQL module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius-sql=3.0.17-r5 so:libc.musl-x86.so.1 so:libpq.so.5
-p:freeradius3-postgresql=3.0.17-r5 so:rlm_sql_postgresql.so=0
-
 C:Q1+a7ZCpcNsUcp5YXzP2AMl7OxS3E=
 P:linux-firmware-emi26
 V:20190322-r0
@@ -72316,22 +72348,6 @@ t:1545427578
 c:593b926a0233cbb19a47882bd2c22346cb7a5530
 D:perl git
 p:cmd:mr
-
-C:Q1/YeQkR2bi+i2X2Tovw6wdL/FeeA=
-P:freeradius-eap
-V:3.0.17-r5
-A:x86
-S:165777
-I:577536
-T:EAP module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius=3.0.17-r5 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libfreeradius-eap.so so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.1.1 so:libtalloc.so.2
-p:freeradius3-eap=3.0.17-r5 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_leap.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient
 
 C:Q1TVTQ5OhQEvtetsyyvWHjmnL/TtY=
 P:perl-io-captureoutput
@@ -73464,22 +73480,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551107352
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 p:cmd:qemu-sparc32plus
-
-C:Q1V+DfHt+7e0jQ8q0+4c0QWOAKm/4=
-P:freeradius-sqlite
-V:3.0.17-r5
-A:x86
-S:18649
-I:172032
-T:SQLite module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201999
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius-sql=3.0.17-r5 so:libc.musl-x86.so.1 so:libsqlite3.so.0
-p:freeradius3-sqlite=3.0.17-r5 so:rlm_sql_sqlite.so=0
 
 C:Q12Ee4JzpvcSz0hnfAybwHfXx3zs0=
 P:squid-lang-lt
@@ -75936,22 +75936,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1546585711
 c:535c92bc2d17b811ebba1ef621892c292f87c14a
 i:docs libcap=2.26-r0
-
-C:Q15Rh7iM3eCkc28sJHhcNe0GVrT6s=
-P:freeradius-mysql
-V:3.0.17-r5
-A:x86
-S:19530
-I:192512
-T:MySQL module for FreeRADIUS server
-U:http://freeradius.org/
-L:GPL
-o:freeradius
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1556201998
-c:065f2876051f76809327b30c47239ed3b8db0bd5
-D:freeradius-sql=3.0.17-r5 so:libc.musl-x86.so.1 so:libmariadb.so.3
-p:freeradius3-mysql=3.0.17-r5 so:rlm_sql_mysql.so=0
 
 C:Q1VhwgdamUxCTmqb2dpG4dVp8QfIc=
 P:perl-lwp-useragent-determined-doc
@@ -79507,6 +79491,22 @@ t:1551107355
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 D:qemu so:libaio.so.1 so:libc.musl-x86.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-riscv32
+
+C:Q1B0aY5kwD6rp+WwcRT+/HmtrB2v0=
+P:freeradius-pam
+V:3.0.17-r6
+A:x86
+S:5145
+I:36864
+T:PAM module for FreeRADIUS server
+U:http://freeradius.org/
+L:GPL
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1566309957
+c:845ceeb84a5356dfef381071a5fcbffff147dd8e
+D:freeradius=3.0.17-r6 so:libc.musl-x86.so.1 so:libpam.so.0
+p:freeradius3-pam=3.0.17-r6 so:rlm_pam.so=0
 
 C:Q1iMVQTVREmZqsC4O2VSn7PNg76a8=
 P:swatch-doc
