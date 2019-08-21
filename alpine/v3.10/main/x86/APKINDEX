@@ -1052,22 +1052,6 @@ c:e3d1891bc8e0b7efa97640a600a5d19710aa3908
 D:so:libc.musl-x86.so.1 so:liblmdb.so.0
 p:cmd:mdb_copy cmd:mdb_dump cmd:mdb_load cmd:mdb_stat
 
-C:Q1KQKbdmka+GaRW8UWjlQMW6UAEu4=
-P:collectd-libs
-V:5.8.1-r0
-A:x86
-S:19313
-I:53248
-T:The system statistics collection daemon (libraries)
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:so:libc.musl-x86.so.1 so:libgcrypt.so.20
-p:so:libcollectdclient.so.1=1.1.0
-
 C:Q1rF5pPyRrld8/xnyOTeHE4Mr8Szg=
 P:bcache-tools-doc
 V:1.0.8-r2
@@ -1913,6 +1897,21 @@ t:1560777470
 c:4a3115cdb34167b3ceea47ade92f6a921312a82e
 D:python3
 i:py-parsing=2.4.0-r0 python3
+
+C:Q1WanbUa2QlVf0YqTaqyfB9eI0dIw=
+P:collectd-sensors
+V:5.8.1-r1
+A:x86
+S:6324
+I:32768
+T:sensors pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libsensors.so.4
 
 C:Q1i4FfrN88w4npjA2eEij5TZPKags=
 P:protobuf-vim
@@ -4825,6 +4824,22 @@ c:de51e9a1791e3b5c672bad557a16babc1122dfd5
 D:python2 py-boto gnupg ncftp py2-fasteners
 i:duplicity=0.7.19-r0 lang
 
+C:Q12wm6rcsx8hnLqxVCkuidch2fHc4=
+P:collectd-utils
+V:5.8.1-r1
+A:x86
+S:15785
+I:73728
+T:collectd utilities
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:so:libc.musl-x86.so.1 so:libcollectdclient.so.1
+p:cmd:collectd-nagios cmd:collectd-tg cmd:collectdctl
+
 C:Q1zM0ARcnbA1UEyAeXBOoKpHmEadE=
 P:ivshmem-tools
 V:4.0.0-r1
@@ -5350,37 +5365,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1557067202
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins
-
-C:Q1vagvUHpsUPw/Yw8p6CEoXINOblE=
-P:collectd-lua
-V:5.8.1-r0
-A:x86
-S:9359
-I:40960
-T:lua pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:liblua.so.5
-
-C:Q1TumHMQk2a+tc6nK8eyPr/tRG6bQ=
-P:collectd-utils
-V:5.8.1-r0
-A:x86
-S:15790
-I:73728
-T:collectd utilities
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:so:libc.musl-x86.so.1 so:libcollectdclient.so.1
-p:cmd:collectd-nagios cmd:collectd-tg cmd:collectdctl
 
 C:Q1kt8WAy7Gbq89hyzYLfmQu79uI0k=
 P:py2-cairo
@@ -6055,6 +6039,22 @@ c:10fc00b3dbc9a5c90dd9c54ae5c6f94975e6b63b
 D:freeradius=3.0.19-r3 so:libc.musl-x86.so.1 so:libpam.so.0
 p:freeradius3-pam=3.0.19-r3 so:rlm_pam.so=0
 
+C:Q1sj8ZZv+GaHxqaM2AeNMQLs0J88Q=
+P:collectd-virt
+V:5.8.1-r1
+A:x86
+S:17917
+I:61440
+T:virt pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libvirt.so.0 so:libxml2.so.2
+p:collectd-libvirt
+
 C:Q1E4cMhXklIGlfvUbbSN9zom56kN0=
 P:c-ares-dev
 V:1.15.0-r0
@@ -6469,6 +6469,22 @@ t:1557261462
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-x86.so.1 so:libdbi.so.1
 p:rsyslog-omlibdbi=8.1904.0-r0
+
+C:Q1FDQQtMHtmEJIbQE2tXfoYMybvAs=
+P:collectd-dev
+V:5.8.1-r1
+A:x86
+S:6528
+I:57344
+T:The system statistics collection daemon (development files)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389843
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd-libs=5.8.1-r1 pkgconfig
+p:pc:libcollectdclient=5.8.1
 
 C:Q1ZXjeb0mMCHQ8cyUYRzzec91QB/U=
 P:perl-devel-symdump-doc
@@ -7056,6 +7072,21 @@ c:91c5476e11263890b9499836f236e16837981c1a
 D:pkgconfig
 p:pc:xcb-proto=1.13
 
+C:Q1RZNmm7l4ohjjSA9Ae1JrnEnaapM=
+P:collectd-log_logstash
+V:5.8.1-r1
+A:x86
+S:5343
+I:32768
+T:log_logstash pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libyajl.so.2
+
 C:Q16zrRFnoWg5AOOtGuVnUoRVKzleM=
 P:perl-sub-identify
 V:0.14-r2
@@ -7518,21 +7549,6 @@ t:1556949663
 c:519ca0f77842391eb0f34db4a236ffc88e7f23c4
 D:so:libc.musl-x86.so.1
 p:cmd:tree
-
-C:Q1c6hxWYoVfkVuay0WoDBchywNDCw=
-P:collectd-ping
-V:5.8.1-r0
-A:x86
-S:7429
-I:36864
-T:ping pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:liboping.so.0
 
 C:Q1RGUWyKi+ACAPMFxrcIT+ITO8xsg=
 P:perl-dbi-doc
@@ -9570,6 +9586,21 @@ c:01d8466832761b08d163feb79ad01f980dbb7d84
 D:so:libboost_filesystem.so.1.69.0 so:libboost_iostreams.so.1.69.0 so:libboost_regex.so.1.69.0 so:libboost_thread.so.1.69.0 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:liblucene++-contrib.so.0=3.0.7 so:liblucene++.so.0=3.0.7
 
+C:Q1msfAw/5PQ+eVQXifCWwTbuo5PaI=
+P:collectd-python
+V:5.8.1-r1
+A:x86
+S:26410
+I:94208
+T:python pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
+
 C:Q1mxtiFX5OdNYDH8iyr1IA4Zw16RE=
 P:py-scandir
 V:1.9.0-r2
@@ -9692,22 +9723,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556915200
 c:2614eb4fa0866d0fe53d75a04b5cce38b5d4c425
 i:docs perl-test-requires=0.10-r0
-
-C:Q191NlB3RlAXv6SEdBWI9i0lsfKF0=
-P:collectd
-V:5.8.1-r0
-A:x86
-S:529397
-I:2170880
-T:The system statistics collection daemon
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434985
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:/bin/sh so:libc.musl-x86.so.1 so:libnetsnmpagent.so.35 so:libyajl.so.2
-p:cmd:collectd cmd:collectdmon
 
 C:Q1SJ8DbgS5gi9jvuQVxoz40J1/V1s=
 P:ulogd-openrc
@@ -11434,6 +11449,21 @@ t:1557146394
 c:c1a63a05ae198b35e680243101ff6efa7006423d
 i:docs perl-file-which=1.23-r0
 
+C:Q1Gikffn+pJ4pFQV5w62zPkPx6K8M=
+P:collectd-network
+V:5.8.1-r1
+A:x86
+S:22351
+I:69632
+T:network pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libgcrypt.so.20
+
 C:Q1S2N//lYIYpi+HzELRA7wPk0Y0a0=
 P:libdvdcss
 V:1.4.2-r0
@@ -11848,6 +11878,21 @@ t:1557249092
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs stalonetray=0.8.3-r0
 
+C:Q117/8sdZ8B4DE8+rhkNCH8sB0Vy0=
+P:collectd-ascent
+V:5.8.1-r1
+A:x86
+S:7404
+I:40960
+T:ascent pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2
+
 C:Q1efllTM0d1gfPKN4ebkHW7lXza/o=
 P:py3-openssl
 V:19.0.0-r0
@@ -11906,6 +11951,21 @@ o:libgpg-error
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558987979
 c:6c27a870339d1e86f62cbddf085199081c88138a
+
+C:Q1wkdAFkdUdrcazM321sD7ZEpyl9M=
+P:collectd-lvm
+V:5.8.1-r1
+A:x86
+S:4912
+I:32768
+T:lvm pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:liblvm2app.so.2.2
 
 C:Q1Q55AvO4kf3HlJqwWUz1hllX8W1U=
 P:perl-db_file-doc
@@ -13124,6 +13184,21 @@ c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libc.musl-x86.so.1
 p:so:libboost_context.so.1.69.0=1.69.0
 
+C:Q1z5UTM4XB75AamSNtdratBavetEU=
+P:collectd-lua
+V:5.8.1-r1
+A:x86
+S:9362
+I:40960
+T:lua pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:liblua.so.5
+
 C:Q1QC82ByxRVnqJUPU5Z+QO3YfChWs=
 P:perl-date-format
 V:2.30-r0
@@ -14224,21 +14299,6 @@ o:perl-term-table
 t:1557073750
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:perl-importer
-
-C:Q1IiiCUqi6pN3bcfWE5V3p5dUtPi8=
-P:collectd-apache
-V:5.8.1-r0
-A:x86
-S:7697
-I:40960
-T:apache pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4
 
 C:Q1hmgabxYm91IClIL0JSrbHE6RuxE=
 P:libxklavier-doc
@@ -16053,6 +16113,21 @@ c:0e0abb0c41bb198105c4c8f881bb53157f1c09d4
 D:pkgconfig popt=1.16-r7
 p:pc:popt=1.16
 
+C:Q1qKFJMPvzRnGpWMv0fTByJ3IoV0Y=
+P:collectd-ping
+V:5.8.1-r1
+A:x86
+S:7428
+I:36864
+T:ping pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:liboping.so.0
+
 C:Q1cYjC7D1CmB4zTEdWhih77GlCZWs=
 P:libcmph
 V:2.0-r1
@@ -17831,21 +17906,6 @@ t:1557248990
 c:33201a92c43c38f3be611430c7b47470b0028c26
 D:libxxf86dga=1.1.5-r0 pc:x11 pc:xext pc:xf86dgaproto pkgconfig
 p:pc:xxf86dga=1.1.5
-
-C:Q1JieePsWEfA2F4PGOUtFYoZ6T6rs=
-P:collectd-log_logstash
-V:5.8.1-r0
-A:x86
-S:5342
-I:32768
-T:log_logstash pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libyajl.so.2
 
 C:Q1N7yaiAOmvPueiTUDRlin7nXdXA8=
 P:qemu-sparc
@@ -19887,21 +19947,6 @@ t:1557062587
 c:f6caad866439aa8306e0ab8b25ba7788adc97897
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libisns.so.0
 p:cmd:isnsadm cmd:isnsd cmd:isnsdd
-
-C:Q16/a8rbQFoC9tbrDf9mb30uecGF0=
-P:collectd-disk
-V:5.8.1-r0
-A:x86
-S:7491
-I:36864
-T:disk pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libudev.so.1
 
 C:Q1DO1xtRw0oRUzKzpcPZGyGoXpRj4=
 P:perl-devel-stacktrace-ashtml-doc
@@ -22131,21 +22176,6 @@ t:1557062264
 c:e3d1891bc8e0b7efa97640a600a5d19710aa3908
 i:docs lmdb=0.9.23-r0
 
-C:Q170+JH5DpkYFuDbmY5g+z/PCB2Oo=
-P:collectd-doc
-V:5.8.1-r0
-A:x86
-S:202762
-I:253952
-T:The system statistics collection daemon (documentation)
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-i:docs collectd=5.8.1-r0
-
 C:Q1EVHAU6D0RFwAf4zNfXsGWIaVbMs=
 P:openldap-overlay-memberof
 V:2.4.47-r2
@@ -22523,6 +22553,21 @@ t:1563351466
 c:5cfaf48ac56fc66bc1979485df491a69475247f9
 D:so:libc.musl-x86.so.1 so:libxcb-xkb.so.1 so:libxcb.so.1 so:libxkbcommon.so.0
 p:so:libxkbcommon-x11.so.0=0.0.0
+
+C:Q1diAgYppYHpZUMt1PG1ONrCTcMH0=
+P:collectd-apache
+V:5.8.1-r1
+A:x86
+S:7689
+I:40960
+T:apache pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4
 
 C:Q1xyFly3pHcNoGeyMyNscQ/MdQRoM=
 P:procps-lang
@@ -24304,21 +24349,6 @@ t:1557063856
 c:c40cb872fd00e29521b07a5ed63347585c5392f3
 i:docs aspell=0.60.6.1-r13
 
-C:Q1tcemYLKSfKmLwaEFvC2Ip/neFh0=
-P:collectd-ceph
-V:5.8.1-r0
-A:x86
-S:10430
-I:45056
-T:ceph pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libyajl.so.2
-
 C:Q1uIyROKwIzggoSnmqnaZ6kZFggBw=
 P:tk
 V:8.6.9-r0
@@ -25244,6 +25274,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1562236820
 c:4a1b35f961328ede5ec6d878950b6f368b83a75d
 D:irssi so:libc.musl-x86.so.1 so:libgcrypt.so.20 so:libotr.so.5
+
+C:Q1gI1BN2ykI7pWHb/fxWxXZD0lxQI=
+P:collectd-write_redis
+V:5.8.1-r1
+A:x86
+S:5123
+I:32768
+T:write_redis pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libhiredis.so.0.14
 
 C:Q1MYo1h5KkTYyHQ3jOsAuUBjKKY2Y=
 P:linux-firmware-go7007
@@ -26859,21 +26904,6 @@ t:1556880117
 c:23024be20ce29a16cfd42c4b872985500069c2bf
 i:docs sed=4.7-r0
 
-C:Q1CiM2lXLbPncAZljztnGr2dmb8jk=
-P:collectd-network
-V:5.8.1-r0
-A:x86
-S:22357
-I:69632
-T:network pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libgcrypt.so.20
-
 C:Q1fJ+9Fwkv7djj8geQ6OOVZ/+KtWE=
 P:lua5.3-doc
 V:5.3.5-r2
@@ -27720,21 +27750,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557175798
 c:cda2b08cd0801bfc029a71b0fd31697c8e9a9ee5
 i:docs xf86-video-sunleo=1.2.2-r3
-
-C:Q1TREqQn1gwgFG8ctQLHjv969r7CE=
-P:collectd-iptables
-V:5.8.1-r0
-A:x86
-S:5502
-I:32768
-T:iptables pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libip4tc.so.0 so:libip6tc.so.0
 
 C:Q1EO5bm4ipnxi+1W2x8o3GIY5idrA=
 P:lua-maxminddb
@@ -30238,6 +30253,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556879805
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 
+C:Q1O1PxM5F7DTGaL2SMW6SvZXecKtU=
+P:collectd-redis
+V:5.8.1-r1
+A:x86
+S:6950
+I:36864
+T:redis pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libhiredis.so.0.14
+
 C:Q1fCrUoirZeNAAyw8w11+pTV6zp/s=
 P:libdvbcsa-dev
 V:1.1.0-r1
@@ -31264,6 +31294,21 @@ t:1560611868
 c:8c51426a5f64b5a3405483350291c0e87a55ea57
 i:docs perl-inline=0.83-r2
 
+C:Q11FJtoiIw/r3SYnTzZjPMlzsOgic=
+P:collectd-rrdtool
+V:5.8.1-r1
+A:x86
+S:19345
+I:77824
+T:rrd* pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:librrd.so.8
+
 C:Q11cYt4Y9nenr6bsRr0UaFelVE27g=
 P:harfbuzz
 V:2.5.1-r0
@@ -31461,6 +31506,21 @@ t:1556998346
 c:0e31088488fe1dea60548fbaf017a71cf6e4562a
 D:guile gc-dev guile-libs=2.0.14-r0 pkgconfig
 p:pc:guile-2.0=2.0.14 cmd:guile-config
+
+C:Q1TZDEAyKvZAxtZTMioH4HQyeUTF4=
+P:collectd-ceph
+V:5.8.1-r1
+A:x86
+S:10432
+I:45056
+T:ceph pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libyajl.so.2
 
 C:Q1zo29vgS0mzTwCznogvP9JbxnPRU=
 P:faac-static
@@ -32561,6 +32621,21 @@ t:1556719329
 c:b65c2c0c9a5606eabd0361fa4e03c981bd0f17be
 D:py3-olefile so:libc.musl-x86.so.1 so:libfreetype.so.6 so:libjpeg.so.8 so:liblcms2.so.2 so:libpython3.7m.so.1.0 so:libtiff.so.5 so:libwebp.so.7 so:libwebpdemux.so.2 so:libwebpmux.so.3 so:libz.so.1
 i:py-pillow=6.0.0-r1 python3
+
+C:Q185NzzWlcoi2Fx6liCUV5GGM8KXw=
+P:collectd-perl
+V:5.8.1-r1
+A:x86
+S:33159
+I:155648
+T:perl bindings to collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:so:libc.musl-x86.so.1 so:libperl.so
 
 C:Q190UWOPW9/b3vJ7nA/FqglOF3Ctw=
 P:sgdisk
@@ -33843,6 +33918,21 @@ t:1557171088
 c:126db8fb1f1917fdd5816095440cb4978c8def3d
 D:perl-gdtextutil perl-gd
 
+C:Q1pmZhRI8a+ahnUf6L7w9e7DoV+lE=
+P:collectd-nginx
+V:5.8.1-r1
+A:x86
+S:5500
+I:32768
+T:nginx pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4
+
 C:Q1+fO3TChUGA3v9b+UwCzwDPL8lUo=
 P:perl-convert-binhex-doc
 V:1.125-r1
@@ -34009,6 +34099,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556999384
 c:ded1d89950172241b861998a18ca26cd74cef189
 i:docs xf86-video-i740=1.4.0-r0
+
+C:Q1KeYgRSVpcKY20FXlaZI+4NYzQLI=
+P:collectd-dns
+V:5.8.1-r1
+A:x86
+S:10122
+I:45056
+T:dns pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libpcap.so.1
 
 C:Q1XR6PoO4PTJJXpNFwFe4gbo+NJnk=
 P:procps
@@ -35281,6 +35386,21 @@ t:1556998599
 c:9db7b60601c0aa7c1805b4da8da4f9b3f67aac4e
 D:zlib-dev libpng-dev libjpeg-turbo-dev expat-dev fontconfig-dev libsm-dev libxext-dev cairo-dev pango-dev librsvg-dev gmp-dev freetype-dev graphviz=2.40.1-r1 pkgconfig
 p:pc:libcdt=2.40.1 pc:libcgraph=2.40.1 pc:libgvc=2.40.1 pc:libgvpr=2.40.1 pc:liblab_gamut=2.40.1 pc:libpathplan=2.40.1 pc:libxdot=2.40.1
+
+C:Q1M0crprlcXKw27Rm2MVDJ09U2lzY=
+P:collectd-mqtt
+V:5.8.1-r1
+A:x86
+S:8151
+I:40960
+T:mqtt pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libmosquitto.so.1
 
 C:Q1JHva62ncMlHHgHqfsOVuukdHl3M=
 P:perl-crypt-x509
@@ -37142,6 +37262,21 @@ c:a336370de87a91b55111bd37b74a8b4f51dcf30a
 D:pc:gobject-2.0 pc:libffi pkgconfig
 p:pc:pygobject-3.0=3.32.1
 
+C:Q1VvsXwRPZiXTmHn8JdaCibu83Hx8=
+P:collectd-postgresql
+V:5.8.1-r1
+A:x86
+S:17242
+I:57344
+T:postgresql pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libpq.so.5
+
 C:Q1no1QNJdI58fJa/ygyTwSf5BscLQ=
 P:perl-html-formattext-withlinks-doc
 V:0.15-r0
@@ -37653,21 +37788,6 @@ t:1556989804
 c:a0769441b60e74592eb53f8c132878ead77723d2
 i:docs lua-penlight=1.5.4-r2
 
-C:Q1z49OitYdOwETAhFkmCAT1Et6LMI=
-P:collectd-postgresql
-V:5.8.1-r0
-A:x86
-S:17243
-I:57344
-T:postgresql pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libpq.so.5
-
 C:Q10Jf2z5Fpc6Ff09HlGBa890s3Smc=
 P:perl-net-cidr-lite
 V:0.21-r4
@@ -37866,22 +37986,6 @@ t:1556572674
 c:ca70b724787029111b9ef5545543e1d467665bf9
 D:pkgconfig unixodbc=2.3.7-r1
 p:pc:odbc=2.3.7 pc:odbccr=2.3.7 pc:odbcinst=2.3.7
-
-C:Q15tQp7Lwaqn3Rk5zwp3lR3ON/lOc=
-P:collectd-virt
-V:5.8.1-r0
-A:x86
-S:17912
-I:61440
-T:virt pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libvirt.so.0 so:libxml2.so.2
-p:collectd-libvirt
 
 C:Q15yrt1yjIhd6e7DqqcM8qPaq1CN4=
 P:py-flask
@@ -38181,21 +38285,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557249040
 c:99ec9e1c84e338629cf1b27b0fdc808bde4d8564
 i:openrc iperf3=3.6-r0
-
-C:Q1kQEGgaDjqTBCjRZx04d87QPL8H0=
-P:collectd-lvm
-V:5.8.1-r0
-A:x86
-S:4879
-I:32768
-T:lvm pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:liblvm2app.so.2.2
 
 C:Q1cgczjHTo7X45k4AM+gf2gNK0bn8=
 P:mbedtls-utils
@@ -38809,6 +38898,21 @@ t:1560099504
 c:f8a685e2a03c00bd62453c2dbbc154db9598cdfe
 D:so:libX11.so.6 so:libXtst.so.6 so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libatspi.so.0=0.0.1
+
+C:Q1McfHj2LEE/OgIVPQBiHq8AcV9UM=
+P:collectd-doc
+V:5.8.1-r1
+A:x86
+S:202735
+I:253952
+T:The system statistics collection daemon (documentation)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+i:docs collectd=5.8.1-r1
 
 C:Q1MsA8GE75V3aUvJFskfm4x4hX2cs=
 P:libxrender-dev
@@ -40465,21 +40569,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557038465
 c:ff1e547cecbf85003fcbb6cfbe9ba3182762ceae
 
-C:Q1LW7/G0ik/eyw3JaZ2w4qaRq8XeA=
-P:collectd-snmp
-V:5.8.1-r0
-A:x86
-S:12857
-I:45056
-T:snmp pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libnetsnmp.so.35
-
 C:Q1z8TiyG31MnrnWf2cTdH4r3kOF64=
 P:ortp
 V:1.0.2-r0
@@ -40619,21 +40708,6 @@ t:1559032068
 c:6646db38523d2d089cb105bcf32165cc7d1f10aa
 D:py3-pygments py3-pygments=2.4.0-r0
 
-C:Q194OJhKjOKrmUWUg2echvcM3QRKY=
-P:collectd-nginx
-V:5.8.1-r0
-A:x86
-S:5498
-I:32768
-T:nginx pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4
-
 C:Q1yR5EGXSm6RkrMK/fqsOZX8DfvO4=
 P:b43-fwcutter-doc
 V:019-r0
@@ -40724,21 +40798,6 @@ t:1556991255
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:logrotate /bin/sh so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libpcreposix.so.0 so:libstdc++.so.6 so:libz.so.1
 p:cmd:dansguardian
-
-C:Q1/N0gkzgSbPvEZt3W0RS/NTHe550=
-P:collectd-ascent
-V:5.8.1-r0
-A:x86
-S:7428
-I:40960
-T:ascent pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2
 
 C:Q1r9kYVAW5n0gpyGUqfpf2QbFeeuA=
 P:xz-dev
@@ -44309,21 +44368,6 @@ t:1560344453
 c:9ea6f9fda71ccc2330c62a51d37b8831f50fe5f2
 D:bash so:libX11.so.6 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libck-connector.so.0 so:libdbus-1.so.3 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libxcb.so.1
 p:cmd:lxdm cmd:lxdm-binary cmd:lxdm-config
-
-C:Q1dCoFDI0GpkUSR6gwmG3Nn8Cg+aM=
-P:collectd-mqtt
-V:5.8.1-r0
-A:x86
-S:8167
-I:40960
-T:mqtt pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libmosquitto.so.1
 
 C:Q1tPJXiPKunUbhqq/kwVeJkDx57KQ=
 P:minicom-lang
@@ -48254,21 +48298,6 @@ t:1558961533
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1rGul79G40WTbb7ZijXEpf4vTTyk=
-P:collectd-sensors
-V:5.8.1-r0
-A:x86
-S:6315
-I:32768
-T:sensors pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libsensors.so.4
-
 C:Q1byb9lewbJWgSVFfR3GIN83rtUqo=
 P:lua5.2-pty
 V:1.2.1-r1
@@ -49592,21 +49621,6 @@ t:1556910983
 c:d51e013bca5601e50443c35b9c23a26ec744f73b
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:so:libobjc.so.4=4.0.0
-
-C:Q1H2Cf0MMxRUnSRHOxy1ZZQcfO34g=
-P:collectd-dns
-V:5.8.1-r0
-A:x86
-S:10115
-I:45056
-T:dns pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libpcap.so.1
 
 C:Q1EtjBfWfsjW899tr/eE7c+kwVyXA=
 P:cutter
@@ -52602,6 +52616,21 @@ c:dcdb6c3dccdcdbd48196e50da505b0fe7dea753a
 D:python3
 i:py-phonenumbers=8.10.13-r0 python3
 
+C:Q1AEkCMFPPxKBvM1/+IB1kEdOTDIQ=
+P:collectd-bind
+V:5.8.1-r1
+A:x86
+S:12311
+I:49152
+T:bind pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2
+
 C:Q1g/zUptIv+85sSvSlVw4KqpYbMkA=
 P:libdc1394-doc
 V:2.2.6-r0
@@ -53011,21 +53040,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557075783
 c:ecf00d68ffcd80debd7d3cf717c97cf1b17aa388
 i:docs perl-super=1.20141117-r0
-
-C:Q1P7RiLIP5ouwFYGnSM90qiiHO2tY=
-P:collectd-write_redis
-V:5.8.1-r0
-A:x86
-S:5121
-I:32768
-T:write_redis pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libhiredis.so.0.14
 
 C:Q1kFbFpGFBEnDgqR4QX2oSGvB3/nA=
 P:gnutls-dbg
@@ -54902,21 +54916,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556548250
 c:118463f27ecf2a638fdef1b5265cb4534e86c150
 i:docs automake=1.16.1-r0
-
-C:Q1mmx04DutslFYF0JKLwEBRZtW1po=
-P:collectd-write_http
-V:5.8.1-r0
-A:x86
-S:15255
-I:53248
-T:write_http pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libyajl.so.2
 
 C:Q1bAd5PxIrjVdD/gv17AYvgQMsU9o=
 P:kbd-openrc
@@ -57014,21 +57013,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1556985953
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 
-C:Q1ZiKkwgZ0/oLrvFCB7uoUZvdZYlo=
-P:collectd-redis
-V:5.8.1-r0
-A:x86
-S:6924
-I:36864
-T:redis pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libhiredis.so.0.14
-
 C:Q1B1m7iREeTvTaqpy5DJ7l0grVsxg=
 P:libarchive
 V:3.3.3-r0
@@ -58665,6 +58649,21 @@ t:1559230078
 c:1af6d90264aa06378b6add81b2a7cb6c9292227e
 D:faac=1.29.9.2-r0
 
+C:Q1grrI8HOVpHwRdtK/wV1Z7MCkXXo=
+P:collectd-snmp
+V:5.8.1-r1
+A:x86
+S:12855
+I:45056
+T:snmp pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libnetsnmp.so.35
+
 C:Q1FfoPhbSuDNff8H+bCIn5iUlRZF4=
 P:mariadb-backup
 V:10.3.17-r0
@@ -60060,6 +60059,22 @@ t:1557237861
 c:a7f7ac9a5f2a92d1f44b8285fed5676031c0fc3a
 i:docs debootstrap=1.0.114-r0
 
+C:Q1dYhoQvsCTPUtnRuFl1PtrgLqNWU=
+P:collectd
+V:5.8.1-r1
+A:x86
+S:529435
+I:2170880
+T:The system statistics collection daemon
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389847
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:/bin/sh so:libc.musl-x86.so.1 so:libnetsnmpagent.so.35 so:libyajl.so.2
+p:cmd:collectd cmd:collectdmon
+
 C:Q1LJYTtsbhyMDk7/+IarAEPCIrgF8=
 P:linux-firmware-cavium
 V:20190322-r1
@@ -61216,6 +61231,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557135537
 c:621e475d65123a874633cf9f809b4d82d583d940
 
+C:Q1o+/f+ypNrK736jO6jgn2qpIkSn8=
+P:collectd-write_http
+V:5.8.1-r1
+A:x86
+S:15265
+I:53248
+T:write_http pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libyajl.so.2
+
 C:Q1FTimbsBlM+6IhXSh5uB5NQ3WfUc=
 P:squid-lang-sl
 V:4.8-r0
@@ -61647,6 +61677,22 @@ t:1556719481
 c:8df2f23f6ce1317d39168871e51a621865c37150
 D:python2
 i:py-more-itertools=5.0.0-r0 python2
+
+C:Q1DWmipNSLpy9MrRLz54GVMAGn9SI=
+P:collectd-libs
+V:5.8.1-r1
+A:x86
+S:19319
+I:53248
+T:The system statistics collection daemon (libraries)
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:so:libc.musl-x86.so.1 so:libgcrypt.so.20
+p:so:libcollectdclient.so.1=1.1.0
 
 C:Q1wMGYBadsjQF5EpH4OPMzFm/q9Ns=
 P:acf-tinydns
@@ -63068,21 +63114,6 @@ t:1556988550
 c:98fbd7655b69157c9ecf7e317cd7d742b589e915
 D:so:libc.musl-x86.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:liblcms2.so.2 so:libpoppler.so.82 so:libstdc++.so.6
 p:cmd:pdfdetach cmd:pdffonts cmd:pdfimages cmd:pdfinfo cmd:pdfseparate cmd:pdftocairo cmd:pdftohtml cmd:pdftoppm cmd:pdftops cmd:pdftotext cmd:pdfunite
-
-C:Q1Q17trO8J8FcqFTSSWd5bQe+dq8E=
-P:collectd-rrdtool
-V:5.8.1-r0
-A:x86
-S:19329
-I:77824
-T:rrd* pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:librrd.so.8
 
 C:Q1dZjoq+BhAMsO91HEJGDyKoGyISM=
 P:py-templayer-doc
@@ -66442,6 +66473,21 @@ c:c50372a0878ac343f450f5a475adb1b060eb063e
 D:so:libc.musl-x86.so.1
 p:so:libilbc.so.0=0.0.2
 
+C:Q1wAf5UFpwvy+mA8sU7vcosIBetSo=
+P:collectd-disk
+V:5.8.1-r1
+A:x86
+S:7495
+I:36864
+T:disk pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libudev.so.1
+
 C:Q1Z/is3jBX7OTXfT2glZS+nfF/Nzw=
 P:postgresql-dev
 V:11.5-r0
@@ -68630,21 +68676,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557084942
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 
-C:Q1wbxYhEGlg2vH2JZtuSANK94TJLs=
-P:collectd-bind
-V:5.8.1-r0
-A:x86
-S:12316
-I:49152
-T:bind pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2
-
 C:Q1Qn/Jwc2bM8tXnFvwJ1jAHv+Q60A=
 P:lxsession
 V:0.5.3-r0
@@ -69194,22 +69225,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556915302
 c:60677a6e8f1d693077cf04e6f70326bd0bf4adc6
 i:docs perl-test-simple=1.302164-r0
-
-C:Q1/LxYhGtx4sTZu4dH8dgjSDSwEHs=
-P:collectd-dev
-V:5.8.1-r0
-A:x86
-S:6513
-I:57344
-T:The system statistics collection daemon (development files)
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd-libs=5.8.1-r0 pkgconfig
-p:pc:libcollectdclient=5.8.1
 
 C:Q1zXCAVlkgSRPgX6DxMnCaJ3gP2Cg=
 P:perl-socket-getaddrinfo-doc
@@ -72994,21 +73009,6 @@ t:1560508006
 c:ace7331ad9ec031cd70f2778907b58cc2afb4e07
 D:dnsmasq
 
-C:Q19OVC1modemPfA4Cx9NK664NK1Ww=
-P:collectd-ipmi
-V:5.8.1-r0
-A:x86
-S:14836
-I:53248
-T:ipmi pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434984
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libOpenIPMI.so.0 so:libOpenIPMIpthread.so.0 so:libc.musl-x86.so.1
-
 C:Q1FQVKLHjAOP42jjcfkz0W25st55U=
 P:iperf-openrc
 V:2.0.13-r1
@@ -73173,6 +73173,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556548536
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:gmp=6.1.2-r1 libgmpxx=6.1.2-r1
+
+C:Q1H2+spm4KyZk3fWvrMootFIRub+A=
+P:collectd-mysql
+V:5.8.1-r1
+A:x86
+S:11005
+I:45056
+T:mysql pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libmariadb.so.3
 
 C:Q1cPbCJ+LOpDyPdS1uxRfChddjJVc=
 P:yaml
@@ -75463,6 +75478,21 @@ c:f96df33aed05055667c4b2455c14a31f95d62394
 D:so:libc.musl-x86.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libfribidi.so.0
 p:so:libass.so.9=9.0.2
 
+C:Q1CIIYctT09k9CBjrgSw9pzXWk5Hk=
+P:collectd-ipmi
+V:5.8.1-r1
+A:x86
+S:14828
+I:53248
+T:ipmi pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389846
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libOpenIPMI.so.0 so:libOpenIPMIpthread.so.0 so:libc.musl-x86.so.1
+
 C:Q1KbomkwJO8DIwAVnapZVf9sVq6Ys=
 P:dnstop-doc
 V:20140915-r3
@@ -76899,21 +76929,6 @@ t:1560758676
 c:35653be643e562d3fa63f89a3099278768b789ff
 i:glib=2.60.4-r0 lang
 
-C:Q1knWC3+pq/ar1Cl2WkYSaw5GNqWE=
-P:collectd-curl
-V:5.8.1-r0
-A:x86
-S:38663
-I:118784
-T:curl* pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2 so:libyajl.so.2
-
 C:Q10z6wOgQWjYFWx+L+XsmQIOX4UfY=
 P:lua-sec-doc
 V:0.7-r1
@@ -77466,6 +77481,21 @@ t:1556980381
 c:2ae144627c66b46f4071ae488562d9bba8724b0e
 D:/bin/sh so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libltdl.so.7 so:libsasl2.so.3 so:libuuid.so.1
 p:cmd:slapacl cmd:slapadd cmd:slapauth cmd:slapcat cmd:slapd cmd:slapdn cmd:slapindex cmd:slappasswd cmd:slapschema cmd:slaptest
+
+C:Q1mAKsVClvWeeJi+q51pAUbU7Yrx0=
+P:collectd-curl
+V:5.8.1-r1
+A:x86
+S:38661
+I:118784
+T:curl* pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389844
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libcurl.so.4 so:libxml2.so.2 so:libyajl.so.2
 
 C:Q1a/l5g6o2oJeT9LN6e5Qey0nn4CE=
 P:perl-sub-exporter
@@ -82535,6 +82565,21 @@ c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.3 so:libc.musl-x86.so.1 so:libodbc.so.2
 i:lua-sql-odbc=2.3.5-r2 lua5.3
 
+C:Q1i+if1PNHEqf73ZYH+cDvrUjQ2gg=
+P:collectd-iptables
+V:5.8.1-r1
+A:x86
+S:5493
+I:32768
+T:iptables pluin for collectd
+U:https://collectd.org
+L:GPL-2.0-or-later
+o:collectd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566389845
+c:ca30a4d858971b462e89089c57353be276d2f8c3
+D:collectd so:libc.musl-x86.so.1 so:libip4tc.so.2 so:libip6tc.so.2
+
 C:Q1nOWACnFXqHDhLvizM4NuY7fJItA=
 P:libxv-dev
 V:1.0.11-r2
@@ -82963,21 +83008,6 @@ t:1560155307
 c:b176c32266a17aa4ea1c9f1929339d2e882c29f3
 D:libmicrohttpd=0.9.64-r0 pc:gnutls pkgconfig
 p:pc:libmicrohttpd=0.9.64
-
-C:Q1wcwlR17mOMosxxYiIABWhPVdPLg=
-P:collectd-mysql
-V:5.8.1-r0
-A:x86
-S:10998
-I:45056
-T:mysql pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libmariadb.so.3
 
 C:Q1AqdV8tmVhnjmu7MUOy1W7+letqM=
 P:audit-doc
@@ -84999,21 +85029,6 @@ c:eb560670fdcd3242acd38f86c082662f47c15aa4
 D:so:libc.musl-x86.so.1
 p:so:libjson-c.so.2=2.0.2
 
-C:Q1NLM8oQ816agPt0LOSRdNsyzBVec=
-P:collectd-python
-V:5.8.1-r0
-A:x86
-S:26430
-I:94208
-T:python pluin for collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434983
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:collectd so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
-
 C:Q1JsISaN3itC4FE0R1lzxKUtNvZOk=
 P:freeswitch-freetdm
 V:1.8.7-r0
@@ -86349,21 +86364,6 @@ t:1557063349
 c:12c4e42212f7ba6b44f6c8622faa7574cbcb30e7
 D:so:libc.musl-x86.so.1
 p:cmd:flashcache_create cmd:flashcache_destroy cmd:flashcache_load cmd:flashcache_setioctl cmd:get_agsize
-
-C:Q1MaAH7RZTAwRXyPOG4+j8Wp8P/f0=
-P:collectd-perl
-V:5.8.1-r0
-A:x86
-S:33150
-I:155648
-T:perl bindings to collectd
-U:https://collectd.org
-L:GPL-2.0-or-later
-o:collectd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1558434982
-c:cbd7bcb2ad5d98eb6d9ab99104dfe546dae90355
-D:so:libc.musl-x86.so.1 so:libperl.so
 
 C:Q1ItwX8oXeSx4EVfr+gfF+ahIwKro=
 P:postfix-sqlite
