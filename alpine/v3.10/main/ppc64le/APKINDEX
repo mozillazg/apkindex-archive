@@ -1000,22 +1000,6 @@ c:229b1d89e89f622db0aabaa4a6724b37d4c3238a
 D:so:libc.musl-ppc64le.so.1
 p:so:libseccomp.so.2=2.4.1 cmd:scmp_sys_resolver
 
-C:Q1crCLiTGHcHsrCtROMXkUN6qSN6M=
-P:nghttp2
-V:1.38.0-r0
-A:ppc64le
-S:583590
-I:1490944
-T:Experimental HTTP/2 client, server and proxy
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556878655
-c:76419cdba79db46259586674b233d7bc23ed8554
-D:so:libc.musl-ppc64le.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libev.so.4 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:h2load cmd:nghttp cmd:nghttpd cmd:nghttpx
-
 C:Q1Rd5pnBAZZ4RA7GqXig/QdGUdKhg=
 P:aaudit
 V:0.7.2-r2
@@ -11537,6 +11521,22 @@ t:1561018620
 c:bcc49b4c70d8234ad73c32628b01f58554ec5b5e
 i:docs samba=4.10.5-r0
 
+C:Q1TsIBjb+iW2Okh2jLEZBZRrl0E4Q=
+P:nghttp2-dev
+V:1.39.2-r0
+A:ppc64le
+S:39189
+I:225280
+T:Experimental HTTP/2 client, server and proxy (development files)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1566548774
+c:68587782ed49631dadd84c5a6aaf0380aabf30fb
+D:nghttp2-libs=1.39.2-r0 pkgconfig
+p:pc:libnghttp2=1.39.2
+
 C:Q10SM7qJl1pczcpL1SxBChw4LmkJQ=
 P:ghostscript-gtk
 V:9.27-r2
@@ -12383,22 +12383,6 @@ t:1556967560
 c:9538615b581d4d5b661a672dc8585be1cb4a3a7f
 D:freshclam /bin/sh so:libc.musl-ppc64le.so.1 so:libclamav.so.7 so:libcrypto.so.1.1 so:libfts.so.0 so:libncursesw.so.6 so:libssl.so.1.1 so:libz.so.1
 p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
-
-C:Q1Az1yrG8TogVEwhqFLVXwUmv696U=
-P:nghttp2-dev
-V:1.38.0-r0
-A:ppc64le
-S:39117
-I:225280
-T:Experimental HTTP/2 client, server and proxy (development files)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556878655
-c:76419cdba79db46259586674b233d7bc23ed8554
-D:nghttp2-libs=1.38.0-r0 pkgconfig
-p:pc:libnghttp2=1.38.0
 
 C:Q1ZBBgA8B8+zgk+0hbPyCoYpDGgjI=
 P:boost-log
@@ -17181,6 +17165,22 @@ t:1556921293
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl perl-test-simple
 
+C:Q1tMK0c82uPnZYbYvGP4GzVAoiSTg=
+P:tzdata
+V:2019b-r0
+A:ppc64le
+S:482904
+I:3543040
+T:Timezone data
+U:https://www.iana.org/time-zones
+L:Public-Domain
+o:tzdata
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566548173
+c:28367ff2411b689b75915f17aa891230ffeb01d3
+D:so:libc.musl-ppc64le.so.1
+p:cmd:posixtz cmd:zdump cmd:zic
+
 C:Q1yWeGpgZiw30gmHSf2L3KtLQpH9Q=
 P:ncurses-terminfo-base
 V:6.1_p20190518-r0
@@ -19154,21 +19154,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1556968324
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core openvpn
-
-C:Q1Msw6RQbFUBJNcd9gXVCSi4NbOTQ=
-P:tzdata-doc
-V:2019a-r0
-A:ppc64le
-S:11398
-I:32768
-T:Timezone data (documentation)
-U:https://www.iana.org/time-zones
-L:Public-Domain
-o:tzdata
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556918875
-c:65c2c2ffbfdbb3663a6e9ec476183a5c90467c62
-i:docs tzdata=2019a-r0
 
 C:Q1g5d3We+5kW1ju8LRRRPKuniJSQc=
 P:perl-tree-dag_node-doc
@@ -26465,22 +26450,6 @@ t:1557002440
 c:0fdbb02d41f7f2cba3aa258f8ab186a871718efd
 D:curl so:libc.musl-ppc64le.so.1
 p:so:libmaxminddb.so.0=0.0.7 cmd:mmdblookup
-
-C:Q1mHCB/kYATFQ6dSANYT9bLj4zFII=
-P:tzdata
-V:2019a-r0
-A:ppc64le
-S:484752
-I:3538944
-T:Timezone data
-U:https://www.iana.org/time-zones
-L:Public-Domain
-o:tzdata
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556918875
-c:65c2c2ffbfdbb3663a6e9ec476183a5c90467c62
-D:so:libc.musl-ppc64le.so.1
-p:cmd:posixtz cmd:zdump cmd:zic
 
 C:Q1ucBUVehPXx+hF1oGEWfzwRm+PfY=
 P:libxml2-dev
@@ -39199,22 +39168,6 @@ c:ec68bcac232a469c623554214ac96ffa72d1bc15
 D:so:libc.musl-ppc64le.so.1 so:libxtables.so.12
 p:so:libxt_ACCOUNT_cl.so.0=0.0.0 cmd:iptaccount
 
-C:Q1t34jCyu5YcpJ/XhOcL5qh1ZA51I=
-P:nghttp2-libs
-V:1.38.0-r0
-A:ppc64le
-S:70676
-I:180224
-T:Experimental HTTP/2 client, server and proxy (libraries)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556878655
-c:76419cdba79db46259586674b233d7bc23ed8554
-D:so:libc.musl-ppc64le.so.1
-p:so:libnghttp2.so.14=14.17.3
-
 C:Q1yvca6ctz+cjvwWGott7GeCLZkbY=
 P:udisks-lang
 V:1.0.5-r3
@@ -41258,6 +41211,21 @@ t:1556916352
 c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:boost-libs so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:b2 cmd:bcp cmd:bjam
+
+C:Q1tYaPFK1plkrU5KM5M2U0mL26Djw=
+P:nghttp2-doc
+V:1.39.2-r0
+A:ppc64le
+S:52122
+I:122880
+T:Experimental HTTP/2 client, server and proxy (documentation)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1566548774
+c:68587782ed49631dadd84c5a6aaf0380aabf30fb
+i:docs nghttp2=1.39.2-r0
 
 C:Q1N+9nm1092k7z7TOPDUTmIeO/njc=
 P:gcr-lang
@@ -50289,20 +50257,6 @@ t:1557171845
 c:963c70921c0a9dc1c2648b5fe6ce5305aafb6af7
 D:lua lua-stdlib-debug
 p:lua5.1-stdlib-normalize=2.0.2-r0 lua5.2-stdlib-normalize=2.0.2-r0 lua5.3-stdlib-normalize=2.0.2-r0
-
-C:Q1gslPUDnKgVgIMX81JTzrgsD32gY=
-P:nghttp2-static
-V:1.38.0-r0
-A:ppc64le
-S:92078
-I:323584
-T:nghttp2 static libraries
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556878655
-c:76419cdba79db46259586674b233d7bc23ed8554
 
 C:Q1BaWqO9tdqEazO6P8r55Mhzd3nMo=
 P:gtk+2.0
@@ -60071,21 +60025,6 @@ c:50c742e66bdcf3ce6b2ea64b7442401bf0e701d5
 D:bacula so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 p:so:libbaccats-sqlite3-9.4.3.so=0
 
-C:Q1QiAYs4nPG4lyN9qG9kSVKHj1GWk=
-P:nghttp2-doc
-V:1.38.0-r0
-A:ppc64le
-S:52161
-I:122880
-T:Experimental HTTP/2 client, server and proxy (documentation)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1556878655
-c:76419cdba79db46259586674b233d7bc23ed8554
-i:docs nghttp2=1.38.0-r0
-
 C:Q1cpZDbgnO0vMosXqCisDW1hcJYv4=
 P:ttf-droid
 V:20121017-r1
@@ -64822,6 +64761,22 @@ t:1556980814
 c:16cd2c28e232406d95adf1d059a406f59f2b81b9
 i:docs perl-test-harness=3.42-r0
 
+C:Q1YO8nsR95pWJkm4T15pAkyh2qEVE=
+P:nghttp2-libs
+V:1.39.2-r0
+A:ppc64le
+S:70815
+I:180224
+T:Experimental HTTP/2 client, server and proxy (libraries)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1566548774
+c:68587782ed49631dadd84c5a6aaf0380aabf30fb
+D:so:libc.musl-ppc64le.so.1
+p:so:libnghttp2.so.14=14.18.0
+
 C:Q1AgdC8bpcypixWiXszkf4qjUX0M4=
 P:dmvpn
 V:1.1.0-r0
@@ -67668,6 +67623,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557593212
 c:73dbc755b16637db87c285bbe87e2c8648429e2b
 i:docs perl-crypt-openssl-random=0.15-r2
+
+C:Q1ovWZzCau57sNKRxVXLo7FcTgJh0=
+P:nghttp2
+V:1.39.2-r0
+A:ppc64le
+S:587156
+I:1523712
+T:Experimental HTTP/2 client, server and proxy
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1566548774
+c:68587782ed49631dadd84c5a6aaf0380aabf30fb
+D:so:libc.musl-ppc64le.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libev.so.4 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:h2load cmd:nghttp cmd:nghttpd cmd:nghttpx
 
 C:Q1dZ2e4VTIFJyrsb28gSV5Hi/s37U=
 P:texinfo-doc
@@ -74711,6 +74682,20 @@ t:1556921291
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-test-nowarnings=1.04-r1
 
+C:Q1Ng/VIAowpK6qgaYbbLfQk1Z6utY=
+P:nghttp2-static
+V:1.39.2-r0
+A:ppc64le
+S:92140
+I:327680
+T:nghttp2 static libraries
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1566548774
+c:68587782ed49631dadd84c5a6aaf0380aabf30fb
+
 C:Q1CEGu7+0jDBFJJ4yfvNo+HqS0BFw=
 P:dns-root-hints
 V:2019031302-r1
@@ -77324,6 +77309,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558788818
 c:34218ed5e2a8b213a6a4bccf346a9bd586523c0d
 D:udev-init-scripts
+
+C:Q1KvbG/Ibrv4ykLXHvxl8U/4sgo8s=
+P:tzdata-doc
+V:2019b-r0
+A:ppc64le
+S:12149
+I:32768
+T:Timezone data (documentation)
+U:https://www.iana.org/time-zones
+L:Public-Domain
+o:tzdata
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1566548173
+c:28367ff2411b689b75915f17aa891230ffeb01d3
+i:docs tzdata=2019b-r0
 
 C:Q1PUxGJlb1nuOgj5UnvU7CcnjXTX8=
 P:bacula-doc
