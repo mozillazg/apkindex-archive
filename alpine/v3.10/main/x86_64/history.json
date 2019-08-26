@@ -3382,7 +3382,8 @@
     },
     "lua-bit32": {
       "versions": {
-        "5.3.0-r2": 1557037148
+        "5.3.0-r2": 1557037148,
+        "5.3.0-r3": 1566815204
       },
       "origin": "lua-bit32"
     },
@@ -13831,12 +13832,16 @@
     },
     "lua5.3-bit32": {
       "versions": {
-        "5.3.0-r2": 1557037148
+        "5.3.0-r2": 1557037148,
+        "5.3.0-r3": 1566815204
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.3",
         "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "lua5.3-bitlib=5.3.0-r3"
       ]
     },
     "libnjb": {
@@ -39649,12 +39654,16 @@
     },
     "lua5.1-bit32": {
       "versions": {
-        "5.3.0-r2": 1557037146
+        "5.3.0-r2": 1557037146,
+        "5.3.0-r3": 1566815204
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.1",
         "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "lua5.1-bitlib=5.3.0-r3"
       ]
     },
     "xf86-video-i740": {
@@ -67469,12 +67478,16 @@
     },
     "lua5.2-bit32": {
       "versions": {
-        "5.3.0-r2": 1557037147
+        "5.3.0-r2": 1557037147,
+        "5.3.0-r3": 1566815204
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.2",
         "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "lua5.2-bitlib=5.3.0-r3"
       ]
     },
     "libmpeg2": {
@@ -79662,6 +79675,18 @@
       "weechat-aspell": {
         "package": "weechat-spell",
         "version": "2.5-r0"
+      },
+      "lua5.3-bitlib": {
+        "package": "lua5.3-bit32",
+        "version": "5.3.0-r3"
+      },
+      "lua5.1-bitlib": {
+        "package": "lua5.1-bit32",
+        "version": "5.3.0-r3"
+      },
+      "lua5.2-bitlib": {
+        "package": "lua5.2-bit32",
+        "version": "5.3.0-r3"
       }
     }
   }
