@@ -3718,6 +3718,22 @@ t:1566309955
 c:845ceeb84a5356dfef381071a5fcbffff147dd8e
 i:docs freeradius=3.0.17-r6
 
+C:Q1XuGkG7odQgwCA2ogt8d4FHlD/Tc=
+P:dovecot
+V:2.3.7.2-r0
+A:x86
+S:3505698
+I:8777728
+T:IMAP and POP3 server
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065765
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
+p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dsync
+
 C:Q1gPaYKd2KPgHmcrw1tfUn594rx50=
 P:openldap-overlay-accesslog
 V:2.4.48-r0
@@ -4040,22 +4056,6 @@ t:1542849033
 c:c2ede3db1fe3906163c2a37177c97d28e3b52490
 D:py3-chardet py3-idna py3-certifi py3-urllib3 python3
 i:py-requests=2.19.1-r0 python3
-
-C:Q1Z7SUuWdnv/mgXKKXgojlUzGR2K0=
-P:dovecot-mysql
-V:2.3.6-r0
-A:x86
-S:10803
-I:53248
-T:MySQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134111
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-x86.so.1 so:libmariadb.so.3
-p:so:libdriver_mysql.so=0
 
 C:Q1t6qRmVctWzqpY8SO6O5YmZYwvYI=
 P:perl-convert-uulib-doc
@@ -6090,6 +6090,22 @@ t:1545069396
 c:c7ebdf42aaaf67a511dd629cabbc674420673b60
 D:uwsgi so:libc.musl-x86.so.1
 
+C:Q1NKUeR4gkIhYJAs10MjXi9gcPgkM=
+P:dovecot-openrc
+V:2.3.7.2-r0
+A:x86
+S:1869
+I:16384
+T:IMAP and POP3 server (OpenRC init scripts)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:openssl
+i:openrc dovecot=2.3.7.2-r0
+
 C:Q1VViimgWdbUkU+m79Q+I/MxKBvqI=
 P:sc-doc
 V:7.16-r5
@@ -6382,22 +6398,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1566305139
 c:c2038f0e8020a453038a90b8c532550a7121d923
 D:nginx so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libxml2.so.2 so:libz.so.1
-
-C:Q1P7lrb2todVntuQ+ZqHh+NAFefdQ=
-P:dovecot-ldap
-V:2.3.6-r0
-A:x86
-S:46797
-I:155648
-T:LDAP auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134111
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1z3R+tpjImHdTmHxzeXkm781UAVk=
 P:dhcp-dev
@@ -11200,6 +11200,22 @@ t:1545633492
 c:8baeed5c9f45dcbc5ab770b0540482b55bd3a617
 i:openrc bitlbee=3.5.1-r4
 
+C:Q1dEKMflKeka9LZF8vxuVwEXmhwRs=
+P:dovecot-sqlite
+V:2.3.7.2-r0
+A:x86
+S:8761
+I:49152
+T:SQLite driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libsqlite3.so.0
+p:so:libdriver_sqlite.so=0
+
 C:Q1lfv2WJa0ijGMO/HXUFKtPH7IryU=
 P:libxi-dev
 V:1.7.9-r2
@@ -14621,22 +14637,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6 so:libz.so.1
 p:cmd:atop cmd:atop-2.3.0 cmd:atopacctd cmd:atopsar cmd:atopsar-2.3.0
 
-C:Q1Y0gt+qvoMTTr01ICk9AnJdAherc=
-P:dovecot-openrc
-V:2.3.6-r0
-A:x86
-S:1876
-I:16384
-T:IMAP and POP3 server (OpenRC init scripts)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134109
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:openssl
-i:openrc dovecot=2.3.6-r0
-
 C:Q1ZNSYitoRlpJWoXUDWVVBcAXDiuU=
 P:ngircd
 V:24-r4
@@ -16874,21 +16874,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1545417615
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-x86.so.1
-
-C:Q1tO5+Z57dDcoL21ADkuf8rcqcqvs=
-P:dovecot-pigeonhole-plugin-ldap
-V:2.3.6-r0
-A:x86
-S:19093
-I:65536
-T:Sieve and managesieve plugin for Dovecot (LDAP support)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134109
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-pigeonhole-plugin=2.3.6-r0 dovecot-ldap=2.3.6-r0 so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 
 C:Q1dKLgjHiwQUlIPrYOMDb4dtCdfBg=
 P:ssh-getkey-ldap
@@ -20053,6 +20038,22 @@ t:1545344359
 c:2a2572492cc0207aaf0dded092ae8df1ad85dd22
 D:so:libc.musl-x86.so.1 so:libuuid.so.1
 p:so:libblkid.so.1=1.1.0
+
+C:Q1Nklylsk2vU6ZPZ/pa56xEsTWyaw=
+P:dovecot-ldap
+V:2.3.7.2-r0
+A:x86
+S:48260
+I:163840
+T:LDAP auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065765
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1l6qKP3kOuFiZldXRQ6L9JF40H2Y=
 P:py3-paramiko
@@ -24260,6 +24261,21 @@ t:1554980658
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
 
+C:Q1pVczRQfOSGOT589aNyKIbur3LnI=
+P:dovecot-lmtpd
+V:2.3.7.2-r0
+A:x86
+S:25279
+I:106496
+T:IMAP and POP3 server (LMTP server)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q15onmOPbJhbBVjb6PTMm/I0W53DA=
 P:py3-packaging
 V:17.1-r0
@@ -25325,22 +25341,6 @@ t:1545415860
 c:393a946d9ce6ff582ac812287fa061a8799ba057
 D:rsync
 i:openrc lsyncd=2.2.3-r1
-
-C:Q1qz3sB1UNUmfRoJrBg+wgwG0nNJ0=
-P:dovecot-pgsql
-V:2.3.6-r0
-A:x86
-S:14736
-I:61440
-T:PostgreSQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134110
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-x86.so.1 so:libpq.so.5
-p:so:libdriver_pgsql.so=0
 
 C:Q1/WpqiaYZO5jF3dFo7zb+aS2+ujI=
 P:py-ttystatus
@@ -28370,21 +28370,6 @@ c:2ddb597aa5825ad0af258c8aaf4f5f021058b71a
 D:so:libc.musl-x86.so.1 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libtiff.so.5
 p:cmd:opj_compress cmd:opj_decompress cmd:opj_dump
 
-C:Q1tsYG8YRrHQ7EoepkZaKwxKdMWsk=
-P:dovecot-lmtpd
-V:2.3.6-r0
-A:x86
-S:22934
-I:98304
-T:IMAP and POP3 server (LMTP server)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134109
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1hynNyu/uu1wEqNn7O3jkUu5s5ns=
 P:e2fsprogs-extra
 V:1.44.5-r0
@@ -28893,6 +28878,22 @@ o:tango-icon-theme
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545428375
 c:63f5e7d295659a855709901ce22a3e5f40fce455
+
+C:Q1KZG0+L9o9LoWP6RP7U/8Rkbrz6E=
+P:dovecot-sql
+V:2.3.7.2-r0
+A:x86
+S:21449
+I:86016
+T:SQL plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0
+p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q1HKFdw6a0yNS0HcKWc/RtJcPTn/A=
 P:perl-cpan-meta-check
@@ -31464,6 +31465,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545762090
 c:efc4e5f79a879a7b97f2c29dfa442e6262d85b29
 
+C:Q1dOyYFfHEKACpo2lcDeK9TlI7f+0=
+P:dovecot-doc
+V:2.3.7.2-r0
+A:x86
+S:623908
+I:2560000
+T:IMAP and POP3 server (documentation)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+i:docs dovecot=2.3.7.2-r0
+
 C:Q1BfChMm2VZ61v7jE5dj3WyBBvrIc=
 P:py-twisted
 V:17.1.0-r1
@@ -33884,6 +33900,22 @@ c:a56f34a2f923eca0267ce95752c06f38130ec64c
 D:libsexy=0.1.11-r8 pkgconfig
 p:pc:libsexy=0.1.11
 
+C:Q1UuijfcaybFxtNsDM6kztZGlfVys=
+P:dovecot-fts-lucene
+V:2.3.7.2-r0
+A:x86
+S:30838
+I:106496
+T:FTS-Lucene plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065765
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:lib21_fts_lucene_plugin.so=0
+
 C:Q11Kmrz2qp3iI0Xk/juBIRXvTrojc=
 P:one-context
 V:0.5.5-r0
@@ -34631,21 +34663,6 @@ o:perl-apache-session
 m:Timo Teräs <timo.teras@iki.fi>
 t:1545387271
 c:9460b77506cbdcdba104ecc09e03a6ec72896312
-
-C:Q1mA/PSrkHJnimk1ydttyKdz7mobA=
-P:dovecot-doc
-V:2.3.6-r0
-A:x86
-S:623449
-I:2555904
-T:IMAP and POP3 server (documentation)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134108
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-i:docs dovecot=2.3.6-r0
 
 C:Q1yRMZaCSce+YcUtuJ2726/EvDHFM=
 P:rtmpdump-doc
@@ -40890,22 +40907,6 @@ t:1543227528
 c:99d07c490d6ff9a37fa29bf618c60b546cd84b7c
 i:docs perl-cgi=4.40-r0
 
-C:Q1R+uX/Fj3aS0+h3SQ3R182XPbbTI=
-P:dovecot-sql
-V:2.3.6-r0
-A:x86
-S:21326
-I:86016
-T:SQL plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134110
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0
-p:so:libdovecot-sql.so.0=0.0.0
-
 C:Q1CE+Ov9q5GujGR84BUeveFQc3piA=
 P:lxc-pam
 V:3.1.0-r1
@@ -42601,6 +42602,22 @@ t:1545062462
 c:c3519b4b4cdb3d90cffbb201f010ccc70fa3faa5
 D:ca-certificates so:libQtCore.so.4 so:libQtSql.so.4 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libsybdb.so.5
 
+C:Q1kpVsiZqS8jGjzWNcNFr48cP2fpg=
+P:dovecot-pigeonhole-plugin
+V:2.3.7.2-r0
+A:x86
+S:466372
+I:1302528
+T:Sieve and managesieve plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
+
 C:Q1ldI6JJk+U1p2ZdmtSlh87S0lNf0=
 P:perl-plack
 V:1.0033-r0
@@ -42709,22 +42726,6 @@ t:1542846488
 c:132246a3380c453d4bbb2d84aa8e9757013b41a5
 D:so:libXau.so.6 so:libXdmcp.so.6 so:libc.musl-x86.so.1
 p:so:libxcb-composite.so.0=0.0.0 so:libxcb-damage.so.0=0.0.0 so:libxcb-dpms.so.0=0.0.0 so:libxcb-dri2.so.0=0.0.0 so:libxcb-dri3.so.0=0.0.0 so:libxcb-glx.so.0=0.0.0 so:libxcb-present.so.0=0.0.0 so:libxcb-randr.so.0=0.1.0 so:libxcb-record.so.0=0.0.0 so:libxcb-render.so.0=0.0.0 so:libxcb-res.so.0=0.0.0 so:libxcb-screensaver.so.0=0.0.0 so:libxcb-shape.so.0=0.0.0 so:libxcb-shm.so.0=0.0.0 so:libxcb-sync.so.1=1.0.0 so:libxcb-xf86dri.so.0=0.0.0 so:libxcb-xfixes.so.0=0.0.0 so:libxcb-xinerama.so.0=0.0.0 so:libxcb-xinput.so.0=0.1.0 so:libxcb-xkb.so.1=1.0.0 so:libxcb-xtest.so.0=0.0.0 so:libxcb-xv.so.0=0.0.0 so:libxcb-xvmc.so.0=0.0.0 so:libxcb.so.1=1.1.0
-
-C:Q1YHXOFEW0JOCdp/QZlo7snIhzyjM=
-P:dovecot-sqlite
-V:2.3.6-r0
-A:x86
-S:8668
-I:49152
-T:SQLite driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134111
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-x86.so.1 so:libsqlite3.so.0
-p:so:libdriver_sqlite.so=0
 
 C:Q1kYjdMOnVBimNUdchqa6/SobId0s=
 P:libksba
@@ -43355,22 +43356,6 @@ t:1546422454
 c:26b4eabc5fe2c4f636f2688bb50811f84d2d890f
 D:collectd so:libc.musl-x86.so.1
 
-C:Q1c9+gj9QoQHt63o/s+qph8gqRCLs=
-P:dovecot-fts-lucene
-V:2.3.6-r0
-A:x86
-S:30783
-I:106496
-T:FTS-Lucene plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134112
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:lib21_fts_lucene_plugin.so=0
-
 C:Q18wfaF9JDXHqOAM9vtaRgubg7TiE=
 P:librrd
 V:1.7.0-r0
@@ -43450,22 +43435,6 @@ t:1543327239
 c:f37750a244342f7241ca50c9a7c53aa84b768de9
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1
 p:so:libldns.so.2=2.0.0
-
-C:Q1QdWu1dJxJ5X0FbdlqjOt9Jr7QTY=
-P:dovecot-pigeonhole-plugin
-V:2.3.6-r0
-A:x86
-S:466475
-I:1302528
-T:Sieve and managesieve plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134110
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
 
 C:Q14jIl1dwDVfNFK0EPuqBwSFfZULE=
 P:py-zope-interface
@@ -45041,21 +45010,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1545416195
 c:166e2afa3446023700d58fb19e73955a3a9c60ea
 D:tcl so:libc.musl-x86.so.1 so:libtcl8.6.so
-
-C:Q1Pdz194EsvuW8gTVu4SOBr0z6WF0=
-P:dovecot-gssapi
-V:2.3.6-r0
-A:x86
-S:7998
-I:40960
-T:GSSAPI auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134111
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libgssapi.so.3
 
 C:Q1zUXecEQorRxTSNJJY0uoiWgkDMs=
 P:cvechecker-doc
@@ -47075,22 +47029,6 @@ t:1542976862
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:pkgconfig
 p:pc:pm-utils=1.4.1
-
-C:Q1vQWYR54ft9mTk0y8w85bPNc+OfA=
-P:dovecot-fts-solr
-V:2.3.6-r0
-A:x86
-S:22229
-I:65536
-T:FTS-Solr plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134112
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:lib20_fts_plugin.so so:libc.musl-x86.so.1 so:libexpat.so.1
-p:so:lib21_fts_solr_plugin.so=0
 
 C:Q1DZRQUZhcID2he08QVBMhlqVEhwI=
 P:parted-doc
@@ -49233,22 +49171,6 @@ t:1545063789
 c:174590309c9f0797b32549f663e039af963f53f8
 i:docs ntop=5.0.1-r14
 
-C:Q1ODIlpl2mbXJVS1DzalEyl6cTtMw=
-P:dovecot
-V:2.3.6-r0
-A:x86
-S:3453767
-I:8667136
-T:IMAP and POP3 server
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134112
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
-p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dsync
-
 C:Q1WDqw8viA2mwhPkbYg0OHCaXelNY=
 P:boost-regex
 V:1.67.0-r2
@@ -51292,6 +51214,22 @@ c:a7868eb5acbd3b61fad088fbf4440d1eca1ba3d8
 D:sed file perl perl-archive-zip perl-carp perl-convert-tnef perl-compress-raw-zlib perl-convert-uulib perl-digest-md5 perl-io perl-exporter perl-io-compress perl-io-stringy perl-mime-tools perl-mailtools perl-socket perl-net-libidn perl-net-server perl-time-hires perl-unix-syslog perl-db perl-mail-dkim perl-io-socket-inet6 /bin/sh
 p:cmd:amavisd cmd:amavisd-nanny cmd:amavisd-release
 
+C:Q1plxDrEEL2M1Bb5NTueI2qhVAtE4=
+P:dovecot-pgsql
+V:2.3.7.2-r0
+A:x86
+S:14899
+I:61440
+T:PostgreSQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libpq.so.5
+p:so:libdriver_pgsql.so=0
+
 C:Q1OB/Uh/LY6P4wctsgRHE/6jJr0k4=
 P:mp3splt-doc
 V:2.6.2-r0
@@ -51782,6 +51720,21 @@ t:1544793033
 c:43b134e59c81cd7c74760a4a9d3e41bf0fc3caf1
 D:bzip2-dev libgsf=1.14.44-r0 pc:glib-2.0 pc:gobject-2.0 pc:libxml-2.0 pkgconfig
 p:pc:libgsf-1=1.14.44
+
+C:Q1csvRqvVgVBJFap4bqcSOvR9LwWw=
+P:dovecot-pigeonhole-plugin-ldap
+V:2.3.7.2-r0
+A:x86
+S:19080
+I:65536
+T:Sieve and managesieve plugin for Dovecot (LDAP support)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-pigeonhole-plugin=2.3.7.2-r0 dovecot-ldap=2.3.7.2-r0 so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 
 C:Q1tFPgxLbARt8j1n9pcY0l1XWFjIA=
 P:py3-asn1
@@ -57683,21 +57636,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543239242
 c:b256b90e38c8edc99a79b140bb248dbfa256a7af
 
-C:Q1b7KBqonOl24g4iurzR5JjbEpYS8=
-P:dovecot-pop3d
-V:2.3.6-r0
-A:x86
-S:36439
-I:131072
-T:IMAP and POP3 server (POP3 daemon)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134109
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1FQztJ0e/It3Vhz3QCvU5RDrR/Hc=
 P:miniperl
 V:5.26.3-r0
@@ -63553,6 +63491,20 @@ t:1542848902
 c:112e29fcf5c4f19dedc49b0ee54fd317451d4355
 D:py-markupsafe
 
+C:Q1TlOSGmSZdYXz2/00TDC5AIa4e24=
+P:dovecot-dev
+V:2.3.7.2-r0
+A:x86
+S:535919
+I:3530752
+T:IMAP and POP3 server (development files)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+
 C:Q1T1dmPRW/PeReR/URlOq4peQvot4=
 P:lockfile-progs-doc
 V:0.1.18-r0
@@ -67826,6 +67778,21 @@ c:36fadf98ee839df30f4c331ab9168182f5bf59fd
 D:zlib-dev libxml2=2.9.9-r1 pkgconfig
 p:pc:libxml-2.0=2.9.9 cmd:xml2-config
 
+C:Q1ixp5DmYWActKU/ub47dJGZd6idE=
+P:dovecot-gssapi
+V:2.3.7.2-r0
+A:x86
+S:8614
+I:40960
+T:GSSAPI auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libgssapi.so.3
+
 C:Q1XQ4cohJWaUBnLzh2bjG5mZHCvxA=
 P:tumbler-doc
 V:0.2.3-r0
@@ -68482,6 +68449,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1546947977
 c:108f2dcc59445462fdc7b02b7de939ce9945d5c8
 D:ncurses-terminfo-base ncurses-terminfo-base=6.1_p20190105-r0
+
+C:Q15d2rxBxyPoo1J5oLPj3qKevJr9I=
+P:dovecot-pop3d
+V:2.3.7.2-r0
+A:x86
+S:36415
+I:131072
+T:IMAP and POP3 server (POP3 daemon)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1CBj0gWa7OvVnfoNBSRFKy52poog=
 P:ruby-fiddle
@@ -71553,6 +71535,22 @@ t:1543226748
 c:1446f14a6971d8b0ef4f3855798c1e601d3c0e6f
 i:openrc mini_httpd=1.29-r2
 
+C:Q1HyQ+nHutOuI0K60oC8zKSwbJWow=
+P:dovecot-mysql
+V:2.3.7.2-r0
+A:x86
+S:10853
+I:53248
+T:MySQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065764
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libmariadb.so.3
+p:so:libdriver_mysql.so=0
+
 C:Q1IQ4zWb6yEa5gax6/Qcie/aLtxXo=
 P:openldap-backend-all
 V:2.4.48-r0
@@ -71873,6 +71871,22 @@ t:1551107356
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 D:qemu so:libaio.so.1 so:libc.musl-x86.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libusb-1.0.so.0 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-x86_64
+
+C:Q13j6rwPfAUA7WID380ejdvNjoRHk=
+P:dovecot-fts-solr
+V:2.3.7.2-r0
+A:x86
+S:22199
+I:65536
+T:FTS-Solr plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065765
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:lib20_fts_plugin.so so:libc.musl-x86.so.1 so:libexpat.so.1
+p:so:lib21_fts_solr_plugin.so=0
 
 C:Q1YLguMMCT9OQUBJXB7GSYi7RmJUE=
 P:fish-tools
@@ -73155,6 +73169,21 @@ t:1566207047
 c:aab6fd6ad9335b5dcd7ffbb1541583e2f722114d
 D:cups-client poppler-utils openssl dbus
 i:cups=2.2.12-r0 lang
+
+C:Q1ihgguToNmWOK50s0mh098hSIFVc=
+P:dovecot-submissiond
+V:2.3.7.2-r0
+A:x86
+S:55340
+I:184320
+T:IMAP and POP3 server (mail submission agent)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567065763
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1DXlGEp7qOymGD36D0gjIQtAvAWc=
 P:xbacklight-doc
@@ -78857,21 +78886,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542820153
 c:a3c768a9d8ba7aaca46888d2ece03b452a33b560
 
-C:Q10xV1nNr21bES3AxaI1xr1LCnaBg=
-P:dovecot-submissiond
-V:2.3.6-r0
-A:x86
-S:55270
-I:184320
-T:IMAP and POP3 server (mail submission agent)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134109
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q100LSbOMc8drUkfMSvzaupTTx4CQ=
 P:font-util-doc
 V:1.3.1-r2
@@ -79830,20 +79844,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543241756
 c:2f2bf4fe6b74a198b3b236ffb09e4a52f6c612d6
 i:docs perl-struct-dumb=0.09-r0
-
-C:Q1+edz2nY/ggfPiOtuLXEdNsV9fLU=
-P:dovecot-dev
-V:2.3.6-r0
-A:x86
-S:531023
-I:3493888
-T:IMAP and POP3 server (development files)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557134108
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
 
 C:Q1yRYBuDf3T7B4iZBdWJ4vrV64uaM=
 P:libdv-doc
