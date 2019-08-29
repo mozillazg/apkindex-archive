@@ -116,12 +116,16 @@
     },
     "lua5.1-bit32": {
       "versions": {
-        "5.3.0-r2": 1556918133
+        "5.3.0-r2": 1556918133,
+        "5.3.0-r3": 1567073887
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.1",
         "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "lua5.1-bitlib=5.3.0-r3"
       ]
     },
     "recode-doc": {
@@ -688,11 +692,12 @@
     },
     "dovecot-lmtpd": {
       "versions": {
-        "2.3.6-r1": 1557140175
+        "2.3.6-r1": 1557140175,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot-lda.so.0",
         "so:libdovecot-storage.so.0",
@@ -810,7 +815,8 @@
     },
     "openldap-back-relay": {
       "versions": {
-        "2.4.47-r2": 1556922059
+        "2.4.47-r2": 1556922059,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -2998,7 +3004,8 @@
     },
     "wavpack": {
       "versions": {
-        "5.1.0-r7": 1557180055
+        "5.1.0-r7": 1557180055,
+        "5.1.0-r8": 1567073032
       },
       "origin": "wavpack",
       "dependencies": [
@@ -3142,11 +3149,12 @@
     },
     "dovecot-sql": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot.so.0"
       ],
@@ -4195,7 +4203,8 @@
     },
     "openldap-back-sock": {
       "versions": {
-        "2.4.47-r2": 1556922062
+        "2.4.47-r2": 1556922062,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -4926,7 +4935,8 @@
     },
     "tiff-tools": {
       "versions": {
-        "4.0.10-r0": 1556920545
+        "4.0.10-r0": 1556920545,
+        "4.0.10-r1": 1567072804
       },
       "origin": "tiff",
       "dependencies": [
@@ -7911,7 +7921,8 @@
     "nodejs": {
       "versions": {
         "10.15.3-r0": 1557165593,
-        "10.16.0-r0": 1559769066
+        "10.16.0-r0": 1559769066,
+        "10.16.3-r0": 1567073324
       },
       "origin": "nodejs",
       "dependencies": [
@@ -7927,17 +7938,18 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "nodejs-lts=10.16.0",
+        "nodejs-lts=10.16.3",
         "cmd:node"
       ]
     },
     "dovecot-fts-solr": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:lib20_fts_plugin.so",
         "so:libc.musl-armv7.so.1",
         "so:libexpat.so.1"
@@ -8981,15 +8993,16 @@
     },
     "tiff-dev": {
       "versions": {
-        "4.0.10-r0": 1556920543
+        "4.0.10-r0": 1556920543,
+        "4.0.10-r1": 1567072804
       },
       "origin": "tiff",
       "dependencies": [
         "zlib-dev",
         "libjpeg-turbo-dev",
-        "libtiffxx=4.0.10-r0",
+        "libtiffxx=4.0.10-r1",
         "pkgconfig",
-        "tiff=4.0.10-r0"
+        "tiff=4.0.10-r1"
       ],
       "provides": [
         "pc:libtiff-4=4.0.10"
@@ -9392,7 +9405,8 @@
     },
     "openldap-backend-all": {
       "versions": {
-        "2.4.47-r2": 1556922049
+        "2.4.47-r2": 1556922049,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -10168,12 +10182,13 @@
     },
     "wavpack-dev": {
       "versions": {
-        "5.1.0-r7": 1557180053
+        "5.1.0-r7": 1557180053,
+        "5.1.0-r8": 1567073032
       },
       "origin": "wavpack",
       "dependencies": [
         "pkgconfig",
-        "wavpack=5.1.0-r7"
+        "wavpack=5.1.0-r8"
       ],
       "provides": [
         "pc:wavpack=5.1.0"
@@ -10202,7 +10217,8 @@
     },
     "openldap-overlay-proxycache": {
       "versions": {
-        "2.4.47-r2": 1556922072
+        "2.4.47-r2": 1556922072,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -12372,7 +12388,8 @@
     },
     "openldap-overlay-memberof": {
       "versions": {
-        "2.4.47-r2": 1556922070
+        "2.4.47-r2": 1556922070,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -13396,7 +13413,8 @@
     },
     "libtiffxx": {
       "versions": {
-        "4.0.10-r0": 1556920547
+        "4.0.10-r0": 1556920547,
+        "4.0.10-r1": 1567072804
       },
       "origin": "tiff",
       "dependencies": [
@@ -13587,7 +13605,8 @@
     },
     "openldap-overlay-sssvlv": {
       "versions": {
-        "2.4.47-r2": 1556922077
+        "2.4.47-r2": 1556922077,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -13711,7 +13730,8 @@
     },
     "tiff": {
       "versions": {
-        "4.0.10-r0": 1556920548
+        "4.0.10-r0": 1556920548,
+        "4.0.10-r1": 1567072805
       },
       "origin": "tiff",
       "dependencies": [
@@ -14244,15 +14264,16 @@
     "npm": {
       "versions": {
         "10.15.3-r0": 1557165591,
-        "10.16.0-r0": 1559769064
+        "10.16.0-r0": 1559769064,
+        "10.16.3-r0": 1567073322
       },
       "origin": "nodejs",
       "dependencies": [
         "nodejs"
       ],
       "provides": [
-        "nodejs-npm=10.16.0-r0",
-        "nodejs-current-npm=10.16.0-r0",
+        "nodejs-npm=10.16.3-r0",
+        "nodejs-current-npm=10.16.3-r0",
         "cmd:npm",
         "cmd:npx"
       ]
@@ -14895,7 +14916,8 @@
     },
     "openldap": {
       "versions": {
-        "2.4.47-r2": 1556922081
+        "2.4.47-r2": 1556922081,
+        "2.4.48-r0": 1567073014
       },
       "origin": "openldap",
       "dependencies": [
@@ -16756,7 +16778,8 @@
     },
     "openldap-back-hdb": {
       "versions": {
-        "2.4.47-r2": 1556922053
+        "2.4.47-r2": 1556922053,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -17231,12 +17254,16 @@
     },
     "lua5.3-bit32": {
       "versions": {
-        "5.3.0-r2": 1556918135
+        "5.3.0-r2": 1556918135,
+        "5.3.0-r3": 1567073887
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.3",
         "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "lua5.3-bitlib=5.3.0-r3"
       ]
     },
     "paxctl-doc": {
@@ -18850,7 +18877,8 @@
     },
     "awall": {
       "versions": {
-        "1.6.10-r0": 1556979288
+        "1.6.10-r0": 1556979288,
+        "1.6.11-r0": 1567073940
       },
       "origin": "awall",
       "dependencies": [
@@ -19642,14 +19670,15 @@
     "nodejs-dev": {
       "versions": {
         "10.15.3-r0": 1557165589,
-        "10.16.0-r0": 1559769063
+        "10.16.0-r0": 1559769063,
+        "10.16.3-r0": 1567073321
       },
       "origin": "nodejs",
       "dependencies": [
         "libuv"
       ],
       "provides": [
-        "nodejs-lts-dev=10.16.0"
+        "nodejs-lts-dev=10.16.3"
       ]
     },
     "libcap-ng": {
@@ -19949,7 +19978,8 @@
     },
     "openldap-overlay-seqmod": {
       "versions": {
-        "2.4.47-r2": 1556922076
+        "2.4.47-r2": 1556922076,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -19959,14 +19989,15 @@
     },
     "openldap-dev": {
       "versions": {
-        "2.4.47-r2": 1556922042
+        "2.4.47-r2": 1556922042,
+        "2.4.48-r0": 1567073005
       },
       "origin": "openldap",
       "dependencies": [
         "openssl-dev",
         "cyrus-sasl-dev",
         "util-linux-dev",
-        "libldap=2.4.47-r2"
+        "libldap=2.4.48-r0"
       ]
     },
     "libmikmod": {
@@ -20108,11 +20139,12 @@
     },
     "dovecot-mysql": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot-sql=2.3.6-r1",
+        "dovecot-sql=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libmariadb.so.3"
       ],
@@ -20307,7 +20339,8 @@
     },
     "lua-bit32": {
       "versions": {
-        "5.3.0-r2": 1556918135
+        "5.3.0-r2": 1556918135,
+        "5.3.0-r3": 1567073887
       },
       "origin": "lua-bit32"
     },
@@ -20620,7 +20653,8 @@
     },
     "openldap-overlay-dynlist": {
       "versions": {
-        "2.4.47-r2": 1556922069
+        "2.4.47-r2": 1556922069,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -21170,7 +21204,8 @@
     },
     "openldap-back-mdb": {
       "versions": {
-        "2.4.47-r2": 1556922055
+        "2.4.47-r2": 1556922055,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -21757,11 +21792,12 @@
     },
     "dovecot-gssapi": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libgssapi.so.3"
       ]
@@ -21870,7 +21906,8 @@
     },
     "dovecot": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073844
       },
       "origin": "dovecot",
       "dependencies": [
@@ -23133,7 +23170,8 @@
     },
     "openldap-overlay-collect": {
       "versions": {
-        "2.4.47-r2": 1556922065
+        "2.4.47-r2": 1556922065,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -25993,7 +26031,8 @@
     },
     "dovecot-openrc": {
       "versions": {
-        "2.3.6-r1": 1557140175
+        "2.3.6-r1": 1557140175,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot"
     },
@@ -26431,7 +26470,8 @@
     },
     "openldap-passwd-pbkdf2": {
       "versions": {
-        "2.4.47-r2": 1556922048
+        "2.4.47-r2": 1556922048,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -27009,7 +27049,8 @@
     },
     "openldap-overlay-unique": {
       "versions": {
-        "2.4.47-r2": 1556922079
+        "2.4.47-r2": 1556922079,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -27109,12 +27150,16 @@
     },
     "lua5.2-bit32": {
       "versions": {
-        "5.3.0-r2": 1556918134
+        "5.3.0-r2": 1556918134,
+        "5.3.0-r3": 1567073887
       },
       "origin": "lua-bit32",
       "dependencies": [
         "lua5.2",
         "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "lua5.2-bitlib=5.3.0-r3"
       ]
     },
     "freeradius-sql": {
@@ -27828,7 +27873,8 @@
     },
     "openldap-back-shell": {
       "versions": {
-        "2.4.47-r2": 1556922060
+        "2.4.47-r2": 1556922060,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -28530,12 +28576,13 @@
     },
     "dovecot-pigeonhole-plugin-ldap": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot-pigeonhole-plugin=2.3.6-r1",
-        "dovecot-ldap=2.3.6-r1",
+        "dovecot-pigeonhole-plugin=2.3.7.2-r0",
+        "dovecot-ldap=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:liblber-2.4.so.2",
         "so:libldap-2.4.so.2"
@@ -28597,7 +28644,8 @@
     },
     "openldap-overlay-all": {
       "versions": {
-        "2.4.47-r2": 1556922050
+        "2.4.47-r2": 1556922050,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -29430,7 +29478,8 @@
     },
     "openldap-overlay-accesslog": {
       "versions": {
-        "2.4.47-r2": 1556922063
+        "2.4.47-r2": 1556922063,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -30140,7 +30189,8 @@
     },
     "openldap-back-dnssrv": {
       "versions": {
-        "2.4.47-r2": 1556922052
+        "2.4.47-r2": 1556922052,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -30574,7 +30624,8 @@
     },
     "openldap-clients": {
       "versions": {
-        "2.4.47-r2": 1556922047
+        "2.4.47-r2": 1556922047,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -30732,7 +30783,8 @@
     "nodejs-doc": {
       "versions": {
         "10.15.3-r0": 1557165590,
-        "10.16.0-r0": 1559769064
+        "10.16.0-r0": 1559769064,
+        "10.16.3-r0": 1567073322
       },
       "origin": "nodejs"
     },
@@ -31849,7 +31901,8 @@
     },
     "openldap-overlay-constraint": {
       "versions": {
-        "2.4.47-r2": 1556922066
+        "2.4.47-r2": 1556922066,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -32999,7 +33052,8 @@
     },
     "openldap-back-meta": {
       "versions": {
-        "2.4.47-r2": 1556922056
+        "2.4.47-r2": 1556922056,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -34996,7 +35050,8 @@
     },
     "tiff-doc": {
       "versions": {
-        "4.0.10-r0": 1556920542
+        "4.0.10-r0": 1556920542,
+        "4.0.10-r1": 1567072804
       },
       "origin": "tiff"
     },
@@ -35994,7 +36049,8 @@
     },
     "openldap-back-passwd": {
       "versions": {
-        "2.4.47-r2": 1556922058
+        "2.4.47-r2": 1556922058,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -36186,7 +36242,8 @@
     },
     "openldap-overlay-rwm": {
       "versions": {
-        "2.4.47-r2": 1556922075
+        "2.4.47-r2": 1556922075,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -38031,7 +38088,8 @@
     },
     "openldap-overlay-valsort": {
       "versions": {
-        "2.4.47-r2": 1556922080
+        "2.4.47-r2": 1556922080,
+        "2.4.48-r0": 1567073014
       },
       "origin": "openldap",
       "dependencies": [
@@ -38915,7 +38973,8 @@
     },
     "dovecot-doc": {
       "versions": {
-        "2.3.6-r1": 1557140175
+        "2.3.6-r1": 1557140175,
+        "2.3.7.2-r0": 1567073841
       },
       "origin": "dovecot"
     },
@@ -41526,7 +41585,8 @@
     },
     "awall-policies": {
       "versions": {
-        "1.6.10-r0": 1556979287
+        "1.6.10-r0": 1556979287,
+        "1.6.11-r0": 1567073940
       },
       "origin": "awall",
       "dependencies": [
@@ -41922,11 +41982,12 @@
     },
     "dovecot-ldap": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot.so.0",
         "so:liblber-2.4.so.2",
@@ -42248,7 +42309,8 @@
     },
     "openldap-back-sql": {
       "versions": {
-        "2.4.47-r2": 1556922061
+        "2.4.47-r2": 1556922061,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -43815,7 +43877,8 @@
     },
     "openldap-back-null": {
       "versions": {
-        "2.4.47-r2": 1556922058
+        "2.4.47-r2": 1556922058,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -43844,11 +43907,12 @@
     },
     "dovecot-pop3d": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -43900,7 +43964,8 @@
         "2.7.9-r1": 1557157280,
         "2.8.0-r1": 1559032779,
         "2.8.1-r0": 1560179823,
-        "2.8.3-r0": 1564986505
+        "2.8.3-r0": 1564986505,
+        "2.8.4-r0": 1567073524
       },
       "origin": "ansible",
       "dependencies": [
@@ -44081,7 +44146,8 @@
     },
     "dovecot-dev": {
       "versions": {
-        "2.3.6-r1": 1557140175
+        "2.3.6-r1": 1557140175,
+        "2.3.7.2-r0": 1567073841
       },
       "origin": "dovecot"
     },
@@ -45171,7 +45237,8 @@
     },
     "openldap-back-bdb": {
       "versions": {
-        "2.4.47-r2": 1556922051
+        "2.4.47-r2": 1556922051,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -46706,7 +46773,8 @@
     },
     "openldap-overlay-deref": {
       "versions": {
-        "2.4.47-r2": 1556922068
+        "2.4.47-r2": 1556922068,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -48123,11 +48191,12 @@
     },
     "dovecot-sqlite": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot-sql=2.3.6-r1",
+        "dovecot-sql=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libsqlite3.so.0"
       ],
@@ -48148,7 +48217,8 @@
     },
     "openldap-doc": {
       "versions": {
-        "2.4.47-r2": 1556922044
+        "2.4.47-r2": 1556922044,
+        "2.4.48-r0": 1567073008
       },
       "origin": "openldap"
     },
@@ -48285,7 +48355,8 @@
     },
     "awall-masquerade": {
       "versions": {
-        "1.6.10-r0": 1556979287
+        "1.6.10-r0": 1556979287,
+        "1.6.11-r0": 1567073940
       },
       "origin": "awall",
       "dependencies": [
@@ -52190,7 +52261,8 @@
     },
     "openldap-overlay-retcode": {
       "versions": {
-        "2.4.47-r2": 1556922074
+        "2.4.47-r2": 1556922074,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -52314,7 +52386,8 @@
     },
     "libldap": {
       "versions": {
-        "2.4.47-r2": 1556922046
+        "2.4.47-r2": 1556922046,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -52324,9 +52397,9 @@
         "so:libssl.so.1.1"
       ],
       "provides": [
-        "so:liblber-2.4.so.2=2.10.10",
-        "so:libldap-2.4.so.2=2.10.10",
-        "so:libldap_r-2.4.so.2=2.10.10"
+        "so:liblber-2.4.so.2=2.10.11",
+        "so:libldap-2.4.so.2=2.10.11",
+        "so:libldap_r-2.4.so.2=2.10.11"
       ]
     },
     "py3-docutils": {
@@ -52769,7 +52842,8 @@
     },
     "openldap-overlay-ppolicy": {
       "versions": {
-        "2.4.47-r2": 1556922071
+        "2.4.47-r2": 1556922071,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -52894,7 +52968,8 @@
     },
     "openldap-mqtt": {
       "versions": {
-        "2.4.47-r2": 1556922048
+        "2.4.47-r2": 1556922048,
+        "2.4.48-r0": 1567073009
       },
       "origin": "openldap",
       "dependencies": [
@@ -53050,7 +53125,8 @@
     },
     "openldap-overlay-auditlog": {
       "versions": {
-        "2.4.47-r2": 1556922064
+        "2.4.47-r2": 1556922064,
+        "2.4.48-r0": 1567073011
       },
       "origin": "openldap",
       "dependencies": [
@@ -53076,7 +53152,8 @@
     },
     "openldap-back-monitor": {
       "versions": {
-        "2.4.47-r2": 1556922057
+        "2.4.47-r2": 1556922057,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -54685,7 +54762,8 @@
     },
     "openldap-overlay-dyngroup": {
       "versions": {
-        "2.4.47-r2": 1556922069
+        "2.4.47-r2": 1556922069,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -55708,7 +55786,8 @@
     },
     "openldap-overlay-dds": {
       "versions": {
-        "2.4.47-r2": 1556922067
+        "2.4.47-r2": 1556922067,
+        "2.4.48-r0": 1567073012
       },
       "origin": "openldap",
       "dependencies": [
@@ -57499,7 +57578,8 @@
     },
     "wavpack-doc": {
       "versions": {
-        "5.1.0-r7": 1557180054
+        "5.1.0-r7": 1557180054,
+        "5.1.0-r8": 1567073032
       },
       "origin": "wavpack"
     },
@@ -63346,7 +63426,8 @@
     },
     "openldap-overlay-translucent": {
       "versions": {
-        "2.4.47-r2": 1556922079
+        "2.4.47-r2": 1556922079,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -65028,7 +65109,8 @@
         "2.7.9-r1": 1557157278,
         "2.8.0-r1": 1559032777,
         "2.8.1-r0": 1560179821,
-        "2.8.3-r0": 1564986503
+        "2.8.3-r0": 1564986503,
+        "2.8.4-r0": 1567073522
       },
       "origin": "ansible"
     },
@@ -65129,11 +65211,12 @@
     },
     "dovecot-fts-lucene": {
       "versions": {
-        "2.3.6-r1": 1557140177
+        "2.3.6-r1": 1557140177,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libclucene-core.so.1",
         "so:libclucene-shared.so.1",
@@ -65453,11 +65536,12 @@
     },
     "dovecot-submissiond": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -66706,7 +66790,8 @@
     },
     "openldap-back-ldap": {
       "versions": {
-        "2.4.47-r2": 1556922054
+        "2.4.47-r2": 1556922054,
+        "2.4.48-r0": 1567073010
       },
       "origin": "openldap",
       "dependencies": [
@@ -66785,11 +66870,12 @@
     },
     "dovecot-pgsql": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073843
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot-sql=2.3.6-r1",
+        "dovecot-sql=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libpq.so.5"
       ],
@@ -68115,7 +68201,8 @@
     },
     "openldap-overlay-syncprov": {
       "versions": {
-        "2.4.47-r2": 1556922078
+        "2.4.47-r2": 1556922078,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -68406,11 +68493,12 @@
     },
     "dovecot-pigeonhole-plugin": {
       "versions": {
-        "2.3.6-r1": 1557140176
+        "2.3.6-r1": 1557140176,
+        "2.3.7.2-r0": 1567073842
       },
       "origin": "dovecot",
       "dependencies": [
-        "dovecot=2.3.6-r1",
+        "dovecot=2.3.7.2-r0",
         "so:libc.musl-armv7.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -69981,7 +70069,8 @@
     },
     "openldap-overlay-refint": {
       "versions": {
-        "2.4.47-r2": 1556922073
+        "2.4.47-r2": 1556922073,
+        "2.4.48-r0": 1567073013
       },
       "origin": "openldap",
       "dependencies": [
@@ -76134,15 +76223,15 @@
       },
       "liblber-2.4.so.2": {
         "package": "libldap",
-        "version": "2.10.10"
+        "version": "2.10.11"
       },
       "libldap-2.4.so.2": {
         "package": "libldap",
-        "version": "2.10.10"
+        "version": "2.10.11"
       },
       "libldap_r-2.4.so.2": {
         "package": "libldap",
-        "version": "2.10.10"
+        "version": "2.10.11"
       },
       "libnl-3.so.200": {
         "package": "libnl3",
@@ -78028,7 +78117,7 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "10.16.0"
+        "version": "10.16.3"
       },
       "pllua": {
         "package": "postgresql-pllua",
@@ -78064,11 +78153,11 @@
       },
       "nodejs-npm": {
         "package": "npm",
-        "version": "10.16.0-r0"
+        "version": "10.16.3-r0"
       },
       "nodejs-current-npm": {
         "package": "npm",
-        "version": "10.16.0-r0"
+        "version": "10.16.3-r0"
       },
       "gnupg": {
         "package": "gnupg1",
@@ -78100,7 +78189,7 @@
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "10.16.0"
+        "version": "10.16.3"
       },
       "freeradius3-python": {
         "package": "freeradius-python",
@@ -78565,6 +78654,18 @@
       "weechat-aspell": {
         "package": "weechat-spell",
         "version": "2.5-r0"
+      },
+      "lua5.1-bitlib": {
+        "package": "lua5.1-bit32",
+        "version": "5.3.0-r3"
+      },
+      "lua5.2-bitlib": {
+        "package": "lua5.2-bit32",
+        "version": "5.3.0-r3"
+      },
+      "lua5.3-bitlib": {
+        "package": "lua5.3-bit32",
+        "version": "5.3.0-r3"
       }
     }
   }
