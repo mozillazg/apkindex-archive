@@ -9736,22 +9736,6 @@ c:1099006b1e9e1af467562c545652cbfa66aff3b4
 D:ca-certificates so:libc.musl-x86.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libhttp_parser.so.2.8 so:libssl.so.1.1 so:libstdc++.so.6 so:libuv.so.1 so:libz.so.1
 p:nodejs-lts=10.14.2 cmd:node
 
-C:Q10KDNp80Tel3ISE1O8nHRIcwzNNk=
-P:polkit-dev
-V:0.105-r10
-A:x86
-S:35260
-I:446464
-T:Application development toolkit for controlling system-wide privileges (development files)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792358
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r10
-p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
-
 C:Q14ZO7429VmK/3c5pqyYW0dotcZY8=
 P:truecrypt
 V:7.1a-r3
@@ -16359,6 +16343,22 @@ t:1542965938
 c:12e118f98de6c11830cebd53d41a8d836c3e7c2e
 D:py-flask py-wtforms
 
+C:Q113jamUtSYiym68ZcOw48OiFYmSU=
+P:polkit
+V:0.105-r11
+A:x86
+S:140147
+I:585728
+T:Application development toolkit for controlling system-wide privileges
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567523174
+c:e325d22a1d8c013af35b262f20089514bae6df40
+D:so:libc.musl-x86.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
+
 C:Q1aMYqOk34fHYM8KDNhPfQick11r8=
 P:mosquitto-libs
 V:1.5.6-r0
@@ -17072,21 +17072,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1542820635
 c:27f28073cd8c738eb32ffa8db1623e2e53e8869a
 i:docs luajit=2.1.0_beta3-r4
-
-C:Q1SDTCoNcz47mrckiX5yeZ3C2OFE0=
-P:polkit-doc
-V:0.105-r10
-A:x86
-S:20001
-I:61440
-T:Application development toolkit for controlling system-wide privileges (documentation)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792358
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-i:docs polkit=0.105-r10
 
 C:Q16RU38GsW6+yBHmvoE17K35cRwIk=
 P:ortp
@@ -26909,21 +26894,6 @@ t:1546096794
 c:80c088a88824a8b11c3b31b5d4bf3a00b0788371
 D:perl so:libc.musl-x86.so.1
 
-C:Q1wtMfYlhit/jDqoefyQYEH8+q8Io=
-P:polkit-lang
-V:0.105-r10
-A:x86
-S:2194
-I:28672
-T:Languages for package polkit
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792358
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-i:polkit=0.105-r10 lang
-
 C:Q14zKgJiYsWxwJrWz7r5COU/mS9Oc=
 P:postgresql-pltcl
 V:11.5-r0
@@ -31528,6 +31498,21 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-x86.so.1
 p:so:libgss.so.1=1.1.0 cmd:gss
 
+C:Q1NyGS+ai34Gca46Ez96N0sJ7f9Eo=
+P:polkit-doc
+V:0.105-r11
+A:x86
+S:19998
+I:61440
+T:Application development toolkit for controlling system-wide privileges (documentation)
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567523174
+c:e325d22a1d8c013af35b262f20089514bae6df40
+i:docs polkit=0.105-r11
+
 C:Q1WHzEW8h14xft2DAA140vdZFfv1c=
 P:vte-doc
 V:0.28.2-r13
@@ -36097,6 +36082,21 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libreadline.so.7 so:libstdc++.so.6
 p:so:libhunspell-1.6.so.0=0.0.1 cmd:affixcompress cmd:analyze cmd:chmorph cmd:hunspell cmd:hunzip cmd:hzip cmd:ispellaff2myspell cmd:makealias cmd:munch cmd:unmunch cmd:wordforms cmd:wordlist2hunspell
 
+C:Q18xNlc4KrtRwREfxYhuG/M3dXICE=
+P:polkit-lang
+V:0.105-r11
+A:x86
+S:2207
+I:28672
+T:Languages for package polkit
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567523174
+c:e325d22a1d8c013af35b262f20089514bae6df40
+i:polkit=0.105-r11 lang
+
 C:Q1lNMKoMy8G2pXF82WQOiEfH3rsAU=
 P:gcr-lang
 V:3.28.0-r0
@@ -38770,6 +38770,22 @@ c:cf43a775225bcace5eda5940576e46caac38d471
 D:so:libc.musl-x86.so.1 so:libtls-standalone.so.1
 p:cmd:ssl_client
 i:busybox=1.29.3-r10 libssl1.1
+
+C:Q1g0Y2n2LWeGoUucwRj16UCFm1EzE=
+P:polkit-dev
+V:0.105-r11
+A:x86
+S:35400
+I:446464
+T:Application development toolkit for controlling system-wide privileges (development files)
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1567523174
+c:e325d22a1d8c013af35b262f20089514bae6df40
+D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r11
+p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
 
 C:Q1dU+3IObiPOOzHgXsT1zCD0fMRbw=
 P:lua5.1-ldap
@@ -66571,22 +66587,6 @@ t:1545665840
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libXext.so.6 so:libXmu.so.6 so:libXt.so.6 so:libc.musl-x86.so.1
 p:cmd:twm
-
-C:Q1rcF8dt+3Sz/UO7MD2JFRX6CLLOA=
-P:polkit
-V:0.105-r10
-A:x86
-S:139935
-I:585728
-T:Application development toolkit for controlling system-wide privileges
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792359
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-D:so:libc.musl-x86.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
 
 C:Q1XsDGCn2HXHWZ87JV85gVxdN5Z+k=
 P:py3-purl
