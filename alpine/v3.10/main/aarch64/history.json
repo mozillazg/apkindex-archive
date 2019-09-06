@@ -3680,13 +3680,14 @@
     },
     "freshclam": {
       "versions": {
-        "0.100.3-r0": 1556969492
+        "0.100.3-r0": 1556969492,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav",
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
-        "so:libclamav.so.7",
+        "so:libclamav.so.9",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
       ],
@@ -5551,14 +5552,15 @@
     },
     "clamav-daemon": {
       "versions": {
-        "0.100.3-r0": 1556969491
+        "0.100.3-r0": 1556969491,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav",
       "dependencies": [
         "freshclam",
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
-        "so:libclamav.so.7",
+        "so:libclamav.so.9",
         "so:libcrypto.so.1.1",
         "so:libfts.so.0",
         "so:libncursesw.so.6",
@@ -20961,7 +20963,8 @@
     },
     "clamav-db": {
       "versions": {
-        "0.100.3-r0": 1556969492
+        "0.100.3-r0": 1556969492,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav",
       "dependencies": [
@@ -22569,9 +22572,19 @@
     },
     "clamav-libunrar": {
       "versions": {
-        "0.100.3-r0": 1556969491
+        "0.100.3-r0": 1556969491,
+        "0.101.4-r0": 1567759041
       },
-      "origin": "clamav"
+      "origin": "clamav",
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libclamunrar.so.9=9.0.2",
+        "so:libclamunrar_iface.so.9=9.0.2"
+      ]
     },
     "py-tz": {
       "versions": {
@@ -26192,7 +26205,8 @@
     },
     "clamav-doc": {
       "versions": {
-        "0.100.3-r0": 1556969490
+        "0.100.3-r0": 1556969490,
+        "0.101.4-r0": 1567759041
       },
       "origin": "clamav"
     },
@@ -26737,7 +26751,8 @@
     },
     "freshclam-openrc": {
       "versions": {
-        "0.100.3-r0": 1556969493
+        "0.100.3-r0": 1556969493,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav"
     },
@@ -35574,7 +35589,8 @@
     },
     "clamav-daemon-openrc": {
       "versions": {
-        "0.100.3-r0": 1556969493
+        "0.100.3-r0": 1556969493,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav",
       "dependencies": [
@@ -44013,13 +44029,14 @@
     },
     "clamav-scanner": {
       "versions": {
-        "0.100.3-r0": 1556969492
+        "0.100.3-r0": 1556969492,
+        "0.101.4-r0": 1567759042
       },
       "origin": "clamav",
       "dependencies": [
         "freshclam",
         "so:libc.musl-aarch64.so.1",
-        "so:libclamav.so.7",
+        "so:libclamav.so.9",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
       ],
@@ -48486,7 +48503,8 @@
     },
     "clamav-libs": {
       "versions": {
-        "0.100.3-r0": 1556969491
+        "0.100.3-r0": 1556969491,
+        "0.101.4-r0": 1567759041
       },
       "origin": "clamav",
       "dependencies": [
@@ -48498,10 +48516,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libclamav.so.7=7.1.2",
-        "so:libclammspack.so.0=0.1.0",
-        "so:libclamunrar.so.7=7.1.2",
-        "so:libclamunrar_iface.so.7=7.1.2"
+        "so:libclamav.so.9=9.0.2",
+        "so:libclammspack.so.0=0.1.0"
       ]
     },
     "heimdal": {
@@ -55272,7 +55288,8 @@
     },
     "clamav-milter": {
       "versions": {
-        "0.100.3-r0": 1556969493
+        "0.100.3-r0": 1556969493,
+        "0.101.4-r0": 1567759043
       },
       "origin": "clamav",
       "dependencies": [
@@ -56508,16 +56525,18 @@
     },
     "clamav-dev": {
       "versions": {
-        "0.100.3-r0": 1556969490
+        "0.100.3-r0": 1556969490,
+        "0.101.4-r0": 1567759041
       },
       "origin": "clamav",
       "dependencies": [
         "openssl-dev",
-        "clamav-libs=0.100.3-r0",
+        "clamav-libs=0.101.4-r0",
+        "clamav-libunrar=0.101.4-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libclamav=0.100.3",
+        "pc:libclamav=0.101.4",
         "cmd:clamav-config"
       ]
     },
@@ -63845,7 +63864,8 @@
     },
     "clamav": {
       "versions": {
-        "0.100.3-r0": 1556969494
+        "0.100.3-r0": 1556969494,
+        "0.101.4-r0": 1567759043
       },
       "origin": "clamav",
       "dependencies": [
@@ -78324,6 +78344,18 @@
       "libns.so.1306": {
         "package": "bind-libs",
         "version": "1306.0.1"
+      },
+      "libclamunrar.so.9": {
+        "package": "clamav-libunrar",
+        "version": "9.0.2"
+      },
+      "libclamunrar_iface.so.9": {
+        "package": "clamav-libunrar",
+        "version": "9.0.2"
+      },
+      "libclamav.so.9": {
+        "package": "clamav-libs",
+        "version": "9.0.2"
       }
     },
     "package": {
