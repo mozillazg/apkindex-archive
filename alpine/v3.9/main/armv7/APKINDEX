@@ -278,22 +278,6 @@ c:b3ea53dbb742db00884191a793efbce0d41d339a
 D:so:libc.musl-armv7.so.1 so:libglapi.so.0
 p:so:libGLESv1_CM.so.1=1.1.0 so:libGLESv2.so.2=2.0.0
 
-C:Q1Ye7VczlqVSSrrpZecEKCemBmEe4=
-P:varnish-libs
-V:6.1.1-r0
-A:armv7
-S:59072
-I:114688
-T:Libraries for varnish
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206976
-c:56948891d4e6afcb9605c558eff231e22dc49966
-D:gcc libc-dev libgcc so:libc.musl-armv7.so.1 so:libpcre.so.1
-p:so:libvarnishapi.so.2=2.0.0
-
 C:Q1MkYsm3mRCAvHro/t2aIkc693dCo=
 P:kamailio-outbound
 V:5.2.0-r1
@@ -1242,6 +1226,21 @@ t:1542379857
 c:98f7ec1bf5e38719a15e825d3c73d339fcf4e2bf
 i:docs perl-type-tiny=1.000006-r0
 
+C:Q1qNJz+Lo47V013cLhKl8b6tFuv90=
+P:openldap-mqtt
+V:2.4.48-r0
+A:armv7
+S:6164
+I:32768
+T:OpenLDAP MQTT overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:openldap so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libmosquitto.so.1
+
 C:Q1DZy7uWJr/j2n8Jboz6R+QgJRx+k=
 P:mrxvt-doc
 V:0.5.4-r7
@@ -1378,6 +1377,21 @@ t:1542299715
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libxrender=0.9.10-r3
 
+C:Q1ryLTGCTUPaRdp8zmT0JP35vzRDk=
+P:openldap-overlay-sssvlv
+V:2.4.48-r0
+A:armv7
+S:9945
+I:40960
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1AYn1xgzRa12xzPv5WUSBRuwGMUI=
 P:xcb-util-image
 V:0.4.0-r1
@@ -1482,37 +1496,6 @@ t:1542412710
 c:2d31f6e6cb162364604ca7470367ed06d61fbad1
 D:iproute2 /bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzo2.so.2 so:libssl.so.1.1
 p:cmd:openvpn
-
-C:Q1rY/xfgXrf6S1oiQosNu5sQkKQ6M=
-P:openldap-back-passwd
-V:2.4.47-r2
-A:armv7
-S:5539
-I:32768
-T:OpenLDAP passwd backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q1vowwTCITKA32r8YvI86pLCmedmg=
-P:mosquitto-clients
-V:1.5.6-r0
-A:armv7
-S:20329
-I:73728
-T:Mosquitto command line MQTT clients
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-D:so:libc.musl-armv7.so.1 so:libmosquitto.so.1
-p:cmd:mosquitto_pub cmd:mosquitto_sub
 
 C:Q175PetsWBJDOa8FMYnApXmzx2wLM=
 P:perl-inline-c
@@ -1817,22 +1800,6 @@ o:ca-certificates
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1548779240
 c:e52ca18af87015baba0756530ff0fd6b7b6ea081
-
-C:Q14pLWRaI7xHvw5smnIPnBpNwOuRE=
-P:libcurl
-V:7.64.0-r2
-A:armv7
-S:190613
-I:319488
-T:The multiprotocol file transfer library
-U:https://curl.haxx.se
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559717678
-c:f4c02c83cf9d1a3f4bbb31b4a9dfd48e58a1fbca
-D:ca-certificates so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssh2.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libcurl.so.4=4.5.0
 
 C:Q1eGfOtsFFOWMZOGmqnvwjnvPCPoA=
 P:collectd-write_redis
@@ -2267,6 +2234,22 @@ t:1545229946
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs gengetopt=2.22.6-r2
 
+C:Q1kfuP1pzhLR2VliH+9GeyvLaW30E=
+P:sdl2_image
+V:2.0.5-r0
+A:armv7
+S:49509
+I:90112
+T:A simple library to load images of various formats as SDL surfaces
+U:http://www.libsdl.org/projects/SDL_image/
+L:zlib
+o:sdl2_image
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569958448
+c:9f6b061f48c397e4e666fcf6f75fabe92b6033d2
+D:so:libSDL2-2.0.so.0 so:libc.musl-armv7.so.1
+p:so:libSDL2_image-2.0.so.0=0.2.3
+
 C:Q1gf+ePTMv9vGkh7GS3jqsm6m4SeY=
 P:ipsec-tools
 V:0.8.2-r8
@@ -2409,21 +2392,6 @@ c:34beb0c38596e2e22c2004c89a5e119f7fd90b8d
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libsigc-2.0.so.0=0.0.0
 
-C:Q1BpuAfWGkkSNKRscFLKiptTwtYCU=
-P:dovecot-pop3d
-V:2.3.6-r0
-A:armv7
-S:28163
-I:106496
-T:IMAP and POP3 server (POP3 daemon)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1K84jbi+vSxveB0Tg+SJH6hRRqz0=
 P:libbonobo
 V:2.32.1-r6
@@ -2517,21 +2485,6 @@ t:1545257222
 c:12e118f98de6c11830cebd53d41a8d836c3e7c2e
 D:py3-flask py3-wtforms python3
 i:py-flask-wtf=0.14.2-r0 python3
-
-C:Q17/0S/QplDZn8M0fnmrX3wqhsbiY=
-P:asterisk-odbc
-V:15.7.1-r0
-A:armv7
-S:68079
-I:188416
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libodbc.so.2
 
 C:Q1oGdD/lr2SjnwA0M2fqrZhPfvfPo=
 P:kamailio-rabbitmq
@@ -2710,6 +2663,21 @@ t:1542217051
 c:dd4e68704e077c27cd2b20a7e15cdea61d8f8b97
 D:so:libc.musl-armv7.so.1
 p:cmd:m4
+
+C:Q1P12cTkB8fpI8JiRZ/DGiOEjBpVM=
+P:nfdump-doc
+V:1.6.18-r0
+A:armv7
+S:28548
+I:65536
+T:Tools to collect and process netflow data (documentation)
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
+i:docs nfdump=1.6.18-r0
 
 C:Q18h9uyAdHgMrvq1rvzN/h9YvtpE4=
 P:py-sphinx
@@ -3246,6 +3214,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545429667
 c:05228e79ca331b01c848736ef66675bc487945fa
 D:sylpheed=3.7.0-r2
+
+C:Q1UaETqxQxRk9A00PMKBjC7sZMnfg=
+P:openldap-back-mdb
+V:2.4.48-r0
+A:armv7
+S:91197
+I:172032
+T:OpenLDAP mdb backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1okuE25NZmEh5OsxtR4urHi8F2eg=
 P:spamassassin-client
@@ -4272,6 +4255,22 @@ t:1545309839
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1d7Q10L3y2pJd+d2LCRs8gvxedVI=
+P:tiff-dev
+V:4.0.10-r1
+A:armv7
+S:192303
+I:577536
+T:Provides support for the Tag Image File Format or TIFF (development files)
+U:http://www.libtiff.org
+L:libtiff
+o:tiff
+m:Michael Mason <ms13sp@gmail.com>
+t:1569957021
+c:de0584e234c2dad9d4247ee7de308a95fe2b42ac
+D:zlib-dev libjpeg-turbo-dev libtiffxx=4.0.10-r1 pkgconfig tiff=4.0.10-r1
+p:pc:libtiff-4=4.0.10
+
 C:Q1l+AIFu7JcRc0+Y1EliFHex6wpJE=
 P:c-client
 V:2007f-r9
@@ -4888,6 +4887,22 @@ t:1545230455
 c:ab4e034c8ba22c1a64341fd2b3c8daf4f844dc17
 i:docs xf86-input-keyboard=1.9.0-r1
 
+C:Q14CwRWFBiH9U2TBh4X6N+wYTNzoA=
+P:nfdump
+V:1.6.18-r0
+A:armv7
+S:632484
+I:1511424
+T:Tools to collect and process netflow data
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
+D:so:libbz2.so.1 so:libc.musl-armv7.so.1
+p:so:libnfdump-1.6.18.so=0 cmd:nfanon cmd:nfcapd cmd:nfdump cmd:nfexpire cmd:nfreplay
+
 C:Q1tabcsE6oujUQ+7vZp2fqkVDM/tc=
 P:postgresql-bdr-contrib
 V:9.4.14_p1-r1
@@ -5368,6 +5383,21 @@ c:28ec1afcd7a39cb2f78246762c69de549d089a4e
 D:python2
 i:py-gflags=3.1.1-r1 python2
 
+C:Q1IH63g8HkKGdc8oxUWuACSX/ZAZs=
+P:openldap-back-ldap
+V:2.4.48-r0
+A:armv7
+S:53266
+I:122880
+T:OpenLDAP ldap backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1tH5VaZOFBdzNqrGbL9KdUhDQ0qQ=
 P:cppunit
 V:1.14.0-r0
@@ -5643,6 +5673,20 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1542745273
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs which=2.21-r1
+
+C:Q1DWfNWkfI+GP2UI40YHqpybXUUW8=
+P:asterisk-sample-config
+V:15.7.4-r0
+A:armv7
+S:259098
+I:1122304
+T:Sample configuration files for asterisk
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957535
+c:de555bb30f216410e565ff8c6e8983703d16d648
 
 C:Q1shv4RKn+7QTPVvsXdyCC55SSbNg=
 P:libxt-doc
@@ -6105,22 +6149,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXext.so.6 so:libXt.so.6 so:libc.musl-armv7.so.1
 p:so:libXpm.so.4=4.11.0 cmd:cxpm cmd:sxpm
 
-C:Q1b+n34Tf/69Lx1P3M7MpTXX/palk=
-P:hostapd
-V:2.7-r4
-A:armv7
-S:397117
-I:798720
-T:daemon for wireless software access points
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565944049
-c:b7d037c2a9b8f72b1230453919246b1637028ada
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.1.1
-p:cmd:hostapd cmd:hostapd_cli cmd:nt_password_hash
-
 C:Q1rwPcj50AENoycoUeKOGryH+kT10=
 P:ppp-doc
 V:2.4.7-r6
@@ -6136,36 +6164,21 @@ t:1542531593
 c:d57d6aa9e65fc2db98bd4ee83eb8ca40ffa7a481
 i:docs ppp=2.4.7-r6
 
-C:Q1qaH7c5IxzT2Jq2ngG/Uk/BoCi78=
-P:ansible-doc
-V:2.7.12-r0
+C:Q1yM3COMHwYLPoEDgf343gPwrAel4=
+P:polkit
+V:0.105-r11
 A:armv7
-S:34617
-I:102400
-T:A configuration-management, deployment, task-execution, and multinode orchestration framework (documentation)
-U:https://ansible.com
-L:GPL-3.0-or-later
-o:ansible
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1564986242
-c:fec49fe2125540138443a630698b0e350a4cba3e
-i:docs ansible=2.7.12-r0
-
-C:Q17sGC13+GhJLLFAxNsow2JuPVheY=
-P:ghostscript-dev
-V:9.26-r3
-A:armv7
-S:14010
-I:98304
-T:An interpreter for the PostScript language and for PDF (development files)
-U:https://ghostscript.com/
-L:GPL-3.0
-o:ghostscript
-m:Cameron Banta <cbanta@gmail.com>
-t:1565700569
-c:0c7e5ec71b97782eda0a281b09ddabdaba26f848
-D:ghostscript=9.26-r3 pkgconfig
-p:pc:ijs=0.35
+S:108598
+I:421888
+T:Application development toolkit for controlling system-wide privileges
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957265
+c:e325d22a1d8c013af35b262f20089514bae6df40
+D:so:libc.musl-armv7.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
 
 C:Q1DqT52zqyatpYm2TfQIPg9yIrNM4=
 P:c-ares
@@ -6213,6 +6226,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551786762
 c:592d872fb8d13a7d3d10c09c7f5c7ff5bf77057c
 D:abuild bubblewrap gettext git
+
+C:Q1ddw4FH9jyMYw5zkaaAv0huG1mlc=
+P:dovecot
+V:2.3.7.2-r0
+A:armv7
+S:2654169
+I:5627904
+T:IMAP and POP3 server
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958711
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
+p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dsync
 
 C:Q1pw4vmObpBV9fBmDb6lQQxk/h/Nw=
 P:lxdm
@@ -6471,21 +6500,6 @@ c:e3385956332c7af7b03dd7d286b08b94aa5bacb2
 D:cmake pkgconfig soxr=0.1.3-r0
 p:pc:soxr-lsr=0.1.3 pc:soxr=0.1.3
 
-C:Q1StuyHRlS+4IzCX5YBxOhg/iNG6A=
-P:nfdump-doc
-V:1.6.17-r0
-A:armv7
-S:28479
-I:65536
-T:Tools to collect and process netflow data (documentation)
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206927
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
-i:docs nfdump=1.6.17-r0
-
 C:Q1WtoV2L9ry+OfrJh6QXeQrjhr1YY=
 P:py2-argparse
 V:1.4.0-r2
@@ -6625,6 +6639,22 @@ t:1545315260
 c:4ab842ad052c58b72dccb2f8ad90bec4831327cc
 i:docs perl-date-extract=0.06-r1
 
+C:Q1VqcDiEEyji6xdR0gVG4mzKmuPxk=
+P:sdl2_image-dev
+V:2.0.5-r0
+A:armv7
+S:3991
+I:36864
+T:A simple library to load images of various formats as SDL surfaces (development files)
+U:http://www.libsdl.org/projects/SDL_image/
+L:zlib
+o:sdl2_image
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569958448
+c:9f6b061f48c397e4e666fcf6f75fabe92b6033d2
+D:pc:sdl2>=2.0.8 pkgconfig sdl2_image=2.0.5-r0
+p:pc:SDL2_image=2.0.5
+
 C:Q1l9dxTy29WXWuK8u/tozmL7rLvqg=
 P:libdv
 V:1.0.0-r3
@@ -6733,22 +6763,6 @@ t:1542801025
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:gsl=2.5-r0 pkgconfig
 p:pc:gsl=2.5 cmd:gsl-config
-
-C:Q1/3Yc0gyLdoepl6BfoCCfkLhoE9I=
-P:varnish-dev
-V:6.1.1-r0
-A:armv7
-S:88740
-I:565248
-T:High-performance HTTP accelerator (development files)
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206975
-c:56948891d4e6afcb9605c558eff231e22dc49966
-D:pkgconfig varnish-libs=6.1.1-r0
-p:pc:varnishapi=6.1.1
 
 C:Q1xQNnNtlnBacifDVsq5vfqVYfBLU=
 P:dev86-doc
@@ -7075,6 +7089,22 @@ t:1545256970
 c:e1a137cdab356ee4aa6a89b3226fd5e9ed3d9cdc
 D:libqrencode=4.0.2-r0 pkgconfig
 p:pc:libqrencode=4.0.2
+
+C:Q19hA3HKQqk3ug/a1FU3+NL+FOpoI=
+P:tiff
+V:4.0.10-r1
+A:armv7
+S:131543
+I:335872
+T:Provides support for the Tag Image File Format or TIFF
+U:http://www.libtiff.org
+L:libtiff
+o:tiff
+m:Michael Mason <ms13sp@gmail.com>
+t:1569957022
+c:de0584e234c2dad9d4247ee7de308a95fe2b42ac
+D:so:libc.musl-armv7.so.1 so:libjpeg.so.8 so:libz.so.1
+p:so:libtiff.so.5=5.4.0
 
 C:Q11iehCxyyVLth2QcXhSwVO18BEFo=
 P:serf
@@ -7418,22 +7448,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1542272821
 c:60f12bcd01586e614ee936f3c6da0519291d3b3b
 p:cmd:config_data
-
-C:Q1COaEmsi+UgL+4lf/1wuvs4xn2IE=
-P:poppler-glib
-V:0.56.0-r1
-A:armv7
-S:115246
-I:315392
-T:Glib wrapper for poppler
-U:https://poppler.freedesktop.org/
-L:GPL-2.0+
-o:poppler
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1542454596
-c:d9c872c52ac46e8d2ac2e4978eecb9609f28ced5
-D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpoppler.so.67 so:libstdc++.so.6
-p:so:libpoppler-glib.so.8=8.9.0
 
 C:Q1OtzxerqcDw3jkgM7S4JKQg62Zv0=
 P:binutils-gold
@@ -8399,22 +8413,6 @@ t:1547110085
 c:2fa868f587e3b04dba99bb0eb26947db9dd07a6f
 p:cmd:apk.static
 
-C:Q181NNZyuhZ2cyzzXS7hTF8/IbyS8=
-P:openldap
-V:2.4.47-r2
-A:armv7
-S:495721
-I:1212416
-T:LDAP Server
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016471
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:/bin/sh so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libltdl.so.7 so:libsasl2.so.3 so:libuuid.so.1
-p:cmd:slapacl cmd:slapadd cmd:slapauth cmd:slapcat cmd:slapd cmd:slapdn cmd:slapindex cmd:slappasswd cmd:slapschema cmd:slaptest
-
 C:Q1BMMlQuD1i1rsm/7WwFy/Opg3abk=
 P:py3-requests-oauthlib
 V:0.8.0-r1
@@ -8476,22 +8474,6 @@ c:81566d8d0bc4d71d674500031ad389966ff46bac
 D:py2-click py2-itsdangerous py2-jinja2 py2-werkzeug python2
 p:cmd:flask
 i:py-flask=1.0.2-r1 python2
-
-C:Q1mjajjgIoFKFbH/uPW2FE7UYIzHw=
-P:libtiffxx
-V:4.0.10-r0
-A:armv7
-S:4424
-I:24576
-T:C++ binding to libtiff
-U:http://www.libtiff.org
-L:libtiff
-o:tiff
-m:Michael Mason <ms13sp@gmail.com>
-t:1544794052
-c:0c504ed6ce49ffab8f4090a5a3ddaeeda27ecbf5
-D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libtiff.so.5
-p:so:libtiffxx.so.5=5.4.0
 
 C:Q1TAedAGKlQ9QuIQAoLCcEKbag0Q8=
 P:make
@@ -8981,20 +8963,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:which
 
-C:Q15sSsm44/yI+K9kLJtT9pE38Vq0Y=
-P:asterisk-fax
-V:15.7.1-r0
+C:Q1d2B7ELzYhbqeSY/vrOdfgak2NEg=
+P:hostapd
+V:2.7-r5
 A:armv7
-S:54482
-I:131072
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libspandsp.so.2
+S:397312
+I:798720
+T:daemon for wireless software access points
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957210
+c:a631766c739d92b83c30732831268f2e5cf0e919
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.1.1
+p:cmd:hostapd cmd:hostapd_cli cmd:nt_password_hash
 
 C:Q1CI5TNMEaVOqHPL8MkMi/r3QhOkY=
 P:perl-path-class-doc
@@ -9196,6 +9179,21 @@ c:00bd040b558beaf145e91234228b6df6a54d9ac0
 D:so:libc.musl-armv7.so.1 so:libpcre.so.1
 i:lua5.1 lua-rex-pcre=2.9.0-r0
 
+C:Q1PAgC9WyUlfGKDqd+q+jMoLuPBzo=
+P:openldap-overlay-translucent
+V:2.4.48-r0
+A:armv7
+S:10196
+I:40960
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956863
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1raHmf1B/hKdNNcYPwUGhuRGdEjg=
 P:gd
 V:2.2.5-r3
@@ -9319,21 +9317,6 @@ c:9ec5b021441becf1db0a4c91c34124c98b79d1f3
 D:py3-crypto py3-jwt python3
 i:py-oauthlib=2.0.6-r1 python3
 
-C:Q1+r+8S2gGNN3O6x8pXVdk/L0Vm4Y=
-P:openldap-back-ldap
-V:2.4.47-r2
-A:armv7
-S:52805
-I:122880
-T:OpenLDAP ldap backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1S7/60acc+kMZcgZBqAlnCr3kxnU=
 P:spice
 V:0.14.1-r6
@@ -9440,22 +9423,6 @@ t:1542321191
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:perl so:libc.musl-armv7.so.1
 p:cmd:bdftruncate cmd:ucs2any
-
-C:Q1RPvaYdNUqbj/jWkFH22ox1O/34s=
-P:wpa_supplicant
-V:2.7-r4
-A:armv7
-S:1239519
-I:2285568
-T:A utility providing key negotiation for WPA wireless networks
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565875422
-c:c5978d4bc83c3c055db7df6a78ba76b748742e2c
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
-p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
 
 C:Q1hbv2mkr/pEAMLwZJT5+XzWA1sZo=
 P:netcat-openbsd
@@ -10072,6 +10039,21 @@ c:eae9c8c1dc3f263de484a6e715978b625e3135a3
 D:so:libc.musl-armv7.so.1 so:libtdb.so.1
 p:cmd:tdbbackup cmd:tdbdump cmd:tdbrestore cmd:tdbtool
 
+C:Q1I6ohCTpHPIqaO5+JgP08j8io/L8=
+P:varnish-dbg
+V:6.2.1-r0
+A:armv7
+S:2136671
+I:5251072
+T:High-performance HTTP accelerator (debug symbols)
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+D:gcc libc-dev libgcc
+
 C:Q1BCovjDnUmPLh7PZdlKH6SaDF/Eg=
 P:perl-exporter-tiny
 V:1.002001-r0
@@ -10180,6 +10162,22 @@ t:1542366798
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-armv7.so.1
 p:so:libvanessa_logger.so.0=0.0.5 cmd:vanessa_logger_sample
+
+C:Q1js7uk5lJLkEhMNiJ7NxYM+rFHzk=
+P:ghostscript-gtk
+V:9.26-r4
+A:armv7
+S:8951
+I:32768
+T:A GTK-enabled PostScript interpreter and renderer
+U:https://ghostscript.com/
+L:GPL-3.0
+o:ghostscript
+m:Cameron Banta <cbanta@gmail.com>
+t:1569957780
+c:d523278cd6edc33481e4d0d111f3e2d00ee34033
+D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgs.so.9 so:libgtk-3.so.0
+p:cmd:gsx
 
 C:Q1npyd3muhVlzxLpCS4qK6CitNqio=
 P:skalibs-dev
@@ -10394,22 +10392,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1542497201
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 
-C:Q1nAMCfmKYzIgAbLEDnrBjTBHncis=
-P:mosquitto-dev
-V:1.5.6-r0
-A:armv7
-S:19211
-I:122880
-T:An Open Source MQTT v3.1 Broker (development files)
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-D:mosquitto-libs++=1.5.6-r0 mosquitto-libs=1.5.6-r0 pkgconfig
-p:pc:libmosquitto=1.5.6 pc:libmosquittopp=1.5.6
-
 C:Q1nZfuG0Ag1xaefy7fuXQcBSNaKSg=
 P:lua5.3-dbi-sqlite3
 V:0.6-r3
@@ -10547,22 +10529,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545386463
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs sshpass=1.06-r0
-
-C:Q1+EfJT3LYTbFPnRJBtieIdt8CYjo=
-P:sdl2_image-dev
-V:2.0.4-r0
-A:armv7
-S:3995
-I:36864
-T:A simple library to load images of various formats as SDL surfaces (development files)
-U:http://www.libsdl.org/projects/SDL_image/
-L:zlib
-o:sdl2_image
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545223205
-c:e3f530b87462b5aa7c95bf2444f0549ab11944f3
-D:pc:sdl2>=2.0.8 pkgconfig sdl2_image=2.0.4-r0
-p:pc:SDL2_image=2.0.4
 
 C:Q1SqhtLeD3idO7Wbw6OF8jNbjRHK4=
 P:font-bitstream-75dpi
@@ -11176,6 +11142,22 @@ c:a0125e7de015ab8a1fdf63b9217ce33861b82e1c
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 p:cmd:ssh-keygen
 
+C:Q18gM8IU+Kp59LlBX7Om8Jxeda7WM=
+P:ghostscript
+V:9.26-r4
+A:armv7
+S:13549039
+I:44826624
+T:An interpreter for the PostScript language and for PDF
+U:https://ghostscript.com/
+L:GPL-3.0
+o:ghostscript
+m:Cameron Banta <cbanta@gmail.com>
+t:1569957780
+c:d523278cd6edc33481e4d0d111f3e2d00ee34033
+D:so:libc.musl-armv7.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libjbig2dec.so.0 so:libjpeg.so.8 so:liblcms2.so.2 so:libpng16.so.16 so:libtiff.so.5 so:libz.so.1
+p:so:libgs.so.9=9.26 so:libijs-0.35.so=0 cmd:dvipdf cmd:eps2eps cmd:gs cmd:gsbj cmd:gsc cmd:gsdj cmd:gsdj500 cmd:gslj cmd:gslp cmd:gsnd cmd:ijs_client_example cmd:ijs_server_example cmd:lprsetup.sh cmd:pdf2dsc cmd:pdf2ps cmd:pf2afm cmd:pfbtopfa cmd:pphs cmd:printafm cmd:ps2ascii cmd:ps2epsi cmd:ps2pdf cmd:ps2pdf12 cmd:ps2pdf13 cmd:ps2pdf14 cmd:ps2pdfwr cmd:ps2ps cmd:ps2ps2 cmd:unix-lpr.sh
+
 C:Q15tnLUkEvJHI1arjLbhpMrBAcKkk=
 P:rdiff-backup
 V:1.2.8-r2
@@ -11314,6 +11296,22 @@ t:1544794899
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:py-dbus pc:dbus-1>=1.0 pkgconfig
 p:pc:dbus-python=1.2.8
+
+C:Q17VjoJhxdxFSiqeH2opxMxeJFe+s=
+P:mosquitto-libs
+V:1.5.6-r1
+A:armv7
+S:22273
+I:53248
+T:An Open Source MQTT v3.1 Broker (libraries)
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956749
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+D:so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libmosquitto.so.1=1
 
 C:Q14TsPPDkDihdUWqvB08hATp6hRsY=
 P:fish
@@ -11470,22 +11468,6 @@ t:1554455906
 c:b3ea53dbb742db00884191a793efbce0d41d339a
 D:so:libLLVM-5.0.so so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_freedreno.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.0 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1
 
-C:Q13AN9repvpXM0U8kFC1Vc69sxqH4=
-P:mosquitto-libs
-V:1.5.6-r0
-A:armv7
-S:22286
-I:53248
-T:An Open Source MQTT v3.1 Broker (libraries)
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-D:so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:so:libmosquitto.so.1=1
-
 C:Q1XmKXjMK+8SoaY9jL26S46ts2I1Q=
 P:ruby-net-telnet
 V:2.5.5-r0
@@ -11565,22 +11547,6 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-armv7.so.1 so:libxcb-image.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb.so.1
 p:so:libxcb-cursor.so.0=0.0.0
 
-C:Q1NnrlRzYu0BOd7qsyS+2pHRkvqgU=
-P:dovecot-openrc
-V:2.3.6-r0
-A:armv7
-S:1881
-I:16384
-T:IMAP and POP3 server (OpenRC init scripts)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133991
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:openssl
-i:openrc dovecot=2.3.6-r0
-
 C:Q1aW/I/eHj13/3iJnVoUxOpAkpQ9U=
 P:glib-doc
 V:2.58.1-r3
@@ -11625,22 +11591,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1545256914
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins grep lm_sensors
-
-C:Q1zQVaA/zkdLSrC9I8SL0tYSLaGzc=
-P:curl-dev
-V:7.64.0-r2
-A:armv7
-S:332742
-I:925696
-T:URL retrival utility and library (development files)
-U:https://curl.haxx.se
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559717677
-c:f4c02c83cf9d1a3f4bbb31b4a9dfd48e58a1fbca
-D:openssl-dev libssh2-dev nghttp2-dev zlib-dev libcurl=7.64.0-r2 pkgconfig
-p:pc:libcurl=7.64.0 cmd:curl-config
 
 C:Q1/5AwOhcaeGoWLQRVfu07eGySgVk=
 P:libcap-ng-utils
@@ -12133,20 +12083,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1544795477
 c:9db7b60601c0aa7c1805b4da8da4f9b3f67aac4e
 
-C:Q1uUQP4hSPldGRlnEc73SMaKJPnqM=
-P:acf-jquery
-V:0.4.2-r1
-A:armv7
-S:111390
-I:462848
-T:jquery libraries for ACF
-U:https://git.alpinelinux.org/cgit/acf/acf-jquery
-L:GPL-2.0
-o:acf-jquery
-m:Ted Trask <ttrask01@yahoo.com>
-t:1542298019
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-
 C:Q1umcJp+KorRMHE18fIOTIw3WFwN0=
 P:qextserialport-dev
 V:1.2_rc1-r0
@@ -12390,21 +12326,6 @@ c:eac5f104746643de1331eddd9f43e1dc54d886a5
 D:so:libc.musl-armv7.so.1
 p:cmd:iasl
 
-C:Q1fn5Z4Bgkyh52rsTHtCQlPVeFra0=
-P:asterisk-doc
-V:15.7.1-r0
-A:armv7
-S:10999
-I:45056
-T:Asterisk: A Module Open Source PBX System (documentation)
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-i:docs asterisk=15.7.1-r0
-
 C:Q1wXnSuMYVGC1wthXePNI479Jhlqc=
 P:graphviz
 V:2.40.1-r1
@@ -12544,22 +12465,6 @@ c:146d630e9813c634bfee9df654d304c83c228a72
 D:python2 docbook-xml rarian py2-libxml2 libxslt
 i:gnome-doc-utils=0.20.10-r2 lang
 
-C:Q130boojNgfDFQMEy++gDkaai/Eeo=
-P:tiff
-V:4.0.10-r0
-A:armv7
-S:131687
-I:335872
-T:Provides support for the Tag Image File Format or TIFF
-U:http://www.libtiff.org
-L:libtiff
-o:tiff
-m:Michael Mason <ms13sp@gmail.com>
-t:1544794053
-c:0c504ed6ce49ffab8f4090a5a3ddaeeda27ecbf5
-D:so:libc.musl-armv7.so.1 so:libjpeg.so.8 so:libz.so.1
-p:so:libtiff.so.5=5.4.0
-
 C:Q1UBXLWcBxMb32SKhwwO/z04d8CHY=
 P:ncdu
 V:1.13-r0
@@ -12620,22 +12525,6 @@ o:lua-dbi
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545146571
 c:ae218195acc378e19ba54daa154b7f5145d5e104
-
-C:Q1RyH8RZ6osfoyT+KAEdES5+4gNEM=
-P:asterisk
-V:15.7.1-r0
-A:armv7
-S:3736753
-I:9216000
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:/bin/sh so:libc-client.so.1 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libjansson.so.4 so:liblua.so.5 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjnath.so.2 so:libpjsip-simple.so.2 so:libpjsip-ua.so.2 so:libpjsip.so.2 so:libportaudio.so.2 so:libsqlite3.so.0 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libasteriskssl.so.1=1 cmd:astcanary cmd:astdb2bdb cmd:astdb2sqlite3 cmd:asterisk cmd:astgenkey cmd:astversion cmd:autosupport cmd:rasterisk cmd:safe_asterisk
 
 C:Q12+NyzGxwWRaKFdn7da59Ny74hcE=
 P:uwsgi-rrdtool
@@ -13111,6 +13000,20 @@ t:1562236878
 c:3dc163ee30f6d8236f24f2c8704e9e5bd04261ca
 i:docs irssi=1.1.3-r0
 
+C:Q1dEg5jdWyHpO2CaZLBsW+UvBFkQQ=
+P:acf-jquery
+V:0.4.3-r0
+A:armv7
+S:117073
+I:479232
+T:jquery libraries for ACF
+U:https://git.alpinelinux.org/cgit/acf/acf-jquery
+L:GPL-2.0
+o:acf-jquery
+m:Ted Trask <ttrask01@yahoo.com>
+t:1569958045
+c:357a3a46bcbbb048601dd0fdcf96c6c429cb4242
+
 C:Q15mHeLG0OElFozSk7Htch5w7TWtY=
 P:findutils
 V:4.6.0-r1
@@ -13127,21 +13030,20 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:find cmd:locate cmd:updatedb cmd:xargs
 
-C:Q1KPmch2hl63Kl8QgT0qWMPqPpvQc=
-P:polkit
-V:0.105-r10
+C:Q1ZwJLOx4fUPWoN2/ULtE5qA3FwXM=
+P:polkit-doc
+V:0.105-r11
 A:armv7
-S:108491
-I:421888
-T:Application development toolkit for controlling system-wide privileges
+S:20004
+I:61440
+T:Application development toolkit for controlling system-wide privileges (documentation)
 U:http://www.freedesktop.org/wiki/Software/polkit/
 L:LGPL-2.0+
 o:polkit
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792357
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-D:so:libc.musl-armv7.so.1 so:libexpat.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-backend-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0 cmd:pk-example-frobnicate cmd:pkaction cmd:pkcheck cmd:pkexec cmd:pkttyagent
+t:1569957264
+c:e325d22a1d8c013af35b262f20089514bae6df40
+i:docs polkit=0.105-r11
 
 C:Q1SGNoGanaxLouS6HlvUrIDqxSkfU=
 P:py-typing
@@ -13667,21 +13569,6 @@ c:2f6c84f30ec5e943da51b0586a7a9e2e3f077ede
 D:dialog so:libasound.so.2 so:libc.musl-armv7.so.1 so:libfftw3f.so.3 so:libformw.so.6 so:libmenuw.so.6 so:libncursesw.so.6 so:libpanelw.so.6
 p:cmd:aconnect cmd:alsa-info.sh cmd:alsabat cmd:alsabat-test.sh cmd:alsactl cmd:alsaloop cmd:alsamixer cmd:alsatplg cmd:alsaucm cmd:amidi cmd:amixer cmd:aplay cmd:aplaymidi cmd:arecord cmd:arecordmidi cmd:aseqdump cmd:aseqnet cmd:axfer cmd:iecset cmd:speaker-test
 
-C:Q1v/1qc33oDJrFZ1xpdx+FEc6obE0=
-P:asterisk-pgsql
-V:15.7.1-r0
-A:armv7
-S:44200
-I:114688
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libpq.so.5
-
 C:Q18CoLhZ+AZMU6AdlVSFQ0jfMUUA4=
 P:hylafaxplus-openrc
 V:7.0.0-r0
@@ -13742,21 +13629,6 @@ t:1545292807
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libz.so.1
 p:so:libminizip.so.1=1.0.0
-
-C:Q1Ch+VZb0jEvI+o5DmNaoRmixM2Qo=
-P:openldap-doc
-V:2.4.47-r2
-A:armv7
-S:326603
-I:585728
-T:LDAP Server (documentation)
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016466
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-i:docs openldap=2.4.47-r2
 
 C:Q1q6PwXRRE48mQMesBwtmN6Pw9eSs=
 P:bitlbee
@@ -13866,21 +13738,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1545256917
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armv7.so.1
-
-C:Q1RPTXBE5vLOCbYWTsvU+bI4FNJlo=
-P:openldap-overlay-ppolicy
-V:2.4.47-r2
-A:armv7
-S:14822
-I:49152
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libltdl.so.7
 
 C:Q1NBpwamafR1zCJg+nLNWaiyC+AIA=
 P:linux-firmware-libertas
@@ -14173,6 +14030,21 @@ c:9f42558b67d46854eb6b7e39c52078de4ffd6079
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1
 p:so:libcord.so.1=1.3.0 so:libgc.so.1=1.3.2
 
+C:Q1SMH12S6pPBqha+9f0uO3h6gUG7c=
+P:asterisk-odbc
+V:15.7.4-r0
+A:armv7
+S:68145
+I:188416
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957534
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libodbc.so.2
+
 C:Q1+V/9zvsJMuw7l44oxNJ079w7ey0=
 P:xrandr-doc
 V:1.5.0-r1
@@ -14343,6 +14215,21 @@ c:c1a5d5de4e2453714ddf480c8cfea37ae8dc5791
 D:shared-mime-info
 i:gdk-pixbuf=2.36.11-r2 lang
 
+C:Q1xk1mwz0QQSn+FiIOsnfJzRoC3h0=
+P:nghttp2-doc
+V:1.35.1-r1
+A:armv7
+S:51511
+I:122880
+T:Experimental HTTP/2 client, server and proxy (documentation)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569956626
+c:30aecaf3fcad1d9f048bad8e181f267d40bc336c
+i:docs nghttp2=1.35.1-r1
+
 C:Q11sPOrNXZSsg2bzjkm/mLc1MHBzI=
 P:perl-convert-tnef
 V:0.18-r1
@@ -14404,21 +14291,6 @@ t:1545119023
 c:600a7f256e783909423089cebff761eb2b40aaae
 D:openssl-dev popt-dev pkgconfig rabbitmq-c=0.8.0-r5
 p:pc:librabbitmq=0.8.0
-
-C:Q1YfcKi/mg8PSvvguv/BLkr1pYBt0=
-P:openldap-overlay-rwm
-V:2.4.47-r2
-A:armv7
-S:22430
-I:61440
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1Uyg9H1jv0gSykKOvyQ/Z0NRVRfY=
 P:gettext-libs
@@ -14635,6 +14507,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1554980655
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
+
+C:Q1pyUbclC0TYdMuEOQ/3uA7B1YjVI=
+P:dovecot-mysql
+V:2.3.7.2-r0
+A:armv7
+S:8252
+I:40960
+T:MySQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libmariadb.so.3
+p:so:libdriver_mysql.so=0
 
 C:Q1OH8VnYMZB7Q9Ys43g+5CNRLT+SQ=
 P:kamailio-authephemeral
@@ -14898,6 +14786,21 @@ t:1545511452
 c:270c161fba7add4b908591655a196ccaef5865da
 D:so:libc.musl-armv7.so.1
 p:cmd:run-parts
+
+C:Q16wAY2J51aS+a8hDUQGFemY7I2is=
+P:ghostscript-doc
+V:9.26-r4
+A:armv7
+S:4049925
+I:10530816
+T:An interpreter for the PostScript language and for PDF (documentation)
+U:https://ghostscript.com/
+L:GPL-3.0
+o:ghostscript
+m:Cameron Banta <cbanta@gmail.com>
+t:1569957780
+c:d523278cd6edc33481e4d0d111f3e2d00ee34033
+i:docs ghostscript=9.26-r4
 
 C:Q17Fz3Vk+wetACUkQGFZ3sRuHQvSI=
 P:perl-test2-suite-doc
@@ -15190,6 +15093,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545135395
 c:d95e50738a5c11874a6c05791b77838b3236f22f
 i:docs fetchmail=6.3.26-r14
+
+C:Q1ilVVbHzCVZZ1YbJRccfsXzJcK7M=
+P:awall-masquerade
+V:1.6.12-r0
+A:armv7
+S:2026
+I:45056
+T:Alpine Wall
+U:https://git.alpinelinux.org/cgit/awall/
+L:GPL-2.0
+o:awall
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1569957605
+c:3948b32f4e7b9c15373fe3005217368a8a6e2773
+D:awall
 
 C:Q1siHfKBPhUjREz5T2sApIfUH2aqA=
 P:exiv2-dev
@@ -16041,22 +15959,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545231601
 c:315c00b89fbc706fde9ca1cb9b8966ba7124c0cf
 
-C:Q1U9X6Bo2+yUlRtQvqSU/8MiUZFHc=
-P:expat-dev
-V:2.2.7-r0
-A:armv7
-S:67882
-I:192512
-T:An XML Parser library written in C (development files)
-U:http://www.libexpat.org/
-L:MIT
-o:expat
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1561897374
-c:9b9ed53cc550d0aacdafa85a40ef29dc9229bfaa
-D:expat=2.2.7-r0 pkgconfig
-p:pc:expat=2.2.7
-
 C:Q1tLSromUJ5GHPM/xrzcYxFcKZ+co=
 P:mcpp-dev
 V:2.7.2-r1
@@ -16149,21 +16051,6 @@ t:1542453660
 c:a4242e97d4a33e05b5678fc2fabc361310bc5184
 D:python3 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libpython3.6m.so.1.0
 p:so:libboost_python36-mt.so.1.67.0=1.67.0 so:libboost_python36.so.1.67.0=1.67.0
-
-C:Q1ojd/P8N8OPRmd1XmmqO0eA8VHDQ=
-P:openldap-mqtt
-V:2.4.47-r2
-A:armv7
-S:6187
-I:32768
-T:OpenLDAP MQTT overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016467
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:openldap so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libmosquitto.so.1
 
 C:Q1dH5e3wEEvkNLf9zi+A8aUfCIttg=
 P:perl-json-maybexs
@@ -16303,21 +16190,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1545071094
 c:5e501b0e9403a912350ade906bd3f7396c505d70
 i:docs pcre2=10.32-r1
-
-C:Q1GVc29LsqcMIEtewq/w3DtNbg+7k=
-P:polkit-doc
-V:0.105-r10
-A:armv7
-S:19978
-I:61440
-T:Application development toolkit for controlling system-wide privileges (documentation)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792357
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-i:docs polkit=0.105-r10
 
 C:Q1mhwvAv+djhsKtK/4NdL9DrpBP3M=
 P:lua-sql-mysql
@@ -16839,21 +16711,6 @@ c:48e59c02864ce11fac3e2ff3529f2e1f5d1b7f1e
 D:logrotate
 i:squid=4.8-r0 lang-id
 
-C:Q1xugBN+v8CyWiahdbVGZ9LwE1wrM=
-P:openldap-dev
-V:2.4.47-r2
-A:armv7
-S:378341
-I:1052672
-T:LDAP Server (development files)
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016465
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:openssl-dev cyrus-sasl-dev util-linux-dev libldap=2.4.47-r2
-
 C:Q1d0FWLzk0cFZGFpIhIB6zlJayeYM=
 P:dhcp-doc
 V:4.4.1-r1
@@ -17160,20 +17017,6 @@ t:1563184480
 c:247812b0db90fcdc89d8aa9440ddade5ef8368ca
 D:python3
 i:py-six=1.12.0-r0 python3
-
-C:Q1L3wjHg5ZOVo/iWwcM0+pR6hCNcM=
-P:asterisk-dbg
-V:15.7.1-r0
-A:armv7
-S:36292051
-I:88084480
-T:Asterisk: A Module Open Source PBX System (debug symbols)
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
 
 C:Q1cqa17m2DOrta4vVO5KvsisNQQJQ=
 P:gtk+3.0
@@ -18279,21 +18122,6 @@ t:1542378814
 c:272b441c1a23cd2d8d812a99c0cdb03e10ead5b2
 i:docs perl-yaml-tiny=1.73-r0
 
-C:Q17jco4PYiHeH0p6FZR0fTPfQyyj8=
-P:asterisk-dahdi
-V:15.7.1-r0
-A:armv7
-S:192929
-I:380928
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libpri.so.1.4 so:libtonezone.so.2
-
 C:Q1AMR5a7CmoKlx0WOibF1EFDJMyMw=
 P:libunistring
 V:0.9.10-r0
@@ -18416,6 +18244,22 @@ c:620c883a5af702e7a0e56b5aaaeb38e29fae6f7a
 D:so:libc.musl-armv7.so.1
 p:cmd:vsyasm cmd:yasm cmd:ytasm
 
+C:Q1eevBpJ06a/dvqHntc104fiM3+ao=
+P:wavpack-dev
+V:5.1.0-r8
+A:armv7
+S:7853
+I:49152
+T:Audio compression format with lossless, lossy, and hybrid compression modes (development files)
+U:http://www.wavpack.com/
+L:BSD-3-Clause
+o:wavpack
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957034
+c:a72e9dec2ca905acb1090eae42c239c177a553f0
+D:pkgconfig wavpack=5.1.0-r8
+p:pc:wavpack=5.1.0
+
 C:Q1awzdX8FIm2fS9ZlaiflZKTc77yA=
 P:perl-params-validationcompiler
 V:0.27-r0
@@ -18461,6 +18305,22 @@ t:1545217223
 c:ad5458ae0646448c80d72b8ef7a4fb967f7a54b1
 D:so:libc.musl-armv7.so.1
 p:so:libnspr4.so=0 so:libplc4.so=0 so:libplds4.so=0
+
+C:Q1wWKT2pv39fIjNzL4u1bhOn+w52Q=
+P:mosquitto-dev
+V:1.5.6-r1
+A:armv7
+S:19209
+I:122880
+T:An Open Source MQTT v3.1 Broker (development files)
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956748
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+D:mosquitto-libs++=1.5.6-r1 mosquitto-libs=1.5.6-r1 pkgconfig
+p:pc:libmosquitto=1.5.6 pc:libmosquittopp=1.5.6
 
 C:Q1QW8B0afNVAsv/i7f2UWzIuHrlZA=
 P:libpcap
@@ -19255,6 +19115,22 @@ t:1545231439
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libsecret=0.18.6-r0
 
+C:Q1isYu+VN457tfu/YsluC6ciL827w=
+P:poppler
+V:0.56.0-r2
+A:armv7
+S:688195
+I:1572864
+T:PDF rendering library based on xpdf 3.0
+U:https://poppler.freedesktop.org/
+L:GPL-2.0+
+o:poppler
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957385
+c:fcdf03a54f9c9da28b86742c7745c76c1e110d82
+D:so:libc.musl-armv7.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgcc_s.so.1 so:libjpeg.so.8 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libstdc++.so.6 so:libtiff.so.5 so:libz.so.1
+p:so:libpoppler-cpp.so.0=0.3.0 so:libpoppler.so.67=67.0.0
+
 C:Q1SpgWdpAASJLQuKkinGEHMhJiq9M=
 P:frotz
 V:2.44-r0
@@ -19330,21 +19206,6 @@ t:1545151020
 c:b668331b3aab9ffdf1c5dcc735430a0208baffe7
 D:abuild build-base git
 
-C:Q1gt/BvNXVdSekYlnSk3RqHg9VrMA=
-P:openldap-passwd-pbkdf2
-V:2.4.47-r2
-A:armv7
-S:4023
-I:28672
-T:PBKDF2 OpenLDAP support
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016467
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:openldap so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
-
 C:Q12LZYXiQokW0n8wqJk6wtJNDMoWM=
 P:gnats
 V:4.2.0-r5
@@ -19376,6 +19237,21 @@ t:1545209183
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libusb-dev pc:libusb-1.0 pkgconfig usbredir=0.7.1-r0
 p:pc:libusbredirhost=0.7.1 pc:libusbredirparser-0.5=0.7.1
+
+C:Q1bcIXlfAzBThQVGB1+wavdFEOY/0=
+P:openldap-overlay-proxycache
+V:2.4.48-r0
+A:armv7
+S:28550
+I:69632
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1wE5D+5JJW7BVND6vxE8BAgYpHi0=
 P:farstream0.1
@@ -20938,21 +20814,6 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:gtk+3.0-dev gconf-dev libcanberra-dev gnome-vfs-dev libbonobo-dev libgnome=2.32.1-r7 pc:ORBit-2.0 pc:gconf-2.0 pc:glib-2.0 pc:gnome-vfs-2.0 pc:libbonobo-2.0 pc:libcanberra>=0 pkgconfig
 p:pc:libgnome-2.0=2.32.1
 
-C:Q16xN8IFKN11QYjR49gPcbFlGXhH0=
-P:openldap-overlay-auditlog
-V:2.4.47-r2
-A:armv7
-S:4158
-I:28672
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1bHAy59RGpCZmeR7OOSx00sHORUg=
 P:lua5.1-hashids
 V:1.0.6-r1
@@ -22077,21 +21938,6 @@ c:3badfd7b3633bef19a963a43ea8dfd3d5fc4972d
 D:!postfix /bin/sh so:libasr.so.0 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libdb-5.3.so so:libevent-2.1.so.6 so:libfts.so.0 so:libssl.so.1.1 so:libz.so.1
 p:cmd:smtpctl cmd:smtpd
 
-C:Q1PsULS7Iyy8Ymi3uw9sE3oHKqAa4=
-P:curl-doc
-V:7.64.0-r2
-A:armv7
-S:701015
-I:1892352
-T:URL retrival utility and library (documentation)
-U:https://curl.haxx.se
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559717677
-c:f4c02c83cf9d1a3f4bbb31b4a9dfd48e58a1fbca
-i:docs curl=7.64.0-r2
-
 C:Q13wLYBcB8cwmazCLgpsjC+5JuQpA=
 P:graphviz-gtk
 V:2.40.1-r1
@@ -22168,6 +22014,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545299642
 c:b4ed44246b0a4e87d4c7f71b7dd3d32acea06db9
 i:docs perl-xml-rss=1.60-r0
+
+C:Q1KwguKYMyg3Zr0MdYykQ2B9eWwqo=
+P:openldap-back-sql
+V:2.4.48-r0
+A:armv7
+S:56133
+I:131072
+T:OpenLDAP sql backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libodbc.so.2
 
 C:Q1HnBbnqJy10PV7xSk8vlCa2uExGE=
 P:py3-lockfile
@@ -22323,6 +22184,21 @@ t:1543328860
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-data-uuid=1.221-r1
 
+C:Q1i3X6OjocBVHxKAGK27vxqfAVwPE=
+P:asterisk-srtp
+V:15.7.4-r0
+A:armv7
+S:40838
+I:90112
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
+
 C:Q1navdNDn/CAE0clzWzCkU5qU6qV4=
 P:perl-date-manip
 V:6.75-r1
@@ -22445,21 +22321,6 @@ t:1542412403
 c:d6454c60178f82950c19e02d3dcd25c46ff57032
 D:libmnl-dev libnftnl-libs=1.1.1-r0 pkgconfig
 p:pc:libnftnl=1.1.1
-
-C:Q1qf3Cz7sVXDzTi+Bc0zd1jvBfvaY=
-P:openldap-overlay-all
-V:2.4.47-r2
-A:armv7
-S:1321
-I:4096
-T:Virtual package that installs all OpenLDAP overlays
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:openldap-overlay-accesslog openldap-overlay-auditlog openldap-overlay-collect openldap-overlay-constraint openldap-overlay-dds openldap-overlay-deref openldap-overlay-dyngroup openldap-overlay-dynlist openldap-overlay-memberof openldap-overlay-ppolicy openldap-overlay-proxycache openldap-overlay-refint openldap-overlay-retcode openldap-overlay-rwm openldap-overlay-seqmod openldap-overlay-sssvlv openldap-overlay-syncprov openldap-overlay-translucent openldap-overlay-unique openldap-overlay-valsort
 
 C:Q1Sp4OP+8hK6BIfS9wXuX5rQ1x3iE=
 P:atk-lang
@@ -22964,20 +22825,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545070530
 c:1bc72d05b699ea7e37a57aeb2295720a093f5d9b
 
-C:Q10aWNNtNlt7cAD079lLZozSBy3LI=
-P:ghostscript-dbg
-V:9.26-r3
-A:armv7
-S:27106181
-I:59232256
-T:An interpreter for the PostScript language and for PDF (debug symbols)
-U:https://ghostscript.com/
-L:GPL-3.0
-o:ghostscript
-m:Cameron Banta <cbanta@gmail.com>
-t:1565700568
-c:0c7e5ec71b97782eda0a281b09ddabdaba26f848
-
 C:Q14YtDFylyK1DS8NdoZ/LOSRJYh1I=
 P:dahdi-tools-doc
 V:2.11.1-r0
@@ -22992,6 +22839,21 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1543229673
 c:4d71026f8f9aecab1ee19d423a1826bb74a1b90d
 i:docs dahdi-tools=2.11.1-r0
+
+C:Q1gduwCkBAMA/qD+rji5v9X8V5AVM=
+P:asterisk-curl
+V:15.7.4-r0
+A:armv7
+S:16002
+I:65536
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libcurl.so.4
 
 C:Q1k98pm/gbpRsQhPLDYhk0xKPzo3w=
 P:cpufrequtils-dev
@@ -23298,6 +23160,22 @@ c:6e6377f061d528b6988b81fb88067471bfb668ae
 D:libffi-dev expat-dev pkgconfig so:libc.musl-armv7.so.1 so:libexpat.so.1 so:libxml2.so.2 wayland-libs-client=1.16.0-r0 wayland-libs-cursor=1.16.0-r0 wayland-libs-egl=1.16.0-r0 wayland-libs-server=1.16.0-r0
 p:pc:wayland-client=1.16.0 pc:wayland-cursor=1.16.0 pc:wayland-egl-backend=3 pc:wayland-egl=18.1.0 pc:wayland-scanner=1.16.0 pc:wayland-server=1.16.0 cmd:wayland-scanner
 
+C:Q1j1jm+QLEbBd8K5uH6RXxPtNtBVw=
+P:libcurl
+V:7.64.0-r3
+A:armv7
+S:190635
+I:319488
+T:The multiprotocol file transfer library
+U:https://curl.haxx.se
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956740
+c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
+D:ca-certificates so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssh2.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libcurl.so.4=4.5.0
+
 C:Q1lX9/1emkdqlSqtlJts+88IMwA6U=
 P:libucontext-dev
 V:0.1.3-r0
@@ -23483,6 +23361,20 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:python2
 i:py-itsdangerous=0.24-r3 python2
 
+C:Q1AbuqbhnfmKRAWMAbNXVP7112Dx4=
+P:asterisk-dbg
+V:15.7.4-r0
+A:armv7
+S:36308003
+I:88121344
+T:Asterisk: A Module Open Source PBX System (debug symbols)
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957533
+c:de555bb30f216410e565ff8c6e8983703d16d648
+
 C:Q1owoBUXxlOcpuBJN55nzBk3FK3Mg=
 P:perl-file-tail
 V:1.3-r1
@@ -23541,22 +23433,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542219501
 c:b9f20e63a6482a743f83d534ec840b80bb346f8e
 i:docs make=4.2.1-r2
-
-C:Q1+Rm8IjmxgGYPrXLP4rI+wZnpwxs=
-P:openldap-clients
-V:2.4.47-r2
-A:armv7
-S:185792
-I:380928
-T:LDAP client utilities
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016467
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libsasl2.so.3
-p:cmd:ldapadd cmd:ldapcompare cmd:ldapdelete cmd:ldapexop cmd:ldapmodify cmd:ldapmodrdn cmd:ldappasswd cmd:ldapsearch cmd:ldapurl cmd:ldapwhoami
 
 C:Q1i/14klLMke9g8Nei8WCwy4jQ084=
 P:cvs-doc
@@ -24056,21 +23932,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:xorgproto libxkbui=1.0.2-r9 pc:kbproto pc:x11 pc:xt pkgconfig
 p:pc:xkbui=1.0.2
 
-C:Q1wW1aHgedmPCGmXi2Ls7K4b9G1GQ=
-P:mosquitto
-V:1.5.6-r0
+C:Q1YqXCzpTXi4QrX3Zq4lMNHtnhv5g=
+P:wavpack
+V:5.1.0-r8
 A:armv7
-S:84910
-I:212992
-T:An Open Source MQTT v3.1 Broker
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
+S:162413
+I:307200
+T:Audio compression format with lossless, lossy, and hybrid compression modes
+U:http://www.wavpack.com/
+L:BSD-3-Clause
+o:wavpack
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libuuid.so.1 so:libwebsockets.so.14
-p:cmd:mosquitto cmd:mosquitto_passwd
+t:1569957035
+c:a72e9dec2ca905acb1090eae42c239c177a553f0
+D:so:libc.musl-armv7.so.1
+p:so:libwavpack.so.1=1.2.0 cmd:wavpack cmd:wvgain cmd:wvtag cmd:wvunpack
 
 C:Q1MwgPadBp83qKtiBc9u903hp/oFI=
 P:xdelta3-doc
@@ -24523,6 +24399,22 @@ t:1546421087
 c:53114f279822e62b3db968dbfc14b9cc335a346c
 D:/bin/sh so:libc.musl-armv7.so.1
 p:cmd:cjdroute
+
+C:Q1+PhlsC8QK1vQXNuadEuhkDmBpPg=
+P:mosquitto-clients
+V:1.5.6-r1
+A:armv7
+S:20334
+I:73728
+T:Mosquitto command line MQTT clients
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956749
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+D:so:libc.musl-armv7.so.1 so:libmosquitto.so.1
+p:cmd:mosquitto_pub cmd:mosquitto_sub
 
 C:Q1CSvmiSwjM2EAg1Lh+OXVy3Wx3X0=
 P:py-gnome-libgnome
@@ -25272,22 +25164,6 @@ t:1545140352
 c:31711d3ff8bd1287606d0c2841f62339274ac8f9
 i:docs libidl=0.8.14-r2
 
-C:Q13H637h3oFipewrewIIJ8W4ghDjw=
-P:curl
-V:7.64.0-r2
-A:armv7
-S:116035
-I:176128
-T:URL retrival utility and library
-U:https://curl.haxx.se
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559717678
-c:f4c02c83cf9d1a3f4bbb31b4a9dfd48e58a1fbca
-D:ca-certificates so:libc.musl-armv7.so.1 so:libcurl.so.4 so:libz.so.1
-p:cmd:curl
-
 C:Q1vC1Deh4S0crKA6SVT34nTUN0Dr0=
 P:npm
 V:10.14.2-r0
@@ -25517,21 +25393,6 @@ o:ghostscript-fonts
 m:Cameron Banta <cbanta@gmail.com>
 t:1543219479
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-
-C:Q10+0ujUQjcQ6UvwDQwNDFK5rVzBo=
-P:openldap-overlay-collect
-V:2.4.47-r2
-A:armv7
-S:5041
-I:32768
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
 
 C:Q11Hb+fy5EUJIVyFPx3vRx5dGbuzQ=
 P:encodings
@@ -25925,21 +25786,6 @@ c:b077914399313e45efe6d24a0fab0affbde1db21
 D:so:libLLVM-5.0.so so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:llvm=5.0.2-r0 cmd:bugpoint cmd:llc cmd:lli cmd:llvm-ar cmd:llvm-as cmd:llvm-bcanalyzer cmd:llvm-c-test cmd:llvm-cat cmd:llvm-cov cmd:llvm-cvtres cmd:llvm-cxxdump cmd:llvm-cxxfilt cmd:llvm-diff cmd:llvm-dis cmd:llvm-dlltool cmd:llvm-dsymutil cmd:llvm-dwarfdump cmd:llvm-dwp cmd:llvm-extract cmd:llvm-lib cmd:llvm-link cmd:llvm-lto cmd:llvm-lto2 cmd:llvm-mc cmd:llvm-mcmarkup cmd:llvm-modextract cmd:llvm-mt cmd:llvm-nm cmd:llvm-objdump cmd:llvm-opt-report cmd:llvm-pdbutil cmd:llvm-profdata cmd:llvm-ranlib cmd:llvm-readelf cmd:llvm-readobj cmd:llvm-rtdyld cmd:llvm-size cmd:llvm-split cmd:llvm-stress cmd:llvm-strings cmd:llvm-symbolizer cmd:llvm-tblgen cmd:llvm-xray cmd:opt cmd:sancov cmd:sanstats cmd:verify-uselistorder
 
-C:Q1mURbUmJxe7zkOSKUr9dxApS02V0=
-P:poppler-doc
-V:0.56.0-r1
-A:armv7
-S:128795
-I:1433600
-T:PDF rendering library based on xpdf 3.0 (documentation)
-U:https://poppler.freedesktop.org/
-L:GPL-2.0+
-o:poppler
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1542454592
-c:d9c872c52ac46e8d2ac2e4978eecb9609f28ced5
-i:docs poppler=0.56.0-r1
-
 C:Q1jk8OlcYvSsdugvpsmn2Oac9eb1o=
 P:perl-file-tail-doc
 V:1.3-r1
@@ -26205,6 +26051,21 @@ t:1545856931
 c:3d10344dcb3276b19f7a2077e2a5735f3bb27ae9
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:libwebsockets-test-client cmd:libwebsockets-test-lejp cmd:libwebsockets-test-server cmd:libwebsockets-test-server-extpoll
+
+C:Q1fMjPivTDqpA1+SyVmkxeWlAuzy8=
+P:tiff-doc
+V:4.0.10-r1
+A:armv7
+S:608622
+I:2068480
+T:Provides support for the Tag Image File Format or TIFF (documentation)
+U:http://www.libtiff.org
+L:libtiff
+o:tiff
+m:Michael Mason <ms13sp@gmail.com>
+t:1569957021
+c:de0584e234c2dad9d4247ee7de308a95fe2b42ac
+i:docs tiff=4.0.10-r1
 
 C:Q1XJfXOK4kenjZjCnMOQJxWVLGwE8=
 P:mercurial-doc
@@ -26774,21 +26635,6 @@ c:0e9f47894fe8db4e30f0957eb40fb7a46e92eeec
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libjson-c.so.4 so:libkrb5.so.3 so:libxml2.so.2 so:libz.so.1
 p:so:libbind9.so.1201=1201.0.1 so:libdns.so.1208=1208.0.1 so:libirs.so.1201=1201.0.1 so:libisc.so.1204=1204.1.0 so:libisccc.so.1201=1201.0.1 so:libisccfg.so.1203=1203.0.1 so:libns.so.1207=1207.0.0
 
-C:Q1+axJ3fN5OV7qDiGoSXW1R1Gad7A=
-P:wpa_supplicant-openrc
-V:2.7-r4
-A:armv7
-S:2502
-I:32768
-T:A utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565875422
-c:c5978d4bc83c3c055db7df6a78ba76b748742e2c
-i:openrc wpa_supplicant=2.7-r4
-
 C:Q12cge/Q7iKzVDcFRCJJnQ//CW98o=
 P:groff-doc
 V:1.22.3-r2
@@ -27144,37 +26990,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXft.so.2 so:libXpm.so.4 so:libXrender.so.1 so:libc.musl-armv7.so.1 so:libfontconfig.so.1 so:libjpeg.so.8
 p:cmd:mrxvt
 
-C:Q1WYnIMugODekc7y1riqGoIrRpdKs=
-P:openldap-back-bdb
-V:2.4.47-r2
-A:armv7
-S:65056
-I:139264
-T:OpenLDAP bdb backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:libdb-5.3.so so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q1OmQlEaWAYa+bfVJCmO8S6Mwezp0=
-P:dovecot-sqlite
-V:2.3.6-r0
-A:armv7
-S:6443
-I:36864
-T:SQLite driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133993
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-armv7.so.1 so:libsqlite3.so.0
-p:so:libdriver_sqlite.so=0
-
 C:Q1/Eqzi3X6Dd7gLyH480yuszDlyGQ=
 P:freeswitch-sounds-fr-fr-sibylle-8000
 V:0.1.3-r0
@@ -27203,6 +27018,21 @@ m:prspkt <prspkt@protonmail.com>
 t:1545309394
 c:d57c0885a4458077f8bbef216b7d008f260de21f
 i:docs herbstluftwm=0.7.1-r0
+
+C:Q1/wGelM8AVnUbeFRAduLDIYUZn6I=
+P:polkit-lang
+V:0.105-r11
+A:armv7
+S:2191
+I:28672
+T:Languages for package polkit
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957265
+c:e325d22a1d8c013af35b262f20089514bae6df40
+i:polkit=0.105-r11 lang
 
 C:Q14SKATaHa7EjXElPcy1zacW/5mQQ=
 P:librelp-dev
@@ -27561,6 +27391,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542746324
 c:393a946d9ce6ff582ac812287fa061a8799ba057
 i:docs lsyncd=2.2.3-r1
+
+C:Q1AC8986SI399iRnQnUcar5k/rJ5E=
+P:mosquitto-openrc
+V:1.5.6-r1
+A:armv7
+S:1556
+I:16384
+T:An Open Source MQTT v3.1 Broker (OpenRC init scripts)
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956749
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+i:openrc mosquitto=1.5.6-r1
 
 C:Q1QNJRb3oGFuRxT0CFpy0ibvbe70s=
 P:gdk-pixbuf-doc
@@ -28434,6 +28279,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:bdftopcf
 
+C:Q1lgmPfrb42gx+Jr/GUEoM4lmgxQE=
+P:asterisk-fax
+V:15.7.4-r0
+A:armv7
+S:54474
+I:131072
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957534
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libspandsp.so.2
+
 C:Q1N+KYq/eWbgpKxwxw2bxeTPJ1Qa0=
 P:glade3-doc
 V:3.8.5-r5
@@ -28542,22 +28402,6 @@ t:1545237997
 c:55bfa0a5eb985e9a27d0bb45bdabaefef96ca8ae
 D:gnome-mime-data /bin/sh so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libdbus-glib-1.so.2 so:libfam.so.0 so:libgconf-2.so.4 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libxml2.so.2 so:libz.so.1
 p:so:libgnomevfs-2.so.0=0.2400.4 cmd:gnomevfs-cat cmd:gnomevfs-copy cmd:gnomevfs-df cmd:gnomevfs-info cmd:gnomevfs-ls cmd:gnomevfs-mkdir cmd:gnomevfs-monitor cmd:gnomevfs-mv cmd:gnomevfs-rm
-
-C:Q1VIvIaEl2eLM6qhVDE8qJRtENk04=
-P:polkit-dev
-V:0.105-r10
-A:armv7
-S:35326
-I:446464
-T:Application development toolkit for controlling system-wide privileges (development files)
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792357
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r10
-p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
 
 C:Q1BGNPpY0ryKBLhGo8PZFlLibg+6s=
 P:perl-package-stash-xs-doc
@@ -28942,21 +28786,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1555507332
 c:287dc987d0bfa340aa510b11e2ad691a15b5ea4e
 
-C:Q1dbvHz4fQtk+SexwAT/Loz7dI+1w=
-P:openldap-back-relay
-V:2.4.47-r2
-A:armv7
-S:5765
-I:32768
-T:OpenLDAP relay backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
-
 C:Q1FsaqFQeTBIOIstAvJrQEmm+urek=
 P:pcre2
 V:10.32-r1
@@ -29202,6 +29031,21 @@ c:292be74e1dbc26886793b0941c3ff2c16036aefc
 D:lua5.3 so:libc.musl-armv7.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.2-r1 lua5.3
 
+C:Q1h77sIVO+pXod4pIlHxtQPw3p0qg=
+P:nfdump-openrc
+V:1.6.18-r0
+A:armv7
+S:2979
+I:24576
+T:Tools to collect and process netflow data (OpenRC init scripts)
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
+i:openrc nfdump=1.6.18-r0
+
 C:Q1F9GMGz/5Mv5QtsNrfn+v6VQBvE4=
 P:eudev-netifnames
 V:3.2.7-r0
@@ -29356,21 +29200,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551107212
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 p:cmd:qemu-ppc64le
-
-C:Q1Dl3GQ7EoruXSLg5BCQlq7giwWGA=
-P:openldap-back-null
-V:2.4.47-r2
-A:armv7
-S:5502
-I:32768
-T:OpenLDAP null backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
 
 C:Q1IvCZCRrzpq+y5Fp+6AkT6n7MOtg=
 P:flex-doc
@@ -29603,21 +29432,6 @@ t:1545224534
 c:6fbf7023f4e665d2ff5b32cb662f39ae48b2a220
 D:git=2.20.1-r0
 
-C:Q1kSt2QaLbasFoq1cJs5L60c7ovM0=
-P:dovecot-gssapi
-V:2.3.6-r0
-A:armv7
-S:6426
-I:36864
-T:GSSAPI auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133993
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libgssapi.so.3
-
 C:Q1QhWu3Wxp8m8AFbLDDiwUJtir9r0=
 P:libxdmcp-dev
 V:1.1.2-r5
@@ -29696,36 +29510,35 @@ t:1545416314
 c:30dea455719fae70117d927e55850022834078c6
 i:docs perl-test-output=1.031-r0
 
-C:Q16VGnlOo3dT5TMSuhxMZh7CPgqL8=
-P:libldap
-V:2.4.47-r2
+C:Q1CY0XsFUiJrluElxN69SIxGUQA1Y=
+P:openldap-back-dnssrv
+V:2.4.48-r0
 A:armv7
-S:222980
-I:417792
-T:OpenLDAP libraries
+S:6246
+I:32768
+T:OpenLDAP dnssrv backend
 U:http://www.openldap.org/
 L:custom
 o:openldap
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016467
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:liblber-2.4.so.2=2.10.10 so:libldap-2.4.so.2=2.10.10 so:libldap_r-2.4.so.2=2.10.10
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
-C:Q1SkuZYhvYR4coFo60A9gxagGN/6Y=
-P:dovecot-lmtpd
-V:2.3.6-r0
+C:Q1KoXvQqaSqu4bKxccUnrdP3wkdMk=
+P:poppler-doc
+V:0.56.0-r2
 A:armv7
-S:18233
-I:86016
-T:IMAP and POP3 server (LMTP server)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
+S:128776
+I:1433600
+T:PDF rendering library based on xpdf 3.0 (documentation)
+U:https://poppler.freedesktop.org/
+L:GPL-2.0+
+o:poppler
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+t:1569957384
+c:fcdf03a54f9c9da28b86742c7745c76c1e110d82
+i:docs poppler=0.56.0-r2
 
 C:Q1r6SaFhcoBFWDWH9M7sRN7hITSTk=
 P:bearssl
@@ -30134,21 +29947,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libaugeas.so.0 so:libc.musl-armv7.so.1
 i:lua5.2 lua-augeas=0.1.2-r4
 
-C:Q1CzX8GyWTWmr1x6u7VL74OInUr40=
-P:nfdump-openrc
-V:1.6.17-r0
-A:armv7
-S:2982
-I:24576
-T:Tools to collect and process netflow data (OpenRC init scripts)
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206930
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
-i:openrc nfdump=1.6.17-r0
-
 C:Q1a2NoqEX16JecVndCPrB4PPq8GTA=
 P:xset
 V:1.2.4-r0
@@ -30444,21 +30242,6 @@ t:1545308100
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:linux-headers audit-libs=2.8.4-r0 pkgconfig
 p:pc:audit=2.8.4 pc:auparse=2.8.4
-
-C:Q1rEKJM6AiBaYgMSddhb46URqPTuw=
-P:mosquitto-doc
-V:1.5.6-r0
-A:armv7
-S:41098
-I:90112
-T:An Open Source MQTT v3.1 Broker (documentation)
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-i:docs mosquitto=1.5.6-r0
 
 C:Q1HYLoKTbB7AhJa594daeYzbVQgxw=
 P:lua5.3-augeas
@@ -31420,22 +31203,6 @@ t:1548541722
 c:121d7221567166c6053f54d4585096e0629c7a1b
 D:so:libc.musl-armv7.so.1 so:libevtlog-3.19.so.0 so:libglib-2.0.so.0 so:libivykis.so.0 so:libsyslog-ng-3.19.so.0
 
-C:Q10YfMqfH/m2GX/d6XT3N4v7kg4XE=
-P:dovecot
-V:2.3.6-r0
-A:armv7
-S:2616102
-I:5566464
-T:IMAP and POP3 server
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133994
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
-p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dsync
-
 C:Q18g1AO9UGpkRHfXPfq7vRdY32CQ8=
 P:parallel
 V:20180622-r0
@@ -31777,6 +31544,21 @@ c:f712f9a685c81c6f343320e676a2f0740bccff53
 D:/bin/sh so:libc.musl-armv7.so.1
 p:cmd:pdnsd cmd:pdnsd-ctl
 
+C:Q1fkIiTDcmDkZSc4uL4ODcLje/SzY=
+P:expat-doc
+V:2.2.8-r0
+A:armv7
+S:15020
+I:65536
+T:An XML Parser library written in C (documentation)
+U:http://www.libexpat.org/
+L:MIT
+o:expat
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1569956384
+c:18d6692e96ba7a726f4d8dc5cbaf84f5ff726e02
+i:docs expat=2.2.8-r0
+
 C:Q1Lx1user7g8d+UGB0WHHupCE6Y+c=
 P:xcmsdb
 V:1.0.5-r0
@@ -31991,6 +31773,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1554980654
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
+
+C:Q1RcJiJ5Lio5R/DQ9c5OPpEEqKXPc=
+P:poppler-glib
+V:0.56.0-r2
+A:armv7
+S:115230
+I:315392
+T:Glib wrapper for poppler
+U:https://poppler.freedesktop.org/
+L:GPL-2.0+
+o:poppler
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957384
+c:fcdf03a54f9c9da28b86742c7745c76c1e110d82
+D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpoppler.so.67 so:libstdc++.so.6
+p:so:libpoppler-glib.so.8=8.9.0
 
 C:Q1yDFt3G3lbiLWONpI57xI8TOQEAk=
 P:perl-file-slurper-doc
@@ -32247,22 +32045,6 @@ c:aad36dcf3a57ed14c9241182dbe94a7b16c2faee
 D:bacula so:libc.musl-armv7.so.1 so:libpq.so.5
 p:so:libbaccats-postgresql-9.4.1.so=0
 
-C:Q1bPWMKclASTSReG4sD2tH0ZO6g+c=
-P:dovecot-ldap
-V:2.3.6-r0
-A:armv7
-S:34091
-I:118784
-T:LDAP auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133993
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:libdovecot-ldap.so.0=0.0.0
-
 C:Q1jmOTsk9YBtEDo8iUVpQpielxqmQ=
 P:orbit2-dev
 V:2.14.19-r4
@@ -32415,6 +32197,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551107218
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 D:qemu-audio-alsa qemu-audio-oss qemu-audio-sdl qemu-block-curl qemu-block-dmg-bz2 qemu-block-nfs qemu-block-ssh qemu-ui-curses qemu-ui-gtk qemu-ui-sdl
+
+C:Q1jiwnf+FjAckqBuuZbgcYQdLiCSM=
+P:dovecot-sqlite
+V:2.3.7.2-r0
+A:armv7
+S:6507
+I:40960
+T:SQLite driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libsqlite3.so.0
+p:so:libdriver_sqlite.so=0
 
 C:Q1kej7jqacOATq4kIABt8O/qeuALE=
 P:sdl2
@@ -32752,21 +32550,6 @@ t:1545141730
 c:9ec5b021441becf1db0a4c91c34124c98b79d1f3
 D:python2
 p:cmd:webassets
-
-C:Q1UDUlg1A+DYt2t1Xsdk4TZ0aYRi4=
-P:dovecot-pigeonhole-plugin-ldap
-V:2.3.6-r0
-A:armv7
-S:14328
-I:49152
-T:Sieve and managesieve plugin for Dovecot (LDAP support)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-pigeonhole-plugin=2.3.6-r0 dovecot-ldap=2.3.6-r0 so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 
 C:Q1IfvEApNx2p4lGj054h4i5+bveEQ=
 P:libcap-ng-doc
@@ -33451,6 +33234,21 @@ c:9a529e67be15f6fb5fe106579725b90a6f23f2f4
 D:so:libc.musl-armv7.so.1
 p:so:libspeexdsp.so.1=1.5.0
 
+C:Q1USB4mlntAUQxfWf75ZmZtfHtm+g=
+P:openldap-back-passwd
+V:2.4.48-r0
+A:armv7
+S:5542
+I:32768
+T:OpenLDAP passwd backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q18vU0i3eZId1eNQXGVtPviN3l5x4=
 P:linux-firmware-qcom
 V:20190322-r0
@@ -33527,6 +33325,22 @@ t:1542530853
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:/bin/sh so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libstdc++.so.6 so:libuuid.so.1
 p:cmd:taskd cmd:taskdctl
+
+C:Q15oV5hU3HEHid/vE6NPBXgY5IgX0=
+P:openldap-clients
+V:2.4.48-r0
+A:armv7
+S:185805
+I:380928
+T:LDAP client utilities
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956859
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libsasl2.so.3
+p:cmd:ldapadd cmd:ldapcompare cmd:ldapdelete cmd:ldapexop cmd:ldapmodify cmd:ldapmodrdn cmd:ldappasswd cmd:ldapsearch cmd:ldapurl cmd:ldapwhoami
 
 C:Q1Pd/y1YNamQg9tPZzt6pJxSl5LYs=
 P:perl-capture-tiny
@@ -34034,6 +33848,21 @@ c:639b5e620dea57d12cc5c2884aff24220a4cf41f
 D:so:libX11.so.6 so:libXrandr.so.2 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libgssglue.so.1 so:libsamplerate.so.0 so:libssl.so.1.1
 p:cmd:rdesktop
 
+C:Q1OivlRud1cN7/Ej2TILoKxiCwANM=
+P:openldap-overlay-dyngroup
+V:2.4.48-r0
+A:armv7
+S:3995
+I:28672
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
+
 C:Q1u/DzdCl2Kx4c8bpVAxd7WY72dMo=
 P:perl-text-autoformat
 V:1.74-r0
@@ -34311,20 +34140,6 @@ t:1551786762
 c:592d872fb8d13a7d3d10c09c7f5c7ff5bf77057c
 D:fakeroot sudo pax-utils openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libz.so.1
 p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
-
-C:Q1ymr6chmp6c5bBob0mv3RPci5aNU=
-P:asterisk-sample-config
-V:15.7.1-r0
-A:armv7
-S:259009
-I:1122304
-T:Sample configuration files for asterisk
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247579
-c:04e63b7eebdee737b366fec36a0b089364551fc0
 
 C:Q1DG36HDdaeedoRXRfM8ugIJx8v64=
 P:lua5.3-alt-getopt
@@ -34944,6 +34759,22 @@ t:1542313151
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libice=1.0.9-r3
 
+C:Q19b+0TOAECVipjMg4ZksiMyK+pe4=
+P:wpa_supplicant
+V:2.7-r5
+A:armv7
+S:1239975
+I:2285568
+T:A utility providing key negotiation for WPA wireless networks
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957552
+c:de40d9a237281b0e3a2ec4a0e2b8d9a825732828
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
+p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
+
 C:Q1dVLFR2NSpoTTNTyg1z+0I0uiijE=
 P:openssl-doc
 V:1.1.1b-r1
@@ -35019,6 +34850,22 @@ o:perl-file-sharedir-install
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542379137
 c:9653fc90b928b912f9c8e71ae1dc1b5c4ce31315
+
+C:Q1LpzC/yT6VpdbrdoYWt9YU2bF/ZQ=
+P:libtiffxx
+V:4.0.10-r1
+A:armv7
+S:4410
+I:24576
+T:C++ binding to libtiff
+U:http://www.libtiff.org
+L:libtiff
+o:tiff
+m:Michael Mason <ms13sp@gmail.com>
+t:1569957022
+c:de0584e234c2dad9d4247ee7de308a95fe2b42ac
+D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libtiff.so.5
+p:so:libtiffxx.so.5=5.4.0
 
 C:Q1HsXEOpmM/hWu15+s2JmlHXegqv8=
 P:samba-common-server-libs
@@ -35129,6 +34976,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542559577
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl
+
+C:Q19Lkz6O22r1HuMD5BVBsmt6sL6EA=
+P:dovecot-ldap
+V:2.3.7.2-r0
+A:armv7
+S:35382
+I:122880
+T:LDAP auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1qUP1ybyWolnZh8TxXIFC5D+LGh8=
 P:mcookie
@@ -35730,6 +35593,21 @@ c:bb77181e137c900ee45c16bfa3cc692cc994e572
 D:skalibs so:libc.musl-armv7.so.1 so:libskarnet.so.2.7
 p:so:libs6dns.so.2.3=2.3.0.1 so:libskadns.so.2.3=2.3.0.1 cmd:s6-dnsip4 cmd:s6-dnsip4-filter cmd:s6-dnsip6 cmd:s6-dnsip6-filter cmd:s6-dnsmx cmd:s6-dnsname cmd:s6-dnsname-filter cmd:s6-dnsns cmd:s6-dnsq cmd:s6-dnsqr cmd:s6-dnsqualify cmd:s6-dnssoa cmd:s6-dnssrv cmd:s6-dnstxt cmd:s6-randomip cmd:skadnsd
 
+C:Q1j4B45w0MTZ3ngpqMLow1eBlYBpg=
+P:hostapd-openrc
+V:2.7-r5
+A:armv7
+S:2069
+I:24576
+T:daemon for wireless software access points (OpenRC init scripts)
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957210
+c:a631766c739d92b83c30732831268f2e5cf0e919
+i:openrc hostapd=2.7-r5
+
 C:Q1oWAsivqYFH8bFV9RdCogtK9hno4=
 P:fortify-headers
 V:1.0-r0
@@ -35791,6 +35669,20 @@ t:1555485891
 c:4281a184d7a2aab9a0f2352a418084cad73ee2dc
 D:so:libc.musl-armv7.so.1 so:libexslt.so.0 so:libpython2.7.so.1.0 so:libxml2.so.2 so:libxslt.so.1
 p:py-libxslt=1.1.33-r1
+
+C:Q1SczgoQISKgiQW5a+jh7VkR4hx28=
+P:nfdump-dbg
+V:1.6.18-r0
+A:armv7
+S:783861
+I:1961984
+T:Tools to collect and process netflow data (debug symbols)
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
 
 C:Q1yvXcBgcVP9XLTC1vkHAg54+OW40=
 P:libxtst-doc
@@ -35913,6 +35805,22 @@ m:Matt Smith <mcs@darkregion.net>
 t:1545146477
 c:6183ccd76a4db8d3e287afa46ae7a3777fd6f838
 D:perl
+
+C:Q18lS5D2+jUTnEbzf7DleLWogGmqs=
+P:varnish
+V:6.2.1-r0
+A:armv7
+S:775150
+I:1720320
+T:High-performance HTTP accelerator
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+D:gcc libc-dev libgcc /bin/sh so:libc.musl-armv7.so.1 so:libedit.so.0 so:libexecinfo.so.1 so:libncursesw.so.6 so:libpcre.so.1 so:libvarnishapi.so.2
+p:cmd:varnishadm cmd:varnishd cmd:varnishhist cmd:varnishlog cmd:varnishncsa cmd:varnishstat cmd:varnishtest cmd:varnishtop
 
 C:Q1lNIAjG8Dweoz9hVhTlEfHRIP61k=
 P:raspberrypi-bootloader-experimental
@@ -36051,22 +35959,6 @@ t:1557162503
 c:ebd55722b9637f4559c94b13e5e061ffef9fb4a3
 D:lua5.3 lua5.3-libs=5.3.5-r2 pkgconfig
 p:pc:lua5.3=5.3.5
-
-C:Q1eMnTUTWxfW1RBOwJ/3Whsqfik88=
-P:poppler
-V:0.56.0-r1
-A:armv7
-S:688484
-I:1576960
-T:PDF rendering library based on xpdf 3.0
-U:https://poppler.freedesktop.org/
-L:GPL-2.0+
-o:poppler
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1542454598
-c:d9c872c52ac46e8d2ac2e4978eecb9609f28ced5
-D:so:libc.musl-armv7.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgcc_s.so.1 so:libjpeg.so.8 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libstdc++.so.6 so:libtiff.so.5 so:libz.so.1
-p:so:libpoppler-cpp.so.0=0.3.0 so:libpoppler.so.67=67.0.0
 
 C:Q1uYAREwnHLpnmNE4tnR1KR5p3dK0=
 P:boost-coroutine
@@ -36436,21 +36328,6 @@ t:1543230201
 c:9adfbe7eeef1b21d0db50978047df63fc00812cf
 i:docs scrot=0.8.18-r0
 
-C:Q18GHRa/XfIc8dvBue90AaYY0DBqw=
-P:asterisk-dev
-V:15.7.1-r0
-A:armv7
-S:617526
-I:3133440
-T:Asterisk: A Module Open Source PBX System (development files)
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:asterisk
-
 C:Q1IbF1rMu/EqCrZUSX/VUdGaljNdI=
 P:lxc-bash-completion
 V:3.1.0-r1
@@ -36622,22 +36499,6 @@ c:300c17172f28b6d0bd024111bc74805dc28de56a
 D:/bin/sh so:libc.musl-armv7.so.1 so:libffi.so.6 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
 p:so:libgio-2.0.so.0=0.5800.1 so:libglib-2.0.so.0=0.5800.1 so:libgmodule-2.0.so.0=0.5800.1 so:libgobject-2.0.so.0=0.5800.1 so:libgthread-2.0.so.0=0.5800.1 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-launch-desktop cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
 
-C:Q1M2D/9SYDIaCLhO6U5eXH7km3D9E=
-P:nghttp2-dev
-V:1.35.1-r0
-A:armv7
-S:39209
-I:225280
-T:Experimental HTTP/2 client, server and proxy (development files)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545859334
-c:7fcb91421c07f667a299e08339b8069ed47a9661
-D:nghttp2-libs=1.35.1-r0 pkgconfig
-p:pc:libnghttp2=1.35.1
-
 C:Q1FD2InPkUgUm2cwzUY6wVPtMqJc0=
 P:skytraq-datalogger
 V:0.5.1-r1
@@ -36796,6 +36657,22 @@ c:d25107e8a0abff1db592d5a79b4cd03b670ff905
 D:so:libasound.so.2 so:libc.musl-armv7.so.1
 p:so:libao.so.4=4.1.0
 
+C:Q1C9bJqhZGGJ6wtUZOVv2k810vOlQ=
+P:dovecot-sql
+V:2.3.7.2-r0
+A:armv7
+S:16425
+I:69632
+T:SQL plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot.so.0
+p:so:libdovecot-sql.so.0=0.0.0
+
 C:Q1/Jpv/6pm4nUwNZdL2+IVKRw+bbk=
 P:perl-net-async-http
 V:0.42-r0
@@ -36871,22 +36748,6 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1543229674
 c:4d71026f8f9aecab1ee19d423a1826bb74a1b90d
 D:bsd-compat-headers linux-headers dahdi-linux-dev newt-dev dahdi-tools=2.11.1-r0
-
-C:Q1mGMu6FN3hmKolswzpiVzw3DrkoY=
-P:ghostscript
-V:9.26-r3
-A:armv7
-S:13418765
-I:44273664
-T:An interpreter for the PostScript language and for PDF
-U:https://ghostscript.com/
-L:GPL-3.0
-o:ghostscript
-m:Cameron Banta <cbanta@gmail.com>
-t:1565700569
-c:0c7e5ec71b97782eda0a281b09ddabdaba26f848
-D:so:libc.musl-armv7.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libjbig2dec.so.0 so:libjpeg.so.8 so:liblcms2.so.2 so:libpng16.so.16 so:libtiff.so.5 so:libz.so.1
-p:so:libgs.so.9=9.26 so:libijs-0.35.so=0 cmd:dvipdf cmd:eps2eps cmd:gs cmd:gsbj cmd:gsc cmd:gsdj cmd:gsdj500 cmd:gslj cmd:gslp cmd:gsnd cmd:ijs_client_example cmd:ijs_server_example cmd:lprsetup.sh cmd:pdf2dsc cmd:pdf2ps cmd:pf2afm cmd:pfbtopfa cmd:pphs cmd:printafm cmd:ps2ascii cmd:ps2epsi cmd:ps2pdf cmd:ps2pdf12 cmd:ps2pdf13 cmd:ps2pdf14 cmd:ps2pdfwr cmd:ps2ps cmd:ps2ps2 cmd:unix-lpr.sh
 
 C:Q1aDwyff+UuNk9g8wLqKcDmI+9KGg=
 P:perl-posix-strftime-compiler-doc
@@ -37460,6 +37321,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1546520959
 c:c604b8f23152bca3aa208e6d9b8f2b0399eb105b
 
+C:Q1b83OOQoo//Dgw3mvVbBFnbBrXdY=
+P:nfprofile
+V:1.6.18-r0
+A:armv7
+S:13585
+I:36864
+T:Create views of the data with NFdump filters
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
+D:nfdump so:libc.musl-armv7.so.1 so:libnfdump-1.6.18.so so:librrd.so.8
+p:cmd:nfprofile
+
 C:Q1Ib4KK9IspgISZVHMu1Hy7QQEP8Q=
 P:cmph
 V:2.0-r1
@@ -37856,6 +37733,22 @@ o:py-mccabe
 m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1542312849
 c:0772fe3f2adcf1e2158f5c5efc16c255be00f814
+
+C:Q1V/1hhONUwh47jJAN3mOcQcBiHPM=
+P:poppler-dev
+V:0.56.0-r2
+A:armv7
+S:308637
+I:2101248
+T:PDF rendering library based on xpdf 3.0 (development files)
+U:https://poppler.freedesktop.org/
+L:GPL-2.0+
+o:poppler
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957384
+c:fcdf03a54f9c9da28b86742c7745c76c1e110d82
+D:cairo-dev glib-dev pc:cairo>=1.10.0 pc:gio-2.0>=2.41 pc:glib-2.0>=2.41 pc:gobject-2.0>=2.41 pkgconfig poppler-glib=0.56.0-r2 poppler=0.56.0-r2
+p:pc:poppler-cairo=0.56.0 pc:poppler-cpp=0.56.0 pc:poppler-glib=0.56.0 pc:poppler-splash=0.56.0 pc:poppler=0.56.0
 
 C:Q12PsuNKDfw4R5fNPkWy5Cz6y18U8=
 P:py3-yaml
@@ -38380,6 +38273,21 @@ t:1545141555
 c:e3b247c49a79b8a03d70ad32b89ba93dd69e6534
 i:lua5.1 lua-alt-getopt=0.7-r8
 
+C:Q11J2nqd2KTmI9GUV68+qmrWMg2UM=
+P:openldap-passwd-pbkdf2
+V:2.4.48-r0
+A:armv7
+S:4022
+I:28672
+T:PBKDF2 OpenLDAP support
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:openldap so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
+
 C:Q1tg6pp+SJpBJp7xljW1eCbW+F36E=
 P:libxslt-doc
 V:1.1.33-r1
@@ -38488,6 +38396,21 @@ t:1545291157
 c:179325d5d671a061959f905fc47a5c9a26b32ca9
 D:ca-certificates
 i:aria2=1.34.0-r1 bash-completion
+
+C:Q1YT3C3Zsefx1wr1IdxxRS7TUjvGU=
+P:asterisk-tds
+V:15.7.4-r0
+A:armv7
+S:14088
+I:57344
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957534
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libsybdb.so.5
 
 C:Q1sjHLRVp87G8474MevJV83pd7dDA=
 P:glew
@@ -38660,21 +38583,6 @@ t:1542494894
 c:8cc4ef81168eb9bc43a6d6df042f633c52536d7d
 i:docs perl-parse-recdescent=1.967015-r1
 
-C:Q11XmAjo1tZC6WuoWjYGBQHKn2wSU=
-P:varnish-dbg
-V:6.1.1-r0
-A:armv7
-S:1995944
-I:4911104
-T:High-performance HTTP accelerator (debug symbols)
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206974
-c:56948891d4e6afcb9605c558eff231e22dc49966
-D:gcc libc-dev libgcc
-
 C:Q1Jsrvl6x7beAqDEjLiSfps9dor2A=
 P:libfdt
 V:1.4.7-r0
@@ -38784,21 +38692,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0
 p:so:libnice.so.10=10.7.0 cmd:sdp-example cmd:simple-example cmd:stunbdc cmd:stund cmd:threaded-example
 
-C:Q1IH597ZwdouL1kaco6tYCQXuXR1E=
-P:awall-masquerade
-V:1.6.9-r0
-A:armv7
-S:2019
-I:45056
-T:Alpine Wall
-U:https://git.alpinelinux.org/cgit/awall/
-L:GPL-2.0
-o:awall
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1548501706
-c:a0912ad44ebbcfd72e8ed0189b48cc721c793a50
-D:awall
-
 C:Q18Li+g+UgRgQzeKJtj1wxFctzPJw=
 P:py-pygments-doc
 V:2.2.0-r0
@@ -38829,6 +38722,21 @@ t:1542414254
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl-crypt-des perl-crypt-rijndael perl-digest-sha1
 p:cmd:snmpkey
+
+C:Q1MshL466T3NcW7PuUTPhT7S5CFNA=
+P:openldap-back-sock
+V:2.4.48-r0
+A:armv7
+S:9338
+I:40960
+T:OpenLDAP sock backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1gw6ACu13kQMDcihjF2UWM5VoRhU=
 P:libbonobo-doc
@@ -38953,22 +38861,6 @@ t:1545820652
 c:ca3799aa792a2a26260622751650acc61b27f974
 i:docs dpkg=1.19.2-r0
 
-C:Q1FSGox8SvyUHTHzCAbUB+xGEwBAY=
-P:dovecot-fts-solr
-V:2.3.6-r0
-A:armv7
-S:16431
-I:49152
-T:FTS-Solr plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133993
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:lib20_fts_plugin.so so:libc.musl-armv7.so.1 so:libexpat.so.1
-p:so:lib21_fts_solr_plugin.so=0
-
 C:Q1KegxDV2Gt5+HDhaeaOdgr+U5ZgQ=
 P:libcanberra
 V:0.30-r2
@@ -38985,19 +38877,20 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libasound.so.2 so:libc.musl-armv7.so.1 so:libltdl.so.7 so:libvorbisfile.so.3
 p:so:libcanberra.so.0=0.2.5
 
-C:Q1AA8rcrWGM+9bGkTj/4fN/AxrifY=
-P:nfdump-dbg
-V:1.6.17-r0
+C:Q10B/rcTCWVQFyhbYpR6uHdYTNJeo=
+P:asterisk-dahdi
+V:15.7.4-r0
 A:armv7
-S:778635
-I:1953792
-T:Tools to collect and process netflow data (debug symbols)
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206928
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
+S:192910
+I:385024
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libpri.so.1.4 so:libtonezone.so.2
 
 C:Q1oUvYCxtpc1fPHKMiXub2KTZhfzA=
 P:bluez-libs
@@ -39684,21 +39577,6 @@ t:1545144418
 c:c3519b4b4cdb3d90cffbb201f010ccc70fa3faa5
 D:ca-certificates so:libQtCore.so.4 so:libQtSql.so.4 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libodbc.so.2 so:libstdc++.so.6
 
-C:Q1WPfTGHfhlRjlCBjq1EWcmj95KUw=
-P:openldap-overlay-proxycache
-V:2.4.47-r2
-A:armv7
-S:28642
-I:69632
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q17QnJbL+A2Fj+A9ACE0q2TCacWOo=
 P:icu-dev
 V:62.1-r0
@@ -39821,22 +39699,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551107212
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 p:cmd:qemu-riscv32
-
-C:Q1PtAlHt+KhF442+9kuW3JCIz75G0=
-P:nfprofile
-V:1.6.17-r0
-A:armv7
-S:13489
-I:36864
-T:Create views of the data with NFdump filters
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206931
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
-D:nfdump so:libc.musl-armv7.so.1 so:libnfdump-1.6.17.so so:librrd.so.8
-p:cmd:nfprofile
 
 C:Q1vpmHRfm7ZXsZRiUVDCvpnZaewFI=
 P:lua5.2-pc
@@ -40317,6 +40179,21 @@ c:a4242e97d4a33e05b5678fc2fabc361310bc5184
 D:so:libboost_system-mt.so.1.67.0 so:libboost_thread-mt.so.1.67.0 so:libc.musl-armv7.so.1 so:libgcc_s.so.1
 p:so:libboost_wave-mt.so.1.67.0=1.67.0
 
+C:Q1WtDcpB1xgleqWXLh0BzF0vg/yPE=
+P:dovecot-lmtpd
+V:2.3.7.2-r0
+A:armv7
+S:20162
+I:86016
+T:IMAP and POP3 server (LMTP server)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q1zTFlr/q3QS4Et52ynPm7Tm34Rqk=
 P:qjson-dev
 V:0.9.0-r0
@@ -40504,22 +40381,6 @@ c:86ebf864ee2b16ede68ec5607d1fa913a7ada752
 D:libical=2.0.0-r3 pkgconfig
 p:pc:libical=2.0
 
-C:Q1v80NT2Bkn7gRCGd0OpD50f7F+IQ=
-P:dovecot-sql
-V:2.3.6-r0
-A:armv7
-S:16344
-I:69632
-T:SQL plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot.so.0
-p:so:libdovecot-sql.so.0=0.0.0
-
 C:Q1MIWOURnn0e3835KB35y/NnVVmqg=
 P:libsodium
 V:1.0.16-r0
@@ -40535,6 +40396,21 @@ t:1544796704
 c:72174d30899bcd1eaff779a6bf1d4fa2a243ce30
 D:so:libc.musl-armv7.so.1
 p:so:libsodium.so.23=23.1.0
+
+C:Q1gRSCJMpfemUdqo6BDoL237+XI38=
+P:openldap-overlay-dds
+V:2.4.48-r0
+A:armv7
+S:13445
+I:45056
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1BIOJYBKeaskEDKw6rImbKn+BGBk=
 P:py2-requests-oauthlib
@@ -40627,6 +40503,21 @@ t:1542744851
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libmnl.so.0
 p:so:libnetfilter_acct.so.1=1.0.0
+
+C:Q13oNw0MDhM/Wn7ccTn5kso0TkH3Y=
+P:mosquitto-doc
+V:1.5.6-r1
+A:armv7
+S:41095
+I:90112
+T:An Open Source MQTT v3.1 Broker (documentation)
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956748
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+i:docs mosquitto=1.5.6-r1
 
 C:Q1D3KPXD05JpAio9fYwHEaYeFUbBc=
 P:eventlog
@@ -41253,6 +41144,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libavc1394=0.5.4-r2 pc:libraw1394 pkgconfig
 p:pc:libavc1394=0.5.4
 
+C:Q1ElWL82LNC1V//+xSg5JmtW3JjOA=
+P:nghttp2
+V:1.35.1-r1
+A:armv7
+S:474950
+I:876544
+T:Experimental HTTP/2 client, server and proxy
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569956626
+c:30aecaf3fcad1d9f048bad8e181f267d40bc336c
+D:so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libev.so.4 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:h2load cmd:nghttp cmd:nghttpd cmd:nghttpx
+
 C:Q1MrVdkho7eoiYSjd/vJif4QVMEIQ=
 P:qemu-mipsn32
 V:3.1.0-r3
@@ -41684,22 +41591,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1542379803
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl-ipc-run3 perl-test2-suite perl-test-simple
-
-C:Q1KFH/91LeFSGnT0EhIzVlw2Jvck8=
-P:ansible
-V:2.7.12-r0
-A:armv7
-S:14246886
-I:73527296
-T:A configuration-management, deployment, task-execution, and multinode orchestration framework
-U:https://ansible.com
-L:GPL-3.0-or-later
-o:ansible
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1564986243
-c:fec49fe2125540138443a630698b0e350a4cba3e
-D:python3 py3-yaml py3-paramiko py3-jinja2 py3-markupsafe py3-crypto
-p:cmd:ansible cmd:ansible-config cmd:ansible-connection cmd:ansible-console cmd:ansible-doc cmd:ansible-galaxy cmd:ansible-inventory cmd:ansible-playbook cmd:ansible-pull cmd:ansible-vault
 
 C:Q1iQ1gEoWV+qj/s8ArYS/EdhdwA3o=
 P:spandsp-dev
@@ -42343,6 +42234,22 @@ c:6c6071cd8da1639e374a6094469aaed2af62cdf6
 D:xset xprop
 p:cmd:xdg-desktop-icon cmd:xdg-desktop-menu cmd:xdg-email cmd:xdg-icon-resource cmd:xdg-mime cmd:xdg-open cmd:xdg-screensaver cmd:xdg-settings
 
+C:Q1BlfA5tJ6LllIcl9T9x5XnnByqbw=
+P:openldap
+V:2.4.48-r0
+A:armv7
+S:496078
+I:1212416
+T:LDAP Server
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956863
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:/bin/sh so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libltdl.so.7 so:libsasl2.so.3 so:libuuid.so.1
+p:cmd:slapacl cmd:slapadd cmd:slapauth cmd:slapcat cmd:slapd cmd:slapdn cmd:slapindex cmd:slappasswd cmd:slapschema cmd:slaptest
+
 C:Q1iKQKPsb+JaN9YzWKyOSOqHZB2Qk=
 P:boost-container
 V:1.67.0-r2
@@ -42682,6 +42589,21 @@ t:1559659815
 c:358e0341238ac9f457328893b2974e256e37693f
 D:so:libMESSAGING-SEND-samba4.so so:libc.musl-armv7.so.1 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libldap-2.4.so.2 so:libmessages-dgm-samba4.so so:libmessages-util-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbldap.so.2 so:libsmbldaphelper-samba4.so so:libtalloc-report-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-tdb-samba4.so
 p:so:libMESSAGING-samba4.so=0 so:libdcerpc-samba4.so=0 so:libidmap-samba4.so=0 so:libnon-posix-acls-samba4.so=0 so:libnss-info-samba4.so=0
+
+C:Q1p3vkvqRHFGOZHj87DmX1u49SWCY=
+P:openldap-dev
+V:2.4.48-r0
+A:armv7
+S:379418
+I:1064960
+T:LDAP Server (development files)
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956857
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:openssl-dev cyrus-sasl-dev util-linux-dev libldap=2.4.48-r0
 
 C:Q1OEPZ4GSuFzvDAsAihSC+EUXXBzQ=
 P:libtheora-dev
@@ -43033,21 +42955,6 @@ c:6af4bf5fe6bec189bb01b218e9a59595e1659fc7
 D:so:libc.musl-armv7.so.1 so:libpython2.7.so.1.0
 i:py-simplejson=3.15.0-r0 python2
 
-C:Q1egvBMZ+/3didhtd+Izjq0rBkkZ8=
-P:asterisk-curl
-V:15.7.1-r0
-A:armv7
-S:16006
-I:65536
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libcurl.so.4
-
 C:Q1X171UeZ5JrLwfFVPExYDROx90NA=
 P:py2-flask-oauthlib
 V:0.9.5-r0
@@ -43172,21 +43079,6 @@ t:1548541722
 c:121d7221567166c6053f54d4585096e0629c7a1b
 D:so:libc.musl-armv7.so.1 so:libpython2.7.so.1.0 so:libsyslog-ng-3.19.so.0
 
-C:Q16Rjsa5y+GvM4rm9aLFuqTwWdizY=
-P:openldap-overlay-dds
-V:2.4.47-r2
-A:armv7
-S:13453
-I:45056
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1ehTg5sG3fXUh97+xg5hCnrN3X4M=
 P:email-doc
 V:3.1.4-r7
@@ -43308,6 +43200,22 @@ m:Jeremy Thomerson <jeremy@thomersonfamily.com>
 t:1545324559
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs rdiff-backup=1.2.8-r2
+
+C:Q1c/f9vs/ijCfUruxKtbT3aweRAeU=
+P:tiff-tools
+V:4.0.10-r1
+A:armv7
+S:151416
+I:380928
+T:Command-line utility programs for manipulating TIFF files
+U:http://www.libtiff.org
+L:libtiff
+o:tiff
+m:Michael Mason <ms13sp@gmail.com>
+t:1569957022
+c:de0584e234c2dad9d4247ee7de308a95fe2b42ac
+D:so:libc.musl-armv7.so.1 so:libtiff.so.5
+p:cmd:fax2ps cmd:fax2tiff cmd:pal2rgb cmd:ppm2tiff cmd:raw2tiff cmd:tiff2bw cmd:tiff2pdf cmd:tiff2ps cmd:tiff2rgba cmd:tiffcmp cmd:tiffcp cmd:tiffcrop cmd:tiffdither cmd:tiffdump cmd:tiffinfo cmd:tiffmedian cmd:tiffset cmd:tiffsplit
 
 C:Q1lLwC/fOZ8I0LWoBH/xO7QHXA7Ss=
 P:ldoc
@@ -43730,6 +43638,21 @@ t:1542379864
 c:98f7ec1bf5e38719a15e825d3c73d339fcf4e2bf
 D:perl-exporter-tiny
 
+C:Q1flPFKmktoVuIccmoWOV5vMeTHpg=
+P:openldap-overlay-unique
+V:2.4.48-r0
+A:armv7
+S:10663
+I:40960
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956863
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1MjynRgC7ZdggqIWrTWPyyZmL/Dk=
 P:perl-test-nowarnings-doc
 V:1.04-r1
@@ -43868,21 +43791,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1543229800
 c:6d2dc8194bf78753b8be2432549387630a7d5759
 i:docs perl-html-format=2.12-r0
-
-C:Q1L8tR7xrR0eiNWF9vBr33XxxQBuw=
-P:openldap-overlay-constraint
-V:2.4.47-r2
-A:armv7
-S:9360
-I:36864
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1oWhLKl9M1LzHfpeIp7Of7AaNVoY=
 P:libxmu-dev
@@ -44023,21 +43931,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545122361
 c:4526ec8f4aeea391047b32250ad474d58451c9e5
 i:docs cabextract=1.9-r0
-
-C:Q1Pe8Q5G+DoDYx4pQhdRMJrF/txII=
-P:openldap-back-shell
-V:2.4.47-r2
-A:armv7
-S:7791
-I:36864
-T:OpenLDAP shell backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1YoRHIZH3XEszlKuUUUJ9el9ZLBw=
 P:termrec-dev
@@ -44361,22 +44254,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:makedepend
 
-C:Q19rgETVC5/zoykBmG4nw4HEaZUSk=
-P:ghostscript-gtk
-V:9.26-r3
-A:armv7
-S:8955
-I:32768
-T:A GTK-enabled PostScript interpreter and renderer
-U:https://ghostscript.com/
-L:GPL-3.0
-o:ghostscript
-m:Cameron Banta <cbanta@gmail.com>
-t:1565700569
-c:0c7e5ec71b97782eda0a281b09ddabdaba26f848
-D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgs.so.9 so:libgtk-3.so.0
-p:cmd:gsx
-
 C:Q1FseWbs2l/P+ELw3xumP6o8zVFjc=
 P:perl-test-fatal-doc
 V:0.014-r1
@@ -44592,6 +44469,21 @@ o:aspell-fr
 m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1545356346
 c:63f5e7d295659a855709901ce22a3e5f40fce455
+
+C:Q1svhcuk/FRviQBaDy3J8sIKcfQt0=
+P:wpa_supplicant-doc
+V:2.7-r5
+A:armv7
+S:44043
+I:147456
+T:A utility providing key negotiation for WPA wireless networks (documentation)
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957552
+c:de40d9a237281b0e3a2ec4a0e2b8d9a825732828
+i:docs wpa_supplicant=2.7-r5
 
 C:Q1gj4nZ6NI9YDXOsdqpD57FgzuUwI=
 P:font-util-doc
@@ -45143,21 +45035,6 @@ t:1542782544
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs perl-class-accessor-chained=0.01-r0
 
-C:Q1BNVe2+jGfSDad+NEovRGS3b17kY=
-P:curl-dbg
-V:7.64.0-r2
-A:armv7
-S:35757
-I:143360
-T:URL retrival utility and library (debug symbols)
-U:https://curl.haxx.se
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559717670
-c:f4c02c83cf9d1a3f4bbb31b4a9dfd48e58a1fbca
-D:ca-certificates
-
 C:Q1BICWHIp3vBbw1hQ6AwwrY4cVghk=
 P:kamailio-ldap
 V:5.2.0-r1
@@ -45187,6 +45064,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545323932
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0
+
+C:Q1xlYwUH3i2stHkShIjIQ3ap4p6O0=
+P:polkit-dev
+V:0.105-r11
+A:armv7
+S:35456
+I:446464
+T:Application development toolkit for controlling system-wide privileges (development files)
+U:http://www.freedesktop.org/wiki/Software/polkit/
+L:LGPL-2.0+
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957264
+c:e325d22a1d8c013af35b262f20089514bae6df40
+D:eggdbus-dev dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig polkit=0.105-r11
+p:pc:polkit-agent-1=0.105 pc:polkit-backend-1=0.105 pc:polkit-gobject-1=0.105
 
 C:Q1F8O/RRwmxFpg9ppY70ZaOfxbVyM=
 P:udev-init-scripts
@@ -45678,21 +45571,6 @@ t:1542316362
 c:70a8bca41719a11ed8f1b53959f28f89b4324099
 D:perl-exporter-tiny
 
-C:Q1hfGX3BGStjDDdzAtD0AitLFfV0k=
-P:openldap-overlay-sssvlv
-V:2.4.47-r2
-A:armv7
-S:9961
-I:40960
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q11zGbsmOfVLsrxPSqLbC7h/wQM6w=
 P:lvm2
 V:2.02.182-r0
@@ -46173,22 +46051,6 @@ c:e3fca245193e6da4fd8d842fdc2e2c8353529eeb
 D:so:libc.musl-armv7.so.1
 p:cmd:argon2
 
-C:Q1Do4EmPEU0e8sGX+PQ3TIfoBymfg=
-P:nghttp2-libs
-V:1.35.1-r0
-A:armv7
-S:54466
-I:106496
-T:Experimental HTTP/2 client, server and proxy (libraries)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545859335
-c:7fcb91421c07f667a299e08339b8069ed47a9661
-D:so:libc.musl-armv7.so.1
-p:so:libnghttp2.so.14=14.17.1
-
 C:Q1YfNfw4NmIkKCGbkZNtoAqmWzs2Q=
 P:perl-html-mason-psgihandler-doc
 V:0.53-r0
@@ -46449,6 +46311,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542298052
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:haserl-lua5.3 haserl-lua5.2 haserl-lua5.1 haserl-lua5.3=0.9.35-r1
+
+C:Q1CKmA83fyXClbqBkYz9IekPXP26U=
+P:asterisk-sounds-moh
+V:15.7.4-r0
+A:armv7
+S:15367783
+I:17747968
+T:Default on-hold music files for asterisk
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957535
+c:de555bb30f216410e565ff8c6e8983703d16d648
 
 C:Q1uZdeVEQi+R9gBsEoqf9ar5QgoDA=
 P:openssh-keysign
@@ -46899,6 +46775,22 @@ c:78bf47337a5416d4553d10fef2966e5b16fb5086
 D:libepoxy-dev libxfont2-dev mesa-dev pc:dri2proto>=2.8 pc:dri3proto>=1.2 pc:dri>=7.8.0 pc:fontsproto>=2.1.3 pc:glproto>=1.4.17 pc:inputproto>=2.3 pc:kbproto>=1.0.3 pc:pciaccess>=0.12.901 pc:pixman-1>=0.27.2 pc:presentproto>=1.1 pc:randrproto>=1.6.0 pc:renderproto>=0.11 pc:resourceproto>=1.2.0 pc:scrnsaverproto>=1.1 pc:videoproto pc:xextproto>=7.2.99.901 pc:xf86driproto>=2.1.0 pc:xineramaproto pc:xproto>=7.0.31 pkgconfig
 p:pc:xorg-server=1.20.3
 
+C:Q12JwkFwFdiqiLbV4xqhJEHDmuXx4=
+P:mosquitto
+V:1.5.6-r1
+A:armv7
+S:85226
+I:212992
+T:An Open Source MQTT v3.1 Broker
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956749
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libuuid.so.1 so:libwebsockets.so.14
+p:cmd:mosquitto cmd:mosquitto_passwd
+
 C:Q1qEWQGeWpqNhG5wq1sJBMyn1o0CA=
 P:lua-sqlite
 V:0.9.5-r2
@@ -47239,6 +47131,21 @@ t:1545963078
 c:4d7c090ae8ce97e3b1b56a88e32a0cd34f7fbdc3
 i:docs tk=8.6.9-r0
 
+C:Q1e84dHFlMDw66870q9mekO2JNj+Y=
+P:openldap-overlay-dynlist
+V:2.4.48-r0
+A:armv7
+S:10365
+I:40960
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1/GGQGCYzPnT1v07AOjVVHA2GB5A=
 P:py-libmount
 V:2.33-r0
@@ -47331,37 +47238,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545355622
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:dropbear-dbclient !openssh-client dropbear-dbclient=2018.76-r2
-
-C:Q1v/dpk8i8ht2tHbgjh0waRdpaPGQ=
-P:openldap-overlay-accesslog
-V:2.4.47-r2
-A:armv7
-S:16077
-I:53248
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q1cQ9mmIww38iqK7n193wcryYeSUQ=
-P:poppler-utils
-V:0.56.0-r1
-A:armv7
-S:117370
-I:319488
-T:Poppler's xpdf-workalike command line utilities
-U:https://poppler.freedesktop.org/
-L:GPL-2.0+
-o:poppler
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1542454594
-c:d9c872c52ac46e8d2ac2e4978eecb9609f28ced5
-D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:liblcms2.so.2 so:libpoppler.so.67 so:libstdc++.so.6
-p:cmd:pdfdetach cmd:pdffonts cmd:pdfimages cmd:pdfinfo cmd:pdfseparate cmd:pdftocairo cmd:pdftohtml cmd:pdftoppm cmd:pdftops cmd:pdftotext cmd:pdfunite
 
 C:Q1AxtGDn+qmEDfJ1+QLKczf6ezToo=
 P:unfs3
@@ -47825,21 +47701,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 i:lua5.1 lua-pc=1.0.0-r9
 
-C:Q1+9HnPA8GYhPOL9ZR9yl70u9Zit4=
-P:openldap-overlay-refint
-V:2.4.47-r2
-A:armv7
-S:8115
-I:36864
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1jEZ21oen1SN3Mv8I0VTGztpIlEI=
 P:protobuf
 V:3.6.1-r1
@@ -48194,6 +48055,21 @@ t:1542371541
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXau.so.6 so:libXext.so.6 so:libXmuu.so.1 so:libc.musl-armv7.so.1
 p:cmd:xauth
+
+C:Q1d8LtbqGdYegQSqYp0gs05youYq4=
+P:curl-dbg
+V:7.64.0-r3
+A:armv7
+S:35718
+I:143360
+T:URL retrival utility and library (debug symbols)
+U:https://curl.haxx.se
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956734
+c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
+D:ca-certificates
 
 C:Q1iGN09a4mTg6XM1NkyMv5aUZxlJM=
 P:mariadb-embedded
@@ -49273,21 +49149,6 @@ c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.3 so:libc.musl-armv7.so.1 so:libsqlite3.so.0
 i:lua-sql-sqlite3=2.3.5-r2 lua5.3
 
-C:Q1BQqyuIIBXTABHQd/HFLafM0lbe0=
-P:openldap-back-monitor
-V:2.4.47-r2
-A:armv7
-S:34348
-I:90112
-T:OpenLDAP monitor backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q19s5O0KVQWptOBuIsPLTOSXpOv54=
 P:radvd
 V:2.17-r2
@@ -49564,6 +49425,22 @@ t:1547130401
 c:343d36882bd07b1b159ae391d749f49fa96fbfc6
 i:openrc postfix=3.3.2-r0
 
+C:Q1TthUIvCk64+bvmJtgpUAsyIjk/k=
+P:dovecot-pigeonhole-plugin
+V:2.3.7.2-r0
+A:armv7
+S:331030
+I:815104
+T:Sieve and managesieve plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
+
 C:Q1b69UijX1dGqGyTfJTGTUoCV3+ls=
 P:apache2-doc
 V:2.4.41-r0
@@ -49687,21 +49564,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545237561
 c:103d811227f0b582404b72ee6b793a0d6f0c955e
 i:gcr=3.28.0-r0 lang
-
-C:Q1jTfv/Hx2ncY1qnaCR2IVJJUgwmk=
-P:tiff-doc
-V:4.0.10-r0
-A:armv7
-S:609037
-I:2068480
-T:Provides support for the Tag Image File Format or TIFF (documentation)
-U:http://www.libtiff.org
-L:libtiff
-o:tiff
-m:Michael Mason <ms13sp@gmail.com>
-t:1544794052
-c:0c504ed6ce49ffab8f4090a5a3ddaeeda27ecbf5
-i:docs tiff=4.0.10-r0
 
 C:Q1gXJWeoQsX4WwB0RMBYln6LUUOsU=
 P:acf-iproute2-qos
@@ -49933,6 +49795,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libGL.so.1 so:libX11.so.6 so:libc.musl-armv7.so.1
 p:cmd:xdriinfo
 
+C:Q125EtbJvZeLyMKbWW59xTA5TrMlU=
+P:awall
+V:1.6.12-r0
+A:armv7
+S:28275
+I:212992
+T:Alpine Wall
+U:https://git.alpinelinux.org/cgit/awall/
+L:GPL-2.0
+o:awall
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1569957605
+c:3948b32f4e7b9c15373fe3005217368a8a6e2773
+D:drill ip6tables ipset iptables lua5.2 lua5.2-alt-getopt lua5.2-cjson lua5.2-pc lua5.2-posix lua5.2-stringy xtables-addons /bin/sh
+p:cmd:awall
+
 C:Q1XE0n/7oGLlx1oW8BcXZA2jv6yBE=
 P:collectd-lua
 V:5.8.0-r3
@@ -49995,22 +49873,6 @@ t:1542217967
 c:118463f27ecf2a638fdef1b5265cb4534e86c150
 D:perl
 p:cmd:aclocal cmd:aclocal-1.16 cmd:automake cmd:automake-1.16
-
-C:Q1OPnZRErLGsRvP5rPOWi3fWd+lxU=
-P:poppler-dev
-V:0.56.0-r1
-A:armv7
-S:308665
-I:2101248
-T:PDF rendering library based on xpdf 3.0 (development files)
-U:https://poppler.freedesktop.org/
-L:GPL-2.0+
-o:poppler
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1542454590
-c:d9c872c52ac46e8d2ac2e4978eecb9609f28ced5
-D:cairo-dev glib-dev pc:cairo>=1.10.0 pc:gio-2.0>=2.41 pc:glib-2.0>=2.41 pc:gobject-2.0>=2.41 pkgconfig poppler-glib=0.56.0-r1 poppler=0.56.0-r1
-p:pc:poppler-cairo=0.56.0 pc:poppler-cpp=0.56.0 pc:poppler-glib=0.56.0 pc:poppler-splash=0.56.0 pc:poppler=0.56.0
 
 C:Q1aT2bferWx50tagp2cvTW/ttQfCQ=
 P:libsmbclient
@@ -50533,6 +50395,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543241449
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-locale-maketext-lexicon=1.00-r0
+
+C:Q1qIzJw4S4nhZAfpRqm1mneJSWx+g=
+P:openldap-overlay-collect
+V:2.4.48-r0
+A:armv7
+S:5050
+I:32768
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
 
 C:Q1Se9jbTlARtSrKIo5iK0jzUMwUDk=
 P:mupdf-gl
@@ -51174,6 +51051,21 @@ t:1545250005
 c:183ac4eae701f0b8594dab1c736257e2dd158a3f
 i:docs perl-module-util=1.09-r0
 
+C:Q15VOrV3cHyRCAldASPZK+6dQxgRw=
+P:openldap-overlay-accesslog
+V:2.4.48-r0
+A:armv7
+S:16145
+I:53248
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1VgtvOiCWDK/jTmlUjj37CtzctHY=
 P:lua5.1-ldap
 V:1.2.3-r5
@@ -51251,6 +51143,21 @@ t:1551107211
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 p:cmd:qemu-mipsel
 
+C:Q1H5rrXz1kze9dWfGnfBsNmeKfqSc=
+P:openldap-overlay-refint
+V:2.4.48-r0
+A:armv7
+S:8090
+I:36864
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1FHieB4FaOa/0PWd0ujG9yZlXs34=
 P:libgit2
 V:0.27.7-r0
@@ -51297,6 +51204,21 @@ t:1542884104
 c:9d34941961856b21028cb4a838a1218a8edf332b
 i:docs libexif=0.6.21-r3
 
+C:Q1SqxKugwvLXRSZ83zI6o36sakdpg=
+P:openldap-overlay-memberof
+V:2.4.48-r0
+A:armv7
+S:12332
+I:45056
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
+
 C:Q1G9D24pXrsX1eRD4CCZXz8oWRVrs=
 P:libsamplerate-doc
 V:0.1.9-r1
@@ -51311,21 +51233,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543261908
 c:8d4313589065fbc86b808ed96434f1c7c5faf8e6
 i:docs libsamplerate=0.1.9-r1
-
-C:Q1/BSIaTbnXMnK7A8pzZQFrlYjTP4=
-P:openldap-backend-all
-V:2.4.47-r2
-A:armv7
-S:1256
-I:4096
-T:Virtual package that installs all OpenLDAP backends
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016467
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:openldap-back-bdb openldap-back-dnssrv openldap-back-hdb openldap-back-ldap openldap-back-mdb openldap-back-meta openldap-back-monitor openldap-back-null openldap-back-passwd openldap-back-relay openldap-back-shell openldap-back-sql openldap-back-sock
 
 C:Q1UKCwVh1KISYxW+EsxtUydlmDglA=
 P:apache-mod-fcgid
@@ -52565,6 +52472,22 @@ c:b05ef65a34110e6d0f521fcdcaae158a99193426
 D:so:libc.musl-armv7.so.1 so:libfftw3.so.3 so:libfftw3_threads.so.3 so:libfftw3f.so.3 so:libfftw3f_threads.so.3 so:libfftw3l.so.3 so:libfftw3l_threads.so.3
 p:cmd:fftw-wisdom cmd:fftw-wisdom-to-conf cmd:fftwf-wisdom cmd:fftwl-wisdom
 
+C:Q1TVgwuHDsoFa3LDZLc1HAcD1pSfU=
+P:mosquitto-libs++
+V:1.5.6-r1
+A:armv7
+S:5735
+I:28672
+T:C++ wrapper for libmosquitto
+U:https://mosquitto.org/
+L:BSD
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956749
+c:d2a7f0ccf6f57e24ef70b4177a6b763d7c747982
+D:so:libgcc_s.so.1 so:libmosquitto.so.1 so:libstdc++.so.6
+p:so:libmosquittopp.so.1=1
+
 C:Q1DfMkoG3pjEtbzfSzQoJPNmv/TPo=
 P:py-django-simple-captcha
 V:0.4.3-r1
@@ -53022,21 +52945,6 @@ t:1545324847
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs vte=0.28.2-r13
 
-C:Q1eUBBJGIW0EsRylSmN/qHk0IJc2M=
-P:openldap-back-sock
-V:2.4.47-r2
-A:armv7
-S:9331
-I:40960
-T:OpenLDAP sock backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1KnKbZYC0oLXuxbEITIzzzRNOqZ4=
 P:mqtt-exec
 V:0.4-r4
@@ -53189,6 +53097,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1542783587
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl
+
+C:Q17Nh75re2odDck1lsAd1MFTebdoE=
+P:dovecot-pgsql
+V:2.3.7.2-r0
+A:armv7
+S:11381
+I:49152
+T:PostgreSQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-sql=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libpq.so.5
+p:so:libdriver_pgsql.so=0
 
 C:Q17dOthysxKbtpsCDmVTXhKTGeqHM=
 P:libmpeg2-doc
@@ -53685,6 +53609,22 @@ t:1542460708
 c:645fa636bd83a4f53f10b1ae1e02631fd11fe149
 i:docs perl-test-warn=0.36-r0
 
+C:Q1NUNxpHbJNLDuYoQerBubk4Q2LEo=
+P:ghostscript-dev
+V:9.26-r4
+A:armv7
+S:13972
+I:98304
+T:An interpreter for the PostScript language and for PDF (development files)
+U:https://ghostscript.com/
+L:GPL-3.0
+o:ghostscript
+m:Cameron Banta <cbanta@gmail.com>
+t:1569957780
+c:d523278cd6edc33481e4d0d111f3e2d00ee34033
+D:ghostscript=9.26-r4 pkgconfig
+p:pc:ijs=0.35
+
 C:Q11q7Jd15v3WH3sY7dJv7hb9COEgY=
 P:uwsgi-syslog
 V:2.0.17.1-r0
@@ -53730,6 +53670,22 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1545237924
 c:bbf8eeea84969a531fe38d03574977d317ea1049
 
+C:Q1uKeW/pIr55anOekngEq5V2dJlyA=
+P:varnish-dev
+V:6.2.1-r0
+A:armv7
+S:97860
+I:634880
+T:High-performance HTTP accelerator (development files)
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+D:pkgconfig varnish-libs=6.2.1-r0
+p:pc:varnishapi=6.2.1
+
 C:Q1q+6snQ7lQ7CAZ62M/2zFwlnDqoo=
 P:perl-test-number-delta
 V:1.06-r0
@@ -53758,21 +53714,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1542783728
 c:649e659f615b6570ebd149689d15854d609ab587
 i:docs s6=2.7.2.0-r0
-
-C:Q1nZaSu8FwdUk+9KLPFMuquIbC3kU=
-P:ghostscript-doc
-V:9.26-r3
-A:armv7
-S:4050010
-I:10530816
-T:An interpreter for the PostScript language and for PDF (documentation)
-U:https://ghostscript.com/
-L:GPL-3.0
-o:ghostscript
-m:Cameron Banta <cbanta@gmail.com>
-t:1565700569
-c:0c7e5ec71b97782eda0a281b09ddabdaba26f848
-i:docs ghostscript=9.26-r3
 
 C:Q1TRJLkVOohZ/+oiZ1casxM1Axkh8=
 P:lua-discount
@@ -54079,6 +54020,22 @@ c:48e59c02864ce11fac3e2ff3529f2e1f5d1b7f1e
 D:logrotate
 i:squid=4.8-r0 lang-sr
 
+C:Q1mRn+kjHvworsSSPMqbURbd74fck=
+P:curl-dev
+V:7.64.0-r3
+A:armv7
+S:332722
+I:925696
+T:URL retrival utility and library (development files)
+U:https://curl.haxx.se
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956740
+c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
+D:openssl-dev libssh2-dev nghttp2-dev zlib-dev libcurl=7.64.0-r3 pkgconfig
+p:pc:libcurl=7.64.0 cmd:curl-config
+
 C:Q1GxKa8eOJQWgJT+QeyickQv0pBzc=
 P:lua-xml
 V:130610-r5
@@ -54320,22 +54277,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1562236878
 c:3dc163ee30f6d8236f24f2c8704e9e5bd04261ca
 
-C:Q1GX/lxwcUPGZ9VTI41CKypxXyudo=
-P:nfdump
-V:1.6.17-r0
-A:armv7
-S:629753
-I:1507328
-T:Tools to collect and process netflow data
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206933
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
-D:so:libbz2.so.1 so:libc.musl-armv7.so.1
-p:so:libnfdump-1.6.17.so=0 cmd:nfanon cmd:nfcapd cmd:nfdump cmd:nfexpire cmd:nfreplay
-
 C:Q1GmYFNQk53wZ3QuWK7Gov/obZpDA=
 P:s6-networking
 V:2.3.0.3-r1
@@ -54520,21 +54461,6 @@ t:1542484660
 c:b68b01d2080317ad96ad29c0ce31b88177600b5b
 i:docs perl-mail-spf=2.9.0-r2
 
-C:Q19EW8GpI//eOYWYoQgC0fOBBBSsU=
-P:openldap-overlay-memberof
-V:2.4.47-r2
-A:armv7
-S:12285
-I:45056
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
-
 C:Q1Rfz00DBlZWtRbg55aVmKph4br3Y=
 P:perl-mro-compat
 V:0.13-r0
@@ -54675,22 +54601,6 @@ t:1543229999
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs userspace-rcu=0.10.1-r0
 
-C:Q1mPQpqnZgenj57fh4+GbNlV5UQP8=
-P:dovecot-pigeonhole-plugin
-V:2.3.6-r0
-A:armv7
-S:331037
-I:815104
-T:Sieve and managesieve plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
-
 C:Q1CRAETzQvwCpFAKdbOajYVH6z+As=
 P:ipvsadm-doc
 V:1.29-r0
@@ -54720,21 +54630,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1544793818
 c:6758b77a89e7c8565eb7eca2642484c2b24676cb
 D:perl perl-net-dns perl-net-ip perl-mailtools perl-crypt-openssl-rsa perl-yaml-libyaml perl-net-dns-resolver-mock
-
-C:Q1Ky7ZGN4SEBMqNb8maH/T3+4R/pA=
-P:asterisk-mobile
-V:15.7.1-r0
-A:armv7
-S:36877
-I:90112
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libbluetooth.so.3 so:libc.musl-armv7.so.1
 
 C:Q1DDEcFkxglCACLUXhKmELRKKM5Ho=
 P:xf86-video-glint
@@ -55370,6 +55265,21 @@ c:708fb8154531db9fed81ad383916133cd0cec6dc
 D:so:libc.musl-armv7.so.1 so:libskarnet.so.2.7
 p:cmd:s6-basename cmd:s6-cat cmd:s6-chmod cmd:s6-chown cmd:s6-clock cmd:s6-cut cmd:s6-dirname cmd:s6-dumpenv cmd:s6-echo cmd:s6-env cmd:s6-expr cmd:s6-false cmd:s6-format-filter cmd:s6-grep cmd:s6-head cmd:s6-hiercopy cmd:s6-linkname cmd:s6-ln cmd:s6-ls cmd:s6-maximumtime cmd:s6-mkdir cmd:s6-mkfifo cmd:s6-nice cmd:s6-nuke cmd:s6-pause cmd:s6-printenv cmd:s6-quote cmd:s6-quote-filter cmd:s6-rename cmd:s6-rmrf cmd:s6-seq cmd:s6-sleep cmd:s6-sort cmd:s6-sync cmd:s6-tail cmd:s6-test cmd:s6-touch cmd:s6-true cmd:s6-uniquename cmd:s6-unquote cmd:s6-unquote-filter cmd:s6-update-symlinks cmd:seekablepipe
 
+C:Q1CTsRYnL+4FoSsMz3DvK+oZqTd7U=
+P:openldap-overlay-syncprov
+V:2.4.48-r0
+A:armv7
+S:19942
+I:53248
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1EFMqcrYtrbfA+vojj64HqbU2u5M=
 P:cyrus-sasl
 V:2.1.27-r1
@@ -55878,6 +55788,22 @@ t:1545308102
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:openrc audit=2.8.4-r0
 
+C:Q1G5/F9tJZdZTt+S3K3vQJqSaH1XM=
+P:expat-dev
+V:2.2.8-r0
+A:armv7
+S:67660
+I:192512
+T:An XML Parser library written in C (development files)
+U:http://www.libexpat.org/
+L:MIT
+o:expat
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1569956384
+c:18d6692e96ba7a726f4d8dc5cbaf84f5ff726e02
+D:expat=2.2.8-r0 pkgconfig
+p:pc:expat=2.2.8
+
 C:Q1j7pTfoNmzpQ3k3/eIh+Z0foSK0s=
 P:ruby-augeas
 V:0.5.0-r4
@@ -56215,21 +56141,6 @@ c:3f9fbd5fea7ab25996bd11af81862c560f50a24e
 D:lua5.3-bit32<26 so:libc.musl-armv7.so.1
 i:lua5.3 lua-posix=33.4.0-r1
 
-C:Q1y6uWawBRlcaBfscnZlveWx+XwxU=
-P:varnish-geoip
-V:6.1.1-r0
-A:armv7
-S:2399
-I:24576
-T:Maxmind GeoIP2 lookup plugin for varnish
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206976
-c:56948891d4e6afcb9605c558eff231e22dc49966
-D:libmaxminddb-dev
-
 C:Q1vGa0z4fa1zhf8668MRHL5mYbio8=
 P:libpcre2-32
 V:10.32-r1
@@ -56537,6 +56448,21 @@ c:08552235b3138fdd374f83ccd29a913e1632b29c
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpython2.7.so.1.0 so:libssl.so.1.1
 i:py-curl=7.43.0.2-r1 python2
 
+C:Q1gK6+sGaCDCSvJqlExtTgrJAV4uU=
+P:curl-doc
+V:7.64.0-r3
+A:armv7
+S:700792
+I:1888256
+T:URL retrival utility and library (documentation)
+U:https://curl.haxx.se
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956739
+c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
+i:docs curl=7.64.0-r3
+
 C:Q1kQC0wrj/NDtdAPv4j+AX5cAQpuw=
 P:gstreamer-dev
 V:1.14.4-r0
@@ -56616,20 +56542,20 @@ c:bcb659c09ad1f37f3bdbc15680325a8ea0f0466f
 D:so:libc.musl-armv7.so.1 so:libncursesw.so.6
 p:cmd:htop
 
-C:Q1Gd2X+tltvAt2w4hcxp+adUUMOko=
-P:nghttp2-doc
-V:1.35.1-r0
+C:Q1idjORG4A3C0luZx1NwidlT1ntVY=
+P:asterisk-pgsql
+V:15.7.4-r0
 A:armv7
-S:51542
-I:122880
-T:Experimental HTTP/2 client, server and proxy (documentation)
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545859334
-c:7fcb91421c07f667a299e08339b8069ed47a9661
-i:docs nghttp2=1.35.1-r0
+S:44154
+I:114688
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957534
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libpq.so.5
 
 C:Q1zQdQsz0X0VDfDMmjMmHjglasriI=
 P:mtools
@@ -56691,6 +56617,20 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545324743
 c:61623df542dfda6cee81a43ce21799c3ee9f98c1
 D:u-boot
+
+C:Q1I4PCokSqQzMtP++2Mm7iwuU75eA=
+P:ghostscript-dbg
+V:9.26-r4
+A:armv7
+S:27106186
+I:59232256
+T:An interpreter for the PostScript language and for PDF (debug symbols)
+U:https://ghostscript.com/
+L:GPL-3.0
+o:ghostscript
+m:Cameron Banta <cbanta@gmail.com>
+t:1569957779
+c:d523278cd6edc33481e4d0d111f3e2d00ee34033
 
 C:Q1JTX9R7SIDvxTuR2B/0TfLqoNPNg=
 P:apr-util-dev
@@ -56923,22 +56863,6 @@ t:1545256896
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armv7.so.1
 
-C:Q11o4qLD4DHeZoN1jffslaIlWPLv4=
-P:awall
-V:1.6.9-r0
-A:armv7
-S:27822
-I:208896
-T:Alpine Wall
-U:https://git.alpinelinux.org/cgit/awall/
-L:GPL-2.0
-o:awall
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1548501706
-c:a0912ad44ebbcfd72e8ed0189b48cc721c793a50
-D:drill ip6tables ipset iptables lua5.2 lua5.2-alt-getopt lua5.2-cjson lua5.2-pc lua5.2-posix lua5.2-stringy xtables-addons /bin/sh
-p:cmd:awall
-
 C:Q1V/xOPcTNJvXn0cC6NBLb87UxRNc=
 P:perl-module-implementation
 V:0.09-r0
@@ -57075,6 +56999,22 @@ t:1545209185
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libusb-1.0.so.0 so:libusbredirhost.so.1
 p:cmd:usbredirserver
+
+C:Q1eXA2BLkaAvlX8yYjV5mUiK1HVZc=
+P:poppler-utils
+V:0.56.0-r2
+A:armv7
+S:117355
+I:319488
+T:Poppler's xpdf-workalike command line utilities
+U:https://poppler.freedesktop.org/
+L:GPL-2.0+
+o:poppler
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957384
+c:fcdf03a54f9c9da28b86742c7745c76c1e110d82
+D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:liblcms2.so.2 so:libpoppler.so.67 so:libstdc++.so.6
+p:cmd:pdfdetach cmd:pdffonts cmd:pdfimages cmd:pdfinfo cmd:pdfseparate cmd:pdftocairo cmd:pdftohtml cmd:pdftoppm cmd:pdftops cmd:pdftotext cmd:pdfunite
 
 C:Q1GZr9bb8Nn5ZwbYo0wAGw087eYdE=
 P:perl-super-doc
@@ -57277,20 +57217,6 @@ t:1545293864
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs darkice=1.3-r0
 
-C:Q10+mx5y9Gt11Fpt6bQ0YER2oQmQw=
-P:asterisk-sounds-en
-V:15.7.1-r0
-A:armv7
-S:2533566
-I:3903488
-T:English sound files for asterisk
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247579
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-
 C:Q1Jz4Ifx8LsGtdkzsRDh5dEFqoxp4=
 P:py-imagesize
 V:1.1.0-r0
@@ -57333,6 +57259,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542884204
 c:f8a0593fbe2fee420d567a4433d1682069448eba
 i:gphoto2=2.5.15-r0 lang
+
+C:Q1yiRn1chcm+eYPiAAlpHK4txbmUc=
+P:openldap-overlay-constraint
+V:2.4.48-r0
+A:armv7
+S:9363
+I:36864
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1/1s4Kg4MFgtQBbF80AOqdd4eGek=
 P:jack-dev
@@ -57770,6 +57711,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libc.musl-armv7.so.1 so:libgdk-x11-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
 p:so:libkeybinder.so.0=0.1.0
 
+C:Q1RWtFsX2D+qflTsh6aozQdL4y8KI=
+P:ansible-doc
+V:2.7.13-r0
+A:armv7
+S:34607
+I:102400
+T:A configuration-management, deployment, task-execution, and multinode orchestration framework (documentation)
+U:https://ansible.com
+L:GPL-3.0-or-later
+o:ansible
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1569958271
+c:6b30494af214be58009a464982e5f9bd4927e635
+i:docs ansible=2.7.13-r0
+
 C:Q1hmCi9gPsyk+hN3lw23D1T3JLBwc=
 P:bash-completion
 V:2.8-r0
@@ -58123,22 +58079,6 @@ c:6b8106e625332309aa52111c46e0b76fa74aff30
 D:fontconfig=2.13.1-r0 pc:expat pc:freetype2>=21.0.15 pc:uuid pkgconfig
 p:pc:fontconfig=2.13.1
 
-C:Q1Ub7Oezp6YpTiNQUSH7efuZt66QM=
-P:tiff-tools
-V:4.0.10-r0
-A:armv7
-S:151704
-I:380928
-T:Command-line utility programs for manipulating TIFF files
-U:http://www.libtiff.org
-L:libtiff
-o:tiff
-m:Michael Mason <ms13sp@gmail.com>
-t:1544794052
-c:0c504ed6ce49ffab8f4090a5a3ddaeeda27ecbf5
-D:so:libc.musl-armv7.so.1 so:libtiff.so.5
-p:cmd:fax2ps cmd:fax2tiff cmd:pal2rgb cmd:ppm2tiff cmd:raw2tiff cmd:tiff2bw cmd:tiff2pdf cmd:tiff2ps cmd:tiff2rgba cmd:tiffcmp cmd:tiffcp cmd:tiffcrop cmd:tiffdither cmd:tiffdump cmd:tiffinfo cmd:tiffmedian cmd:tiffset cmd:tiffsplit
-
 C:Q1YglG+a+FR1vfyih9dHH4JqNRdDQ=
 P:collectd
 V:5.8.0-r3
@@ -58367,6 +58307,21 @@ t:1545310063
 c:86e7ee76af9fc9b49d54816ce3ca4ce348de85b3
 D:bc so:libGL.so.1 so:libGLU.so.1 so:libX11.so.6 so:libXext.so.6 so:libXft.so.2 so:libXmu.so.6 so:libXt.so.6 so:libc.musl-armv7.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgdk_pixbuf_xlib-2.0.so.0 so:libgio-2.0.so.0 so:libgobject-2.0.so.0
 p:cmd:xscreensaver-gl-helper
+
+C:Q1Ib/Gs332G0LWvWBnv8DLKZeavYI=
+P:openldap-overlay-valsort
+V:2.4.48-r0
+A:armv7
+S:6955
+I:32768
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956863
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
 
 C:Q1strmjbUtEXcHsebZnamABHVM0lQ=
 P:lua5.3-dbi-postgresql
@@ -58891,6 +58846,20 @@ t:1562163981
 c:011b9d5c5ae0af504ab1bb28a042d56676636a00
 D:lvm2 so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
 
+C:Q19qc/WODFvLINA2fa2TANy9VcQkE=
+P:dovecot-dev
+V:2.3.7.2-r0
+A:armv7
+S:535651
+I:3538944
+T:IMAP and POP3 server (development files)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+
 C:Q1GU7cBJhVluOND9gFo1DvcDlDfzY=
 P:freeswitch-pgsql
 V:1.8.2-r1
@@ -58936,6 +58905,21 @@ c:845ceeb84a5356dfef381071a5fcbffff147dd8e
 D:freeradius=3.0.17-r6 so:libc.musl-armv7.so.1 so:libpam.so.0
 p:freeradius3-pam=3.0.17-r6 so:rlm_pam.so=0
 
+C:Q16vov90cAm4lc7FS0+l4U61VPa8A=
+P:dovecot-submissiond
+V:2.3.7.2-r0
+A:armv7
+S:41394
+I:135168
+T:IMAP and POP3 server (mail submission agent)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q1i1/M7G9czddWlx9S6FtSttHF5yM=
 P:uwsgi-cheaper_backlog2
 V:2.0.17.1-r0
@@ -58950,6 +58934,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1544796806
 c:c7ebdf42aaaf67a511dd629cabbc674420673b60
 D:uwsgi so:libc.musl-armv7.so.1
+
+C:Q13buKLesXle1qKdY4ol54L4g2DKY=
+P:nghttp2-libs
+V:1.35.1-r1
+A:armv7
+S:54523
+I:106496
+T:Experimental HTTP/2 client, server and proxy (libraries)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569956626
+c:30aecaf3fcad1d9f048bad8e181f267d40bc336c
+D:so:libc.musl-armv7.so.1
+p:so:libnghttp2.so.14=14.17.1
 
 C:Q1fValS8QTNStG5a/fi9xtps5hjhg=
 P:libtool-doc
@@ -59697,6 +59697,22 @@ D:python3
 p:cmd:easy_install-3.6
 i:py-setuptools=40.6.3-r0 python3
 
+C:Q1rQCah0zPdAyouPsIgQIkT7k7vak=
+P:awall-policies
+V:1.6.12-r0
+A:armv7
+S:3959
+I:57344
+T:Alpine Wall
+U:https://git.alpinelinux.org/cgit/awall/
+L:GPL-2.0
+o:awall
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1569957605
+c:3948b32f4e7b9c15373fe3005217368a8a6e2773
+D:awall
+p:cmd:setup-firewall
+
 C:Q1zwiLRnV1lib/2xWrtpv168/AHVw=
 P:libmaxminddb-dev
 V:1.3.2-r0
@@ -59820,21 +59836,6 @@ t:1565156464
 c:84804ee3812816530a9bd6d1c0ddf2c9cdcb9400
 D:mariadb-common so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mariabackup cmd:mbstream
-
-C:Q1mGpw+AuifqO68IafBfsRSTr/+bY=
-P:openldap-overlay-retcode
-V:2.4.47-r2
-A:armv7
-S:10701
-I:40960
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1m60QXPUXnhNz8W1YamDmgRSFLac=
 P:py2-snowballstemmer
@@ -60147,21 +60148,6 @@ t:1542300229
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-net-http=6.09-r1
 
-C:Q1d0UyR2kH0ozogospqV7KgrncV9g=
-P:openldap-overlay-dyngroup
-V:2.4.47-r2
-A:armv7
-S:3985
-I:28672
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
-
 C:Q1uNhKobDzterc1Y/7IDXFxF6K47I=
 P:collectd-doc
 V:5.8.0-r3
@@ -60238,22 +60224,6 @@ t:1565787009
 c:2062e8a6bd5d482d13a8cc2e051c62399f4ec970
 D:libx11-dev pkgconfig sdl=1.2.15-r10
 p:pc:sdl=1.2.15 cmd:sdl-config
-
-C:Q1lwCyiErSz69dByJloI1JeADa0Y0=
-P:sdl2_image
-V:2.0.4-r0
-A:armv7
-S:49154
-I:90112
-T:A simple library to load images of various formats as SDL surfaces
-U:http://www.libsdl.org/projects/SDL_image/
-L:zlib
-o:sdl2_image
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545223205
-c:e3f530b87462b5aa7c95bf2444f0549ab11944f3
-D:so:libSDL2-2.0.so.0 so:libc.musl-armv7.so.1
-p:so:libSDL2_image-2.0.so.0=0.2.2
 
 C:Q1egmiaeIa8xGKunE16uIIyYg+Qa8=
 P:freeswitch-sounds-en-us-callie-32000
@@ -60465,6 +60435,21 @@ c:ddf096dbfc6a28ca1faf906bb669054034abda91
 D:perl-encode perl
 p:perl-encode-piconv cmd:encguess cmd:piconv
 
+C:Q1WEo2orzqiOq3BEfZoWyj2QQavss=
+P:asterisk-mobile
+V:15.7.4-r0
+A:armv7
+S:36886
+I:90112
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libbluetooth.so.3 so:libc.musl-armv7.so.1
+
 C:Q1vXTFzk3eDxgLKUVYA2egPgukYk0=
 P:nagios-plugins-ircd
 V:2.2.1-r6
@@ -60557,6 +60542,21 @@ t:1556034430
 c:a0125e7de015ab8a1fdf63b9217ce33861b82e1c
 D:openssh-keygen so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
 p:cmd:findssl.sh cmd:scp cmd:sftp cmd:ssh cmd:ssh-add cmd:ssh-agent cmd:ssh-copy-id cmd:ssh-keyscan cmd:ssh-pkcs11-helper
+
+C:Q11FPEaJIo7J1SolnTGQZdg8RrAVM=
+P:dovecot-pigeonhole-plugin-ldap
+V:2.3.7.2-r0
+A:armv7
+S:14344
+I:49152
+T:Sieve and managesieve plugin for Dovecot (LDAP support)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot-pigeonhole-plugin=2.3.7.2-r0 dovecot-ldap=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 
 C:Q1pb5eV4hColUAqJW1vNXGtIBCHrs=
 P:perl-utils
@@ -60775,6 +60775,22 @@ t:1542786186
 c:727a1b01d1aea34d92f04a72cbfd7246df08e650
 D:libproc=3.3.15-r0 pkgconfig
 
+C:Q1Ftnwr4n3Mlq1wPcZreB26laNNRo=
+P:dovecot-fts-solr
+V:2.3.7.2-r0
+A:armv7
+S:16402
+I:49152
+T:FTS-Solr plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:lib20_fts_plugin.so so:libc.musl-armv7.so.1 so:libexpat.so.1
+p:so:lib21_fts_solr_plugin.so=0
+
 C:Q1Swhzv1ZbX8Kq4c+lh2JBr6Ui/3o=
 P:opus
 V:1.3-r0
@@ -60821,21 +60837,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545294837
 c:547b80ecdef6fa4c6388a99857aeaaf535f39c72
 
-C:Q1rbJNWClR9hjFscBbvhOTzWxsqjQ=
-P:openldap-overlay-dynlist
-V:2.4.47-r2
-A:armv7
-S:10383
-I:40960
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1MkAaWzscg4wMIJVfbb63vamqCn4=
 P:sdl
 V:1.2.15-r10
@@ -60852,21 +60853,6 @@ c:2062e8a6bd5d482d13a8cc2e051c62399f4ec970
 D:so:libc.musl-armv7.so.1
 p:so:libSDL-1.2.so.0=0.11.4
 
-C:Q1YrekupiE9N7WcL5ptGH3O98O/hU=
-P:polkit-lang
-V:0.105-r10
-A:armv7
-S:2170
-I:28672
-T:Languages for package polkit
-U:http://www.freedesktop.org/wiki/Software/polkit/
-L:LGPL-2.0+
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1563792357
-c:117cfaf0240976b412ebfb6fa8233e9283d113a4
-i:polkit=0.105-r10 lang
-
 C:Q1Y81Mz/Om5ns7ujXUevqd5gxufxs=
 P:libltdl
 V:2.4.6-r5
@@ -60882,6 +60868,22 @@ t:1542218008
 c:9a10fd2b19d5f517208eec0d939c2995f5850762
 D:so:libc.musl-armv7.so.1
 p:so:libltdl.so.7=7.3.1
+
+C:Q1tvVEaahrLPA2vsmynlHCILV8V7Y=
+P:ansible
+V:2.7.13-r0
+A:armv7
+S:14247784
+I:73527296
+T:A configuration-management, deployment, task-execution, and multinode orchestration framework
+U:https://ansible.com
+L:GPL-3.0-or-later
+o:ansible
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1569958272
+c:6b30494af214be58009a464982e5f9bd4927e635
+D:python3 py3-yaml py3-paramiko py3-jinja2 py3-markupsafe py3-crypto
+p:cmd:ansible cmd:ansible-config cmd:ansible-connection cmd:ansible-console cmd:ansible-doc cmd:ansible-galaxy cmd:ansible-inventory cmd:ansible-playbook cmd:ansible-pull cmd:ansible-vault
 
 C:Q12EVViU1x0F2fZ4fDAVw8mN09+iA=
 P:py2-pytest
@@ -60914,6 +60916,21 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1542273141
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs lzip=1.20-r0
+
+C:Q1LXITcm1XATXw9E5nme4qWrUg5O0=
+P:openldap-back-bdb
+V:2.4.48-r0
+A:armv7
+S:64870
+I:139264
+T:OpenLDAP bdb backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:libdb-5.3.so so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1PqvwoPbIxlzJEStEpIZSs626YGw=
 P:consolekit2
@@ -61130,6 +61147,21 @@ t:1545140612
 c:2236af6023494e3a3f68649377876777a70b51ea
 i:gconf=3.2.6-r4 lang
 
+C:Q1w4WixyPfjYzDtEhfp9xc/Blin9g=
+P:asterisk-speex
+V:15.7.4-r0
+A:armv7
+S:14534
+I:61440
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libogg.so.0 so:libspeex.so.1 so:libspeexdsp.so.1
+
 C:Q19WA6rPiKZFC7mMFJwE+Dejezp0U=
 P:py-exifread
 V:2.1.2-r2
@@ -61282,6 +61314,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1544793818
 c:6758b77a89e7c8565eb7eca2642484c2b24676cb
 i:docs perl-mail-dkim=0.54-r0
+
+C:Q16ZNqlmUgg3iHE49gYn6Dkbcwxr8=
+P:hostapd-doc
+V:2.7-r5
+A:armv7
+S:3355
+I:32768
+T:daemon for wireless software access points (documentation)
+U:http://hostap.epitest.fi/hostapd/
+L:custom
+o:hostapd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957210
+c:a631766c739d92b83c30732831268f2e5cf0e919
+i:docs hostapd=2.7-r5
 
 C:Q1PEjrysePAjkZyByKhTe3J3hrXrk=
 P:perl-universal-require
@@ -61855,21 +61902,6 @@ t:1548686792
 c:05b18e3694fa29d9c0882e1ff7932a7d47995674
 i:docs rsyslog=8.40.0-r3
 
-C:Q13/sAwdbv7NlIXdTMUP7t5j1Vj9A=
-P:expat-doc
-V:2.2.7-r0
-A:armv7
-S:13455
-I:57344
-T:An XML Parser library written in C (documentation)
-U:http://www.libexpat.org/
-L:MIT
-o:expat
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1561897374
-c:9b9ed53cc550d0aacdafa85a40ef29dc9229bfaa
-i:docs expat=2.2.7-r0
-
 C:Q1o4nm2JkF4FX4awF6gP6LvmWq0+c=
 P:librsync-dev
 V:2.0.2-r1
@@ -62417,6 +62449,22 @@ t:1545250658
 c:76f4b25ec96a95a78534b761f30ecfa79cfe70cc
 D:so:libc.musl-armv7.so.1
 
+C:Q12nHMFvtoCFaDVVFS6LgGw0zI2UE=
+P:varnish-libs
+V:6.2.1-r0
+A:armv7
+S:60659
+I:114688
+T:Libraries for varnish
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+D:gcc libc-dev libgcc so:libc.musl-armv7.so.1 so:libpcre.so.1
+p:so:libvarnishapi.so.2=2.0.0
+
 C:Q1uzs4LuXOPDSukvRTHD1+gv0bMXI=
 P:nagios-plugins-mrtgtraf
 V:2.2.1-r6
@@ -62431,6 +62479,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1545256907
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armv7.so.1
+
+C:Q1HAoCMelg6GLF4MCFMPQ4loq93uc=
+P:openldap-overlay-auditlog
+V:2.4.48-r0
+A:armv7
+S:4155
+I:28672
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1fS2y7aFS9NXZaYP3PPSqEL/lHL0=
 P:libmaa-dev
@@ -62462,6 +62525,22 @@ t:1542800783
 c:f37750a244342f7241ca50c9a7c53aa84b768de9
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libldns.so.2 so:libpcap.so.1 so:libssl.so.1.1
 p:cmd:ldns-chaos cmd:ldns-compare-zones cmd:ldns-dane cmd:ldns-dpa cmd:ldns-gen-zone cmd:ldns-key2ds cmd:ldns-keyfetcher cmd:ldns-keygen cmd:ldns-mx cmd:ldns-notify cmd:ldns-nsec3-hash cmd:ldns-read-zone cmd:ldns-resolver cmd:ldns-revoke cmd:ldns-rrsig cmd:ldns-signzone cmd:ldns-test-edns cmd:ldns-testns cmd:ldns-update cmd:ldns-verify-zone cmd:ldns-version cmd:ldns-walk cmd:ldns-zcat cmd:ldns-zsplit cmd:ldnsd
+
+C:Q1IrvAf2guiZJ9bAWBqygjmuO0q6E=
+P:acf-core
+V:0.21.3-r0
+A:armv7
+S:49546
+I:372736
+T:A web-based system administration interface framework
+U:https://git.alpinelinux.org/cgit/acf/acf-core
+L:GPL-2.0
+o:acf-core
+m:Ted Trask <ttrask01@yahoo.com>
+t:1569958178
+c:c263de873d62fa77834bb0f5cd609a5cd8ac29b4
+D:acf-jquery acf-lib acf-skins haserl-lua5.2 lua5.2 lua5.2-posix lua5.2-md5 lua-json4 lua5.2-subprocess /bin/sh
+p:cmd:acf-cli cmd:acfpasswd
 
 C:Q1c4XCkNQpMX3FozvlGQAUKC7hodc=
 P:cdw
@@ -62587,22 +62666,6 @@ t:1554455905
 c:b3ea53dbb742db00884191a793efbce0d41d339a
 D:so:libX11-xcb.so.1 so:libX11.so.6 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1
 p:so:libGL.so.1=1.2.0
-
-C:Q1o5aIiprKqUMctPtFWNfZEiy3iTQ=
-P:dovecot-mysql
-V:2.3.6-r0
-A:armv7
-S:8180
-I:40960
-T:MySQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-armv7.so.1 so:libmariadb.so.3
-p:so:libdriver_mysql.so=0
 
 C:Q1s6KTQMw/ekYfHSeAovCqKUTdlto=
 P:freeradius-redis
@@ -62835,22 +62898,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1545256907
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armv7.so.1
-
-C:Q18SJVVwVsJKdzef018XDQwTsAGPE=
-P:awall-policies
-V:1.6.9-r0
-A:armv7
-S:3991
-I:57344
-T:Alpine Wall
-U:https://git.alpinelinux.org/cgit/awall/
-L:GPL-2.0
-o:awall
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1548501706
-c:a0912ad44ebbcfd72e8ed0189b48cc721c793a50
-D:awall
-p:cmd:setup-firewall
 
 C:Q1MSuzgxQagOUcMzBfsG+bBKTiCnw=
 P:sprunge
@@ -63375,6 +63422,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543219917
 c:efa22b5b632283ee120bbd840006a51af3cb3416
 
+C:Q1ZCeKBj2Vs7AJ2M//8OSJXqwRXKE=
+P:openldap-overlay-seqmod
+V:2.4.48-r0
+A:armv7
+S:3577
+I:28672
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:libldap_r-2.4.so.2
+
 C:Q1Ba3RZs0TVdUXr5GHo1Gou66Mzlk=
 P:libgnome-lang
 V:2.32.1-r7
@@ -63496,21 +63558,6 @@ c:3dc163ee30f6d8236f24f2c8704e9e5bd04261ca
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libncursesw.so.6 so:libssl.so.1.1
 p:cmd:irssi
 
-C:Q1YE7S3ZTQXBTe2VBrFRyNiwngUIY=
-P:wavpack-doc
-V:5.1.0-r7
-A:armv7
-S:11639
-I:36864
-T:Audio compression format with lossless, lossy, and hybrid compression modes (documentation)
-U:http://www.wavpack.com/
-L:BSD-3-Clause
-o:wavpack
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1548939907
-c:f06887bf6720ff8c26e5a7e3b87488cb2be83be2
-i:docs wavpack=5.1.0-r7
-
 C:Q1Fp/mVY4Lulf+HeHZ26/yAjmsjmM=
 P:avfs
 V:1.0.6-r0
@@ -63587,6 +63634,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:so:libyajl.so.2=2.1.0
 
+C:Q1+TDLvgTpCzCuATcT1LvpyjFMr40=
+P:openldap-doc
+V:2.4.48-r0
+A:armv7
+S:327199
+I:585728
+T:LDAP Server (documentation)
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956859
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+i:docs openldap=2.4.48-r0
+
 C:Q1qoMR+HyR8LP8r+RU1JEAQUOCqnQ=
 P:freeswitch-perl
 V:1.8.2-r1
@@ -63617,20 +63679,6 @@ t:1542562256
 c:0938cb9381c1610f040904e92ff88fbab2ababd1
 D:libid3tag=0.15.1b-r7 pkgconfig
 p:pc:id3tag=0.15.1b
-
-C:Q1L8vaOqsmQeA3ITJdeYnwfxjmme4=
-P:asterisk-sounds-moh
-V:15.7.1-r0
-A:armv7
-S:15367785
-I:17747968
-T:Default on-hold music files for asterisk
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247579
-c:04e63b7eebdee737b366fec36a0b089364551fc0
 
 C:Q1IbQj3LnzGMnup+tNP6lEBeSbq60=
 P:uwsgi-fastrouter
@@ -63833,21 +63881,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-armv7.so.1 so:liblzma.so.5 so:libpcre.so.1 so:libz.so.1
 p:cmd:ag
 
-C:Q1W72ia05yROKCs8qSz/3qywZDNU4=
-P:openldap-back-meta
-V:2.4.47-r2
-A:armv7
-S:53429
-I:114688
-T:OpenLDAP meta backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1jKoXf7gSNIXs0BtfUWhK0WxB6lQ=
 P:sdl_image
 V:1.2.12-r4
@@ -64000,6 +64033,21 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1542312915
 c:8e0d8cb63025e23cbede506c2996cd4ed6ba9289
 D:py3-pyflakes=1.6.0-r3
+
+C:Q17bcedQ8ZGmPr5eHtupKGn7nguAk=
+P:asterisk-cdr-mysql
+V:15.7.4-r0
+A:armv7
+S:13227
+I:45056
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libc.musl-armv7.so.1 so:libmariadb.so.3
 
 C:Q1Pm/s5eGlJCwzi81yg0Dj+2dA6/8=
 P:netcf-dev
@@ -64575,22 +64623,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1542299913
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs freetype=2.9.1-r2
-
-C:Q1INRIP99kqL1aIBLvV0PFxaIkVqE=
-P:varnish
-V:6.1.1-r0
-A:armv7
-S:733653
-I:1605632
-T:High-performance HTTP accelerator
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206977
-c:56948891d4e6afcb9605c558eff231e22dc49966
-D:gcc libc-dev libgcc /bin/sh so:libc.musl-armv7.so.1 so:libedit.so.0 so:libexecinfo.so.1 so:libncursesw.so.6 so:libpcre.so.1 so:libvarnishapi.so.2
-p:cmd:varnishadm cmd:varnishd cmd:varnishhist cmd:varnishlog cmd:varnishncsa cmd:varnishstat cmd:varnishtest cmd:varnishtop
 
 C:Q1I5JUp+mq5FYzdSOGdIFmyxyryZk=
 P:open-lldp-dev
@@ -65262,6 +65294,22 @@ t:1543222992
 c:561f1af4a4c75bda13026c9111a9b7f790d2f583
 i:docs perl-test-mockmodule=0.15-r0
 
+C:Q1pfn2QEs3AAIr/hMSx6lU4gT8KjU=
+P:curl
+V:7.64.0-r3
+A:armv7
+S:115997
+I:176128
+T:URL retrival utility and library
+U:https://curl.haxx.se
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956740
+c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
+D:ca-certificates so:libc.musl-armv7.so.1 so:libcurl.so.4 so:libz.so.1
+p:cmd:curl
+
 C:Q11i8eHZHIUTxreKC7His/SY9OH5Y=
 P:samba-libnss-winbind
 V:4.8.12-r0
@@ -65433,6 +65481,21 @@ t:1545121506
 c:e8785cd30cbfb35a072ddee57a01c458c30e9e80
 i:docs perl-net-ssleay=1.85-r4
 
+C:Q1FAEk467/vy3H3/Wan6InGPKH8Xs=
+P:openldap-back-shell
+V:2.4.48-r0
+A:armv7
+S:7824
+I:36864
+T:OpenLDAP shell backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1lThJop2YgVPFEpDdeCRUkGWglGI=
 P:lua5.2-libs
 V:5.2.4-r7
@@ -65492,21 +65555,6 @@ t:1545132933
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs py-nose=1.3.7-r2
 
-C:Q1ufDnYjsE8EM2WlN4lo/1xDYE/88=
-P:openldap-overlay-valsort
-V:2.4.47-r2
-A:armv7
-S:6950
-I:32768
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016471
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
-
 C:Q1/L/2vPqK6fL1SGgzW+nAwTr3PPE=
 P:libnih-dev
 V:1.0.3-r5
@@ -65536,22 +65584,6 @@ o:perl-extutils-helpers
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542379023
 c:7ebb01db24d3a2ed54a31bf59df13d5bbeb861d8
-
-C:Q1jOL1Butx/rGlMnLXJlLRgdsHH/Q=
-P:mosquitto-libs++
-V:1.5.6-r0
-A:armv7
-S:5739
-I:28672
-T:C++ wrapper for libmosquitto
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-D:so:libgcc_s.so.1 so:libmosquitto.so.1 so:libstdc++.so.6
-p:so:libmosquittopp.so.1=1
 
 C:Q17aGGxA0Se6zeX5j83EC/B/k4Rm8=
 P:pekwm
@@ -65584,20 +65616,6 @@ t:1545963093
 c:d2319f441ae23c2cab9593706a8a858ca511f82a
 D:so:libc.musl-armv7.so.1
 p:so:libconfuse.so.2=2.0.0
-
-C:Q13a/6idCCLzlGM+O4tY4XeVfWiIE=
-P:dovecot-dev
-V:2.3.6-r0
-A:armv7
-S:529986
-I:3497984
-T:IMAP and POP3 server (development files)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133991
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
 
 C:Q1Mni8BSQQe2WUEZUzaMsPFrCFRJM=
 P:libraw1394-tools
@@ -65755,6 +65773,36 @@ t:1542299320
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxau=1.0.8-r3 pc:xproto pkgconfig
 p:pc:xau=1.0.8
+
+C:Q1V4lpS7hiyS2ZxnLSL3qPS7XVilY=
+P:wpa_supplicant-openrc
+V:2.7-r5
+A:armv7
+S:2495
+I:32768
+T:A utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
+U:https://w1.fi/wpa_supplicant/
+L:BSD
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957552
+c:de40d9a237281b0e3a2ec4a0e2b8d9a825732828
+i:openrc wpa_supplicant=2.7-r5
+
+C:Q1msk3xSFneieMO3kLRjY75NUbvKg=
+P:dovecot-doc
+V:2.3.7.2-r0
+A:armv7
+S:622869
+I:2560000
+T:IMAP and POP3 server (documentation)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958708
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+i:docs dovecot=2.3.7.2-r0
 
 C:Q1rT5Fl1yZsPVbmwg2ynKVnRd0/zs=
 P:apache2-mod-wsgi
@@ -66708,21 +66756,6 @@ o:gtk-xfce-engine
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545143291
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-
-C:Q1e5O4iPtYs7BZDDvt6mtdmiM+rUM=
-P:hostapd-openrc
-V:2.7-r4
-A:armv7
-S:2071
-I:24576
-T:daemon for wireless software access points (OpenRC init scripts)
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565944049
-c:b7d037c2a9b8f72b1230453919246b1637028ada
-i:openrc hostapd=2.7-r4
 
 C:Q1TWFoE6LnPZ4lHb6Sjyc1JguVkZE=
 P:libtasn1-dev
@@ -68257,6 +68290,21 @@ c:d57d6aa9e65fc2db98bd4ee83eb8ca40ffa7a481
 D:so:libc.musl-armv7.so.1
 p:cmd:chat
 
+C:Q1YgicCqVAqMxBvsUPg5HQNhSse7A=
+P:dovecot-pop3d
+V:2.3.7.2-r0
+A:armv7
+S:28138
+I:106496
+T:IMAP and POP3 server (POP3 daemon)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q18zYwITbG5hxQypVJSEIdpHgyOGE=
 P:perl-cgi-session
 V:4.48-r0
@@ -68285,6 +68333,21 @@ o:wireless-tools
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1542531574
 c:63f5e7d295659a855709901ce22a3e5f40fce455
+
+C:Q19AEkITjfczzEQ/iWpXTwofOPM0U=
+P:asterisk-dev
+V:15.7.4-r0
+A:armv7
+S:617435
+I:3133440
+T:Asterisk: A Module Open Source PBX System (development files)
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957533
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:asterisk
 
 C:Q1pzHmLjoMFvaEcK1vyZYEturFqlM=
 P:perl-super
@@ -68394,21 +68457,6 @@ t:1555953585
 c:137dfb961be0d810855d3943508d525a2e46be7e
 D:dnssec-root
 p:cmd:migrate-dnscache-to-unbound
-
-C:Q1WPmWz4lhe/wObx+Bh+cVcEH3g7g=
-P:varnish-doc
-V:6.1.1-r0
-A:armv7
-S:114609
-I:196608
-T:High-performance HTTP accelerator (documentation)
-U:https://www.varnish-cache.org/
-L:BSD
-o:varnish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206975
-c:56948891d4e6afcb9605c558eff231e22dc49966
-i:docs varnish=6.1.1-r0
 
 C:Q1wJHLmIgkQnAmVwebOKXsBhvX35E=
 P:perl-file-which
@@ -68593,22 +68641,6 @@ t:1543245964
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:fontconfig encodings mkfontdir mkfontscale
 
-C:Q14OyByDUFXviE3VLtQGQ3A/T5Xeg=
-P:tiff-dev
-V:4.0.10-r0
-A:armv7
-S:192448
-I:577536
-T:Provides support for the Tag Image File Format or TIFF (development files)
-U:http://www.libtiff.org
-L:libtiff
-o:tiff
-m:Michael Mason <ms13sp@gmail.com>
-t:1544794052
-c:0c504ed6ce49ffab8f4090a5a3ddaeeda27ecbf5
-D:zlib-dev libjpeg-turbo-dev libtiffxx=4.0.10-r0 pkgconfig tiff=4.0.10-r0
-p:pc:libtiff-4=4.0.10
-
 C:Q1gFIdkR/sjd7CL6IbdjgYze7wfPA=
 P:sharutils
 V:4.15.2-r0
@@ -68749,20 +68781,21 @@ t:1545207899
 c:e197f419575447ba2efdd34b0885b53e3fc8e671
 i:docs cryptsetup1=1.7.5-r4
 
-C:Q1Wg43c1+agoQtSax9rz2O/3JPqXU=
-P:asterisk-alsa
-V:15.7.1-r0
+C:Q12bhHGv8MoIJBI81YAsOEz/5b/10=
+P:expat
+V:2.2.8-r0
 A:armv7
-S:12516
-I:45056
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libasound.so.2 so:libc.musl-armv7.so.1
+S:51282
+I:118784
+T:An XML Parser library written in C
+U:http://www.libexpat.org/
+L:MIT
+o:expat
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1569956384
+c:18d6692e96ba7a726f4d8dc5cbaf84f5ff726e02
+D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1
+p:so:libexpat.so.1=1.6.10 cmd:xmlwf
 
 C:Q1WxNbHfFlCjptC6jWGHYl7CjRu9U=
 P:perl-clone
@@ -69133,22 +69166,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libcdio.so.16 so:libgcc_s.so.1 so:libiso9660.so.10 so:libstdc++.so.6
 p:so:libcdio++.so.0=0.0.2 so:libiso9660++.so.0=0.0.0
 
-C:Q1r92JTpY8ly8n5AwO61JQpCoKqHg=
-P:wavpack-dev
-V:5.1.0-r7
-A:armv7
-S:7887
-I:49152
-T:Audio compression format with lossless, lossy, and hybrid compression modes (development files)
-U:http://www.wavpack.com/
-L:BSD-3-Clause
-o:wavpack
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1548939906
-c:f06887bf6720ff8c26e5a7e3b87488cb2be83be2
-D:pkgconfig wavpack=5.1.0-r7
-p:pc:wavpack=5.1.0
-
 C:Q1kWWXtQekfl0xrZTM/abKO05PV5w=
 P:mdocml-dev
 V:1.14.3-r0
@@ -69473,22 +69490,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551107217
 c:10a108fff8075e91499a850f2ef6b824c33679a4
 p:cmd:qemu-x86_64
-
-C:Q1G8Ey8NQ0+1DxzMnTgE0oaVy0hK8=
-P:dovecot-fts-lucene
-V:2.3.6-r0
-A:armv7
-S:22802
-I:73728
-T:FTS-Lucene plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133993
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:lib21_fts_lucene_plugin.so=0
 
 C:Q1/LuPXvTJEs598J0w1qfQvT1EepE=
 P:unbound-dev
@@ -70742,6 +70743,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:cvs cmd:cvsbug cmd:rcs2log
 
+C:Q1n4+fS3t1GA4ySTflyNPpWK9Rzec=
+P:openldap-overlay-ppolicy
+V:2.4.48-r0
+A:armv7
+S:14824
+I:49152
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libltdl.so.7
+
 C:Q1ob05OAVSf5nVZXPYERlUP3Cxzq0=
 P:libpthread-stubs
 V:0.3-r5
@@ -71294,21 +71310,6 @@ c:05b18e3694fa29d9c0882e1ff7932a7d47995674
 D:rsyslog=8.40.0-r3 so:libc.musl-armv7.so.1 so:librelp.so.0
 p:rsyslog-imrelp=8.40.0-r3 rsyslog-omrelp=8.40.0-r3
 
-C:Q1UBTj4Jz5/lSvEuZHmlSHqva9Zm4=
-P:wpa_supplicant-doc
-V:2.7-r4
-A:armv7
-S:44041
-I:147456
-T:A utility providing key negotiation for WPA wireless networks (documentation)
-U:https://w1.fi/wpa_supplicant/
-L:BSD
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565875422
-c:c5978d4bc83c3c055db7df6a78ba76b748742e2c
-i:docs wpa_supplicant=2.7-r4
-
 C:Q1xLgZIwIovMgJCOVUIBt/PBBZa70=
 P:lua5.3-ldbus
 V:20150430-r2
@@ -71324,6 +71325,21 @@ t:1545236839
 c:2cd031f2fd73b9962e930eebd1c1d6e7799b303a
 D:so:libc.musl-armv7.so.1 so:libdbus-1.so.3
 i:lua5.3 lua-ldbus=20150430-r2
+
+C:Q1hZHvRR9jx1kt6xWLjkbiYC2xs1M=
+P:openldap-overlay-rwm
+V:2.4.48-r0
+A:armv7
+S:22232
+I:61440
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q15lnVBdVXNuxjYPALcohZ1xOgLjU=
 P:git-svn
@@ -72057,21 +72073,6 @@ t:1546422565
 c:26b4eabc5fe2c4f636f2688bb50811f84d2d890f
 D:collectd so:libc.musl-armv7.so.1
 
-C:Q18uLZU/Hpv224OqRi+WtUynsdldQ=
-P:dovecot-submissiond
-V:2.3.6-r0
-A:armv7
-S:41303
-I:135168
-T:IMAP and POP3 server (mail submission agent)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot=2.3.6-r0 so:libc.musl-armv7.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1x4XbUkqusvQS4k9xdwYfCFe7T7g=
 P:smokeping-doc
 V:2.7.3-r3
@@ -72133,6 +72134,21 @@ t:1542453661
 c:a4242e97d4a33e05b5678fc2fabc361310bc5184
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1
 p:so:libboost_signals-mt.so.1.67.0=1.67.0 so:libboost_signals.so.1.67.0=1.67.0
+
+C:Q1jK0QInP7sYv/SDriVSRcAyWDzHw=
+P:openldap-back-meta
+V:2.4.48-r0
+A:armv7
+S:53468
+I:114688
+T:OpenLDAP meta backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1EOBK6dEEc6Tgx1uerWbww4BeAkI=
 P:nginx-mod-http-upstream-fair
@@ -72394,21 +72410,6 @@ c:358e0341238ac9f457328893b2974e256e37693f
 D:libsmbclient=4.8.12-r0 libwbclient=4.8.12-r0 pc:ldb pc:talloc pc:tevent pkgconfig samba-client-libs=4.8.12-r0 samba-common-libs=4.8.12-r0 samba-common-server-libs=4.8.12-r0 samba-dc-libs=4.8.12-r0 samba-libnss-winbind=4.8.12-r0 samba-libs=4.8.12-r0
 p:pc:dcerpc=0.0.1 pc:dcerpc_samr=0.0.1 pc:dcerpc_server=0.0.1 pc:ndr=0.1.0 pc:ndr_krb5pac=0.0.1 pc:ndr_nbt=0.0.1 pc:ndr_standard=0.0.1 pc:netapi=0 pc:samba-credentials=0.0.1 pc:samba-hostconfig=0.0.1 pc:samba-policy=0.0.1 pc:samba-util=0.0.1 pc:samdb=0.0.1 pc:smbclient=0.3.1 pc:wbclient=0.14
 
-C:Q1moeJNN2lfsCAU3SP58KwS9fzKNg=
-P:openldap-overlay-syncprov
-V:2.4.47-r2
-A:armv7
-S:19876
-I:53248
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1vVxrqCMp1mZczCqF5/y+tOPIqd4=
 P:android-tools-zsh-completion
 V:5.6.2-r0
@@ -72668,22 +72669,6 @@ m:A. Wilcox <awilfox@adelielinux.org>
 t:1543231138
 c:feea2abb07fcad826355c37b47efc7b68153f916
 i:docs sharutils=4.15.2-r0
-
-C:Q1xKg66EoogJHlJBzPFMj0oHMVrDg=
-P:sfcapd
-V:1.6.17-r0
-A:armv7
-S:36038
-I:90112
-T:sFlow collector
-U:https://github.com/phaag/nfdump
-L:BSD-3-Clause
-o:nfdump
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1545206932
-c:972d90a3b83ab8dca26738877094e7b26e54d09b
-D:so:libc.musl-armv7.so.1 so:libnfdump-1.6.17.so
-p:cmd:sfcapd
 
 C:Q19BqEk5djOrZwkzz0/NC/kxpFF3o=
 P:uwsgi-spooler
@@ -73174,6 +73159,21 @@ t:1545258098
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core lvm2
 
+C:Q1xQrMMB9+b1EFUSeU1NvzfR7b6JI=
+P:varnish-geoip
+V:6.2.1-r0
+A:armv7
+S:2406
+I:24576
+T:Maxmind GeoIP2 lookup plugin for varnish
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+D:libmaxminddb-dev
+
 C:Q1Rg9c5G9/YXi5qOAFU5qwis+62qI=
 P:libxrandr-dev
 V:1.5.1-r2
@@ -73544,6 +73544,21 @@ c:5842a9a22c792cfddd48e7946f2a406b76f2c6f3
 D:scanelf musl=1.1.20-r5 so:libc.musl-armv7.so.1
 p:cmd:getconf cmd:getent cmd:iconv cmd:ldconfig
 
+C:Q1bzgKd+ovpC0xJuNSWv2k2cAarxE=
+P:openldap-back-null
+V:2.4.48-r0
+A:armv7
+S:5495
+I:32768
+T:OpenLDAP null backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
+
 C:Q1oJXvExmzvSGUhxGLcRLe6lCM1wo=
 P:pcmciautils-doc
 V:018-r1
@@ -73696,21 +73711,6 @@ c:228f9c130cb159b79ece44fa7dd6e96fd5749b62
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.6 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libz.so.1
 p:cmd:transmission-gtk
 
-C:Q1QWzlKtl0HpDeI8cggI8If7ehqM8=
-P:openldap-back-mdb
-V:2.4.47-r2
-A:armv7
-S:90127
-I:167936
-T:OpenLDAP mdb backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1Zp8r5gA/ThXjNSHSrRUmFARAfa8=
 P:ruby-rdoc
 V:2.5.5-r0
@@ -73806,6 +73806,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libdvbpsi=1.3.2-r0 pkgconfig
 p:pc:libdvbpsi=1.3.2
 
+C:Q10EPaxIsAaXdUDcBW6swFuo/9D38=
+P:openldap-overlay-retcode
+V:2.4.48-r0
+A:armv7
+S:10713
+I:40960
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956862
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
 C:Q1YZeEQXC5UL6+hwf2AdkDM2/I9ak=
 P:kamailio-ims
 V:5.2.0-r1
@@ -73898,21 +73913,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1545145816
 c:b647c2b45d59c299cd0362c5a1c307458f6ef768
 i:openvswitch=2.10.1-r0 bash-completion
-
-C:Q1UMk7GVLu61U+yOtGap4sW+iopfA=
-P:asterisk-srtp
-V:15.7.1-r0
-A:armv7
-S:40819
-I:90112
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
 C:Q1psEcSuozv3excY4z7+OsUaOr1Kw=
 P:perl-io-multiplex
@@ -74051,6 +74051,22 @@ o:gtk-engines
 t:1545390184
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
+
+C:Q1dRmLI3kgaVesbiVtIEbiPXqCM5M=
+P:nghttp2-dev
+V:1.35.1-r1
+A:armv7
+S:39295
+I:225280
+T:Experimental HTTP/2 client, server and proxy (development files)
+U:https://nghttp2.org
+L:MIT
+o:nghttp2
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1569956626
+c:30aecaf3fcad1d9f048bad8e181f267d40bc336c
+D:nghttp2-libs=1.35.1-r1 pkgconfig
+p:pc:libnghttp2=1.35.1
 
 C:Q1SWVgS3SSfNoEIF/5h1DzG9iemOI=
 P:qemu-system-alpha
@@ -75741,6 +75757,21 @@ c:8b92b92a3056069f49dc044edcd191c4c2a621f4
 D:so:libc.musl-armv7.so.1 so:libogg.so.0
 p:so:libvorbis.so.0=0.4.8 so:libvorbisenc.so.2=2.0.11 so:libvorbisfile.so.3=3.3.7
 
+C:Q11YGMt2tJD4n4oU0Al5Hh8FDBL0c=
+P:asterisk-alsa
+V:15.7.4-r0
+A:armv7
+S:12492
+I:45056
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:so:libasound.so.2 so:libc.musl-armv7.so.1
+
 C:Q1xnY99Em5tSvDpJKk5xqPmiEtA6s=
 P:lua5.2-lub
 V:1.1.0-r1
@@ -76032,6 +76063,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1554980658
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
+
+C:Q1qY2q11qew6+4ztDT/KN+SSEay3w=
+P:varnish-doc
+V:6.2.1-r0
+A:armv7
+S:119783
+I:208896
+T:High-performance HTTP accelerator (documentation)
+U:https://www.varnish-cache.org/
+L:BSD
+o:varnish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958487
+c:64ec3c34295264f67e7f52dececb62fad377701c
+i:docs varnish=6.2.1-r0
 
 C:Q1HLHnjll0IUt1ecdIXQWDfpS9voM=
 P:gconf-dev
@@ -76434,6 +76480,20 @@ c:b5c416fc203d8e107d6d7e69283ae5f5e933db80
 D:py3-unidecode python2
 p:cmd:unidecode-2
 i:py-unidecode=1.0.23-r0 python2
+
+C:Q1p4SJHjsQ3ulAzTuWSQirUXKJ/Z0=
+P:asterisk-sounds-en
+V:15.7.4-r0
+A:armv7
+S:2533673
+I:3903488
+T:English sound files for asterisk
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957535
+c:de555bb30f216410e565ff8c6e8983703d16d648
 
 C:Q17OYrUoRSNAS9KJ9WEI/NGzVrhuo=
 P:udisks2-lang
@@ -77512,6 +77572,22 @@ t:1554980659
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
 
+C:Q1ruBm+WD8fPkykI0womWB2fJFBQg=
+P:dovecot-openrc
+V:2.3.7.2-r0
+A:armv7
+S:1874
+I:16384
+T:IMAP and POP3 server (OpenRC init scripts)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958709
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:openssl
+i:openrc dovecot=2.3.7.2-r0
+
 C:Q1Eex7GgqrLnixeqInVFtKDVAyfVY=
 P:iftop-doc
 V:0.17-r7
@@ -77558,21 +77634,6 @@ t:1542408907
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxxf86vm=1.1.4-r2 pc:x11 pc:xext pc:xf86vidmodeproto pkgconfig
 p:pc:xxf86vm=1.1.4
-
-C:Q1lBgu40auE82VC1BE94yJCas725A=
-P:openldap-overlay-unique
-V:2.4.47-r2
-A:armv7
-S:10666
-I:40960
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016471
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1R9ieU70M4E6KVREmB8AnYk9OTbI=
 P:bridge
@@ -77909,37 +77970,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543081694
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-regexp-ipv6=0.03-r0
-
-C:Q1zbfKH8aDyK9CteUoAgeU9HXTmGc=
-P:openldap-back-sql
-V:2.4.47-r2
-A:armv7
-S:56205
-I:131072
-T:OpenLDAP sql backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libodbc.so.2
-
-C:Q1H9EtMB/dI6dcwiXu81plLf3ZsBQ=
-P:acf-core
-V:0.21.1-r1
-A:armv7
-S:49429
-I:372736
-T:A web-based system administration interface framework
-U:https://git.alpinelinux.org/cgit/acf/acf-core
-L:GPL-2.0
-o:acf-core
-m:Ted Trask <ttrask01@yahoo.com>
-t:1543248355
-c:8643f032e7444b5278ff8de99fa059726c440b94
-D:acf-jquery acf-lib acf-skins haserl-lua5.2 lua5.2 lua5.2-posix lua5.2-md5 lua-json4 lua5.2-subprocess /bin/sh
-p:cmd:acf-cli cmd:acfpasswd
 
 C:Q1wZK+l/z9JkacFDoh2H7BvBPrEC0=
 P:fftw-long-double-libs
@@ -78480,21 +78510,6 @@ c:4820cd50c86ea468e192675bee179adde0834800
 D:python2
 i:py-click=6.7-r2 python2
 
-C:Q1vK4RjPdCHDaR++6nJPCCF4vLfcI=
-P:hostapd-doc
-V:2.7-r4
-A:armv7
-S:3343
-I:32768
-T:daemon for wireless software access points (documentation)
-U:http://hostap.epitest.fi/hostapd/
-L:custom
-o:hostapd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565944049
-c:b7d037c2a9b8f72b1230453919246b1637028ada
-i:docs hostapd=2.7-r4
-
 C:Q1nEOtmUqoJoVxAd8oaoZoOYURqMU=
 P:patchutils
 V:0.3.4-r1
@@ -78868,21 +78883,6 @@ t:1545125101
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1i2agE5tomnSJann/NTsg2ww0A/8=
-P:asterisk-cdr-mysql
-V:15.7.1-r0
-A:armv7
-S:13248
-I:45056
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libmariadb.so.3
-
 C:Q1bB+MZmzf+FEtl1dsj1ztU9qPCrM=
 P:lua5.2-lxc
 V:3.0.2-r0
@@ -79195,22 +79195,6 @@ c:08ab682249a645c4dc445a8400f60b73fc259d36
 D:so:libc.musl-armv7.so.1
 p:so:libcrypto.so.43=43.0.1
 
-C:Q1/6fGADF983FTlbV2jPS4uiKCNQE=
-P:dovecot-pgsql
-V:2.3.6-r0
-A:armv7
-S:11234
-I:49152
-T:PostgreSQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133992
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-D:dovecot-sql=2.3.6-r0 so:libc.musl-armv7.so.1 so:libpq.so.5
-p:so:libdriver_pgsql.so=0
-
 C:Q1g+HmIW8ycyHas6xOz1KpFFshV6s=
 P:py3-newt
 V:0.52.20-r0
@@ -79409,21 +79393,6 @@ t:1545144419
 c:c3519b4b4cdb3d90cffbb201f010ccc70fa3faa5
 D:ca-certificates so:libQtCore.so.4 so:libQtSql.so.4 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libstdc++.so.6
 
-C:Q1i0NjDfqQx4swbkhs1OTU9peUnvA=
-P:dovecot-doc
-V:2.3.6-r0
-A:armv7
-S:622244
-I:2555904
-T:IMAP and POP3 server (documentation)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557133991
-c:f82ad4a4bd0bcfe6c75ff43189ad29dc14c38add
-i:docs dovecot=2.3.6-r0
-
 C:Q1n5F9EkwcwXRvWEis05t0xqLXU+A=
 P:libxml2-dev
 V:2.9.9-r1
@@ -79455,6 +79424,21 @@ t:1545118883
 c:6d7e800e8f8d0b033d99c5cc1f00dbc7fa1592ee
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libsasl2.so.3 so:libstdc++.so.6
 p:so:libhashkit.so.2=2.0.0 so:libmemcached.so.11=11.0.0 so:libmemcachedprotocol.so.0=0.0.0 so:libmemcachedutil.so.2=2.0.0
+
+C:Q1gbkDp8+ZCcUoEL2PKBTAaLY+jUU=
+P:openldap-backend-all
+V:2.4.48-r0
+A:armv7
+S:1252
+I:4096
+T:Virtual package that installs all OpenLDAP backends
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:openldap-back-bdb openldap-back-dnssrv openldap-back-hdb openldap-back-ldap openldap-back-mdb openldap-back-meta openldap-back-monitor openldap-back-null openldap-back-passwd openldap-back-relay openldap-back-shell openldap-back-sql openldap-back-sock
 
 C:Q1ApcSgVJRA5wu4K2emYiHZb8fmKI=
 P:libvpx-dev
@@ -79614,6 +79598,21 @@ m:Roberto Oliveira <robertoguimaraes8@gmail.com>
 t:1542893082
 c:e1e052414c2b7bdf028b46a298a43dde67d47fc0
 i:docs perl-test-notabs=2.02-r0
+
+C:Q1w0ZXWsdfSv9V7dYnmlWWqHfjWmM=
+P:dovecot-gssapi
+V:2.3.7.2-r0
+A:armv7
+S:6888
+I:36864
+T:GSSAPI auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libgssapi.so.3
 
 C:Q1xGk+tMzDwzff0alEHqa1nztOit8=
 P:putty-doc
@@ -79951,21 +79950,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:so:libz.so.1=1.2.11
 
-C:Q12XzDuAia6rQ6UolQ4t1I3PILJ1c=
-P:openldap-overlay-translucent
-V:2.4.47-r2
-A:armv7
-S:10208
-I:40960
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
 C:Q1DuyH18J6R0IcXUD1yTYvgN+XsoQ=
 P:py-django-widget-tweaks
 V:1.4.3-r0
@@ -80266,6 +80250,22 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1545120361
 c:bf34a99ea3ac407e584b67d6a2c18651263d6101
 D:so:libc.musl-armv7.so.1
+
+C:Q1FGpTcpeqCJIlqJn/VkIlLKAR1Is=
+P:dovecot-fts-lucene
+V:2.3.7.2-r0
+A:armv7
+S:22869
+I:73728
+T:FTS-Lucene plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958710
+c:8ff339e0a750d552ff3d3be235aca6f4ddfc6a6f
+D:dovecot=2.3.7.2-r0 so:libc.musl-armv7.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:lib21_fts_lucene_plugin.so=0
 
 C:Q1BelBJByl7OAz99BgUmJr9akH8S0=
 P:perl-regexp-common
@@ -80847,6 +80847,21 @@ t:1542484589
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:perl perl-net-dns
 
+C:Q1RH1xUhHoVStsT0axV992hOESt5M=
+P:openldap-back-relay
+V:2.4.48-r0
+A:armv7
+S:5745
+I:32768
+T:OpenLDAP relay backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
+
 C:Q1lskHop4ws9JOU3I/3jMKTXrf1OE=
 P:perl-time-hires
 V:1.9758-r0
@@ -81048,37 +81063,6 @@ t:1542272926
 c:ed7e984d31911fe3201a16581f39f14f074dc4a0
 i:docs fakeroot=1.23-r0
 
-C:Q16vQ/9dQKfnNmOg2FWtoidGYmsoU=
-P:asterisk-tds
-V:15.7.1-r0
-A:armv7
-S:14108
-I:57344
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247577
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libsybdb.so.5
-
-C:Q1Gk5Rb+FB9fjRogy4c86P7THt7HQ=
-P:wavpack
-V:5.1.0-r7
-A:armv7
-S:162286
-I:307200
-T:Audio compression format with lossless, lossy, and hybrid compression modes
-U:http://www.wavpack.com/
-L:BSD-3-Clause
-o:wavpack
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1548939907
-c:f06887bf6720ff8c26e5a7e3b87488cb2be83be2
-D:so:libc.musl-armv7.so.1
-p:so:libwavpack.so.1=1.2.0 cmd:wavpack cmd:wvgain cmd:wvtag cmd:wvunpack
-
 C:Q1u7nZt0OLB9LJQoQsZ2Skw8Hq6U0=
 P:lksctp-tools
 V:1.0.17-r0
@@ -81123,21 +81107,6 @@ o:ncurses5
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542902520
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-
-C:Q1BBgzIJkoImikxCu/PWr+w+nVu9g=
-P:openldap-overlay-seqmod
-V:2.4.47-r2
-A:armv7
-S:3589
-I:28672
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016470
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:libldap_r-2.4.so.2
 
 C:Q1pWv+nH3aPZSGWNl+fym+IRwqRbw=
 P:linux-firmware-mediatek
@@ -81289,6 +81258,21 @@ o:nsd
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1546947824
 c:f4f7194164ede1e4496960eafefd4a9137b20e9f
+
+C:Q1tEAZsidQyjUrFv/Cq1d3haZ5oIs=
+P:openldap-back-monitor
+V:2.4.48-r0
+A:armv7
+S:34475
+I:90112
+T:OpenLDAP monitor backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q11VIMoWp/W1BQNYlXKrLS/YHGK6A=
 P:fontconfig
@@ -81516,21 +81500,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542319026
 c:04a0c56c81ba5120c1e808f2481d527fd4d009f4
 i:docs libseccomp=2.3.3-r1
-
-C:Q1U8+hp6TPo0HPqKfNZMlWd8+FrKY=
-P:openldap-back-hdb
-V:2.4.47-r2
-A:armv7
-S:67197
-I:139264
-T:OpenLDAP hdb backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:libdb-5.3.so so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1tAFIyYnQ0Zbguh+J9VzAcbdXgbk=
 P:gnome-common
@@ -82408,6 +82377,22 @@ m:William Pitcock <nenolod@dereferenced.org>
 t:1545164176
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 
+C:Q1PT6nkCOqbZ7rT2LbqZYYztSzcJ4=
+P:asterisk
+V:15.7.4-r0
+A:armv7
+S:3736801
+I:9220096
+T:Asterisk: A Module Open Source PBX System
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957536
+c:de555bb30f216410e565ff8c6e8983703d16d648
+D:/bin/sh so:libc-client.so.1 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libjansson.so.4 so:liblua.so.5 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjnath.so.2 so:libpjsip-simple.so.2 so:libpjsip-ua.so.2 so:libpjsip.so.2 so:libportaudio.so.2 so:libsqlite3.so.0 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libasteriskssl.so.1=1 cmd:astcanary cmd:astdb2bdb cmd:astdb2sqlite3 cmd:asterisk cmd:astgenkey cmd:astversion cmd:autosupport cmd:rasterisk cmd:safe_asterisk
+
 C:Q1Xw7gig/GT6shv6bhUbUSXsdwal4=
 P:xhost-doc
 V:1.0.7-r1
@@ -82686,6 +82671,36 @@ t:1544796557
 c:ae0018d343a878abee05ae8e145ebbc97c797974
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libprotobuf.so.17 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mosh-server
+
+C:Q1qp/QAb5wUuqM3gi9Rp25q1GsYGs=
+P:openldap-back-hdb
+V:2.4.48-r0
+A:armv7
+S:67114
+I:139264
+T:OpenLDAP hdb backend
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:libdb-5.3.so so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
+
+C:Q1HCxCnf1YgwU0dwvoLvnMei1eUhM=
+P:openldap-overlay-all
+V:2.4.48-r0
+A:armv7
+S:1315
+I:4096
+T:Virtual package that installs all OpenLDAP overlays
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956860
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:openldap-overlay-accesslog openldap-overlay-auditlog openldap-overlay-collect openldap-overlay-constraint openldap-overlay-dds openldap-overlay-deref openldap-overlay-dyngroup openldap-overlay-dynlist openldap-overlay-memberof openldap-overlay-ppolicy openldap-overlay-proxycache openldap-overlay-refint openldap-overlay-retcode openldap-overlay-rwm openldap-overlay-seqmod openldap-overlay-sssvlv openldap-overlay-syncprov openldap-overlay-translucent openldap-overlay-unique openldap-overlay-valsort
 
 C:Q1YFlXp/mnzhZdI9aHh3bn6UzOS6M=
 P:qemu-system-s390x
@@ -83136,6 +83151,21 @@ t:1546422138
 c:451663245f59e650f49a06f941db47d1ad3be956
 D:kamailio so:libc.musl-armv7.so.1 so:libsrdb1.so.1 so:libxml2.so.2
 
+C:Q18khOLxj91wiRYswtAcuXGgka3GI=
+P:wavpack-doc
+V:5.1.0-r8
+A:armv7
+S:11648
+I:36864
+T:Audio compression format with lossless, lossy, and hybrid compression modes (documentation)
+U:http://www.wavpack.com/
+L:BSD-3-Clause
+o:wavpack
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569957034
+c:a72e9dec2ca905acb1090eae42c239c177a553f0
+i:docs wavpack=5.1.0-r8
+
 C:Q1pNN1uLbquzymT13l+FOVesNumvo=
 P:mesa
 V:18.1.7-r2
@@ -83306,6 +83336,22 @@ t:1554980658
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
 
+C:Q12dV6qQKLNLobFCBxP/PgzuSjj6Y=
+P:sfcapd
+V:1.6.18-r0
+A:armv7
+S:36213
+I:90112
+T:sFlow collector
+U:https://github.com/phaag/nfdump
+L:BSD-3-Clause
+o:nfdump
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569958525
+c:8411819c2fbf4b8ede87ccaf2a3ffae0dfcc371f
+D:so:libc.musl-armv7.so.1 so:libnfdump-1.6.18.so
+p:cmd:sfcapd
+
 C:Q1ndPb2lg4l1Gnk7DlNor6k3YBzz8=
 P:lua-iconv
 V:7-r1
@@ -83364,22 +83410,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1542316968
 c:d1161ac9b5a3dbc950b99608e027b3f6710bd515
 D:perl-sub-exporter-progressive perl-module-runtime perl-module-implementation perl-variable-magic
-
-C:Q1hVLiPjKWPh637vKQROf36mr0/Jk=
-P:nghttp2
-V:1.35.1-r0
-A:armv7
-S:475083
-I:876544
-T:Experimental HTTP/2 client, server and proxy
-U:https://nghttp2.org
-L:MIT
-o:nghttp2
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545859335
-c:7fcb91421c07f667a299e08339b8069ed47a9661
-D:so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libev.so.4 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:h2load cmd:nghttp cmd:nghttpd cmd:nghttpx
 
 C:Q11aZV4FKc5FSfScmvm/MJvBfvl/c=
 P:libcap-doc
@@ -83520,6 +83550,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545291156
 c:179325d5d671a061959f905fc47a5c9a26b32ca9
 i:docs aria2=1.34.0-r1
+
+C:Q1T4U/SUhkmYxYEA/HlBtnOEZZwF0=
+P:libldap
+V:2.4.48-r0
+A:armv7
+S:223990
+I:417792
+T:OpenLDAP libraries
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956859
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:liblber-2.4.so.2=2.10.11 so:libldap-2.4.so.2=2.10.11 so:libldap_r-2.4.so.2=2.10.11
 
 C:Q1kHBp+LiKCq02y0X6wjUcx+eu12o=
 P:mariadb-openrc
@@ -85370,22 +85416,6 @@ D:make py2-docutils py2-jinja2 py2-pygments py2-six py2-sphinx_rtd_theme py2-ala
 p:cmd:sphinx-apidoc-2 cmd:sphinx-autogen-2 cmd:sphinx-build-2 cmd:sphinx-quickstart-2
 i:py-sphinx=1.8.3-r0 python2
 
-C:Q1O667ABl50wlaL8v04JauNvJJoAw=
-P:expat
-V:2.2.7-r0
-A:armv7
-S:50633
-I:118784
-T:An XML Parser library written in C
-U:http://www.libexpat.org/
-L:MIT
-o:expat
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1561897374
-c:9b9ed53cc550d0aacdafa85a40ef29dc9229bfaa
-D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1
-p:so:libexpat.so.1=1.6.9 cmd:xmlwf
-
 C:Q1PAt9udP3GRgZY36vVE/759Hzrb0=
 P:py2-typing
 V:3.6.6-r0
@@ -85587,6 +85617,21 @@ c:c284cbc8e4f8aa82136badddb6bf394c282e3b04
 D:e2fsprogs ntfs-3g-progs so:libatkmm-1.6.so.1 so:libc.musl-armv7.so.1 so:libcairomm-1.0.so.1 so:libgcc_s.so.1 so:libgdk-x11-2.0.so.0 so:libgdkmm-2.4.so.1 so:libglib-2.0.so.0 so:libglibmm-2.4.so.1 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libgtkmm-2.4.so.1 so:libintl.so.8 so:libpangomm-1.4.so.1 so:libparted-fs-resize.so.0 so:libparted.so.2 so:libsigc-2.0.so.0 so:libstdc++.so.6 so:libuuid.so.1
 p:cmd:gparted cmd:gpartedbin
 
+C:Q13qmWFxcxFLaPo1HWt5yUyTLroSw=
+P:openldap-overlay-deref
+V:2.4.48-r0
+A:armv7
+S:5497
+I:32768
+T:OpenLDAP  overlay
+U:http://www.openldap.org/
+L:custom
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1569956861
+c:245b526abb5493a981c7ad33f9a6b264fcd11265
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
+
 C:Q1zxTMlZy/5o2PA3DrektBKWGKD28=
 P:dialog
 V:1.3.20180621-r0
@@ -85726,21 +85771,6 @@ t:1542217928
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:/bin/sh so:libc.musl-armv7.so.1 so:libreadline.so.7
 p:cmd:bash
-
-C:Q1V4KUYhHCNhZvf1xQFX+qCXN6E7I=
-P:openldap-back-dnssrv
-V:2.4.47-r2
-A:armv7
-S:6262
-I:32768
-T:OpenLDAP dnssrv backend
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016468
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
 C:Q1J9doQWDdbCAk4DCv2yocjFBMNhI=
 P:libvirt-uml
@@ -86046,21 +86076,6 @@ t:1545149509
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs ciwiki=2.0.5-r1
 
-C:Q1QwEdQd/frppNvaVJ7iTpirGtH2s=
-P:mosquitto-openrc
-V:1.5.6-r0
-A:armv7
-S:1550
-I:16384
-T:An Open Source MQTT v3.1 Broker (OpenRC init scripts)
-U:https://mosquitto.org/
-L:BSD
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1549970969
-c:0615c8c70a2ec6b20460291a2755e9e36f393205
-i:openrc mosquitto=1.5.6-r0
-
 C:Q1SZAFg3S3TYe8w4Vuk1ihMrw64uM=
 P:sfdisk
 V:2.33-r0
@@ -86346,21 +86361,6 @@ c:593b926a0233cbb19a47882bd2c22346cb7a5530
 D:perl git
 p:cmd:mr
 
-C:Q1pTkleh3C2UTFXqZmeVoFt8i/EX8=
-P:openldap-overlay-deref
-V:2.4.47-r2
-A:armv7
-S:5478
-I:32768
-T:OpenLDAP  overlay
-U:http://www.openldap.org/
-L:custom
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1546016469
-c:2ae144627c66b46f4071ae488562d9bba8724b0e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
-
 C:Q1V0SISBEXcfgrUATKaPstU8KecpU=
 P:qt-private-dev
 V:4.8.7-r11
@@ -86420,21 +86420,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1554980659
 c:511029415765f681f793c9fe3f6e7cf4862fbcac
 p:linux-firmware-any
-
-C:Q1msqR0u76a5enIQJWSquO9r6uk7E=
-P:asterisk-speex
-V:15.7.1-r0
-A:armv7
-S:14543
-I:61440
-T:Asterisk: A Module Open Source PBX System
-U:http://www.asterisk.org/
-L:GPL-2.0
-o:asterisk
-m:Timo Teras <timo.teras@iki.fi>
-t:1546247580
-c:04e63b7eebdee737b366fec36a0b089364551fc0
-D:so:libc.musl-armv7.so.1 so:libogg.so.0 so:libspeex.so.1 so:libspeexdsp.so.1
 
 C:Q1iy4qX7RzG2JaNXMNj8XqyG4DMxA=
 P:py2-sortedcontainers
@@ -86708,6 +86693,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1542272940
 c:4160d87e19d0253e564d7ee223d13629a9374298
 i:docs mdocml=1.14.3-r0
+
+C:Q1npuitqGKCpvFLk63I6b+/lf1Agk=
+P:asterisk-doc
+V:15.7.4-r0
+A:armv7
+S:11017
+I:45056
+T:Asterisk: A Module Open Source PBX System (documentation)
+U:http://www.asterisk.org/
+L:GPL-2.0
+o:asterisk
+m:Timo Teras <timo.teras@iki.fi>
+t:1569957533
+c:de555bb30f216410e565ff8c6e8983703d16d648
+i:docs asterisk=15.7.4-r0
 
 C:Q1D3mPn1fXp4nOYvmVprr+3pYsrKM=
 P:autoconf-doc
