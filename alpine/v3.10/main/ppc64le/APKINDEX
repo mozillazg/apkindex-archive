@@ -243,22 +243,6 @@ t:1557059490
 c:cdee76d84f5cac0b2b944e9b57200c8c24760378
 i:docs perl-net-openssh=0.78-r0
 
-C:Q1j/ZxrUYqL4+cWxEKzhAjXfOvcNM=
-P:openssh-server-pam
-V:8.0_p1-r0
-A:ppc64le
-S:319538
-I:790528
-T:OpenSSH server with pam support
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062424
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:openssh-keygen openssh-server-common so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libz.so.1
-p:cmd:sshd
-
 C:Q15Aewo1IB15Yulw3tZQWbdpfmhak=
 P:perl-test-needs
 V:0.002005-r1
@@ -2552,20 +2536,6 @@ t:1571037333
 c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
 D:ruby-libs
 
-C:Q1jInCOYHywbj45GyODiABeIbp8K0=
-P:openssh-server-common
-V:8.0_p1-r0
-A:ppc64le
-S:4312
-I:32768
-T:OpenSSH server configuration files
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-
 C:Q13u9ZmgSehb1LhdXM9aiOAjQrQpE=
 P:meson-doc
 V:0.51.0-r0
@@ -3968,6 +3938,21 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1556881535
 c:c75c9f42185a529d12cf4c5a802aad26f34fa5b7
 i:docs libbsd=0.9.1-r0
+
+C:Q12n6CW7SEf9F1W7mvD/p+sd2nxwA=
+P:openssh-sftp-server
+V:8.1_p1-r0
+A:ppc64le
+S:50667
+I:139264
+T:ssh sftp server module
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
 C:Q1DeG8f0I/vsJb5kNZpt/Fcy6lUhI=
 P:libffi-dev
@@ -6629,6 +6614,22 @@ t:1569492845
 c:8eb76d4bd14d40aa9f55a2e31968b6d01af8a0f5
 D:so:libc.musl-ppc64le.so.1 so:liblxc.so.1
 p:cmd:init.lxc cmd:init.lxc.static cmd:lxc-attach cmd:lxc-autostart cmd:lxc-cgroup cmd:lxc-checkconfig cmd:lxc-checkpoint cmd:lxc-config cmd:lxc-console cmd:lxc-copy cmd:lxc-create cmd:lxc-destroy cmd:lxc-device cmd:lxc-execute cmd:lxc-freeze cmd:lxc-info cmd:lxc-ls cmd:lxc-monitor cmd:lxc-snapshot cmd:lxc-start cmd:lxc-stop cmd:lxc-top cmd:lxc-unfreeze cmd:lxc-unshare cmd:lxc-update-config cmd:lxc-usernsexec cmd:lxc-wait
+
+C:Q1ahdqCHVnVscipAW+ybTFI4rg8g0=
+P:openssh-client
+V:8.1_p1-r0
+A:ppc64le
+S:1197659
+I:3710976
+T:OpenBSD's SSH client
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-keygen so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
+p:cmd:findssl.sh cmd:scp cmd:sftp cmd:ssh cmd:ssh-add cmd:ssh-agent cmd:ssh-copy-id cmd:ssh-keyscan cmd:ssh-pkcs11-helper
 
 C:Q1LG8xkvoaS5qM+aR3utrxxRQ4yxA=
 P:libxrender-doc
@@ -18117,6 +18118,22 @@ c:129f7b6821ca192e6bd14a89688506900ea36850
 D:/bin/sh so:libc.musl-ppc64le.so.1
 p:cmd:redis-benchmark cmd:redis-check-aof cmd:redis-check-rdb cmd:redis-cli cmd:redis-sentinel cmd:redis-server
 
+C:Q1M5SI0vjBgU0yBFHF3kPbYXnstVs=
+P:openssh-keygen
+V:8.1_p1-r0
+A:ppc64le
+S:174000
+I:454656
+T:ssh helper program for generating keys
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
+p:cmd:ssh-keygen
+
 C:Q1+GPXgsOA1IwQot5cbxdwWimnLS4=
 P:numactl-tools
 V:2.0.12-r2
@@ -27922,22 +27939,6 @@ t:1556971123
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core samba
 
-C:Q18Ed+hW2PPbjDKynQkStO6O3LWnc=
-P:openssh-keygen
-V:8.0_p1-r0
-A:ppc64le
-S:163411
-I:430080
-T:ssh helper program for generating keys
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
-p:cmd:ssh-keygen
-
 C:Q1AQYVMZK/2ESbWt/wrHmEe3EfzSY=
 P:hylafaxplus
 V:7.0.0-r3
@@ -33272,21 +33273,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557170986
 c:2757235ef94f59233d2dc36eff13adabb4b91306
 i:docs python2=2.7.16-r1
-
-C:Q1iyEsW0+/nw+fTAiPEWHByJR46J4=
-P:openssh-sftp-server
-V:8.0_p1-r0
-A:ppc64le
-S:47097
-I:131072
-T:ssh sftp server module
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
 C:Q1n6RcNfiBH+pQaj3UwK3a8oXjEOM=
 P:readline-dev
@@ -40958,6 +40944,22 @@ t:1557592924
 c:eeaf4f3d0c3b6dd1f70ee214a9d77bb6dbe37389
 i:docs perl-convert-uulib=1.5-r3
 
+C:Q14znqEH8/WuLPzHMzFOL6g/tb5Vs=
+P:openssh-server
+V:8.1_p1-r0
+A:ppc64le
+S:311794
+I:774144
+T:OpenSSH server
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-keygen openssh-server-common so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:sshd
+
 C:Q1BJMpnEU0WMzIJchEt4eNt7/Ejsc=
 P:alsa-lib-dbg
 V:1.1.9-r0
@@ -45254,6 +45256,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557058840
 c:5ce892c5603191fe7d828dca9ce0a07704b81663
 i:lua5.1 lua-stdlib=41.2.1-r0
+
+C:Q1yt69FQEx7IlqDzQtY4DNeOgfpOY=
+P:openssh-server-pam
+V:8.1_p1-r0
+A:ppc64le
+S:1034677
+I:2871296
+T:OpenSSH server with pam support
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064511
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-keygen openssh-server-common so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libz.so.1
+p:cmd:sshd
 
 C:Q1bhtPtKm+kbWt2wBbGLtYGFbFzxs=
 P:perl-xml-sax-doc
@@ -57045,6 +57063,21 @@ c:4e867fa3400f81a4b542590c9c72e69b9f2bd20c
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1
 p:so:libarchive.so.13=13.3.3
 
+C:Q17v3LVkI7CwUiW1+YPchdpMe4HEU=
+P:openssh-dbg
+V:8.1_p1-r0
+A:ppc64le
+S:3352668
+I:9986048
+T:Port of OpenBSD's free SSH release (debug symbols)
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-client openssh-sftp-server openssh-server
+
 C:Q1L/6jg6yhXR8jTsNgTM7ZqAub38w=
 P:acf-iproute2-qos
 V:0.4.0-r2
@@ -59274,22 +59307,6 @@ c:ee3d40a64f3e8ee3c34f22b37a8c69d524b7ced1
 D:openssh-client perl-io-tty so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libprotobuf.so.17 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mosh-client
 
-C:Q1LiCJCRqcgsjD3aB/LQKrLgbiPio=
-P:openssh-server
-V:8.0_p1-r0
-A:ppc64le
-S:307456
-I:765952
-T:OpenSSH server
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062424
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:openssh-keygen openssh-server-common so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:sshd
-
 C:Q1c6mZSVN8y7C9EfYMDewjzv9aBVA=
 P:kbd-openrc
 V:2.0.4-r3
@@ -59518,6 +59535,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557117993
 c:502c066ac90e4863ab3920d73e62e782933c1ff4
 i:docs perl-mime-types=2.17-r0
+
+C:Q1A+263ePGQWmiTFfewOYq3c8RMWk=
+P:openssh
+V:8.1_p1-r0
+A:ppc64le
+S:123557
+I:372736
+T:Port of OpenBSD's free SSH release
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064511
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-client openssh-sftp-server openssh-server so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
 C:Q1B3mblRM3LTIMRsWx4JOaSCZxZOk=
 P:lttng-ust-doc
@@ -59965,6 +59997,21 @@ t:1559230585
 c:0baf870c8d7648042213c02b4a033571a70c94ee
 D:so:libc.musl-ppc64le.so.1
 p:cmd:acpibin cmd:acpidump cmd:acpiexamples cmd:acpiexec cmd:acpihelp cmd:acpinames cmd:acpisrc cmd:acpixtract
+
+C:Q1P7koKCGpZ0+otbwEK/aqwnXeU4M=
+P:openssh-doc
+V:8.1_p1-r0
+A:ppc64le
+S:96759
+I:147456
+T:Port of OpenBSD's free SSH release (documentation)
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+i:docs openssh=8.1_p1-r0
 
 C:Q10t+O7jrO41vPsdhZDTjCChaZ81E=
 P:diffutils
@@ -62181,22 +62228,6 @@ t:1556969275
 c:85d71b61728667166ea1ab7efd0231b8de7eae0e
 i:docs pekwm=0.1.17-r3
 
-C:Q1DWrWgorBAETILJczo2XuRPSMvGg=
-P:openssh-client
-V:8.0_p1-r0
-A:ppc64le
-S:960694
-I:2994176
-T:OpenBSD's SSH client
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:openssh-keygen so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
-p:cmd:findssl.sh cmd:scp cmd:sftp cmd:ssh cmd:ssh-add cmd:ssh-agent cmd:ssh-copy-id cmd:ssh-keyscan cmd:ssh-pkcs11-helper
-
 C:Q1H492pU81oiGrhRggMkXFWRV74sQ=
 P:libucontext
 V:0.1.3-r1
@@ -64166,21 +64197,6 @@ t:1556918018
 c:0da83ab7d0371df00181b3237b1f995d57297353
 D:python2
 i:py-pluggy=0.9.0-r1 python2
-
-C:Q1Ka3fXLrmuSORrlbNhrIpd/dI3iw=
-P:openssh-keysign
-V:8.0_p1-r0
-A:ppc64le
-S:172096
-I:450560
-T:ssh helper program for host-based authentication
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:openssh-client so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
 
 C:Q1qz2Oa6hH4gvVw6T064cWzaqQ0bA=
 P:qemu-hppa
@@ -69039,21 +69055,6 @@ c:0db404de2509cf2630edad83c9b948f478f14003
 D:qemu so:libaio.so.1 so:libc.musl-ppc64le.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libusb-1.0.so.0 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-hppa
 
-C:Q1YT+JTsI8fC1JoP/UD7qQkWOJ+00=
-P:openssh-doc
-V:8.0_p1-r0
-A:ppc64le
-S:95179
-I:147456
-T:Port of OpenBSD's free SSH release (documentation)
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062423
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-i:docs openssh=8.0_p1-r0
-
 C:Q1YiWDD7mKZDdw6i1esJzjJHf+Luw=
 P:rsnapshot
 V:1.4.2-r0
@@ -72921,6 +72922,20 @@ m:prspkt <prspkt@protonmail.com>
 t:1557084777
 c:c8a78e8d3a9d417a0782f30fc1802e26809a267a
 D:py-future py-requests py-requests-oauthlib
+
+C:Q1ksqu8YsNy0FYv5X7uc5R2BoHmCw=
+P:openssh-server-common
+V:8.1_p1-r0
+A:ppc64le
+S:4295
+I:32768
+T:OpenSSH server configuration files
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
 
 C:Q1cyNmV5V1t34a742DQZqKSgZO7xY=
 P:perl-class-inspector
@@ -79229,6 +79244,21 @@ t:1559026265
 c:6be6e51b441899c04875ce57403ccdfbfbd489aa
 D:perl-dbi so:libc.musl-ppc64le.so.1 so:libpq.so.5
 
+C:Q1cPk+L3SNWuhOjNvBzxAWzm7oYc8=
+P:openssh-keysign
+V:8.1_p1-r0
+A:ppc64le
+S:175940
+I:462848
+T:ssh helper program for host-based authentication
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571064510
+c:c1a8ab155a9f7e0bbf7b1773f18d7da30fdbf97b
+D:openssh-client so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
+
 C:Q1MaGkOrUtS94JWjBh2dTk8NTtF1c=
 P:perl-eval-closure
 V:0.14-r0
@@ -85509,21 +85539,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557004066
 c:834ff08917471c7eca8be7fc68198f5ecb90c204
 i:docs perl-mail-authenticationresults=1.20180923-r0
-
-C:Q1ZdB6USq9coCh6GDyfMDvmL8V8TQ=
-P:openssh
-V:8.0_p1-r0
-A:ppc64le
-S:119470
-I:364544
-T:Port of OpenBSD's free SSH release
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557062424
-c:a027feb82fee234ba3b3a8ff0a947651005b6a33
-D:openssh-client openssh-sftp-server openssh-server so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
 C:Q1GXq87QaFZlGbzrZEaKhnEGLcCec=
 P:asterisk-curl
