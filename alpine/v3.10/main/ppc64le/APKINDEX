@@ -985,22 +985,6 @@ c:229b1d89e89f622db0aabaa4a6724b37d4c3238a
 D:so:libc.musl-ppc64le.so.1
 p:so:libseccomp.so.2=2.4.1 cmd:scmp_sys_resolver
 
-C:Q1td/8sXdSY6A1AYazFRBN9M2yUZA=
-P:ruby-rake
-V:2.5.5-r0
-A:ppc64le
-S:91165
-I:528384
-T:Ruby based make-like utility
-U:http://www.ruby-lang.org/en/
-L:MIT
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881927
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby
-p:cmd:rake
-
 C:Q1JdBWqjexJJDUSQM+B5t4egIbWuY=
 P:gnuchess
 V:6.2.5-r1
@@ -1047,6 +1031,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560010354
 c:23d35c63ae063a95a627c42a424ed9b02b51d9f0
 i:docs dpkg=1.19.7-r0
+
+C:Q1y6Qa1Amfr6bvNx/HLTKUVyvVjOU=
+P:libgcrypt
+V:1.8.5-r0
+A:ppc64le
+S:384843
+I:860160
+T:general purpose crypto library based on the code used in GnuPG
+U:https://www.gnupg.org/
+L:LGPL-2.1-or-later
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037034
+c:82094160b018d45459e7cbf0a71886a3b4b8d88e
+D:so:libc.musl-ppc64le.so.1 so:libgpg-error.so.0
+p:so:libgcrypt.so.20=20.2.5 cmd:dumpsexp cmd:hmac256 cmd:mpicalc
 
 C:Q1XFIlNg4RMR6rCTh68qgyVIF11uI=
 P:dillo-doc
@@ -2537,6 +2537,21 @@ c:6a9519d8b771c58ab70ed15ba005edbaa6bc9684
 D:so:libc.musl-ppc64le.so.1 so:libz.so.1
 i:lua5.2 lua-lzlib=0.4.3-r0
 
+C:Q1ZAKUXxLvUzU+fEt/GuZ71v2jERk=
+P:ruby-net-telnet
+V:2.5.7-r0
+A:ppc64le
+S:15947
+I:135168
+T:Telnet client functionality for Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby-libs
+
 C:Q1jInCOYHywbj45GyODiABeIbp8K0=
 P:openssh-server-common
 V:8.0_p1-r0
@@ -3589,6 +3604,21 @@ c:3e4eb66a51b846ef22bd392eb4cfbf5bc7bbfa65
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libpcre.so.1 so:libpcreposix.so.0 so:libz.so.1
 p:cmd:privoxy
 
+C:Q18kKJu+u+8nLo/T6ejGKFvZb348c=
+P:ruby-minitest
+V:2.5.7-r0
+A:ppc64le
+S:75140
+I:376832
+T:Ruby suite of testing facilities
+U:http://www.ruby-lang.org/en/
+L:MIT
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby
+
 C:Q1M+clVRA3/CobLM8k0H6a/hw43H8=
 P:squid-lang-ko
 V:4.8-r0
@@ -3802,37 +3832,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1559029168
 c:f1798e787c042e081bff260abdf45dfb22f3f4a8
 D:perl-ipc-run3 perl-test2-suite perl-test-simple
-
-C:Q1yVJ00OwmaHRRJZ3HzDALKotCHtE=
-P:ruby-sdbm
-V:2.5.5-r0
-A:ppc64le
-S:14343
-I:81920
-T:A simple file-based key-value store with String keys and values for Ruby
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881928
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-
-C:Q1PTbEaVqzISV6+mhBCTYWpXmGCBc=
-P:ruby-libs
-V:2.5.5-r0
-A:ppc64le
-S:4527994
-I:13848576
-T:Libraries necessary to run Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881929
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgmp.so.10 so:libreadline.so.8 so:libssl.so.1.1 so:libyaml-0.so.2 so:libz.so.1
-p:so:libruby.so.2.5=2.5.5
 
 C:Q1boZBeXdCLM+ySQkwmxjwtC6KwOg=
 P:sipcalc-doc
@@ -5306,21 +5305,6 @@ t:1556951393
 c:41d26e366d9c73b3eeaeebbfaf38c1b4b8553ba7
 i:docs gtk+2.0=2.24.32-r1
 
-C:Q1AEMmohoQJPSxxKipBN+GM66MKaY=
-P:ruby-net-telnet
-V:2.5.5-r0
-A:ppc64le
-S:15941
-I:135168
-T:Telnet client functionality for Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881926
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby-libs
-
 C:Q14cLg3ldq5nCpkrAEgx9n7gVFLv8=
 P:qemu-system-riscv32
 V:4.0.0-r1
@@ -5581,20 +5565,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556980618
 c:272b441c1a23cd2d8d812a99c0cdb03e10ead5b2
 i:docs perl-yaml-tiny=1.73-r0
-
-C:Q19ufbpLUVEA6QnqNz1PJ2630kUsQ=
-P:libgcrypt-static
-V:1.8.4-r2
-A:ppc64le
-S:484616
-I:1519616
-T: static libraries
-U:http://www.gnupg.org
-L:LGPL-2.1-or-later
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564327680
-c:92381611d07c877dd1469e1f2f6cf5dd45b11730
 
 C:Q1F1tGKm6bUb8wy3vMG4qCtSX/2kE=
 P:gnokii-lang
@@ -6399,21 +6369,6 @@ c:85388dd452895eae1c1cdb7edcf0828bf31d80ed
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-ppc64le.so.1
 p:so:libXxf86misc.so.1=1.1.0
 
-C:Q1lKA6+J2FXdY6ZMRUf0UrLaeqL2A=
-P:ruby-fiddle
-V:2.5.5-r0
-A:ppc64le
-S:27343
-I:151552
-T:A libffi wrapper for Ruby
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881924
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libffi.so.6 so:libruby.so.2.5
-
 C:Q1FBmi6E2B48Ktnc97ihNfqabfYR0=
 P:uwsgi-python3
 V:2.0.18-r0
@@ -6845,6 +6800,22 @@ t:1556784806
 c:275ea7ae07c55e87f434f87f2c874aa64350a05a
 D:pkgconfig xz-libs=5.2.4-r0
 p:pc:liblzma=5.2.4
+
+C:Q1cRBD1tmzX/o9xP2UR951M1nMLn0=
+P:ruby-dev
+V:2.5.7-r0
+A:ppc64le
+S:62585
+I:397312
+T:An object-oriented language for quick and easy programming (development files)
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037331
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby=2.5.7-r0 gmp-dev pkgconfig ruby-libs=2.5.7-r0
+p:pc:ruby-2.5=2.5.0
 
 C:Q1JFNMe6uX30yrSQxg+K+KP4q0PEo=
 P:sircbot
@@ -10579,21 +10550,6 @@ t:1557163923
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core pingu
 
-C:Q1PTRn2o/27AhEoerSm9d832Hr8Q4=
-P:ruby-doc
-V:2.5.5-r0
-A:ppc64le
-S:3381579
-I:61698048
-T:An object-oriented language for quick and easy programming (documentation)
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881919
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-i:docs ruby=2.5.5-r0
-
 C:Q11u3ac3iXHRH1kXr/ALvpP8Djq8g=
 P:openpgm-dev
 V:5.2.122-r1
@@ -11173,6 +11129,22 @@ t:1556991826
 c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 i:lua-sql-sqlite3=2.3.5-r2 lua5.2
+
+C:Q1TaxnKc0qj21Q5k2JKy/KOZtdRvQ=
+P:ruby-rdoc
+V:2.5.7-r0
+A:ppc64le
+S:539612
+I:2338816
+T:Ruby documentation tool
+U:http://www.ruby-lang.org/en/
+L:Ruby
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby ruby-json ruby-io-console
+p:cmd:rdoc cmd:ri
 
 C:Q1AawWrGpBPs4J6uUVdaatVK8ZD+c=
 P:perl-list-allutils-doc
@@ -12490,21 +12462,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557037741
 c:4dcc1b1a73569f30ee25e558a5df3839b758d3dc
 D:lua
-
-C:Q16bTXa/mXufIeG9yXotkDHoP6hKQ=
-P:ruby-xmlrpc
-V:2.5.5-r0
-A:ppc64le
-S:28883
-I:184320
-T:XMLRPC library for Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881929
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby-libs
 
 C:Q1ukvsH4e8DoDjttMVNmNGnuO4zu0=
 P:lua5.3-posixtz
@@ -18344,6 +18301,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-ppc64le.so.1
 p:so:libyajl.so.2=2.1.0
 
+C:Q1UEEsrjdSXE9e/kSUNSsVEskIzF0=
+P:ruby-dbm
+V:2.5.7-r0
+A:ppc64le
+S:11128
+I:77824
+T:A Ruby wrapper for the UNIX-style Database Manager Library
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libgdbm.so.4 so:libgdbm_compat.so.4 so:libruby.so.2.5
+
 C:Q1Y6ODFnf4dybPbwGOFzFTp14oHJk=
 P:lua5.2-apk
 V:2.10.4-r2
@@ -19468,6 +19440,21 @@ c:10fc00b3dbc9a5c90dd9c54ae5c6f94975e6b63b
 D:freeradius-sql=3.0.19-r3 so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 p:freeradius3-sqlite=3.0.19-r3 so:rlm_sql_sqlite.so=0
 
+C:Q1O062pBmxhhb3RcauTpe/CbuuqjE=
+P:ruby-bigdecimal
+V:2.5.7-r0
+A:ppc64le
+S:38422
+I:151552
+T:Ruby arbitrary-precision floating point decimal arithmetic
+U:http://www.ruby-lang.org/en/
+L:Ruby
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby-libs so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
+
 C:Q1XFMKSGbr7+A/hoggRcdNG0tSRcs=
 P:rabbitmq-c-dev
 V:0.8.0-r5
@@ -20587,6 +20574,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557066360
 c:a9b51029e63388f0d4c8b5cbb285f21e19c20cd0
 
+C:Q1MaXbMeWjQyFTKB5dw74o6qSJk3w=
+P:ruby-irb
+V:2.5.7-r0
+A:ppc64le
+S:48733
+I:319488
+T:The Interactive Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby
+p:cmd:irb
+
 C:Q1BYi3Rt84AxF6TIW3tkT45UumgQ8=
 P:perl-list-someutils-xs
 V:0.55-r1
@@ -21232,6 +21235,22 @@ t:1557060400
 c:29c68cf4adf7870ca364a1d129dcece7945c0cbb
 i:docs dnsmasq=2.80-r3
 
+C:Q15ktyFjsLzTRgLk9+mSW2GS+Bo/Y=
+P:libgcrypt-dev
+V:1.8.5-r0
+A:ppc64le
+S:23330
+I:122880
+T:general purpose crypto library based on the code used in GnuPG (development files)
+U:https://www.gnupg.org/
+L:LGPL-2.1-or-later
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037034
+c:82094160b018d45459e7cbf0a71886a3b4b8d88e
+D:libgpg-error-dev libgcrypt=1.8.5-r0 pc:gpg-error pkgconfig
+p:pc:libgcrypt=1.8.5 cmd:libgcrypt-config
+
 C:Q1+Id1XqBJrEJJaVVS1MmIxH8uxRk=
 P:lua5.3
 V:5.3.5-r2
@@ -21247,6 +21266,21 @@ t:1557162887
 c:7571f6ce08088d0644c95da6b1c4a780078951a8
 D:so:libc.musl-ppc64le.so.1 so:liblinenoise.so.0 so:liblua-5.3.so.0
 p:lua cmd:lua5.3 cmd:luac5.3
+
+C:Q1uC9aRjkgJomSYZtCdAawSCvcl0c=
+P:libgcrypt-doc
+V:1.8.5-r0
+A:ppc64le
+S:84427
+I:364544
+T:general purpose crypto library based on the code used in GnuPG (documentation)
+U:https://www.gnupg.org/
+L:LGPL-2.1-or-later
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037034
+c:82094160b018d45459e7cbf0a71886a3b4b8d88e
+i:docs libgcrypt=1.8.5-r0
 
 C:Q1mXTsbd26Ww57qCFMMfcteIDhQXg=
 P:lua-posixtz
@@ -22917,6 +22951,22 @@ c:2dd7e3cbec142193aa28fe6ee22037566830b53f
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
 p:cmd:gvpe cmd:gvpectrl
 
+C:Q1/X6bbjUa08urYECKEnLz9Bpk18g=
+P:ruby-libs
+V:2.5.7-r0
+A:ppc64le
+S:4519800
+I:13840384
+T:Libraries necessary to run Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037334
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgmp.so.10 so:libreadline.so.8 so:libssl.so.1.1 so:libyaml-0.so.2 so:libz.so.1
+p:so:libruby.so.2.5=2.5.7
+
 C:Q17rIr0y4wy9iDVALziJopxRvLwm8=
 P:kamailio-sipdump
 V:5.2.4-r0
@@ -24067,21 +24117,6 @@ c:f98117212b8964eb723bfa74e34347dfe35ac532
 D:so:libc.musl-ppc64le.so.1
 p:so:libreplace-samba4.so=0 so:libwbclient.so.0=0.15 so:libwinbind-client-samba4.so=0
 
-C:Q1Go00/EWHZrgx1SgeJoeCR+to1NQ=
-P:ruby-full
-V:2.5.5-r0
-A:ppc64le
-S:1302
-I:4096
-T:Ruby with all bundled gems
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881930
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby ruby-bigdecimal ruby-dbm ruby-did_you_mean ruby-etc ruby-fiddle ruby-gdbm ruby-io-console ruby-irb ruby-json ruby-minitest ruby-net-telnet ruby-power_assert ruby-rake ruby-rdoc ruby-sdbm ruby-test-unit ruby-webrick ruby-xmlrpc
-
 C:Q1DWjx92+fFLieIUKbvSMNDUhCQLk=
 P:cdparanoia-dev
 V:10.2-r7
@@ -24416,21 +24451,6 @@ t:1559030859
 c:97c5c7eb4e84a7e51644ba3e1b4794d6bf02efb1
 D:so:libc.musl-ppc64le.so.1 so:libusb-1.0.so.0
 p:so:libmtp.so.9=9.4.0
-
-C:Q13WghtF5TXJD/HY5lcZrKQhFERF4=
-P:faad2-dev
-V:2.8.8-r0
-A:ppc64le
-S:4515
-I:32768
-T:ISO AAC audio decoder (development files)
-U:http://www.audiocoding.com/
-L:GPL-2.0-or-later
-o:faad2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559230004
-c:84db8330aea33de37b7befcd8dfb7e3b340468af
-D:faad2-libs=2.8.8-r0
 
 C:Q1vv4QhDSSavb4+Wpa1/+Crsf0KIM=
 P:py3-sphinxcontrib-websupport
@@ -27996,6 +28016,21 @@ c:10813513cde058b7db979f0a204b1840046299fd
 D:glib-dev pc:glib-2.0 pc:gmodule-2.0 pc:gobject-2.0 pc:libgvc pkgconfig so:libc.musl-ppc64le.so.1 so:libcgraph.so.6 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgvc.so.6
 p:so:libvala-0.44.so.0=0.0.0 so:libvalaccodegen.so=0 so:libvaladoc-0.44.so.0=0.0.0 pc:libvala-0.44=0.44.5 pc:valadoc-0.44=0.44.5 pc:vapigen-0.44=0.44.5 pc:vapigen=0.44.5 cmd:vala cmd:vala-0.44 cmd:vala-gen-introspect cmd:vala-gen-introspect-0.44 cmd:valac cmd:valac-0.44 cmd:valadoc cmd:valadoc-0.44 cmd:vapigen cmd:vapigen-0.44
 
+C:Q1RZUTHWVgAXaYworoTpbp+J/a6a0=
+P:ruby-full
+V:2.5.7-r0
+A:ppc64le
+S:1297
+I:4096
+T:Ruby with all bundled gems
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037334
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby ruby-bigdecimal ruby-dbm ruby-did_you_mean ruby-etc ruby-fiddle ruby-gdbm ruby-io-console ruby-irb ruby-json ruby-minitest ruby-net-telnet ruby-power_assert ruby-rake ruby-rdoc ruby-sdbm ruby-test-unit ruby-webrick ruby-xmlrpc
+
 C:Q1Rhu77HCaPCAjsiMhiC2cZloRmyM=
 P:ngrep-doc
 V:1.47-r0
@@ -30576,6 +30611,21 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-ppc64le.so.1
 p:so:libvanessa_logger.so.0=0.0.5 cmd:vanessa_logger_sample
 
+C:Q108Djn4kL/Q/Ac0wB0GZDeSqCRtc=
+P:ruby-power_assert
+V:2.5.7-r0
+A:ppc64le
+S:14725
+I:139264
+T:Power Assert for Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby-libs
+
 C:Q1hU40Dut4ADKo7vPOrkE39PAqLpI=
 P:glade3-dev
 V:3.8.5-r5
@@ -31301,21 +31351,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557084583
 c:22503ad205052a0f4f0950c932bf32b8ca342e7a
 D:perl-file-slurp-tiny
-
-C:Q1eoqu6NiVPDK+JW87pEuRbv8e1Zc=
-P:ruby-test-unit
-V:2.5.5-r0
-A:ppc64le
-S:145828
-I:1011712
-T:An xUnit family unit testing framework for Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby PSFL
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881928
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby ruby-power_assert
 
 C:Q121ClcMKmVPygDIx9A2IoLzI/3Xw=
 P:lua5.2-struct
@@ -34204,6 +34239,21 @@ c:0db404de2509cf2630edad83c9b948f478f14003
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcap-ng.so.0 so:libcap.so.2 so:libcurl.so.4 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libnettle.so.6 so:libxkbcommon.so.0
 p:cmd:elf2dmp cmd:qemu-edid cmd:qemu-keymap cmd:qemu-pr-helper cmd:virtfs-proxy-helper
 
+C:Q11gr2JbuEjpdLd4B+DZGeE1Va3Dw=
+P:ruby-xmlrpc
+V:2.5.7-r0
+A:ppc64le
+S:28872
+I:184320
+T:XMLRPC library for Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037334
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby-libs
+
 C:Q1F7cpHB+VnK6Nw7Tv2Rs6zfhSP1M=
 P:duply
 V:2.2-r0
@@ -34250,6 +34300,22 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1556992785
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs termrec=0.17-r1
+
+C:Q1oZbpN0Dtg5CbScnjDRyOSgnbzNI=
+P:ruby-rake
+V:2.5.7-r0
+A:ppc64le
+S:91189
+I:532480
+T:Ruby based make-like utility
+U:http://www.ruby-lang.org/en/
+L:MIT
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby
+p:cmd:rake
 
 C:Q1spyjtl5o9hxi4wI8SRnOrpnKj5A=
 P:perl-list-utilsby
@@ -36159,6 +36225,21 @@ t:1560774256
 c:2e0eecc3bd80c184937fb113e1a531160b6aa2f7
 D:py2-parsing py2-six python2
 i:py-packaging=19.0-r0 python2
+
+C:Q1tmVST8EZOuLWKjzFpPAcejaExEM=
+P:ruby-fiddle
+V:2.5.7-r0
+A:ppc64le
+S:27404
+I:151552
+T:A libffi wrapper for Ruby
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libffi.so.6 so:libruby.so.2.5
 
 C:Q156XpCczGmKp7vK3MrTYhEDa5P8w=
 P:openldap-overlay-auditlog
@@ -38844,6 +38925,21 @@ c:3975ed6c4f27b2e8e3396d26277ee54928f7a657
 D:liblcms=1.19-r8 pkgconfig
 p:pc:lcms=1.19
 
+C:Q11aVeKsX0anfmSsMSdZ6C2DfdB90=
+P:ruby-test-unit
+V:2.5.7-r0
+A:ppc64le
+S:145809
+I:1011712
+T:An xUnit family unit testing framework for Ruby
+U:http://www.ruby-lang.org/en/
+L:Ruby PSFL
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby ruby-power_assert
+
 C:Q1eO1vaehzQbycErFYvy5dIyM92gk=
 P:newsboat-doc
 V:2.13-r0
@@ -39318,22 +39414,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557081950
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs dansguardian=2.12.0.3-r4
-
-C:Q1n2fZnJz6x9Yyf9lyL1Gj+ycUpjY=
-P:ruby-irb
-V:2.5.5-r0
-A:ppc64le
-S:48882
-I:319488
-T:The Interactive Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881925
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby
-p:cmd:irb
 
 C:Q1cEX4nfpMcqmQ1EA6SETDnOwYijg=
 P:boost-python2
@@ -39839,6 +39919,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557178506
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs ipvsadm=1.29-r0
+
+C:Q1tU4Xo0bmUMeUK8Ox+SnSE22sfLU=
+P:ruby-doc
+V:2.5.7-r0
+A:ppc64le
+S:3379583
+I:61698048
+T:An object-oriented language for quick and easy programming (documentation)
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037328
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+i:docs ruby=2.5.7-r0
 
 C:Q1N3WaSsNq2e7RM9SPJuraPb7Uqoc=
 P:tk-dev
@@ -42607,21 +42702,6 @@ c:70e45f5e60666578ffcfc8bac2c360d2599b8a29
 D:py3-six py3-scandir python3
 i:py-pathlib2=2.3.2-r1 python3
 
-C:Q1+mHuETZ6iWwpiC5LYwNLSOEqAFQ=
-P:ruby-etc
-V:2.5.5-r0
-A:ppc64le
-S:11863
-I:81920
-T:Provides access to information typically stored in UNIX /etc directory
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881924
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-
 C:Q1bI0x9zvtut8YJaFl6Rb2TnnktZU=
 P:collectd-snmp
 V:5.8.1-r1
@@ -43276,21 +43356,6 @@ c:1e85ba7cf47c73eaf15e950267dba27e92ae3d1d
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-ppc64le.so.1 so:libgnutls.so.30 so:libz.so.1
 p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
-C:Q15ISyygnpgkvM5YZblEuf9jQCDIA=
-P:libgcrypt-doc
-V:1.8.4-r2
-A:ppc64le
-S:84333
-I:364544
-T:general purpose crypto library based on the code used in GnuPG (documentation)
-U:http://www.gnupg.org
-L:LGPL-2.1-or-later
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564327680
-c:92381611d07c877dd1469e1f2f6cf5dd45b11730
-i:docs libgcrypt=1.8.4-r2
-
 C:Q1pM8W8vnbLObyE9ctxD793yXO0MY=
 P:apcupsd
 V:3.14.14-r1
@@ -43353,21 +43418,6 @@ t:1557082497
 c:ae20370791fd80c97fe12deb819d7654f52ee023
 D:so:libc.musl-ppc64le.so.1 so:libpcap.so.1 so:libz.so.1
 p:cmd:darkstat
-
-C:Q1yB90/0oqDHk1zenFRcNV09Mf8sM=
-P:ruby-dbm
-V:2.5.5-r0
-A:ppc64le
-S:11142
-I:77824
-T:A Ruby wrapper for the UNIX-style Database Manager Library
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881923
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libgdbm.so.4 so:libgdbm_compat.so.4 so:libruby.so.2.5
 
 C:Q1uDsvw3dBV4KMdFONJtbR8XdB2R8=
 P:imagemagick-perlmagick
@@ -43599,6 +43649,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556980185
 c:c47d9caac9685e1a5d73f5908b1149ca26bdaf72
 D:perl
+
+C:Q1mb9ODsCsUk1F/LP/cvzhbAN1wWM=
+P:faad2
+V:2.9.0-r0
+A:ppc64le
+S:22100
+I:69632
+T:ISO AAC audio decoder
+U:https://github.com/knik0/faad2
+L:GPL-2.0-or-later
+o:faad2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037101
+c:fc0275095ee7d946a66d1f1e4713a943ccc05b78
+D:so:libc.musl-ppc64le.so.1 so:libfaad.so.2
+p:cmd:faad
 
 C:Q1KcMfeL7a6nNlJHTjxCgBUIEayn4=
 P:frotz-doc
@@ -45004,22 +45070,6 @@ t:1559761694
 c:4986033b6fb8abd6f28f0529cad733feae401978
 D:dbus so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3
 
-C:Q1lYwFPBPcFHuBABJl9LHSfooxp1I=
-P:ruby-dev
-V:2.5.5-r0
-A:ppc64le
-S:62790
-I:397312
-T:An object-oriented language for quick and easy programming (development files)
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881923
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby=2.5.5-r0 gmp-dev pkgconfig ruby-libs=2.5.5-r0
-p:pc:ruby-2.5=2.5.0
-
 C:Q1Fkkdy0EEOmIHsouZQoaYkZj9OzY=
 P:iftop
 V:0.17-r7
@@ -45082,21 +45132,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557595542
 c:fe4c19e7c5c074364570c87081754dad299364b4
 D:so:libc.musl-ppc64le.so.1
-
-C:Q1zWEpDX5aCG0ZBsaSRIHMbIXJPfE=
-P:ruby-did_you_mean
-V:2.5.5-r0
-A:ppc64le
-S:36235
-I:348160
-T:Did you mean? experience in Ruby
-U:http://www.ruby-lang.org/en/
-L:MIT
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881924
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby-libs
 
 C:Q1rrs7/MVa8c0f7beVWNdIIngZgFY=
 P:avahi-compat-howl
@@ -46492,21 +46527,6 @@ c:317c2da5d0e9d7549031cd58d592334b83d097cf
 D:so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libdbus-glib-1.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgthread-2.0.so.0 so:libintl.so.8 so:libpolkit-gobject-1.so.0 so:libxml2.so.2
 p:so:libgconf-2.so.4=4.1.5 cmd:gconf-merge-tree cmd:gconftool-2 cmd:gsettings-data-convert cmd:gsettings-schema-convert
 
-C:Q12eAqLfToFyvgPBwiDkznXGD8g9Y=
-P:faad2-doc
-V:2.8.8-r0
-A:ppc64le
-S:2435
-I:24576
-T:ISO AAC audio decoder (documentation)
-U:http://www.audiocoding.com/
-L:GPL-2.0-or-later
-o:faad2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559230004
-c:84db8330aea33de37b7befcd8dfb7e3b340468af
-i:docs faad2=2.8.8-r0
-
 C:Q1elMWYOHvedr441UfYuWCu0PrcDw=
 P:libdvbcsa-dev
 V:1.1.0-r1
@@ -46692,6 +46712,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557128252
 c:3975ed6c4f27b2e8e3396d26277ee54928f7a657
 i:docs lcms=1.19-r8
+
+C:Q1OYX/vPqvwPadJxgDGXvtxt+aL7Q=
+P:ruby-did_you_mean
+V:2.5.7-r0
+A:ppc64le
+S:36318
+I:352256
+T:Did you mean? experience in Ruby
+U:http://www.ruby-lang.org/en/
+L:MIT
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby-libs
 
 C:Q1H2DQGlBC2IvqOnPGBvCTVmW7SnY=
 P:py-django
@@ -49668,6 +49703,21 @@ c:ca70b724787029111b9ef5545543e1d467665bf9
 D:so:libc.musl-ppc64le.so.1 so:libreadline.so.8
 p:so:libodbc.so.2=2.0.0 so:libodbccr.so.2=2.0.0 so:libodbcinst.so.2=2.0.0 cmd:dltest cmd:isql cmd:iusql cmd:odbc_config cmd:odbcinst cmd:slencheck
 
+C:Q1mnP+wgU6BlPNgvcEfLdrJ50ec70=
+P:ruby-webrick
+V:2.5.7-r0
+A:ppc64le
+S:58318
+I:315392
+T:HTTP server toolkit for Ruby
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037334
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ruby
+
 C:Q1i647Hs6Cor7snoC+TR/Jm4qCKY0=
 P:ipsec-tools
 V:0.8.2-r8
@@ -49791,6 +49841,22 @@ t:1557154672
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:py-gtk
 i:gtkman=1.0.1-r0 lang
+
+C:Q1iZXyRGU5Bf+NGWpPOCPY0GhGUVA=
+P:faad2-libs
+V:2.9.0-r0
+A:ppc64le
+S:299520
+I:483328
+T:ISO AAC audio decoder (libraries)
+U:https://github.com/knik0/faad2
+L:GPL-2.0-or-later
+o:faad2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037101
+c:fc0275095ee7d946a66d1f1e4713a943ccc05b78
+D:so:libc.musl-ppc64le.so.1
+p:so:libfaad.so.2=2.0.0 so:libfaad_drm.so.2=2.0.0
 
 C:Q1WTjgSI+lOxV4XCB0kzqeWMGDTIw=
 P:git-p4
@@ -52283,20 +52349,6 @@ m:Matt Smith <mcs@darkregion.net>
 t:1556917681
 c:79c33e50e194e081f2fa95f328f24363e4cd423a
 
-C:Q1GvtBUCZlH4IXMWy0i0MNKy2m7Bc=
-P:faad2-static
-V:2.8.8-r0
-A:ppc64le
-S:350866
-I:753664
-T:ISO AAC audio decoder (static libraries)
-U:http://www.audiocoding.com/
-L:GPL-2.0-or-later
-o:faad2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559230003
-c:84db8330aea33de37b7befcd8dfb7e3b340468af
-
 C:Q1zH3lbM6Nf3yeQw0MD3PWCJmGt2A=
 P:oniguruma
 V:6.9.2-r0
@@ -52312,6 +52364,22 @@ t:1557218962
 c:7dc449abb25bb1ef82ca09d943c99259a483298e
 D:so:libc.musl-ppc64le.so.1
 p:so:libonig.so.5=5.0.0
+
+C:Q1HcTlAhikbd6jCouQcU+vx95lL8E=
+P:ruby
+V:2.5.7-r0
+A:ppc64le
+S:6140
+I:36864
+T:An object-oriented language for quick and easy programming
+U:http://www.ruby-lang.org/en/
+L:Ruby BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037334
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:ca-certificates /bin/sh so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
+p:cmd:erb cmd:gem cmd:ruby
 
 C:Q17swQNnUO1pUUl0xmxpgHFF9gfS4=
 P:py3-crypto
@@ -52970,22 +53038,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556967903
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs ksymoops=2.4.11-r7
-
-C:Q1WH9lJQMeZ7HYh6C+6flduOOS4wc=
-P:ruby-rdoc
-V:2.5.5-r0
-A:ppc64le
-S:573167
-I:2437120
-T:Ruby documentation tool
-U:http://www.ruby-lang.org/en/
-L:Ruby
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881927
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby ruby-json ruby-io-console
-p:cmd:rdoc cmd:ri
 
 C:Q1eelqBtjB98PYKDuAxSt5WYIfx7o=
 P:polkit-gnome
@@ -54059,22 +54111,6 @@ c:b518fdf1579ce9edef6a82c7a50e7ae3eb6db768
 D:so:libc.musl-ppc64le.so.1 so:libskarnet.so.2.8
 p:so:libexecline.so.2.5=2.5.1.0 cmd:background cmd:backtick cmd:cd cmd:define cmd:dollarat cmd:elgetopt cmd:elgetpositionals cmd:elglob cmd:emptyenv cmd:envfile cmd:exec cmd:execlineb cmd:exit cmd:export cmd:fdblock cmd:fdclose cmd:fdmove cmd:fdreserve cmd:fdswap cmd:forbacktickx cmd:foreground cmd:forstdin cmd:forx cmd:getcwd cmd:getpid cmd:heredoc cmd:homeof cmd:if cmd:ifelse cmd:ifte cmd:ifthenelse cmd:importas cmd:loopwhilex cmd:multidefine cmd:multisubstitute cmd:pipeline cmd:piperw cmd:redirfd cmd:runblock cmd:shift cmd:trap cmd:tryexec cmd:umask cmd:unexport cmd:wait cmd:withstdinas
 
-C:Q13wrvyWURtFFFkk5bJvXTH6HncZE=
-P:ruby
-V:2.5.5-r0
-A:ppc64le
-S:6156
-I:36864
-T:An object-oriented language for quick and easy programming
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881930
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ca-certificates /bin/sh so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-p:cmd:erb cmd:gem cmd:ruby
-
 C:Q1IHTJ2QwIcXyPGEmiGBXaN5CZSF8=
 P:kamailio-redis
 V:5.2.4-r0
@@ -54531,6 +54567,21 @@ t:1557261765
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-ppc64le.so.1 so:libgnutls.so.30
 p:rsyslog-lmnsd_gtls=8.1904.0-r0
+
+C:Q1Tw8PVU2Fupxr01gqmYoqRJGc5dE=
+P:faad2-doc
+V:2.9.0-r0
+A:ppc64le
+S:2465
+I:24576
+T:ISO AAC audio decoder (documentation)
+U:https://github.com/knik0/faad2
+L:GPL-2.0-or-later
+o:faad2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037100
+c:fc0275095ee7d946a66d1f1e4713a943ccc05b78
+i:docs faad2=2.9.0-r0
 
 C:Q1b7Tgnb1cywXIWQ+zt8NBcfE2Tcg=
 P:mosh
@@ -58306,6 +58357,21 @@ c:2e9b303e2b31836aa280ac18a5786a92657b9e85
 D:gmp-dev isl=0.18-r0 pkgconfig
 p:pc:isl=0.18
 
+C:Q1mOT4C7KjyolSUNABL/b6J7tIGgI=
+P:faad2-dev
+V:2.9.0-r0
+A:ppc64le
+S:4486
+I:32768
+T:ISO AAC audio decoder (development files)
+U:https://github.com/knik0/faad2
+L:GPL-2.0-or-later
+o:faad2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037100
+c:fc0275095ee7d946a66d1f1e4713a943ccc05b78
+D:faad2-libs=2.9.0-r0
+
 C:Q1SDAlwyzaTzhSq0Q12IicZtRuMts=
 P:libsigc++
 V:2.10.2-r0
@@ -58811,21 +58877,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1569492845
 c:8eb76d4bd14d40aa9f55a2e31968b6d01af8a0f5
 D:dnsmasq
-
-C:Q1JPiT4g5LvlNL3onMzJOHK85Ru7g=
-P:ruby-power_assert
-V:2.5.5-r0
-A:ppc64le
-S:14817
-I:139264
-T:Power Assert for Ruby
-U:http://www.ruby-lang.org/en/
-L:Ruby BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881927
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby-libs
 
 C:Q1lg6cNxFcXZoLbMsevy76S0WQXWw=
 P:bison
@@ -61598,6 +61649,21 @@ t:1557137670
 c:f1119b54fd75c84ffc49276de18427595cd1bf55
 i:docs postgresql-bdr-extension=1.0.2-r4
 
+C:Q1tuaDcRvPfXDgrDgHi0BIEsgcZmw=
+P:ruby-etc
+V:2.5.7-r0
+A:ppc64le
+S:11854
+I:81920
+T:Provides access to information typically stored in UNIX /etc directory
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
+
 C:Q1+N1HRgjROGDcom5+V6QVLxcBEZc=
 P:py-crypto
 V:2.6.1-r3
@@ -62297,6 +62363,21 @@ o:aspell-en
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557127296
 c:8858727755d8ef124e06706a10416da12432c3ef
+
+C:Q1ajs+F+NHOS3UCybM03i+v2iGjww=
+P:ruby-sdbm
+V:2.5.7-r0
+A:ppc64le
+S:14315
+I:81920
+T:A simple file-based key-value store with String keys and values for Ruby
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
 
 C:Q164BkgFqcYSWvokBoDLpm3VFewZs=
 P:rrdtool
@@ -63621,21 +63702,6 @@ t:1556918724
 c:846c41a42aebb90a6388f0bd70cfe26ea3610c67
 D:so:libc.musl-ppc64le.so.1 so:libgssapi.so.3
 
-C:Q1/ZiOH0Xf1vKn5374lb7c64i0UO0=
-P:ruby-bigdecimal
-V:2.5.5-r0
-A:ppc64le
-S:38371
-I:151552
-T:Ruby arbitrary-precision floating point decimal arithmetic
-U:http://www.ruby-lang.org/en/
-L:Ruby
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881923
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby-libs so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-
 C:Q1L2mEb7pkLt0p3P2qfmb+/C11ZsA=
 P:samba-libs
 V:4.10.8-r0
@@ -64190,21 +64256,6 @@ t:1559147396
 c:64bfa6c3e2d61cf866bbcf93259a83f52c567edd
 D:so:libc.musl-ppc64le.so.1
 p:so:liborc-0.4.so.0=0.29.0 so:liborc-test-0.4.so.0=0.29.0
-
-C:Q1BpNx3ukUs0mYi6pyanUQJnjJ8k4=
-P:ruby-webrick
-V:2.5.5-r0
-A:ppc64le
-S:58623
-I:315392
-T:HTTP server toolkit for Ruby
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881928
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby
 
 C:Q1DdNagnUGuPmKtAfkpB6rxrXHFd8=
 P:ethtool
@@ -65221,6 +65272,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557138385
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs itstool=2.0.4-r3
+
+C:Q1jNL1lkhuPFBqMQU8TMqLHqKzJdk=
+P:ruby-json
+V:2.5.7-r0
+A:ppc64le
+S:35667
+I:221184
+T:JSON implementation as a Ruby extension in C
+U:http://www.ruby-lang.org/en/
+L:Ruby
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037333
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
 
 C:Q1vem1pzZjv6Rf4EdSUH8ZP0UHLh4=
 P:kamailio-mysql
@@ -67098,6 +67164,21 @@ c:caec29f551955d6a6392943708652db0f8bc4a17
 D:so:libc.musl-ppc64le.so.1
 p:so:libhavege.so.1=1.1.0 cmd:haveged
 
+C:Q13Aw5xz6QkSTi0Y+QIWb6UTY5+uc=
+P:ruby-io-console
+V:2.5.7-r0
+A:ppc64le
+S:9998
+I:90112
+T:Ruby simple console IO library
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
+
 C:Q1cIhZTzDMKl5BYAIPV5CH/A9CO48=
 P:libwebp
 V:1.0.2-r0
@@ -68175,22 +68256,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566389827
 c:ca30a4d858971b462e89089c57353be276d2f8c3
 D:collectd so:libc.musl-ppc64le.so.1 so:libmosquitto.so.1
-
-C:Q1eeB36YEgfMyOS9qGR/klR+097kA=
-P:libgcrypt-dev
-V:1.8.4-r2
-A:ppc64le
-S:22864
-I:114688
-T:general purpose crypto library based on the code used in GnuPG (development files)
-U:http://www.gnupg.org
-L:LGPL-2.1-or-later
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564327680
-c:92381611d07c877dd1469e1f2f6cf5dd45b11730
-D:libgpg-error-dev libgcrypt=1.8.4-r2
-p:cmd:libgcrypt-config
 
 C:Q1+ZfXI2DT1vA6Q5MJi8xRCHkgIXI=
 P:lua-posix-doc
@@ -75192,21 +75257,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557118975
 c:ecb4bb608e9692c4d428aa3e87e2f8955b47422b
 
-C:Q1h+4HsfnbbOgiOmC8aeubWiQghmo=
-P:ruby-json
-V:2.5.5-r0
-A:ppc64le
-S:35580
-I:221184
-T:JSON implementation as a Ruby extension in C
-U:http://www.ruby-lang.org/en/
-L:Ruby
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881926
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-
 C:Q1R8Bi0/2o8LH8HmizBnGGJi4BbEc=
 P:mini_httpd-doc
 V:1.30-r0
@@ -77648,6 +77698,21 @@ t:1559145263
 c:859b9774f3ef4973c2b3ca4ecf8ba7834e2b7247
 D:py-django
 
+C:Q1Xg8vlUhKiyN1twYVANIUu9UUjOs=
+P:ruby-gdbm
+V:2.5.7-r0
+A:ppc64le
+S:12017
+I:77824
+T:Ruby extension for GNU dbm
+U:http://www.ruby-lang.org/en/
+L:BSD-2-Clause
+o:ruby
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037332
+c:9f704bf9da4bdb94ea9e7bcee0259b0b5f8f937d
+D:so:libc.musl-ppc64le.so.1 so:libgdbm.so.4 so:libruby.so.2.5
+
 C:Q1Q4D0TbxhVmcaKCutBZhe7/eeLrw=
 P:valgrind-doc
 V:3.15.0-r0
@@ -77952,21 +78017,6 @@ o:tunnel
 m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 t:1557164501
 c:08a6acf23e0c40f676419a3013101869937da695
-
-C:Q1YpW3DuiHiG3bRhzyBMhs4CXlAo4=
-P:ruby-minitest
-V:2.5.5-r0
-A:ppc64le
-S:75079
-I:376832
-T:Ruby suite of testing facilities
-U:http://www.ruby-lang.org/en/
-L:MIT
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881926
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:ruby
 
 C:Q1RYOGu85G5ymLg8t7rqbrDrHZpp0=
 P:lua5.3-mosquitto
@@ -78877,22 +78927,6 @@ t:1557130343
 c:26265d18308a746432aa6415ac98c3d700c1ff01
 i:docs terminus-font=4.47-r0
 
-C:Q193cGftuzkvL/RvrgRMK7l2+230w=
-P:faad2
-V:2.8.8-r0
-A:ppc64le
-S:22118
-I:69632
-T:ISO AAC audio decoder
-U:http://www.audiocoding.com/
-L:GPL-2.0-or-later
-o:faad2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559230004
-c:84db8330aea33de37b7befcd8dfb7e3b340468af
-D:so:libc.musl-ppc64le.so.1 so:libfaad.so.2
-p:cmd:faad
-
 C:Q1nGzCHM6X48fhsI5kf7d3ChghiBs=
 P:wpa_supplicant-openrc
 V:2.8-r3
@@ -79439,6 +79473,20 @@ t:1557261765
 c:f51e4340045546f8b09778905e803f50aee3b470
 D:rsyslog=8.1904.0-r0 so:libc.musl-ppc64le.so.1
 p:rsyslog-omuxsock=8.1904.0-r0
+
+C:Q1TnLXtxTtV2nCXKAmYiCEETn5kf0=
+P:libgcrypt-static
+V:1.8.5-r0
+A:ppc64le
+S:484422
+I:1519616
+T:libgcrypt static libraries
+U:https://www.gnupg.org/
+L:LGPL-2.1-or-later
+o:libgcrypt
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037034
+c:82094160b018d45459e7cbf0a71886a3b4b8d88e
 
 C:Q14dCs7O9g/sAutW7A4fg6gvgeupE=
 P:perl-datetime-format-natural-doc
@@ -80141,22 +80189,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557142911
 c:db74f01ed163af12eebbc449b6da6f7eddc8b3af
 i:docs perl-test-manifest=2.021-r0
-
-C:Q16T8Jgw10TVcMeHi1R4jpQgaNtXU=
-P:faad2-libs
-V:2.8.8-r0
-A:ppc64le
-S:298997
-I:483328
-T:ISO AAC audio decoder (libraries)
-U:http://www.audiocoding.com/
-L:GPL-2.0-or-later
-o:faad2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559230004
-c:84db8330aea33de37b7befcd8dfb7e3b340468af
-D:so:libc.musl-ppc64le.so.1
-p:so:libfaad.so.2=2.0.0 so:libfaad_drm.so.2=2.0.0
 
 C:Q1Gq+l6cG+ej3Y0zEwh9E6B14OSZE=
 P:perl-path-tiny-doc
@@ -82069,22 +82101,6 @@ o:glib
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560758658
 c:35653be643e562d3fa63f89a3099278768b789ff
-
-C:Q14D7c+d1GQ5w0Dj/k+hfzY3qSDnI=
-P:libgcrypt
-V:1.8.4-r2
-A:ppc64le
-S:385344
-I:860160
-T:general purpose crypto library based on the code used in GnuPG
-U:http://www.gnupg.org
-L:LGPL-2.1-or-later
-o:libgcrypt
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564327680
-c:92381611d07c877dd1469e1f2f6cf5dd45b11730
-D:so:libc.musl-ppc64le.so.1 so:libgpg-error.so.0
-p:so:libgcrypt.so.20=20.2.4 cmd:dumpsexp cmd:hmac256 cmd:mpicalc
 
 C:Q1YKMlrD1bCpWx4jQu3aQDCtBvedM=
 P:btrfs-progs
@@ -84862,21 +84878,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556987459
 c:ecd55fecbd4d8bb17eb7167e1b32568f73fbd632
 
-C:Q15WCPZ75Vn9EH/drYd31PrWFghyw=
-P:ruby-io-console
-V:2.5.5-r0
-A:ppc64le
-S:10022
-I:90112
-T:Ruby simple console IO library
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881925
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.5
-
 C:Q1hgMJuEjJdBC25pwClMa7HGGfmu8=
 P:http-parser
 V:2.9.2-r0
@@ -85446,21 +85447,6 @@ t:1568703613
 c:3037ceeb75de0f253b86db6e56d7e28eeb95cbf6
 D:so:libc.musl-ppc64le.so.1 so:libsybdb.so.5
 
-C:Q1DHTebU8aEesZWJWHgZRwWcUS4Zs=
-P:ruby-gdbm
-V:2.5.5-r0
-A:ppc64le
-S:12004
-I:77824
-T:Ruby extension for GNU dbm
-U:http://www.ruby-lang.org/en/
-L:BSD-2-Clause
-o:ruby
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1556881925
-c:228ad274b6dd232df47e251fe4ebdbe787d5a933
-D:so:libc.musl-ppc64le.so.1 so:libgdbm.so.4 so:libruby.so.2.5
-
 C:Q17Xx24KAcy9qmBSZD+kiJZ9xFEYA=
 P:git-cvs
 V:2.22.0-r0
@@ -85663,6 +85649,20 @@ t:1557136335
 c:e4a3ab2551a3b1503c6732ac35a28c5cde73fbc3
 D:gzip so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1
 p:cmd:lynx
+
+C:Q1tgvVEh9DLrMXYbe3Obq+oWFkCfQ=
+P:faad2-static
+V:2.9.0-r0
+A:ppc64le
+S:351735
+I:753664
+T:ISO AAC audio decoder (static libraries)
+U:https://github.com/knik0/faad2
+L:GPL-2.0-or-later
+o:faad2
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571037100
+c:fc0275095ee7d946a66d1f1e4713a943ccc05b78
 
 C:Q1SrfTqhWZV3rSuTnQSX1CEEgjjY8=
 P:gettext-dbg

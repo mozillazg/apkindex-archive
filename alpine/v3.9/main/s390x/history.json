@@ -5758,7 +5758,8 @@
     "sqlite-doc": {
       "versions": {
         "3.26.0-r3": 1546520877,
-        "3.28.0-r0": 1559757877
+        "3.28.0-r0": 1559757877,
+        "3.28.0-r1": 1571038491
       },
       "origin": "sqlite"
     },
@@ -10702,14 +10703,18 @@
     "libgcrypt-dev": {
       "versions": {
         "1.8.4-r0": 1546521498,
-        "1.8.4-r1": 1564327898
+        "1.8.4-r1": 1564327898,
+        "1.8.5-r0": 1571038213
       },
       "origin": "libgcrypt",
       "dependencies": [
         "libgpg-error-dev",
-        "libgcrypt=1.8.4-r1"
+        "libgcrypt=1.8.5-r0",
+        "pc:gpg-error",
+        "pkgconfig"
       ],
       "provides": [
+        "pc:libgcrypt=1.8.5",
         "cmd:libgcrypt-config"
       ]
     },
@@ -18613,12 +18618,13 @@
     "sqlite-dev": {
       "versions": {
         "3.26.0-r3": 1546520877,
-        "3.28.0-r0": 1559757879
+        "3.28.0-r0": 1559757879,
+        "3.28.0-r1": 1571038492
       },
       "origin": "sqlite",
       "dependencies": [
         "pkgconfig",
-        "sqlite-libs=3.28.0-r0"
+        "sqlite-libs=3.28.0-r1"
       ],
       "provides": [
         "pc:sqlite3=3.28.0"
@@ -34930,7 +34936,8 @@
     "sqlite-libs": {
       "versions": {
         "3.26.0-r3": 1546520877,
-        "3.28.0-r0": 1559757880
+        "3.28.0-r0": 1559757880,
+        "3.28.0-r1": 1571038493
       },
       "origin": "sqlite",
       "dependencies": [
@@ -43072,7 +43079,8 @@
     "libgcrypt-doc": {
       "versions": {
         "1.8.4-r0": 1546521498,
-        "1.8.4-r1": 1564327898
+        "1.8.4-r1": 1564327898,
+        "1.8.5-r0": 1571038214
       },
       "origin": "libgcrypt"
     },
@@ -59424,7 +59432,8 @@
     "sqlite-static": {
       "versions": {
         "3.26.0-r3": 1546520877,
-        "3.28.0-r0": 1559757876
+        "3.28.0-r0": 1559757876,
+        "3.28.0-r1": 1571038490
       },
       "origin": "sqlite"
     },
@@ -62708,7 +62717,8 @@
     "sqlite": {
       "versions": {
         "3.26.0-r3": 1546520877,
-        "3.28.0-r0": 1559757881
+        "3.28.0-r0": 1559757881,
+        "3.28.0-r1": 1571038495
       },
       "origin": "sqlite",
       "dependencies": [
@@ -65154,7 +65164,8 @@
     "libgcrypt": {
       "versions": {
         "1.8.4-r0": 1546521499,
-        "1.8.4-r1": 1564327899
+        "1.8.4-r1": 1564327899,
+        "1.8.5-r0": 1571038214
       },
       "origin": "libgcrypt",
       "dependencies": [
@@ -65162,7 +65173,7 @@
         "so:libgpg-error.so.0"
       ],
       "provides": [
-        "so:libgcrypt.so.20=20.2.4",
+        "so:libgcrypt.so.20=20.2.5",
         "cmd:dumpsexp",
         "cmd:hmac256",
         "cmd:mpicalc"
@@ -73900,7 +73911,7 @@
       },
       "libgcrypt.so.20": {
         "package": "libgcrypt",
-        "version": "20.2.4"
+        "version": "20.2.5"
       },
       "libltdl.so.7": {
         "package": "libltdl",
