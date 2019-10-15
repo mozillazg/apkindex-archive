@@ -10147,14 +10147,16 @@
     },
     "bacula-client": {
       "versions": {
-        "9.4.3-r0": 1557077872
+        "9.4.3-r0": 1557077872,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula",
       "dependencies": [
+        "/bin/sh",
         "so:libacl.so.1",
-        "so:libbac-9.4.3.so",
-        "so:libbaccfg-9.4.3.so",
-        "so:libbacfind-9.4.3.so",
+        "so:libbac-9.4.4.so",
+        "so:libbaccfg-9.4.4.so",
+        "so:libbacfind-9.4.4.so",
         "so:libc.musl-ppc64le.so.1",
         "so:liblzo2.so.2",
         "so:libncursesw.so.6",
@@ -19603,7 +19605,8 @@
     },
     "bacula-pgsql": {
       "versions": {
-        "9.4.3-r0": 1557077871
+        "9.4.3-r0": 1557077871,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula",
       "dependencies": [
@@ -19612,7 +19615,7 @@
         "so:libpq.so.5"
       ],
       "provides": [
-        "so:libbaccats-postgresql-9.4.3.so=0"
+        "so:libbaccats-postgresql-9.4.4.so=0"
       ]
     },
     "squid-lang-bg": {
@@ -21101,7 +21104,8 @@
     },
     "bacula-mysql": {
       "versions": {
-        "9.4.3-r0": 1557077871
+        "9.4.3-r0": 1557077871,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula",
       "dependencies": [
@@ -21110,7 +21114,7 @@
         "so:libmariadb.so.3"
       ],
       "provides": [
-        "so:libbaccats-mysql-9.4.3.so=0"
+        "so:libbaccats-mysql-9.4.4.so=0"
       ]
     },
     "qemu-audio-oss": {
@@ -47137,7 +47141,8 @@
     },
     "bacula-libs": {
       "versions": {
-        "9.4.3-r0": 1557077872
+        "9.4.3-r0": 1557077872,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula",
       "dependencies": [
@@ -47149,11 +47154,11 @@
       ],
       "provides": [
         "so:bpipe-fd.so=0",
-        "so:libbac-9.4.3.so=0",
-        "so:libbaccfg-9.4.3.so=0",
-        "so:libbacfind-9.4.3.so=0",
-        "so:libbacsd-9.4.3.so=0",
-        "so:libbacsql-9.4.3.so=0"
+        "so:libbac-9.4.4.so=0",
+        "so:libbaccfg-9.4.4.so=0",
+        "so:libbacfind-9.4.4.so=0",
+        "so:libbacsd-9.4.4.so=0",
+        "so:libbacsql-9.4.4.so=0"
       ]
     },
     "sipcalc": {
@@ -50049,7 +50054,8 @@
     },
     "bacula-sqlite": {
       "versions": {
-        "9.4.3-r0": 1557077872
+        "9.4.3-r0": 1557077872,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula",
       "dependencies": [
@@ -50058,7 +50064,7 @@
         "so:libsqlite3.so.0"
       ],
       "provides": [
-        "so:libbaccats-sqlite3-9.4.3.so=0"
+        "so:libbaccats-sqlite3-9.4.4.so=0"
       ]
     },
     "collectd-redis": {
@@ -63455,7 +63461,8 @@
     },
     "bacula-doc": {
       "versions": {
-        "9.4.3-r0": 1557077871
+        "9.4.3-r0": 1557077871,
+        "9.4.4-r1": 1571130844
       },
       "origin": "bacula"
     },
@@ -68907,16 +68914,17 @@
     },
     "bacula": {
       "versions": {
-        "9.4.3-r0": 1557077872
+        "9.4.3-r0": 1557077872,
+        "9.4.4-r1": 1571130845
       },
       "origin": "bacula",
       "dependencies": [
         "/bin/sh",
-        "so:libbac-9.4.3.so",
-        "so:libbaccfg-9.4.3.so",
-        "so:libbacfind-9.4.3.so",
-        "so:libbacsd-9.4.3.so",
-        "so:libbacsql-9.4.3.so",
+        "so:libbac-9.4.4.so",
+        "so:libbaccfg-9.4.4.so",
+        "so:libbacfind-9.4.4.so",
+        "so:libbacsd-9.4.4.so",
+        "so:libbacsql-9.4.4.so",
         "so:libc.musl-ppc64le.so.1",
         "so:liblzo2.so.2",
         "so:libstdc++.so.6",
@@ -78139,6 +78147,38 @@
       },
       "libnfdump-1.6.18.so": {
         "package": "nfdump",
+        "version": "0"
+      },
+      "libbac-9.4.4.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbaccfg-9.4.4.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacfind-9.4.4.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacsd-9.4.4.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacsql-9.4.4.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbaccats-mysql-9.4.4.so": {
+        "package": "bacula-mysql",
+        "version": "0"
+      },
+      "libbaccats-postgresql-9.4.4.so": {
+        "package": "bacula-pgsql",
+        "version": "0"
+      },
+      "libbaccats-sqlite3-9.4.4.so": {
+        "package": "bacula-sqlite",
         "version": "0"
       }
     },
