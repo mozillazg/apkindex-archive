@@ -932,6 +932,22 @@ c:32d1545407513988d0b68c7972918fad65715e5f
 D:freetype=2.10.0-r0 pc:libpng pc:zlib pkgconfig
 p:pc:freetype2=23.0.17 cmd:freetype-config
 
+C:Q1j5JKN5ZOC0BcHstEJFOpCU7nv6w=
+P:bacula-sqlite
+V:9.4.4-r2
+A:x86_64
+S:15057
+I:94208
+T:Bacula SQLite backend
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:bacula so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
+p:so:libbaccats-sqlite3-9.4.4.so=0
+
 C:Q1wWNfh+ErOyJzTX6KMb83e4IE62E=
 P:lua-sec-doc
 V:0.7-r1
@@ -1053,22 +1069,6 @@ t:1556882306
 c:275ea7ae07c55e87f434f87f2c874aa64350a05a
 D:so:libc.musl-x86_64.so.1
 p:so:liblzma.so.5=5.2.4
-
-C:Q1IfIyizWXvlFuToo4qMNgHU58o4w=
-P:bacula-client
-V:9.4.4-r1
-A:x86_64
-S:127169
-I:352256
-T:Bacula client
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:/bin/sh so:libacl.so.1 so:libbac-9.4.4.so so:libbaccfg-9.4.4.so so:libbacfind-9.4.4.so so:libc.musl-x86_64.so.1 so:liblzo2.so.2 so:libncursesw.so.6 so:libstdc++.so.6 so:libz.so.1
-p:cmd:bacula cmd:bacula-fd cmd:bconsole cmd:btraceback
 
 C:Q14x8G8r7s8jklkYZVttp3HwyEPVs=
 P:syslog-ng-geoip
@@ -4394,6 +4394,22 @@ c:afdbfca33da6efdf88e383effbd4a75795ca1534
 D:py2-oauthlib py2-requests python2
 i:py-requests-oauthlib=1.0.0-r1 python2
 
+C:Q10+U32iOHvGOE7ogC/tNOidVf570=
+P:bacula-libs
+V:9.4.4-r2
+A:x86_64
+S:463806
+I:1163264
+T:Bacula libraries
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:so:bpipe-fd.so=0 so:libbac-9.4.4.so=0 so:libbaccfg-9.4.4.so=0 so:libbacfind-9.4.4.so=0 so:libbacsd-9.4.4.so=0 so:libbacsql-9.4.4.so=0
+
 C:Q1BGXf60On22kPTny3k48qgJPoeHs=
 P:libgpg-error-static
 V:1.36-r2
@@ -7101,22 +7117,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557078424
 c:2f2bf4fe6b74a198b3b236ffb09e4a52f6c612d6
 i:docs perl-struct-dumb=0.09-r0
-
-C:Q1ZaWfMpgKmgUGdQIdIc0liRpDVR0=
-P:bacula
-V:9.4.4-r1
-A:x86_64
-S:601299
-I:1847296
-T:Enterprise ready, network based backup program
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:/bin/sh so:libbac-9.4.4.so so:libbaccfg-9.4.4.so so:libbacfind-9.4.4.so so:libbacsd-9.4.4.so so:libbacsql-9.4.4.so so:libc.musl-x86_64.so.1 so:liblzo2.so.2 so:libstdc++.so.6 so:libz.so.1
-p:cmd:bacula-dir cmd:bacula-sd cmd:bbconsjson cmd:bcopy cmd:bdirjson cmd:bextract cmd:bfdjson cmd:bls cmd:bregex cmd:bscan cmd:bsdjson cmd:bsmtp cmd:btape cmd:bwild cmd:dbcheck
 
 C:Q1hp/6qbBUqZd1nD48C7z4zruoKp4=
 P:uwsgi-logpipe
@@ -24055,22 +24055,6 @@ c:532ad69c86ff75989b44487546bf8d129d69257b
 D:lua5.2-mosquitto
 i:lua5.2 lua-mqtt-publish=0.3-r0
 
-C:Q1BP2DjVwsgWd175IN7VtqvLWhZF8=
-P:bacula-libs
-V:9.4.4-r1
-A:x86_64
-S:463832
-I:1163264
-T:Bacula libraries
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:so:bpipe-fd.so=0 so:libbac-9.4.4.so=0 so:libbaccfg-9.4.4.so=0 so:libbacfind-9.4.4.so=0 so:libbacsd-9.4.4.so=0 so:libbacsql-9.4.4.so=0
-
 C:Q1lSdxF/pG9ZqJSrLyV9u7ORV07LQ=
 P:postgresql-bdr-extension
 V:1.0.2-r4
@@ -27047,22 +27031,6 @@ c:dba5821d653d6b762e22ac858ca07a88cfce087a
 k:100
 p:lua-doc
 i:docs lua5.1=5.1.5-r7
-
-C:Q1ozP+z6UmG8oNcyWdgkUMn5++v6E=
-P:bacula-pgsql
-V:9.4.4-r1
-A:x86_64
-S:21227
-I:106496
-T:Bacula PGSQL backend
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:bacula so:libc.musl-x86_64.so.1 so:libpq.so.5
-p:so:libbaccats-postgresql-9.4.4.so=0
 
 C:Q1pQ7iVaF5h+1meHDcE/B9eEvzZhs=
 P:dhcrelay-openrc
@@ -33071,6 +33039,22 @@ m:jv <jens@eisfair.org>
 t:1557151428
 c:6ff93b0ca657702b566e34b208cf63be61ffb60f
 D:so:libc.musl-x86_64.so.1 so:libpython2.7.so.1.0 so:libsyslog-ng-3.19.so.0
+
+C:Q1B09VghjIjiY9O8aVdqmHSMTokNA=
+P:bacula
+V:9.4.4-r2
+A:x86_64
+S:601341
+I:1847296
+T:Enterprise ready, network based backup program
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:/bin/sh so:libbac-9.4.4.so so:libbaccfg-9.4.4.so so:libbacfind-9.4.4.so so:libbacsd-9.4.4.so so:libbacsql-9.4.4.so so:libc.musl-x86_64.so.1 so:liblzo2.so.2 so:libstdc++.so.6 so:libz.so.1
+p:cmd:bacula-dir cmd:bacula-sd cmd:bbconsjson cmd:bcopy cmd:bdirjson cmd:bextract cmd:bfdjson cmd:bls cmd:bregex cmd:bscan cmd:bsdjson cmd:bsmtp cmd:btape cmd:bwild cmd:dbcheck
 
 C:Q1WL2Ks/4CCtMrQs7+0+jKvrVc6/M=
 P:gnuchess-doc
@@ -41184,22 +41168,6 @@ t:1562595701
 c:4018db3cdac1d0eef1ad039d1a9120fa79e04b58
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libpcap.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:tcpflow
-
-C:Q1ukmkxs+r+FRxXl31c96c3uOwC34=
-P:bacula-sqlite
-V:9.4.4-r1
-A:x86_64
-S:14980
-I:94208
-T:Bacula SQLite backend
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:bacula so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
-p:so:libbaccats-sqlite3-9.4.4.so=0
 
 C:Q1i4EDQOEBtwPvUgFZXDwQ1mnayL0=
 P:perl-set-intspan-doc
@@ -54427,6 +54395,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557129349
 c:1e8cc3b3a597f86f4034ff01432996cecd204882
 i:docs perl-xml-simple=2.25-r0
+
+C:Q1XSMc8oMHDpMvQ2nV6CcK6JtK0BM=
+P:bacula-mysql
+V:9.4.4-r2
+A:x86_64
+S:16983
+I:90112
+T:Bacula MySQL backend
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:bacula so:libc.musl-x86_64.so.1 so:libmariadb.so.3
+p:so:libbaccats-mysql-9.4.4.so=0
 
 C:Q1PoVfSiPww5A9uBKDJGJ2kgDrjGM=
 P:clamav-daemon-openrc
@@ -71208,6 +71192,22 @@ t:1560010398
 c:44ffb94a050b51e97f409268c1eb51e3e43b4545
 D:pgpool=3.7.9-r0
 
+C:Q1uTIwqZ5U9CAddcO6MoJo7Lu++/8=
+P:bacula-pgsql
+V:9.4.4-r2
+A:x86_64
+S:21244
+I:106496
+T:Bacula PGSQL backend
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:bacula so:libc.musl-x86_64.so.1 so:libpq.so.5
+p:so:libbaccats-postgresql-9.4.4.so=0
+
 C:Q1ugPKyxNMSVRu31Sx/bbIj/sCMdI=
 P:xf86-video-r128
 V:6.12.0-r0
@@ -77665,22 +77665,6 @@ c:a93510d1c69bc8f6e6fd0e2781ffcad140585f08
 D:logrotate /bin/sh so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdb-5.3.so so:libgcc_s.so.1 so:libltdl.so.7 so:libssl.so.1.1 so:libstdc++.so.6
 p:cmd:purge cmd:squid cmd:squidclient
 
-C:Q1bqN1a3zE+0L8q5y4NwgQ+/VmsaU=
-P:bacula-mysql
-V:9.4.4-r1
-A:x86_64
-S:16973
-I:90112
-T:Bacula MySQL backend
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-D:bacula so:libc.musl-x86_64.so.1 so:libmariadb.so.3
-p:so:libbaccats-mysql-9.4.4.so=0
-
 C:Q1I2STLSvHQ0QfwTYcZuavZlCoQec=
 P:perl-class-singleton
 V:1.5-r0
@@ -78325,6 +78309,22 @@ t:1557039685
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-x86_64.so.1
 p:cmd:bcrelay cmd:pptpctrl cmd:pptpd
+
+C:Q1d0ZaA9QDoWjLVj3G4NiECbmFiTE=
+P:bacula-client
+V:9.4.4-r2
+A:x86_64
+S:127033
+I:352256
+T:Bacula client
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+D:so:libacl.so.1 so:libbac-9.4.4.so so:libbaccfg-9.4.4.so so:libbacfind-9.4.4.so so:libc.musl-x86_64.so.1 so:liblzo2.so.2 so:libncursesw.so.6 so:libstdc++.so.6 so:libz.so.1
+p:cmd:bacula cmd:bacula-fd cmd:bconsole cmd:btraceback
 
 C:Q1GPQi/SjSiQEXhQ19Qv7/YB8kFgI=
 P:mosquitto-openrc
@@ -82741,6 +82741,21 @@ t:1556990847
 c:ee4ae65f17907114cde71a08fedb1a074b727ec2
 i:docs talloc=2.2.0-r0
 
+C:Q1P2F1iHHefc9iCGrGtkh/HOJXcOI=
+P:bacula-doc
+V:9.4.4-r2
+A:x86_64
+S:152950
+I:507904
+T:Enterprise ready, network based backup program (documentation)
+U:http://www.bacula.org
+L:AGPL-3.0
+o:bacula
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1571230096
+c:8d79c46361190d73f52ee117fa8328accc3a994e
+i:docs bacula=9.4.4-r2
+
 C:Q1dMbcC/0I/16QUrovNcMA7dNzgRw=
 P:jack-dev
 V:1.9.12-r1
@@ -85834,21 +85849,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557153711
 c:dd3f3d418993f75feb29252fffebcf5a7d9e98ea
 D:so:libc.musl-x86_64.so.1
-
-C:Q1VCu/yK4vC15XaEh+XQ/k+B9T+MI=
-P:bacula-doc
-V:9.4.4-r1
-A:x86_64
-S:152957
-I:507904
-T:Enterprise ready, network based backup program (documentation)
-U:http://www.bacula.org
-L:AGPL-3.0
-o:bacula
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1571130844
-c:6d33e5afd2812cfcc706a8faaedf788273749b4f
-i:docs bacula=9.4.4-r1
 
 C:Q1NeCGqrSGzM5KkWXhrvXidSxG8KQ=
 P:xf86-video-savage
