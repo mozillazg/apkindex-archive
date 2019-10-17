@@ -296,6 +296,21 @@ t:1557148813
 c:b5452acd31e7f9fd4d1050e1b27d8abb6eadcf28
 i:docs perl-list-utilsby=0.11-r0
 
+C:Q167JDPNwf2/J5YPJqHSGk2aZiWdE=
+P:openresolv
+V:3.9.2-r0
+A:aarch64
+S:15052
+I:94208
+T:A framework for managing DNS information
+U:https://roy.marples.name/projects/openresolv
+L:BSD
+o:openresolv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326125
+c:4f9f44d15db0b9181eceec86c951f7426e15ba93
+p:cmd:resolvconf
+
 C:Q1jyT2H8+r8asZamlyHKfRg6mNnA0=
 P:gtk3-xfce-engine
 V:3.2.0-r2
@@ -551,6 +566,21 @@ t:1557244312
 c:a09eb83bf131ec19924bc89e8d9bff92f79d6511
 i:docs f2fs-tools=1.12.0-r0
 
+C:Q1uMJlboHhw9GTXDdwZtzaf7neHQw=
+P:mysql-bench
+V:10.3.18-r0
+A:aarch64
+S:1194
+I:4096
+T:Dummy package for mysql-bench migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325188
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-client
+
 C:Q1vFlx/wSHp25eqJCRFOGPt4owOlM=
 P:librrd
 V:1.7.2-r0
@@ -627,20 +657,21 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1557180683
 c:e92f3a421240a849e7be52c15d9448419891c2ae
 
-C:Q1oXbBjxmmYRcb7Ol5jGkuDcwquXo=
-P:zfs-doc
-V:0.8.1-r0
+C:Q1sh85cNp1en/uWRbzv9qSN/ZpEu4=
+P:mariadb-dev
+V:10.3.18-r0
 A:aarch64
-S:140811
-I:208896
-T:ZFS for Linux (documentation)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
+S:1217204
+I:5816320
+T:A fast SQL database server (development files)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840266
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-i:docs zfs=0.8.1-r0
+t:1571325184
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:openssl-dev zlib-dev mariadb-connector-c-dev mariadb-embedded=10.3.18-r0 pkgconfig
+p:mysql-dev=10.3.18-r0
 
 C:Q1NP9GgfJv0yyY8R59ZVTapZO2l2A=
 P:libnotify
@@ -1598,22 +1629,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-aarch64.so.1 so:libglib-2.0.so.0
 p:so:libfam.so.0=0.0.0 so:libgamin-1.so.0=0.1.10
 
-C:Q1tmk8WsmeS4ldu6zFJj73WUXInoo=
-P:sshguard
-V:2.2.0-r0
-A:aarch64
-S:360927
-I:1568768
-T:Log monitor that blocks with iptables on bad behaviour
-U:https://www.sshguard.net
-L:BSD
-o:sshguard
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557259043
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:iptables so:libc.musl-aarch64.so.1
-p:cmd:sshguard
-
 C:Q1ZmyapiXrg6+p6cvMwjsZJTonQzI=
 P:py-redis
 V:3.2.1-r0
@@ -1916,6 +1931,21 @@ t:1557205242
 c:0c33d2f1956fdd0c3045b70d9351b8b7f07ddcc5
 D:pkgconfig gnutls-dev libidn-dev libasyncns-dev check-dev autoconf loudmouth=1.5.3-r1 pc:glib-2.0
 p:pc:loudmouth-1.0=1.5.3
+
+C:Q1PcOF5myAQqFYEmwolnHj/W7qZsA=
+P:linux-virt
+V:4.19.79-r0
+A:aarch64
+S:16794326
+I:57401344
+T:Linux vanilla kernel
+U:http://kernel.org
+L:GPL-2.0
+o:linux-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571322822
+c:245481b9ed4ad794dfdda00dcded94065a2aea87
+D:mkinitfs
 
 C:Q1Pg8S9i8R0AALkkQqeyWpzDDGpjs=
 P:perl-digest-hmac
@@ -2787,21 +2817,6 @@ t:1560759540
 c:0db404de2509cf2630edad83c9b948f478f14003
 D:qemu so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libstdc++.so.6 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libz.so.1
 p:cmd:qemu-system-tricore
-
-C:Q1sjTrEKb3Kk1CUIaijAiPnT+hmT4=
-P:mysql-bench
-V:10.3.17-r0
-A:aarch64
-S:1195
-I:4096
-T:Dummy package for mysql-bench migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156758
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-client
 
 C:Q1k602UysPdCaSBaO7Q16GA9nlxu8=
 P:squid-lang-nl
@@ -5322,6 +5337,22 @@ t:1557224476
 c:e7c2b733093a1b92150f7ee4ee6bf87ad07a11dc
 i:docs ethtool=4.19-r0
 
+C:Q1SdgejDz43BnHzOdQK0cp916ljlg=
+P:mariadb-client
+V:10.3.18-r0
+A:aarch64
+S:7196756
+I:29618176
+T:Client for the MariaDB database
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325185
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common=10.3.18-r0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:myisam_ftdump cmd:mysql cmd:mysql_find_rows cmd:mysql_fix_extensions cmd:mysql_waitpid cmd:mysqlaccess cmd:mysqladmin cmd:mysqlcheck cmd:mysqldump cmd:mysqldumpslow cmd:mysqlimport cmd:mysqlshow
+
 C:Q1OXHBkkoG5hy+4vR5FG4NJpLNsSk=
 P:grub-dev
 V:2.02-r17
@@ -5609,6 +5640,21 @@ t:1560759535
 c:0db404de2509cf2630edad83c9b948f478f14003
 D:qemu so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-hppa
+
+C:Q1968EEH4epwI6gD4lbvEXLX9qYIY=
+P:zfs-vanilla-dev
+V:4.19.79-r1
+A:aarch64
+S:432903
+I:3477504
+T:ZFS for Linux (development files)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571323921
+c:3117b02315b911c86bf7f10ef9df72f00a750601
+D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-vanilla-dev=4.19.79-r0
 
 C:Q1OUuELtnwQZN1oG9oLM+fGVvOEgA=
 P:nmap-ncat
@@ -7018,6 +7064,22 @@ t:1570820219
 c:d5f87185a9e0878348a7b8340fbff4677e23d996
 i:docs sqlite=3.28.0-r1
 
+C:Q1HfxZVtQ4EDomEEjkodPZh3Qw3LM=
+P:e2fsprogs-libs
+V:1.45.2-r1
+A:aarch64
+S:206974
+I:462848
+T:Standard Ext2/3/4 filesystem utilities (libraries)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326086
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+D:so:libc.musl-aarch64.so.1 so:libcom_err.so.2
+p:so:libe2p.so.2=2.3 so:libext2fs.so.2=2.4 so:libss.so.2=2.0
+
 C:Q1XZqgLimr8h9ZB3A3NLGgAZqFMEE=
 P:libnice-doc
 V:0.1.16-r0
@@ -7384,6 +7446,22 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1566455953
 c:1aa06c833e841ee5eb8c865d2392cf8c2a83552e
 D:kamailio so:libc.musl-aarch64.so.1 so:libsctp.so.1
+
+C:Q1uS+uSLhhChe+JTKKfJOuC/L0HAw=
+P:zfs-utils-py
+V:0.8.2-r0
+A:aarch64
+S:18360
+I:86016
+T:ZFS for Linux (python utils)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324372
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:python3
+p:cmd:arc_summary cmd:arcstat cmd:dbufstat
 
 C:Q1C5VQloB8Qh+1MbckVXGLnUxisDg=
 P:arm-trusted-firmware
@@ -8095,6 +8173,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libdvbpsi=1.3.2-r0 pkgconfig
 p:pc:libdvbpsi=1.3.2
 
+C:Q1F898sRBZy/bUV4dTFpyHUjwd9VM=
+P:e2fsprogs-doc
+V:1.45.2-r1
+A:aarch64
+S:84788
+I:184320
+T:Standard Ext2/3/4 filesystem utilities (documentation)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326086
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+i:docs e2fsprogs=1.45.2-r1
+
 C:Q1B7n+OIfkql/jH/Ij2Ow+CZmuD7Y=
 P:lxc-templates-legacy-alpine
 V:3.0.3-r0
@@ -8124,6 +8217,21 @@ t:1560956008
 c:9f1deab7a8bb37802d7d30f6daf487a4853c315b
 D:so:libc.musl-aarch64.so.1
 p:so:libfastjson.so.4=4.2.0
+
+C:Q1TuSoEJ1JdS0WabqNXXugbY1JXBw=
+P:linux-rpi
+V:4.19.79-r0
+A:aarch64
+S:24675020
+I:85016576
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325686
+c:81fbb2266cfbe69fadbd513db564834dc3e6600d
+D:mkinitfs linux-firmware-brcm
 
 C:Q1z5HwiRm4fGAidtlLx0epglI5KWI=
 P:mtr-gtk
@@ -11854,6 +11962,21 @@ c:0522906bfa4e70b64ba52f3761c4a11610bac902
 D:pkgconfig
 p:pc:xorg-synaptics=1.9.1
 
+C:Q1AkUVbiXA3f7EMznOh0NMDWbPmXo=
+P:mariadb-embedded-dev
+V:10.3.18-r0
+A:aarch64
+S:1315
+I:12288
+T:MariaDB as an embeddable library - development files
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325183
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common mariadb-embedded=10.3.18-r0
+
 C:Q1gnZD1+arrF11th//AtTTEgMTk6Y=
 P:py3-pluggy
 V:0.9.0-r1
@@ -12128,21 +12251,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557161761
 c:57568913de37dd6932ab6e75b8d5db8d9b5a1827
 i:docs perl-file-tail=1.3-r1
-
-C:Q1fTqWKSWWeTit2WXz+slzQKoNtJQ=
-P:drbd-vanilla
-V:4.19.78-r0
-A:aarch64
-S:274359
-I:978944
-T:Network-based RAID 1 version 9
-U:https://www.linbit.com/en/drbd-community/drbd-download/
-L:GPL-2.0-or-later
-o:drbd-vanilla
-m:Roland Kammerer <roland.kammerer@linbit.com>
-t:1570803952
-c:7bbd1f0eb054815c3c0935517e74cb2d333f0aba
-D:linux-vanilla=4.19.78-r0
 
 C:Q1r70F5gFvmvq/QJi8tseqKe+DgOg=
 P:perl-yaml-tiny-doc
@@ -12559,6 +12667,22 @@ t:1557165384
 c:e664c4baadef1d2ab6612112444a0f470ee67491
 D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:nrpe
+
+C:Q1s7kd7kmF3giy4XtSgpqB8g+f2EM=
+P:mariadb-server-utils
+V:10.3.18-r0
+A:aarch64
+S:2440128
+I:10526720
+T:Non-essential server utilities for MariaDB/MySQL applications
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325187
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:perl mariadb-common=10.3.18-r0 so:libc.musl-aarch64.so.1
+p:cmd:mysql_convert_table_format cmd:mysql_setpermission cmd:mysql_upgrade cmd:mysqld_multi cmd:mysqld_safe_helper cmd:mysqlhotcopy cmd:perror
 
 C:Q1Vs+N0he/3TgcmB61sL4tmVE7GJw=
 P:sendpage
@@ -13207,21 +13331,6 @@ t:1557729148
 c:913def3cb51931a7086ec3b62b76263a53f6a6fe
 D:perl so:libc.musl-aarch64.so.1 so:libdb-5.3.so
 
-C:Q1LM7B/joht0V92shDBLEWIUIx1po=
-P:zfs-udev
-V:0.8.1-r0
-A:aarch64
-S:9706
-I:57344
-T:ZFS for Linux (udev)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840267
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:so:libc.musl-aarch64.so.1
-
 C:Q1DdToNQmSJEHVk09cp0KiSdtGeEo=
 P:snappy-dbg
 V:1.1.7-r1
@@ -13330,22 +13439,6 @@ t:1557138454
 c:6215d64334f747b860014e517d4fa80cab68dc0c
 D:enca=1.19-r1 pkgconfig
 p:pc:enca=1.19
-
-C:Q1fCsshAGGMhwYXXw/EDX3egBv72M=
-P:mariadb-embedded
-V:10.3.17-r0
-A:aarch64
-S:5149961
-I:17039360
-T:MariaDB as an embeddable library
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156757
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common=10.3.17-r0 so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:so:libmariadbd.so.19=19
 
 C:Q1nbF9oiBDyh7FS8b+VoMQM2jkiBU=
 P:librsvg-doc
@@ -13481,22 +13574,6 @@ o:ngrep
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557128462
 c:163e2083ab9656e013615e8ec4804678b6ca06e9
-
-C:Q174vtpwvVQJvwKtxIiUhKOy3rmC0=
-P:e2fsprogs-libs
-V:1.45.2-r0
-A:aarch64
-S:206979
-I:462848
-T:Standard Ext2/3/4 filesystem utilities (libraries)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131571
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-D:so:libc.musl-aarch64.so.1 so:libcom_err.so.2
-p:so:libe2p.so.2=2.3 so:libext2fs.so.2=2.4 so:libss.so.2=2.0
 
 C:Q1peTEGRlNnHy/PqAL2wfKJmJfXWs=
 P:fcgiwrap
@@ -13932,21 +14009,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1557085021
 c:be1ef5e41eb9669baffacc1be7e29c7714f08d89
 D:py-cffi py-six
-
-C:Q1A41kqF3NlwGCtegnrl9Ixvgagfs=
-P:linux-vanilla
-V:4.19.78-r0
-A:aarch64
-S:52563975
-I:197681152
-T:Linux vanilla kernel
-U:http://kernel.org
-L:GPL-2.0
-o:linux-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570803793
-c:6c703ce9643ff4315e29878260dcc79136a1d485
-D:mkinitfs linux-firmware-any
 
 C:Q1eq5sJqx3gDU0n2yzNIi5tQpFqqQ=
 P:libtheora-doc
@@ -14406,22 +14468,6 @@ t:1558984288
 c:d3648baa692647bef233f410d7af344bf69b6452
 i:docs gst-plugins-base=1.16.0-r0
 
-C:Q1eq+gw/9bu4v9TCERWe6WE9QfOjA=
-P:mariadb-mytop
-V:10.3.17-r0
-A:aarch64
-S:20296
-I:77824
-T:Command line tool used for monitoring MariaDB performance
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156757
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
-p:cmd:mytop
-
 C:Q12gb/sMATV/GlrN5qpecy+Hpc0YM=
 P:gtk+3.0-dev
 V:3.24.8-r0
@@ -14843,21 +14889,6 @@ t:1560179717
 c:b7386174f378d261c2503b73aabebf079b27238a
 i:docs git=2.22.0-r0
 
-C:Q1Zr3HrSqzY36kFBb511CRt2P+StU=
-P:mariadb-common
-V:10.3.17-r0
-A:aarch64
-S:604147
-I:2240512
-T:MariaDB common files for both server and client
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156756
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:/bin/sh
-
 C:Q1J5Q45Sg/w4JIhx3xFZp5Ty0zbQs=
 P:openvpn-dev
 V:2.4.7-r1
@@ -15153,21 +15184,6 @@ t:1557331757
 c:5616885c5e67ed09846062b0ba064473615fc366
 D:so:libc.musl-aarch64.so.1
 p:so:libmupdf.so.0=0 so:libmupdfthird.so.0=0
-
-C:Q1PKsahkKnc6RXtzcGIjIfPE+IfAM=
-P:mariadb-bench
-V:10.3.17-r0
-A:aarch64
-S:504469
-I:2891776
-T:MariaDB benchmark scripts and data
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156756
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common
 
 C:Q1rp9RWaLIQiKv3bK1ih8oWzVvhrs=
 P:llvm8-libs
@@ -17028,22 +17044,6 @@ c:1c04cce7036cdb842535ee6ad5f944794fc04c74
 D:ca-certificates so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
 p:so:libcurl.so.4=4.6.0
 
-C:Q1q8x9FxW++xpXiz4gqCiMIRktT/U=
-P:mariadb-client
-V:10.3.17-r0
-A:aarch64
-S:7196760
-I:29618176
-T:Client for the MariaDB database
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156756
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common=10.3.17-r0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:myisam_ftdump cmd:mysql cmd:mysql_find_rows cmd:mysql_fix_extensions cmd:mysql_waitpid cmd:mysqlaccess cmd:mysqladmin cmd:mysqlcheck cmd:mysqldump cmd:mysqldumpslow cmd:mysqlimport cmd:mysqlshow
-
 C:Q1nL1q3UotUIOW5ilszzg9+sZw6Kk=
 P:ragel
 V:6.10-r0
@@ -17074,21 +17074,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1557209832
 c:cca20069cf343db2e1dd5e793a956e8bb9f112cb
 i:docs perl-io-async=0.72-r0
-
-C:Q1D1AaB64f5E/rB02zcQ8dwAwMjCQ=
-P:mysql-client
-V:10.3.17-r0
-A:aarch64
-S:1195
-I:4096
-T:Dummy package for mysql-client migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156758
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-client
 
 C:Q1j9rLWGbaBiD0khRQGDYb8M7GHEA=
 P:libvirt
@@ -18669,6 +18654,21 @@ t:1556948726
 c:7ebb01db24d3a2ed54a31bf59df13d5bbeb861d8
 i:docs perl-extutils-helpers=0.026-r0
 
+C:Q1BBarw1qOl635rp3yAzfwSOZIpLw=
+P:zfs-openrc
+V:0.8.2-r0
+A:aarch64
+S:9149
+I:53248
+T:ZFS for Linux (OpenRC init scripts)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324369
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+i:openrc zfs=0.8.2-r0
+
 C:Q1pfeuKbs4AL2g+nR8xx4vT380LsA=
 P:shared-mime-info-lang
 V:1.12-r0
@@ -18789,6 +18789,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557148214
 c:ecf00d68ffcd80debd7d3cf717c97cf1b17aa388
 D:perl
+
+C:Q1mWbx/EO7tDmO7UrfAsF6UCuPcBo=
+P:e2fsprogs-dev
+V:1.45.2-r1
+A:aarch64
+S:52120
+I:323584
+T:Standard Ext2/3/4 filesystem utilities (development files)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326085
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+D:util-linux-dev e2fsprogs-libs=1.45.2-r1 libcom_err=1.45.2-r1 pkgconfig
+p:pc:com_err=1.45.2 pc:e2p=1.45.2 pc:ext2fs=1.45.2 pc:ss=1.45.2 cmd:compile_et cmd:mk_cmds
 
 C:Q1DHjoN0FFg6OzbFFwstWvvgyeUeY=
 P:git-daemon
@@ -20046,6 +20062,22 @@ t:1557224626
 c:886ef062c73e35e24affad215c44058de84406da
 D:python3
 i:py-ipaddress=1.0.22-r1 python3
+
+C:Q18s/Ba+t8VHL5YJPA4UGCeu6DGIg=
+P:xtables-addons-vanilla
+V:4.19.79-r0
+A:aarch64
+S:79781
+I:376832
+T:Iptables extensions kernel modules
+U:http://xtables-addons.sourceforge.net/
+L:GPL-2.0
+o:xtables-addons-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324492
+c:8e5a4ac79d12fc1ab88a54f938ba5f3dabdf8ab0
+D:linux-vanilla=4.19.79-r0
+i:linux-vanilla=4.19.79-r0 xtables-addons
 
 C:Q1ZGIs9dy70Qprjlq4aAtBnkIRacc=
 P:perl-net-ssleay-doc
@@ -21629,22 +21661,6 @@ t:1560099500
 c:f8a685e2a03c00bd62453c2dbbc154db9598cdfe
 i:at-spi2-core=2.32.1-r0 lang
 
-C:Q18cJ898Ial8g6juancQHSj24Ngmo=
-P:e2fsprogs-extra
-V:1.45.2-r0
-A:aarch64
-S:232383
-I:643072
-T:Ext2/3/4 filesystem extra utilities
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131571
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-D:e2fsprogs so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libss.so.2 so:libuuid.so.1
-p:cmd:badblocks cmd:chattr cmd:debugfs cmd:dumpe2fs cmd:e2freefrag cmd:e2image cmd:e2label cmd:e2mmpstatus cmd:e2scrub cmd:e2scrub_all cmd:e2undo cmd:e4crypt cmd:e4defrag cmd:filefrag cmd:logsave cmd:lsattr cmd:mklost+found cmd:resize2fs cmd:tune2fs
-
 C:Q1USwyigpjErt8VzBgXvDvYYNdyMg=
 P:libxt
 V:1.1.5-r2
@@ -22010,6 +22026,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558961606
 c:d5a9dd6b57585654ef5ab77bfeba4ba106f0872a
 D:uwsgi so:libc.musl-aarch64.so.1
+
+C:Q19B5E/DeGsVf644e/t8AqFm6GIMA=
+P:mariadb-embedded
+V:10.3.18-r0
+A:aarch64
+S:5162297
+I:17076224
+T:MariaDB as an embeddable library
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325187
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common=10.3.18-r0 so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:so:libmariadbd.so.19=19
 
 C:Q1tcykpX7kIPMY2IH32MiaHWkp5mc=
 P:libestr
@@ -25120,21 +25152,6 @@ t:1559041533
 c:ba20d6eb1d6cf29898c4ec012fc238cdc3ca24f1
 p:linux-firmware-any
 
-C:Q1YaHveYlsmWO8sTRHcaeJ/2gLpoE=
-P:linux-rpi-dev
-V:4.19.76-r0
-A:aarch64
-S:17086164
-I:117895168
-T:Headers and script for third party modules for rpi kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1569920436
-c:1a13026e8f1dc47e1de4e6a58d2bc044c9cdda88
-D:perl gmp-dev elfutils-dev bash so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
-
 C:Q1Isnywx3f2At8GE5VztnZrvE7fHU=
 P:libical-dev
 V:3.0.5-r0
@@ -26438,21 +26455,6 @@ t:1557119382
 c:a69b7fdbc5e0acd8edeb1be2c36573ff5d24c556
 p:cmd:change_tz cmd:ics_diff
 
-C:Q11mp9V90q65A1kXUQA6+mvSXb0ZA=
-P:zfs-scripts
-V:0.8.1-r0
-A:aarch64
-S:3201573
-I:10850304
-T:ZFS for Linux (scripts)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840267
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:so:libc.musl-aarch64.so.1 so:libintl.so.8 so:libnvpair.so.1 so:libzfs.so.2 so:libzfs_core.so.1 so:libzpool.so.2
-
 C:Q1+Iud3tvpUcWGR+FxbffnMOS3xfE=
 P:libcdio-doc
 V:2.0.0-r0
@@ -26576,6 +26578,21 @@ t:1560099383
 c:fd256e94b0e657d531032e1384934d6af3486b6e
 i:newt=0.52.21-r0 lang
 
+C:Q1JjKQM80e/R0UR+dJKpa0NIwvK7o=
+P:mariadb-common
+V:10.3.18-r0
+A:aarch64
+S:604140
+I:2240512
+T:MariaDB common files for both server and client
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325185
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:/bin/sh
+
 C:Q1priQ2wVJW5SPmV1nO2nFJ0GTiP4=
 P:libasyncns-doc
 V:0.8-r1
@@ -26669,6 +26686,20 @@ t:1560179731
 c:b7386174f378d261c2503b73aabebf079b27238a
 D:git=2.22.0-r0 tcl tk
 p:cmd:gitk
+
+C:Q1PhT72vYR+esKpezRgWn7YUEPnGk=
+P:zfs-dracut
+V:0.8.2-r0
+A:aarch64
+S:9649
+I:73728
+T:ZFS for Linux (dracut)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324370
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
 
 C:Q10D6eXopGijlpZad2mdEiUzA4x4U=
 P:libsecret-lang
@@ -28894,20 +28925,6 @@ c:8b67ef50009e982a804c7ec3407eb8da736da1cb
 D:glade3=3.8.5-r5 pc:gtk+-2.0>=2.14.0 pc:libxml-2.0>=2.4.0 pkgconfig
 p:pc:gladeui-1.0=3.8.5
 
-C:Q1cvKbah4q0zgsBXtwa72SL6QyIQg=
-P:e2fsprogs-static
-V:1.45.2-r0
-A:aarch64
-S:255125
-I:827392
-T:Standard Ext2/3/4 filesystem utilities (static libraries)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131570
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-
 C:Q1ac1aqu7kO2Kg+TCSV+XA/1bmg3w=
 P:cairomm-dev
 V:1.12.2-r0
@@ -29402,22 +29419,6 @@ t:1563355575
 c:08b8bd25aaa87ed087affa15e039d4e7ffa5e3ca
 D:so:libc.musl-aarch64.so.1
 p:so:libkeyutils.so.1=1.8
-
-C:Q1cI6zZ2nvkYsFfKYO2CV499JInkE=
-P:e2fsprogs-dev
-V:1.45.2-r0
-A:aarch64
-S:52179
-I:323584
-T:Standard Ext2/3/4 filesystem utilities (development files)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131570
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-D:util-linux-dev e2fsprogs-libs=1.45.2-r0 libcom_err=1.45.2-r0 pkgconfig
-p:pc:com_err=1.45.2 pc:e2p=1.45.2 pc:ext2fs=1.45.2 pc:ss=1.45.2 cmd:compile_et cmd:mk_cmds
 
 C:Q1AFD+szvDh2HssHVUWoMokuw8KGY=
 P:qemu-ppc64abi32
@@ -31808,6 +31809,21 @@ t:1557224409
 c:b2d4a592a1d1d7f1190e34a9421f86ad07fb124a
 D:so:libc.musl-aarch64.so.1
 
+C:Q1ZkQFlfXl5pmFpY0RrMiUtNwIuMQ=
+P:mariadb-bench
+V:10.3.18-r0
+A:aarch64
+S:504490
+I:2891776
+T:MariaDB benchmark scripts and data
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325186
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common
+
 C:Q1x3g0ryksbpJ2V9v5EiEWFykA50E=
 P:sdl2_mixer-dev
 V:2.0.4-r0
@@ -32481,6 +32497,22 @@ c:cea660389b0d19f5ca02cfe0320299e0432b52a7
 D:py-libbytesize
 p:cmd:bscalc
 
+C:Q1zthJwY3+iBmunr44PFhf02jFfbA=
+P:zfs-libs
+V:0.8.2-r0
+A:aarch64
+S:1064120
+I:2756608
+T:ZFS for Linux (libraries)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324370
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libintl.so.8 so:libtirpc.so.3 so:libuuid.so.1 so:libz.so.1
+p:so:libnvpair.so.1=1.0.1 so:libuutil.so.1=1.0.1 so:libzfs.so.2=2.0.0 so:libzfs_core.so.1=1.0.0 so:libzpool.so.2=2.0.0
+
 C:Q1kJ5b6+RpCi2I8ulXj+bJPXqSzig=
 P:cpufrequtils
 V:008-r4
@@ -32866,22 +32898,6 @@ c:ae7edd23775f55c6d20424294307c13a45a015ae
 D:lua5.3 so:libc.musl-aarch64.so.1 so:libcurl.so.4
 i:lua-curl=0.3.8-r1 lua5.3
 
-C:Q1WQGTkVLFOUGCT2cjiDYBYtzwh8o=
-P:zfs-utils-py
-V:0.8.1-r0
-A:aarch64
-S:18389
-I:86016
-T:ZFS for Linux (python utils)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840269
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:python3
-p:cmd:arc_summary cmd:arcstat cmd:dbufstat
-
 C:Q1GdW+Niovxl5pv31hgylTpjV+bUo=
 P:mpg123-doc
 V:1.25.10-r0
@@ -33079,6 +33095,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1557146803
 c:33353a0d201a09b95671651d10bd27fd79e54f97
 i:docs perl-lwp-useragent-determined=1.07-r0
+
+C:Q1xO5ziC7k/fd83UPgYL201OuwhPQ=
+P:mariadb-backup
+V:10.3.18-r0
+A:aarch64
+S:6622274
+I:21389312
+T:The mariabackup tool for physical online backups
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325186
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariabackup cmd:mbstream
 
 C:Q1RbOfpdHrEcCo6A0d/2m9dguAX5U=
 P:s6-networking
@@ -33569,6 +33601,23 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1557118820
 c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 i:docs py-egenix-mx-base=3.2.9-r0
+
+C:Q1cqJ54284fS2PwN3djcCGjXKOMNI=
+P:zfs-vanilla
+V:4.19.79-r1
+A:aarch64
+S:1300445
+I:5025792
+T:ZFS for Linux
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571323922
+c:3117b02315b911c86bf7f10ef9df72f00a750601
+D:linux-vanilla=4.19.79-r0
+p:spl-vanilla
+i:zfs linux-vanilla=4.19.79-r0
 
 C:Q1MmmGEOI2YUo2dIJBj3FbP8qcK9Q=
 P:libsexy
@@ -34848,6 +34897,21 @@ t:1556721733
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-aarch64.so.1 so:libstdc++.so.6
 p:so:libasprintf.so.0=0.0.0
+
+C:Q1qnXNUT7yM08IO0QpKVA94xVvniU=
+P:linux-vanilla-dev
+V:4.19.79-r0
+A:aarch64
+S:17369649
+I:121966592
+T:Headers and script for third party modules for vanilla kernel
+U:http://kernel.org
+L:GPL-2.0
+o:linux-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571322798
+c:245481b9ed4ad794dfdda00dcded94065a2aea87
+D:perl gmp-dev elfutils-dev bash flex bison so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1O15NbvTOuXYxd8NtG8GmUBCeOIc=
 P:gitolite
@@ -37421,6 +37485,22 @@ t:1557164140
 c:fa59e345fddaceb64c29cab4c8dd82343d517ce3
 D:perl-list-moreutils
 
+C:Q1FjUkjjeBbTA7h8DdX/vK/IAIRW0=
+P:zfs
+V:0.8.2-r0
+A:aarch64
+S:333271
+I:1200128
+T:ZFS for Linux
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324372
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libintl.so.8 so:libnvpair.so.1 so:libuuid.so.1 so:libuutil.so.1 so:libzfs.so.2 so:libzfs_core.so.1 so:libzpool.so.2
+p:spl cmd:fsck.zfs cmd:mount.zfs cmd:raidz_test cmd:zdb cmd:zed cmd:zfs cmd:zgenhostid cmd:zhack cmd:zinject cmd:zpool cmd:zstreamdump cmd:ztest cmd:zvol_wait
+
 C:Q1y1pF+5dRZmbvtoXAdm/b4TlOMAY=
 P:ppp-winbind
 V:2.4.7-r6
@@ -38263,6 +38343,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556969765
 c:561f7e51a6421b22a1ed7e40c559149d24cd6832
 i:docs cdparanoia=10.2-r7
+
+C:Q1sLpsYbpX11pNXnfppV3OEUzEFgk=
+P:zfs-scripts
+V:0.8.2-r0
+A:aarch64
+S:3209732
+I:10919936
+T:ZFS for Linux (scripts)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324370
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:so:libc.musl-aarch64.so.1 so:libintl.so.8 so:libnvpair.so.1 so:libzfs.so.2 so:libzfs_core.so.1 so:libzpool.so.2
 
 C:Q18AM0ix6eJOMgZlnlr9FTdIHbLb8=
 P:lm_sensors
@@ -39529,21 +39624,6 @@ c:4d6d02d103dd83569a632a8cc3dadc36e81e12c1
 D:ldb=1.5.5-r0 pc:talloc pc:tdb pkgconfig py3-ldb=1.5.5-r0
 p:pc:ldb=1.5.5 pc:pyldb-util.cpython-37m-aarch64-linux-gnu=1.5.5
 
-C:Q1wOYmyELGGoEpEEEUxDvyCKWEDRk=
-P:openresolv-doc
-V:3.9.0-r0
-A:aarch64
-S:9109
-I:32768
-T:A framework for managing DNS information (documentation)
-U:https://roy.marples.name/projects/openresolv
-L:BSD
-o:openresolv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557149575
-c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
-i:docs openresolv=3.9.0-r0
-
 C:Q10alLt2kKGEHH0lHpWeEcL0cwsOc=
 P:numactl-tools
 V:2.0.12-r2
@@ -40259,22 +40339,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1557122819
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core freeswitch lua-xml
-
-C:Q16pQb1TmrDimlAMNK1ICGEC0NDDs=
-P:zfs
-V:0.8.1-r0
-A:aarch64
-S:332003
-I:1196032
-T:ZFS for Linux
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840269
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libintl.so.8 so:libnvpair.so.1 so:libuuid.so.1 so:libuutil.so.1 so:libzfs.so.2 so:libzfs_core.so.1 so:libzpool.so.2
-p:spl cmd:fsck.zfs cmd:mount.zfs cmd:raidz_test cmd:zdb cmd:zed cmd:zfs cmd:zgenhostid cmd:zhack cmd:zinject cmd:zpool cmd:zstreamdump cmd:ztest
 
 C:Q1Gmil5WQUhmtGB8gcpmDXReGv7zg=
 P:py3-attrs
@@ -44506,6 +44570,21 @@ t:1567520863
 c:61a5a5f3808f542527ee8b598bdf84a2ff69ac80
 i:docs irssi=1.2.2-r0
 
+C:Q1FLnGekoFDXz5X4VAXFil8bPCJyc=
+P:mysql
+V:10.3.18-r0
+A:aarch64
+S:1183
+I:4096
+T:Dummy package for mysql migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325187
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb
+
 C:Q1tU4gyNPinRHBqIGYdX8S6d6cgdg=
 P:nginx-mod-rtmp
 V:1.16.1-r0
@@ -45058,21 +45137,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1560411851
 c:3e9aaa19c13747bc676ce1dfdd8e82e2d59169bc
 D:so:libc.musl-aarch64.so.1
-
-C:Q137fUpARbPsDM9CrDB77/zgW99zQ=
-P:linux-virt
-V:4.19.78-r0
-A:aarch64
-S:16792236
-I:57401344
-T:Linux vanilla kernel
-U:http://kernel.org
-L:GPL-2.0
-o:linux-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570803714
-c:6c703ce9643ff4315e29878260dcc79136a1d485
-D:mkinitfs
 
 C:Q1QSwXASlDEbmDB5eOH39BUep59IU=
 P:perl-package-deprecationmanager-doc
@@ -46773,21 +46837,6 @@ c:4915451a022511db466f97826f675eaba0bb1ccd
 D:zsh
 i:zsh=5.7.1-r0 lynx
 
-C:Q1jJK6gh72Ai0MBKJZOhHvM3hOuIQ=
-P:openresolv
-V:3.9.0-r0
-A:aarch64
-S:14004
-I:81920
-T:A framework for managing DNS information
-U:https://roy.marples.name/projects/openresolv
-L:BSD
-o:openresolv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557149581
-c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
-p:cmd:resolvconf
-
 C:Q1bVLJ74yB/gK7Gx6vYDImnMtDHaM=
 P:ntop-dev
 V:5.0.1-r14
@@ -47138,21 +47187,6 @@ c:4e867fa3400f81a4b542590c9c72e69b9f2bd20c
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1
 p:cmd:bsdcat cmd:bsdcpio cmd:bsdtar
 
-C:Q1Aan6pIYYL9+qQAwRFFQfQiQu22w=
-P:mariadb-embedded-dev
-V:10.3.17-r0
-A:aarch64
-S:1313
-I:12288
-T:MariaDB as an embeddable library - development files
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156754
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common mariadb-embedded=10.3.17-r0
-
 C:Q15SSq9iEPLvZXst7t+9epW2G409s=
 P:procmail
 V:3.22-r4
@@ -47260,6 +47294,20 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1557212532
 c:b4ed44246b0a4e87d4c7f71b7dd3d32acea06db9
 i:docs perl-xml-rss=1.60-r0
+
+C:Q1vYPFjGlJNVYCkYCKel/kBAcSFx8=
+P:e2fsprogs-static
+V:1.45.2-r1
+A:aarch64
+S:255137
+I:827392
+T:Standard Ext2/3/4 filesystem utilities (static libraries)
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326085
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
 
 C:Q1/d1jfB4Vig22Voq+Tv5A3He5++Q=
 P:py-django-sorl-thumbnail
@@ -47943,6 +47991,22 @@ c:b6ff74fd0c1dd44753eacd2c43d6696a8ca31733
 D:so:libc.musl-aarch64.so.1
 p:cmd:soelim
 
+C:Q1T/uWpzOvmiHAryrgnXJGsrvSunU=
+P:mariadb
+V:10.3.18-r0
+A:aarch64
+S:41458367
+I:141242368
+T:A fast SQL database server
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325191
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
+p:cmd:aria_chk cmd:aria_dump_log cmd:aria_ftdump cmd:aria_pack cmd:aria_read_log cmd:innochecksum cmd:msql2mysql cmd:my_print_defaults cmd:myisamchk cmd:myisamlog cmd:myisampack cmd:myrocks_hotbackup cmd:mysql_client_test_embedded cmd:mysql_embedded cmd:mysql_install_db cmd:mysql_ldb cmd:mysql_plugin cmd:mysql_secure_installation cmd:mysql_tzinfo_to_sql cmd:mysqlbinlog cmd:mysqld cmd:mysqld_safe cmd:mysqlslap cmd:replace cmd:resolve_stack_dump cmd:resolveip cmd:sst_dump cmd:test-connect-t cmd:wsrep_sst_mariabackup cmd:wsrep_sst_mysqldump cmd:wsrep_sst_rsync cmd:wsrep_sst_rsync_wan
+
 C:Q1YFnCLm6ZpE/wVTIttNouAU+G3Ss=
 P:libdrm-doc
 V:2.4.98-r0
@@ -48002,6 +48066,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566899974
 c:fad85a325388ffbdb0f30f6396fdb8188f0725ac
 D:so:libc.musl-aarch64.so.1 so:liblber-2.4.so.2
+
+C:Q17jdVgqsdXTaJgtNSkzaZOrrnElY=
+P:zfs-udev
+V:0.8.2-r0
+A:aarch64
+S:9705
+I:57344
+T:ZFS for Linux (udev)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324370
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:so:libc.musl-aarch64.so.1
 
 C:Q1Hr3tMPDQ53ArqVUHIZjCfACqUNs=
 P:mesa-vulkan-ati
@@ -48431,21 +48510,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557579972
 c:2920d31da711c8eec46682382544552a86861388
 D:so:libc.musl-aarch64.so.1
-
-C:Q1Im49VzTHcEPQxeo/XHtDV/2GfMM=
-P:mariadb-static
-V:10.3.17-r0
-A:aarch64
-S:129937004
-I:485310464
-T:Static libraries for MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156741
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common
 
 C:Q1st38pDS7eYTFgpGF3V6PdISfhm8=
 P:boost-libs
@@ -49032,22 +49096,6 @@ t:1557159539
 c:df99ec2c94df93240b572f0b51809dd42b10eb89
 D:lua5.2 lua5.2-stdlib-normalize so:libc.musl-aarch64.so.1 so:libyaml-0.so.2
 i:lua-lyaml=6.2-r3 lua5.2
-
-C:Q1AV55wIhWddGWYmfsRCWfxtbJZ5c=
-P:xtables-addons-vanilla
-V:4.19.78-r0
-A:aarch64
-S:79790
-I:376832
-T:Iptables extensions kernel modules
-U:http://xtables-addons.sourceforge.net/
-L:GPL-2.0
-o:xtables-addons-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570805067
-c:3d664d96f5a05cbda6c506f522f47edeacd1de33
-D:linux-vanilla=4.19.78-r0
-i:linux-vanilla=4.19.78-r0 xtables-addons
 
 C:Q1pWCpqM3Ko2GtVwOkSgPq6blhyFo=
 P:xmlindent
@@ -50533,6 +50581,21 @@ c:0db404de2509cf2630edad83c9b948f478f14003
 D:qemu so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libepoxy.so.0 so:libgbm.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.6 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libspice-server.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0 so:libusbredirparser.so.1 so:libvdeplug.so.3 so:libvirglrenderer.so.0 so:libz.so.1
 p:cmd:qemu-system-mipsel
 
+C:Q1FSB28JNAlGiLvH1QusCSe4TRDss=
+P:mysql-client
+V:10.3.18-r0
+A:aarch64
+S:1188
+I:4096
+T:Dummy package for mysql-client migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325187
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-client
+
 C:Q1VfcN88FHtsOzgRr5izOr9NOHEGg=
 P:xbacklight-doc
 V:1.2.2-r0
@@ -50717,6 +50780,21 @@ t:1562864106
 c:a93510d1c69bc8f6e6fd0e2781ffcad140585f08
 D:logrotate /bin/sh so:libc.musl-aarch64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdb-5.3.so so:libgcc_s.so.1 so:libltdl.so.7 so:libssl.so.1.1 so:libstdc++.so.6
 p:cmd:purge cmd:squid cmd:squidclient
+
+C:Q1rZ3JjnLFwQHvr06i614X5SBf9V4=
+P:mariadb-plugin-rocksdb
+V:10.3.18-r0
+A:aarch64
+S:1568861
+I:4333568
+T:MariaDB plugin for RocksDB (MyRocks)
+U:https://mariadb.com/kb/en/library/myrocks/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325188
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb=10.3.18-r0 so:libc.musl-aarch64.so.1 so:libstdc++.so.6 so:libz.so.1
 
 C:Q1bTd+mW9TXZ6Meui5TRvZLx/azW8=
 P:libmnl-dev
@@ -51456,21 +51534,6 @@ t:1560864016
 c:c8d5292fcc124b3cde16a4eb5c94748dfe97b378
 D:lua5.2
 i:lua-unit=3.3-r0 lua5.2
-
-C:Q10ff8GHrdOI2FnOFN5kgpB7Hli2M=
-P:mariadb-plugin-rocksdb
-V:10.3.17-r0
-A:aarch64
-S:1568877
-I:4333568
-T:MariaDB plugin for RocksDB (MyRocks)
-U:https://mariadb.com/kb/en/library/myrocks/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156758
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb=10.3.17-r0 so:libc.musl-aarch64.so.1 so:libstdc++.so.6 so:libz.so.1
 
 C:Q1E8eJhAk7A6FEpuF+drEejZPvKbI=
 P:lua5.3-stdlib
@@ -53187,6 +53250,22 @@ c:9bcc351e36d97ca4af68e32aa51104eb7f8f399c
 D:so:libc.musl-aarch64.so.1 so:libebml.so.4 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libmatroska.so.6=6.0.0
 
+C:Q1LYkzzssgCoCzlZ+ADI/ROf5K/9Q=
+P:zfs-dev
+V:0.8.2-r0
+A:aarch64
+S:449203
+I:3526656
+T:ZFS for Linux (development files)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324369
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:attr-dev e2fsprogs-dev glib-dev libtirpc-dev openssl-dev util-linux-dev pkgconfig zfs-libs=0.8.2-r0
+p:pc:libzfs=0.8.2 pc:libzfs_core=0.8.2
+
 C:Q1/Ymi28Sgkw1A0zl1YTDcjN0sjtc=
 P:mdocml-dev
 V:1.14.3-r3
@@ -53523,6 +53602,21 @@ c:631934be3ad64469888ffcb78c7c40c4b7d866d0
 D:so:libbz2.so.1 so:libc.musl-aarch64.so.1
 p:so:libnfdump-1.6.18.so=0 cmd:nfanon cmd:nfcapd cmd:nfdump cmd:nfexpire cmd:nfreplay
 
+C:Q1dn9yRD43PJV6faee5QipaAbCUUk=
+P:py3-pyzfs
+V:0.8.2-r0
+A:aarch64
+S:137162
+I:806912
+T:ZFS for Linux (Python lib to interact with ZFS)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324372
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+D:python3 zfs
+
 C:Q1aQTCueeT1FMENFe4rK2FMToGdxg=
 P:libxxf86misc-doc
 V:1.0.4-r0
@@ -53799,21 +53893,6 @@ c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libboost_regex.so.1.69.0 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1
 p:so:libboost_graph.so.1.69.0=1.69.0
 
-C:Q151n5tRk5WCkySeMej84O+lsceQo=
-P:zfs-vanilla-dev
-V:4.19.78-r0
-A:aarch64
-S:433721
-I:3481600
-T:ZFS for Linux (development files)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570804948
-c:8604c42a1e0160dd25b88d04ecc7d572627b41f4
-D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-vanilla-dev=4.19.78-r0
-
 C:Q1B4hdZ17Nc13jIWP5Wl2VEBVsV24=
 P:qemu-system-sparc64
 V:4.0.0-r1
@@ -53997,21 +54076,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1556721725
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs gettext=0.19.8.1-r4
-
-C:Q1pvhygRfY9fGhT4fweHRjB3bpz0s=
-P:mariadb-openrc
-V:10.3.17-r0
-A:aarch64
-S:1807
-I:16384
-T:A fast SQL database server (OpenRC init scripts)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156756
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-i:openrc mariadb=10.3.17-r0
 
 C:Q1xkQSmzpciVu3wiolibax1cqDaj0=
 P:vanessa_socket-doc
@@ -54584,6 +54648,21 @@ t:1560099755
 c:4c384e38aabd0ee36edc8c4037788d69a2a54e2e
 i:docs vte3=0.56.3-r0
 
+C:Q1bt83Z1BxQ4pL8IcIyXSB14GvpNI=
+P:mariadb-doc
+V:10.3.18-r0
+A:aarch64
+S:232374
+I:544768
+T:A fast SQL database server (documentation)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325184
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+i:docs mariadb=10.3.18-r0
+
 C:Q17iGOB3ar1VK1DQ7pWzJDFqFs9CQ=
 P:libxi-dev
 V:1.7.9-r2
@@ -54615,21 +54694,6 @@ t:1556991670
 c:a65db7864a80c38f48deb7c55b637cac865ed2a4
 D:so:libc.musl-aarch64.so.1
 p:so:libboost_atomic.so.1.69.0=1.69.0
-
-C:Q1AWDbFyfSanYn6iznR5zQYnSBV4E=
-P:e2fsprogs-doc
-V:1.45.2-r0
-A:aarch64
-S:84812
-I:184320
-T:Standard Ext2/3/4 filesystem utilities (documentation)
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131570
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-i:docs e2fsprogs=1.45.2-r0
 
 C:Q1E2MNFHl0gaencC998lbKa925RPs=
 P:clang-dev
@@ -56214,21 +56278,6 @@ t:1557163613
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:udisks=1.0.5-r3 lang
 
-C:Q1dKkOxtO7YunhvcWPEVkcqgH1dJU=
-P:zfs-openrc
-V:0.8.1-r0
-A:aarch64
-S:9119
-I:53248
-T:ZFS for Linux (OpenRC init scripts)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840266
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-i:openrc zfs=0.8.1-r0
-
 C:Q1xFArk0TVN9FA7MRJ7SqbWUX3W68=
 P:font-schumacher-misc
 V:1.1.2-r0
@@ -56850,22 +56899,6 @@ c:21ccaac25bfa7e0a4fe100361c0194ba11380604
 D:so:libc.musl-aarch64.so.1 so:libcups.so.2 so:libcupsimage.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libjbig2dec.so.0 so:libjpeg.so.8 so:liblcms2.so.2 so:libpng16.so.16 so:libtiff.so.5 so:libz.so.1
 p:so:libgs.so.9=9.27 so:libijs-0.35.so=0 cmd:dvipdf cmd:eps2eps cmd:gs cmd:gsbj cmd:gsc cmd:gsdj cmd:gsdj500 cmd:gslj cmd:gslp cmd:gsnd cmd:ijs_client_example cmd:ijs_server_example cmd:lprsetup.sh cmd:pdf2dsc cmd:pdf2ps cmd:pf2afm cmd:pfbtopfa cmd:pphs cmd:printafm cmd:ps2ascii cmd:ps2epsi cmd:ps2pdf cmd:ps2pdf12 cmd:ps2pdf13 cmd:ps2pdf14 cmd:ps2pdfwr cmd:ps2ps cmd:ps2ps2 cmd:unix-lpr.sh
 
-C:Q1jO0Zy6xv6ozr/61fWtEhTIF2vtE=
-P:libcom_err
-V:1.45.2-r0
-A:aarch64
-S:6023
-I:24576
-T:Common error description library
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131571
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-D:so:libc.musl-aarch64.so.1
-p:so:libcom_err.so.2=2.1
-
 C:Q1fJj2r1pfDyOmrIhh0SulDd2hP1o=
 P:asterisk-dev
 V:16.3.0-r2
@@ -57171,22 +57204,6 @@ t:1557163617
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libatasmart.so.4 so:libc.musl-aarch64.so.1 so:libdbus-1.so.3 so:libdbus-glib-1.so.2 so:libdevmapper.so.1.02 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libparted.so.2 so:libpolkit-gobject-1.so.0 so:libsgutils2.so.2 so:libudev.so.1
 p:cmd:udisks cmd:udisks-tcp-bridge cmd:umount.udisks
-
-C:Q1biPQ4W5fBNHX7YKVca9hCfrxRuQ=
-P:zfs-libs
-V:0.8.1-r0
-A:aarch64
-S:1063994
-I:2756608
-T:ZFS for Linux (libraries)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840266
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libintl.so.8 so:libtirpc.so.3 so:libuuid.so.1 so:libz.so.1
-p:so:libnvpair.so.1=1.0.1 so:libuutil.so.1=1.0.1 so:libzfs.so.2=2.0.0 so:libzfs_core.so.1=1.0.0 so:libzpool.so.2=2.0.0
 
 C:Q1sDopp7HOxjfqBt1irONi5IWFUxc=
 P:raspberrypi-openrc
@@ -57910,6 +57927,22 @@ o:clang
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560270848
 c:19d5e257849b004f45e84fd43e703e99d3f252fa
+
+C:Q1FJb6F/vDr17UZq/dGe9E/B8q2yk=
+P:sshguard
+V:2.2.0-r1
+A:aarch64
+S:360863
+I:1568768
+T:Log monitor that blocks with iptables on bad behaviour
+U:https://www.sshguard.net
+L:BSD
+o:sshguard
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325925
+c:91688d24128d526576a426dbe219fef1db8aaf9c
+D:iptables so:libc.musl-aarch64.so.1
+p:cmd:sshguard
 
 C:Q16tNs03EjDU+OXgfBvi9OW87wkqA=
 P:xsetroot
@@ -58848,6 +58881,21 @@ c:4abb588c662e7cbe07c3585e215be73d836c08d3
 D:py3-virtualenv py3-py py3-pluggy py3-argparse py3-six py3-filelock py3-toml python3
 p:cmd:tox cmd:tox-quickstart
 i:py-tox=3.9.0-r0 python3
+
+C:Q198WM1JLkhBVk8tnjVQTL4i9IEt0=
+P:linux-virt-dev
+V:4.19.79-r0
+A:aarch64
+S:16936989
+I:116801536
+T:Headers and script for third party modules for virt kernel
+U:http://kernel.org
+L:GPL-2.0
+o:linux-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571322884
+c:245481b9ed4ad794dfdda00dcded94065a2aea87
+D:perl gmp-dev elfutils-dev bash flex bison so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1SC22dQmN7JM9fTB3ymch6sdGbsI=
 P:openssl
@@ -59881,6 +59929,22 @@ t:1557068934
 c:0504e43ce9142e23dbf4a29127461ac3b501d584
 D:jq=1.6-r0
 
+C:Q1zn/i4vItJRebtPpNKavYrqalYsE=
+P:mariadb-mytop
+V:10.3.18-r0
+A:aarch64
+S:20301
+I:77824
+T:Command line tool used for monitoring MariaDB performance
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325187
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
+p:cmd:mytop
+
 C:Q1f4aAZ/UEQWb1Y/HOwhgjvphxhPU=
 P:netcf-libs
 V:0.2.8-r6
@@ -59956,6 +60020,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557153460
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs perl-net-dns-resolver-programmable=0.009-r1
+
+C:Q1eW8k1nURRZ4voTXawXo7d2aZ+vk=
+P:e2fsprogs-extra
+V:1.45.2-r1
+A:aarch64
+S:232766
+I:643072
+T:Ext2/3/4 filesystem extra utilities
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326086
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+D:e2fsprogs so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libss.so.2 so:libuuid.so.1
+p:cmd:badblocks cmd:chattr cmd:debugfs cmd:dumpe2fs cmd:e2freefrag cmd:e2image cmd:e2label cmd:e2mmpstatus cmd:e2scrub cmd:e2scrub_all cmd:e2undo cmd:e4crypt cmd:e4defrag cmd:filefrag cmd:logsave cmd:lsattr cmd:mklost+found cmd:resize2fs cmd:tune2fs
 
 C:Q1CiszOfcnDv32gKoU5U3dJ8L7r+M=
 P:openvpn
@@ -62040,23 +62120,6 @@ t:1557179574
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1R1FnkVU1x2wPwZnZSex0QiAKRZY=
-P:zfs-vanilla
-V:4.19.78-r0
-A:aarch64
-S:1299485
-I:5021696
-T:ZFS for Linux
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570804948
-c:8604c42a1e0160dd25b88d04ecc7d572627b41f4
-D:linux-vanilla=4.19.78-r0
-p:spl-vanilla
-i:zfs linux-vanilla=4.19.78-r0
-
 C:Q1CXyXRcGtGSFAXdtY6qiJHl77Cfs=
 P:openipmi-doc
 V:2.0.25-r1
@@ -62809,21 +62872,6 @@ t:1557181227
 c:3a49d88a9384e72b92ad518a7f8cf56dfe1c4513
 D:so:libc.musl-aarch64.so.1 so:libmspack.so.0
 p:cmd:cabrip cmd:chmextract cmd:msexpand cmd:oabextract
-
-C:Q1Vv/jkiwJl0POrcUjsI6YPfXpoh8=
-P:py3-pyzfs
-V:0.8.1-r0
-A:aarch64
-S:137063
-I:806912
-T:ZFS for Linux (Python lib to interact with ZFS)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840269
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:python3 zfs
 
 C:Q1WRK7ZQ125qcKDbQs+4pipClE3tc=
 P:x265-dev
@@ -63803,21 +63851,6 @@ t:1559026007
 c:3f686cf5e5f345eae071f4bf04510d681025e053
 D:s6-linux-init=1.0.0.0-r0
 
-C:Q1wzVdjygr5bME0Utc7diUzLARMWQ=
-P:sshguard-doc
-V:2.2.0-r0
-A:aarch64
-S:6841
-I:32768
-T:Log monitor that blocks with iptables on bad behaviour (documentation)
-U:https://www.sshguard.net
-L:BSD
-o:sshguard
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557259039
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-i:docs sshguard=2.2.0-r0
-
 C:Q1xA8iTaoQN+4YuJbHU+HhcIqQa1I=
 P:gtk-murrine-engine
 V:0.98.2-r2
@@ -64001,6 +64034,21 @@ o:perl-test-requires
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556916386
 c:2614eb4fa0866d0fe53d75a04b5cce38b5d4c425
+
+C:Q1af5U45H3+aYE+6eoL/mXyxD71Fs=
+P:linux-vanilla
+V:4.19.79-r0
+A:aarch64
+S:52565282
+I:197681152
+T:Linux vanilla kernel
+U:http://kernel.org
+L:GPL-2.0
+o:linux-vanilla
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571322897
+c:245481b9ed4ad794dfdda00dcded94065a2aea87
+D:mkinitfs linux-firmware-any
 
 C:Q1W0p6MP8MfnnCLr02AcqueGxz0Fc=
 P:unzip
@@ -64904,38 +64952,6 @@ t:1557128463
 c:163e2083ab9656e013615e8ec4804678b6ca06e9
 i:docs ngrep=1.47-r0
 
-C:Q1A28DmNOKzl2uYfonz63vUpTimPE=
-P:e2fsprogs
-V:1.45.2-r0
-A:aarch64
-S:180679
-I:425984
-T:Standard Ext2/3/4 filesystem utilities
-U:http://e2fsprogs.sourceforge.net
-L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-o:e2fsprogs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559131571
-c:fa40f1448539a367f6d13b48c64b79d64d16105c
-D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libuuid.so.1
-p:cmd:e2fsck cmd:fsck.ext2 cmd:fsck.ext3 cmd:fsck.ext4 cmd:mke2fs cmd:mkfs.ext2 cmd:mkfs.ext3 cmd:mkfs.ext4
-
-C:Q1VfrfbHj90g9wBR0P2QpOiIhBU1k=
-P:mariadb-server-utils
-V:10.3.17-r0
-A:aarch64
-S:2440014
-I:10522624
-T:Non-essential server utilities for MariaDB/MySQL applications
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156758
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:perl mariadb-common=10.3.17-r0 so:libc.musl-aarch64.so.1
-p:cmd:mysql_convert_table_format cmd:mysql_setpermission cmd:mysql_upgrade cmd:mysqld_multi cmd:mysqld_safe_helper cmd:mysqlhotcopy cmd:perror
-
 C:Q1ta11hVjtDmWzI8AwFqhqny9TdNk=
 P:perl-parse-recdescent-doc
 V:1.967015-r1
@@ -65732,21 +65748,6 @@ o:spice
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559150163
 c:da40c61cddb4cc20ad75a8fc778f2e9336915f2f
-
-C:Q1yEKk0xR7ff7BoHK9PFn7AyPOnT8=
-P:linux-vanilla-dev
-V:4.19.78-r0
-A:aarch64
-S:17366293
-I:121958400
-T:Headers and script for third party modules for vanilla kernel
-U:http://kernel.org
-L:GPL-2.0
-o:linux-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570803690
-c:6c703ce9643ff4315e29878260dcc79136a1d485
-D:perl gmp-dev elfutils-dev bash flex bison so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1yJuLnexvqzsqLqcWwSP1599j6uo=
 P:font-misc-ethiopic
@@ -67095,22 +67096,6 @@ c:a9b51029e63388f0d4c8b5cbb285f21e19c20cd0
 D:lua5.2 so:libc.musl-aarch64.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 i:lua-ldap=1.2.3-r5 lua5.2
 
-C:Q1WhXm+9oQPvazQp1P2DJaHyHR4Oo=
-P:mariadb
-V:10.3.17-r0
-A:aarch64
-S:41409520
-I:141086720
-T:A fast SQL database server
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156761
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
-p:cmd:aria_chk cmd:aria_dump_log cmd:aria_ftdump cmd:aria_pack cmd:aria_read_log cmd:innochecksum cmd:msql2mysql cmd:my_print_defaults cmd:myisamchk cmd:myisamlog cmd:myisampack cmd:myrocks_hotbackup cmd:mysql_client_test_embedded cmd:mysql_embedded cmd:mysql_install_db cmd:mysql_ldb cmd:mysql_plugin cmd:mysql_secure_installation cmd:mysql_tzinfo_to_sql cmd:mysqlbinlog cmd:mysqld cmd:mysqld_safe cmd:mysqlslap cmd:replace cmd:resolve_stack_dump cmd:resolveip cmd:sst_dump cmd:test-connect-t cmd:wsrep_sst_mariabackup cmd:wsrep_sst_mysqldump cmd:wsrep_sst_rsync cmd:wsrep_sst_rsync_wan
-
 C:Q1nO4I75M5ImHbzcEnejR99mqyK80=
 P:faac-doc
 V:1.29.9.2-r0
@@ -67322,22 +67307,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557151842
 c:55018d4a38cf88588db244133dce56de10223736
 i:docs libdnet=1.12-r7
-
-C:Q1NVFE3poyjkw2K+BkMO9GwD4g654=
-P:zfs-dev
-V:0.8.1-r0
-A:aarch64
-S:448629
-I:3526656
-T:ZFS for Linux (development files)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840265
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
-D:attr-dev e2fsprogs-dev glib-dev libtirpc-dev openssl-dev util-linux-dev pkgconfig zfs-libs=0.8.1-r0
-p:pc:libzfs=0.8.1 pc:libzfs_core=0.8.1
 
 C:Q1Gwt/mni5PZMi07/7s+UjkZX/8Uk=
 P:nagios-plugins-dhcp
@@ -70545,6 +70514,22 @@ c:191c9ea9f07dee7b40b7f15b24ecc5e1af753430
 D:so:libc.musl-aarch64.so.1
 p:so:libpcre32.so.0=0.0.11
 
+C:Q1CaRBsKJH48XNOrh4oE9/p+yiPq0=
+P:libcom_err
+V:1.45.2-r1
+A:aarch64
+S:6022
+I:24576
+T:Common error description library
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326086
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+D:so:libc.musl-aarch64.so.1
+p:so:libcom_err.so.2=2.1
+
 C:Q1zdvc1ZZkPaz2vyiCSgute37mcQo=
 P:perl-html-quoted
 V:0.04-r0
@@ -71172,6 +71157,21 @@ t:1557247752
 c:353a725e8dc14693467430f3a85f53eb01bcdcaf
 D:util-linux-dev libxmu=1.1.3-r0 pc:x11 pc:xext pc:xproto pc:xt pkgconfig
 p:pc:xmu=1.1.3 pc:xmuu=1.1.3
+
+C:Q153372Lp3JvLpRIaZt8CV2q6XRsA=
+P:openresolv-doc
+V:3.9.2-r0
+A:aarch64
+S:9277
+I:32768
+T:A framework for managing DNS information (documentation)
+U:https://roy.marples.name/projects/openresolv
+L:BSD
+o:openresolv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326125
+c:4f9f44d15db0b9181eceec86c951f7426e15ba93
+i:docs openresolv=3.9.2-r0
 
 C:Q1CTYp1uzMlNtuBolzeo78QcFAzz4=
 P:py-django-djblets
@@ -71865,21 +71865,6 @@ c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.2 so:libc.musl-aarch64.so.1 so:libsqlite3.so.0
 i:lua-sql-sqlite3=2.3.5-r2 lua5.2
 
-C:Q1DvxPEJ3zeZN7i8JjP6b4J7BhjB4=
-P:mysql
-V:10.3.17-r0
-A:aarch64
-S:1181
-I:4096
-T:Dummy package for mysql migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156758
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb
-
 C:Q14ERFtBixzqgWiF1H1WQCfMN97/s=
 P:xorg-server-xwayland
 V:1.20.5-r0
@@ -72142,22 +72127,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1566455951
 c:1aa06c833e841ee5eb8c865d2392cf8c2a83552e
 D:kamailio so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libunistring.so.2
-
-C:Q1gIHYP/z3lLQ9Bph3RHH1zTpxzPA=
-P:mariadb-dev
-V:10.3.17-r0
-A:aarch64
-S:1214488
-I:5808128
-T:A fast SQL database server (development files)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156755
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:openssl-dev zlib-dev mariadb-connector-c-dev mariadb-embedded=10.3.17-r0 pkgconfig
-p:mysql-dev=10.3.17-r0
 
 C:Q1sZFtdFzRX2BYKA04v3UsJU7ZNMk=
 P:lua5.2-subprocess
@@ -73444,22 +73413,6 @@ c:cea660389b0d19f5ca02cfe0320299e0432b52a7
 D:libbytesize=2.0-r1 pkgconfig
 p:pc:bytesize=0.1.0
 
-C:Q1tf4Ju6oKOMev86ugX/Mo5pcRCKs=
-P:mariadb-test
-V:10.3.17-r0
-A:aarch64
-S:34285864
-I:247566336
-T:The test suite distributed with MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156743
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libpcreposix.so.0 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:my_safe_process cmd:mysql_client_test cmd:mysqltest cmd:mysqltest_embedded
-
 C:Q1JUGL3J3X3A0AD39E8HAbTSsOBZk=
 P:nagios
 V:3.5.1-r5
@@ -73628,6 +73581,21 @@ t:1557089636
 c:4dcc1b1a73569f30ee25e558a5df3839b758d3dc
 D:lua5.3 so:libc.musl-aarch64.so.1
 i:lua-b64=0.1-r2 lua5.3
+
+C:Q142B8mEGSLpGyXsSnEKX+h0L3+/Y=
+P:sshguard-doc
+V:2.2.0-r1
+A:aarch64
+S:6841
+I:32768
+T:Log monitor that blocks with iptables on bad behaviour (documentation)
+U:https://www.sshguard.net
+L:BSD
+o:sshguard
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325925
+c:91688d24128d526576a426dbe219fef1db8aaf9c
+i:docs sshguard=2.2.0-r1
 
 C:Q1tBduuaAsYz30Liptkk92JU1YAUo=
 P:py3-oauth2client
@@ -73965,6 +73933,21 @@ t:1558968414
 c:f5b5ee18e3b822c869b85644267d5db3849503c9
 D:so:libc.musl-aarch64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libgstbase-1.0.so.0=0.1600.0 so:libgstcheck-1.0.so.0=0.1600.0 so:libgstcontroller-1.0.so.0=0.1600.0 so:libgstnet-1.0.so.0=0.1600.0 so:libgstreamer-1.0.so.0=0.1600.0
+
+C:Q1U7x9zZ1d9d9E1HI2FHsWpUJ1bJA=
+P:linux-rpi-dev
+V:4.19.79-r0
+A:aarch64
+S:17072862
+I:117907456
+T:Headers and script for third party modules for rpi kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325670
+c:81fbb2266cfbe69fadbd513db564834dc3e6600d
+D:perl gmp-dev elfutils-dev bash so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q15CqWLc0bezz+Z+hIkZyMOrfPyc8=
 P:perl-class-returnvalue-doc
@@ -74322,21 +74305,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1565769208
 c:45003dac9059e38b73687135bba6c67874b992a2
 D:nginx so:libc.musl-aarch64.so.1 so:libmaxminddb.so.0
-
-C:Q11WM7hv6fpYIo5Mmvh3l0p6o8KTY=
-P:mariadb-doc
-V:10.3.17-r0
-A:aarch64
-S:232418
-I:544768
-T:A fast SQL database server (documentation)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156755
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-i:docs mariadb=10.3.17-r0
 
 C:Q1JsxFS0cJj4cudIyWdBGDcQ5Q4P4=
 P:acf-openldap
@@ -75774,6 +75742,21 @@ t:1569337030
 c:631934be3ad64469888ffcb78c7c40c4b7d866d0
 i:docs nfdump=1.6.18-r0
 
+C:Q1+M1A463pMo5+G5a5tAE59f8NA5o=
+P:mariadb-openrc
+V:10.3.18-r0
+A:aarch64
+S:1801
+I:16384
+T:A fast SQL database server (OpenRC init scripts)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325185
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+i:openrc mariadb=10.3.18-r0
+
 C:Q1WCEfvaxswQjca7saW5Ub+SSaDsQ=
 P:perl-plack-doc
 V:1.0033-r1
@@ -76329,6 +76312,21 @@ t:1557038097
 c:0141cee6972a961d297eec7429e56c9751f2e579
 i:docs snappy=1.1.7-r1
 
+C:Q1+ffWu2fpuVQG03xWqxA1CY6KuSE=
+P:drbd-vanilla
+V:4.19.79-r0
+A:aarch64
+S:274364
+I:978944
+T:Network-based RAID 1 version 9
+U:https://www.linbit.com/en/drbd-community/drbd-download/
+L:GPL-2.0-or-later
+o:drbd-vanilla
+m:Roland Kammerer <roland.kammerer@linbit.com>
+t:1571324047
+c:6e672ddcff29f929d6cc9df2f8e141ba3c0914c3
+D:linux-vanilla=4.19.79-r0
+
 C:Q1m0LaKKCxPKg9B9TCz3nZm+nABgo=
 P:ip6tables-openrc
 V:1.8.3-r0
@@ -76451,20 +76449,6 @@ o:py-nose
 t:1557125499
 c:6beee599be2cfe105c3359bdff8990ba663d2d5c
 i:docs py-nose=1.3.7-r3
-
-C:Q128AEyVJPBlcwOrAPdCeo1VF2LTc=
-P:zfs-dracut
-V:0.8.1-r0
-A:aarch64
-S:9668
-I:73728
-T:ZFS for Linux (dracut)
-U:http://zfsonlinux.org
-L:CDDL-1.0
-o:zfs
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560840267
-c:e83971c16a137bb560f39dbaa02ec3512b5d32fe
 
 C:Q1/Jw5O7BF2C5KIiyaOJNJQHw/op8=
 P:openjade
@@ -77247,6 +77231,22 @@ o:dejagnu
 m:A. Wilcox <awilfox@adelielinux.org>
 t:1557063762
 c:cd352ad6a8b8d275aaeebde90bd03bbaee5f2c9c
+
+C:Q13jULDFyb8wTPXMlMdy4/eMuyUU8=
+P:e2fsprogs
+V:1.45.2-r1
+A:aarch64
+S:181053
+I:425984
+T:Standard Ext2/3/4 filesystem utilities
+U:http://e2fsprogs.sourceforge.net
+L:GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
+o:e2fsprogs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571326086
+c:bac324e9e42da71fd74dd386daf7f84aae6907dc
+D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libuuid.so.1
+p:cmd:e2fsck cmd:fsck.ext2 cmd:fsck.ext3 cmd:fsck.ext4 cmd:mke2fs cmd:mkfs.ext2 cmd:mkfs.ext3 cmd:mkfs.ext4
 
 C:Q1jtR8gcV9p5fEjEYY+8fhsrF0qlk=
 P:rsyslog-mmjsonparse
@@ -78670,21 +78670,6 @@ t:1557124422
 c:1dd75242af95b7d5267b8ecffc54d5b715c2b2a2
 D:apk-tools
 
-C:Q1LYDSYCP6Ur4tt8imvIZIwMZWrmA=
-P:linux-rpi
-V:4.19.76-r0
-A:aarch64
-S:24678007
-I:84938752
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1569920453
-c:1a13026e8f1dc47e1de4e6a58d2bc044c9cdda88
-D:mkinitfs linux-firmware-brcm
-
 C:Q1n9ssMtPfzfL5G+7CYuaLaoBK518=
 P:uwsgi-zabbix
 V:2.0.18-r0
@@ -79185,22 +79170,6 @@ t:1563907885
 c:5668fe11fbbad94bd78fd6ce170b88747b57a06c
 D:so:libc.musl-aarch64.so.1 so:libzmq.so.5
 p:cmd:curve_keygen
-
-C:Q19n/NUM76sejTL4PJNPL2Ruyr350=
-P:mariadb-backup
-V:10.3.17-r0
-A:aarch64
-S:6608598
-I:21356544
-T:The mariabackup tool for physical online backups
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565156757
-c:b3a8fb46e85f1f1e863c9c7c1234977b7a74da88
-D:mariadb-common so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariabackup cmd:mbstream
 
 C:Q1tgswE+loH/V3WOEqhRpwLBlD/Yw=
 P:audit-doc
@@ -80407,21 +80376,6 @@ t:1557039855
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libdaemon=0.14-r2 pkgconfig
 p:pc:libdaemon=0.14
-
-C:Q1i8bw/h3oukmlMd/UsRe7F22kWQ8=
-P:linux-virt-dev
-V:4.19.78-r0
-A:aarch64
-S:16933975
-I:116793344
-T:Headers and script for third party modules for virt kernel
-U:http://kernel.org
-L:GPL-2.0
-o:linux-vanilla
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570803776
-c:6c703ce9643ff4315e29878260dcc79136a1d485
-D:perl gmp-dev elfutils-dev bash flex bison so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1DE+X0krG5dsJ9leiQ3h2vMgJCrM=
 P:py-future
@@ -82301,6 +82255,22 @@ m:Matt Smith <mcs@darkregion.net>
 t:1557164654
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:python2
+
+C:Q1TLnPX6tVdeZROOjBkZTZpdWT8Eo=
+P:mariadb-test
+V:10.3.18-r0
+A:aarch64
+S:34330912
+I:247971840
+T:The test suite distributed with MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325174
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common so:libaio.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libpcreposix.so.0 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:my_safe_process cmd:mysql_client_test cmd:mysqltest cmd:mysqltest_embedded
 
 C:Q1rNwOyYjpu1ieXr8PJe/eYrQjyfQ=
 P:lua5.2-dbi-mysql
@@ -84949,6 +84919,21 @@ c:b819553afa05bacbf987368d81c9314eba613947
 D:dovecot-sql=2.3.7.2-r0 so:libc.musl-aarch64.so.1 so:libmariadb.so.3
 p:so:libdriver_mysql.so=0
 
+C:Q1utSlGNmMXQIfn+xWPUmpFu3mtcs=
+P:zfs-doc
+V:0.8.2-r0
+A:aarch64
+S:141861
+I:212992
+T:ZFS for Linux (documentation)
+U:http://zfsonlinux.org
+L:CDDL-1.0
+o:zfs
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571324369
+c:bfa0ce9b86b52aa1f461af50f867dd0aa70b2237
+i:docs zfs=0.8.2-r0
+
 C:Q1Gj64q4q4HCm6TOo7nzVKH1j5dmQ=
 P:cogl-dev
 V:1.22.4-r0
@@ -86306,6 +86291,21 @@ t:1557215714
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libmcrypt=2.5.8-r7
 p:cmd:libmcrypt-config
+
+C:Q1u0Q/eYfGm5lxLlqzWpgFKIiTsfY=
+P:mariadb-static
+V:10.3.18-r0
+A:aarch64
+S:130473798
+I:487026688
+T:Static libraries for MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1571325172
+c:ad9ce0536b62cf0ad443c372bf1e202f60bf5862
+D:mariadb-common
 
 C:Q1PKgNzMC8bEkTDyZZz44xk0prVfw=
 P:nagios-plugins-real
