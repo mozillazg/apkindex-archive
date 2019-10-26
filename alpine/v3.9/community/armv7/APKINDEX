@@ -27,6 +27,23 @@ t:1545860902
 c:6c36be3b8b6724798ec262b84b8ef8259e7984f8
 i:docs abcde=2.9.2-r0
 
+C:Q1NYRfjGk8+PvYdrusEB2ZsIUjWuQ=
+P:php7-sodium
+V:7.2.24-r0
+A:armv7
+S:20582
+I:90112
+T:PHP7 extension: Sodium
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libsodium.so.23
+p:php-sodium
+
 C:Q1y/luE3OPsWVfhSsLhLagS+aGIuI=
 P:qt5-qtkeychain-dev
 V:0.8.0-r0
@@ -117,23 +134,6 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1545961114
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
-
-C:Q1Fy6VVRNm1enLMdc4n+W4khfGORM=
-P:php7-xmlreader
-V:7.2.22-r0
-A:armv7
-S:10272
-I:61440
-T:PHP7 extension: XMLReader
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-dom so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-xmlreader
 
 C:Q1+bXshp1q0fy8KcmnRw/BpSg7TSM=
 P:webkit2gtk-lang
@@ -379,6 +379,23 @@ t:1545696801
 c:2f58e71ea18b9afd8f0ff836f7dce89d46a75e83
 D:glib-dev gdk-pixbuf-dev appstream-glib-builder=0.6.3-r0 appstream-glib=0.6.3-r0 pc:gdk-pixbuf-2.0 pc:glib-2.0 pc:gobject-2.0 pc:libarchive pc:libgcab-1.0 pc:uuid pkgconfig
 p:pc:appstream-builder=0.6.3 pc:appstream-glib=0.6.3
+
+C:Q1stZE2AZzQvyweI5kH7C5zruSi/U=
+P:php7-wddx
+V:7.2.24-r0
+A:armv7
+S:11724
+I:61440
+T:PHP7 extension: WDDX
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-xml so:libc.musl-armv7.so.1
+p:php-wddx
 
 C:Q1Fc2Ijv4dY6RmZuRQPn+RvxkLzO0=
 P:claws-mail-plugins-archive
@@ -2065,23 +2082,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545690307
 c:62750af0fedc04e43d6393aecd7d3d440a2ea2c5
 
-C:Q1yVSu0hoj1n9O02Iq6yuG+msEYks=
-P:php7-sodium
-V:7.2.22-r0
-A:armv7
-S:20575
-I:90112
-T:PHP7 extension: Sodium
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libsodium.so.23
-p:php-sodium
-
 C:Q1alI9FSaszh0wYa9llGK93UqX29w=
 P:libshairport
 V:1.2.1.20121215-r1
@@ -2865,23 +2865,6 @@ c:5f06d1ab9552515887bdaa9c623b388e8a1b6736
 D:php7-common so:libc.musl-armv7.so.1 so:librabbitmq.so.4
 p:php7-amqp=1.9.4-r0
 
-C:Q1LCdOKCHhzIvLPyn8kQzUKBdpO/g=
-P:php7-fpm
-V:7.2.22-r0
-A:armv7
-S:1387146
-I:3162112
-T:PHP7 FastCGI Process Manager
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-fpm cmd:php-fpm7
-
 C:Q1YFPPGK7m43s+7ozp0N0sPW8QkiQ=
 P:eom-dev
 V:1.21.2-r0
@@ -3498,40 +3481,6 @@ t:1545740987
 c:9909fb3da400f745c275f998e5071d93d0f341ec
 D:xkeyboard-config so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libev.so.4 so:libpam.so.0 so:libxcb-image.so.0 so:libxcb-randr.so.0 so:libxcb-util.so.1 so:libxcb-xinerama.so.0 so:libxcb-xkb.so.1 so:libxcb.so.1 so:libxkbcommon-x11.so.0 so:libxkbcommon.so.0
 p:cmd:i3lock
-
-C:Q1TcqB78Tg5hDfrDuhw/ee8MwUQ+w=
-P:php7-pdo
-V:7.2.22-r0
-A:armv7
-S:35840
-I:106496
-T:PHP7 extension: PHP Data Objects
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-pdo
-
-C:Q1EPMR1hQqTyKrGmIb04vrD/aI4tU=
-P:php7-xmlrpc
-V:7.2.22-r0
-A:armv7
-S:25659
-I:86016
-T:PHP7 extension: xmlrpc
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-xml so:libc.musl-armv7.so.1
-p:php-xmlrpc
 
 C:Q1E6L8+ga6w1d+Qzj+4seOaj6wU6I=
 P:perl-tie-hash-method-doc
@@ -4477,23 +4426,6 @@ t:1545743800
 c:d1bbf07a534c7cd70cb28c748dad9a9e768f403b
 i:docs crackmapexec=3.1.5-r2
 
-C:Q1wBb2i9YVBE5OPopJUnG9VyY3EbA=
-P:php7-tidy
-V:7.2.22-r0
-A:armv7
-S:15300
-I:69632
-T:PHP7 extension: tidy
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libtidy.so.5
-p:php-tidy
-
 C:Q1wc8e1yc2rr52agxTIsOvnWrsIhs=
 P:llvm-libunwind-dev
 V:5.0.2-r0
@@ -4815,6 +4747,23 @@ c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:desktop-file-utils hicolor-icon-theme so:libX11.so.6 so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libexif.so.12 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libxfce4ui-1.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.3
 p:cmd:ristretto
 
+C:Q1aymQPLQtRBi4CkP5cEFhOwyiAH8=
+P:php7-json
+V:7.2.24-r0
+A:armv7
+S:16395
+I:65536
+T:PHP7 extension: JSON
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-json
+
 C:Q1CJNp8DdiwkYyDVhewd1/q0mgwog=
 P:dhcping-doc
 V:1.2-r1
@@ -5092,6 +5041,23 @@ c:7338a4c2ecb161d10151b430c0ba372a5cf1dae7
 D:python3
 p:cmd:ospd-acunetix
 
+C:Q1x37qnS+o6r3ZnDsn5joGftiy/Kc=
+P:php7-sysvshm
+V:7.2.24-r0
+A:armv7
+S:5257
+I:49152
+T:PHP7 extension: System V Shared Memory
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-sysvshm
+
 C:Q1SLoDzibTxqzya1rkeJS0Qeexrxk=
 P:znc-dev
 V:1.7.1-r4
@@ -5181,23 +5147,6 @@ m:Andy Postnikov <apostnikov@gmail.com>
 t:1552848880
 c:b6bc53c8f8d4d1c2bea0d2da63e2a995da9dee54
 D:php7 php7-mysqli php7-bz2 php7-ctype php7-curl php7-gd php7-json php7-mbstring php7-openssl php7-session php7-zip
-
-C:Q1J4A0nitweU0ov8FUIoETUq0yyQc=
-P:php7-pdo_pgsql
-V:7.2.22-r0
-A:armv7
-S:15101
-I:65536
-T:PHP7 extension: PostgreSQL driver for PDO
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libpq.so.5
-p:php-pdo_pgsql
 
 C:Q1iToxoGl1AYWKoOVmt/UnjO7Ch6o=
 P:perl-config-properties-doc
@@ -5486,23 +5435,6 @@ t:1545998275
 c:542e83daee99d45cda2f56b6072cc4b2eec80478
 D:pc:Qt5Core pc:Qt5Gui pc:Qt5Quick pkgconfig qt5-qtquickcontrols2=5.12.0-r0
 p:pc:Qt5QuickControls2=5.12.0
-
-C:Q1CRr6Pc2ew4gm1JqvFzBLedbb8nQ=
-P:php7-phpdbg
-V:7.2.22-r0
-A:armv7
-S:1413279
-I:3149824
-T:Interactive PHP7 debugger
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960891
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-phpdbg cmd:phpdbg cmd:phpdbg7
 
 C:Q1MVJGqBOSupQ/07zxpJBLxAw/tn4=
 P:php7-pecl-gmagick
@@ -6244,23 +6176,6 @@ t:1545725324
 c:a94a875d0602ced8625d7c5a84a6ea50380da39c
 D:pcsc-lite so:libc.musl-armv7.so.1 so:libusb-1.0.so.0
 
-C:Q1+U79PYvW5O3ws9AyW6O8plfTGrk=
-P:php7-calendar
-V:7.2.22-r0
-A:armv7
-S:11068
-I:57344
-T:PHP7 extension: Calendar
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-calendar
-
 C:Q1WmWfG0BOR8NkRj+Ek/jN6iyVYtg=
 P:miniupnpc
 V:2.1-r0
@@ -6426,6 +6341,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545673240
 c:233e61d0881c08da221342a8fc000e9f63eda834
 i:docs libxfce4util=4.13.2-r3
+
+C:Q1TUX214rs9Lr1nRXDneS9RBBecFg=
+P:php7-posix
+V:7.2.24-r0
+A:armv7
+S:9565
+I:57344
+T:PHP7 extension: Posix
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-posix
 
 C:Q1ko0qqL8t2w+3Lxx8W4xQqDJWHSE=
 P:vlc-dev
@@ -7238,6 +7170,23 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1545711402
 c:5c9f3ca3e307be53b45beeed2ce1626f38008625
 
+C:Q1t4A5ERpusGM5yVsR+jY+2u8dM1o=
+P:php7-cgi
+V:7.2.24-r0
+A:armv7
+S:1337585
+I:3002368
+T:PHP7 Common Gateway Interface
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-cgi cmd:php-cgi cmd:php-cgi7
+
 C:Q1WaRKWlOxdvmGig41b1k6zjOm6NA=
 P:xapian-core-doc
 V:1.4.9-r0
@@ -7330,6 +7279,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545716500
 c:09c9838078ea87bd689ab434cd23620f714d5324
 i:docs html2text=1.3.2a-r0
+
+C:Q1dCWBjYDN0mfnXHmC7XJFaoUE9BY=
+P:php7-fpm
+V:7.2.24-r0
+A:armv7
+S:1387404
+I:3162112
+T:PHP7 FastCGI Process Manager
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-fpm cmd:php-fpm7
 
 C:Q1FURjnG+5ggXjlArkWadZuLDjuDA=
 P:abiword-plugin-loadbindings
@@ -7557,6 +7523,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545674395
 c:7dc6a380408d0d5a9ba9cb36522c869d11c5fb72
 i:docs perl-class-methodmaker=2.24-r2
+
+C:Q1YlPkacPwCcSQmR+EwhDKcfpk9kA=
+P:php7-opcache
+V:7.2.24-r0
+A:armv7
+S:139429
+I:278528
+T:PHP7 extension: Opcache
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-opcache
 
 C:Q1Y2rQhOSNEHNrLUUVKO26ocB7nbk=
 P:xfce4-settings-lang
@@ -7820,23 +7803,6 @@ t:1545690917
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:dia=0.97.3-r0 lang
 
-C:Q1yiE6FYdi1sI3MQdAqqjqMO/CMZ4=
-P:php7-ldap
-V:7.2.22-r0
-A:armv7
-S:21504
-I:81920
-T:PHP7 extension: LDAP
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:php-ldap
-
 C:Q1snGpDOfX8WF9LhwbAicvGg57T54=
 P:ipmiutil-doc
 V:3.1.2-r3
@@ -7989,23 +7955,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545704948
 c:cc04e5efddd48c4f863f1c2a1daddb5bef6a968e
 i:py-libcloud=2.3.0-r0 python3
-
-C:Q1+mM4nCPoBwYYfYRzguZMvENk4qQ=
-P:php7
-V:7.2.22-r0
-A:armv7
-S:1354902
-I:3059712
-T:The PHP7 language runtime engine
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php7-cli php-cli php cmd:php cmd:php7
 
 C:Q162L1NvFvhQ3/PSuE2HsmQCucA/Y=
 P:libharu-dev
@@ -8554,23 +8503,6 @@ c:37afc61fd011bf703c41905b098e392ef6a6de99
 D:lua5.2
 i:lua-optparse=1.4-r0 lua5.2
 
-C:Q1COUjokYtnblJEaxJ5Vq2EGhuA00=
-P:php7-snmp
-V:7.2.22-r0
-A:armv7
-S:15583
-I:69632
-T:PHP7 extension: SNMP
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libnetsnmp.so.35
-p:php-snmp
-
 C:Q1uQWZnZWUTBCEoVCaWz4mejNOu10=
 P:lua5.1-toml
 V:2.0.0-r1
@@ -8696,23 +8628,6 @@ t:1545707405
 c:9b64663228e4c706bea52e43db1151e7a32a88d9
 D:perl-archive-zip perl-par perl-module-scandeps so:libc.musl-armv7.so.1 so:libperl.so
 p:cmd:par.pl cmd:parl cmd:parl.pod cmd:parldyn cmd:pp cmd:tkpp
-
-C:Q1sslgXvB1OW0Bvpiy7ce5NfeI6Rk=
-P:php7-shmop
-V:7.2.22-r0
-A:armv7
-S:4905
-I:49152
-T:PHP7 extension: Shared Memory Operations
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-shmop
 
 C:Q1tX1oQ2XHN33G7Xc53o23D676zLs=
 P:py3-characteristic
@@ -8851,6 +8766,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545961141
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
 
+C:Q1ipc1ftv6DAG6L0QY0BjDkjwLdME=
+P:php7-doc
+V:7.2.24-r0
+A:armv7
+S:137025
+I:483328
+T:The PHP7 language runtime engine (documentation)
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073500
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+i:docs php7=7.2.24-r0
+
 C:Q1TdOs9qk1d+7PMZCas0JfGEFO4OQ=
 P:aqbanking-dev
 V:5.7.8-r1
@@ -8912,23 +8843,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545674527
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 i:docs pv=1.6.6-r1
-
-C:Q1+gSjV1pyYu9P78xWfyrHVA7rqzk=
-P:php7-posix
-V:7.2.22-r0
-A:armv7
-S:9584
-I:57344
-T:PHP7 extension: Posix
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-posix
 
 C:Q1/qGZPByXvDayuU2ZDv3LdU5fqbk=
 P:sniproxy
@@ -9576,6 +9490,23 @@ c:2c5b8c663d54e20da50ecdc034cd8244cb3b29a4
 D:python2 so:libc.musl-armv7.so.1 so:libpython2.7.so.1.0
 i:py-rpigpio=0.6.5-r0 python2
 
+C:Q12r6Kd7OmmTfzqjs2bcuCKCz9ZNU=
+P:php7-gmp
+V:7.2.24-r0
+A:armv7
+S:14342
+I:69632
+T:PHP7 extension: GNU GMP support
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libgmp.so.10
+p:php-gmp
+
 C:Q1XWhU1LeIkN20CeiqBv3kDidCfIQ=
 P:font-noto
 V:0_git20170920-r0
@@ -10157,6 +10088,23 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545961142
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
 
+C:Q1Bb1Xs7FbwLtnkOQex/bJv2ul9yg=
+P:php7-session
+V:7.2.24-r0
+A:armv7
+S:30463
+I:94208
+T:PHP7 extension: Sessions
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-session
+
 C:Q1lld8r9e3QeLhpDf4krxW27mV48I=
 P:sphinx-doc
 V:2.2.11-r1
@@ -10424,6 +10372,23 @@ t:1545681300
 c:91c113d81028dd86e0c4a60845a48236d168fcd9
 D:so:libabiword-3.0.so so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libgsf-1.so.114 so:libstdc++.so.6
 
+C:Q1btC51iiv6fjj5tYSpwssVJPaMhY=
+P:php7-dba
+V:7.2.24-r0
+A:armv7
+S:17478
+I:69632
+T:PHP7 extension: DBA
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libdb-5.3.so so:libgdbm.so.4
+p:php-dba
+
 C:Q1wAcB1hdzoYOb110QrnUvmygrsLQ=
 P:py-msgpack
 V:0.6.1-r0
@@ -10437,6 +10402,23 @@ o:py-msgpack
 m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1548540955
 c:2df3c55df6744e892656b40047ccbf24755fcf01
+
+C:Q18gKpcXHQ5jjXgIDIdN+V/navoHQ=
+P:php7-exif
+V:7.2.24-r0
+A:armv7
+S:25064
+I:86016
+T:PHP7 extension: EXIF
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-mbstring so:libc.musl-armv7.so.1
+p:php-exif
 
 C:Q1KWQveKPmT66YAtFmQTfDSczb2KQ=
 P:py2-mysqlclient
@@ -10914,6 +10896,23 @@ t:1571946127
 c:b18f2d1006a7b58b45db8d4af133926aad7826ab
 D:ca-certificates
 i:openrc exim=4.92.3-r0
+
+C:Q1JtQaMUkM0hPEcT3R9H16DPRBUic=
+P:php7-intl
+V:7.2.24-r0
+A:armv7
+S:123337
+I:319488
+T:PHP7 extension: Internationalization
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libicui18n.so.62 so:libicuio.so.62 so:libicuuc.so.62 so:libstdc++.so.6
+p:php-intl
 
 C:Q1CXOKTOIgX8aJiWMXAiiH0WsiT1o=
 P:afpfs-ng
@@ -12225,23 +12224,6 @@ t:1545678873
 c:f2ff422bca4ebd22187d85b5fba99a3d250a4d7d
 D:mate-common mate-desktop so:libX11.so.6 so:libXi.so.6 so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libcanberra-gtk3.so.0 so:libdbus-1.so.3 so:libdbus-glib-1.so.2 so:libdconf.so.1 so:libfontconfig.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libmate-desktop-2.so.17 so:libmatekbd.so.4 so:libmatekbdui.so.4 so:libmatemixer.so.0 so:libnotify.so.4 so:libpolkit-gobject-1.so.0 so:libxklavier.so.16
 
-C:Q1N3rWZgzj4tQ9ybqquXfFDpVO2gY=
-P:php7-bcmath
-V:7.2.22-r0
-A:armv7
-S:11654
-I:57344
-T:PHP7 extension: BC Math
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-bcmath
-
 C:Q12HWw3KJM3gHKJvPNwz6kUhqN44A=
 P:acccheck
 V:0.2.1-r1
@@ -12351,23 +12333,6 @@ t:1546087491
 c:cae0503cdb287df2afc7607567efe99a077db1e4
 D:qt5-qtdeclarative-dev qt5-qtwebchannel-dev gstreamer-dev gst-plugins-base-dev libxslt-dev mesa-dev icu-dev libxext-dev glib-dev libxcomposite-dev libxrender-dev ninja ffmpeg-dev pc:Qt5Core pc:Qt5Gui pc:Qt5Network pc:Qt5PrintSupport pc:Qt5Qml pc:Qt5Quick pc:Qt5WebChannel pc:Qt5Widgets pkgconfig qt5-qtwebengine=5.12.0-r0
 p:pc:Qt5WebEngine=5.12.0 pc:Qt5WebEngineCore=5.12.0 pc:Qt5WebEngineWidgets=5.12.0
-
-C:Q1eRYBkxElGG45/X5eW/NCZUl2QiI=
-P:php7-zip
-V:7.2.22-r0
-A:armv7
-S:19291
-I:77824
-T:PHP7 extension: Zip
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libzip.so.5
-p:php-zip
 
 C:Q1QFTVOYVku9B1n0Svg8cMk8mQYu4=
 P:xfburn-doc
@@ -12679,23 +12644,6 @@ t:1545678771
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 i:docs libmatemixer=1.21.0-r0
 
-C:Q1nh/RJZUKp4HEzKzQSL4ukyvkb5w=
-P:php7-pdo_mysql
-V:7.2.22-r0
-A:armv7
-S:10150
-I:57344
-T:PHP7 extension: MySQL driver for PDO
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-pdo php7-mysqlnd so:libc.musl-armv7.so.1
-p:php-pdo_mysql
-
 C:Q1X4uUE1MaLeIwt6hGQB7gP/61Jiw=
 P:ffmpegthumbnailer-doc
 V:2.2.0-r1
@@ -12756,6 +12704,23 @@ t:1546050299
 c:708b95a9dd94a00a59f6493687dab2a1b044b522
 D:so:libc.musl-armv7.so.1
 p:cmd:mktorrent-borg
+
+C:Q10yXF8J5fvmK9THshVdoVVBFg1E8=
+P:php7-gd
+V:7.2.24-r0
+A:armv7
+S:88197
+I:299008
+T:PHP7 extension: GD imaging
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libXpm.so.4 so:libc.musl-armv7.so.1 so:libfreetype.so.6 so:libjpeg.so.8 so:libpng16.so.16 so:libwebp.so.7 so:libz.so.1
+p:php-gd
 
 C:Q1hISmfpTdq4v+uoK7Ju3LJOi6pC4=
 P:py-libcloud
@@ -12848,6 +12813,23 @@ c:e7c84bd2a9389575a93c707bf0234aeb99d0b54e
 D:zlib-dev bzip2-dev openssl-dev util-linux-dev libewf=20171104-r2 pkgconfig
 p:pc:libewf=20171104
 
+C:Q1HjDx/X/NaPBUGtWH7npqqceiq0E=
+P:php7-phar
+V:7.2.24-r0
+A:armv7
+S:107555
+I:229376
+T:PHP7 extension: PHP Archive
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7 so:libc.musl-armv7.so.1
+p:php-phar cmd:phar cmd:phar.phar cmd:phar.phar7 cmd:phar7
+
 C:Q1T+LWqb+pQbC73Xi7//YilGbya3s=
 P:atril-dev
 V:1.21.1-r0
@@ -12907,6 +12889,23 @@ t:1545720085
 c:bc6e60fda9e32d88c36dbc5ab9ee8ecbd4d9b459
 D:leptonica=1.76.0-r0 pkgconfig
 p:pc:lept=1.76.0
+
+C:Q1m/mkenkJXPCINWiADZ7MgieUDdU=
+P:php7-pear
+V:7.2.24-r0
+A:armv7
+S:353171
+I:2486272
+T:PHP7 Extension and Application Repository
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7 php7-xml
+p:php-pear cmd:pear cmd:pear7 cmd:peardev cmd:peardev7 cmd:pecl cmd:pecl7
 
 C:Q1stmo4BV7FwDW/l9/PGhwN3lUeTY=
 P:claws-mail-plugins-attatchwarner
@@ -13474,6 +13473,23 @@ t:1545691302
 c:ecd0caee5c25ed1020606c8cfea004a31d8f514a
 D:so:libc.musl-armv7.so.1
 p:so:libwslay.so.0=0.0.1
+
+C:Q1UKsiPf9VbrP8A5x3n0gZ8to7Z7s=
+P:php7-shmop
+V:7.2.24-r0
+A:armv7
+S:4891
+I:49152
+T:PHP7 extension: Shared Memory Operations
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-shmop
 
 C:Q11pAJ0qX2dtBX2Dfp5ZjVt/8eCgQ=
 P:marco-doc
@@ -14496,23 +14512,6 @@ c:83956e2b7a0597aef9861db6e627cb23ad25be46
 D:so:libc.musl-armv7.so.1 so:libz.so.1 so:libzip.so.5
 p:cmd:zipcmp cmd:zipmerge cmd:ziptool
 
-C:Q10b1VZzJx1a9IyWvQZJNaRILbvp4=
-P:php7-sysvsem
-V:7.2.22-r0
-A:armv7
-S:4530
-I:49152
-T:PHP7 extension: System V Semaphores
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-sysvsem
-
 C:Q1AqlLqxrhZ7e9d1sfaYyYr69Oehc=
 P:fbida-fbgs
 V:2.13-r0
@@ -14528,6 +14527,23 @@ t:1545735651
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:fbida-fbi ghostscript
 p:cmd:fbgs
+
+C:Q11O9QIciT3DSoQID3EFVBbdsBh1M=
+P:php7-calendar
+V:7.2.24-r0
+A:armv7
+S:11047
+I:57344
+T:PHP7 extension: Calendar
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-calendar
 
 C:Q1iauQOW70kUmPFblMImiObHqiXog=
 P:liblangtag-dev
@@ -15067,23 +15083,6 @@ c:9017ca603c66fb3b6cd41088ffc2015a7862a893
 D:dhcpcd iptables dbus wpa_supplicant
 i:openrc networkmanager=1.10.12-r0
 
-C:Q1796Qvw8hAk1av2BxgUMt83S/inU=
-P:php7-xml
-V:7.2.22-r0
-A:armv7
-S:15478
-I:69632
-T:PHP7 extension: XML
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-xml
-
 C:Q1JM+oWmuPazC6HSat3HrJgIIJhug=
 P:xkcdpass
 V:1.16.5-r0
@@ -15408,6 +15407,23 @@ m:Michael Zhou <zhoumichaely@gmail.com>
 t:1545681703
 c:0cda22506de5829120ee853fb2b0b12e8583ca26
 D:py-greenlet
+
+C:Q1c3285v7/LARiGq3ZmeyaaXtOzwI=
+P:php7-pcntl
+V:7.2.24-r0
+A:armv7
+S:10893
+I:61440
+T:PHP7 extension: pcntl
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-pcntl
 
 C:Q1RWDzEbLVEhWmv9B9JSIUPpTBddc=
 P:google-authenticator
@@ -15924,23 +15940,6 @@ t:1545998700
 c:c189d48e607364534a75d15ad30d76c2b1f4a42f
 D:pc:Qt5Core pkgconfig qt5-qtserialport=5.12.0-r0
 p:pc:Qt5SerialPort=5.12.0
-
-C:Q1RVHL45zIcAqE/pv31BDX0XwcsZ8=
-P:php7-pear
-V:7.2.22-r0
-A:armv7
-S:353330
-I:2486272
-T:PHP7 Extension and Application Repository
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7 php7-xml
-p:php-pear cmd:pear cmd:pear7 cmd:peardev cmd:peardev7 cmd:pecl cmd:pecl7
 
 C:Q1tkrkOXyEhC06nQFPaq9VhDJDMSs=
 P:clasp
@@ -16760,23 +16759,6 @@ c:880aa1b5c01e1e14f9295a953dbf37cbd08d24a9
 D:so:libc.musl-armv7.so.1
 p:cmd:cpio
 
-C:Q1lh9nsvvMgpiXbQ3VoHw/lbWblTw=
-P:php7-mbstring
-V:7.2.22-r0
-A:armv7
-S:639831
-I:1310720
-T:PHP7 extension: Multibyte String Functions
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-mbstring
-
 C:Q1yEw80Nm9IITyJGB8qLo1YZmVNFE=
 P:py-natsort
 V:5.5.0-r0
@@ -17032,6 +17014,23 @@ o:perl-regexp-tr
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545704331
 c:3ce302210e5b0a911d9657215d691b8fe4e5b9b5
+
+C:Q1224+S3Jl4SLh4Nm1HTaFACjEdpQ=
+P:php7-simplexml
+V:7.2.24-r0
+A:armv7
+S:16737
+I:69632
+T:PHP7 extension: SimpleXML
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-simplexml
 
 C:Q1vXojypzVHti++d3ShDUw/t54szo=
 P:zathura-dev
@@ -17507,23 +17506,6 @@ t:1545740555
 c:10bf4f5c3c620b371893782f84255a2739251e78
 D:pkgconfig podofo=0.9.6-r1
 p:pc:libpodofo-0=0
-
-C:Q1XUU/MJ6lwGZEnO1aU95O6bWNRYc=
-P:php7-soap
-V:7.2.22-r0
-A:armv7
-S:106735
-I:217088
-T:PHP7 extension: SOAP
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-soap
 
 C:Q1xPvct9BYff9jlPU/BLZNDLKR20k=
 P:lua5.1-luasrcdiet
@@ -19387,6 +19369,23 @@ c:b3abe78226fbf78319d4631a5dc19ffda91ef640
 D:R-mathlib so:libc.musl-armv7.so.1
 p:so:libRmath.so=0
 
+C:Q1DM1mZtUQDTetoDdZD3ZnDBwlo6g=
+P:php7-iconv
+V:7.2.24-r0
+A:armv7
+S:14126
+I:65536
+T:PHP7 extension: Iconv
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-iconv
+
 C:Q1qKCuZYDYw3sRrFvtgTTm/NpWTNk=
 P:docker-vim
 V:18.09.8-r0
@@ -19847,23 +19846,6 @@ m:Taner Tas <taner76@gmail.com>
 t:1547293337
 c:96a4b82036347b0908f035b682035adc6a6cdedc
 i:docs alsa-plugins=1.1.8-r0
-
-C:Q1tYuIjmx+XWZaJs8mnMCj565fh6c=
-P:php7-pcntl
-V:7.2.22-r0
-A:armv7
-S:10891
-I:61440
-T:PHP7 extension: pcntl
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-pcntl
 
 C:Q15k00Xw6CZrDIRR60hCZqIZZ6Sg8=
 P:wkhtmltopdf-dev
@@ -20633,6 +20615,23 @@ c:49942755adddee5b0a29a018f789b496f520ceb7
 D:fping
 i:openrc zabbix=4.0.12-r0
 
+C:Q1N3oMO1yZTPPM80xPWiXVvVjxeMA=
+P:php7-bcmath
+V:7.2.24-r0
+A:armv7
+S:11621
+I:57344
+T:PHP7 extension: BC Math
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-bcmath
+
 C:Q1yPgZiNnFav6RCjV1ydM+f9Ily7U=
 P:libreoffice-lang-pt_br
 V:6.1.4.2-r0
@@ -21153,23 +21152,6 @@ t:1564849701
 c:6e24444f02c10d34820203b25a71998e9b2ea9f6
 D:pdns so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libkrb5.so.3 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libstdc++.so.6
 
-C:Q1JRL/ATqXixxW+tW8Ya8iCs/C9MA=
-P:php7-pspell
-V:7.2.22-r0
-A:armv7
-S:6872
-I:53248
-T:PHP7 extension: Pspell
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libaspell.so.15 so:libc.musl-armv7.so.1
-p:php-pspell
-
 C:Q1h9hnRWzTvGIE5K0bpr/JBql9YVc=
 P:perl-io-gzip
 V:0.20-r1
@@ -21379,6 +21361,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1547221219
 c:0d6e71c43e5223bc3ed26a028a0abcb5feb81670
 D:vlc-plugins-access vlc-plugins-access_output vlc-plugins-audio_filter vlc-plugins-audio_mixer vlc-plugins-audio_output vlc-plugins-codec vlc-plugins-control vlc-plugins-demux vlc-plugins-gui vlc-plugins-lua vlc-plugins-meta_engine vlc-plugins-misc vlc-plugins-mux vlc-plugins-notify vlc-plugins-packetizer vlc-plugins-services_discovery vlc-plugins-stream_filter vlc-plugins-stream_out vlc-plugins-text_renderer vlc-plugins-video_chroma vlc-plugins-video_filter vlc-plugins-video_output vlc-plugins-visualization
+
+C:Q18JC0AJySocl1n6+5XiSuIXy2jq4=
+P:php7-imap
+V:7.2.24-r0
+A:armv7
+S:26929
+I:94208
+T:PHP7 extension: IMAP
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc-client.so.1 so:libc.musl-armv7.so.1
+p:php-imap
 
 C:Q1YtstXnuaSZ6K5q21bwWASToCdNE=
 P:patchelf-doc
@@ -22458,6 +22457,23 @@ c:2e4139498d33005f4d9c56db360024b11ae5a42e
 D:so:libc.musl-armv7.so.1
 p:cmd:chntpw cmd:cpnt cmd:reged
 
+C:Q19/Y4B+Fnrt9anXBfIFmg15q6NNg=
+P:php7-xml
+V:7.2.24-r0
+A:armv7
+S:15479
+I:69632
+T:PHP7 extension: XML
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-xml
+
 C:Q1ee18zvBUKlLa5lTiB9a4PjEPuUI=
 P:perl-io-tee-doc
 V:0.65-r0
@@ -23382,23 +23398,6 @@ t:1545686509
 c:37539843c397679ac01c8f590d634db31f18be49
 i:docs perl-data-uniqid=0.12-r1
 
-C:Q1sG8QquHeWljOgNs0OpPQKMvTdqo=
-P:php7-mysqli
-V:7.2.22-r0
-A:armv7
-S:33397
-I:114688
-T:PHP7 extension: MySQLi
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-mysqlnd php7-openssl so:libc.musl-armv7.so.1
-p:php-mysqli
-
 C:Q1l9h73BtmqeUExXEAqHpupu/wT68=
 P:gns3-converter
 V:1.3.0-r4
@@ -23567,6 +23566,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545742661
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs iouyap=0.97-r1
+
+C:Q1VeitqlN8MrjEONTHduyelvyEl2s=
+P:php7-xmlwriter
+V:7.2.24-r0
+A:armv7
+S:10613
+I:65536
+T:PHP7 extension: XMLWriter
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-xmlwriter
 
 C:Q1Vg9MHcbrFmwDetDRH96pVQr2Z4Q=
 P:xfce4-taskmanager-lang
@@ -23932,6 +23948,23 @@ c:5bc414bb50fe0a1a38b9300bec1d5cb67b1e13ee
 D:liborcus=0.13.4-r1 pkgconfig
 p:pc:liborcus-0.13=0.13.4 pc:liborcus-spreadsheet-model-0.13=0.13.4
 
+C:Q1qCPx9Lr4nXlh3gzUd2RVaTr7rLw=
+P:php7-curl
+V:7.2.24-r0
+A:armv7
+S:28670
+I:98304
+T:PHP7 extension: cURL
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libcurl.so.4
+p:php-curl
+
 C:Q1+rp85g14GXh8SWzmNNBrQm3vzpo=
 P:spice-gtk
 V:0.35-r1
@@ -24163,6 +24196,23 @@ c:97e7e4791534536b77574a42d6e98fa4a7f6fa96
 D:so:libc.musl-armv7.so.1 so:libmpack.so.0
 i:lua-mpack=1.0.7-r0 lua5.1
 
+C:Q1S/z4bVprGhHFKuoeJvTjtrRJb7I=
+P:php7-pdo_dblib
+V:7.2.24-r0
+A:armv7
+S:9149
+I:53248
+T:PHP7 extension: DB-LIB (MS SQL, Sybase)
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libsybdb.so.5
+p:php-pdo_dblib
+
 C:Q1XBgUE/hAi/GGV2gnYyxSepCuoHo=
 P:patchwork
 V:2.0.1-r1
@@ -24377,23 +24427,6 @@ m:Jake Buchholz <tomalok@gmail.com>
 t:1563636115
 c:873f13520c5a2c28b7a91904d7da0656c0a2cf2d
 i:docker=18.09.8-r0 bash-completion
-
-C:Q1DBh+GSuCDSDyM9xRmEKBaOVXY2Q=
-P:php7-imap
-V:7.2.22-r0
-A:armv7
-S:26965
-I:94208
-T:PHP7 extension: IMAP
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc-client.so.1 so:libc.musl-armv7.so.1
-p:php-imap
 
 C:Q1DhqsNPbOpA072wysuU1MJcVG4LA=
 P:nextcloud-logreader
@@ -25684,40 +25717,6 @@ t:1545718519
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 i:docs ktoblzcheck=1.49-r1
 
-C:Q1dwTBLdL3mPtJKx6CpE3L679ObcM=
-P:php7-sysvshm
-V:7.2.22-r0
-A:armv7
-S:5258
-I:49152
-T:PHP7 extension: System V Shared Memory
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-sysvshm
-
-C:Q1y1zGAuXGI5efjJZuiq68ktCWsHw=
-P:php7-pdo_sqlite
-V:7.2.22-r0
-A:armv7
-S:9729
-I:57344
-T:PHP7 extension: SQLite 3.x driver for PDO
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libsqlite3.so.0
-p:php-pdo_sqlite
-
 C:Q1vw0eLbdo8h/X7WYBvZP8SRiiw84=
 P:lshw-doc
 V:02.18-r0
@@ -25887,6 +25886,23 @@ t:1545734630
 c:cb2efe169ce7e9b186cf0a127393933c32782b87
 D:so:libc.musl-armv7.so.1
 p:cmd:ucpp
+
+C:Q1Cbmj74Og1lBGyv85adruEsleEI0=
+P:php7-xmlrpc
+V:7.2.24-r0
+A:armv7
+S:25640
+I:86016
+T:PHP7 extension: xmlrpc
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-xml so:libc.musl-armv7.so.1
+p:php-xmlrpc
 
 C:Q1yu6svq6v768Ax8nq1Ca6SkvhbWU=
 P:texmf-dist-games
@@ -26099,23 +26115,6 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1545961128
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
-
-C:Q1lYMa+Yig1NA1342LVO7+3sHI+Ac=
-P:php7-pdo_odbc
-V:7.2.22-r0
-A:armv7
-S:9816
-I:57344
-T:PHP7 extension: ODBC driver for PDO
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libodbc.so.2
-p:php-pdo_odbc
 
 C:Q1VnNsJcqsj7iK3gBueI0O+0QEZ9g=
 P:radare2
@@ -26403,40 +26402,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545961119
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
 
-C:Q1h/40J94I3w4FDS+KSnYP2fqUsQk=
-P:php7-phar
-V:7.2.22-r0
-A:armv7
-S:107590
-I:229376
-T:PHP7 extension: PHP Archive
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7 so:libc.musl-armv7.so.1
-p:php-phar cmd:phar cmd:phar.phar cmd:phar.phar7 cmd:phar7
-
-C:Q1qnJ55BYn9An014KDd1yJYEFsqso=
-P:php7-dba
-V:7.2.22-r0
-A:armv7
-S:17465
-I:69632
-T:PHP7 extension: DBA
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libdb-5.3.so so:libgdbm.so.4
-p:php-dba
-
 C:Q1ruYFCGKBSZLHwYloR6BNS6DNyl4=
 P:mate-applets-lang
 V:1.21.0-r1
@@ -26668,23 +26633,6 @@ t:1545686585
 c:d8c0e5b27afd0fbc7da791fa48905ea99b9ec4bb
 i:docs perl-xml-libxml=2.0132-r1
 
-C:Q1Vwu2mRFPT29fzzoaFJdW8Jz3E60=
-P:php7-session
-V:7.2.22-r0
-A:armv7
-S:30470
-I:94208
-T:PHP7 extension: Sessions
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-session
-
 C:Q1CmG0GKe0tcn+7vJAl086q2WFU2o=
 P:mtex2mml-dev
 V:1.3.1-r1
@@ -26791,6 +26739,23 @@ c:20b06b3a5a196d248d8b0e66fc1beb3925667c72
 D:so:libc.musl-armv7.so.1 so:libelf.so.0 so:libpcap.so.1
 p:cmd:dynamips cmd:nvram_export
 
+C:Q1CRpMw9q8DlakFmZfqn3gqAomvbY=
+P:php7-pspell
+V:7.2.24-r0
+A:armv7
+S:6891
+I:53248
+T:PHP7 extension: Pspell
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libaspell.so.15 so:libc.musl-armv7.so.1
+p:php-pspell
+
 C:Q1a1njudn42rSZ3PSIRdiRrBJWzJ4=
 P:faenza-icon-theme-inkscape
 V:1.3.1-r4
@@ -26851,6 +26816,23 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1545692230
 c:3248befe50e1dd8bd8df44927f1d597b121a88f5
 i:docs suitesparse=5.3.0-r0
+
+C:Q1EyCYy7OFgKYdVm/R2jTXY1gBGx4=
+P:php7-pdo_pgsql
+V:7.2.24-r0
+A:armv7
+S:15095
+I:65536
+T:PHP7 extension: PostgreSQL driver for PDO
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libpq.so.5
+p:php-pdo_pgsql
 
 C:Q1Bf4ljn3mTOEgX+dYdsAtc4SCxFY=
 P:filezilla-lang
@@ -27429,6 +27411,23 @@ c:340842e8e1e352b407faa787d4fc974e58001d54
 D:openjdk8 openjdk8-jre openjdk8-jre-base freetype ttf-dejavu xvfb fontconfig
 i:openrc jenkins=2.164.2-r0
 
+C:Q1AvG9vKOIC3JW7Jnjoy/0G3wN7Zg=
+P:php7-snmp
+V:7.2.24-r0
+A:armv7
+S:15585
+I:69632
+T:PHP7 extension: SNMP
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libnetsnmp.so.35
+p:php-snmp
+
 C:Q1FK9BYU44LbXm8qdZQ99f6UGZbqU=
 P:dhcp-probe-doc
 V:1.3.0-r4
@@ -27640,23 +27639,6 @@ o:py-pypdf2
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545671356
 c:9c6ccb11e9f1ad27b0fcddfbc702145b932d8407
-
-C:Q1AGCIYlnzyangmM5jvx/QA6cwTKw=
-P:php7-openssl
-V:7.2.22-r0
-A:armv7
-S:47800
-I:135168
-T:PHP7 extension: OpenSSL
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:php-openssl
 
 C:Q1MSFvA/eloRIOommKiKZQGgimrI4=
 P:faenza-icon-theme-pidgin
@@ -27909,6 +27891,23 @@ c:75676b1a4e13137d95db1449f3a1456e45180503
 D:so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Network.so.5 so:libQt5WebEngineCore.so.5 so:libQt5WebEngineWidgets.so.5 so:libQt5WebKit.so.5 so:libQt5WebKitWidgets.so.5 so:libQt5Widgets.so.5 so:libQt5Xml.so.5 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libqt5keychain.so.1 so:libsqlite3.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libnextcloudsync.so.0=2.5.1 so:libocsync.so.0=2.5.1 cmd:nextcloud cmd:nextcloudcmd
 
+C:Q1LQDlN/XdgDp/b6+YdsEBypdo1ZI=
+P:php7-embed
+V:7.2.24-r0
+A:armv7
+S:1322717
+I:3006464
+T:PHP7 Embedded Library
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073500
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-embed so:libphp7.so=0
+
 C:Q1bsGS507jpSPtk8KFCsm3L1JPKow=
 P:vlc-plugins-packetizer
 V:3.0.6-r0
@@ -28014,23 +28013,6 @@ o:mtex2mml
 m:Jakub Jirutka <jakub@jirutka.cz>
 t:1545707663
 c:63f5e7d295659a855709901ce22a3e5f40fce455
-
-C:Q1WguiCRgxzgCviSRCanbFxm+3Qd0=
-P:php7-json
-V:7.2.22-r0
-A:armv7
-S:16453
-I:65536
-T:PHP7 extension: JSON
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-json
 
 C:Q1PWxu4wSGaCs42miSVYuYDEzvqls=
 P:php7-pecl-ast
@@ -28646,23 +28628,6 @@ c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libmythes-1.2.so.0=0.0.0
 
-C:Q1RFItP/hBl5QSnBQJ2RryuGeICCY=
-P:php7-wddx
-V:7.2.22-r0
-A:armv7
-S:11706
-I:61440
-T:PHP7 extension: WDDX
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-xml so:libc.musl-armv7.so.1
-p:php-wddx
-
 C:Q1VVWVgn4iNluTiymBItzvMytnZ0g=
 P:mmh
 V:0.3-r1
@@ -29136,23 +29101,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545961129
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
 
-C:Q1BRB60h7iG7Es1aXn9Ds6aqPFMqk=
-P:php7-simplexml
-V:7.2.22-r0
-A:armv7
-S:16757
-I:69632
-T:PHP7 extension: SimpleXML
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-simplexml
-
 C:Q1v/5SnBbFg1hxQIcj0g0WoB2PohA=
 P:gnome-noble-icon-theme
 V:5.5.1-r1
@@ -29349,6 +29297,23 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1545739046
 c:d8c9befe612b75e4a81d9839feb1c2f77fdf0bec
 
+C:Q1JhFzXO84Q34xCf9ZQvx9SvujQSw=
+P:php7-fileinfo
+V:7.2.24-r0
+A:armv7
+S:286242
+I:5033984
+T:PHP7 extension: fileinfo
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-fileinfo
+
 C:Q1SOzczppoCnxSFFUrXakKMKkkI8k=
 P:libteam-doc
 V:1.28-r0
@@ -29363,6 +29328,22 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1545862023
 c:601b96a1b5c62948e7989195d28aac2eb86b9d97
 i:docs libteam=1.28-r0
+
+C:Q1+mTVEnVecLj3DXDZTvj6VEHEnDE=
+P:php7-common
+V:7.2.24-r0
+A:armv7
+S:24678
+I:106496
+T:The PHP7 language runtime engine (common config)
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+p:php-common php7-zlib php-zlib
 
 C:Q1y/BmiUQmkmiZ9/+BKPNNP2JIYxo=
 P:terminator-lang
@@ -30051,6 +30032,23 @@ t:1545688669
 c:211d8a436c19922d6a02fadb8d51ed9563556022
 D:fontconfig
 
+C:Q1fHYMvzL2Y6jVvLxVETf4Ltn6nRE=
+P:php7-zip
+V:7.2.24-r0
+A:armv7
+S:19317
+I:77824
+T:PHP7 extension: Zip
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libzip.so.5
+p:php-zip
+
 C:Q1gVqgtdfMiAr5AFajh2jPSNVuutM=
 P:perl-spiffy
 V:0.46-r1
@@ -30187,6 +30185,23 @@ t:1545725068
 c:ae14d1064c9af1a08f1662dbcdb20b6566c7a491
 D:pkgconfig
 p:pc:tclap=1.2.2
+
+C:Q1Js5jJvkpKLc8vYqW7u+G9rbZNvE=
+P:php7-gettext
+V:7.2.24-r0
+A:armv7
+S:5215
+I:49152
+T:PHP7 extension: GetText
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libintl.so.8
+p:php-gettext
 
 C:Q1uoSKE3chZjY+a/BbWGIKx9UU+HY=
 P:libcue
@@ -30381,23 +30396,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1558978560
 c:cfdf5452f1c90db2c8c1f710134e3127506e1a54
 i:docs shadow=4.5-r2
-
-C:Q11PL1vDcnKTLehXxRivCTanY74kg=
-P:php7-curl
-V:7.2.22-r0
-A:armv7
-S:28694
-I:98304
-T:PHP7 extension: cURL
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libcurl.so.4
-p:php-curl
 
 C:Q1dcd35Js8PUotNxjk1m8HBhIxrh4=
 P:py2-configargparse
@@ -30630,23 +30628,6 @@ t:1545677031
 c:7294dfae606f65329bf8f8138f956cb0e8d19334
 D:python3 libmagic
 i:py-magic=0.4.15-r0 python3
-
-C:Q1ntHrB787qLa/NhUdLWBL5VDI2eg=
-P:php7-xsl
-V:7.2.22-r0
-A:armv7
-S:11045
-I:61440
-T:PHP7 extension: XSL
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-dom so:libc.musl-armv7.so.1 so:libexslt.so.0 so:libxml2.so.2 so:libxslt.so.1
-p:php-xsl
 
 C:Q1UCLq0GMqMP8L7e68fL62NRracEs=
 P:libreoffice-lang-sr_latn
@@ -31642,6 +31623,23 @@ t:1545953162
 c:6606f4175e47a13724625647dc8c73c35696e3d4
 i:docs atril=1.21.1-r0
 
+C:Q1py41Yd982evGkk8jo5yXZ/x+/PA=
+P:php7-dom
+V:7.2.24-r0
+A:armv7
+S:45866
+I:135168
+T:PHP7 extension: DOM
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-dom
+
 C:Q12Ilhi4+oHKUf+OkNR0gjIAOSRfs=
 P:perl-mojolicious
 V:8.08-r0
@@ -32388,6 +32386,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545686421
 c:62750af0fedc04e43d6393aecd7d3d440a2ea2c5
 
+C:Q1uH0t6FZ01fFv0HlHI2OKr2u/Uv4=
+P:php7-mysqli
+V:7.2.24-r0
+A:armv7
+S:33634
+I:114688
+T:PHP7 extension: MySQLi
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-mysqlnd php7-openssl so:libc.musl-armv7.so.1
+p:php-mysqli
+
 C:Q1me+MQcIH9pQWDrAPwyVHHJqKIeY=
 P:nextcloud-files_versions
 V:15.0.12-r0
@@ -32655,23 +32670,6 @@ t:1545676423
 c:b1274f164d3742fc5a47f4ab85a91baef72338ec
 i:docs perl-text-glob=0.11-r1
 
-C:Q1qmWlx8phhvtfVAVzFC16+/fylb8=
-P:php7-recode
-V:7.2.22-r0
-A:armv7
-S:4267
-I:45056
-T:PHP7 extension: Recode
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:librecode.so.0
-p:php-recode
-
 C:Q1wuPDykPOxfmDyEs9jD2+g6cJnus=
 P:knot-utils
 V:2.7.4-r1
@@ -32766,23 +32764,6 @@ c:2713818c7c1467a3c793e5de35097454c1f144ed
 D:xxhash so:libc.musl-armv7.so.1 so:libpython2.7.so.1.0
 i:py-xxhash=0.6.5-r1 python2
 
-C:Q1TOgRjw8LMprKV59UJ9wiY9DsPnk=
-P:php7-apache2
-V:7.2.22-r0
-A:armv7
-S:1330892
-I:3039232
-T:PHP7 Module for Apache2
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960891
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common apache2 so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-apache2
-
 C:Q1YnrPcLUx8zx56onRr1LNNAcO+1c=
 P:py2-sqlparse
 V:0.2.4-r0
@@ -32816,6 +32797,23 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-armv7.so.1
 p:cmd:mtex2MML
 
+C:Q1ZNt3t4hiG06/vo83p1zXjfq3kHo=
+P:php7-pdo_mysql
+V:7.2.24-r0
+A:armv7
+S:10168
+I:57344
+T:PHP7 extension: MySQL driver for PDO
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-pdo php7-mysqlnd so:libc.musl-armv7.so.1
+p:php-pdo_mysql
+
 C:Q19dUsw8huZMLM+Fe3cnVlv4TSpXQ=
 P:perl-lingua-preferred
 V:0.2.4-r1
@@ -32829,6 +32827,23 @@ o:perl-lingua-preferred
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545696734
 c:a40c61b24039bdde10c7fb4934b56663a8a5ff78
+
+C:Q1yEKLtHOiiAeoZEPMNSuIhp2CQHU=
+P:php7-recode
+V:7.2.24-r0
+A:armv7
+S:4254
+I:45056
+T:PHP7 extension: Recode
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:librecode.so.0
+p:php-recode
 
 C:Q1m4NB3pYbuAnoDUl8gFKxYGmvJ+Q=
 P:qt5-qtsvg
@@ -32937,23 +32952,6 @@ t:1548063928
 c:11a9848df1c78dca987716ed80a5ec96288ffb5f
 D:pkgconfig
 p:pc:claws-mail=3.17.3.0
-
-C:Q1euP9W1KUWrSTDUAUTpU03aHZ//U=
-P:php7-fileinfo
-V:7.2.22-r0
-A:armv7
-S:286238
-I:5033984
-T:PHP7 extension: fileinfo
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-fileinfo
 
 C:Q1nloPHRgsRAy4xBLTHlIUr+Aiv7M=
 P:qt5-qtwebchannel-dev
@@ -33263,23 +33261,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1547046510
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 i:xfce4-wavelan-plugin=0.6.0-r0 lang
-
-C:Q1s6fnDYHinXElX9sUC/fYohWvLNU=
-P:php7-gmp
-V:7.2.22-r0
-A:armv7
-S:14350
-I:69632
-T:PHP7 extension: GNU GMP support
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libgmp.so.10
-p:php-gmp
 
 C:Q1pMnZcrw9SCV0z0qOuWPLSK2wGMY=
 P:py2-udev
@@ -33886,6 +33867,23 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libQtCore.so.4 so:libQtNetwork.so.4 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libgsasl.so.7 so:libspeex.so.1 so:libstdc++.so.6 so:libz.so.1
 p:so:libjreen.so.1=1.3.0
 
+C:Q160OWRZY1rUJjrIYnqelPxYOav/I=
+P:php7-bz2
+V:7.2.24-r0
+A:armv7
+S:8005
+I:53248
+T:PHP7 extension: Bzip2
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libbz2.so.1 so:libc.musl-armv7.so.1
+p:php-bz2
+
 C:Q1d4ruwZX0+eaUA/NX6ZzgV193p6E=
 P:xfce4-mixer
 V:4.11.0-r3
@@ -34165,23 +34163,6 @@ c:a4c6803c3d96a997d30b4526c6091dcb51a7e4ad
 D:so:libc.musl-armv7.so.1 so:libjpeg.so.8
 p:so:libv4l1.so.0=0.0.0 so:libv4l2.so.0=0.0.0 so:libv4l2rds.so.0=0.0.0 so:libv4lconvert.so.0=0.0.0
 
-C:Q1B7N99TVDC1DcJ5NarmBatzEcVec=
-P:php7-exif
-V:7.2.22-r0
-A:armv7
-S:24891
-I:86016
-T:PHP7 extension: EXIF
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-mbstring so:libc.musl-armv7.so.1
-p:php-exif
-
 C:Q1u3PT45hQSErcwUJN678Rd760W/k=
 P:thunar-vcs-plugin-git
 V:0.2.0-r0
@@ -34257,6 +34238,23 @@ t:1546717215
 c:02b3532c41e9c4c105baed5a077613f08746d8f2
 D:so:libc.musl-armv7.so.1
 p:cmd:unvis
+
+C:Q1FW6+OxVgeyz0T6AVe4283y+Mwqo=
+P:php7-pdo_sqlite
+V:7.2.24-r0
+A:armv7
+S:9774
+I:57344
+T:PHP7 extension: SQLite 3.x driver for PDO
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libsqlite3.so.0
+p:php-pdo_sqlite
 
 C:Q1nhw0VoPmpX0OKT04qhflURMQYaM=
 P:py3-snmp
@@ -34792,6 +34790,23 @@ c:810640a980c8289f62b3de3e31aa4a109c5ea308
 D:py-crypto
 p:cmd:vol.py
 
+C:Q1QHFmuuhzsz70YYRVaj4GkLD0ETI=
+P:php7-mysqlnd
+V:7.2.24-r0
+A:armv7
+S:71826
+I:176128
+T:PHP7 extension: MySQLnd
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-openssl so:libc.musl-armv7.so.1
+p:php-mysqlnd
+
 C:Q1E1rECHIWTlUiexOhFw+b5iRfCcw=
 P:abiword-plugin-freetranslation
 V:3.0.2-r3
@@ -35005,23 +35020,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545741461
 c:ad7a05e18ad5302a10572562d68e09cbf11a3ae3
 D:zlib-dev potrace=1.15-r1
-
-C:Q1xzKzLiuA4Dej/BeA8E1l3KYBpGU=
-P:php7-sockets
-V:7.2.22-r0
-A:armv7
-S:29469
-I:94208
-T:PHP7 extension: Sockets
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-sockets
 
 C:Q1aVykFPRbNDk3+4R9egW3t6V5gP4=
 P:omxplayer
@@ -35303,6 +35301,23 @@ c:60785abc20208c3ee6608c9b181e1e2ec8b3ccb5
 D:/bin/sh so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libevent-2.1.so.6 so:libssl.so.1.1
 p:cmd:pgbouncer
 
+C:Q1fCRHkvIb86S+dOBpJqM4nIkpd9g=
+P:php7-dev
+V:7.2.24-r0
+A:armv7
+S:3653804
+I:17567744
+T:The PHP7 language runtime engine (development files)
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073500
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7=7.2.24-r0 autoconf pcre-dev
+p:cmd:php-config cmd:php-config7 cmd:phpize cmd:phpize7
+
 C:Q1v4qtwTeYuF4VoHRsgffr4lQeDe8=
 P:lua5.2-lgi
 V:0.9.2-r0
@@ -35350,23 +35365,6 @@ t:1545675764
 c:b58ad19595714d1635d5c778445e18e207ab875f
 D:imlib2-dev libcaca=0.99_beta19-r2 pkgconfig
 p:cmd:caca-config
-
-C:Q1n3IQ4wXz4kdjuTvssUxNB0N320w=
-P:php7-dom
-V:7.2.22-r0
-A:armv7
-S:45843
-I:135168
-T:PHP7 extension: DOM
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-dom
 
 C:Q1wcDJXKTEousaXe1TXykWJSxuyAo=
 P:libmspub-dev
@@ -35660,6 +35658,23 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1545953299
 c:0d8a6942ac6996a4c31ea4180e21f5d5706e929a
 i:docs rest-server=0.9.7-r0
+
+C:Q10p7Sr8F/VTogxcTgIzfg6rie/Dk=
+P:php7-sysvsem
+V:7.2.24-r0
+A:armv7
+S:4545
+I:49152
+T:PHP7 extension: System V Semaphores
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-sysvsem
 
 C:Q1Rgu/6zmGOyRz3uvKYKAwt7akpus=
 P:lua5.3-brieflz
@@ -35980,23 +35995,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1545730761
 c:68f694f6b989b03a8bc20c450503342cddeedf72
 
-C:Q1ok+yK019mcJbBqxtItv1iODrk+A=
-P:php7-ctype
-V:7.2.22-r0
-A:armv7
-S:4516
-I:49152
-T:PHP7 extension: ctype
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-ctype
-
 C:Q1dv5Njj6uwN2zWCfvs/Dmv9rnqCo=
 P:eigen-dev
 V:3.3.7-r0
@@ -36055,23 +36053,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1547046771
 c:52e5f79f6970a5f05955f8aa17ef16c8ac254552
 i:docs perl-object-insideout=4.05-r2
-
-C:Q19CeLMAnwynfyWStAGxz3T0PeZdY=
-P:php7-dev
-V:7.2.22-r0
-A:armv7
-S:3653397
-I:17567744
-T:The PHP7 language runtime engine (development files)
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960891
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7=7.2.22-r0 autoconf pcre-dev
-p:cmd:php-config cmd:php-config7 cmd:phpize cmd:phpize7
 
 C:Q1yHf4hDAxpcRZo2MzO0NiiyCU0EY=
 P:py3-service_identity
@@ -36945,6 +36926,23 @@ t:1550148323
 c:022fc53172ffd278a45b388863b00864c6d9a614
 i:docs gns3-gui=2.1.11-r1
 
+C:Q1ItjLE8c0P4CxMspmWdTlJA1aChU=
+P:php7-pdo_odbc
+V:7.2.24-r0
+A:armv7
+S:9840
+I:57344
+T:PHP7 extension: ODBC driver for PDO
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libodbc.so.2
+p:php-pdo_odbc
+
 C:Q1JLeejs+Vdoow6JiYSYsURwLrNCw=
 P:qt5-qtkeychain
 V:0.8.0-r0
@@ -37352,23 +37350,6 @@ t:1545696443
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:so:libLLVM-3.9.so so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:bugpoint-3.9 cmd:llc-3.9 cmd:lli-3.9 cmd:llvm-ar-3.9 cmd:llvm-as-3.9 cmd:llvm-bcanalyzer-3.9 cmd:llvm-c-test-3.9 cmd:llvm-cov-3.9 cmd:llvm-cxxdump-3.9 cmd:llvm-diff-3.9 cmd:llvm-dis-3.9 cmd:llvm-dsymutil-3.9 cmd:llvm-dwarfdump-3.9 cmd:llvm-dwp-3.9 cmd:llvm-extract-3.9 cmd:llvm-lib-3.9 cmd:llvm-link-3.9 cmd:llvm-lto-3.9 cmd:llvm-mc-3.9 cmd:llvm-mcmarkup-3.9 cmd:llvm-nm-3.9 cmd:llvm-objdump-3.9 cmd:llvm-pdbdump-3.9 cmd:llvm-profdata-3.9 cmd:llvm-ranlib-3.9 cmd:llvm-readobj-3.9 cmd:llvm-rtdyld-3.9 cmd:llvm-size-3.9 cmd:llvm-split-3.9 cmd:llvm-stress-3.9 cmd:llvm-symbolizer-3.9 cmd:llvm-tblgen-3.9 cmd:opt-3.9 cmd:sancov-3.9 cmd:sanstats-3.9 cmd:verify-uselistorder-3.9
-
-C:Q1PeibxjUnJXKC6qKToL2bXSiFVmY=
-P:php7-sqlite3
-V:7.2.22-r0
-A:armv7
-S:15989
-I:69632
-T:PHP7 extension: SQLite3
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libsqlite3.so.0
-p:php-sqlite3
 
 C:Q14mul5JOqEQ9Nl85cn7MimzegyHA=
 P:john-scripts-ruby
@@ -37908,6 +37889,23 @@ t:1545728289
 c:2e3be47e593ed609aa891f03a2685aed456e8e75
 i:gnome-desktop=3.30.1-r0 lang
 
+C:Q101e34sYjsXCuccyR2lK2g1UtxNs=
+P:php7-apache2
+V:7.2.24-r0
+A:armv7
+S:1330905
+I:3039232
+T:PHP7 Module for Apache2
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073500
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common apache2 so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-apache2
+
 C:Q1pWoCMyy649rGYZSuwz+X/AROWck=
 P:modemmanager-doc
 V:1.6.12-r0
@@ -38078,6 +38076,23 @@ t:1545711447
 c:53faea7b7e911de63234fa6c94fd0c673355de5c
 D:ruby
 
+C:Q1b7H34cIOfBqJ9h49dO3VtDI3ySY=
+P:php7-ctype
+V:7.2.24-r0
+A:armv7
+S:4516
+I:49152
+T:PHP7 extension: ctype
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-ctype
+
 C:Q1YO5gqx8mclF/ZmVVvGmL1ZBS0OA=
 P:jpegoptim
 V:1.4.6-r0
@@ -38204,23 +38219,6 @@ t:1571946127
 c:b18f2d1006a7b58b45db8d4af133926aad7826ab
 D:exim perl
 p:cmd:convert4r3 cmd:convert4r4 cmd:exicyclog cmd:exigrep cmd:exim_checkaccess cmd:eximstats cmd:exinext cmd:exipick cmd:exiqgrep cmd:exiqsumm cmd:exiwhat
-
-C:Q1wtqwtYk/fiaC+kaEipHVe7WGSkg=
-P:php7-bz2
-V:7.2.22-r0
-A:armv7
-S:8023
-I:53248
-T:PHP7 extension: Bzip2
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libbz2.so.1 so:libc.musl-armv7.so.1
-p:php-bz2
 
 C:Q1JFzrj2G8fHGllCxmsPDerwrOacg=
 P:exim-dnsdb
@@ -38832,23 +38830,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545745344
 c:95494b2a6ae0d6a436ae3dc7d869580aca8dcf5e
 D:so:libc.musl-armv7.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
-
-C:Q1RQiW+mWZxc1we5esrJdgGFhgCH0=
-P:php7-opcache
-V:7.2.22-r0
-A:armv7
-S:139402
-I:278528
-T:PHP7 extension: Opcache
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-opcache
 
 C:Q1hj09KkL6R0WhYc3BbbzwxoiKtaU=
 P:containerd-doc
@@ -40803,22 +40784,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545688826
 c:68280f6102c54a72389e002b39da83c92459af72
 D:so:libc.musl-armv7.so.1
-
-C:Q1+7leBAypM+1p4fbgo1meHMj+ScE=
-P:php7-common
-V:7.2.22-r0
-A:armv7
-S:24713
-I:106496
-T:The PHP7 language runtime engine (common config)
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-p:php-common php7-zlib php-zlib
 
 C:Q1fMAmARCZumbQu0dXUPM4+wZFoNQ=
 P:abiword-plugin-presentation
@@ -43483,6 +43448,23 @@ c:e086f2ad4d872bf33c9d3cb487c159bb3b32ab2a
 D:python3
 i:py-hglib=2.6.1-r0 python3
 
+C:Q1oaiyd6IMUOJjEbIp6aoTwFDlyeM=
+P:php7-pgsql
+V:7.2.24-r0
+A:armv7
+S:41475
+I:118784
+T:PHP7 extension: PostgreSQL
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073504
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libpq.so.5
+p:php-pgsql
+
 C:Q1Q0QorXpBr9KjP8t7wdxTJ/abV0g=
 P:libreoffice-lang-st
 V:6.1.4.2-r0
@@ -43772,23 +43754,6 @@ c:ee7342c0465a130911ff5cc5f95987f3e998f11d
 D:/bin/sh so:libc.musl-armv7.so.1
 p:cmd:sendsms cmd:sms2html cmd:sms2unicode cmd:smsd cmd:unicode2sms
 
-C:Q1Ox9H8jgRyLVpIZsjZkj/ahyahsY=
-P:php7-litespeed
-V:7.2.22-r0
-A:armv7
-S:1343059
-I:3014656
-T:PHP7 LiteSpeed SAPI
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-lightspeed cmd:lsphp cmd:lsphp7
-
 C:Q1HbcSMmNUx/dVi14baPSaP3kUAiU=
 P:dcron-doc
 V:4.5-r4
@@ -43956,6 +43921,23 @@ t:1545695996
 c:4ee7c35b7d373eda37833e00b68898f63b65a14a
 D:apk-gtk-policy so:libc.musl-armv7.so.1 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libvte.so.9
 p:cmd:apk-gtk
+
+C:Q1wI2OCfan4xZgNWJnncmUwDxpWDA=
+P:php7-phpdbg
+V:7.2.24-r0
+A:armv7
+S:1413529
+I:3149824
+T:Interactive PHP7 debugger
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073500
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-phpdbg cmd:phpdbg cmd:phpdbg7
 
 C:Q18Q334AoeG8snp2ZEX/lTF2aSLmE=
 P:py3-josepy
@@ -44511,6 +44493,23 @@ t:1545687005
 c:ccca3236711b56d6ecc58247063a4e4f51c80476
 D:perl-datetime
 
+C:Q1Ph13rDUb2Il5lBk/XecMVoWn7/A=
+P:php7-xmlreader
+V:7.2.24-r0
+A:armv7
+S:10277
+I:61440
+T:PHP7 extension: XMLReader
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-dom so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-xmlreader
+
 C:Q1X9CAwDVIAuVAOfptuLvJzUhz6MU=
 P:qt5-qtgraphicaleffects
 V:5.12.0-r0
@@ -44922,6 +44921,23 @@ c:aae6fdb193aab3a210850489445357bddb2ddcd3
 D:so:libc.musl-armv7.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libusb-1.0.so.0
 p:so:libgusb.so.2=2.0.10 cmd:gusbcmd
 
+C:Q1TXdcypbKD6E/Tf8YvgCBBoHicaQ=
+P:php7-tokenizer
+V:7.2.24-r0
+A:armv7
+S:7765
+I:53248
+T:PHP7 extension: tokenizer
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-tokenizer
+
 C:Q1PueqYsORI/C+jkUxO3BDfLxzdxI=
 P:abiword-plugin-eml
 V:3.0.2-r3
@@ -45211,6 +45227,23 @@ c:5e00acaac2f6aefc7932a4588ae0a5f4fb46b409
 D:lua5.1 so:libc.musl-armv7.so.1
 i:lua-term=0.07-r1 lua5.1
 
+C:Q1Sq1jRncfYruua2TB67bEJp3SX2U=
+P:php7-sqlite3
+V:7.2.24-r0
+A:armv7
+S:15986
+I:69632
+T:PHP7 extension: SQLite3
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libsqlite3.so.0
+p:php-sqlite3
+
 C:Q1MXzVDOXWUom1Ddgq6Xy/RzKXABM=
 P:wireshark-dev
 V:2.6.9-r0
@@ -45408,6 +45441,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1547048193
 c:7961d7e56f011900ca3e391cb6912b77d602d51e
 D:abiword audacious claws-mail dhcpcd dhcpcd-ui evince gnumeric lxdm ristretto sudo eudev xf86-input-keyboard xf86-input-mouse xf86-video-vesa xfce4 xorg-server xscreensaver /bin/sh
+
+C:Q1dYzAdxCjfLsLwJdancakGB2O818=
+P:php7
+V:7.2.24-r0
+A:armv7
+S:1354972
+I:3059712
+T:The PHP7 language runtime engine
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php7-cli php-cli php cmd:php cmd:php7
 
 C:Q19x3lCrKMnjiA1B4+XClJBEu5WNE=
 P:py3-webcolors
@@ -45715,23 +45765,6 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1545697827
 c:86e7728933a3320cd978d015a891d56f55e583f6
 i:ncmpc=0.33-r0 lang
-
-C:Q1Q4pVs6t99DFpUSbF6PvgS/k1eC8=
-P:php7-odbc
-V:7.2.22-r0
-A:armv7
-S:20040
-I:77824
-T:PHP7 extension: ODBC
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libodbc.so.2
-p:php-odbc
 
 C:Q15PMVU4xeRzzCoOyqY1eidzV6l7c=
 P:gradle
@@ -46951,23 +46984,6 @@ c:ea05d8c376a161a4813663e1952477468765759a
 D:/bin/sh so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libdnssec.so.6 so:libedit.so.0 so:libgnutls.so.30 so:libknot.so.8 so:liburcu.so.6 so:libzscanner.so.2
 p:cmd:keymgr cmd:kjournalprint cmd:knotc cmd:knotd
 
-C:Q198grraGQdSoc78wgver2tyuXC6c=
-P:php7-ftp
-V:7.2.22-r0
-A:armv7
-S:17249
-I:73728
-T:PHP7 extension: FTP
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:php-ftp
-
 C:Q16IklCE57oLnkyfE6hAQBOk+kf5c=
 P:libhdhomerun
 V:20161117-r1
@@ -47415,6 +47431,23 @@ t:1546049879
 c:04c57e519ebed06725a032026a2c87061e84e2ea
 i:docs opendkim=2.10.3-r10
 
+C:Q1L46j316lWBC/kLolD/L0NzHnCzg=
+P:php7-odbc
+V:7.2.24-r0
+A:armv7
+S:20008
+I:77824
+T:PHP7 extension: ODBC
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libodbc.so.2
+p:php-odbc
+
 C:Q1kCBefl7A8Gd4iXE3EgkoB45T8nI=
 P:tesseract-ocr-data-vie
 V:4.0.0-r0
@@ -47429,23 +47462,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545735899
 c:161de9b3472eb0d39c896c12db20206297310b1d
 D:tesseract-ocr
-
-C:Q1kZ4lhJiO0XC6aBXgqztQgNuu5no=
-P:php7-cgi
-V:7.2.22-r0
-A:armv7
-S:1337360
-I:3002368
-T:PHP7 Common Gateway Interface
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960892
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-cgi cmd:php-cgi cmd:php-cgi7
 
 C:Q1ow1/iCxoHqRPzikfGfKb3Va85N8=
 P:wireshark-doc
@@ -47583,23 +47599,6 @@ t:1545726168
 c:350bd99f95f6dd14c44107ebb719433aa4d4f653
 i:docs flawfinder=2.0.7-r0
 
-C:Q1L+Zlwm5BtDY8KT8hsLLvg3evEcI=
-P:php7-sysvmsg
-V:7.2.22-r0
-A:armv7
-S:6054
-I:49152
-T:PHP7 extension: System V Message based IPC
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-sysvmsg
-
 C:Q1EA0qa4+PLyIDBCILlNDD1lV5qi8=
 P:libreoffice-lang-sw_tz
 V:6.1.4.2-r0
@@ -47628,23 +47627,6 @@ m:Mitch Tishmack <mitch.tishmack@gmail.com>
 t:1545983351
 c:546b4ab3c85e86b127b8d94a189f016b7f06d7e8
 i:docs upx=3.95-r1
-
-C:Q1tByagpw5eOYVnk55Y1wOK4fwyqI=
-P:php7-xmlwriter
-V:7.2.22-r0
-A:armv7
-S:10636
-I:65536
-T:PHP7 extension: XMLWriter
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960897
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
-p:php-xmlwriter
 
 C:Q1lbpwPVn22atzyIpHppmyXaBI/IE=
 P:faenza-icon-theme-libreoffice-impress
@@ -47740,6 +47722,23 @@ c:034510433a81e111f2f25dfe9cc5262518389a6c
 D:pc:Qt5Core pc:Qt5Gui pc:Qt5Network pc:Qt5Test pc:Qt5Widgets pkgconfig qt5-qtdeclarative=5.12.0-r1
 p:pc:Qt5Qml=5.12.0 pc:Qt5Quick=5.12.0 pc:Qt5QuickTest=5.12.0 pc:Qt5QuickWidgets=5.12.0
 
+C:Q1vniC7kYigCcZFF3rwetUv0UHBmM=
+P:php7-enchant
+V:7.2.24-r0
+A:armv7
+S:7307
+I:53248
+T:PHP7 extension: enchant
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libenchant.so.1
+p:php-enchant
+
 C:Q1/wDr+R1Oezzi/eZdHdatP9wxsdw=
 P:ddrescue
 V:1.23-r0
@@ -47755,23 +47754,6 @@ t:1545741382
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:ddrescue cmd:ddrescuelog
-
-C:Q1sYWZSSA9YJFWB3ZlaLl3zOnKWE0=
-P:php7-gettext
-V:7.2.22-r0
-A:armv7
-S:5211
-I:49152
-T:PHP7 extension: GetText
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libintl.so.8
-p:php-gettext
 
 C:Q1s43sNChhV/x7eOTLYc+0+OBWi9E=
 P:perl-test-taint
@@ -48616,23 +48598,6 @@ t:1545723694
 c:1c0c11a967c503a9828f3ee95f8b4145b480d2bf
 D:so:libc.musl-armv7.so.1
 p:so:libmpack.so.0=0.0.0
-
-C:Q1lfQsLo6gvPL/YbEU2YorG9GIOA8=
-P:php7-pdo_dblib
-V:7.2.22-r0
-A:armv7
-S:9152
-I:53248
-T:PHP7 extension: DB-LIB (MS SQL, Sybase)
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-pdo so:libc.musl-armv7.so.1 so:libsybdb.so.5
-p:php-pdo_dblib
 
 C:Q1153R9NjXKxDfJuWymC4SYGIu3gk=
 P:stunnel-doc
@@ -49496,23 +49461,6 @@ c:2713818c7c1467a3c793e5de35097454c1f144ed
 D:xxhash so:libc.musl-armv7.so.1 so:libpython3.6m.so.1.0
 i:py-xxhash=0.6.5-r1 python3
 
-C:Q19AFUYLbT/YOSD+LxG3B0c2lnWcw=
-P:php7-tokenizer
-V:7.2.22-r0
-A:armv7
-S:7743
-I:53248
-T:PHP7 extension: tokenizer
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960896
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-tokenizer
-
 C:Q1BROw8ZGD0wdroiPvlCo6wmZY0gM=
 P:inkscape-view
 V:0.92.3-r0
@@ -49791,23 +49739,6 @@ m:William Pitcock <nenolod@dereferenced.org>
 t:1545710129
 c:4e6848e00f109290b87d213aee9e5584cca12876
 D:faenza-icon-theme-audacity=1.3.1-r4 faenza-icon-theme-dia=1.3.1-r4 faenza-icon-theme-evolution=1.3.1-r4 faenza-icon-theme-extras=1.3.1-r4 faenza-icon-theme-gimp=1.3.1-r4 faenza-icon-theme-glade=1.3.1-r4 faenza-icon-theme-gnome-panel=1.3.1-r4 faenza-icon-theme-gnome-session=1.3.1-r4 faenza-icon-theme-gnumeric=1.3.1-r4 faenza-icon-theme-hardinfo=1.3.1-r4 faenza-icon-theme-imagemagick=1.3.1-r4 faenza-icon-theme-mplayer=1.3.1-r4 faenza-icon-theme-pidgin=1.3.1-r4 faenza-icon-theme-totem=1.3.1-r4 faenza-icon-theme-vim=1.3.1-r4 faenza-icon-theme-wireshark=1.3.1-r4 faenza-icon-theme-xchat=1.3.1-r4
-
-C:Q15NBesnHuJG7AF/CHUPMD7cYRq3c=
-P:php7-pgsql
-V:7.2.22-r0
-A:armv7
-S:41497
-I:118784
-T:PHP7 extension: PostgreSQL
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960895
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libpq.so.5
-p:php-pgsql
 
 C:Q1TXmDHKX8GTxu3zeqQ2zotbkre2Q=
 P:py-zope-event
@@ -50824,23 +50755,6 @@ t:1545682091
 c:d73ed5943741ece817a2b8e9eea2e68622e3c186
 i:docs mmh=0.3-r1
 
-C:Q1a633qlIn8KxsFK1RLS9SLBNA22U=
-P:php7-iconv
-V:7.2.22-r0
-A:armv7
-S:14116
-I:65536
-T:PHP7 extension: Iconv
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1
-p:php-iconv
-
 C:Q1D0XqcbcNOCV9AUB66pJ9xrM9tjg=
 P:erlang-snmp
 V:21.2.1-r0
@@ -50978,22 +50892,6 @@ t:1545743478
 c:7e331b087fbd132905a91efa6180ce03b40a7156
 i:docs homer-api=5.0.6-r13
 
-C:Q1te35fgj2Kj0zRF7ly2IDRvJQNjw=
-P:php7-doc
-V:7.2.22-r0
-A:armv7
-S:136217
-I:479232
-T:The PHP7 language runtime engine (documentation)
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960891
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-i:docs php7=7.2.22-r0
-
 C:Q1OUdtN6T5ray+qixD+LtBvyW9OAI=
 P:xfce4-clipman-plugin
 V:1.4.3-r0
@@ -51009,23 +50907,6 @@ t:1547046647
 c:9058db9f8662df7e42e10021c94b6889aae991b8
 D:so:libX11.so.6 so:libXtst.so.6 so:libc.musl-armv7.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libxfce4panel-2.0.so.4 so:libxfce4ui-2.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.3
 p:cmd:xfce4-clipman cmd:xfce4-clipman-settings cmd:xfce4-popup-clipman cmd:xfce4-popup-clipman-actions
-
-C:Q1qpI4b7U4pesv9zuoNTwOTCzG8BE=
-P:php7-enchant
-V:7.2.22-r0
-A:armv7
-S:7316
-I:53248
-T:PHP7 extension: enchant
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libenchant.so.1
-p:php-enchant
 
 C:Q1HfUie77F2eKMbe/M+aGyfTB3sdE=
 P:py2-magic
@@ -51148,6 +51029,23 @@ t:1545710110
 c:4e6848e00f109290b87d213aee9e5584cca12876
 D:faenza-icon-theme=1.3.1-r4
 i:faenza-icon-theme=1.3.1-r4 dia
+
+C:Q12xBZFS5tsogIn8cem9eWGH62bo4=
+P:php7-litespeed
+V:7.2.24-r0
+A:armv7
+S:1343139
+I:3014656
+T:PHP7 LiteSpeed SAPI
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073501
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
+p:php-lightspeed cmd:lsphp cmd:lsphp7
 
 C:Q1feYJhWBmDPkfhicTwfAu3OoPKLE=
 P:faenza-icon-theme-mplayer
@@ -51834,6 +51732,23 @@ o:py-psutil
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1548540948
 c:a7e4638f37ff5dc5d526fa3149ee10367afc364b
+
+C:Q1PZ1BiR2N6ZBsEAIvnPns5wY9bLs=
+P:php7-xsl
+V:7.2.24-r0
+A:armv7
+S:11033
+I:61440
+T:PHP7 extension: XSL
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073506
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common php7-dom so:libc.musl-armv7.so.1 so:libexslt.so.0 so:libxml2.so.2 so:libxslt.so.1
+p:php-xsl
 
 C:Q1R6B1YffOpG1lcuC4uWsDTPA94QA=
 P:vlc-plugins-demux
@@ -54106,6 +54021,23 @@ t:1545740613
 c:4f06bab96047dbc75ced3a6b6478856fdbc219be
 i:docs mblaze=0.4-r1
 
+C:Q1pbOiQrb47VT0ST4wTEGv68SOcSE=
+P:php7-soap
+V:7.2.24-r0
+A:armv7
+S:106718
+I:217088
+T:PHP7 extension: SOAP
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libxml2.so.2
+p:php-soap
+
 C:Q1qOfyTwiqkRUK5Sc1SLId42mCw1w=
 P:gtk-vnc-doc
 V:0.7.1-r1
@@ -54957,6 +54889,23 @@ c:019642e21a73e672eac05dc765f27c99f4b02c9e
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 p:cmd:secpwgen
 
+C:Q1oCa9iwWy56PVTRqbtZ98T6Hhm90=
+P:php7-openssl
+V:7.2.24-r0
+A:armv7
+S:47771
+I:135168
+T:PHP7 extension: OpenSSL
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:php-openssl
+
 C:Q10Z7aUtz8CCeSHYeZSq8FsAAfKCc=
 P:libzip-dev
 V:1.5.1-r2
@@ -55034,23 +54983,6 @@ t:1545667228
 c:d765d260d33d81354422b65128a93c9be769247f
 D:so:libatk-1.0.so.0 so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libxml2.so.2
 p:so:libgtksourceview-3.0.so.1=1.8.0
-
-C:Q1Ae4p6f1APo7JSAywezKuk4GgDqQ=
-P:php7-embed
-V:7.2.22-r0
-A:armv7
-S:1322639
-I:3006464
-T:PHP7 Embedded Library
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960891
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
-p:php-embed so:libphp7.so=0
 
 C:Q18vOt8fGEbiapLF1Dxrk0V6qMuc0=
 P:xdotool
@@ -55396,6 +55328,23 @@ t:1545735888
 c:161de9b3472eb0d39c896c12db20206297310b1d
 D:tesseract-ocr
 
+C:Q1+A8vWFTlI+r079zVAqONRdN7vso=
+P:php7-pdo
+V:7.2.24-r0
+A:armv7
+S:35818
+I:106496
+T:PHP7 extension: PHP Data Objects
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-pdo
+
 C:Q1ef8MjTLwB4Fkr5VE6WOvJxTOCyg=
 P:dvd+rw-tools
 V:7.1-r0
@@ -55671,23 +55620,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1548063929
 c:11a9848df1c78dca987716ed80a5ec96288ffb5f
 D:claws-mail=3.17.3-r2 so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8
-
-C:Q1EmXWFvZ/p0Y44KnKU8YBLQPwFHc=
-P:php7-intl
-V:7.2.22-r0
-A:armv7
-S:123344
-I:319488
-T:PHP7 extension: Internationalization
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libicui18n.so.62 so:libicuio.so.62 so:libicuuc.so.62 so:libstdc++.so.6
-p:php-intl
 
 C:Q1h+GIdwE3Y87yvbKpyiJ0cPHsmXk=
 P:softflowd
@@ -55982,23 +55914,6 @@ m:Hasse Hagen Johansen <hasse-docker@hagenjohansen.dk>
 t:1545677084
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:libhdhomerun-libs
-
-C:Q1CCbmMK+lv8K9UWf8HLl8Prdz0ow=
-P:php7-mysqlnd
-V:7.2.22-r0
-A:armv7
-S:71741
-I:176128
-T:PHP7 extension: MySQLnd
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960894
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common php7-openssl so:libc.musl-armv7.so.1
-p:php-mysqlnd
 
 C:Q1SqNo8AP+Pw4xKKYU1envBtIvTp0=
 P:emacs-gtk2
@@ -56350,6 +56265,23 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1545718501
 c:58f3facf9efc381ae66d548f9432f5634b95ed5c
 i:docs gwenhywfar=4.18.0-r1
+
+C:Q1l5jquRksPfbEI+c3J7WMSTGecvg=
+P:php7-ftp
+V:7.2.24-r0
+A:armv7
+S:17252
+I:73728
+T:PHP7 extension: FTP
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073502
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:php-ftp
 
 C:Q1bNadcRAIrjt5xnkcYSAwueccaIU=
 P:thunar-volman
@@ -57046,6 +56978,23 @@ c:a955104e9f31c2274c214699cbed82250cc88310
 D:so:libImlib2.so.1 so:libX11.so.6 so:libXft.so.2 so:libc.musl-armv7.so.1 so:libexif.so.12 so:libgif.so.7
 p:cmd:sxiv
 
+C:Q1tiUQ6YtIxggcsyn9ahcphkQ30kI=
+P:php7-ldap
+V:7.2.24-r0
+A:armv7
+S:21459
+I:81920
+T:PHP7 extension: LDAP
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:php-ldap
+
 C:Q12LZ9k3N2cnqh+12lR+0VqJmmSKQ=
 P:keyfinder-cli
 V:1.0.1-r2
@@ -57166,23 +57115,6 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1545961130
 c:1c5a675bef69e05e1e77f527b73e21fe8974788e
-
-C:Q1N1kj7DwbUc9pYRKi8ovDwU6hw/E=
-P:php7-gd
-V:7.2.22-r0
-A:armv7
-S:88200
-I:299008
-T:PHP7 extension: GD imaging
-U:https://secure.php.net
-L:PHP-3.0 BSD LGPL-2.0 MIT Zend
-o:php7
-m:Valery Kartel <valery.kartel@gmail.com>
-t:1569960893
-c:00a373f65ae0d2e17eca6ec5d5f1a8dddaea0783
-k:100
-D:php7-common so:libXpm.so.4 so:libc.musl-armv7.so.1 so:libfreetype.so.6 so:libjpeg.so.8 so:libpng16.so.16 so:libwebp.so.7 so:libz.so.1
-p:php-gd
 
 C:Q1SwRqs4nkdrdA5iqPc+f9Xxx1e4E=
 P:thttpd-openrc
@@ -57321,6 +57253,23 @@ t:1545723375
 c:fb1c24b95ab0efd892956446ef060b6e2679df14
 D:e2fsprogs-extra
 p:cmd:zram-init
+
+C:Q1VVPxOEclVg2AfYw8Rs82+BGC7Oo=
+P:php7-tidy
+V:7.2.24-r0
+A:armv7
+S:15310
+I:69632
+T:PHP7 extension: tidy
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1 so:libtidy.so.5
+p:php-tidy
 
 C:Q15x8xPVhC8IXC6D4LA8pWNy6Ro1M=
 P:keepalived-common
@@ -57755,6 +57704,23 @@ t:1545728855
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:gst-plugins-good
 i:parole=0.9.2-r2 lang
+
+C:Q1JwwGVU0UQOqJFxStnX8+LJzxKNU=
+P:php7-sockets
+V:7.2.24-r0
+A:armv7
+S:29461
+I:94208
+T:PHP7 extension: Sockets
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-sockets
 
 C:Q1qoran+Ghd8c+4lJ4ld3YjirB4a0=
 P:openzwave
@@ -58847,6 +58813,23 @@ t:1545710031
 c:4e6848e00f109290b87d213aee9e5584cca12876
 i:faenza-icon-theme=1.3.1-r4 glade
 
+C:Q1RtkU87wMaFHYtAaxNLeJ26m8djM=
+P:php7-mbstring
+V:7.2.24-r0
+A:armv7
+S:639788
+I:1310720
+T:PHP7 extension: Multibyte String Functions
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073503
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-mbstring
+
 C:Q1CjgBYW04PEIjrdoBmCMlo/MbUKQ=
 P:tidyhtml-libs
 V:5.6.0-r0
@@ -59491,6 +59474,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545678174
 c:1cd1794b132f1a3b97d2faeb3a5dbd219ceec685
 i:docs qca=2.1.3-r6
+
+C:Q1EhhRIqqfqxPF7Ox+JdGc9pek2m8=
+P:php7-sysvmsg
+V:7.2.24-r0
+A:armv7
+S:6065
+I:49152
+T:PHP7 extension: System V Message based IPC
+U:https://secure.php.net
+L:PHP-3.0 BSD LGPL-2.0 MIT Zend
+o:php7
+m:Valery Kartel <valery.kartel@gmail.com>
+t:1572073505
+c:8fcc88fbc7ad864af0b1b56e0986632e07a8861a
+k:100
+D:php7-common so:libc.musl-armv7.so.1
+p:php-sysvmsg
 
 C:Q1g+Lf7venpM1/bPOAbjKryMVdwbA=
 P:emacs-nox
