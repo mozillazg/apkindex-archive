@@ -6194,6 +6194,22 @@ c:9655dce42705c52e44b4db28575cc7e05835bdc9
 D:logrotate
 i:squid=4.8-r1 lang-sk
 
+C:Q1wpSSFNMhfmyIwV+urG92SCeeTYo=
+P:unbound-migrate
+V:1.9.1-r4
+A:armhf
+S:2729
+I:16384
+T:Simple tool to migrate from dnscache to unbound
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:/bin/sh apk-tools dns-root-hints openrc
+p:cmd:migrate-dnscache-to-unbound
+
 C:Q144C6lNam+VuNF1IloDp06pmA1kg=
 P:lua5.2-evdev
 V:2.2.1-r1
@@ -7199,21 +7215,6 @@ o:audit
 m:Tycho Andersen <tycho@docker.com>
 t:1556990559
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-
-C:Q1MKi8huWhHwg8m1K5tDLn0U9AvkY=
-P:sdl-doc
-V:1.2.15-r11
-A:armhf
-S:120594
-I:741376
-T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (documentation)
-U:http://www.libsdl.org
-L:LGPL-2.1-or-later
-o:sdl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565786959
-c:891aa4b283546ecc16acdb965cf4bc5572644a28
-i:docs sdl=1.2.15-r11
 
 C:Q1NIg7zUMi6hJuggbOCbwpYp6NxvI=
 P:py3-tevent
@@ -19067,6 +19068,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557073787
 c:de75a0adbb8a3af88b3b193ed17650d7ae8aa67d
 
+C:Q1gkOIfXGjUnlT3nUKXKrHphr4GTs=
+P:sdl-static
+V:1.2.15-r12
+A:armhf
+S:210482
+I:589824
+T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (static libraries)
+U:http://www.libsdl.org
+L:LGPL-2.1-or-later
+o:sdl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574248017
+c:8500a332914114e126e7340c92dcf1361f59e2df
+
 C:Q1Y36RE76EBAYBTrVDYwSJDmrTL1U=
 P:imake
 V:1.0.8-r0
@@ -21678,22 +21693,6 @@ c:4407fdc63ef3d89d0fef9c24719b2f7df24b5b04
 D:so:libc.musl-armhf.so.1 so:libntfs-3g.so.88
 p:cmd:lowntfs-3g cmd:ntfs-3g
 
-C:Q13WwSuX3La41rQtvAxBKPIyzoD3Y=
-P:unbound-libs
-V:1.9.1-r3
-A:armhf
-S:1454289
-I:3391488
-T:unbound shared libraries
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541342
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.6 so:libssl.so.1.1
-p:so:libunbound.so.8=8.1.1
-
 C:Q14R0U6Dnwse8YIURH4bgpvy1LTmo=
 P:s6-rc-doc
 V:0.5.0.0-r0
@@ -24214,6 +24213,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557170095
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 p:cmd:openbox-kde-session
+
+C:Q1jhP0JW7WyE2jEeM0Ld+qjPDNR5k=
+P:unbound
+V:1.9.1-r4
+A:armhf
+S:1137244
+I:2457600
+T:Unbound is a validating, recursive, and caching DNS resolver
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:dns-root-hints dnssec-root /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.6 so:libexpat.so.1 so:libssl.so.1.1 so:libunbound.so.8
+p:cmd:unbound cmd:unbound-anchor cmd:unbound-checkconf cmd:unbound-control cmd:unbound-control-setup cmd:unbound-host
 
 C:Q1sT76YDiQsKO5LIGNR5pnYypRbq8=
 P:ngrep-dbg
@@ -28461,22 +28476,6 @@ t:1556953567
 c:3649c1180f38770b9cbb595b2c0cac4a3e0112dd
 i:docs xkbcomp=1.4.2-r0
 
-C:Q1N8loBV+k7/+fgcw6a2wS+Q6Y8mc=
-P:unbound-migrate
-V:1.9.1-r3
-A:armhf
-S:2716
-I:16384
-T:Simple tool to migrate from dnscache to unbound
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541343
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:/bin/sh apk-tools dns-root-hints openrc
-p:cmd:migrate-dnscache-to-unbound
-
 C:Q16Jgtp9jXKFstpp81DomLRyaQ5gs=
 P:espeak-dev
 V:1.48.04-r1
@@ -31781,21 +31780,6 @@ t:1559029374
 c:bf68d51d2a0d0616951e1f50950d87b7b7969e23
 i:docs sudo=1.8.27-r0
 
-C:Q1IdFJBduewAWDpspr0Qd5g3Vi8JM=
-P:py-unbound
-V:1.9.1-r3
-A:armhf
-S:45643
-I:233472
-T:Python bindings to libunbound
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541343
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:so:libc.musl-armhf.so.1 so:libunbound.so.8
-
 C:Q1gttAZ+V3Tlh+BtFlegkiRuAOJoY=
 P:lz4
 V:1.9.1-r0
@@ -33122,6 +33106,21 @@ t:1557151698
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-armhf.so.1
 
+C:Q1/fg9NQvLjpa86Pp0osXUNyn8w3M=
+P:unbound-dbg
+V:1.9.1-r4
+A:armhf
+S:3622990
+I:8753152
+T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:dns-root-hints dnssec-root
+
 C:Q1wnzSu3mPS83XmSgsUtgMIiQEKUQ=
 P:xen
 V:4.12.1-r0
@@ -33442,22 +33441,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556906743
 c:b7cdc1d551f335d43dc3dcbcf84a4616d847ab2e
 i:docs bison=3.3.2-r0
-
-C:Q1ylWSzza+86qoUF4IugsiQf2b1mo=
-P:sdl_image
-V:1.2.12-r4
-A:armhf
-S:23714
-I:57344
-T:A simple library to load images of various formats as SDL surfaces
-U:http://www.libsdl.org/projects/SDL_image/
-L:Zlib
-o:sdl_image
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557252403
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:so:libSDL-1.2.so.0 so:libc.musl-armhf.so.1
-p:so:libSDL_image-1.2.so.0=0.8.4
 
 C:Q1SmIOmrcjRIqUmh9015jYYMXjecs=
 P:libuv-dev
@@ -35139,6 +35122,21 @@ t:1556994459
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-armhf.so.1
 p:cmd:makedepend
+
+C:Q15/wuLd+jetJi1E2TEcRo6mcVfLU=
+P:py-unbound
+V:1.9.1-r4
+A:armhf
+S:45626
+I:233472
+T:Python bindings to libunbound
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:so:libc.musl-armhf.so.1 so:libunbound.so.8
 
 C:Q1adWYMwZQWW6Nr9Z7nsN7c/m1ZSs=
 P:py-flask-wtf
@@ -37640,20 +37638,6 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libGL.so.1 so:libX11.so.6 so:libXi.so.6 so:libXxf86vm.so.1 so:libc.musl-armhf.so.1
 p:so:libglut.so.3=3.10.0
 
-C:Q1T2THdH0pw9nrDyjsTPH07rtVmPQ=
-P:sdl-static
-V:1.2.15-r11
-A:armhf
-S:210425
-I:589824
-T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (static libraries)
-U:http://www.libsdl.org
-L:LGPL-2.1-or-later
-o:sdl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565786957
-c:891aa4b283546ecc16acdb965cf4bc5572644a28
-
 C:Q1gHDcab4xg7Hv5XsqkWmdmHOarTk=
 P:paxmark
 V:0.11-r1
@@ -40121,6 +40105,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1567772912
 c:2fa274fe2c593821cb7d12715f6cd77210ee6348
 i:openrc varnish=6.2.1-r0
+
+C:Q12G2dPsDohqHG/+3K+KItr2FYH7U=
+P:unbound-libs
+V:1.9.1-r4
+A:armhf
+S:1454302
+I:3391488
+T:unbound shared libraries
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.6 so:libssl.so.1.1
+p:so:libunbound.so.8=8.1.1
 
 C:Q1PVFjilA18YesaWYj/DkGYc92zHo=
 P:mtr-doc
@@ -42952,6 +42952,22 @@ t:1557208847
 c:34beb0c38596e2e22c2004c89a5e119f7fd90b8d
 D:libunique3=3.0.2-r0 pc:gtk+-3.0 pkgconfig
 p:pc:unique-3.0=3.0.2
+
+C:Q10II6GcWx/687g2SL/eR++1Q5Hik=
+P:sdl_image
+V:1.2.12-r5
+A:armhf
+S:23704
+I:57344
+T:A simple library to load images of various formats as SDL surfaces
+U:http://www.libsdl.org/projects/SDL_image/
+L:Zlib
+o:sdl_image
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574247010
+c:41c5bc74b5ac24cb063d2188b02ef2c9af61c2b0
+D:so:libSDL-1.2.so.0 so:libc.musl-armhf.so.1
+p:so:libSDL_image-1.2.so.0=0.8.4
 
 C:Q1glg974gbKo3WenRsTd6AYbejUxM=
 P:linux-vanilla-dev
@@ -46897,6 +46913,22 @@ t:1557038156
 c:c6a9a17f4164572f308708d3bbf7ebcd1662d609
 D:so:libc.musl-armhf.so.1
 p:so:libnpth.so.0=0.1.2
+
+C:Q1GyGinrzbdu2NiCFUL77WD4BnsCQ=
+P:unbound-dev
+V:1.9.1-r4
+A:armhf
+S:10939
+I:57344
+T:Unbound is a validating, recursive, and caching DNS resolver (development files)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245940
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+D:expat-dev pc:libcrypto pc:libevent pc:libssl pc:python3 pkgconfig unbound-libs=1.9.1-r4
+p:pc:libunbound=1.9.1
 
 C:Q1fZb/NDGrkwyP5e3anrJFUjzgseQ=
 P:p11-kit-dev
@@ -51784,21 +51816,21 @@ c:8019ca96ab65eddbff51437f8cc577bf4ca0570a
 D:so:libc.musl-armhf.so.1
 p:so:libcap-ng.so.0=0.0.0
 
-C:Q12z2aGujLCK176SZ1vHsf0ERcyIM=
-P:unbound
-V:1.9.1-r3
+C:Q11FBjsS/hI3/GYtPwZK0skTSo4NY=
+P:sdl_image-dev
+V:1.2.12-r5
 A:armhf
-S:1137244
-I:2457600
-T:Unbound is a validating, recursive, and caching DNS resolver
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
+S:31188
+I:106496
+T:A simple library to load images of various formats as SDL surfaces (development files)
+U:http://www.libsdl.org/projects/SDL_image/
+L:Zlib
+o:sdl_image
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541343
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:dns-root-hints dnssec-root /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.6 so:libexpat.so.1 so:libssl.so.1.1 so:libunbound.so.8
-p:cmd:unbound cmd:unbound-anchor cmd:unbound-checkconf cmd:unbound-control cmd:unbound-control-setup cmd:unbound-host
+t:1574247010
+c:41c5bc74b5ac24cb063d2188b02ef2c9af61c2b0
+D:pc:sdl>=1.2.10 pkgconfig sdl_image=1.2.12-r5
+p:pc:SDL_image=1.2.12
 
 C:Q1fReZ7P7mONWve13u8Z7dlhlxUJ8=
 P:samba-doc
@@ -51830,22 +51862,6 @@ t:1571996647
 c:40324e6982c6f5101ac527729da257c763ea31a2
 D:libssh2=1.9.0-r1 pc:libcrypto pc:libssl pc:zlib pkgconfig
 p:pc:libssh2=1.9.0
-
-C:Q1nwTRV3utPQV3ab7LusX1/w3LLCU=
-P:unbound-dev
-V:1.9.1-r3
-A:armhf
-S:10927
-I:57344
-T:Unbound is a validating, recursive, and caching DNS resolver (development files)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541342
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:expat-dev pc:libcrypto pc:libevent pc:libssl pc:python3 pkgconfig unbound-libs=1.9.1-r3
-p:pc:libunbound=1.9.1
 
 C:Q1AN1uaE4j4nZXvCy34s8MupOFfFE=
 P:lua5.3-xml
@@ -54343,20 +54359,21 @@ t:1556953636
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libxt=1.1.5-r2
 
-C:Q1Yb4mATDaSVadLD0GMsYbQzCMitg=
-P:unbound-doc
-V:1.9.1-r3
+C:Q1kSzZ4fLRAY+h3PsK2iAjIoBgR88=
+P:sdl
+V:1.2.15-r12
 A:armhf
-S:178635
-I:598016
-T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
+S:148738
+I:339968
+T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard
+U:http://www.libsdl.org
+L:LGPL-2.1-or-later
+o:sdl
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541342
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-i:docs unbound=1.9.1-r3
+t:1574248018
+c:8500a332914114e126e7340c92dcf1361f59e2df
+D:so:libc.musl-armhf.so.1
+p:so:libSDL-1.2.so.0=0.11.4
 
 C:Q10zdErmjtl7cCkGrZ+jYBpBgSHoo=
 P:rsyslog-mmpstrucdata
@@ -59713,21 +59730,6 @@ t:1557579417
 c:500c226c1bc66d24ff8c8707b5b8183ae97d6d0e
 i:docs perl-list-moreutils-xs=0.428-r1
 
-C:Q1lVkkjmMiF4sm8OF3hsu3Uj3vyXo=
-P:unbound-dbg
-V:1.9.1-r3
-A:armhf
-S:3622978
-I:8753152
-T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541342
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-D:dns-root-hints dnssec-root
-
 C:Q1x5t0yw2TGEcy4ddRvL9NlUm4sDE=
 P:perl-universal-require
 V:0.18-r0
@@ -63696,6 +63698,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557063134
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs perl-digest-hmac=1.03-r0
+
+C:Q1LEdSNMCfMsTPZzW9dSz1nLV+460=
+P:unbound-openrc
+V:1.9.1-r4
+A:armhf
+S:2229
+I:24576
+T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+i:openrc unbound=1.9.1-r4
 
 C:Q17eJZvLCTRYJ04wJmRaNVa/uZH4c=
 P:perl-sub-install-doc
@@ -67976,22 +67993,6 @@ c:6caebd066ad120a53d6244a9e61205e0d8fd9d17
 D:so:libX11.so.6 so:libc.musl-armhf.so.1 so:libfltk.so.1.3 so:libgcc_s.so.1 so:libjpeg.so.8 so:libpng16.so.16 so:libstdc++.so.6 so:libz.so.1
 p:cmd:dillo cmd:dillo-install-hyphenation cmd:dpid cmd:dpidc
 
-C:Q1y+6VjzcVJPGb4UAFTVEJoR48Ubk=
-P:sdl
-V:1.2.15-r11
-A:armhf
-S:148668
-I:339968
-T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard
-U:http://www.libsdl.org
-L:LGPL-2.1-or-later
-o:sdl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565786959
-c:891aa4b283546ecc16acdb965cf4bc5572644a28
-D:so:libc.musl-armhf.so.1
-p:so:libSDL-1.2.so.0=0.11.4
-
 C:Q1PNPIvJGeNHN4Z5ZClW+maj2QgyU=
 P:libvdpau-doc
 V:1.2-r0
@@ -68159,21 +68160,6 @@ t:1560929112
 c:91ac22a209c4f1cc130f9ee182b3bfaa6a3a4e86
 D:libogg-dev libtheora=1.1.1-r14 pc:ogg>=1.1 pkgconfig
 p:pc:theora=1.1.1 pc:theoradec=1.1.1 pc:theoraenc=1.1.1
-
-C:Q1aaNnKX/9yatRz+rUHS1yT+VZu8I=
-P:unbound-openrc
-V:1.9.1-r3
-A:armhf
-S:2222
-I:24576
-T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572541343
-c:73eb35a4678f12c11a7a0cae308c1acbd4a04e17
-i:openrc unbound=1.9.1-r3
 
 C:Q1PLNK9/EHip6ldvYa187F4MtlnFM=
 P:qemu-mipsn32
@@ -68748,22 +68734,6 @@ t:1560272599
 c:a5ed25b5fb8b785cdfb72c294466b39347fc7a8f
 D:mesa so:libLLVM-8.so so:libX11-xcb.so.1 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1
 p:so:libvulkan_radeon.so=0
-
-C:Q1RUipXM5WQZacYzXK+6mPHpz9PEI=
-P:sdl-dev
-V:1.2.15-r11
-A:armhf
-S:97419
-I:651264
-T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (development files)
-U:http://www.libsdl.org
-L:LGPL-2.1-or-later
-o:sdl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1565786957
-c:891aa4b283546ecc16acdb965cf4bc5572644a28
-D:libx11-dev pkgconfig sdl=1.2.15-r11
-p:pc:sdl=1.2.15 cmd:sdl-config
 
 C:Q11ZnPcr4Y83dUNAXPymgEit+C57k=
 P:collectd-postgresql
@@ -72907,6 +72877,21 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-armhf.so.1
 p:cmd:beep
 
+C:Q1dyS9rwavXLKt+v2ZiO+eqJD5Qvg=
+P:unbound-doc
+V:1.9.1-r4
+A:armhf
+S:178660
+I:598016
+T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574245941
+c:407d97afdcc1f3eabf878b21614f0cc72b0f336f
+i:docs unbound=1.9.1-r4
+
 C:Q1m9AWZw/S7gXlNNz/SJdBOtWJuDE=
 P:perl-javascript-minifier-doc
 V:1.14-r0
@@ -74580,6 +74565,21 @@ t:1557074961
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:xorgproto libxkbui=1.0.2-r9 pc:kbproto pc:x11 pc:xt pkgconfig
 p:pc:xkbui=1.0.2
+
+C:Q1ydbZ97ONfNs75tyvN+OSf1GmUU0=
+P:sdl-doc
+V:1.2.15-r12
+A:armhf
+S:120980
+I:741376
+T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (documentation)
+U:http://www.libsdl.org
+L:LGPL-2.1-or-later
+o:sdl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574248018
+c:8500a332914114e126e7340c92dcf1361f59e2df
+i:docs sdl=1.2.15-r12
 
 C:Q1SnoJ3GeYoZHisHBNH0doROMkE/c=
 P:perl-unix-syslog-doc
@@ -80279,6 +80279,22 @@ t:1556977738
 c:6d5a437ff4ece5d6da2bfadfa86aae3f24489ca1
 D:perl
 
+C:Q1ENahyLIX5/XhbgkvVMb7DdPQMJc=
+P:sdl-dev
+V:1.2.15-r12
+A:armhf
+S:97421
+I:651264
+T:A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (development files)
+U:http://www.libsdl.org
+L:LGPL-2.1-or-later
+o:sdl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574248017
+c:8500a332914114e126e7340c92dcf1361f59e2df
+D:libx11-dev pkgconfig sdl=1.2.15-r12
+p:pc:sdl=1.2.15 cmd:sdl-config
+
 C:Q1YWULNST8JMivBR51mopHtheWYak=
 P:libnice-doc
 V:0.1.16-r0
@@ -84978,22 +84994,6 @@ t:1557151262
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armhf.so.1
 p:so:libdbi.so.1=1.1.0
-
-C:Q1Er2YYbH31ULEJWLJ7XU8V1zL0HY=
-P:sdl_image-dev
-V:1.2.12-r4
-A:armhf
-S:31155
-I:106496
-T:A simple library to load images of various formats as SDL surfaces (development files)
-U:http://www.libsdl.org/projects/SDL_image/
-L:Zlib
-o:sdl_image
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557252402
-c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
-D:pc:sdl>=1.2.10 pkgconfig sdl_image=1.2.12-r4
-p:pc:SDL_image=1.2.12
 
 C:Q1RYSBQEcpvOABW7b1/bgeTJ/Zb6U=
 P:dnscache
