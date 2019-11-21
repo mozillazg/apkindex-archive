@@ -14869,14 +14869,16 @@
     "parted-dev": {
       "origin": "parted",
       "versions": {
-        "3.2-r10": 1565783489
+        "3.2-r10": 1565783489,
+        "3.3-r0": 1574354614
       },
       "dependencies": [
-        "parted=3.2-r10",
+        "parted=3.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libparted=3.2"
+        "pc:libparted-fs-resize=3.3",
+        "pc:libparted=3.3"
       ]
     },
     "st-dbg": {
@@ -16875,7 +16877,8 @@
     "parted": {
       "origin": "parted",
       "versions": {
-        "3.2-r10": 1565783489
+        "3.2-r10": 1565783489,
+        "3.3-r0": 1574354614
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -16886,8 +16889,8 @@
         "so:libuuid.so.1"
       ],
       "provides": [
-        "so:libparted-fs-resize.so.0=0.0.1",
-        "so:libparted.so.2=2.0.1",
+        "so:libparted-fs-resize.so.0=0.0.2",
+        "so:libparted.so.2=2.0.2",
         "cmd:parted",
         "cmd:partprobe"
       ]
@@ -23269,7 +23272,8 @@
     "libtasn1-doc": {
       "origin": "libtasn1",
       "versions": {
-        "4.14-r0": 1563955877
+        "4.14-r0": 1563955877,
+        "4.15.0-r0": 1574350682
       }
     },
     "dmidecode-doc": {
@@ -35226,7 +35230,8 @@
     "alpine-conf": {
       "origin": "alpine-conf",
       "versions": {
-        "3.8.3-r0": 1560514998
+        "3.8.3-r0": 1560514998,
+        "3.8.3-r1": 1574350935
       },
       "dependencies": [
         "openrc>=0.24.1-r6",
@@ -35517,14 +35522,15 @@
     "libtasn1-dev": {
       "origin": "libtasn1",
       "versions": {
-        "4.14-r0": 1563955877
+        "4.14-r0": 1563955877,
+        "4.15.0-r0": 1574350682
       },
       "dependencies": [
-        "libtasn1=4.14-r0",
+        "libtasn1=4.15.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libtasn1=4.14"
+        "pc:libtasn1=4.15.0"
       ]
     },
     "libgsasl": {
@@ -37475,15 +37481,15 @@
     "py3-docutils": {
       "origin": "py3-docutils",
       "versions": {
-        "0.14-r4": 1574234822
+        "0.14-r4": 1574234822,
+        "0.15.2-r0": 1574354257
       },
       "dependencies": [
         "python3",
-        "py3-pillow",
-        "py3-roman"
+        "py3-pillow"
       ],
       "provides": [
-        "py-docutils=0.14-r4",
+        "py-docutils=0.15.2-r0",
         "cmd:rst2html",
         "cmd:rst2html-3",
         "cmd:rst2html4",
@@ -44152,7 +44158,8 @@
     "parted-doc": {
       "origin": "parted",
       "versions": {
-        "3.2-r10": 1565783489
+        "3.2-r10": 1565783489,
+        "3.3-r0": 1574354614
       }
     },
     "qemu-ui-sdl": {
@@ -44604,12 +44611,12 @@
     "py3-docutils-doc": {
       "origin": "py3-docutils",
       "versions": {
-        "0.14-r4": 1574234822
+        "0.14-r4": 1574234822,
+        "0.15.2-r0": 1574354257
       },
       "dependencies": [
         "python3",
-        "py3-pillow",
-        "py3-roman"
+        "py3-pillow"
       ]
     },
     "perl-file-sharedir-install-doc": {
@@ -54532,16 +54539,18 @@
     "libtasn1": {
       "origin": "libtasn1",
       "versions": {
-        "4.14-r0": 1563955877
+        "4.14-r0": 1563955877,
+        "4.15.0-r0": 1574350682
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "so:libtasn1.so.6=6.5.6",
+        "so:libtasn1.so.6=6.5.7",
         "cmd:asn1Coding",
         "cmd:asn1Decoding",
-        "cmd:asn1Parser"
+        "cmd:asn1Parser",
+        "cmd:corpus2array"
       ]
     },
     "tiny-ec2-bootstrap": {
@@ -65696,7 +65705,7 @@
       },
       "py-docutils": {
         "package": "py3-docutils",
-        "version": "0.14-r4"
+        "version": "0.15.2-r0"
       },
       "py-tornado": {
         "package": "py3-tornado",
@@ -67398,11 +67407,11 @@
       },
       "libparted-fs-resize.so.0": {
         "package": "parted",
-        "version": "0.0.1"
+        "version": "0.0.2"
       },
       "libparted.so.2": {
         "package": "parted",
-        "version": "2.0.1"
+        "version": "2.0.2"
       },
       "lib21_fts_lucene_plugin.so": {
         "package": "dovecot-fts-lucene",
@@ -71222,7 +71231,7 @@
       },
       "libtasn1.so.6": {
         "package": "libtasn1",
-        "version": "6.5.6"
+        "version": "6.5.7"
       },
       "libhiredis.so.0.14": {
         "package": "hiredis",
