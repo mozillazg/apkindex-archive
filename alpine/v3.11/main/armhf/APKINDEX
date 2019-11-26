@@ -24977,6 +24977,22 @@ t:1574237878
 c:f550c1769b4f0c91718165113846c422dd27e7c6
 i:docs sshfs=3.6.0-r0
 
+C:Q1HT6pszFYfbuTu2MRN1jrP1FO5uQ=
+P:abuild
+V:3.5.0_rc2-r0
+A:armhf
+S:74449
+I:319488
+T:Script to build Alpine Packages
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:fakeroot sudo pax-utils openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
+
 C:Q1fkMoApKPWkmxAShNImGFSo8Uusk=
 P:perl-namespace-autoclean-doc
 V:0.29-r0
@@ -25750,21 +25766,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:rtnppd
 
-C:Q1WFxW8zNZKE03leffMJgV+zmI/Mw=
-P:abuild-rootbld
-V:3.5.0_rc1-r2
-A:armhf
-S:1190
-I:4096
-T:Build packages in chroot
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573848093
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:abuild bubblewrap gettext git
-
 C:Q1+wbwrz73GYTMeeYj0rg7da8amiw=
 P:rp-pppoe-doc
 V:3.13-r0
@@ -26460,22 +26461,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574761524
 c:94ffa605a4208f620a3f267dd8c13bf7958d1e30
 D:gnupg /bin/sh so:libassuan.so.0 so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libksba.so.8 so:libnpth.so.0 so:libusb-1.0.so.0
-
-C:Q1SmFiKXzDPMDPyxb3BTXMz/+jhU0=
-P:apkbuild-gem-resolver
-V:3.5.0_rc1-r2
-A:armhf
-S:4058
-I:24576
-T:APKBUILD dependency resolver for RubyGems
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573848093
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:ruby ruby-augeas
-p:cmd:apkbuild-gem-resolver
 
 C:Q1nCjv1JqKhZt5BhT/1jbgumQ+SE4=
 P:proxychains-ng
@@ -27350,6 +27335,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573848718
 c:667cbe30d8c18b8e0278bdd0ea499fc07d22ca59
 i:docs openssh=8.1_p1-r0
+
+C:Q18as9UmDYCu9TKc4VVTP2/X35JdA=
+P:abuild-doc
+V:3.5.0_rc2-r0
+A:armhf
+S:9359
+I:36864
+T:Script to build Alpine Packages (documentation)
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+i:docs abuild=3.5.0_rc2-r0
 
 C:Q1BFxSeHkdDJGmaFVOppKmVhWz75I=
 P:libxtst-dev
@@ -29043,21 +29043,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1523882602
 c:6e931cf1897524f082de0e791d740390ff5e717c
 i:docs perl-crypt-openssl-guess=0.11-r0
-
-C:Q1oerBRjuxaCsNtNUDB1SG/A3SiMw=
-P:abuild-doc
-V:3.5.0_rc1-r2
-A:armhf
-S:9460
-I:36864
-T:Script to build Alpine Packages (documentation)
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573848093
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-i:docs abuild=3.5.0_rc1-r2
 
 C:Q1Yhs9U0r5Kr57YijXpCyfAgDL0tQ=
 P:py3-purl
@@ -35549,22 +35534,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1573659911
 c:15067d8895fcc981942a7526daf1046ac8877019
 i:docs s6-linux-init=1.0.3.1-r0
-
-C:Q1EmtRiTS3solGSRQqJMperT47R00=
-P:apkbuild-cpan
-V:3.5.0_rc1-r2
-A:armhf
-S:4633
-I:24576
-T:Script to generate perl APKBUILD from CPAN
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573848093
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
-p:cmd:apkbuild-cpan
 
 C:Q1M+nwBdsY6LEjuQxg0hsbnULI13s=
 P:xl2tpd
@@ -43392,22 +43361,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1572204327
 c:56698fa6d62233186afc3e487b5acde2f196550c
 D:ruby ruby-power_assert
-
-C:Q1gdPx1UyVMRFRx1VEjFBFRj1F/sU=
-P:abuild
-V:3.5.0_rc1-r2
-A:armhf
-S:74785
-I:319488
-T:Script to build Alpine Packages
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573848093
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:fakeroot sudo pax-utils openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
 
 C:Q1QUmcPM+JPJG3j++QgI/prYqchDE=
 P:rtpproxy-doc
@@ -61045,6 +60998,21 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs p7zip=16.02-r3
 
+C:Q1LgJrAo3eATNGUb9N7qlYz8FoNUs=
+P:abuild-rootbld
+V:3.5.0_rc2-r0
+A:armhf
+S:1188
+I:4096
+T:Build packages in chroot
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:abuild bubblewrap gettext git
+
 C:Q1r0OWl9/o+BAKwkeV7KwgMMFpBi8=
 P:perl-json-maybexs-doc
 V:1.004000-r0
@@ -71605,6 +71573,22 @@ t:1573896705
 c:1859208255855653bf16ea45e5a210ed7ab265da
 D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjson-c.so.4 so:libsrutils.so.1
 
+C:Q18tW07uvhWgzx6kO9eM0cmIECyNo=
+P:apkbuild-gem-resolver
+V:3.5.0_rc2-r0
+A:armhf
+S:3995
+I:24576
+T:APKBUILD dependency resolver for RubyGems
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:ruby ruby-augeas
+p:cmd:apkbuild-gem-resolver
+
 C:Q1RHMi0Fv8jcPVSJzvFHX15M/xkYw=
 P:xf86-video-rendition-doc
 V:4.2.7-r0
@@ -80798,6 +80782,22 @@ o:bind
 t:1574333258
 c:85f2bc39b0cdf3fbb1804e1bde6a0f1570c8931d
 D:py3-ply python3
+
+C:Q1uIoa2+w0KA6GbHFWkLfe26uaRRM=
+P:apkbuild-cpan
+V:3.5.0_rc2-r0
+A:armhf
+S:4575
+I:24576
+T:Script to generate perl APKBUILD from CPAN
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
+p:cmd:apkbuild-cpan
 
 C:Q1iWj89VWg6Is7NUWERcg7SF+eTD0=
 P:redis

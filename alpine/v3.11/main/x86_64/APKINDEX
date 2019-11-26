@@ -7383,21 +7383,6 @@ t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-locale-maketext-fuzzy=0.11-r1
 
-C:Q1WMJfIC2p3tfCMQbFftUsSEk13uY=
-P:abuild-rootbld
-V:3.5.0_rc1-r2
-A:x86_64
-S:1194
-I:4096
-T:Build packages in chroot
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573847271
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:abuild bubblewrap gettext git
-
 C:Q1eVBz21MfrrKFesjvQCDruBRxQUs=
 P:lua-inspect
 V:3.1.1-r1
@@ -19812,6 +19797,22 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1568645813
 c:d4f71b2cd087e99656c7404cd15985a5f5162472
 
+C:Q11KVZo6VPeJkujwSyjiS30JnJ3NE=
+P:abuild
+V:3.5.0_rc2-r0
+A:x86_64
+S:77526
+I:352256
+T:Script to build Alpine Packages
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:fakeroot sudo pax-utils openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
+
 C:Q15r+kGSp/s2TKgXG7F4SvQdq6GNg=
 P:dillo-doc
 V:3.0.5-r6
@@ -20322,6 +20323,21 @@ t:1566206312
 c:5f920e16bd3f371a7879a7d86274cc365fd56a5f
 D:libfprint=1.0-r0 pc:glib-2.0>=2.50 pc:libusb-1.0>=0.9.1 pc:nss pc:pixman-1 pkgconfig
 p:pc:libfprint=1.0
+
+C:Q1V2gZdj8FhBPR8bbjZ4XjRs9rWHQ=
+P:abuild-doc
+V:3.5.0_rc2-r0
+A:x86_64
+S:9357
+I:36864
+T:Script to build Alpine Packages (documentation)
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+i:docs abuild=3.5.0_rc2-r0
 
 C:Q1SFCKxOlvXPcdqZe9gMlunnIwCwk=
 P:ghi
@@ -37307,6 +37323,22 @@ c:6bc41d6962cdda51b7c6a61ce50890f5c6f3897e
 D:gcc libc-dev libgcc so:libc.musl-x86_64.so.1 so:libpcre.so.1
 p:so:libvarnishapi.so.2=2.0.0
 
+C:Q1VbaQ7FGU7E1zH2BK2fTgfbzH2/o=
+P:apkbuild-cpan
+V:3.5.0_rc2-r0
+A:x86_64
+S:4572
+I:24576
+T:Script to generate perl APKBUILD from CPAN
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
+p:cmd:apkbuild-cpan
+
 C:Q1B6h0RwAFYIqcEZI3YpC2jMIx1BI=
 P:libxau-dev
 V:1.0.9-r0
@@ -38404,22 +38436,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1563793536
 c:1b9fe2c22938a6eb305955dddca3e4a243861f5a
 i:docs perl-io-multiplex=1.16-r2
-
-C:Q1f+WYaa3f0s9tw8MC1d9QxO+Au4k=
-P:apkbuild-cpan
-V:3.5.0_rc1-r2
-A:x86_64
-S:4611
-I:24576
-T:Script to generate perl APKBUILD from CPAN
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573847271
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
-p:cmd:apkbuild-cpan
 
 C:Q1M9Sgd1ud58KeBsNhbtR9S7q+21w=
 P:db-dev
@@ -54310,6 +54326,22 @@ t:1503909648
 c:836b98b3c7314d216566a7f1bfba21a6996905ae
 i:docs perl-html-tagset=3.20-r1
 
+C:Q1/QoMXca9oZi1jMbD2qUrZKHRinI=
+P:apkbuild-gem-resolver
+V:3.5.0_rc2-r0
+A:x86_64
+S:3995
+I:24576
+T:APKBUILD dependency resolver for RubyGems
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:ruby ruby-augeas
+p:cmd:apkbuild-gem-resolver
+
 C:Q1MOuKWaxF+J0PGuSedMmINbEzdek=
 P:dtach-doc
 V:0.9-r1
@@ -59051,22 +59083,6 @@ t:1561625985
 c:306e4b693363f46a720af5f53d6230ed5134650d
 D:krb5-conf so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libdb-5.3.so so:libreadline.so.8 so:libsqlite3.so.0
 p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libotp.so.0=0.1.5 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
-
-C:Q1vc5U3xSabeuOiVI/Ban62yB0PYw=
-P:apkbuild-gem-resolver
-V:3.5.0_rc1-r2
-A:x86_64
-S:4038
-I:24576
-T:APKBUILD dependency resolver for RubyGems
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573847271
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:ruby ruby-augeas
-p:cmd:apkbuild-gem-resolver
 
 C:Q1PrRjQE2DAfxTX3Fyyqg0Tk2Tq/s=
 P:perl-file-next-doc
@@ -72955,22 +72971,6 @@ t:1571516935
 c:be4487befb78447126a48b2f669a605ade4ae03d
 D:perl-test-sharedfork
 
-C:Q1r5UeroQI3bSGJC/Jdq90173Gi64=
-P:abuild
-V:3.5.0_rc1-r2
-A:x86_64
-S:77970
-I:352256
-T:Script to build Alpine Packages
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573847271
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-D:fakeroot sudo pax-utils openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
-
 C:Q10UwBw1iupIGTrmdNH8SRIwUKz1Q=
 P:font-adobe-utopia-100dpi
 V:1.0.4-r0
@@ -73749,21 +73749,6 @@ t:1500378973
 c:7585aa11cc2bad880dc7b56c49c67a7bd04600bc
 p:cmd:gnome-autogen.sh
 
-C:Q1oBXzmAakkvTIGPN/O8MfsMHrfzM=
-P:abuild-doc
-V:3.5.0_rc1-r2
-A:x86_64
-S:9465
-I:36864
-T:Script to build Alpine Packages (documentation)
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573847271
-c:9a4b8f04dafaa8ac635ac285f1ea3123ef510f93
-i:docs abuild=3.5.0_rc1-r2
-
 C:Q1IX6pUR37TfGJW05BFgwx+2zS4Cs=
 P:perl-crypt-x509
 V:0.52-r0
@@ -74131,6 +74116,21 @@ t:1567697809
 c:ab77dff4d405b59fac62e68c724d9daae1b5e321
 D:rxvt-unicode-terminfo so:libX11.so.6 so:libXft.so.2 so:libXrender.so.1 so:libc.musl-x86_64.so.1 so:libfontconfig.so.1 so:libgcc_s.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgobject-2.0.so.0 so:libperl.so so:libstartup-notification-1.so.0
 p:cmd:urxvt cmd:urxvtc cmd:urxvtd
+
+C:Q1kgd9cjl3nijyxGzsCxQsdpnkdkk=
+P:abuild-rootbld
+V:3.5.0_rc2-r0
+A:x86_64
+S:1190
+I:4096
+T:Build packages in chroot
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1574793860
+c:3fc86f9f3edc1e7df5801724bbda1ee8af056ecd
+D:abuild bubblewrap gettext git
 
 C:Q1dFUbc27h5vBWDIq/tNzIAoP93so=
 P:asterisk
