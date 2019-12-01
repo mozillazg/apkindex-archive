@@ -707,6 +707,21 @@ t:1572954350
 c:ec157f78e5c0620859d10979f9e25690ed12a7ff
 i:openrc radvd=2.18-r0
 
+C:Q1kjYL4haSih5pRoGfy2O0L0Hge3I=
+P:nsd-openrc
+V:4.2.3-r1
+A:ppc64le
+S:1970
+I:16384
+T:Authoritative only, high performance and simple DNS server (OpenRC init scripts)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575220632
+c:76c25930120acf72b7e9ff32dd69cf4736075aa2
+i:openrc nsd=4.2.3-r1
+
 C:Q1Q8jjtAwTOn543zNt/fl0OH2FJ0g=
 P:hunspell-pt-doc
 V:20190329-r0
@@ -3169,21 +3184,6 @@ c:5085869327238d121a826c9aa66384cd52698c9d
 D:gdl=3.34.0-r0 pc:gtk+-3.0 pc:libxml-2.0 pkgconfig
 p:pc:gdl-3.0=3.34.0
 
-C:Q1xPMvAkhNqiOq9yjR49R8l/jmJiU=
-P:nsd-doc
-V:4.2.3-r0
-A:ppc64le
-S:553329
-I:1130496
-T:Authoritative only, high performance and simple DNS server (documentation)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1574342838
-c:2fdffb0cc55d68b45bf2cbe6c4a9587b511da509
-i:docs nsd=4.2.3-r0
-
 C:Q1dlN1mriOBqUWLB+z1we1qPQxcNw=
 P:pkgconf
 V:1.6.3-r0
@@ -3244,6 +3244,22 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1572024497
 c:e48e96ca52799eb62afc59fff61860a3b5b62fea
 i:docs ghostscript=9.50-r0
+
+C:Q1Lk6NAA0+3HVA5xu+sbUiAjNLsLM=
+P:mosquitto-libs
+V:1.6.8-r0
+A:ppc64le
+S:43815
+I:126976
+T:An Open Source MQTT v3.1 Message Broker (libraries)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+D:so:libc.musl-ppc64le.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libmosquitto.so.1=1
 
 C:Q1r4XkrESBdjy+IXudwlAy4Fj7NHg=
 P:git-subtree-doc
@@ -4112,6 +4128,22 @@ t:1574166460
 c:7bcdd8e223cc015441dcf8f2177818bf5d82badc
 D:freeradius=3.0.20-r1 so:libc.musl-ppc64le.so.1
 p:freeradius3-sql=3.0.20-r1 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
+
+C:Q15WmFPmPtbnhyIjBnHJgaPN7Z4D4=
+P:mosquitto-dev
+V:1.6.8-r0
+A:ppc64le
+S:27692
+I:188416
+T:An Open Source MQTT v3.1 Message Broker (development files)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+D:mosquitto-libs++=1.6.8-r0 mosquitto-libs=1.6.8-r0 pkgconfig
+p:pc:libmosquitto=1.6.8 pc:libmosquittopp=1.6.8
 
 C:Q1SslEoEew8F+JZYeP6blo0NG0AaI=
 P:amavisd-milter-doc
@@ -7545,6 +7577,22 @@ t:1551643389
 c:bc0f9441b069ef3756cc65e96c9896a4be8cb0ae
 i:openrc smartmontools=7.0-r0
 
+C:Q1nYxykUxHjVg6Sf54dItTYYTV8kQ=
+P:mosquitto-libs++
+V:1.6.8-r0
+A:ppc64le
+S:7560
+I:40960
+T:C++ wrapper for libmosquitto
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+D:so:libmosquitto.so.1 so:libstdc++.so.6
+p:so:libmosquittopp.so.1=1
+
 C:Q1PttwLY2RrXl3+/Xdwtu6zLgfe4I=
 P:perl-set-intspan
 V:1.19-r1
@@ -10199,22 +10247,6 @@ t:1546957552
 c:b72837596cffd6dd6c909bbf034877f780c02189
 D:bearssl=0.6-r0
 
-C:Q1HjIxoxCt5l0Gm4jMshWzFxJyeLI=
-P:mosquitto-clients
-V:1.6.7-r0
-A:ppc64le
-S:35578
-I:118784
-T:Mosquitto command line MQTT clients
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-D:so:libc.musl-ppc64le.so.1 so:libmosquitto.so.1
-p:cmd:mosquitto_pub cmd:mosquitto_sub
-
 C:Q1rjlRP4EO5AOY8To9ida6BrWA37I=
 P:elinks-lang
 V:0.13-r6
@@ -10550,22 +10582,6 @@ t:1574160664
 c:cfb1f54672f1144e55ab56f40beecfab31cab8dc
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libevent-2.1.so.7 so:libsasl2.so.3 so:libseccomp.so.2
 p:cmd:memcached
-
-C:Q1keKPhQBFiHtn/4mRfDAFJeithao=
-P:mosquitto-libs
-V:1.6.7-r0
-A:ppc64le
-S:43816
-I:126976
-T:An Open Source MQTT v3.1 Message Broker (libraries)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-D:so:libc.musl-ppc64le.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:so:libmosquitto.so.1=1
 
 C:Q1qFoUdXbFMfgXGuoRkhEnjMVl8EU=
 P:haserl
@@ -11767,6 +11783,22 @@ t:1550597373
 c:c134a889afaecf85ccf5bfd30efb510be6d438f3
 D:so:libc.musl-ppc64le.so.1
 p:cmd:nasm cmd:ndisasm
+
+C:Q1MqTOU4Ag7FYqP+7MdaJLs0lCqJs=
+P:mosquitto-clients
+V:1.6.8-r0
+A:ppc64le
+S:35732
+I:118784
+T:Mosquitto command line MQTT clients
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+D:so:libc.musl-ppc64le.so.1 so:libmosquitto.so.1
+p:cmd:mosquitto_pub cmd:mosquitto_sub
 
 C:Q1A+ToCQe+5rbuWxHbQg5+sDDjIjc=
 P:ruby-dev
@@ -13661,6 +13693,20 @@ o:libtls-standalone
 t:1573816062
 c:981bf8f8fb3cbbc210ee4f2a2fb5b55d0132e02a
 i:docs libtls-standalone=2.9.1-r0
+
+C:Q1RW7GANV/pPg8+HhqgOfKZWKCjRw=
+P:nsd-dbg
+V:4.2.3-r1
+A:ppc64le
+S:1873364
+I:5136384
+T:Authoritative only, high performance and simple DNS server (debug symbols)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575220632
+c:76c25930120acf72b7e9ff32dd69cf4736075aa2
 
 C:Q11jEHdv5cNF5Fo5T7007aRgj+uio=
 P:linux-firmware-amd
@@ -18280,22 +18326,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:lua5.2 so:libc.musl-ppc64le.so.1
 i:lua-pty=1.2.1-r1 lua5.2
 
-C:Q1Js7U8ZXZJR4ArULTQjKtqoGQVkw=
-P:mosquitto-libs++
-V:1.6.7-r0
-A:ppc64le
-S:7584
-I:40960
-T:C++ wrapper for libmosquitto
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-D:so:libmosquitto.so.1 so:libstdc++.so.6
-p:so:libmosquittopp.so.1=1
-
 C:Q1+lzB79nkfAFpMvRaVcgH6wS9T68=
 P:ksymoops
 V:2.4.11-r7
@@ -21869,21 +21899,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1561645325
 c:78fb19d661bb61cd9dbd53830e5b09847ccb37e1
 i:docs lynx=2.8.8_p2-r1
-
-C:Q1iUBnlVxwKZ8i6bdiA9kltwPFa+c=
-P:mosquitto-doc
-V:1.6.7-r0
-A:ppc64le
-S:54254
-I:106496
-T:An Open Source MQTT v3.1 Message Broker (documentation)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-i:docs mosquitto=1.6.7-r0
 
 C:Q1O8t7NX9X2PHjpjhWBBBjmWrKGKk=
 P:bmd-tools
@@ -42227,22 +42242,6 @@ t:1574406693
 c:8fd3b83790332ed685791f243236e974fe347f1a
 D:uwsgi so:libc.musl-ppc64le.so.1
 
-C:Q1+lAHmEAnwkjBEteEMVsBF3JPL3A=
-P:mosquitto
-V:1.6.7-r0
-A:ppc64le
-S:146112
-I:413696
-T:An Open Source MQTT v3.1 Message Broker
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.15
-p:cmd:mosquitto cmd:mosquitto_passwd cmd:mosquitto_rr
-
 C:Q1AkqNxFvrcNK3fP+oMYkjoPCK1vg=
 P:perl-date-extract-doc
 V:0.06-r1
@@ -43766,22 +43765,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1538063731
 c:d57d6aa9e65fc2db98bd4ee83eb8ca40ffa7a481
 i:docs ppp=2.4.7-r6
-
-C:Q1qiRw3osEgggKShPGyz+/KNQOF/g=
-P:nsd
-V:4.2.3-r0
-A:ppc64le
-S:631223
-I:1601536
-T:Authoritative only, high performance and simple DNS server
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1574342838
-c:2fdffb0cc55d68b45bf2cbe6c4a9587b511da509
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
-p:cmd:nsd cmd:nsd-checkconf cmd:nsd-checkzone cmd:nsd-control cmd:nsd-control-setup
 
 C:Q1/qtiWmGAdHnDgW1ITvwskJ4KF4A=
 P:acf-ppp
@@ -50954,6 +50937,22 @@ c:db86e6678110079518bf456f15fd6283c7e9c23b
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotobuf.so.22 so:libstdc++.so.6
 p:so:libprotoc.so.22=22.0.0
 
+C:Q1MTS2feTdB3EfZ5rKjl1MqtV2d5Y=
+P:nsd
+V:4.2.3-r1
+A:ppc64le
+S:631235
+I:1609728
+T:Authoritative only, high performance and simple DNS server
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575220632
+c:76c25930120acf72b7e9ff32dd69cf4736075aa2
+D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
+p:cmd:nsd cmd:nsd-checkconf cmd:nsd-checkzone cmd:nsd-control cmd:nsd-control-setup
+
 C:Q11N/HIUOjg458FARjgUnNjDAkzFU=
 P:perl-super
 V:1.20190531-r0
@@ -51848,6 +51847,21 @@ t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-ppc64le.so.1
 p:cmd:ddate
+
+C:Q1g33YclOg5xb9gGhJtmAbTdn1HQE=
+P:mosquitto-doc
+V:1.6.8-r0
+A:ppc64le
+S:51653
+I:106496
+T:An Open Source MQTT v3.1 Message Broker (documentation)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+i:docs mosquitto=1.6.8-r0
 
 C:Q1FcWfNtXoAhUtnJMB+/8ZGe8mun0=
 P:libx11-doc
@@ -53525,21 +53539,6 @@ t:1573817404
 c:a33e421da04f54e4a9398da416982720bbae84eb
 D:/bin/sh mdocml=1.14.5-r0
 
-C:Q10UiCf//KWVsSb8HFZAYSnxnVn/I=
-P:mosquitto-openrc
-V:1.6.7-r0
-A:ppc64le
-S:1555
-I:16384
-T:An Open Source MQTT v3.1 Message Broker (OpenRC init scripts)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-i:openrc mosquitto=1.6.7-r0
-
 C:Q1U6DEEGtonrxk3MYaX55MOy8Mzps=
 P:font-jis-misc
 V:1.0.3-r0
@@ -54002,6 +54001,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-text-password-pronounceable=0.30-r1
+
+C:Q16SkTxA9Ytucm6jGaKPrORiiJ2KE=
+P:mosquitto
+V:1.6.8-r0
+A:ppc64le
+S:145776
+I:413696
+T:An Open Source MQTT v3.1 Message Broker
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.15
+p:cmd:mosquitto cmd:mosquitto_passwd cmd:mosquitto_rr
 
 C:Q1DUolSZOq0dNM7TnoY+nZnRlbIc0=
 P:apache2-webdav
@@ -56358,21 +56373,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1572204327
 c:56698fa6d62233186afc3e487b5acde2f196550c
 D:ruby
-
-C:Q1Axiod7gHbuzKEALB5TU2Uev1h5k=
-P:nsd-openrc
-V:4.2.3-r0
-A:ppc64le
-S:1676
-I:16384
-T:Authoritative only, high performance and simple DNS server (OpenRC init scripts)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1574342838
-c:2fdffb0cc55d68b45bf2cbe6c4a9587b511da509
-i:openrc nsd=4.2.3-r0
 
 C:Q12DAdwttFK8YtuEuzBm9kqBeKTJ4=
 P:perl-encode-dev
@@ -61544,6 +61544,21 @@ c:22586092a9545d6e3c61ac61c0d67008c3b9a095
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libwebsockets.so.15=15
 
+C:Q156R9KPivZO4CP7pKYYR2LuzW29M=
+P:nsd-doc
+V:4.2.3-r1
+A:ppc64le
+S:553312
+I:1130496
+T:Authoritative only, high performance and simple DNS server (documentation)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575220632
+c:76c25930120acf72b7e9ff32dd69cf4736075aa2
+i:docs nsd=4.2.3-r1
+
 C:Q1+SQFQu/IbFqvDO4EamkmC2dF618=
 P:py3-certifi
 V:2019.9.11-r2
@@ -62065,6 +62080,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1574164273
 c:194e0222a25112af48c74721f0f958ecc64e11cd
 D:nagios-plugins so:libc.musl-ppc64le.so.1
+
+C:Q1+FEbTM1DV1B30XvO7Et4JPx3K+o=
+P:mosquitto-openrc
+V:1.6.8-r0
+A:ppc64le
+S:1525
+I:16384
+T:An Open Source MQTT v3.1 Message Broker (OpenRC init scripts)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575216566
+c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
+i:openrc mosquitto=1.6.8-r0
 
 C:Q1Hv3HEBSSVwvBYBBgZxuAyMdkoDk=
 P:flex-libs
@@ -65979,20 +66009,6 @@ t:1450390874
 c:c65dd2c643cfeabdd3fe676b0adb7d07c2415f84
 i:docs dnstop=20140915-r3
 
-C:Q1hu/n/3c8k9JbyPF9X2ZTLNl2Tq4=
-P:nsd-dbg
-V:4.2.3-r0
-A:ppc64le
-S:1873391
-I:5136384
-T:Authoritative only, high performance and simple DNS server (debug symbols)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1574342838
-c:2fdffb0cc55d68b45bf2cbe6c4a9587b511da509
-
 C:Q153nqlKfV6DfQ8Y8yBPDKPfk45VI=
 P:psmisc
 V:23.3-r0
@@ -68408,22 +68424,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1573721996
 c:f0daafa26104492bf41371cccf3a324f02aa66ec
 i:openrc amavis=2.12.0-r0
-
-C:Q18h9ev2JJMl53jRTXqAbOXqCh2O8=
-P:mosquitto-dev
-V:1.6.7-r0
-A:ppc64le
-S:27428
-I:184320
-T:An Open Source MQTT v3.1 Message Broker (development files)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573819546
-c:65d125273122a381ae7369a829c99fc4780c9646
-D:mosquitto-libs++=1.6.7-r0 mosquitto-libs=1.6.7-r0 pkgconfig
-p:pc:libmosquitto=1.6.7 pc:libmosquittopp=1.6.7
 
 C:Q1JSBdCN++XX1Oy/Rzd129IOfRSEs=
 P:s6-portable-utils
