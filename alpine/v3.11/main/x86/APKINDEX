@@ -260,6 +260,22 @@ c:388a4fb3640f8ccbd18e105df3ad741dca4247e1
 D:so:libc.musl-x86.so.1
 p:so:libz.so.1=1.2.11
 
+C:Q1dnsO0K6usnQYwKm9109D51YK2Ek=
+P:libuv
+V:1.34.0-r0
+A:x86
+S:84716
+I:208896
+T:Cross-platform asychronous I/O
+U:https://libuv.org
+L:MIT AND ISC
+o:libuv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:6e7c1aa031a0f28f52af6486fc66930db678d232
+D:so:libc.musl-x86.so.1
+p:so:libuv.so.1=1.0.0
+
 C:Q1q23qbUjLMElxwclf0/wMHeI5kYE=
 P:usb-modeswitch
 V:2.6.0-r0
@@ -1201,21 +1217,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libdaemon=0.14-r2 pkgconfig
 p:pc:libdaemon=0.14
-
-C:Q1r1XkZqNPeiLBIJKBOscb0zeGEnI=
-P:gstreamer-doc
-V:1.16.1-r0
-A:x86
-S:10898
-I:40960
-T:GStreamer streaming media framework (documentation)
-U:https://gstreamer.freedesktop.org
-L:LGPL-2.0-or-later
-o:gstreamer
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031312
-c:5401119dc00580b9c88b0dc9b63bb006801e97e6
-i:docs gstreamer=1.16.1-r0
 
 C:Q1YHHbxua6Jk+Vtqyc63Q0Jalz+ZE=
 P:perl-encode-dev
@@ -2725,22 +2726,6 @@ t:1571315431
 c:f6ec0e65713c2ddb6698bec2ee6839c5c7c5dde7
 D:dovecot=2.3.8-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
-C:Q1Wbt0jA/T/7Hu6LNPppxekcbxczg=
-P:gstreamer
-V:1.16.1-r0
-A:x86
-S:1113627
-I:3092480
-T:GStreamer streaming media framework
-U:https://gstreamer.freedesktop.org
-L:LGPL-2.0-or-later
-o:gstreamer
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031312
-c:5401119dc00580b9c88b0dc9b63bb006801e97e6
-D:so:libc.musl-x86.so.1 so:libcap.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
-p:so:libgstbase-1.0.so.0=0.1601.0 so:libgstcheck-1.0.so.0=0.1601.0 so:libgstcontroller-1.0.so.0=0.1601.0 so:libgstnet-1.0.so.0=0.1601.0 so:libgstreamer-1.0.so.0=0.1601.0
-
 C:Q1+p85XMry18K+dYPZtOkO6l5tSPA=
 P:rsync-doc
 V:3.1.3-r2
@@ -2986,6 +2971,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574406693
 c:8fd3b83790332ed685791f243236e974fe347f1a
 D:uwsgi so:libc.musl-x86.so.1
+
+C:Q1eSC6lswvbB5CMBmf8D0XzbhHAYg=
+P:gst-plugins-base-dev
+V:1.16.2-r0
+A:x86
+S:571385
+I:5697536
+T:GStreamer streaming media framework base plug-ins (development files)
+U:https://gstreamer.freedesktop.org
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:gst-plugins-base
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:97dcfd9743dca25d3939ddb428513d94f46ba475
+D:gst-plugins-base=1.16.2-r0 pc:gio-2.0 pc:glib-2.0 pc:gstreamer-1.0 pc:gstreamer-base-1.0 pc:orc-0.4 pkgconfig
+p:pc:gstreamer-allocators-1.0=1.16.2 pc:gstreamer-app-1.0=1.16.2 pc:gstreamer-audio-1.0=1.16.2 pc:gstreamer-fft-1.0=1.16.2 pc:gstreamer-gl-1.0=1.16.2 pc:gstreamer-pbutils-1.0=1.16.2 pc:gstreamer-plugins-base-1.0=1.16.2 pc:gstreamer-riff-1.0=1.16.2 pc:gstreamer-rtp-1.0=1.16.2 pc:gstreamer-rtsp-1.0=1.16.2 pc:gstreamer-sdp-1.0=1.16.2 pc:gstreamer-tag-1.0=1.16.2 pc:gstreamer-video-1.0=1.16.2
 
 C:Q1WukEOsl7lhWhtg08REGfVEiKu/Q=
 P:perl-log-any-doc
@@ -7537,6 +7538,21 @@ c:8468880e66f30a2f8937fb7cb260350c08e14ab3
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6 so:libpanelw.so.6 so:libreadline.so.8
 p:cmd:pspg
 
+C:Q168o0XYVMfg3CoiUwTqdktMuizhs=
+P:gst-plugins-base-lang
+V:1.16.2-r0
+A:x86
+S:147262
+I:966656
+T:Languages for package gst-plugins-base
+U:https://gstreamer.freedesktop.org
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:gst-plugins-base
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:97dcfd9743dca25d3939ddb428513d94f46ba475
+i:gst-plugins-base=1.16.2-r0 lang
+
 C:Q1vNOvRTNgmDictpv9j1Dn2Pv5dT8=
 P:perl-filesys-notify-simple
 V:0.13-r0
@@ -9747,6 +9763,20 @@ c:0e31088488fe1dea60548fbaf017a71cf6e4562a
 D:guile gc-dev guile-libs=2.0.14-r0 pkgconfig
 p:pc:guile-2.0=2.0.14 cmd:guile-config
 
+C:Q1vxmY2v7VwGkmkPAD/DwHk6GW3DY=
+P:libuv-dbg
+V:1.34.0-r0
+A:x86
+S:208893
+I:540672
+T:Cross-platform asychronous I/O (debug symbols)
+U:https://libuv.org
+L:MIT AND ISC
+o:libuv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:6e7c1aa031a0f28f52af6486fc66930db678d232
+
 C:Q1cJG/bau/Gsu6C9Bxp6bTsq+QgQU=
 P:perl-xml-rss-doc
 V:1.61-r0
@@ -10700,6 +10730,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1519074272
 c:02fba29310ec0276bf91fa620ebe48d99d60a9fb
 i:docs gnuchess=6.2.5-r1
+
+C:Q1qg3X3E5rajUxogrHEsCbXJ18DEE=
+P:gst-plugins-base
+V:1.16.2-r0
+A:x86
+S:2189477
+I:6062080
+T:GStreamer streaming media framework base plug-ins
+U:https://gstreamer.freedesktop.org
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:gst-plugins-base
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:97dcfd9743dca25d3939ddb428513d94f46ba475
+D:so:libEGL.so.1 so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXv.so.1 so:libasound.so.2 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libcdda_interface.so.0 so:libcdda_paranoia.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgstbase-1.0.so.0 so:libgstcontroller-1.0.so.0 so:libgstnet-1.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8 so:libogg.so.0 so:libopus.so.0 so:liborc-0.4.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:libtheoradec.so.1 so:libtheoraenc.so.1 so:libvorbis.so.0 so:libvorbisenc.so.2 so:libwayland-client.so.0 so:libwayland-egl.so.1 so:libxcb.so.1 so:libz.so.1
+p:so:libgstadder.so=0 so:libgstallocators-1.0.so.0=0.1602.0 so:libgstalsa.so=0 so:libgstapp-1.0.so.0=0.1602.0 so:libgstapp.so=0 so:libgstaudio-1.0.so.0=0.1602.0 so:libgstaudioconvert.so=0 so:libgstaudiomixer.so=0 so:libgstaudiorate.so=0 so:libgstaudioresample.so=0 so:libgstaudiotestsrc.so=0 so:libgstcdparanoia.so=0 so:libgstcompositor.so=0 so:libgstencoding.so=0 so:libgstfft-1.0.so.0=0.1602.0 so:libgstgio.so=0 so:libgstgl-1.0.so.0=0.1602.0 so:libgstogg.so=0 so:libgstopengl.so=0 so:libgstopus.so=0 so:libgstoverlaycomposition.so=0 so:libgstpango.so=0 so:libgstpbtypes.so=0 so:libgstpbutils-1.0.so.0=0.1602.0 so:libgstplayback.so=0 so:libgstrawparse.so=0 so:libgstriff-1.0.so.0=0.1602.0 so:libgstrtp-1.0.so.0=0.1602.0 so:libgstrtsp-1.0.so.0=0.1602.0 so:libgstsdp-1.0.so.0=0.1602.0 so:libgstsubparse.so=0 so:libgsttag-1.0.so.0=0.1602.0 so:libgsttcp.so=0 so:libgsttheora.so=0 so:libgsttypefindfunctions.so=0 so:libgstvideo-1.0.so.0=0.1602.0 so:libgstvideoconvert.so=0 so:libgstvideorate.so=0 so:libgstvideoscale.so=0 so:libgstvideotestsrc.so=0 so:libgstvolume.so=0 so:libgstvorbis.so=0 so:libgstximagesink.so=0 so:libgstxvimagesink.so=0 cmd:gst-device-monitor-1.0 cmd:gst-discoverer-1.0 cmd:gst-play-1.0
 
 C:Q1XMlzKjtlM8mywkvkkf21GIU6QGs=
 P:rsyslog-uxsock
@@ -11702,20 +11748,6 @@ t:1496780657
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:perl-crypt-des perl-crypt-rijndael perl-digest-sha1
 p:cmd:snmpkey
-
-C:Q1TWeqDae8jVpiadSN5UfgfycHpnQ=
-P:libuv-dbg
-V:1.33.1-r1
-A:x86
-S:208056
-I:540672
-T:Cross-platform asychronous I/O (debug symbols)
-U:https://libuv.org
-L:MIT BSD ISC
-o:libuv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573836250
-c:63dc6b50e39cd6e6a899d1589cff3a87c91d4580
 
 C:Q1INrlV6G0oq+ufPNxjdgo8Mj5RXk=
 P:nginx
@@ -13258,6 +13290,21 @@ t:1572954401
 c:8cbd0c1356d18a6e07b87aa5f71a673acf602ab7
 D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.4 so:libuuid.so.1
 p:so:libcryptsetup.so.12=12.5.0
+
+C:Q1t0ZtT6Mnvt1gaUc02AHj1TjR7OA=
+P:xf86-video-sis
+V:0.12.0-r0
+A:x86
+S:235122
+I:528384
+T:X.org SiS video driver
+U:https://xorg.freedesktop.org
+L:MIT
+o:xf86-video-sis
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:c3fa9cfc1215d772e3f7653103f9ce076857ed9c
+D:so:libc.musl-x86.so.1
 
 C:Q192ZFZ5EnUuiYR1LDs3uMvFh1ncQ=
 P:grub-efi
@@ -16599,20 +16646,6 @@ t:1573721824
 c:c85542397ea83acec65dec224d4d821a546a8e07
 i:docs duplicity=0.8.06-r0
 
-C:Q1mCLA7UzmpJiFDWQYvSsSkLuas6c=
-P:libuv-static
-V:1.33.1-r1
-A:x86
-S:462888
-I:782336
-T:Cross-platform asychronous I/O (static library)
-U:https://libuv.org
-L:MIT BSD ISC
-o:libuv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573836250
-c:63dc6b50e39cd6e6a899d1589cff3a87c91d4580
-
 C:Q1aq8OSJJ9eR2verQFQ7OqZiKCI3M=
 P:libblkid
 V:2.34-r1
@@ -17411,21 +17444,6 @@ t:1567058792
 c:80efa5be030b4b7cd06ffe21112c746541396c30
 D:libdvbpsi=1.3.3-r0 pkgconfig
 p:pc:libdvbpsi=1.3.3
-
-C:Q1/GEpAOdyheCaOhKvNpuxnALl13U=
-P:gst-plugins-base-doc
-V:1.16.1-r0
-A:x86
-S:4125
-I:32768
-T:GStreamer streaming media framework base plug-ins (documentation)
-U:https://gstreamer.freedesktop.org
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:gst-plugins-base
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031313
-c:4f9d817d5b23327403c3a18272bbb80f8bdd9858
-i:docs gst-plugins-base=1.16.1-r0
 
 C:Q1nRs3B81Ebns9NpxROLyGVIyhC5s=
 P:libarchive-static
@@ -19140,21 +19158,6 @@ t:1510619357
 c:00bd040b558beaf145e91234228b6df6a54d9ac0
 D:so:libc.musl-x86.so.1 so:libpcre.so.1
 i:lua5.3 lua-rex-pcre=2.9.0-r0
-
-C:Q1yuofB9ExCEMPXtamDXqcIRnKG8c=
-P:xf86-video-sis-doc
-V:0.11.0-r0
-A:x86
-S:9395
-I:45056
-T:X.org SiS video driver (documentation)
-U:https://xorg.freedesktop.org
-L:MIT
-o:xf86-video-sis
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564254035
-c:0f9cf292309da0b42d2ccf4b0ccc093b8dd296eb
-i:docs xf86-video-sis=0.11.0-r0
 
 C:Q1ew+3lRUsHM2XAq2k3vNjqxhb7wA=
 P:liblockfile-doc
@@ -25842,22 +25845,6 @@ t:1570031714
 c:19d178309264ba9f7732dcd5227fb4f32509ad98
 i:docs powertop=2.11-r0
 
-C:Q12vrMqZUZJaDiPHurEukHM+QiQEE=
-P:libuv-dev
-V:1.33.1-r1
-A:x86
-S:21536
-I:139264
-T:Cross-platform asychronous I/O (development files)
-U:https://libuv.org
-L:MIT BSD ISC
-o:libuv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573836250
-c:63dc6b50e39cd6e6a899d1589cff3a87c91d4580
-D:libuv=1.33.1-r1 pkgconfig
-p:pc:libuv=1.33.1
-
 C:Q12lpyd01BtTS6wwj3HM58+b2cUuY=
 P:xkeyboard-config-doc
 V:2.28-r0
@@ -28506,21 +28493,20 @@ c:20b4d7a46db48a0162b66f2d49d33895b4e75ce4
 D:so:libc.musl-x86.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:so:libexiv2.so.27=0.27.2 cmd:addmoddel cmd:convert-test cmd:easyaccess-test cmd:exifcomment cmd:exifdata cmd:exifdata-test cmd:exifprint cmd:exifvalue cmd:exiv2 cmd:exiv2json cmd:geotag cmd:ini-test cmd:iotest cmd:iptceasy cmd:iptcprint cmd:iptctest cmd:key-test cmd:largeiptc-test cmd:metacopy cmd:mmap-test cmd:mrwthumb cmd:path-test cmd:prevtest cmd:stringto-test cmd:taglist cmd:tiff-test cmd:werror-test cmd:write-test cmd:write2-test cmd:xmpdump cmd:xmpparse cmd:xmpparser-test cmd:xmpprint cmd:xmpsample
 
-C:Q1GK21E0EgRv4UPCuqswu5sg3cfqw=
-P:gst-plugins-base-dev
-V:1.16.1-r0
+C:Q1x2TALVqJ6tYNttat5Sez+lc815Y=
+P:gstreamer-lang
+V:1.16.2-r0
 A:x86
-S:571394
-I:5697536
-T:GStreamer streaming media framework base plug-ins (development files)
+S:465294
+I:1736704
+T:Languages for package gstreamer
 U:https://gstreamer.freedesktop.org
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:gst-plugins-base
+L:LGPL-2.0-or-later
+o:gstreamer
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031313
-c:4f9d817d5b23327403c3a18272bbb80f8bdd9858
-D:gst-plugins-base=1.16.1-r0 pc:gio-2.0 pc:glib-2.0 pc:gstreamer-1.0 pc:gstreamer-base-1.0 pc:orc-0.4 pkgconfig
-p:pc:gstreamer-allocators-1.0=1.16.1 pc:gstreamer-app-1.0=1.16.1 pc:gstreamer-audio-1.0=1.16.1 pc:gstreamer-fft-1.0=1.16.1 pc:gstreamer-gl-1.0=1.16.1 pc:gstreamer-pbutils-1.0=1.16.1 pc:gstreamer-plugins-base-1.0=1.16.1 pc:gstreamer-riff-1.0=1.16.1 pc:gstreamer-rtp-1.0=1.16.1 pc:gstreamer-rtsp-1.0=1.16.1 pc:gstreamer-sdp-1.0=1.16.1 pc:gstreamer-tag-1.0=1.16.1 pc:gstreamer-video-1.0=1.16.1
+t:1575472256
+c:bd15a44bf85a46a00761e5c45a8bb7276be2dd79
+i:gstreamer=1.16.2-r0 lang
 
 C:Q1+Qf+5K1I7WXyd3bsxz1flABumAA=
 P:giflib-utils
@@ -30375,22 +30361,6 @@ c:e2ca5c04758f0d811060d95c889dec74e8a7105c
 D:so:libbluetooth.so.3 so:libc.musl-x86.so.1
 i:py-bluez=0.22-r3 python3
 
-C:Q1q10i1wrtD1FG/WTMG3LIliCgiAE=
-P:libuv
-V:1.33.1-r1
-A:x86
-S:84352
-I:208896
-T:Cross-platform asychronous I/O
-U:https://libuv.org
-L:MIT BSD ISC
-o:libuv
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573836251
-c:63dc6b50e39cd6e6a899d1589cff3a87c91d4580
-D:so:libc.musl-x86.so.1
-p:so:libuv.so.1=1.0.0
-
 C:Q13SQy7mZD3SlsRs/Xk85XBWGNBdw=
 P:aria2
 V:1.35.0-r0
@@ -31816,6 +31786,22 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1575283461
 c:38664bd7a807d4b24c0e0482bdb1c041e783469e
 D:so:libc.musl-x86.so.1 so:libpri.so.1.4 so:libtonezone.so.2
+
+C:Q1C3WuVsfbBW24MwS2r2ywvFqGPFQ=
+P:gstreamer-tools
+V:1.16.2-r0
+A:x86
+S:50177
+I:159744
+T:Tools for GStreamer streaming media framework
+U:https://gstreamer.freedesktop.org
+L:LGPL-2.0-or-later
+o:gstreamer
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:bd15a44bf85a46a00761e5c45a8bb7276be2dd79
+D:pkgconfig so:libc.musl-x86.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8
+p:cmd:gst-inspect-1.0 cmd:gst-launch-1.0 cmd:gst-stats-1.0 cmd:gst-typefind-1.0
 
 C:Q1fHCmZsfiuweKVgi+/ibaWP+nFvs=
 P:tree-doc
@@ -35765,21 +35751,6 @@ c:eb7c99fb435406b592f0b923ab91a380ed04eb64
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1
 p:so:liblber-2.4.so.2=2.10.11 so:libldap-2.4.so.2=2.10.11 so:libldap_r-2.4.so.2=2.10.11
 
-C:Q1BIrVhWhFE+eqhjeFRZG//JZM85I=
-P:gst-plugins-base-lang
-V:1.16.1-r0
-A:x86
-S:148291
-I:966656
-T:Languages for package gst-plugins-base
-U:https://gstreamer.freedesktop.org
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:gst-plugins-base
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031313
-c:4f9d817d5b23327403c3a18272bbb80f8bdd9858
-i:gst-plugins-base=1.16.1-r0 lang
-
 C:Q1XrUoMMd1NGcTfOSeqOEYkx1L9ow=
 P:libass
 V:0.14.0-r0
@@ -37815,6 +37786,22 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1575283461
 c:38664bd7a807d4b24c0e0482bdb1c041e783469e
 D:so:libc.musl-x86.so.1 so:libodbc.so.2
+
+C:Q1e1LFry4OQd24DRvRc6a1ILzMISA=
+P:gstreamer-dev
+V:1.16.2-r0
+A:x86
+S:695702
+I:6012928
+T:GStreamer streaming media framework (development files)
+U:https://gstreamer.freedesktop.org
+L:LGPL-2.0-or-later
+o:gstreamer
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:bd15a44bf85a46a00761e5c45a8bb7276be2dd79
+D:libxml2-dev gstreamer=1.16.2-r0 pc:gio-2.0 pc:glib-2.0 pc:gmodule-no-export-2.0 pc:gobject-2.0 pkgconfig
+p:pc:gstreamer-1.0=1.16.2 pc:gstreamer-base-1.0=1.16.2 pc:gstreamer-check-1.0=1.16.2 pc:gstreamer-controller-1.0=1.16.2 pc:gstreamer-net-1.0=1.16.2
 
 C:Q1C/Uuw33JRrj2eQMXSE6Qvet1v/M=
 P:unbound-dbg
@@ -41779,22 +41766,6 @@ t:1572019091
 c:0453b1f33063b7627ffb31f5fdc964b8cf146dcd
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:liblua-5.3.so.0 so:libpcap.so.1 so:libssl.so.1.1
 p:cmd:ncat
-
-C:Q1E3jMatxkKMiFKGFM3UDJJ9lyPU0=
-P:gstreamer-dev
-V:1.16.1-r0
-A:x86
-S:695757
-I:6012928
-T:GStreamer streaming media framework (development files)
-U:https://gstreamer.freedesktop.org
-L:LGPL-2.0-or-later
-o:gstreamer
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031312
-c:5401119dc00580b9c88b0dc9b63bb006801e97e6
-D:libxml2-dev gstreamer=1.16.1-r0 pc:gio-2.0 pc:glib-2.0 pc:gmodule-no-export-2.0 pc:gobject-2.0 pkgconfig
-p:pc:gstreamer-1.0=1.16.1 pc:gstreamer-base-1.0=1.16.1 pc:gstreamer-check-1.0=1.16.1 pc:gstreamer-controller-1.0=1.16.1 pc:gstreamer-net-1.0=1.16.1
 
 C:Q1hNBvE5GYfpKxioHaGtehCiGNwmA=
 P:iso-codes-lang
@@ -46620,6 +46591,22 @@ t:1574668085
 c:f53ec3df1df9b9df94e49fae18d1a29acaeac091
 D:so:libc.musl-x86.so.1
 p:so:libpcre2-16.so.0=0.9.0
+
+C:Q1Afu8Vlr/YkB8PUORd7l9DUjphPg=
+P:libuv-dev
+V:1.34.0-r0
+A:x86
+S:21476
+I:139264
+T:Cross-platform asychronous I/O (development files)
+U:https://libuv.org
+L:MIT AND ISC
+o:libuv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:6e7c1aa031a0f28f52af6486fc66930db678d232
+D:libuv=1.34.0-r0 pkgconfig
+p:pc:libuv=1.34.0
 
 C:Q10yDaerhynAOlpHezAVqZwqX+iuM=
 P:liblognorm
@@ -52900,22 +52887,6 @@ t:1531501742
 c:64ae787df08451c0d0e9f0e934e461ff5f342c99
 i:docs fsarchiver=0.8.5-r0
 
-C:Q1USBgDJmlZmgsDUf7zlwlawsbYfU=
-P:gst-plugins-base
-V:1.16.1-r0
-A:x86
-S:2191018
-I:6057984
-T:GStreamer streaming media framework base plug-ins
-U:https://gstreamer.freedesktop.org
-L:GPL-2.0-or-later LGPL-2.0-or-later
-o:gst-plugins-base
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031313
-c:4f9d817d5b23327403c3a18272bbb80f8bdd9858
-D:so:libEGL.so.1 so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXv.so.1 so:libasound.so.2 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libcdda_interface.so.0 so:libcdda_paranoia.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgstbase-1.0.so.0 so:libgstcontroller-1.0.so.0 so:libgstnet-1.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8 so:libogg.so.0 so:libopus.so.0 so:liborc-0.4.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:libtheoradec.so.1 so:libtheoraenc.so.1 so:libvorbis.so.0 so:libvorbisenc.so.2 so:libwayland-client.so.0 so:libwayland-egl.so.1 so:libxcb.so.1 so:libz.so.1
-p:so:libgstadder.so=0 so:libgstallocators-1.0.so.0=0.1601.0 so:libgstalsa.so=0 so:libgstapp-1.0.so.0=0.1601.0 so:libgstapp.so=0 so:libgstaudio-1.0.so.0=0.1601.0 so:libgstaudioconvert.so=0 so:libgstaudiomixer.so=0 so:libgstaudiorate.so=0 so:libgstaudioresample.so=0 so:libgstaudiotestsrc.so=0 so:libgstcdparanoia.so=0 so:libgstcompositor.so=0 so:libgstencoding.so=0 so:libgstfft-1.0.so.0=0.1601.0 so:libgstgio.so=0 so:libgstgl-1.0.so.0=0.1601.0 so:libgstogg.so=0 so:libgstopengl.so=0 so:libgstopus.so=0 so:libgstoverlaycomposition.so=0 so:libgstpango.so=0 so:libgstpbtypes.so=0 so:libgstpbutils-1.0.so.0=0.1601.0 so:libgstplayback.so=0 so:libgstrawparse.so=0 so:libgstriff-1.0.so.0=0.1601.0 so:libgstrtp-1.0.so.0=0.1601.0 so:libgstrtsp-1.0.so.0=0.1601.0 so:libgstsdp-1.0.so.0=0.1601.0 so:libgstsubparse.so=0 so:libgsttag-1.0.so.0=0.1601.0 so:libgsttcp.so=0 so:libgsttheora.so=0 so:libgsttypefindfunctions.so=0 so:libgstvideo-1.0.so.0=0.1601.0 so:libgstvideoconvert.so=0 so:libgstvideorate.so=0 so:libgstvideoscale.so=0 so:libgstvideotestsrc.so=0 so:libgstvolume.so=0 so:libgstvorbis.so=0 so:libgstximagesink.so=0 so:libgstxvimagesink.so=0 cmd:gst-device-monitor-1.0 cmd:gst-discoverer-1.0 cmd:gst-play-1.0
-
 C:Q1pFwktpP4Vv2uC7Du0XVwRT0G6qQ=
 P:freeradius-lib
 V:3.0.20-r1
@@ -56832,6 +56803,21 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core lua-socket quagga
 
+C:Q1w5iLcOq1/jLxsNwQqmlt97NZDhw=
+P:gst-plugins-base-doc
+V:1.16.2-r0
+A:x86
+S:4120
+I:32768
+T:GStreamer streaming media framework base plug-ins (documentation)
+U:https://gstreamer.freedesktop.org
+L:GPL-2.0-or-later LGPL-2.0-or-later
+o:gst-plugins-base
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:97dcfd9743dca25d3939ddb428513d94f46ba475
+i:docs gst-plugins-base=1.16.2-r0
+
 C:Q1hEaYUMVcRoVzffDpiOdevXlkgqM=
 P:grub
 V:2.02-r18
@@ -58439,6 +58425,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1447239959
 c:183ac4eae701f0b8594dab1c736257e2dd158a3f
 i:docs perl-module-util=1.09-r0
+
+C:Q1m0I2DrMDQkfPBde5/XaSU5voqug=
+P:gstreamer
+V:1.16.2-r0
+A:x86
+S:1113964
+I:3092480
+T:GStreamer streaming media framework
+U:https://gstreamer.freedesktop.org
+L:LGPL-2.0-or-later
+o:gstreamer
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:bd15a44bf85a46a00761e5c45a8bb7276be2dd79
+D:so:libc.musl-x86.so.1 so:libcap.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
+p:so:libgstbase-1.0.so.0=0.1602.0 so:libgstcheck-1.0.so.0=0.1602.0 so:libgstcontroller-1.0.so.0=0.1602.0 so:libgstnet-1.0.so.0=0.1602.0 so:libgstreamer-1.0.so.0=0.1602.0
 
 C:Q1u75oNcm855CyFrGN6d6GmNrrT8k=
 P:font-misc-misc
@@ -61454,21 +61456,6 @@ m:Daniel Sabogal <dsabogalcc@gmail.com>
 t:1572959651
 c:d8968e175f529240a6127eb49c8de7c69488782d
 i:docs libinput=1.14.3-r0
-
-C:Q1SLm9gIKYmbcEcoVOLc6TRDuMKUo=
-P:gstreamer-lang
-V:1.16.1-r0
-A:x86
-S:464944
-I:1736704
-T:Languages for package gstreamer
-U:https://gstreamer.freedesktop.org
-L:LGPL-2.0-or-later
-o:gstreamer
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031312
-c:5401119dc00580b9c88b0dc9b63bb006801e97e6
-i:gstreamer=1.16.1-r0 lang
 
 C:Q1eD3R76PtGeVtRA5jGXUcsfQOfXA=
 P:open-lldp-dev
@@ -66973,6 +66960,21 @@ t:1567697810
 c:dcd2824823f4be900dea648e592c7a1c9f167186
 D:perl so:libc.musl-x86.so.1
 
+C:Q19Ou+isiJ853B8T2/E8E/S1Fhkqk=
+P:xf86-video-sis-doc
+V:0.12.0-r0
+A:x86
+S:9385
+I:45056
+T:X.org SiS video driver (documentation)
+U:https://xorg.freedesktop.org
+L:MIT
+o:xf86-video-sis
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:c3fa9cfc1215d772e3f7653103f9ce076857ed9c
+i:docs xf86-video-sis=0.12.0-r0
+
 C:Q1BfZamGRckUNJNrPdVZRyTBUJu7A=
 P:libevent
 V:2.1.11-r0
@@ -68696,6 +68698,21 @@ t:1567697808
 c:d9a6395f727b8f1bee3fb4f5f34c329dd10e18b6
 D:perl-html-tagset so:libc.musl-x86.so.1
 
+C:Q1YhdK01Z8UaEWh5G9nYcdg88Ijrk=
+P:gstreamer-doc
+V:1.16.2-r0
+A:x86
+S:10892
+I:40960
+T:GStreamer streaming media framework (documentation)
+U:https://gstreamer.freedesktop.org
+L:LGPL-2.0-or-later
+o:gstreamer
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575472256
+c:bd15a44bf85a46a00761e5c45a8bb7276be2dd79
+i:docs gstreamer=1.16.2-r0
+
 C:Q1QicrnlUDSJpvZ6eUWt3Lapp39Cc=
 P:uriparser
 V:0.9.3-r0
@@ -70335,6 +70352,20 @@ o:bzip2
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573816135
 c:fd67415c29d64b1c3617cdd524d75c9c800eb985
+
+C:Q1zWgfAMsV5FGzib7wHC7OgdGxrd8=
+P:libuv-static
+V:1.34.0-r0
+A:x86
+S:464041
+I:786432
+T:Cross-platform asychronous I/O (static library)
+U:https://libuv.org
+L:MIT AND ISC
+o:libuv
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1575471770
+c:6e7c1aa031a0f28f52af6486fc66930db678d232
 
 C:Q1z02q7uhNXe2LwHHGtRTYU6deezU=
 P:harfbuzz-icu
@@ -73400,21 +73431,6 @@ t:1474012841
 c:0254cd8feed187f592f384c4b875c6ad892d9a90
 i:docs perl-html-formattext-withlinks=0.15-r0
 
-C:Q1eAaxUPR/kjXQL7wy3VYvpv7dl70=
-P:xf86-video-sis
-V:0.11.0-r0
-A:x86
-S:234419
-I:524288
-T:X.org SiS video driver
-U:https://xorg.freedesktop.org
-L:MIT
-o:xf86-video-sis
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1564254035
-c:0f9cf292309da0b42d2ccf4b0ccc093b8dd296eb
-D:so:libc.musl-x86.so.1
-
 C:Q1i43ZmoheIpBRICTc2whITO7uoG4=
 P:perl-html-quoted-doc
 V:0.04-r0
@@ -74861,22 +74877,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1567697810
 c:813ddc29535f8161adbc52cfd0deb412671314e3
 i:docs perl-gd=2.71-r1
-
-C:Q15DKdmHZ3rCqmJPL7KIumsF0PbmY=
-P:gstreamer-tools
-V:1.16.1-r0
-A:x86
-S:50159
-I:159744
-T:Tools for GStreamer streaming media framework
-U:https://gstreamer.freedesktop.org
-L:LGPL-2.0-or-later
-o:gstreamer
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1570031312
-c:5401119dc00580b9c88b0dc9b63bb006801e97e6
-D:pkgconfig so:libc.musl-x86.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8
-p:cmd:gst-inspect-1.0 cmd:gst-launch-1.0 cmd:gst-stats-1.0 cmd:gst-typefind-1.0
 
 C:Q1NFrQAhoCJg/m7JR4Yn3zR5R+UMI=
 P:samba
