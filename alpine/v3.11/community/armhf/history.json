@@ -1663,7 +1663,8 @@
     "libsoup": {
       "origin": "libsoup",
       "versions": {
-        "2.68.2-r0": 1570652465
+        "2.68.2-r0": 1570652465,
+        "2.68.3-r0": 1575474338
       },
       "dependencies": [
         "glib-networking",
@@ -29603,7 +29604,7 @@
     "snapcast-doc": {
       "origin": "snapcast",
       "versions": {
-        "0.17.1-r0": 1574469100
+        "0.17.1-r0": 1575473484
       }
     },
     "knot-resolver-libs-static": {
@@ -36564,10 +36565,11 @@
     "libsoup-dev": {
       "origin": "libsoup",
       "versions": {
-        "2.68.2-r0": 1570652465
+        "2.68.2-r0": 1570652465,
+        "2.68.3-r0": 1575474338
       },
       "dependencies": [
-        "libsoup=2.68.2-r0",
+        "libsoup=2.68.3-r0",
         "pc:gio-2.0>=2.38",
         "pc:glib-2.0>=2.38",
         "pc:gobject-2.0>=2.38",
@@ -36578,8 +36580,8 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libsoup-2.4=2.68.2",
-        "pc:libsoup-gnome-2.4=2.68.2"
+        "pc:libsoup-2.4=2.68.3",
+        "pc:libsoup-gnome-2.4=2.68.3"
       ]
     },
     "libplist": {
@@ -60924,7 +60926,8 @@
     "libsoup-lang": {
       "origin": "libsoup",
       "versions": {
-        "2.68.2-r0": 1570652465
+        "2.68.2-r0": 1570652465,
+        "2.68.3-r0": 1575474338
       },
       "dependencies": [
         "glib-networking",
@@ -62495,7 +62498,7 @@
     "snapcast": {
       "origin": "snapcast",
       "versions": {
-        "0.17.1-r0": 1574469100
+        "0.17.1-r0": 1575473484
       },
       "dependencies": [
         "snapcast-client",
@@ -72576,6 +72579,50 @@
       "dependencies": [
         "qt5-qtxmlpatterns",
         "qt5-qtdeclarative"
+      ]
+    },
+    "snapcast-client": {
+      "origin": "snapcast",
+      "versions": {
+        "0.17.1-r0": 1575473484
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libFLAC.so.8",
+        "so:libasound.so.2",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libogg.so.0",
+        "so:libopus.so.0",
+        "so:libstdc++.so.6",
+        "so:libvorbis.so.0"
+      ],
+      "provides": [
+        "cmd:snapclient"
+      ]
+    },
+    "snapcast-server": {
+      "origin": "snapcast",
+      "versions": {
+        "0.17.1-r0": 1575473484
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libFLAC.so.8",
+        "so:libavahi-client.so.3",
+        "so:libavahi-common.so.3",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libogg.so.0",
+        "so:libopus.so.0",
+        "so:libstdc++.so.6",
+        "so:libvorbis.so.0",
+        "so:libvorbisenc.so.2"
+      ],
+      "provides": [
+        "cmd:snapserver"
       ]
     }
   },
