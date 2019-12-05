@@ -14471,22 +14471,6 @@ c:d25d2773c71e9751d0b3dc9bf20cafb8af32f868
 D:so:libCHARSET3-samba4.so so:libMESSAGING-samba4.so so:libacl.so.1 so:libaddns-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armv7.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcom_err-samba4.so.0 so:libcommon-auth-samba4.so so:libcups.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libiov-buf-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.2 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpam.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
 p:so:libads-samba4.so=0 so:libauth-samba4.so=0 so:libdfs-server-ad-samba4.so=0 so:libnetapi.so.0=0 so:libnpa-tstream-samba4.so=0 so:libprinting-migrate-samba4.so=0 so:libsmbd-base-samba4.so=0 so:libsmbd-conn-samba4.so=0 so:libsmbldap.so.2=2 so:libsmbldaphelper-samba4.so=0
 
-C:Q1VtHXRWE12m8x66j7GWlwXd+9AYY=
-P:perl-io-compress
-V:2.091-r0
-A:armv7
-S:141599
-I:757760
-T:Perl compression library
-U:https://metacpan.org/release/IO-Compress
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-io-compress
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1574666215
-c:dab61cbcc990395fe0bdc5df3719aa6946d37eeb
-D:perl perl-compress-raw-bzip2 perl-compress-raw-zlib
-p:cmd:streamzip
-
 C:Q1lgy4EnVlrWoTPes95Q8z7pPCw7Y=
 P:rtpproxy
 V:2.1.0-r0
@@ -27256,6 +27240,21 @@ t:1557246460
 c:710fe41f132c62a570799836d0c2dc9216eb9211
 D:libxext-dev libxrandr=1.5.2-r0 pc:randrproto>=1.5 pc:x11 pc:xext pc:xproto pc:xrender pkgconfig
 p:pc:xrandr=1.5.2
+
+C:Q1nJjX+n7JPe+VBO2gF0ctO31VcuE=
+P:perl-compress-raw-zlib
+V:2.092-r0
+A:armv7
+S:53206
+I:180224
+T:Perl low-level interface to zlib compression library
+U:https://metacpan.org/release/Compress-Raw-Zlib
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-compress-raw-zlib
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1575515081
+c:d816d9c5a2b7ead1d52339ad2ce1d38766e1d351
+D:perl so:libc.musl-armv7.so.1
 
 C:Q13W4YzHEK/ihz66W2DfVaoUnI8Eo=
 P:perl-params-util-doc
@@ -49726,6 +49725,21 @@ c:c46ef7b9e13ce22f2fa0da000720e9005232c6c8
 D:util-linux-dev zeromq-dev czmq=4.2.0-r0 pc:libzmq pc:uuid pkgconfig
 p:pc:libczmq=4.2.0
 
+C:Q1BwwqeuFpdUaj3PzcydpcG6Hxxr8=
+P:perl-compress-raw-bzip2
+V:2.092-r0
+A:armv7
+S:30582
+I:114688
+T:Perl low-level interface to bzip2 compression library
+U:https://metacpan.org/release/PMQS/Compress-Raw-Bzip2-2.092
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-compress-raw-bzip2
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1575515081
+c:e98f91fd530a1d0b3d64ce579c2702d12c789f9b
+D:perl so:libc.musl-armv7.so.1
+
 C:Q1abwPjrEVwsiQ6n2aI7LDQ07xHJg=
 P:perl-text-csv-doc
 V:2.00-r0
@@ -62538,21 +62552,6 @@ c:4abd4d3a79496453f7478957d308a0b7848440a8
 D:/bin/sh so:libc.musl-armv7.so.1 so:libexecline.so.2.5 so:libskarnet.so.2.9
 p:so:libs6.so.2.9=2.9.0.1 cmd:s6-accessrules-cdb-from-fs cmd:s6-accessrules-fs-from-cdb cmd:s6-applyuidgid cmd:s6-cleanfifodir cmd:s6-connlimit cmd:s6-envdir cmd:s6-envuidgid cmd:s6-fdholder-daemon cmd:s6-fdholder-delete cmd:s6-fdholder-getdump cmd:s6-fdholder-list cmd:s6-fdholder-retrieve cmd:s6-fdholder-setdump cmd:s6-fdholder-store cmd:s6-fdholder-transferdump cmd:s6-fdholderd cmd:s6-fghack cmd:s6-ftrig-listen cmd:s6-ftrig-listen1 cmd:s6-ftrig-notify cmd:s6-ftrig-wait cmd:s6-ftrigrd cmd:s6-ioconnect cmd:s6-ipcclient cmd:s6-ipcserver cmd:s6-ipcserver-access cmd:s6-ipcserver-socketbinder cmd:s6-ipcserverd cmd:s6-log cmd:s6-mkfifodir cmd:s6-notifyoncheck cmd:s6-permafailon cmd:s6-setlock cmd:s6-setsid cmd:s6-setuidgid cmd:s6-softlimit cmd:s6-sudo cmd:s6-sudoc cmd:s6-sudod cmd:s6-supervise cmd:s6-svc cmd:s6-svdt cmd:s6-svdt-clear cmd:s6-svlisten cmd:s6-svlisten1 cmd:s6-svok cmd:s6-svscan cmd:s6-svscanctl cmd:s6-svstat cmd:s6-svwait cmd:s6-tai64n cmd:s6-tai64nlocal cmd:s6lockd cmd:ucspilogd
 
-C:Q1IAUILksQqEkvFXPAJrgzvroqsvI=
-P:perl-compress-raw-zlib
-V:2.091-r0
-A:armv7
-S:53225
-I:180224
-T:Perl low-level interface to zlib compression library
-U:https://metacpan.org/release/Compress-Raw-Zlib
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-compress-raw-zlib
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1574666215
-c:b46bfe44f02e632f1fb6e9cef8fde966354c4d24
-D:perl so:libc.musl-armv7.so.1
-
 C:Q1gapkK+g5LEVfvg5wiGbtnlYWntQ=
 P:xf86-video-tdfx
 V:1.5.0-r0
@@ -69408,21 +69407,6 @@ c:f1985259961d810961c2e5b784a1c005c0d9ce0b
 D:hwids-usb so:libc.musl-armv7.so.1 so:libudev.so.1 so:libusb-1.0.so.0
 p:cmd:lsusb cmd:lsusb.py cmd:usb-devices cmd:usbhid-dump
 
-C:Q1vzPhSO2wlRaR2WZbP7X9/YBTxZU=
-P:perl-compress-raw-bzip2
-V:2.091-r0
-A:armv7
-S:30597
-I:114688
-T:Perl low-level interface to bzip2 compression library
-U:https://metacpan.org/release/PMQS/Compress-Raw-Bzip2-2.091
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-compress-raw-bzip2
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1574666215
-c:ad2413848884e7311c1bbb9a92a8698c511c5397
-D:perl so:libc.musl-armv7.so.1
-
 C:Q1EMffnYkCE5ViZrXzLfmikCydZnA=
 P:libxrender-doc
 V:0.9.10-r3
@@ -70905,6 +70889,22 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1575065019
 c:afb7d3998fb0b4c253d7447f5609e42e9a9c71da
 D:rsyslog=8.1911.0-r0 so:libc.musl-armv7.so.1
+
+C:Q1OrldkaCmk1ZG9+M6pog4oDpkpiQ=
+P:perl-io-compress
+V:2.092-r0
+A:armv7
+S:141598
+I:757760
+T:Perl compression library
+U:https://metacpan.org/release/IO-Compress
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-io-compress
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1575515082
+c:d9df61bcff349e56ec763a71b879441e48b114ae
+D:perl perl-compress-raw-bzip2 perl-compress-raw-zlib
+p:cmd:streamzip
 
 C:Q1LcTnSAwUDEtr71EG7keR+H6YZDI=
 P:libtls-standalone
