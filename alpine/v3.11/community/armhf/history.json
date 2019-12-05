@@ -8610,15 +8610,14 @@
     "lapack-dev": {
       "origin": "lapack",
       "versions": {
-        "3.9.0-r0": 1574677126
+        "3.9.0-r0": 1574677126,
+        "3.9.0-r1": 1575578289
       },
       "dependencies": [
-        "lapack=3.9.0-r0",
+        "lapack=3.9.0-r1",
         "pkgconfig"
       ],
       "provides": [
-        "pc:blas=3.9.0",
-        "pc:cblas=3.9.0",
         "pc:lapack=3.9.0",
         "pc:lapacke=3.9.0"
       ]
@@ -12142,16 +12141,16 @@
     "lapack": {
       "origin": "lapack",
       "versions": {
-        "3.9.0-r0": 1574677126
+        "3.9.0-r0": 1574677126,
+        "3.9.0-r1": 1575578289
       },
       "dependencies": [
+        "so:libblas.so.3",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libgfortran.so.5"
       ],
       "provides": [
-        "so:libblas.so.3=3.9.0",
-        "so:libcblas.so.3=3.9.0",
         "so:liblapack.so.3=3.9.0",
         "so:liblapacke.so.3=3.9.0"
       ]
@@ -72789,6 +72788,35 @@
       "versions": {
         "20180828-r1": 1575543888
       }
+    },
+    "blas": {
+      "origin": "lapack",
+      "versions": {
+        "3.9.0-r1": 1575578289
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgfortran.so.5"
+      ],
+      "provides": [
+        "so:libblas.so.3=3.9.0",
+        "so:libcblas.so.3=3.9.0"
+      ]
+    },
+    "blas-dev": {
+      "origin": "lapack",
+      "versions": {
+        "3.9.0-r1": 1575578289
+      },
+      "dependencies": [
+        "blas=3.9.0-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:blas=3.9.0",
+        "pc:cblas=3.9.0"
+      ]
     }
   },
   "provide": {
@@ -74238,11 +74266,11 @@
         "version": "0"
       },
       "libblas.so.3": {
-        "package": "lapack",
+        "package": "blas",
         "version": "3.9.0"
       },
       "libcblas.so.3": {
-        "package": "lapack",
+        "package": "blas",
         "version": "3.9.0"
       },
       "liblapack.so.3": {
