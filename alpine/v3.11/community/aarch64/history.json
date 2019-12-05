@@ -75041,6 +75041,43 @@
         "cmd:kvantummanager",
         "cmd:kvantumpreview"
       ]
+    },
+    "ocaml-lablgtk": {
+      "origin": "ocaml-lablgtk",
+      "versions": {
+        "2.18.6-r1": 1575550821
+      },
+      "dependencies": [
+        "ocaml-runtime",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgdk-x11-2.0.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-x11-2.0.so.0",
+        "so:libgtksourceview-2.0.so.0",
+        "so:libgtkspell.so.0",
+        "so:libpango-1.0.so.0",
+        "so:librsvg-2.so.2"
+      ],
+      "provides": [
+        "lablgtk=2.18.6-r1",
+        "cmd:gdk_pixbuf_mlsource",
+        "cmd:lablgtk2"
+      ]
+    },
+    "ocaml-lablgtk-dev": {
+      "origin": "ocaml-lablgtk",
+      "versions": {
+        "2.18.6-r1": 1575550821
+      },
+      "dependencies": [
+        "ocaml-lablgtk=2.18.6-r1",
+        "gtk+-dev",
+        "gtkspell-dev",
+        "librsvg-dev",
+        "gtksourceview2-dev"
+      ]
     }
   },
   "provide": {
@@ -83598,6 +83635,10 @@
       "cargo-bootstrap": {
         "package": "cargo",
         "version": "1.39.0-r0"
+      },
+      "lablgtk": {
+        "package": "ocaml-lablgtk",
+        "version": "2.18.6-r1"
       }
     }
   }
