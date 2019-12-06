@@ -75138,6 +75138,36 @@
         "so:libnma.so.0",
         "so:libsecret-1.so.0"
       ]
+    },
+    "graphene": {
+      "origin": "graphene",
+      "versions": {
+        "1.10.0-r0": 1575634952
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0"
+      ],
+      "provides": [
+        "so:libgraphene-1.0.so.0=0.1000.0"
+      ]
+    },
+    "graphene-dev": {
+      "origin": "graphene",
+      "versions": {
+        "1.10.0-r0": 1575634952
+      },
+      "dependencies": [
+        "graphene=1.10.0-r0",
+        "pc:gobject-2.0",
+        "pc:gobject-2.0>=2.30.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:graphene-1.0=1.10.0",
+        "pc:graphene-gobject-1.0=1.10.0"
+      ]
     }
   },
   "provide": {
@@ -83319,6 +83349,10 @@
       "libretro-gtk-0.14.so.0": {
         "package": "retro-gtk",
         "version": "0"
+      },
+      "libgraphene-1.0.so.0": {
+        "package": "graphene",
+        "version": "0.1000.0"
       }
     }
   }

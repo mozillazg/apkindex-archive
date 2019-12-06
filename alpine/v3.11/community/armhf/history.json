@@ -570,7 +570,8 @@
     "wireguard-tools-doc": {
       "origin": "wireguard-tools",
       "versions": {
-        "0.0.20191012-r0": 1571591722
+        "0.0.20191012-r0": 1571591722,
+        "0.0.20191127-r0": 1575641390
       }
     },
     "xpdf-doc": {
@@ -9006,7 +9007,8 @@
     "wireguard-tools-wg-quick": {
       "origin": "wireguard-tools",
       "versions": {
-        "0.0.20191012-r0": 1571591722
+        "0.0.20191012-r0": 1571591722,
+        "0.0.20191127-r0": 1575641390
       },
       "dependencies": [
         "wireguard-tools-wg",
@@ -13133,7 +13135,8 @@
     "wireguard-tools": {
       "origin": "wireguard-tools",
       "versions": {
-        "0.0.20191012-r0": 1571591722
+        "0.0.20191012-r0": 1571591722,
+        "0.0.20191127-r0": 1575641390
       },
       "dependencies": [
         "wireguard-tools-wg",
@@ -14142,7 +14145,8 @@
     "wireguard-tools-bash-completion": {
       "origin": "wireguard-tools",
       "versions": {
-        "0.0.20191012-r0": 1571591722
+        "0.0.20191012-r0": 1571591722,
+        "0.0.20191127-r0": 1575641390
       },
       "dependencies": [
         "bash"
@@ -63542,7 +63546,8 @@
     "wireguard-tools-wg": {
       "origin": "wireguard-tools",
       "versions": {
-        "0.0.20191012-r0": 1571591722
+        "0.0.20191012-r0": 1571591722,
+        "0.0.20191127-r0": 1575641390
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -73227,6 +73232,76 @@
       "versions": {
         "1.0.16-r0": 1575633986
       }
+    },
+    "gnome-weather-lang": {
+      "origin": "gnome-weather",
+      "versions": {
+        "3.34.0-r0": 1575634886
+      }
+    },
+    "gnome-weather": {
+      "origin": "gnome-weather",
+      "versions": {
+        "3.34.0-r0": 1575634886
+      }
+    },
+    "networkmanager-openvpn": {
+      "origin": "networkmanager-openvpn",
+      "versions": {
+        "1.8.10-r2": 1575634879
+      },
+      "dependencies": [
+        "openvpn",
+        "/bin/sh",
+        "so:libc.musl-armhf.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8",
+        "so:libnm.so.0",
+        "so:libnma.so.0",
+        "so:libsecret-1.so.0"
+      ]
+    },
+    "graphene": {
+      "origin": "graphene",
+      "versions": {
+        "1.10.0-r0": 1575634952
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0"
+      ],
+      "provides": [
+        "so:libgraphene-1.0.so.0=0.1000.0"
+      ]
+    },
+    "graphene-dev": {
+      "origin": "graphene",
+      "versions": {
+        "1.10.0-r0": 1575634952
+      },
+      "dependencies": [
+        "graphene=1.10.0-r0",
+        "pc:gobject-2.0",
+        "pc:gobject-2.0>=2.30.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:graphene-1.0=1.10.0",
+        "pc:graphene-gobject-1.0=1.10.0"
+      ]
+    },
+    "networkmanager-openvpn-lang": {
+      "origin": "networkmanager-openvpn",
+      "versions": {
+        "1.8.10-r2": 1575634879
+      },
+      "dependencies": [
+        "openvpn"
+      ]
     }
   },
   "provide": {
@@ -80122,6 +80197,10 @@
       "libretro-gtk-0.14.so.0": {
         "package": "retro-gtk",
         "version": "0"
+      },
+      "libgraphene-1.0.so.0": {
+        "package": "graphene",
+        "version": "0.1000.0"
       }
     },
     "package": {
