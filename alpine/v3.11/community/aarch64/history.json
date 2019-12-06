@@ -42001,7 +42001,8 @@
     "gitea-openrc": {
       "origin": "gitea",
       "versions": {
-        "1.10.0-r0": 1573922874
+        "1.10.0-r0": 1573922874,
+        "1.10.1-r0": 1575663257
       }
     },
     "collectd-curl": {
@@ -55671,7 +55672,8 @@
     "gitea": {
       "origin": "gitea",
       "versions": {
-        "1.10.0-r0": 1573922874
+        "1.10.0-r0": 1573922874,
+        "1.10.1-r0": 1575663257
       },
       "dependencies": [
         "git",
@@ -75827,6 +75829,288 @@
       "dependencies": [
         "linux-lts=5.4.2-r0"
       ]
+    },
+    "py3-pymacaroons": {
+      "origin": "py3-pymacaroons",
+      "versions": {
+        "0.13.0-r1": 1575662407
+      },
+      "dependencies": [
+        "python3",
+        "py3-six",
+        "py3-pynacl"
+      ]
+    },
+    "synapse-openrc": {
+      "origin": "synapse",
+      "versions": {
+        "1.6.1-r1": 1575661703
+      }
+    },
+    "calindori": {
+      "origin": "calindori",
+      "versions": {
+        "1.0-r0": 1575662163
+      },
+      "dependencies": [
+        "qt5-qtquickcontrols2",
+        "kirigami2",
+        "so:libKF5CalendarCore.so.5",
+        "so:libKF5ConfigCore.so.5",
+        "so:libKF5I18n.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:calindori"
+      ]
+    },
+    "py3-eliot": {
+      "origin": "py3-eliot",
+      "versions": {
+        "1.10.0-r1": 1575662391
+      },
+      "dependencies": [
+        "python3",
+        "py3-six",
+        "py3-zope-interface",
+        "py3-pyrsistent",
+        "py3-boltons",
+        "py3-twisted"
+      ],
+      "provides": [
+        "cmd:eliot-prettyprint"
+      ]
+    },
+    "py3-pem": {
+      "origin": "py3-pem",
+      "versions": {
+        "19.3.0-r1": 1575662472
+      },
+      "dependencies": [
+        "python3",
+        "py3-twisted"
+      ]
+    },
+    "py3-prometheus-client": {
+      "origin": "py3-prometheus-client",
+      "versions": {
+        "0.7.1-r1": 1575662412
+      },
+      "dependencies": [
+        "python3",
+        "py3-twisted"
+      ]
+    },
+    "synapse": {
+      "origin": "synapse",
+      "versions": {
+        "1.6.1-r1": 1575661703
+      },
+      "dependencies": [
+        "python3",
+        "py3-eliot",
+        "py3-txacme",
+        "py3-jsonschema",
+        "py3-frozendict",
+        "py3-canonicaljson",
+        "py3-pynacl",
+        "py3-idna",
+        "py3-service_identity",
+        "py3-twisted",
+        "py3-openssl",
+        "py3-yaml",
+        "py3-asn1",
+        "py3-asn1-modules",
+        "py3-daemonize",
+        "py3-bcrypt",
+        "py3-pillow",
+        "py3-sortedcontainers",
+        "py3-msgpack",
+        "py3-phonenumbers",
+        "py3-six",
+        "py3-attrs",
+        "py3-netaddr",
+        "py3-jinja2",
+        "py3-pymacaroons",
+        "py3-prometheus-client",
+        "py3-treq",
+        "py3-lxml",
+        "py3-psycopg2",
+        "py3-signedjson",
+        "py3-bleach",
+        "py3-typing-extensions",
+        "/bin/sh"
+      ],
+      "provides": [
+        "cmd:generate_config",
+        "cmd:generate_signing_key.py",
+        "cmd:hash_password",
+        "cmd:move_remote_media_to_new_store.py",
+        "cmd:register_new_matrix_user",
+        "cmd:synapse_port_db",
+        "cmd:sync_room_to_group.pl",
+        "cmd:synctl"
+      ]
+    },
+    "py3-bleach": {
+      "origin": "py3-bleach",
+      "versions": {
+        "3.1.0-r1": 1575662420
+      },
+      "dependencies": [
+        "python3",
+        "py3-six",
+        "py3-webencodings"
+      ]
+    },
+    "py3-treq": {
+      "origin": "py3-treq",
+      "versions": {
+        "18.6.0-r1": 1575662414
+      },
+      "dependencies": [
+        "python3",
+        "py3-incremental",
+        "py3-requests",
+        "py3-six",
+        "py3-twisted",
+        "py3-attrs"
+      ]
+    },
+    "py3-typing-extensions": {
+      "origin": "py3-typing-extensions",
+      "versions": {
+        "3.7.4.1-r2": 1575662423
+      },
+      "dependencies": [
+        "python3"
+      ]
+    },
+    "py3-txsni": {
+      "origin": "py3-txsni",
+      "versions": {
+        "0.1.9-r1": 1575662475
+      },
+      "dependencies": [
+        "python3",
+        "py3-openssl",
+        "py3-twisted"
+      ]
+    },
+    "py3-webencodings": {
+      "origin": "py3-webencodings",
+      "versions": {
+        "0.5.1-r3": 1575662497
+      },
+      "dependencies": [
+        "python3"
+      ]
+    },
+    "py3-unpaddedbase64": {
+      "origin": "py3-unpaddedbase64",
+      "versions": {
+        "1.1.0-r1": 1575662592
+      },
+      "dependencies": [
+        "python3"
+      ]
+    },
+    "py3-boltons": {
+      "origin": "py3-boltons",
+      "versions": {
+        "19.3.0-r0": 1575662447
+      },
+      "dependencies": [
+        "python3"
+      ]
+    },
+    "py3-frozendict": {
+      "origin": "py3-frozendict",
+      "versions": {
+        "1.2-r3": 1575662398
+      },
+      "provides": [
+        "py-frozendict=1.2-r3"
+      ]
+    },
+    "py3-txacme": {
+      "origin": "py3-txacme",
+      "versions": {
+        "0.9.2-r1": 1575662395
+      },
+      "dependencies": [
+        "python3",
+        "py3-acme",
+        "py3-attrs",
+        "py3-eliot",
+        "py3-josepy",
+        "py3-pem",
+        "py3-treq",
+        "py3-twisted",
+        "py3-txsni",
+        "py3-openssl"
+      ]
+    },
+    "py3-canonicaljson": {
+      "origin": "py3-canonicaljson",
+      "versions": {
+        "1.1.4-r1": 1575662401
+      },
+      "dependencies": [
+        "python3",
+        "py3-simplejson",
+        "py3-frozendict",
+        "py3-six"
+      ]
+    },
+    "plasma-angelfish": {
+      "origin": "plasma-angelfish",
+      "versions": {
+        "1.3.0-r0": 1575662163
+      },
+      "dependencies": [
+        "kirigami2",
+        "plasma-framework",
+        "purpose",
+        "so:libKF5I18n.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libQt5WebEngine.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:angelfish"
+      ]
+    },
+    "py3-signedjson": {
+      "origin": "py3-signedjson",
+      "versions": {
+        "1.0.0-r1": 1575662418
+      },
+      "dependencies": [
+        "python3",
+        "py3-pynacl",
+        "py3-canonicaljson",
+        "py3-unpaddedbase64"
+      ]
+    },
+    "py3-daemonize": {
+      "origin": "py3-daemonize",
+      "versions": {
+        "2.5.0-r2": 1575662404
+      },
+      "dependencies": [
+        "python3"
+      ],
+      "provides": [
+        "py-daemonize=2.5.0-r2"
+      ]
     }
   },
   "provide": {
@@ -84416,6 +84700,14 @@
       "py-xlib": {
         "package": "py3-xlib",
         "version": "0.25-r1"
+      },
+      "py-frozendict": {
+        "package": "py3-frozendict",
+        "version": "1.2-r3"
+      },
+      "py-daemonize": {
+        "package": "py3-daemonize",
+        "version": "2.5.0-r2"
       }
     }
   }
