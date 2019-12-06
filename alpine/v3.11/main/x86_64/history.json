@@ -18767,7 +18767,8 @@
     "virglrenderer-doc": {
       "origin": "virglrenderer",
       "versions": {
-        "0.7.0-r1": 1547472213
+        "0.7.0-r1": 1547472213,
+        "0.8.0-r1": 1575617606
       }
     },
     "stfl": {
@@ -39275,14 +39276,15 @@
     "virglrenderer-dev": {
       "origin": "virglrenderer",
       "versions": {
-        "0.7.0-r1": 1547472213
+        "0.7.0-r1": 1547472213,
+        "0.8.0-r1": 1575617606
       },
       "dependencies": [
         "pkgconfig",
-        "virglrenderer=0.7.0-r1"
+        "virglrenderer=0.8.0-r1"
       ],
       "provides": [
-        "pc:virglrenderer=0.7.0"
+        "pc:virglrenderer=0.8.0"
       ]
     },
     "perl-inline": {
@@ -54525,16 +54527,18 @@
     "virglrenderer": {
       "origin": "virglrenderer",
       "versions": {
-        "0.7.0-r1": 1547472213
+        "0.7.0-r1": 1547472213,
+        "0.8.0-r1": 1575617606
       },
       "dependencies": [
         "so:libX11.so.6",
         "so:libc.musl-x86_64.so.1",
+        "so:libdrm.so.2",
         "so:libepoxy.so.0",
         "so:libgbm.so.1"
       ],
       "provides": [
-        "so:libvirglrenderer.so.0=0.2.0",
+        "so:libvirglrenderer.so.1=1.4.0",
         "cmd:virgl_test_server"
       ]
     },
@@ -73290,6 +73294,10 @@
       "libprotobuf.so.22": {
         "package": "libprotobuf",
         "version": "22.0.1"
+      },
+      "libvirglrenderer.so.1": {
+        "package": "virglrenderer",
+        "version": "1.4.0"
       }
     },
     "package": {
