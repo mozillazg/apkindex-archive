@@ -74255,6 +74255,96 @@
       "provides": [
         "cmd:angelfish"
       ]
+    },
+    "chezmoi-zsh-completion": {
+      "origin": "chezmoi",
+      "versions": {
+        "1.7.5-r1": 1575668621
+      }
+    },
+    "chezmoi-doc": {
+      "origin": "chezmoi",
+      "versions": {
+        "1.7.5-r1": 1575668621
+      }
+    },
+    "chezmoi-bash-completion": {
+      "origin": "chezmoi",
+      "versions": {
+        "1.7.5-r1": 1575668621
+      }
+    },
+    "kaidan": {
+      "origin": "kaidan",
+      "versions": {
+        "0.4.1-r0": 1575668462
+      },
+      "dependencies": [
+        "kirigami2",
+        "so:libKF5Notifications.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Network.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libQt5Sql.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libQt5Xml.so.5",
+        "so:libc.musl-armv7.so.1",
+        "so:libgcc_s.so.1",
+        "so:libqxmpp.so.2",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:kaidan"
+      ]
+    },
+    "qxmpp-dev": {
+      "origin": "qxmpp",
+      "versions": {
+        "1.1.0-r0": 1575668462
+      },
+      "dependencies": [
+        "pkgconfig",
+        "qxmpp=1.1.0-r0"
+      ],
+      "provides": [
+        "pc:qxmpp=1.1.0"
+      ]
+    },
+    "chezmoi": {
+      "origin": "chezmoi",
+      "versions": {
+        "1.7.5-r1": 1575668621
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "cmd:chezmoi"
+      ]
+    },
+    "qxmpp": {
+      "origin": "qxmpp",
+      "versions": {
+        "1.1.0-r0": 1575668462
+      },
+      "dependencies": [
+        "so:libQt5Core.so.5",
+        "so:libQt5Network.so.5",
+        "so:libQt5Xml.so.5",
+        "so:libc.musl-armv7.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libqxmpp.so.2=1.1.0"
+      ]
+    },
+    "chezmoi-fish-completion": {
+      "origin": "chezmoi",
+      "versions": {
+        "1.7.5-r1": 1575668621
+      }
     }
   },
   "provide": {
@@ -81166,6 +81256,10 @@
       "libgraphene-1.0.so.0": {
         "package": "graphene",
         "version": "0.1000.0"
+      },
+      "libqxmpp.so.2": {
+        "package": "qxmpp",
+        "version": "1.1.0"
       }
     },
     "package": {
