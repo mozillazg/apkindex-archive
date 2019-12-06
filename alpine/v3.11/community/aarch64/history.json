@@ -7810,7 +7810,8 @@
     "terraform": {
       "origin": "terraform",
       "versions": {
-        "0.12.12-r0": 1571728135
+        "0.12.12-r0": 1571728135,
+        "0.12.17-r0": 1575616587
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
@@ -13404,7 +13405,8 @@
     "suitesparse-doc": {
       "origin": "suitesparse",
       "versions": {
-        "5.3.0-r0": 1530996078
+        "5.3.0-r0": 1530996078,
+        "5.6.0-r0": 1575616587
       }
     },
     "paper-gtk-theme": {
@@ -42947,11 +42949,13 @@
     "suitesparse-dev": {
       "origin": "suitesparse",
       "versions": {
-        "5.3.0-r0": 1530996078
+        "5.3.0-r0": 1530996078,
+        "5.6.0-r0": 1575616587
       },
       "dependencies": [
-        "openblas-dev>=0.3.0",
-        "suitesparse=5.3.0-r0"
+        "openblas-dev",
+        "lapack-dev",
+        "suitesparse=5.6.0-r0"
       ]
     },
     "libindicator-dev": {
@@ -44986,12 +44990,14 @@
     "suitesparse": {
       "origin": "suitesparse",
       "versions": {
-        "5.3.0-r0": 1530996078
+        "5.3.0-r0": 1530996078,
+        "5.6.0-r0": 1575616587
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
         "so:libgcc_s.so.1",
         "so:libgomp.so.1",
+        "so:liblapack.so.3",
         "so:libopenblas.so.3",
         "so:libstdc++.so.6"
       ],
@@ -45000,15 +45006,16 @@
         "so:libbtf.so.1=1.2.6",
         "so:libcamd.so.2=2.4.6",
         "so:libccolamd.so.2=2.9.6",
-        "so:libcholmod.so.3=3.0.12",
+        "so:libcholmod.so.3=3.0.13",
         "so:libcolamd.so.2=2.9.6",
         "so:libcxsparse.so.3=3.2.0",
         "so:libklu.so.1=1.3.8",
         "so:libldl.so.2=2.2.6",
         "so:librbio.so.2=2.2.6",
-        "so:libspqr.so.2=2.0.8",
-        "so:libsuitesparseconfig.so.5=5.3.0",
-        "so:libumfpack.so.5=5.7.7"
+        "so:libspqr.so.2=2.0.9",
+        "so:libsuitesparseconfig.so.5=5.5.0",
+        "so:libumfpack.so.5=5.7.9",
+        "cmd:mongoose"
       ]
     },
     "qt5-qdbusviewer": {
@@ -78679,7 +78686,7 @@
       },
       "libcholmod.so.3": {
         "package": "suitesparse",
-        "version": "3.0.12"
+        "version": "3.0.13"
       },
       "libcolamd.so.2": {
         "package": "suitesparse",
@@ -78703,15 +78710,15 @@
       },
       "libspqr.so.2": {
         "package": "suitesparse",
-        "version": "2.0.8"
+        "version": "2.0.9"
       },
       "libsuitesparseconfig.so.5": {
         "package": "suitesparse",
-        "version": "5.3.0"
+        "version": "5.5.0"
       },
       "libumfpack.so.5": {
         "package": "suitesparse",
-        "version": "5.7.7"
+        "version": "5.7.9"
       },
       "libraptor2.so.0": {
         "package": "raptor2",
