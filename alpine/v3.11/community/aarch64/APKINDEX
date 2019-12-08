@@ -414,22 +414,6 @@ t:1572968042
 c:263df782b83a94c36fe30d9d07ac4e6216c56954
 p:cmd:waitress-serve cmd:waitress-serve-3
 
-C:Q19QbnxVYJg5Sce5tDCrXM+WBAMas=
-P:kea-ctrl-agent
-V:1.7.2-r4
-A:aarch64
-S:97226
-I:303104
-T:Kea Control Agent - REST service for controlling Kea DHCP server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-http.so.6 so:libkea-log.so.5 so:libkea-process.so.3 so:libstdc++.so.6
-p:cmd:kea-ctrl-agent
-
 C:Q1CBvxmjmtnFrmscKkKuppK+Wui+A=
 P:ssh-ldap-pubkey-doc
 V:1.3.2-r1
@@ -8607,21 +8591,6 @@ c:caeaed4a04fe70ec13dffe8b9a91a9624fa7dca0
 D:so:libavcodec.so.58 so:libavformat.so.58 so:libavutil.so.56 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libpulse-simple.so.0 so:libpulse.so.0 so:libstdc++.so.6 so:libswresample.so.3 so:libswscale.so.5 so:libwayland-client.so.0
 p:cmd:wf-recorder
 
-C:Q1IETTb1x1GrWylIp0/nsgSXBG7Dg=
-P:kea
-V:1.7.2-r4
-A:aarch64
-S:1183
-I:4096
-T:DHCPv4 and DHCPv6 server from ISC
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-dhcp4 kea-dhcp6
-
 C:Q1UivUO1DsBfPzVAPWlVCqOZi105c=
 P:openvswitch-dev
 V:2.12.0-r2
@@ -14802,6 +14771,22 @@ t:1574438961
 c:7abab2313be2991d950c2e4b9352f05957e46c5c
 i:rpm=4.15.1-r0 lang
 
+C:Q1kHy6uvU0+c8uBfRAOhHlsGnSh88=
+P:kea-dhcp-ddns
+V:1.7.2-r5
+A:aarch64
+S:258495
+I:835584
+T:Kea DHCP Dynamic DNS Server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-dhcp_ddns.so.2 so:libkea-dns++.so.3 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-util.so.8 so:libstdc++.so.6
+p:so:libkea-asiodns.so.1=1.0.0 cmd:kea-dhcp-ddns
+
 C:Q1wzZgyoNVyNC3aCM370s2/DX3c2o=
 P:php7-pcntl
 V:7.3.12-r1
@@ -16423,6 +16408,21 @@ c:d3a11e8f226904a8856b5f48fec750055f2b3541
 D:apache2 apache2-mod-wsgi
 i:patchwork=2.1.4-r1 apache2-mod-wsgi
 
+C:Q1Xu51eEL/CU/BV+SDvm6umlfWOtA=
+P:kea-doc
+V:1.7.2-r5
+A:aarch64
+S:277885
+I:1085440
+T:DHCPv4 and DHCPv6 server from ISC (documentation)
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+i:docs kea=1.7.2-r5
+
 C:Q10TfWmUOq7CoRHY+rwlcxuTKp4S4=
 P:gitg-doc
 V:3.32.1-r2
@@ -17171,6 +17171,22 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1556459369
 c:258d69f8263ed1e56bb2731a1565d59fab6fae61
 i:docs perl-strictures=2.000006-r0
+
+C:Q15SpD/cX4pRjwDhuQ0h5/HBMmITM=
+P:kea-dev
+V:1.7.2-r5
+A:aarch64
+S:809023
+I:4497408
+T:DHCPv4 and DHCPv6 server from ISC (development files)
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5 kea-dhcp-ddns=1.7.2-r5 kea-http=1.7.2-r5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
+p:cmd:kea-msg-compiler
 
 C:Q1B7+1YOk+qPk2TNTFU7JCy8qSBmI=
 P:lua5.3-compat53
@@ -21176,6 +21192,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1559027598
 c:8acba483f02060767dc18e447b5013fffb287d6d
 D:php7 curl /bin/sh
+
+C:Q1Eia0gaZOKe28nttC2u2/wxDMkOo=
+P:kea
+V:1.7.2-r5
+A:aarch64
+S:1183
+I:4096
+T:DHCPv4 and DHCPv6 server from ISC
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-dhcp4 kea-dhcp6
 
 C:Q1I+ze4mE0GosqUWZMt3rkRN7rZhk=
 P:httpry-doc
@@ -25461,20 +25492,6 @@ t:1569191776
 c:49c4ccb07f71f6826f36c67e2124bf443fc0e4c2
 D:yelp=3.34.0-r0
 
-C:Q1JKe4B1JPCGkqSvV9BjOZwFj9rR4=
-P:kea-static
-V:1.7.2-r4
-A:aarch64
-S:7693145
-I:44224512
-T:DHCPv4 and DHCPv6 server from ISC (static library)
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-
 C:Q1BLnydhxAtULuTfYTPI0RNoe5r18=
 P:ibus
 V:1.5.21-r1
@@ -27245,6 +27262,22 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:tpm=1.3.2-r0 bash-completion
+
+C:Q1WJqtczXUE3WnRMt68tvWdqWj900=
+P:kea-shell
+V:1.7.2-r5
+A:aarch64
+S:7273
+I:77824
+T:Text client for Kea DHCP Control Agent
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:python3
+p:cmd:kea-shell
 
 C:Q1WgYsOrLdeW7JNijc0C+F4+ULFSE=
 P:vault
@@ -30373,22 +30406,6 @@ c:1fdb36ec6e65d74f7b3ceea753e7fcf6e8b0dfc1
 k:100
 i:docs php7=7.3.12-r1
 
-C:Q1IUXwvgVvTbob4X6tn+RQx3XyRRE=
-P:kea-dhcp4
-V:1.7.2-r4
-A:aarch64
-S:283054
-I:856064
-T:Kea IPv4 DHCP Server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcp_ddns.so.2 so:libkea-dhcpsrv.so.18 so:libkea-dns++.so.3 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libstdc++.so.6
-p:cmd:kea-dhcp4
-
 C:Q15mgSBfLWat6z44FepD0RWkgfCNA=
 P:haxe-doc
 V:3.4.7-r1
@@ -32013,22 +32030,6 @@ t:1499677460
 c:d1bbf07a534c7cd70cb28c748dad9a9e768f403b
 i:docs perl-log-dispatch-configurator-any=1.122640-r1
 
-C:Q1p88tAPMcMl0EMyaLpsW1ZkWdAbE=
-P:kea-dev
-V:1.7.2-r4
-A:aarch64
-S:809016
-I:4497408
-T:DHCPv4 and DHCPv6 server from ISC (development files)
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4 kea-dhcp-ddns=1.7.2-r4 kea-http=1.7.2-r4 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
-p:cmd:kea-msg-compiler
-
 C:Q1Z/pk75zZwtEcteLdhQZxwz5B5G4=
 P:tesseract-ocr-data-tur
 V:4.1.0-r0
@@ -33588,22 +33589,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1560086466
 c:5680dd2c29f21a369da1d96bc106d8acc20afa2f
 i:zenity=3.32.0-r0 lang
-
-C:Q1ourP016g6iHCRiC2BuMv4dCTMhA=
-P:kea-dhcp6
-V:1.7.2-r4
-A:aarch64
-S:279963
-I:843776
-T:Kea IPv6 DHCP Server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcp_ddns.so.2 so:libkea-dhcpsrv.so.18 so:libkea-dns++.so.3 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libstdc++.so.6
-p:cmd:kea-dhcp6
 
 C:Q1kg7bjb7aro+TW7MNRUKVXpp5q6Y=
 P:kinit
@@ -36436,22 +36421,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1573479220
 c:8f10c803acd757146b364185a1e937b68fd82da0
 i:docs nextcloud=17.0.1-r0
-
-C:Q1M3ie1FWwQ/SxiATblzMfT2ZWtz0=
-P:kea-utils
-V:1.7.2-r4
-A:aarch64
-S:55838
-I:229376
-T:Optional utilities for Kea DHCP Server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-dhcpsrv.so.18 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
-p:cmd:kea-lfc
 
 C:Q1FM+TuDvaE4ICvDEBrhvY9nM4N1A=
 P:restic
@@ -39903,6 +39872,22 @@ c:3f733f48e192a6a52954252c350eaa1548fe6eff
 D:gnupg cmd:openssl openssh-keygen perl perl-crypt-openssl-bignum perl-crypt-openssl-rsa bash lockfile-progs so:libassuan.so.0 so:libc.musl-aarch64.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0
 p:cmd:agent-transfer cmd:monkeysphere cmd:monkeysphere-authentication cmd:monkeysphere-host cmd:openpgp2pem cmd:openpgp2spki cmd:openpgp2ssh cmd:pem2openpgp
 
+C:Q14v477kspnGwATEN/B+OImz+8LkM=
+P:kea-admin
+V:1.7.2-r5
+A:aarch64
+S:61772
+I:499712
+T:Databases administration tools for Kea DHCP server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5
+p:cmd:kea-admin
+
 C:Q1tE9bKoQgI7KR9uAQ+aQYBDYmLX4=
 P:gmime26-dev
 V:2.6.23-r0
@@ -41085,6 +41070,21 @@ c:cf8d71e2a77a46175563c1b3e3fc828e3ff0605b
 D:so:libc.musl-aarch64.so.1 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjson-c.so.4
 p:so:libmypaint-1.4.so.0=0.0.0
 
+C:Q109dnJa8n+pewbA/w/HG44N0FXNg=
+P:kea-hooks
+V:1.7.2-r5
+A:aarch64
+S:493769
+I:1806336
+T:Hooks libraries for Kea DHCP server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcpsrv.so.18 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-http.so.6 so:libkea-log.so.5 so:libkea-mysql.so.1 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libmariadb.so.3
+
 C:Q1NLGSDB8yAU6d8FoNFsFl+pEHyPM=
 P:py3-pypdf2
 V:1.26.0-r5
@@ -41714,21 +41714,6 @@ t:1573759957
 c:7b0fe467ed5a9f092ac9a2d9cdf5c7478fc0d49e
 D:font-noto ttf-hack qqc2-desktop-style
 i:plasma-integration=5.17.3-r0 lang
-
-C:Q1BWHMUR0l4lOyUlTBrgl3JJ1OrPU=
-P:kea-hooks
-V:1.7.2-r4
-A:aarch64
-S:493778
-I:1806336
-T:Hooks libraries for Kea DHCP server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcpsrv.so.18 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-http.so.6 so:libkea-log.so.5 so:libkea-mysql.so.1 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libmariadb.so.3
 
 C:Q16uew8iln1tM03kshgSrijYXCRAo=
 P:xapian-bindings-ruby
@@ -44424,6 +44409,22 @@ c:706f4d5c0dec7ab7578ea47a880a3cb8d0dca717
 D:so:libc.musl-aarch64.so.1
 p:so:libhd.so.21=21.60
 
+C:Q11F2F0hy2GSWsXAJ7kopqJ5SAGUk=
+P:kea-http
+V:1.7.2-r5
+A:aarch64
+S:249390
+I:892928
+T:DHCPv4 and DHCPv6 server from ISC
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
+p:so:libkea-http.so.6=6.1.0
+
 C:Q1RYNa6z7+EU6kNMMJ4haU8nyfZGU=
 P:libxfce4ui
 V:4.14.1-r0
@@ -46017,21 +46018,6 @@ t:1561733753
 c:5d854f06160297db7212366ac45ceb1dd4f039d9
 D:so:libOpenIPMI.so.0 so:libOpenIPMIcmdlang.so.0 so:libOpenIPMIglib.so.0 so:libOpenIPMIposix.so.0 so:libOpenIPMIui.so.1 so:libOpenIPMIutils.so.0 so:libc.musl-aarch64.so.1 so:libglib-2.0.so.0 so:libgthread-2.0.so.0 so:libncursesw.so.6 so:libnetsnmp.so.35 so:libreadline.so.8
 p:cmd:ipmi_ui cmd:ipmicmd cmd:ipmish cmd:openipmi_eventd cmd:openipmicmd cmd:openipmish cmd:rmcp_ping cmd:solterm
-
-C:Q1qq17QrYWEPVeDjP9t3cHIKKP4iM=
-P:kea-doc
-V:1.7.2-r4
-A:aarch64
-S:277874
-I:1085440
-T:DHCPv4 and DHCPv6 server from ISC (documentation)
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-i:docs kea=1.7.2-r4
 
 C:Q13TA99p1mXVf3NchOL6cNO5Xqj50=
 P:luacheck
@@ -49926,6 +49912,22 @@ c:5e9ffbc2c926f27cd90535124ede79b75db5667e
 D:python3 py3-otp py3-beautifulsoup4 py3-pillow py3-pyfavicon py3-pyzbar py3-yoyo-migrations libhandy
 i:gnome-authenticator=3.32.2-r3 lang
 
+C:Q1IULUx/lNCkoenYNzCIKUnr5Tt64=
+P:kea-common
+V:1.7.2-r5
+A:aarch64
+S:2431770
+I:8544256
+T:Common files and libraries for Kea DHCP Server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:/bin/sh so:libbotan-2.so.11 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:liblog4cplus-2.0.so.3 so:libmariadb.so.3 so:libpq.so.5 so:libstdc++.so.6
+p:so:libkea-asiolink.so.6=6.1.2 so:libkea-cc.so.8=8.1.1 so:libkea-cfgclient.so.8=8.0.0 so:libkea-cryptolink.so.5=5.0.0 so:libkea-database.so.4=4.1.0 so:libkea-dhcp++.so.13=13.1.1 so:libkea-dhcp_ddns.so.2=2.0.0 so:libkea-dhcpsrv.so.18=18.0.1 so:libkea-dns++.so.3=3.0.1 so:libkea-eval.so.12=12.0.0 so:libkea-exceptions.so.0=0.2.0 so:libkea-hooks.so.9=9.0.0 so:libkea-log.so.5=5.0.0 so:libkea-mysql.so.1=1.1.0 so:libkea-pgsql.so.0=0.1.0 so:libkea-process.so.3=3.3.0 so:libkea-stats.so.3=3.1.0 so:libkea-util-io.so.0=0.0.1 so:libkea-util.so.8=8.1.0
+
 C:Q15R6cwYKSfUGuSxPz8+nrxq5rlsc=
 P:py3-impacket
 V:0.9.20-r1
@@ -51298,6 +51300,22 @@ t:1567697812
 c:8a36bf38c45cf6a66f5ee8793cc91073104ec71c
 i:docs perl-sys-meminfo=0.99-r2
 
+C:Q1eiO7U3rNI+FdDmF4SEdbXTMzjOE=
+P:kea-dhcp6
+V:1.7.2-r5
+A:aarch64
+S:279964
+I:843776
+T:Kea IPv6 DHCP Server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcp_ddns.so.2 so:libkea-dhcpsrv.so.18 so:libkea-dns++.so.3 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libstdc++.so.6
+p:cmd:kea-dhcp6
+
 C:Q1XCs9XqkcDYNsskbQiNisEX1A0RI=
 P:kjsembed-doc
 V:5.64.0-r0
@@ -51480,22 +51498,6 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1573642407
 c:99cf1129a6d27c03253342ac5205256886202d8e
-
-C:Q10OLlL6JOqUMcjKIa9IWkAr4zItA=
-P:kea-admin
-V:1.7.2-r4
-A:aarch64
-S:61786
-I:499712
-T:Databases administration tools for Kea DHCP server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4
-p:cmd:kea-admin
 
 C:Q10EV5J3mN/stWZVfy40Jq+NGlEEs=
 P:libcanberra-gtk3
@@ -58080,22 +58082,6 @@ t:1571652954
 c:867ff5300d28df9315dcc69474b3c9e92e7a98eb
 D:/bin/sh so:libc.musl-aarch64.so.1 so:libncursesw.so.6
 p:cmd:ksh
-
-C:Q1FkQjvRn1z/P0aE6MJbJwXPjrHYU=
-P:kea-http
-V:1.7.2-r4
-A:aarch64
-S:249391
-I:892928
-T:DHCPv4 and DHCPv6 server from ISC
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
-p:so:libkea-http.so.6=6.1.0
 
 C:Q1eBiKMKwdUVQlu8pORHROn2Lsqo0=
 P:rest
@@ -65519,6 +65505,20 @@ t:1575672989
 c:b9e0b88f4e7b9fb1b1bd6be0b29c58906d813bb5
 i:swayidle=1.5-r1 zsh
 
+C:Q1AKvnCOvduhzJMMFih8wrKobXhvc=
+P:kea-static
+V:1.7.2-r5
+A:aarch64
+S:7693142
+I:44224512
+T:DHCPv4 and DHCPv6 server from ISC (static library)
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+
 C:Q18bjmbfh25vF4yILbh+ZqqwI0Ja4=
 P:font-noto-adlam
 V:0_git20190623-r0
@@ -66331,6 +66331,22 @@ t:1535097736
 c:fce901a1116a1a5c694c0534bc3479c9155f0d63
 D:pkgconfig ytnef-libs=1.9.3-r0
 p:pc:libytnef=1.9.3
+
+C:Q1cp0oMeL52lpourDb68cH0HHi4/0=
+P:kea-utils
+V:1.7.2-r5
+A:aarch64
+S:55839
+I:229376
+T:Optional utilities for Kea DHCP Server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-dhcpsrv.so.18 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-util.so.8 so:libstdc++.so.6
+p:cmd:kea-lfc
 
 C:Q140t1fEzmVvQBfCG2SlCDzEZJdwI=
 P:openvas-config
@@ -71870,6 +71886,22 @@ t:1555062857
 c:be1bd2e00596d3191a892e4013b9839437ba0064
 i:spice-webdavd openrc
 
+C:Q1r8OusHg5a16uvFKTH/YnYqEXZ+4=
+P:kea-ctrl-agent
+V:1.7.2-r5
+A:aarch64
+S:97225
+I:303104
+T:Kea Control Agent - REST service for controlling Kea DHCP server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-http.so.6 so:libkea-log.so.5 so:libkea-process.so.3 so:libstdc++.so.6
+p:cmd:kea-ctrl-agent
+
 C:Q1IA/BW3SC3jehtgj8AM2mnl0r/fM=
 P:vinagre-lang
 V:3.22.0-r0
@@ -74397,21 +74429,6 @@ t:1573506075
 c:a93bb358b781b0829426a919beed60c9a6bc392b
 D:qt5-qtbase-dev kcoreaddons=5.64.0-r0
 
-C:Q1NwbXPO/hJgekWwIxVnE4tmGovCw=
-P:kea-keactrl
-V:1.7.2-r4
-A:aarch64
-S:6979
-I:45056
-T:Kea DHCP Process Manager
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-p:cmd:keactrl
-
 C:Q1CN42DICkVcZiB7cvqFQL/5Gpywk=
 P:sane-backend-dell1600n_net
 V:1.0.28-r1
@@ -75138,22 +75155,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1510451527
 c:2f5f42d4e2a823ef6018afb79d0263bce15e7a48
 i:docs perl-log-dispatch-config=1.04-r2
-
-C:Q1aUJCfskQKtFzCRXkHF7O1jDcf0E=
-P:kea-dhcp-ddns
-V:1.7.2-r4
-A:aarch64
-S:258497
-I:835584
-T:Kea DHCP Dynamic DNS Server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:kea-common=1.7.2-r4 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-dhcp_ddns.so.2 so:libkea-dns++.so.3 so:libkea-exceptions.so.0 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-util.so.8 so:libstdc++.so.6
-p:so:libkea-asiodns.so.1=1.0.0 cmd:kea-dhcp-ddns
 
 C:Q1inhn/PL/yGY9DA5TknTyMCA8QQE=
 P:perl-test-base
@@ -77074,22 +77075,6 @@ t:1575393457
 c:914425d6f56ced202ad71d0f9b953a11528f0483
 D:/bin/sh so:libboost_program_options.so.1.71.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:liblua.so.5 so:libsodium.so.23 so:libsqlite3.so.0 so:libstdc++.so.6
 p:cmd:dnspcap2calidns cmd:pdns_control cmd:pdns_server cmd:pdnsutil
-
-C:Q1M5jn4K4eJuqVxp0xk98ccl0VG5M=
-P:kea-common
-V:1.7.2-r4
-A:aarch64
-S:2431759
-I:8544256
-T:Common files and libraries for Kea DHCP Server
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:/bin/sh so:libbotan-2.so.11 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:liblog4cplus-2.0.so.3 so:libmariadb.so.3 so:libpq.so.5 so:libstdc++.so.6
-p:so:libkea-asiolink.so.6=6.1.2 so:libkea-cc.so.8=8.1.1 so:libkea-cfgclient.so.8=8.0.0 so:libkea-cryptolink.so.5=5.0.0 so:libkea-database.so.4=4.1.0 so:libkea-dhcp++.so.13=13.1.1 so:libkea-dhcp_ddns.so.2=2.0.0 so:libkea-dhcpsrv.so.18=18.0.1 so:libkea-dns++.so.3=3.0.1 so:libkea-eval.so.12=12.0.0 so:libkea-exceptions.so.0=0.2.0 so:libkea-hooks.so.9=9.0.0 so:libkea-log.so.5=5.0.0 so:libkea-mysql.so.1=1.1.0 so:libkea-pgsql.so.0=0.1.0 so:libkea-process.so.3=3.3.0 so:libkea-stats.so.3=3.1.0 so:libkea-util-io.so.0=0.0.1 so:libkea-util.so.8=8.1.0
 
 C:Q1JBzFy6AY1iEAFCfoOLTiL+0JUvE=
 P:ympd
@@ -80080,22 +80065,6 @@ t:1567357034
 c:03bb515cbd0e1442a91f298d1cbcf40bd65044fc
 D:libbson-dev mongo-c-driver=1.15.1-r0 pkgconfig
 p:pc:libmongoc-1.0=1.15.1 pc:libmongoc-ssl-1.0=1.15.1
-
-C:Q1vDnm3GQLZOyVO4f7nM/wdSjyQaU=
-P:kea-shell
-V:1.7.2-r4
-A:aarch64
-S:7275
-I:77824
-T:Text client for Kea DHCP Control Agent
-U:http://kea.isc.org
-L:MPL2
-o:kea
-m:Steve Holweg <skytep@gmail.com>
-t:1575822171
-c:54d05040856bfea67164d2e571c66feb4e069e59
-D:python3
-p:cmd:kea-shell
 
 C:Q1DZqr1fzFjAO7hF7r0/B96BEDnoM=
 P:mkpasswd-doc
@@ -87142,4 +87111,20 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1574773174
 c:68d80e824356f53f35ec68274ed7ef3433402ace
 i:openrc namecoin=0.18.1-r5
+
+C:Q1bTASa9ZgcueJsLLac7HcDkOPVPw=
+P:kea-dhcp4
+V:1.7.2-r5
+A:aarch64
+S:283059
+I:856064
+T:Kea IPv4 DHCP Server
+U:http://kea.isc.org
+L:MPL2
+o:kea
+m:Steve Holweg <skytep@gmail.com>
+t:1575838614
+c:5073f51d55a2ecb0956c308ebedceb703f31c366
+D:kea-common=1.7.2-r5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.6 so:libkea-cc.so.8 so:libkea-cfgclient.so.8 so:libkea-cryptolink.so.5 so:libkea-database.so.4 so:libkea-dhcp++.so.13 so:libkea-dhcp_ddns.so.2 so:libkea-dhcpsrv.so.18 so:libkea-dns++.so.3 so:libkea-eval.so.12 so:libkea-exceptions.so.0 so:libkea-hooks.so.9 so:libkea-log.so.5 so:libkea-process.so.3 so:libkea-stats.so.3 so:libkea-util.so.8 so:libstdc++.so.6
+p:cmd:kea-dhcp4
 
