@@ -62737,6 +62737,54 @@
       "provides": [
         "cmd:dfc"
       ]
+    },
+    "log4cplus-dev": {
+      "origin": "log4cplus",
+      "versions": {
+        "2.0.4-r1": 1575811237
+      },
+      "dependencies": [
+        "log4cplus-unicode=2.0.4-r1",
+        "log4cplus=2.0.4-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:log4cplus=2.0.4"
+      ]
+    },
+    "log4cplus-static": {
+      "origin": "log4cplus",
+      "versions": {
+        "2.0.4-r1": 1575811237
+      }
+    },
+    "log4cplus": {
+      "origin": "log4cplus",
+      "versions": {
+        "2.0.4-r1": 1575811237
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:liblog4cplus-2.0.so.3=3.4.4"
+      ]
+    },
+    "log4cplus-unicode": {
+      "origin": "log4cplus",
+      "versions": {
+        "2.0.4-r1": 1575811237
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:liblog4cplusU-2.0.so.3=3.4.4"
+      ]
     }
   },
   "provide": {
@@ -68444,6 +68492,14 @@
       "libliveMedia.so.75": {
         "package": "live-media",
         "version": "75.0.0"
+      },
+      "liblog4cplus-2.0.so.3": {
+        "package": "log4cplus",
+        "version": "3.4.4"
+      },
+      "liblog4cplusU-2.0.so.3": {
+        "package": "log4cplus-unicode",
+        "version": "3.4.4"
       }
     },
     "package": {
