@@ -73341,7 +73341,8 @@
     "kea-shell": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "python3"
@@ -73353,7 +73354,8 @@
     "kea-utils": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -73372,7 +73374,8 @@
     "kea-keactrl": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "provides": [
         "cmd:keactrl"
@@ -73381,7 +73384,8 @@
     "kea-common": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "/bin/sh",
@@ -73412,17 +73416,17 @@
         "so:libkea-process.so.3=3.3.0",
         "so:libkea-stats.so.3=3.1.0",
         "so:libkea-util-io.so.0=0.0.1",
-        "so:libkea-util.so.8=8.1.0",
-        "cmd:kea-msg-compiler"
+        "so:libkea-util.so.8=8.1.0"
       ]
     },
     "kea-dhcp4": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3",
+        "kea-common=1.7.2-r4",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
         "so:libkea-asiolink.so.6",
@@ -73450,7 +73454,8 @@
     "kea-http": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -73469,7 +73474,8 @@
     "kea": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "kea-dhcp4",
@@ -73479,10 +73485,11 @@
     "kea-dhcp-ddns": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3",
+        "kea-common=1.7.2-r4",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
         "so:libkea-asiolink.so.6",
@@ -73505,10 +73512,11 @@
     "kea-ctrl-agent": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3",
+        "kea-common=1.7.2-r4",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
         "so:libkea-asiolink.so.6",
@@ -73548,7 +73556,8 @@
     "kea-hooks": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -73601,27 +73610,39 @@
     "kea-doc": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       }
     },
     "kea-dev": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3",
-        "kea-dhcp-ddns=1.7.2-r3",
-        "kea-http=1.7.2-r3"
+        "kea-common=1.7.2-r4",
+        "kea-dhcp-ddns=1.7.2-r4",
+        "kea-http=1.7.2-r4",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libkea-exceptions.so.0",
+        "so:libkea-log.so.5",
+        "so:libkea-util.so.8",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:kea-msg-compiler"
       ]
     },
     "kea-admin": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3"
+        "kea-common=1.7.2-r4"
       ],
       "provides": [
         "cmd:kea-admin"
@@ -73630,10 +73651,11 @@
     "kea-dhcp6": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       },
       "dependencies": [
-        "kea-common=1.7.2-r3",
+        "kea-common=1.7.2-r4",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
         "so:libkea-asiolink.so.6",
@@ -73661,8 +73683,21 @@
     "kea-static": {
       "origin": "kea",
       "versions": {
-        "1.7.2-r3": 1575811307
+        "1.7.2-r3": 1575811307,
+        "1.7.2-r4": 1575822171
       }
+    },
+    "kea-hook-runscript": {
+      "origin": "kea-hook-runscript",
+      "versions": {
+        "1.3.1-r1": 1575815518
+      },
+      "dependencies": [
+        "kea-common>=1.4.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
     }
   },
   "provide": {
