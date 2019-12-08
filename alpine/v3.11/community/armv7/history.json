@@ -74436,6 +74436,75 @@
       "provides": [
         "cmd:dfc"
       ]
+    },
+    "vboot-utils": {
+      "origin": "vboot-utils",
+      "versions": {
+        "6310032-r1": 1575817102
+      },
+      "dependencies": [
+        "pkgconfig",
+        "so:libc.musl-armv7.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:liblzma.so.5",
+        "so:libstdc++.so.6",
+        "so:libyaml-0.so.2"
+      ],
+      "provides": [
+        "pc:vboot_host=2",
+        "cmd:bdb_extend",
+        "cmd:bmpblk_font",
+        "cmd:bmpblk_utility",
+        "cmd:chromeos-tpm-recovery",
+        "cmd:crossystem",
+        "cmd:crossystem_s",
+        "cmd:dev_debug_vboot",
+        "cmd:dev_make_keypair",
+        "cmd:dumpRSAPublicKey",
+        "cmd:dump_fmap",
+        "cmd:dump_kernel_config",
+        "cmd:eficompress",
+        "cmd:efidecompress",
+        "cmd:enable_dev_usb_boot",
+        "cmd:futility",
+        "cmd:gbb_utility",
+        "cmd:load_kernel_test",
+        "cmd:make_dev_firmware.sh",
+        "cmd:make_dev_ssd.sh",
+        "cmd:pad_digest_utility",
+        "cmd:resign_firmwarefd.sh",
+        "cmd:set_gbb_flags.sh",
+        "cmd:signature_digest_utility",
+        "cmd:tpm-nvsize",
+        "cmd:tpm_init_temp_fix",
+        "cmd:tpmc",
+        "cmd:vbutil_firmware",
+        "cmd:vbutil_kernel",
+        "cmd:vbutil_key",
+        "cmd:vbutil_keyblock",
+        "cmd:vbutil_what_keys",
+        "cmd:verify_data"
+      ]
+    },
+    "vboot-utils-doc": {
+      "origin": "vboot-utils",
+      "versions": {
+        "6310032-r1": 1575817102
+      }
+    },
+    "cgpt": {
+      "origin": "vboot-utils",
+      "versions": {
+        "6310032-r1": 1575817102
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libuuid.so.1"
+      ],
+      "provides": [
+        "cmd:cgpt"
+      ]
     }
   },
   "provide": {
