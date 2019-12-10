@@ -17734,7 +17734,8 @@
     "glib-networking-lang": {
       "origin": "glib-networking",
       "versions": {
-        "2.62.1-r0": 1570351902
+        "2.62.1-r0": 1570351902,
+        "2.62.2-r0": 1575971185
       },
       "dependencies": [
         "ca-certificates",
@@ -18739,13 +18740,14 @@
         "4.50.7-r0": 1575557304,
         "4.50.8-r0": 1575599814,
         "4.51.0-r0": 1575756574,
-        "4.51.1-r0": 1575965024
+        "4.51.1-r0": 1575965024,
+        "4.53.1-r0": 1575971185
       },
       "dependencies": [
         "py3-attrs"
       ],
       "provides": [
-        "py-hypothesis=4.51.1-r0"
+        "py-hypothesis=4.53.1-r0"
       ]
     },
     "outils-unvis": {
@@ -20136,7 +20138,8 @@
     "gdal": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -20147,15 +20150,25 @@
         "so:libgeos_c.so.1",
         "so:libgif.so.7",
         "so:libjpeg.so.8",
+        "so:libjson-c.so.4",
+        "so:libmariadb.so.3",
+        "so:libodbc.so.2",
+        "so:libodbcinst.so.2",
+        "so:libopenjp2.so.7",
+        "so:libpcre.so.1",
         "so:libpng16.so.16",
+        "so:libpoppler.so.92",
         "so:libpq.so.5",
+        "so:libproj.so.15",
         "so:libsqlite3.so.0",
         "so:libstdc++.so.6",
         "so:libtiff.so.5",
+        "so:libwebp.so.7",
+        "so:libxml2.so.2",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libgdal.so.20=20.5.2",
+        "so:libgdal.so.26=26.0.2",
         "cmd:gdal_contour",
         "cmd:gdal_grid",
         "cmd:gdal_rasterize",
@@ -20626,7 +20639,8 @@
     "glib-networking": {
       "origin": "glib-networking",
       "versions": {
-        "2.62.1-r0": 1570351902
+        "2.62.1-r0": 1570351902,
+        "2.62.2-r0": 1575971185
       },
       "dependencies": [
         "ca-certificates",
@@ -29593,12 +29607,13 @@
     "py3-gdal": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
-        "so:libgdal.so.20",
+        "so:libgdal.so.26",
         "so:libstdc++.so.6"
       ],
       "provides": [
@@ -39495,15 +39510,16 @@
     "gdal-dev": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "gdal",
-        "gdal=2.4.2-r1",
+        "gdal=3.0.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:gdal=2.4.2",
+        "pc:gdal=3.0.2",
         "cmd:gdal-config"
       ]
     },
@@ -46120,13 +46136,14 @@
     "py3-configargparse": {
       "origin": "py3-configargparse",
       "versions": {
-        "0.15.1-r1": 1572968032
+        "0.15.1-r1": 1572968032,
+        "0.15.2-r0": 1575971185
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "py-configargparse=0.15.1-r1"
+        "py-configargparse=0.15.2-r0"
       ]
     },
     "vkd3d-dev": {
@@ -73875,6 +73892,84 @@
       "versions": {
         "2.7-r0": 1575969326
       }
+    },
+    "java-gdal": {
+      "origin": "gdal",
+      "versions": {
+        "3.0.2-r0": 1575973277
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgdal.so.26",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libgdalalljni.so.26=26.0.2"
+      ]
+    },
+    "gdal-tools": {
+      "origin": "gdal",
+      "versions": {
+        "3.0.2-r0": 1575973277
+      },
+      "dependencies": [
+        "py3-gdal",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgdal.so.26",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:epsg_tr.py",
+        "cmd:esri2wkt.py",
+        "cmd:gcps2vec.py",
+        "cmd:gcps2wld.py",
+        "cmd:gdal2tiles.py",
+        "cmd:gdal2xyz.py",
+        "cmd:gdal_auth.py",
+        "cmd:gdal_calc.py",
+        "cmd:gdal_contour",
+        "cmd:gdal_edit.py",
+        "cmd:gdal_fillnodata.py",
+        "cmd:gdal_grid",
+        "cmd:gdal_merge.py",
+        "cmd:gdal_pansharpen.py",
+        "cmd:gdal_polygonize.py",
+        "cmd:gdal_proximity.py",
+        "cmd:gdal_rasterize",
+        "cmd:gdal_retile.py",
+        "cmd:gdal_sieve.py",
+        "cmd:gdal_translate",
+        "cmd:gdaladdo",
+        "cmd:gdalbuildvrt",
+        "cmd:gdalchksum.py",
+        "cmd:gdalcompare.py",
+        "cmd:gdaldem",
+        "cmd:gdalenhance",
+        "cmd:gdalident.py",
+        "cmd:gdalimport.py",
+        "cmd:gdalinfo",
+        "cmd:gdallocationinfo",
+        "cmd:gdalmanage",
+        "cmd:gdalmove.py",
+        "cmd:gdalserver",
+        "cmd:gdalsrsinfo",
+        "cmd:gdaltindex",
+        "cmd:gdaltransform",
+        "cmd:gdalwarp",
+        "cmd:gnmanalyse",
+        "cmd:gnmmanage",
+        "cmd:mkgraticule.py",
+        "cmd:nearblack",
+        "cmd:ogr2ogr",
+        "cmd:ogrinfo",
+        "cmd:ogrlineref",
+        "cmd:ogrmerge.py",
+        "cmd:ogrtindex",
+        "cmd:pct2rgb.py",
+        "cmd:rgb2pct.py",
+        "cmd:testepsg"
+      ]
     }
   },
   "provide": {
@@ -81258,6 +81353,14 @@
       "libkdeconnectsmshelper.so.1": {
         "package": "kdeconnect",
         "version": "1.4.0"
+      },
+      "libgdal.so.26": {
+        "package": "gdal",
+        "version": "26.0.2"
+      },
+      "libgdalalljni.so.26": {
+        "package": "java-gdal",
+        "version": "26.0.2"
       }
     },
     "package": {
@@ -81535,7 +81638,7 @@
       },
       "py-hypothesis": {
         "package": "py3-hypothesis",
-        "version": "4.51.1-r0"
+        "version": "4.53.1-r0"
       },
       "py-automat": {
         "package": "py3-automat",
@@ -81959,7 +82062,7 @@
       },
       "py-configargparse": {
         "package": "py3-configargparse",
-        "version": "0.15.1-r1"
+        "version": "0.15.2-r0"
       },
       "py-eyed3": {
         "package": "py3-eyed3",
