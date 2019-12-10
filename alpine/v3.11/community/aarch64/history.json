@@ -46909,13 +46909,14 @@
         "4.50.6-r0": 1575257181,
         "4.50.7-r0": 1575557304,
         "4.50.8-r0": 1575599814,
-        "4.51.0-r0": 1575756574
+        "4.51.0-r0": 1575756574,
+        "4.51.1-r0": 1575965024
       },
       "dependencies": [
         "py3-attrs"
       ],
       "provides": [
-        "py-hypothesis=4.51.0-r0"
+        "py-hypothesis=4.51.1-r0"
       ]
     },
     "exempi-libs": {
@@ -76758,6 +76759,125 @@
         "cmd:vbutil_what_keys",
         "cmd:verify_data"
       ]
+    },
+    "kpeoplevcard": {
+      "origin": "kpeoplevcard",
+      "versions": {
+        "0.1-r0": 1575965348
+      },
+      "dependencies": [
+        "kirigami2",
+        "so:libKF5Contacts.so.5",
+        "so:libKF5CoreAddons.so.5",
+        "so:libKF5I18n.so.5",
+        "so:libKF5PeopleBackend.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "kdeconnect-doc": {
+      "origin": "kdeconnect",
+      "versions": {
+        "1.4-r0": 1575965348
+      }
+    },
+    "pulseaudio-qt-doc": {
+      "origin": "pulseaudio-qt",
+      "versions": {
+        "1.1.0-r0": 1575965348
+      }
+    },
+    "kdeconnect": {
+      "origin": "kdeconnect",
+      "versions": {
+        "1.4-r0": 1575965348
+      },
+      "dependencies": [
+        "kirigami2",
+        "so:libKF5ConfigCore.so.5",
+        "so:libKF5ConfigWidgets.so.5",
+        "so:libKF5CoreAddons.so.5",
+        "so:libKF5DBusAddons.so.5",
+        "so:libKF5I18n.so.5",
+        "so:libKF5IconThemes.so.5",
+        "so:libKF5KCMUtils.so.5",
+        "so:libKF5KIOCore.so.5",
+        "so:libKF5KIOFileWidgets.so.5",
+        "so:libKF5KIOWidgets.so.5",
+        "so:libKF5Notifications.so.5",
+        "so:libKF5People.so.5",
+        "so:libKF5Service.so.5",
+        "so:libKF5WidgetsAddons.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Network.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libQt5Quick.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libqca-qt5.so.2",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libkdeconnectcore.so.1=1.4.0",
+        "so:libkdeconnectinterfaces.so.1=1.4.0",
+        "so:libkdeconnectpluginkcm.so.1=1.4.0",
+        "so:libkdeconnectsmshelper.so.1=1.4.0",
+        "cmd:kdeconnect-app",
+        "cmd:kdeconnect-cli",
+        "cmd:kdeconnect-handler",
+        "cmd:kdeconnect-indicator",
+        "cmd:kdeconnect-settings",
+        "cmd:kdeconnect-sms"
+      ]
+    },
+    "pulseaudio-qt": {
+      "origin": "pulseaudio-qt",
+      "versions": {
+        "1.1.0-r0": 1575965348
+      },
+      "dependencies": [
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libc.musl-aarch64.so.1",
+        "so:libpulse-mainloop-glib.so.0",
+        "so:libpulse.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libKF5PulseAudioQt.so.2=1.1.0"
+      ]
+    },
+    "kpeoplevcard-dev": {
+      "origin": "kpeoplevcard",
+      "versions": {
+        "0.1-r0": 1575965348
+      }
+    },
+    "kdeconnect-lang": {
+      "origin": "kdeconnect",
+      "versions": {
+        "1.4-r0": 1575965348
+      },
+      "dependencies": [
+        "kirigami2"
+      ]
+    },
+    "pulseaudio-qt-dev": {
+      "origin": "pulseaudio-qt",
+      "versions": {
+        "1.1.0-r0": 1575965348
+      },
+      "dependencies": [
+        "qt5-qtbase-dev",
+        "pulseaudio-dev",
+        "glib-dev",
+        "pulseaudio-qt=1.1.0-r0"
+      ]
     }
   },
   "provide": {
@@ -84253,6 +84373,26 @@
       "libkea-http.so.6": {
         "package": "kea-http",
         "version": "6.1.0"
+      },
+      "libkdeconnectcore.so.1": {
+        "package": "kdeconnect",
+        "version": "1.4.0"
+      },
+      "libkdeconnectinterfaces.so.1": {
+        "package": "kdeconnect",
+        "version": "1.4.0"
+      },
+      "libkdeconnectpluginkcm.so.1": {
+        "package": "kdeconnect",
+        "version": "1.4.0"
+      },
+      "libkdeconnectsmshelper.so.1": {
+        "package": "kdeconnect",
+        "version": "1.4.0"
+      },
+      "libKF5PulseAudioQt.so.2": {
+        "package": "pulseaudio-qt",
+        "version": "1.1.0"
       }
     },
     "package": {
@@ -85026,7 +85166,7 @@
       },
       "py-hypothesis": {
         "package": "py3-hypothesis",
-        "version": "4.51.0-r0"
+        "version": "4.51.1-r0"
       },
       "py-pathtools": {
         "package": "py3-pathtools",
