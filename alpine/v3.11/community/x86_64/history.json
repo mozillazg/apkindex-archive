@@ -5128,7 +5128,8 @@
     "fwupd-doc": {
       "origin": "fwupd",
       "versions": {
-        "1.3.5-r0": 1575132436
+        "1.3.5-r0": 1575132436,
+        "1.3.5-r1": 1575976995
       }
     },
     "atril-dev": {
@@ -9516,10 +9517,11 @@
     "fwupd-dev": {
       "origin": "fwupd",
       "versions": {
-        "1.3.5-r0": 1575132436
+        "1.3.5-r0": 1575132436,
+        "1.3.5-r1": 1575976995
       },
       "dependencies": [
-        "fwupd=1.3.5-r0",
+        "fwupd=1.3.5-r1",
         "pc:gio-2.0",
         "pc:gmodule-2.0",
         "pc:gobject-2.0",
@@ -39651,7 +39653,8 @@
     "fwupd-openrc": {
       "origin": "fwupd",
       "versions": {
-        "1.3.5-r0": 1575132436
+        "1.3.5-r0": 1575132436,
+        "1.3.5-r1": 1575976995
       }
     },
     "cloc-doc": {
@@ -48785,15 +48788,16 @@
     "gdal-dev": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "gdal",
-        "gdal=2.4.2-r1",
+        "gdal=3.0.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:gdal=2.4.2",
+        "pc:gdal=3.0.2",
         "cmd:gdal-config"
       ]
     },
@@ -58258,7 +58262,8 @@
     "fwupd-lang": {
       "origin": "fwupd",
       "versions": {
-        "1.3.5-r0": 1575132436
+        "1.3.5-r0": 1575132436,
+        "1.3.5-r1": 1575976995
       },
       "dependencies": [
         "dbus"
@@ -66139,7 +66144,8 @@
     "fwupd": {
       "origin": "fwupd",
       "versions": {
-        "1.3.5-r0": 1575132436
+        "1.3.5-r0": 1575132436,
+        "1.3.5-r1": 1575976995
       },
       "dependencies": [
         "dbus",
@@ -70697,12 +70703,13 @@
     "py3-gdal": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
-        "so:libgdal.so.20",
+        "so:libgdal.so.26",
         "so:libstdc++.so.6"
       ],
       "provides": [
@@ -72059,7 +72066,8 @@
     "gdal": {
       "origin": "gdal",
       "versions": {
-        "2.4.2-r1": 1574699282
+        "2.4.2-r1": 1574699282,
+        "3.0.2-r0": 1575973277
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -72070,15 +72078,25 @@
         "so:libgeos_c.so.1",
         "so:libgif.so.7",
         "so:libjpeg.so.8",
+        "so:libjson-c.so.4",
+        "so:libmariadb.so.3",
+        "so:libodbc.so.2",
+        "so:libodbcinst.so.2",
+        "so:libopenjp2.so.7",
+        "so:libpcre.so.1",
         "so:libpng16.so.16",
+        "so:libpoppler.so.92",
         "so:libpq.so.5",
+        "so:libproj.so.15",
         "so:libsqlite3.so.0",
         "so:libstdc++.so.6",
         "so:libtiff.so.5",
+        "so:libwebp.so.7",
+        "so:libxml2.so.2",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libgdal.so.20=20.5.2",
+        "so:libgdal.so.26=26.0.2",
         "cmd:gdal_contour",
         "cmd:gdal_grid",
         "cmd:gdal_rasterize",
@@ -78116,6 +78134,84 @@
       "versions": {
         "2.7-r0": 1575969326
       }
+    },
+    "gdal-tools": {
+      "origin": "gdal",
+      "versions": {
+        "3.0.2-r0": 1575973277
+      },
+      "dependencies": [
+        "py3-gdal",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgdal.so.26",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:epsg_tr.py",
+        "cmd:esri2wkt.py",
+        "cmd:gcps2vec.py",
+        "cmd:gcps2wld.py",
+        "cmd:gdal2tiles.py",
+        "cmd:gdal2xyz.py",
+        "cmd:gdal_auth.py",
+        "cmd:gdal_calc.py",
+        "cmd:gdal_contour",
+        "cmd:gdal_edit.py",
+        "cmd:gdal_fillnodata.py",
+        "cmd:gdal_grid",
+        "cmd:gdal_merge.py",
+        "cmd:gdal_pansharpen.py",
+        "cmd:gdal_polygonize.py",
+        "cmd:gdal_proximity.py",
+        "cmd:gdal_rasterize",
+        "cmd:gdal_retile.py",
+        "cmd:gdal_sieve.py",
+        "cmd:gdal_translate",
+        "cmd:gdaladdo",
+        "cmd:gdalbuildvrt",
+        "cmd:gdalchksum.py",
+        "cmd:gdalcompare.py",
+        "cmd:gdaldem",
+        "cmd:gdalenhance",
+        "cmd:gdalident.py",
+        "cmd:gdalimport.py",
+        "cmd:gdalinfo",
+        "cmd:gdallocationinfo",
+        "cmd:gdalmanage",
+        "cmd:gdalmove.py",
+        "cmd:gdalserver",
+        "cmd:gdalsrsinfo",
+        "cmd:gdaltindex",
+        "cmd:gdaltransform",
+        "cmd:gdalwarp",
+        "cmd:gnmanalyse",
+        "cmd:gnmmanage",
+        "cmd:mkgraticule.py",
+        "cmd:nearblack",
+        "cmd:ogr2ogr",
+        "cmd:ogrinfo",
+        "cmd:ogrlineref",
+        "cmd:ogrmerge.py",
+        "cmd:ogrtindex",
+        "cmd:pct2rgb.py",
+        "cmd:rgb2pct.py",
+        "cmd:testepsg"
+      ]
+    },
+    "java-gdal": {
+      "origin": "gdal",
+      "versions": {
+        "3.0.2-r0": 1575973277
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgdal.so.26",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libgdalalljni.so.26=26.0.2"
+      ]
     }
   },
   "provide": {
@@ -86913,6 +87009,14 @@
       "libKF5PulseAudioQt.so.2": {
         "package": "pulseaudio-qt",
         "version": "1.1.0"
+      },
+      "libgdalalljni.so.26": {
+        "package": "java-gdal",
+        "version": "26.0.2"
+      },
+      "libgdal.so.26": {
+        "package": "gdal",
+        "version": "26.0.2"
       }
     }
   }
