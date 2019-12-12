@@ -1758,6 +1758,22 @@ c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
 D:so:libmosquitto.so.1 so:libstdc++.so.6
 p:so:libmosquittopp.so.1=1
 
+C:Q1+7mXM1wkBdgWH1XdbKvCiYaw1rs=
+P:krb5-dev
+V:1.17.1-r0
+A:aarch64
+S:147564
+I:876544
+T:The Kerberos network authentication system (development files)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:e2fsprogs-dev krb5-libs=1.17.1-r0 krb5-server-ldap=1.17.1-r0 pkgconfig
+p:pc:gssrpc=1.17.1 pc:kadm-client=1.17.1 pc:kadm-server=1.17.1 pc:kdb=1.17.1 pc:krb5-gssapi=1.17.1 pc:krb5=1.17.1 pc:mit-krb5-gssapi=1.17.1 pc:mit-krb5=1.17.1 cmd:krb5-config
+
 C:Q18uq69L9B/8V07AMfUAQvKnwbqkk=
 P:razor-doc
 V:2.85-r9
@@ -8009,22 +8025,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:py3-libxml2 python3
 p:cmd:itstool
 
-C:Q1q42hpzq2Qx+TWEim0yHFcHeLgNg=
-P:krb5-libs
-V:1.17-r0
-A:aarch64
-S:828165
-I:2027520
-T:The shared libraries used by Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
-p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.11=11.0 so:libkadm5srv_mit.so.11=11.0 so:libkdb5.so.9=9.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
-
 C:Q1+5N3URwlY+zRQaXYrMGS8EqSL+E=
 P:libcap-doc
 V:2.27-r0
@@ -10469,6 +10469,22 @@ t:1575641390
 c:835e9227c725a3dfb4c828d9071a1f77f8ba8b09
 p:cmd:qemu-i386
 
+C:Q1Usy3hqRW747I+JxWcRyXaBVd7/U=
+P:unbound-libs
+V:1.9.6-r0
+A:aarch64
+S:1518021
+I:4177920
+T:unbound shared libraries
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
+p:so:libunbound.so.8=8.1.6
+
 C:Q1lXtctWR2ZKQuY935epQ7uVl+Gac=
 P:ddate-doc
 V:0.2.2-r0
@@ -12349,21 +12365,6 @@ o:freeswitch-sounds-fr-ca-june-8000
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1436346773
 c:64fb8f27c6db8fee32688fa19b6b6ef867c72cf7
-
-C:Q1zrzhLtoTxsPGFAj7pMuXIEH4FOw=
-P:krb5-pkinit
-V:1.17-r0
-A:aarch64
-S:48634
-I:135168
-T:The PKINIT module for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
 
 C:Q1r/npc3d+mPeDZVG1CNYwd2i/9Rw=
 P:xf86-video-glint-doc
@@ -16906,22 +16907,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core postgresql acf-db-lib lua-sql-postgres
 
-C:Q1xg0OPfY7l3qTCDTdQQbUwrU2poY=
-P:unbound-dev
-V:1.9.5-r3
-A:aarch64
-S:12877
-I:69632
-T:Unbound is a validating, recursive, and caching DNS resolver (development files)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:expat-dev pc:libcrypto pc:libevent pc:libssl pc:python3 pkgconfig unbound-libs=1.9.5-r3
-p:pc:libunbound=1.9.5
-
 C:Q1WVUjvUIcQZEW5dPmxQXeGOBxDo0=
 P:glew-doc
 V:2.1.0-r0
@@ -17213,6 +17198,21 @@ t:1563822187
 c:ea8095d2f0259e83209946a44dbac891800db189
 D:so:libc.musl-aarch64.so.1 so:libgmp.so.10 so:libhogweed.so.5 so:libnettle.so.7
 p:cmd:nettle-hash cmd:nettle-lfib-stream cmd:nettle-pbkdf2 cmd:pkcs1-conv cmd:sexp-conv
+
+C:Q1c50b9WTTp9MZqMG+wDQI+mTl4XM=
+P:krb5-doc
+V:1.17.1-r0
+A:aarch64
+S:86397
+I:233472
+T:The Kerberos network authentication system (documentation)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+i:docs krb5=1.17.1-r0
 
 C:Q1VeHC7FmEfk6UecOG4DEKgwpM2hQ=
 P:raspberrypi-bootloader-experimental
@@ -20892,21 +20892,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1519372231
 c:272b441c1a23cd2d8d812a99c0cdb03e10ead5b2
 
-C:Q1H+bvhkBvpEH1og6VGkzvQWgvdlI=
-P:unbound-dbg
-V:1.9.5-r3
-A:aarch64
-S:3767859
-I:11051008
-T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:dns-root-hints dnssec-root
-
 C:Q18GpZGQZCTMmeno/ZnbyZkUn4Whc=
 P:highlight-doc
 V:3.54-r0
@@ -23199,6 +23184,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566987233
 c:33f976839ed6dfe61aba2352b5544b7bd09ee345
 D:perl
+
+C:Q1ekck8ychE5xVWILGXgqPFGVf7d4=
+P:unbound-dev
+V:1.9.6-r0
+A:aarch64
+S:12886
+I:69632
+T:Unbound is a validating, recursive, and caching DNS resolver (development files)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:expat-dev pc:libcrypto pc:libevent pc:libssl pc:python3 pkgconfig unbound-libs=1.9.6-r0
+p:pc:libunbound=1.9.6
 
 C:Q1ywOn5mXueCuSY0PLRn2N5L9OGks=
 P:ghi-doc
@@ -27270,21 +27271,6 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-aarch64.so.1 so:libfuse.so.2
 p:cmd:mount.unionfs cmd:unionfs cmd:unionfsctl
 
-C:Q18LS9CinbCVc5LgIc2S7McKWHCRs=
-P:unbound-openrc
-V:1.9.5-r3
-A:aarch64
-S:2094
-I:24576
-T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-i:openrc unbound=1.9.5-r3
-
 C:Q1pWvf0sDnS2YIqsM5QnmGa8V/v7Y=
 P:py3-meld3
 V:2.0.0-r1
@@ -30370,22 +30356,6 @@ c:db415e44798fbd6a6d36caaadf52524c2c63c1f7
 D:pkgconfig
 p:pc:bash=5.0.11 cmd:bashbug
 
-C:Q1YPUvmJkCQH4Ppp81UDjqGfzj9lw=
-P:krb5
-V:1.17-r0
-A:aarch64
-S:93174
-I:335872
-T:The Kerberos network authentication system
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.11 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
-p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
-
 C:Q18BWR5Y5nJSYVH9fwILUNJui91YE=
 P:eggdbus-doc
 V:0.6-r5
@@ -31146,6 +31116,22 @@ o:linenoise
 t:1573846665
 c:60a428a4c1d968e35626e302d12d9c4711100612
 D:linenoise=1.0-r1
+
+C:Q1o2rJOsMGZSdiHh2rhxvEqga9tmw=
+P:krb5-libs
+V:1.17.1-r0
+A:aarch64
+S:828275
+I:2027520
+T:The shared libraries used by Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
+p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.11=11.0 so:libkadm5srv_mit.so.11=11.0 so:libkdb5.so.9=9.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
 C:Q1N2bQiHSCLQGmMOHiDWw49jVgVVQ=
 P:linux-lts-dev
@@ -34571,6 +34557,22 @@ t:1574806456
 c:38544fdd1e266940f9c6842ca0aa39b49c2feb97
 i:docs perl-io-async=0.75-r0
 
+C:Q1UC6ZOsxio+Ttv8/yL3O/tegvr/w=
+P:unbound
+V:1.9.6-r0
+A:aarch64
+S:1186659
+I:2715648
+T:Unbound is a validating, recursive, and caching DNS resolver
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:dns-root-hints dnssec-root /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libexpat.so.1 so:libssl.so.1.1 so:libunbound.so.8
+p:cmd:unbound cmd:unbound-anchor cmd:unbound-checkconf cmd:unbound-control cmd:unbound-control-setup cmd:unbound-host
+
 C:Q1wRtdZmBaeMgm3TLuOFfcX+UzO1M=
 P:mlmmj-doc
 V:1.3.0-r0
@@ -37508,22 +37510,6 @@ t:1572968025
 c:aefbbfcb41e9ee9decfb46390d605d2f4b69b0ac
 D:python3
 p:py-cparser=2.19-r4
-
-C:Q1RxRKLJZ078yefcNDa4bMzJXkwP0=
-P:krb5-server
-V:1.17-r0
-A:aarch64
-S:227106
-I:634880
-T:The KDC and related programs for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:libverto-libev so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.11 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
-p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
 C:Q1uo1Ho1CwjZlrE+PbkocI4IXmMns=
 P:perl-test-number-delta
@@ -42554,22 +42540,6 @@ t:1428351406
 c:b22b9862618e39aba129b7b22082d1e4bc53bf45
 i:lua5.1 lua-microlight=1.1.1-r2
 
-C:Q1JtXjxgo7LxeLFMJWN+ph8BC0Kd0=
-P:krb5-server-ldap
-V:1.17-r0
-A:aarch64
-S:41683
-I:122880
-T:The LDAP storage plugin for the Kerberos 5 KDC
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
-p:so:libkdb_ldap.so.1=1.0
-
 C:Q1SoU7QQwhmh1U/aoQAZCUX09//nA=
 P:icecast-doc
 V:2.4.4-r1
@@ -42584,22 +42554,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1541609172
 c:a5bbe2b19caadf886ae754aa2369ef02d0937f81
 i:docs icecast=2.4.4-r1
-
-C:Q1OwAsdbiAB86LUTC3kfKaxB/nXwY=
-P:unbound-migrate
-V:1.9.5-r3
-A:aarch64
-S:2710
-I:16384
-T:Simple tool to migrate from dnscache to unbound
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:/bin/sh apk-tools dns-root-hints openrc
-p:cmd:migrate-dnscache-to-unbound
 
 C:Q1rBRIziOdF0e9yhNM2Ck5q0gEX+M=
 P:librsync-dev
@@ -43720,6 +43674,22 @@ t:1398258879
 c:2dd9b3c4c0b4c60b4ce71348c887f4721c654bf1
 D:perl-list-moreutils perl-module-runtime
 
+C:Q1kXtRCPkfdW4J9rlDImTVouwNUh0=
+P:py3-tappy
+V:2.6.2-r0
+A:aarch64
+S:70676
+I:552960
+T:Python3 Test Anything Protocol (TAP) tools
+U:https://github.com/python-tap/tappy
+L:BSD-2-Clause
+o:py3-tappy
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1576159990
+c:4bc13eca3c535138f010dddeca63c12da750aa36
+D:python3
+p:py-tappy=2.6.2-r0 cmd:tap cmd:tappy
+
 C:Q188PL9tusru9JY2vgnP/R1t+F49s=
 P:perl-io-multiplex
 V:1.16-r2
@@ -44780,6 +44750,21 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs perl-package-deprecationmanager=0.17-r0
+
+C:Q1pQxJ23tXBOiXACtNnRJ2XCuz3oM=
+P:unbound-dbg
+V:1.9.6-r0
+A:aarch64
+S:3767802
+I:11063296
+T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:dns-root-hints dnssec-root
 
 C:Q1Z4wWoo1pBR14ZFPoH7OQ4ay6KpA=
 P:uwsgi-logzmq
@@ -46045,6 +46030,21 @@ m:Michael Mason <ms13sp@gmail.com>
 t:1430308500
 c:7d41594eb73a867e822e96bc884dee1865cd7e97
 i:docs mailx=8.1.1-r1
+
+C:Q1pwdbvyovwS8rph/cwIHsYvJK37o=
+P:unbound-openrc
+V:1.9.6-r0
+A:aarch64
+S:2093
+I:24576
+T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+i:openrc unbound=1.9.6-r0
 
 C:Q1eDwoek5DG1fpEUQiDil2n1IGSaE=
 P:ruby-webrick
@@ -48470,21 +48470,6 @@ t:1575216566
 c:391fe3ee8538ed91f8859ea4516e9f92b26b5daf
 D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.15
 p:cmd:mosquitto cmd:mosquitto_passwd cmd:mosquitto_rr
-
-C:Q1TfCWOj8X/a5ccSCUWrWVc7hWCwM=
-P:krb5-doc
-V:1.17-r0
-A:aarch64
-S:86347
-I:233472
-T:The Kerberos network authentication system (documentation)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-i:docs krb5=1.17-r0
 
 C:Q1bR301UWBCZyCPup9ighWpLIkr24=
 P:qemu-sparc64
@@ -52394,6 +52379,22 @@ c:d5c94dff1898ab05012e5f0d891f136e5f6fc110
 D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:doxygen
 
+C:Q1IgY3Wo+SlXdSsWnf6ciPKNCLBiU=
+P:krb5
+V:1.17.1-r0
+A:aarch64
+S:93167
+I:335872
+T:The Kerberos network authentication system
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.11 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
+p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
+
 C:Q1tdAeZtDLlwdYQNjZ12T2sKCVcfQ=
 P:execline
 V:2.5.3.0-r0
@@ -54253,6 +54254,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1HT9LS/zUWfMuDvz6KDAfK8CUOnc=
+P:krb5-server
+V:1.17.1-r0
+A:aarch64
+S:226968
+I:634880
+T:The KDC and related programs for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:libverto-libev so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.11 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
+p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
 C:Q1UAaK0cMpOxfFCJFlmJknGStZoiI=
 P:mozjs60
@@ -56255,22 +56272,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1530623430
 c:dcd0d7089d19996375bcfded9916d41ebea1d21c
 i:docs perl-test-longstring=0.17-r0
-
-C:Q1BFxQNTAsW0EflQ6VcGF88KMJ+vI=
-P:krb5-dev
-V:1.17-r0
-A:aarch64
-S:147574
-I:876544
-T:The Kerberos network authentication system (development files)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559761601
-c:578a855aebad71b98dfa551a5c7a7ce942e8d254
-D:e2fsprogs-dev krb5-libs=1.17-r0 krb5-server-ldap=1.17-r0 pkgconfig
-p:pc:gssrpc=1.17 pc:kadm-client=1.17 pc:kadm-server=1.17 pc:kdb=1.17 pc:krb5-gssapi=1.17 pc:krb5=1.17 pc:mit-krb5-gssapi=1.17 pc:mit-krb5=1.17 cmd:krb5-config
 
 C:Q1dGpwspUdwDfSinfspW2mwirICGc=
 P:ccache-doc
@@ -63397,21 +63398,6 @@ t:1573896705
 c:1859208255855653bf16ea45e5a210ed7ab265da
 D:kamailio so:libc.musl-aarch64.so.1
 
-C:Q1l37w7FK5Cvd2Y5/LhdgDbIKFumE=
-P:unbound-doc
-V:1.9.5-r3
-A:aarch64
-S:182322
-I:610304
-T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-i:docs unbound=1.9.5-r3
-
 C:Q1nE69nJU4vcxWyMATh5hVfnVXs1E=
 P:libxshmfence
 V:1.3-r0
@@ -63503,6 +63489,21 @@ t:1430308500
 c:7d41594eb73a867e822e96bc884dee1865cd7e97
 D:so:libc.musl-aarch64.so.1
 p:cmd:mail
+
+C:Q1hi6NhbOKuKL4drfAkrl385OlqFU=
+P:unbound-doc
+V:1.9.6-r0
+A:aarch64
+S:185305
+I:618496
+T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+i:docs unbound=1.9.6-r0
 
 C:Q1GiyEXz7vK4y7acDaFD1Sx2eawL8=
 P:py3-jinja2
@@ -63899,22 +63900,6 @@ o:hunspell-pt
 m:Timo Teräs <timo.teras@iki.fi>
 t:1558435309
 c:c58b76f2f17d1136847918f7dae77f6a14879e1f
-
-C:Q1QS2p+tDAfmnirciuCng2AvChbQo=
-P:unbound-libs
-V:1.9.5-r3
-A:aarch64
-S:1518176
-I:4173824
-T:unbound shared libraries
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
-p:so:libunbound.so.8=8.1.5
 
 C:Q1QpQlt+bG0jEqXWgCcRho87bUgHs=
 P:openldap-overlay-dynlist
@@ -66715,6 +66700,22 @@ c:200633d2a29582e5fd4f2f026f8e67cc929871d0
 D:python3
 p:py-musicbrainzngs=0.6-r5
 
+C:Q1CSpPLD8d+qjDCyjuwLYaqtsBGHI=
+P:krb5-server-ldap
+V:1.17.1-r0
+A:aarch64
+S:41683
+I:122880
+T:The LDAP storage plugin for the Kerberos 5 KDC
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.11 so:libkdb5.so.9 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
+p:so:libkdb_ldap.so.1=1.0
+
 C:Q1cHOYFRPZeJGROmXOLBArQWXgoVI=
 P:linux-firmware-mediatek
 V:20191022-r0
@@ -68054,6 +68055,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1563189806
 c:fa24fcb44c8012dc251bf28039a6d043d1928773
 i:openrc irqbalance=1.6.0-r1
+
+C:Q1gI+qfl0s3LrEaEfyGXKAiqUjuZY=
+P:py-unbound
+V:1.9.6-r0
+A:aarch64
+S:49760
+I:262144
+T:Python bindings to libunbound
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:so:libc.musl-aarch64.so.1 so:libunbound.so.8
 
 C:Q1E4wk2t21PNA07442MkU3hG1U7kg=
 P:openntpd
@@ -70714,6 +70730,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:ncurses-terminfo-base so:libc.musl-aarch64.so.1
 p:so:libformw.so.5=5.9 so:libmenuw.so.5=5.9 so:libncursesw.so.5=5.9 so:libpanelw.so.5=5.9
 
+C:Q1KD4yW65iyi6yE0BnOlGO51Cs89A=
+P:unbound-migrate
+V:1.9.6-r0
+A:aarch64
+S:2711
+I:16384
+T:Simple tool to migrate from dnscache to unbound
+U:http://unbound.net/
+L:BSD-3-Clause
+o:unbound
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:cd7e32607b1fb1b46a90905e04924e71bd8b4783
+D:/bin/sh apk-tools dns-root-hints openrc
+p:cmd:migrate-dnscache-to-unbound
+
 C:Q1XHvA1R4JghJnbIr5TyNAssEfaCI=
 P:mercurial-doc
 V:5.2.1-r0
@@ -71975,21 +72007,6 @@ c:f16dc72e5cd78293e0286f95e7c5ac13bb8f2742
 D:pango=1.44.7-r0 pc:cairo>=1.12.10 pc:fontconfig>=2.11.91 pc:freetype2 pc:fribidi>=0.19.7 pc:glib-2.0>=2.59.2 pc:gobject-2.0>=2.59.2 pc:harfbuzz>=2.0.0 pc:xft>=2.0.0 pc:xrender pkgconfig
 p:pc:pango=1.44.7 pc:pangocairo=1.44.7 pc:pangoft2=1.44.7 pc:pangoxft=1.44.7
 
-C:Q1xpMEAwp89vM1dspOCemz895mN7Y=
-P:py-unbound
-V:1.9.5-r3
-A:aarch64
-S:49751
-I:262144
-T:Python bindings to libunbound
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:so:libc.musl-aarch64.so.1 so:libunbound.so.8
-
 C:Q119qfqyXoJfc6MdV1rNQjG+rCBkg=
 P:flite-dev
 V:2.1-r1
@@ -73062,22 +73079,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574406693
 c:8fd3b83790332ed685791f243236e974fe347f1a
 D:uwsgi so:libc.musl-aarch64.so.1
-
-C:Q1MjXh15Pag9NsPQeK4Pyl4yFKW5g=
-P:unbound
-V:1.9.5-r3
-A:aarch64
-S:1187814
-I:2715648
-T:Unbound is a validating, recursive, and caching DNS resolver
-U:http://unbound.net/
-L:BSD-3-Clause
-o:unbound
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548393
-c:da627589defc40c1a2fbe1116e0e16d5631836b3
-D:dns-root-hints dnssec-root /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libexpat.so.1 so:libssl.so.1.1 so:libunbound.so.8
-p:cmd:unbound cmd:unbound-anchor cmd:unbound-checkconf cmd:unbound-control cmd:unbound-control-setup cmd:unbound-host
 
 C:Q1c1vSekC70iUy37tCZnEz+ZcAH8U=
 P:devicemaster-linux-doc
@@ -78393,22 +78394,6 @@ t:1545836914
 c:646012d56415c5050e68d82dee1e41bc6ad1bbe8
 D:so:libc.musl-aarch64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libjson-glib-1.0.so.0
 
-C:Q1OVNAhzJa6qSAb8XNW0F2gVRj1NM=
-P:py3-tappy
-V:2.5-r3
-A:aarch64
-S:70428
-I:552960
-T:Python3 Test Anything Protocol (TAP) tools
-U:https://github.com/python-tap/tappy
-L:BSD-2-Clause
-o:py3-tappy
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1572968028
-c:fb7ce342f0ac9f865a72c9a5612a966296c25acc
-D:python3
-p:py-tappy=2.5-r3 cmd:tap cmd:tappy
-
 C:Q1+8nFVCM4QcNfSX9JBnCMZ/QFdtQ=
 P:postfix-ldap
 V:3.4.8-r0
@@ -78767,6 +78752,21 @@ t:1542818687
 c:8c2b61d9e63496c082e0bfcb8acdb83802a2ce51
 D:so:libc.musl-aarch64.so.1
 p:so:libdb-5.3.so=0
+
+C:Q1tYdqb9N4acQ5s065KI8XEaLcAv8=
+P:krb5-pkinit
+V:1.17.1-r0
+A:aarch64
+S:48627
+I:135168
+T:The PKINIT module for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576159990
+c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
+D:krb5-conf so:libc.musl-aarch64.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
 
 C:Q1d1yF9HnamVc728HmuJoJY5Yazbo=
 P:libffi
