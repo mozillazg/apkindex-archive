@@ -12752,7 +12752,8 @@
     "msgpack-c": {
       "origin": "msgpack-c",
       "versions": {
-        "3.2.0-r0": 1571652954
+        "3.2.0-r0": 1571652954,
+        "3.2.1-r0": 1576110191
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -15853,7 +15854,8 @@
     "ruby-rugged": {
       "origin": "ruby-rugged",
       "versions": {
-        "0.28.3.1-r0": 1571932836
+        "0.28.3.1-r0": 1571932836,
+        "0.28.4.1-r0": 1576110191
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -19084,14 +19086,15 @@
     "py3-pyutilib": {
       "origin": "py3-pyutilib",
       "versions": {
-        "5.7.1-r1": 1572968034
+        "5.7.1-r1": 1572968034,
+        "5.7.2-r0": 1576110191
       },
       "dependencies": [
         "py3-nose",
         "py3-six"
       ],
       "provides": [
-        "py-pyutilib=5.7.1-r1",
+        "py-pyutilib=5.7.2-r0",
         "cmd:checkCopyright",
         "cmd:dispatch_srvr",
         "cmd:lbin",
@@ -29434,7 +29437,8 @@
     "py3-multidict-dev": {
       "origin": "py3-multidict",
       "versions": {
-        "4.6.1-r0": 1574413664
+        "4.6.1-r0": 1574413664,
+        "4.7.0-r0": 1576110191
       }
     },
     "fwup-doc": {
@@ -37813,7 +37817,8 @@
     "py3-multidict": {
       "origin": "py3-multidict",
       "versions": {
-        "4.6.1-r0": 1574413664
+        "4.6.1-r0": 1574413664,
+        "4.7.0-r0": 1576110191
       },
       "dependencies": [
         "python3",
@@ -54017,14 +54022,15 @@
     "msgpack-c-dev": {
       "origin": "msgpack-c",
       "versions": {
-        "3.2.0-r0": 1571652954
+        "3.2.0-r0": 1571652954,
+        "3.2.1-r0": 1576110191
       },
       "dependencies": [
-        "msgpack-c=3.2.0-r0",
+        "msgpack-c=3.2.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:msgpack=3.2.0"
+        "pc:msgpack=3.2.1"
       ]
     },
     "wbar": {
@@ -74122,6 +74128,37 @@
       "provides": [
         "cmd:dateparse"
       ]
+    },
+    "libgpiod-dev": {
+      "origin": "libgpiod",
+      "versions": {
+        "1.4.1-r0": 1576107549
+      },
+      "dependencies": [
+        "libgpiod=1.4.1-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libgpiod=1.4.1"
+      ]
+    },
+    "libgpiod": {
+      "origin": "libgpiod",
+      "versions": {
+        "1.4.1-r0": 1576107549
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libgpiod.so.2=2.1.1",
+        "cmd:gpiodetect",
+        "cmd:gpiofind",
+        "cmd:gpioget",
+        "cmd:gpioinfo",
+        "cmd:gpiomon",
+        "cmd:gpioset"
+      ]
     }
   },
   "provide": {
@@ -81049,6 +81086,10 @@
       "libKF5PulseAudioQt.so.2": {
         "package": "pulseaudio-qt",
         "version": "1.1.0"
+      },
+      "libgpiod.so.2": {
+        "package": "libgpiod",
+        "version": "2.1.1"
       }
     },
     "package": {
@@ -81366,7 +81407,7 @@
       },
       "py-pyutilib": {
         "package": "py3-pyutilib",
-        "version": "5.7.1-r1"
+        "version": "5.7.2-r0"
       },
       "py-argh": {
         "package": "py3-argh",
