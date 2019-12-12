@@ -1011,7 +1011,8 @@
     "plasma-workspace": {
       "origin": "plasma-workspace",
       "versions": {
-        "5.17.3-r0": 1573759957
+        "5.17.3-r0": 1573759957,
+        "5.17.3-r1": 1576156641
       },
       "dependencies": [
         "tzdata",
@@ -1025,7 +1026,7 @@
         "plasma-integration",
         "qtchooser",
         "kded",
-        "plasma-workspace-libs=5.17.3-r0",
+        "plasma-workspace-libs=5.17.3-r1",
         "so:libICE.so.6",
         "so:libKF5Activities.so.5",
         "so:libKF5ActivitiesStats.so.1",
@@ -1093,7 +1094,7 @@
         "so:libXtst.so.6",
         "so:libc.musl-ppc64le.so.1",
         "so:libcolorcorrect.so.5",
-        "so:libgps.so.24",
+        "so:libgps.so.25",
         "so:libksgrd.so.7",
         "so:libkworkspace5.so.5",
         "so:libnotificationmanager.so.1",
@@ -13458,7 +13459,8 @@
     "plasma-workspace-libs": {
       "origin": "plasma-workspace",
       "versions": {
-        "5.17.3-r0": 1573759957
+        "5.17.3-r0": 1573759957,
+        "5.17.3-r1": 1576156641
       },
       "dependencies": [
         "so:libKF5Activities.so.5",
@@ -17804,7 +17806,8 @@
     "plasma-workspace-lang": {
       "origin": "plasma-workspace",
       "versions": {
-        "5.17.3-r0": 1573759957
+        "5.17.3-r0": 1573759957,
+        "5.17.3-r1": 1576156641
       },
       "dependencies": [
         "tzdata",
@@ -20139,7 +20142,8 @@
     "stellarium-doc": {
       "origin": "stellarium",
       "versions": {
-        "0.19.2-r0": 1575478603
+        "0.19.2-r0": 1575478603,
+        "0.19.2-r1": 1576156783
       }
     },
     "wbar-lang": {
@@ -28370,7 +28374,8 @@
     "plasma-workspace-doc": {
       "origin": "plasma-workspace",
       "versions": {
-        "5.17.3-r0": 1573759957
+        "5.17.3-r0": 1573759957,
+        "5.17.3-r1": 1576156641
       }
     },
     "perl-import-into": {
@@ -52045,7 +52050,8 @@
     "plasma-workspace-dev": {
       "origin": "plasma-workspace",
       "versions": {
-        "5.17.3-r0": 1573759957
+        "5.17.3-r0": 1573759957,
+        "5.17.3-r1": 1576156641
       },
       "dependencies": [
         "plasma-framework-dev",
@@ -52084,8 +52090,8 @@
         "libkscreen-dev",
         "gpsd-dev",
         "iso-codes-dev",
-        "plasma-workspace-libs=5.17.3-r0",
-        "plasma-workspace=5.17.3-r0"
+        "plasma-workspace-libs=5.17.3-r1",
+        "plasma-workspace=5.17.3-r1"
       ]
     },
     "perl-cisco-copyconfig": {
@@ -60025,7 +60031,8 @@
     "stellarium": {
       "origin": "stellarium",
       "versions": {
-        "0.19.2-r0": 1575478603
+        "0.19.2-r0": 1575478603,
+        "0.19.2-r1": 1576156783
       },
       "dependencies": [
         "so:libQt5Core.so.5",
@@ -60040,7 +60047,7 @@
         "so:libQt5Widgets.so.5",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
-        "so:libgps.so.24",
+        "so:libgps.so.25",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
@@ -74204,6 +74211,76 @@
       "provides": [
         "pc:catch2=2.11.0"
       ]
+    },
+    "pinentry-gnome": {
+      "origin": "pinentry-ui",
+      "versions": {
+        "1.1.0-r0": 1576155957
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libassuan.so.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap.so.2",
+        "so:libgcr-base-3.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgpg-error.so.0",
+        "so:libsecret-1.so.0"
+      ],
+      "provides": [
+        "cmd:pinentry-gnome3"
+      ]
+    },
+    "pinentry-qt": {
+      "origin": "pinentry-ui",
+      "versions": {
+        "1.1.0-r0": 1576155957
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libassuan.so.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap.so.2",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgpg-error.so.0",
+        "so:libsecret-1.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:pinentry-qt"
+      ]
+    },
+    "pinentry-gtk": {
+      "origin": "pinentry-ui",
+      "versions": {
+        "1.1.0-r0": 1576155957
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libassuan.so.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap.so.2",
+        "so:libgdk-x11-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgpg-error.so.0",
+        "so:libgtk-x11-2.0.so.0",
+        "so:libsecret-1.so.0"
+      ],
+      "provides": [
+        "cmd:pinentry-gtk-2"
+      ]
+    },
+    "pinentry-ui": {
+      "origin": "pinentry-ui",
+      "versions": {
+        "1.1.0-r0": 1576155957
+      }
     }
   },
   "provide": {
