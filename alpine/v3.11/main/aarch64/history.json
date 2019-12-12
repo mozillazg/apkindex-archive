@@ -15438,7 +15438,8 @@
     "gpsd-doc": {
       "origin": "gpsd",
       "versions": {
-        "3.18.1-r3": 1572968030
+        "3.18.1-r3": 1572968030,
+        "3.19-r0": 1576151991
       }
     },
     "openldap": {
@@ -22876,7 +22877,8 @@
     "gpsd-clients": {
       "origin": "gpsd",
       "versions": {
-        "3.18.1-r3": 1572968030
+        "3.18.1-r3": 1572968030,
+        "3.19-r0": 1576151991
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -22890,10 +22892,13 @@
         "cmd:gpsdecode",
         "cmd:gpsmon",
         "cmd:gpspipe",
+        "cmd:gpsrinex",
         "cmd:gpxlogger",
         "cmd:lcdgps",
         "cmd:ntpshmmon",
-        "cmd:ppscheck"
+        "cmd:ppscheck",
+        "cmd:ubxtool",
+        "cmd:zerk"
       ]
     },
     "acf-db-lib": {
@@ -27161,7 +27166,8 @@
     "py3-gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.18.1-r3": 1572968030
+        "3.18.1-r3": 1572968030,
+        "3.19-r0": 1576151991
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
@@ -42585,14 +42591,15 @@
     "gpsd-dev": {
       "origin": "gpsd",
       "versions": {
-        "3.18.1-r3": 1572968030
+        "3.18.1-r3": 1572968030,
+        "3.19-r0": 1576151991
       },
       "dependencies": [
-        "gpsd=3.18.1-r3",
+        "gpsd=3.19-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libgps=3.18.1"
+        "pc:libgps=3.19"
       ]
     },
     "haproxy-openrc": {
@@ -62807,14 +62814,15 @@
     "gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.18.1-r3": 1572968030
+        "3.18.1-r3": 1572968030,
+        "3.19-r0": 1576151991
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgps.so.24=24.0.0",
+        "so:libgps.so.25=25.0.0",
         "cmd:gpsd",
         "cmd:gpsdctl"
       ]
@@ -74335,6 +74343,10 @@
       "libpkcs11testmodule.so": {
         "package": "nss",
         "version": "48"
+      },
+      "libgps.so.25": {
+        "package": "gpsd",
+        "version": "25.0.0"
       }
     }
   }
