@@ -23494,7 +23494,8 @@
     "gnome-apps": {
       "origin": "gnome",
       "versions": {
-        "3.34.0-r0": 1569195245
+        "3.34.0-r0": 1569195245,
+        "3.34.0-r1": 1576241943
       },
       "dependencies": [
         "baobab",
@@ -23524,15 +23525,19 @@
         "gnome-clocks",
         "gnome-contacts",
         "gnome-disk-utility",
+        "gnome-games",
         "gnome-latex",
         "gnome-maps",
         "gnome-passwordsafe",
+        "gnome-podcasts",
         "gnome-power-manager",
         "gnome-screenshot",
         "gnome-sound-recorder",
         "gnome-system-monitor",
         "gnome-terminal",
         "gnome-tweaks",
+        "gnome-weather",
+        "gnote",
         "gparted",
         "gpaste",
         "grilo",
@@ -53122,7 +53127,8 @@
     "gnome": {
       "origin": "gnome",
       "versions": {
-        "3.34.0-r0": 1569195245
+        "3.34.0-r0": 1569195245,
+        "3.34.0-r1": 1576241943
       },
       "dependencies": [
         "chrome-gnome-shell",
@@ -53138,12 +53144,14 @@
         "gnome-user-docs",
         "gsettings-desktop-schemas",
         "gvfs",
+        "iio-sensor-proxy",
         "libgnome-keyring",
         "pinentry-gnome",
         "polkit-elogind",
         "polkit-gnome",
         "tracker",
         "udisks2",
+        "xdg-desktop-portal-gtk",
         "bolt"
       ]
     },
@@ -76651,6 +76659,1582 @@
       ],
       "provides": [
         "cmd:pinentry-gtk-2"
+      ]
+    },
+    "qemu-system-moxie": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-moxie"
+      ]
+    },
+    "qemu-audio-sdl": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libSDL2-2.0.so.0",
+        "so:libc.musl-x86.so.1"
+      ]
+    },
+    "qemu-system-mipsel": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-mipsel"
+      ]
+    },
+    "qemu-ui-sdl": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libSDL2-2.0.so.0",
+        "so:libX11.so.6",
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0"
+      ]
+    },
+    "qemu-sparc": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-sparc"
+      ]
+    },
+    "qemu-x86_64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-x86_64"
+      ]
+    },
+    "qemu-system-riscv64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-riscv64"
+      ]
+    },
+    "qemu-ppc": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-ppc"
+      ]
+    },
+    "qemu-microblazeel": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-microblazeel"
+      ]
+    },
+    "qemu-ppc64abi32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-ppc64abi32"
+      ]
+    },
+    "qemu-audio-oss": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1"
+      ]
+    },
+    "qemu-or1k": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-or1k"
+      ]
+    },
+    "qemu-m68k": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-m68k"
+      ]
+    },
+    "qemu-system-unicore32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libncursesw.so.6",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-unicore32"
+      ]
+    },
+    "qemu-block-ssh": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libssh.so.4"
+      ]
+    },
+    "qemu-system-sparc": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-sparc"
+      ]
+    },
+    "qemu-alpha": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-alpha"
+      ]
+    },
+    "qemu-system-or1k": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-or1k"
+      ]
+    },
+    "qemu-mips64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mips64"
+      ]
+    },
+    "qemu-block-curl": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libcurl.so.4",
+        "so:libglib-2.0.so.0"
+      ]
+    },
+    "qemu-lang": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      }
+    },
+    "qemu-xtensaeb": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-xtensaeb"
+      ]
+    },
+    "qemu-ui-spice-app": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0"
+      ]
+    },
+    "qemu-ppc64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-ppc64"
+      ]
+    },
+    "qemu-system-lm32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libX11.so.6",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-lm32"
+      ]
+    },
+    "qemu-system-sh4eb": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-sh4eb"
+      ]
+    },
+    "qemu-i386": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-i386"
+      ]
+    },
+    "qemu-aarch64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-aarch64"
+      ]
+    },
+    "qemu-tilegx": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-tilegx"
+      ]
+    },
+    "qemu-microblaze": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-microblaze"
+      ]
+    },
+    "qemu-xtensa": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-xtensa"
+      ]
+    },
+    "qemu-system-m68k": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-m68k"
+      ]
+    },
+    "qemu": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-x86.so.1",
+        "so:libcap-ng.so.0",
+        "so:libcap.so.2",
+        "so:libcurl.so.4",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libvirglrenderer.so.1",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "cmd:elf2dmp",
+        "cmd:qemu-edid",
+        "cmd:qemu-keymap",
+        "cmd:qemu-pr-helper",
+        "cmd:virtfs-proxy-helper"
+      ]
+    },
+    "qemu-system-cris": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-cris"
+      ]
+    },
+    "qemu-mips64el": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mips64el"
+      ]
+    },
+    "qemu-system-mips": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-mips"
+      ]
+    },
+    "qemu-mipsel": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mipsel"
+      ]
+    },
+    "qemu-system-ppc64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-ppc64"
+      ]
+    },
+    "ivshmem-tools": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0"
+      ],
+      "provides": [
+        "cmd:ivshmem-client",
+        "cmd:ivshmem-server"
+      ]
+    },
+    "qemu-system-microblazeel": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-microblazeel"
+      ]
+    },
+    "qemu-nios2": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-nios2"
+      ]
+    },
+    "qemu-system-riscv32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-riscv32"
+      ]
+    },
+    "qemu-arm": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-arm"
+      ]
+    },
+    "qemu-cris": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-cris"
+      ]
+    },
+    "qemu-system-sparc64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-sparc64"
+      ]
+    },
+    "qemu-system-i386": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-i386"
+      ]
+    },
+    "qemu-audio-alsa": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libasound.so.2",
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0"
+      ]
+    },
+    "qemu-doc": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      }
+    },
+    "qemu-block-dmg-bz2": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libbz2.so.1",
+        "so:libc.musl-x86.so.1"
+      ]
+    },
+    "qemu-img": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libnettle.so.7",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-img",
+        "cmd:qemu-io",
+        "cmd:qemu-nbd"
+      ]
+    },
+    "qemu-system-microblaze": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-microblaze"
+      ]
+    },
+    "qemu-sparc64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-sparc64"
+      ]
+    },
+    "qemu-mipsn32el": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mipsn32el"
+      ]
+    },
+    "qemu-ui-curses": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libncursesw.so.6"
+      ]
+    },
+    "qemu-aarch64_be": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-aarch64_be"
+      ]
+    },
+    "qemu-system-x86_64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-x86_64"
+      ]
+    },
+    "qemu-system-hppa": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-hppa"
+      ]
+    },
+    "qemu-system-s390x": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-s390x"
+      ]
+    },
+    "qemu-s390x": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-s390x"
+      ]
+    },
+    "qemu-sparc32plus": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-sparc32plus"
+      ]
+    },
+    "qemu-guest-agent": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0"
+      ],
+      "provides": [
+        "cmd:qemu-ga"
+      ]
+    },
+    "qemu-system-nios2": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-nios2"
+      ]
+    },
+    "qemu-block-nfs": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libnfs.so.13"
+      ]
+    },
+    "qemu-armeb": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-armeb"
+      ]
+    },
+    "qemu-ui-gtk": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "so:libSDL2-2.0.so.0",
+        "so:libX11.so.6",
+        "so:libc.musl-x86.so.1",
+        "so:libcairo.so.2",
+        "so:libepoxy.so.0",
+        "so:libgdk-3.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8",
+        "so:libvte-2.91.so.0"
+      ]
+    },
+    "qemu-openrc": {
+      "origin": "qemu-openrc",
+      "versions": {
+        "0.7.0-r0": 1576230676
+      },
+      "dependencies": [
+        "qemu",
+        "socat",
+        "/bin/sh"
+      ],
+      "provides": [
+        "cmd:qemush"
+      ]
+    },
+    "qemu-system-sh4": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-sh4"
+      ]
+    },
+    "qemu-system-tricore": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-tricore"
+      ]
+    },
+    "qemu-system-xtensaeb": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-xtensaeb"
+      ]
+    },
+    "qemu-system-alpha": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-alpha"
+      ]
+    },
+    "qemu-system-arm": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-arm"
+      ]
+    },
+    "qemu-sh4eb": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-sh4eb"
+      ]
+    },
+    "qemu-system-xtensa": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-xtensa"
+      ]
+    },
+    "qemu-riscv32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-riscv32"
+      ]
+    },
+    "qemu-system-aarch64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-aarch64"
+      ]
+    },
+    "qemu-sh4": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-sh4"
+      ]
+    },
+    "qemu-system-mips64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-mips64"
+      ]
+    },
+    "qemu-riscv64": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-riscv64"
+      ]
+    },
+    "qemu-system-mips64el": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-mips64el"
+      ]
+    },
+    "qemu-modules": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu-audio-alsa",
+        "qemu-audio-oss",
+        "qemu-audio-sdl",
+        "qemu-block-curl",
+        "qemu-block-dmg-bz2",
+        "qemu-block-nfs",
+        "qemu-block-ssh",
+        "qemu-ui-curses",
+        "qemu-ui-gtk",
+        "qemu-ui-sdl",
+        "qemu-ui-spice-app"
+      ]
+    },
+    "qemu-mips": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mips"
+      ]
+    },
+    "qemu-mipsn32": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-mipsn32"
+      ]
+    },
+    "qemu-hppa": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-hppa"
+      ]
+    },
+    "qemu-system-ppc": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "dependencies": [
+        "qemu",
+        "so:libaio.so.1",
+        "so:libc.musl-x86.so.1",
+        "so:libepoxy.so.0",
+        "so:libgbm.so.1",
+        "so:libgcc_s.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgnutls.so.30",
+        "so:libjpeg.so.8",
+        "so:liblzo2.so.2",
+        "so:libnettle.so.7",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:libseccomp.so.2",
+        "so:libsnappy.so.1",
+        "so:libspice-server.so.1",
+        "so:libusb-1.0.so.0",
+        "so:libusbredirparser.so.1",
+        "so:libvdeplug.so.3",
+        "so:libvirglrenderer.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:qemu-system-ppc"
+      ]
+    },
+    "qemu-ppc64le": {
+      "origin": "qemu",
+      "versions": {
+        "4.2.0-r0": 1576238792
+      },
+      "provides": [
+        "cmd:qemu-ppc64le"
       ]
     }
   },
