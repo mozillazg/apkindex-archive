@@ -1428,22 +1428,6 @@ t:1576159990
 c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
 i:docs krb5=1.17.1-r0
 
-C:Q1MFl4m+giMWhRzsYEQyS4oRjyp7w=
-P:protoc
-V:3.11.1-r0
-A:ppc64le
-S:5828
-I:32768
-T:Protocol buffer compiler binary and library
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotoc.so.22 so:libstdc++.so.6
-p:cmd:protoc
-
 C:Q1xK6FSGhbMEMUnzSygCqJu/zaJ6s=
 P:fuse3
 V:3.8.0-r0
@@ -2805,6 +2789,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1572954350
 c:ec157f78e5c0620859d10979f9e25690ed12a7ff
 i:docs radvd=2.18-r0
+
+C:Q1Ns3Wej42DbwI9mejwHN5iHCEePg=
+P:nsd
+V:4.2.4-r0
+A:ppc64le
+S:631770
+I:1605632
+T:Authoritative only, high performance and simple DNS server
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287297
+c:3741d4fbf58c3ef7ae3d8f648e8e5b7108bac778
+D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
+p:cmd:nsd cmd:nsd-checkconf cmd:nsd-checkzone cmd:nsd-control cmd:nsd-control-setup
 
 C:Q152Y4FLR30mktWJ1oosgQpjeetmo=
 P:samba-server-libs
@@ -5406,22 +5406,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1571762410
 c:22199ebf878359f3fd72bfed62309f8507820a05
 i:docs taskd=1.1.0-r6
-
-C:Q1F7F4PYxe8w9pvkJHrgpgJecCEgs=
-P:py3-phonenumbers
-V:8.11.0-r0
-A:ppc64le
-S:4388152
-I:33492992
-T:International phone number library for Python
-U:https://github.com/daviddrysdale/python-phonenumbers
-L:Apache-2.0
-o:py3-phonenumbers
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1575583576
-c:d1a001c1e942553c4a83cf03cf956bbc3a844dec
-D:python3
-p:py-phonenumbers=8.11.0-r0
 
 C:Q1qND0oL+b49iunginaLYo3+TZ24g=
 P:lua5.1-mosquitto
@@ -13706,6 +13690,22 @@ t:1552497333
 c:efb87569ab3eb1f3b34258f10fd8a061900765a0
 i:docs netcf=0.2.8-r6
 
+C:Q1cR/GarHUuD4E/wEq7fMFahBhsbo=
+P:protobuf-dev
+V:3.11.2-r0
+A:ppc64le
+S:3331979
+I:18116608
+T:Library for extensible, efficient structure packing (development files)
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:zlib-dev protoc=3.11.2-r0 libprotobuf-lite=3.11.2-r0 libprotobuf=3.11.2-r0 libprotoc=3.11.2-r0 pkgconfig
+p:pc:protobuf-lite=3.11.2 pc:protobuf=3.11.2
+
 C:Q142mNDr2toN1vFmE+DyNQ5F+q8NU=
 P:nspr-dev
 V:4.24-r0
@@ -17414,21 +17414,6 @@ c:137d3eba00451bbc0525a90f3641bc920b6b8562
 D:libfontenc=1.1.4-r0 pkgconfig
 p:pc:fontenc=1.1.4
 
-C:Q1hTMJHLMQ93LTeIeDhyX0AcCxNf8=
-P:nsd-doc
-V:4.2.3-r4
-A:ppc64le
-S:553331
-I:1130496
-T:Authoritative only, high performance and simple DNS server (documentation)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548513
-c:90c90abb73119d17db970f3694bfe81a19e66cf9
-i:docs nsd=4.2.3-r4
-
 C:Q11X8ri34yvmOTwHDWO062pAgVZMQ=
 P:knot-dev
 V:2.9.2-r0
@@ -18431,6 +18416,21 @@ o:grub
 m:Timo Teräs <timo.teras@iki.fi>
 t:1575463553
 c:29f0a4dcb6162bdabcda3a888230dd2d1d737090
+
+C:Q1ASgYeQSch6d2GkgFlzBcu8g7eRI=
+P:nsd-openrc
+V:4.2.4-r0
+A:ppc64le
+S:1870
+I:16384
+T:Authoritative only, high performance and simple DNS server (OpenRC init scripts)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287297
+c:3741d4fbf58c3ef7ae3d8f648e8e5b7108bac778
+i:openrc nsd=4.2.4-r0
 
 C:Q1gorq69tpwMQ59YFSgNlVRiL2EuQ=
 P:squashfs-tools
@@ -20327,22 +20327,6 @@ t:1474899235
 c:6566ec00c88c97de65a75132cda707241fc4d4f5
 i:docs perl-boolean=0.46-r0
 
-C:Q1RsV/4Min9ggOyyGCNDurkGCAqb0=
-P:libprotobuf
-V:3.11.1-r0
-A:ppc64le
-S:845836
-I:2924544
-T:Runtime library for C++ users of protocol buffers
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
-p:so:libprotobuf.so.22=22.0.1
-
 C:Q1KfpjvcE9PZkRj2rLpos3kXFSZXc=
 P:nfdump
 V:1.6.18-r0
@@ -21067,6 +21051,22 @@ c:14a6c0458321039b35fb64b25f4667ec88960df6
 D:so:libc.musl-ppc64le.so.1 so:libstdc++.so.6 so:libx265.so.179
 p:cmd:x265
 
+C:Q1QLcbqBskaDE6ZhXEDxMxjDntyVA=
+P:libprotoc
+V:3.11.2-r0
+A:ppc64le
+S:614100
+I:2068480
+T:Runtime library for Protocol Buffer compiler
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotobuf.so.22 so:libstdc++.so.6
+p:so:libprotoc.so.22=22.0.2
+
 C:Q1kqC8FxXAVybGgqXFoIofCBkp4yU=
 P:asterisk-srtp
 V:16.6.2-r0
@@ -21158,22 +21158,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574429922
 c:eeb2777b45a53e6e3719f79ddc07cea5262f2771
 i:docs avahi=0.7-r4
-
-C:Q1DJQ7tctd0+Qd8vk61H+lOIgjZKo=
-P:nsd
-V:4.2.3-r4
-A:ppc64le
-S:631207
-I:1601536
-T:Authoritative only, high performance and simple DNS server
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548513
-c:90c90abb73119d17db970f3694bfe81a19e66cf9
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
-p:cmd:nsd cmd:nsd-checkconf cmd:nsd-checkzone cmd:nsd-control cmd:nsd-control-setup
 
 C:Q1DsVmPSO0Vp1T95bVWzIDAbfccZI=
 P:acf-gross
@@ -21605,22 +21589,6 @@ c:73a1809fc2712ea3f47f1474cc5304716a2f8c03
 D:so:libc.musl-ppc64le.so.1
 p:so:libhiredis.so.0.14=0.14
 
-C:Q1XebqGuuvmW2A2KMT/LUaqardBHk=
-P:libprotoc
-V:3.11.1-r0
-A:ppc64le
-S:614106
-I:2068480
-T:Runtime library for Protocol Buffer compiler
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotobuf.so.22 so:libstdc++.so.6
-p:so:libprotoc.so.22=22.0.1
-
 C:Q1Dsc+xteg2vqaYB26f7kJHAkpEqg=
 P:st-dbg
 V:0.8.2-r0
@@ -21681,21 +21649,6 @@ t:1576159990
 c:b3cfdaa76f77d3a7cbcc99188ef64989ba854d46
 D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
 p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.11=11.0 so:libkadm5srv_mit.so.11=11.0 so:libkdb5.so.9=9.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
-
-C:Q1YjF1uENVC+AO/IKmutAiX4NK9yI=
-P:ruby-google-protobuf
-V:3.11.1-r0
-A:ppc64le
-S:168762
-I:618496
-T:Ruby bindings to Google's data interchange format
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.6
 
 C:Q1RL1mrMmkpGujs7VyVmsYJtKGh+E=
 P:libxrender
@@ -26973,21 +26926,6 @@ c:0c0c7603ffd95d02452a529e9920a6a54303a776
 D:libgee=0.20.2-r0 pc:glib-2.0 pc:gobject-2.0 pkgconfig
 p:pc:gee-0.8=0.20.2
 
-C:Q1tp1sy+w6usRjFWyWnxcUngKIwjg=
-P:nsd-openrc
-V:4.2.3-r4
-A:ppc64le
-S:1870
-I:16384
-T:Authoritative only, high performance and simple DNS server (OpenRC init scripts)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548513
-c:90c90abb73119d17db970f3694bfe81a19e66cf9
-i:openrc nsd=4.2.3-r4
-
 C:Q1i6jsYJfuXupTl2sZZf1bIcuH63Q=
 P:linux-firmware-rtl8192e
 V:20191022-r0
@@ -27511,20 +27449,6 @@ o:perl-ipc-sharelite
 t:1567697810
 c:29547cc3010cc839b50921b8d3d52b56b4c92d1f
 i:docs perl-ipc-sharelite=0.17-r4
-
-C:Q1TNi8YLzxhk0eDW/vjp+taaUNTpc=
-P:nsd-dbg
-V:4.2.3-r4
-A:ppc64le
-S:1873376
-I:5136384
-T:Authoritative only, high performance and simple DNS server (debug symbols)
-U:https://www.nlnetlabs.nl/projects/nsd
-L:BSD-3-Clause
-o:nsd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575548513
-c:90c90abb73119d17db970f3694bfe81a19e66cf9
 
 C:Q1DQaOCgSRazJKMYDMUZ5Y4wuHRkM=
 P:openresolv-doc
@@ -29626,6 +29550,22 @@ t:1574663924
 c:8bf9f79cc196e46e5e1c1920490960c0f9d687f4
 D:gcc=9.2.0-r3 libgfortran=9.2.0-r3 libgfortran=9.2.0-r3 so:libc.musl-ppc64le.so.1 so:libgmp.so.10 so:libisl.so.15 so:libmpc.so.3 so:libmpfr.so.6 so:libz.so.1
 p:cmd:gfortran cmd:powerpc64le-alpine-linux-musl-gfortran
+
+C:Q1vWkz+SNdtToR3WkGgLSMLDSw2Hs=
+P:libprotobuf-lite
+V:3.11.2-r0
+A:ppc64le
+S:185847
+I:663552
+T:Runtime library for C++ users with 'lite runtime' setting of protocol buffers
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libprotobuf-lite.so.22=22.0.2
 
 C:Q1HrIo3jpEc6bcW4utDqzOYW2jDn8=
 P:libmaxminddb-dev
@@ -32530,6 +32470,22 @@ t:1572968027
 c:1c925d96d59cd074e5a2f39226c71a009f40cc0b
 D:pkgconfig
 p:pc:xcb-proto=1.13
+
+C:Q1q+RaaaUKUAfz8vzf/a0wxuyXhck=
+P:iasl
+V:20191213-r0
+A:ppc64le
+S:466819
+I:1368064
+T:ACPI ASL compiler
+U:https://www.acpica.org
+L:GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI
+o:acpica
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:8162549dfb63a29940a831752650a615494602af
+D:so:libc.musl-ppc64le.so.1
+p:cmd:iasl
 
 C:Q1zCuQUk2S3PHLd5YjUgTdy21LIkc=
 P:libseccomp-dev
@@ -35442,22 +35398,6 @@ c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:pkgconfig vanessa_logger=0.0.10-r0
 p:pc:vanessa-logger=0.0.10
 
-C:Q1UfMzqh7QzoL3G9YysLoVHVfHGZ0=
-P:iasl
-V:20191018-r0
-A:ppc64le
-S:466448
-I:1368064
-T:ACPI ASL compiler
-U:https://www.acpica.org
-L:GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI
-o:acpica
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1571765086
-c:32b226d62b26a9e6be53e39d84dbafd2e07d6ba5
-D:so:libc.musl-ppc64le.so.1
-p:cmd:iasl
-
 C:Q1wsix5E9efMc+/Z6sPoOvaeKjkhk=
 P:lcms2-utils
 V:2.9-r1
@@ -37673,6 +37613,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs dosfstools=4.1-r1
+
+C:Q15FPY8xENF4HEZ+lt2lExeEgmxKA=
+P:libprotobuf
+V:3.11.2-r0
+A:ppc64le
+S:845834
+I:2924544
+T:Runtime library for C++ users of protocol buffers
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
+p:so:libprotobuf.so.22=22.0.2
 
 C:Q1VBhoLuFh5rtOlqLM3m9ux7FhJgQ=
 P:libxext-dev
@@ -40783,6 +40739,21 @@ c:f1985259961d810961c2e5b784a1c005c0d9ce0b
 D:hwids-usb so:libc.musl-ppc64le.so.1 so:libudev.so.1 so:libusb-1.0.so.0
 p:cmd:lsusb cmd:lsusb.py cmd:usb-devices cmd:usbhid-dump
 
+C:Q1dpgFNuxCscOrteqd3oku/hmPcjM=
+P:protobuf-vim
+V:3.11.2-r0
+A:ppc64le
+S:3131
+I:28672
+T:Vim syntax for protobuf
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+i:protobuf=3.11.2-r0 vim
+
 C:Q1tnxXQ4PBY9L7YygJ3+CapUQiuwc=
 P:lvm2-extra
 V:2.02.186-r0
@@ -42411,6 +42382,21 @@ c:5b043bf056b9af4ae6a50428a460350fa4942bc3
 D:so:libc.musl-ppc64le.so.1
 p:cmd:ifrename cmd:iwconfig cmd:iwevent cmd:iwgetid cmd:iwlist cmd:iwpriv cmd:iwspy
 
+C:Q1QVgg2EiOMAINTKjPPBr5tBoYYl4=
+P:nsd-doc
+V:4.2.4-r0
+A:ppc64le
+S:553976
+I:1130496
+T:Authoritative only, high performance and simple DNS server (documentation)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287297
+c:3741d4fbf58c3ef7ae3d8f648e8e5b7108bac778
+i:docs nsd=4.2.4-r0
+
 C:Q1swzQrUx2gHtvKXsLCPvTJu7vEuQ=
 P:cryptsetup1
 V:1.7.5-r4
@@ -43372,6 +43358,20 @@ t:1561645324
 c:99fb76488a67ad48a2366027fd7ce5522356a655
 D:so:libc.musl-ppc64le.so.1 so:libestr.so.0 so:libfastjson.so.4
 p:so:liblognorm.so.5=5.1.0 cmd:lognormalizer
+
+C:Q1UYkUUeXpyXQdvGGVg2HiXxuxqLk=
+P:nsd-dbg
+V:4.2.4-r0
+A:ppc64le
+S:1871495
+I:5140480
+T:Authoritative only, high performance and simple DNS server (debug symbols)
+U:https://www.nlnetlabs.nl/projects/nsd
+L:BSD-3-Clause
+o:nsd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287297
+c:3741d4fbf58c3ef7ae3d8f648e8e5b7108bac778
 
 C:Q10yLTg0sNl/5y/CiUbMiVnQAaY8Q=
 P:varnish-libs
@@ -47138,6 +47138,21 @@ t:1576247884
 c:f4bb3687db753947b09caa6477dbc7a32b63f00a
 D:linux-lts=5.4.3-r0
 
+C:Q1IiK2I/PkYHp4kLvkQStUXT4+Ido=
+P:ruby-google-protobuf
+V:3.11.2-r0
+A:ppc64le
+S:168761
+I:618496
+T:Ruby bindings to Google's data interchange format
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:so:libc.musl-ppc64le.so.1 so:libruby.so.2.6
+
 C:Q1wziKQ8lKGxvg6tzIR3XitPnUt1o=
 P:libcap
 V:2.27-r0
@@ -48435,6 +48450,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs rgb=1.0.6-r2
+
+C:Q1GSBjm3M4itdjQz/v0B06mVu/rUw=
+P:protobuf
+V:3.11.2-r0
+A:ppc64le
+S:1224
+I:16384
+T:Library for extensible, efficient structure packing
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:protoc=3.11.2-r0 libprotoc=3.11.2-r0 libprotobuf=3.11.2-r0 libprotobuf-lite=3.11.2-r0
 
 C:Q1KkgpeZ8CPJWOllwWgzuuyZSnLu4=
 P:py3-zope-interface
@@ -60423,22 +60453,6 @@ c:189631c6d021be895dd4c1121e906a2e8f294537
 D:so:libc.musl-ppc64le.so.1 so:libgmp.so.10
 p:py-crypto=2.6.1-r5
 
-C:Q1hmtQva2y8ApnmDMHt/z+XtEceXg=
-P:protobuf-dev
-V:3.11.1-r0
-A:ppc64le
-S:3331997
-I:18116608
-T:Library for extensible, efficient structure packing (development files)
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:zlib-dev protoc=3.11.1-r0 libprotobuf-lite=3.11.1-r0 libprotobuf=3.11.1-r0 libprotoc=3.11.1-r0 pkgconfig
-p:pc:protobuf-lite=3.11.1 pc:protobuf=3.11.1
-
 C:Q1FyxN0hpMWjOjwhfJZyp2WUvH6FY=
 P:libsamplerate-doc
 V:0.1.9-r1
@@ -61241,6 +61255,22 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-ppc64le.so.1
 p:cmd:crconf
+
+C:Q1ihnqPgBo+fkIGyPdz3N5EgnDf50=
+P:acpica
+V:20191213-r0
+A:ppc64le
+S:780923
+I:2289664
+T:ACPI Component Architecture utilities
+U:https://www.acpica.org
+L:GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI
+o:acpica
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:8162549dfb63a29940a831752650a615494602af
+D:so:libc.musl-ppc64le.so.1
+p:cmd:acpibin cmd:acpidump cmd:acpiexamples cmd:acpiexec cmd:acpihelp cmd:acpinames cmd:acpisrc cmd:acpixtract
 
 C:Q1wGvwz7XXFtBfd4HCI+eCAZafqHw=
 P:cdrkit-doc
@@ -63554,22 +63584,6 @@ t:1575029778
 c:4446aee751b55201e32a400d2c4cab53287964ce
 D:!postfix ca-certificates /bin/sh so:libasr.so.0 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libdb-5.3.so so:libevent-2.1.so.7 so:libfts.so.0 so:libssl.so.1.1 so:libz.so.1
 p:cmd:smtp cmd:smtpctl cmd:smtpd
-
-C:Q1MBwYtwdCVP0zTk7JU3WI3RiXY4E=
-P:libprotobuf-lite
-V:3.11.1-r0
-A:ppc64le
-S:185683
-I:663552
-T:Runtime library for C++ users with 'lite runtime' setting of protocol buffers
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libprotobuf-lite.so.22=22.0.1
 
 C:Q1sSzgkWpNt/2A6TzC0I9E0lxLWPQ=
 P:subversion-bash-completion
@@ -70981,22 +70995,6 @@ t:1496780657
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs nload=0.7.4-r3
 
-C:Q1r4QztqdpD7Yd4eJYcrVIMdCugsU=
-P:acpica
-V:20191018-r0
-A:ppc64le
-S:780689
-I:2289664
-T:ACPI Component Architecture utilities
-U:https://www.acpica.org
-L:GPL-2.0-only OR BSD-3-Clause OR Intel-ACPI
-o:acpica
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1571765086
-c:32b226d62b26a9e6be53e39d84dbafd2e07d6ba5
-D:so:libc.musl-ppc64le.so.1
-p:cmd:acpibin cmd:acpidump cmd:acpiexamples cmd:acpiexec cmd:acpihelp cmd:acpinames cmd:acpisrc cmd:acpixtract
-
 C:Q1QMcaFNo1xo5Tsq+aItQxBJ2TSaw=
 P:keyutils-doc
 V:1.6.1-r0
@@ -77357,6 +77355,22 @@ c:8188fe63eff65b2b65874a2aad80959df47a8443
 D:ncurses-libs=6.1_p20191130-r0 pkgconfig
 p:pc:form=6.1.20191130 pc:formw=6.1.20191130 pc:menu=6.1.20191130 pc:menuw=6.1.20191130 pc:ncurses=6.1.20191130 pc:ncursesw=6.1.20191130 pc:panel=6.1.20191130 pc:panelw=6.1.20191130 cmd:ncursesw6-config
 
+C:Q10C5QxYcxIs5WeP6PGSE9eHfzJUo=
+P:protoc
+V:3.11.2-r0
+A:ppc64le
+S:5824
+I:32768
+T:Protocol buffer compiler binary and library
+U:https://github.com/google/protobuf
+L:BSD-3-Clause
+o:protobuf
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576287160
+c:124c726ef52adebbb2566441b4122b740aae517e
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotoc.so.22 so:libstdc++.so.6
+p:cmd:protoc
+
 C:Q1c7vkPmVdl1EV8RRug8zdvfTsnPE=
 P:perl-extutils-config
 V:0.008-r0
@@ -78655,21 +78669,6 @@ c:fb4e19bf049c744def4ba273408a41fe0c03c37a
 D:perl-dist-checkconflicts perl-package-stash-xs perl-module-implementation
 p:cmd:package-stash-conflicts
 
-C:Q1p0IUtIHLwh/wz5dRFs9Faiv2VvU=
-P:protobuf-vim
-V:3.11.1-r0
-A:ppc64le
-S:3138
-I:28672
-T:Vim syntax for protobuf
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-i:protobuf=3.11.1-r0 vim
-
 C:Q1STV0HGfoFVbqbCzuWyRmyuBAD68=
 P:xdpyinfo-doc
 V:1.3.2-r0
@@ -79054,21 +79053,6 @@ t:1572968027
 c:dcfb73ddd26612ee74f131c30d62bda4f8a9c757
 D:python3 py3-setuptools so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:llvm-test-utils=9.0.0-r1 lit=0.9.0-r1 cmd:lit
-
-C:Q1onVgeunJgK4AAASl9c13l6Xwx6U=
-P:protobuf
-V:3.11.1-r0
-A:ppc64le
-S:1227
-I:16384
-T:Library for extensible, efficient structure packing
-U:https://github.com/google/protobuf
-L:BSD-3-Clause
-o:protobuf
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1575371532
-c:745cc20bad70b72ff599c06b3087e73a7d6fa462
-D:protoc=3.11.1-r0 libprotoc=3.11.1-r0 libprotobuf=3.11.1-r0 libprotobuf-lite=3.11.1-r0
 
 C:Q1QwxFh9yLQd6JudU6FW9k71x6WT4=
 P:libjpeg-turbo-doc
@@ -81249,6 +81233,22 @@ t:1566487831
 c:745e691c30c54bcc35ae38238e8299c4eb917556
 D:so:libc.musl-ppc64le.so.1
 p:so:libflite.so.1=2.1 so:libflite_cmu_grapheme_lang.so.1=2.1 so:libflite_cmu_grapheme_lex.so.1=2.1 so:libflite_cmu_indic_lang.so.1=2.1 so:libflite_cmu_indic_lex.so.1=2.1 so:libflite_cmu_time_awb.so.1=2.1 so:libflite_cmu_us_awb.so.1=2.1 so:libflite_cmu_us_kal.so.1=2.1 so:libflite_cmu_us_kal16.so.1=2.1 so:libflite_cmu_us_rms.so.1=2.1 so:libflite_cmu_us_slt.so.1=2.1 so:libflite_cmulex.so.1=2.1 so:libflite_usenglish.so.1=2.1 cmd:flite cmd:flite_cmu_time_awb cmd:flite_cmu_us_awb cmd:flite_cmu_us_kal cmd:flite_cmu_us_kal16 cmd:flite_cmu_us_rms cmd:flite_cmu_us_slt cmd:flite_time
+
+C:Q1tGNLAEzN7AJUKkBhWOzIqbXoTMg=
+P:py3-phonenumbers
+V:8.11.1-r0
+A:ppc64le
+S:4455124
+I:34189312
+T:International phone number library for Python
+U:https://github.com/daviddrysdale/python-phonenumbers
+L:Apache-2.0
+o:py3-phonenumbers
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1576287160
+c:90f9dcf2a8c7c6544c92c3de72d2087b7f94672d
+D:python3
+p:py-phonenumbers=8.11.1-r0
 
 C:Q1mCuBHFUY5aLlZsXTGfHQAIlDM3k=
 P:botan-dev
