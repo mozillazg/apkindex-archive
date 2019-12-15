@@ -36899,7 +36899,8 @@
     "cloudi": {
       "origin": "cloudi",
       "versions": {
-        "1.7.5-r8": 1572968033
+        "1.7.5-r8": 1572968033,
+        "1.8.0-r0": 1576395709
       },
       "dependencies": [
         "erlang",
@@ -42799,7 +42800,8 @@
     "cloudi-static": {
       "origin": "cloudi",
       "versions": {
-        "1.7.5-r8": 1572968033
+        "1.7.5-r8": 1572968033,
+        "1.8.0-r0": 1576395709
       }
     },
     "gtksourceview-dev": {
@@ -54924,7 +54926,8 @@
     "cups-filters-libs": {
       "origin": "cups-filters",
       "versions": {
-        "1.25.13-r0": 1575127582
+        "1.25.13-r0": 1575127582,
+        "1.26.0-r0": 1576396138
       },
       "dependencies": [
         "poppler-utils",
@@ -55815,7 +55818,8 @@
     "cups-filters": {
       "origin": "cups-filters",
       "versions": {
-        "1.25.13-r0": 1575127582
+        "1.25.13-r0": 1575127582,
+        "1.26.0-r0": 1576396138
       },
       "dependencies": [
         "poppler-utils",
@@ -56994,15 +56998,16 @@
     "cups-filters-dev": {
       "origin": "cups-filters",
       "versions": {
-        "1.25.13-r0": 1575127582
+        "1.25.13-r0": 1575127582,
+        "1.26.0-r0": 1576396138
       },
       "dependencies": [
-        "cups-filters-libs=1.25.13-r0",
+        "cups-filters-libs=1.26.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcupsfilters=1.25.13",
-        "pc:libfontembed=1.25.13"
+        "pc:libcupsfilters=1.26.0",
+        "pc:libfontembed=1.26.0"
       ]
     },
     "opensmtpd-table-passwd": {
@@ -59603,7 +59608,8 @@
     "cups-filters-doc": {
       "origin": "cups-filters",
       "versions": {
-        "1.25.13-r0": 1575127582
+        "1.25.13-r0": 1575127582,
+        "1.26.0-r0": 1576396138
       }
     },
     "crystal-zsh-completion": {
@@ -60920,7 +60926,8 @@
     "cloudi-openrc": {
       "origin": "cloudi",
       "versions": {
-        "1.7.5-r8": 1572968033
+        "1.7.5-r8": 1572968033,
+        "1.8.0-r0": 1576395709
       }
     },
     "tepl-doc": {
@@ -76470,10 +76477,13 @@
     "wf-recorder": {
       "origin": "wf-recorder",
       "versions": {
-        "0.1-r0": 1575673064
+        "0.1-r0": 1575673064,
+        "0.2-r0": 1576397581
       },
       "dependencies": [
+        "so:libOpenCL.so.1",
         "so:libavcodec.so.58",
+        "so:libavdevice.so.58",
         "so:libavformat.so.58",
         "so:libavutil.so.56",
         "so:libc.musl-aarch64.so.1",
@@ -79658,6 +79668,44 @@
         "so:libkea-log.so.5",
         "so:libkea-stats.so.3",
         "so:libkea-util.so.8"
+      ]
+    },
+    "postgis-doc": {
+      "origin": "postgis",
+      "versions": {
+        "3.0.0-r1": 1576396213
+      }
+    },
+    "wf-recorder-doc": {
+      "origin": "wf-recorder",
+      "versions": {
+        "0.2-r0": 1576397581
+      }
+    },
+    "postgis": {
+      "origin": "postgis",
+      "versions": {
+        "3.0.0-r1": 1576396213
+      },
+      "dependencies": [
+        "postgresql",
+        "perl",
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgdal.so.26",
+        "so:libgeos_c.so.1",
+        "so:libjson-c.so.4",
+        "so:libpcre.so.1",
+        "so:libpq.so.5",
+        "so:libproj.so.15",
+        "so:libprotobuf-c.so.1",
+        "so:libstdc++.so.6",
+        "so:libxml2.so.2"
+      ],
+      "provides": [
+        "cmd:pgsql2shp",
+        "cmd:raster2pgsql",
+        "cmd:shp2pgsql"
       ]
     }
   },
