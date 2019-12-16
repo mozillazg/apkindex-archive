@@ -9421,13 +9421,14 @@
     "py3-parso": {
       "origin": "py3-parso",
       "versions": {
-        "0.5.1-r2": 1572968040
+        "0.5.1-r2": 1572968040,
+        "0.5.2-r0": 1576480671
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "py-parso=0.5.1-r2"
+        "py-parso=0.5.2-r0"
       ]
     },
     "kde-cli-tools-lang": {
@@ -73839,13 +73840,14 @@
     "py3-xlib": {
       "origin": "py3-xlib",
       "versions": {
-        "0.25-r1": 1575634354
+        "0.25-r1": 1575634354,
+        "0.26-r0": 1576480671
       },
       "dependencies": [
         "py3-six"
       ],
       "provides": [
-        "py-xlib=0.25-r1"
+        "py-xlib=0.26-r0"
       ]
     },
     "iio-sensor-proxy-doc": {
@@ -76751,6 +76753,71 @@
       "origin": "perl-io-string",
       "versions": {
         "1.08-r1": 1576412136
+      }
+    },
+    "xerces-c-samples": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libxerces-c-3.2.so"
+      ],
+      "provides": [
+        "cmd:CreateDOMDocument",
+        "cmd:DOMCount",
+        "cmd:DOMPrint",
+        "cmd:EnumVal",
+        "cmd:MemParse",
+        "cmd:PParse",
+        "cmd:PSVIWriter",
+        "cmd:Redirect",
+        "cmd:SAX2Count",
+        "cmd:SAX2Print",
+        "cmd:SAXCount",
+        "cmd:SAXPrint",
+        "cmd:SCMPrint",
+        "cmd:SEnumVal",
+        "cmd:StdInParse",
+        "cmd:XInclude"
+      ]
+    },
+    "xerces-c-dev": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "pkgconfig",
+        "xerces-c=3.2.2-r2"
+      ],
+      "provides": [
+        "pc:xerces-c=3.2.2"
+      ]
+    },
+    "xerces-c": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.64",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libxerces-c-3.2.so=0"
+      ]
+    },
+    "xerces-c-doc": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
       }
     }
   },
@@ -83731,6 +83798,10 @@
       "libwttest.so.4.2.0": {
         "package": "wt",
         "version": "4.2.0"
+      },
+      "libxerces-c-3.2.so": {
+        "package": "xerces-c",
+        "version": "0"
       }
     },
     "package": {
@@ -83852,7 +83923,7 @@
       },
       "py-parso": {
         "package": "py3-parso",
-        "version": "0.5.1-r2"
+        "version": "0.5.2-r0"
       },
       "libtss2-tcti": {
         "package": "tpm2-tss-tcti-mssim",
@@ -84924,7 +84995,7 @@
       },
       "py-xlib": {
         "package": "py3-xlib",
-        "version": "0.25-r1"
+        "version": "0.26-r0"
       },
       "py-daemonize": {
         "package": "py3-daemonize",

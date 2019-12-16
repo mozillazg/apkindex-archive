@@ -36296,13 +36296,14 @@
     "py3-xlib": {
       "origin": "py3-xlib",
       "versions": {
-        "0.25-r1": 1575634354
+        "0.25-r1": 1575634354,
+        "0.26-r0": 1576480671
       },
       "dependencies": [
         "py3-six"
       ],
       "provides": [
-        "py-xlib=0.25-r1"
+        "py-xlib=0.26-r0"
       ]
     },
     "xarchiver": {
@@ -48904,11 +48905,12 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "gdal",
-        "gdal=3.0.2-r0",
+        "gdal=3.0.2-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -60510,13 +60512,14 @@
     "py3-parso": {
       "origin": "py3-parso",
       "versions": {
-        "0.5.1-r2": 1572968040
+        "0.5.1-r2": 1572968040,
+        "0.5.2-r0": 1576480671
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "py-parso=0.5.1-r2"
+        "py-parso=0.5.2-r0"
       ]
     },
     "portablexdr-rpcgen": {
@@ -70886,7 +70889,8 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -72254,7 +72258,8 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -72279,6 +72284,7 @@
         "so:libstdc++.so.6",
         "so:libtiff.so.5",
         "so:libwebp.so.7",
+        "so:libxerces-c-3.2.so",
         "so:libxml2.so.2",
         "so:libz.so.1"
       ],
@@ -78380,7 +78386,8 @@
     "gdal-tools": {
       "origin": "gdal",
       "versions": {
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "py3-gdal",
@@ -78444,7 +78451,8 @@
     "java-gdal": {
       "origin": "gdal",
       "versions": {
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -80973,6 +80981,71 @@
         "cmd:raster2pgsql",
         "cmd:shp2pgsql"
       ]
+    },
+    "xerces-c-samples": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libxerces-c-3.2.so"
+      ],
+      "provides": [
+        "cmd:CreateDOMDocument",
+        "cmd:DOMCount",
+        "cmd:DOMPrint",
+        "cmd:EnumVal",
+        "cmd:MemParse",
+        "cmd:PParse",
+        "cmd:PSVIWriter",
+        "cmd:Redirect",
+        "cmd:SAX2Count",
+        "cmd:SAX2Print",
+        "cmd:SAXCount",
+        "cmd:SAXPrint",
+        "cmd:SCMPrint",
+        "cmd:SEnumVal",
+        "cmd:StdInParse",
+        "cmd:XInclude"
+      ]
+    },
+    "xerces-c-doc": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      }
+    },
+    "xerces-c": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.64",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libxerces-c-3.2.so=0"
+      ]
+    },
+    "xerces-c-dev": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "pkgconfig",
+        "xerces-c=3.2.2-r2"
+      ],
+      "provides": [
+        "pc:xerces-c=3.2.2"
+      ]
     }
   },
   "provide": {
@@ -81543,7 +81616,7 @@
       },
       "py-xlib": {
         "package": "py3-xlib",
-        "version": "0.25-r1"
+        "version": "0.26-r0"
       },
       "php-sockets": {
         "package": "php7-sockets",
@@ -81963,7 +82036,7 @@
       },
       "py-parso": {
         "package": "py3-parso",
-        "version": "0.5.1-r2"
+        "version": "0.5.2-r0"
       },
       "py-evtx": {
         "package": "py3-evtx",
@@ -89854,6 +89927,10 @@
       "libwttest.so.4.2.0": {
         "package": "wt",
         "version": "4.2.0"
+      },
+      "libxerces-c-3.2.so": {
+        "package": "xerces-c",
+        "version": "0"
       }
     }
   }

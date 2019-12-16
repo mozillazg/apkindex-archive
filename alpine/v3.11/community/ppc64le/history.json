@@ -20185,7 +20185,8 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -20210,6 +20211,7 @@
         "so:libstdc++.so.6",
         "so:libtiff.so.5",
         "so:libwebp.so.7",
+        "so:libxerces-c-3.2.so",
         "so:libxml2.so.2",
         "so:libz.so.1"
       ],
@@ -29670,7 +29672,8 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -39593,11 +39596,12 @@
       "origin": "gdal",
       "versions": {
         "2.4.2-r1": 1574699282,
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "gdal",
-        "gdal=3.0.2-r0",
+        "gdal=3.0.2-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -74101,7 +74105,8 @@
     "java-gdal": {
       "origin": "gdal",
       "versions": {
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -74115,7 +74120,8 @@
     "gdal-tools": {
       "origin": "gdal",
       "versions": {
-        "3.0.2-r0": 1575973277
+        "3.0.2-r0": 1575973277,
+        "3.0.2-r1": 1576480096
       },
       "dependencies": [
         "py3-gdal",
@@ -76144,6 +76150,71 @@
       "versions": {
         "1.08-r1": 1576412136
       }
+    },
+    "xerces-c": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.64",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libxerces-c-3.2.so=0"
+      ]
+    },
+    "xerces-c-samples": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libxerces-c-3.2.so"
+      ],
+      "provides": [
+        "cmd:CreateDOMDocument",
+        "cmd:DOMCount",
+        "cmd:DOMPrint",
+        "cmd:EnumVal",
+        "cmd:MemParse",
+        "cmd:PParse",
+        "cmd:PSVIWriter",
+        "cmd:Redirect",
+        "cmd:SAX2Count",
+        "cmd:SAX2Print",
+        "cmd:SAXCount",
+        "cmd:SAXPrint",
+        "cmd:SCMPrint",
+        "cmd:SEnumVal",
+        "cmd:StdInParse",
+        "cmd:XInclude"
+      ]
+    },
+    "xerces-c-doc": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      }
+    },
+    "xerces-c-dev": {
+      "origin": "xerces-c",
+      "versions": {
+        "3.2.2-r2": 1576480096
+      },
+      "dependencies": [
+        "pkgconfig",
+        "xerces-c=3.2.2-r2"
+      ],
+      "provides": [
+        "pc:xerces-c=3.2.2"
+      ]
     }
   },
   "provide": {
@@ -83575,6 +83646,10 @@
       "libwttest.so.4.2.0": {
         "package": "wt",
         "version": "4.2.0"
+      },
+      "libxerces-c-3.2.so": {
+        "package": "xerces-c",
+        "version": "0"
       }
     },
     "package": {
