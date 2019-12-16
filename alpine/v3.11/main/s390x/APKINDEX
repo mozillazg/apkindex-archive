@@ -1741,22 +1741,6 @@ c:d3db9de75a6dc9f902b0e760a04a8c308d57720a
 D:so:libc.musl-s390x.so.1 so:libcairo.so.2 so:libpython2.7.so.1.0
 i:py-cairo=1.18.2-r0 python2
 
-C:Q1dUTIHPSFxZqAMCOnxHU8aa9IpEo=
-P:ldb
-V:2.0.7-r0
-A:s390x
-S:162379
-I:536576
-T:A schema-less, ldap like, API and database
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-s390x.so.1 so:liblmdb.so.0 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0
-p:so:libldb-key-value.so=0 so:libldb-mdb-int.so=0 so:libldb-tdb-err-map.so=0 so:libldb-tdb-int.so=0 so:libldb.so.2=2.0.7
-
 C:Q1DZobR2b7MKo7c5Vg/mpLjp1ZSFM=
 P:libgpg-error
 V:1.36-r2
@@ -9646,6 +9630,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1567697809
 c:7654aeca90df737cb484dd8c9e87874427b393ee
 D:perl so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
+
+C:Q1X/nLANntuUcdRAfgQm2X+X2UHBI=
+P:ldb-dev
+V:2.0.8-r0
+A:s390x
+S:27181
+I:143360
+T:A schema-less, ldap like, API and database (development files)
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:ldb=2.0.8-r0 pc:talloc pc:tdb pkgconfig py3-ldb=2.0.8-r0
+p:pc:ldb=2.0.8 pc:pyldb-util.cpython-38-s390x-linux-gnu=2.0.8
 
 C:Q13N/nev7Y0pkBHtK2wf/MIrx3We8=
 P:py-cairo
@@ -21455,6 +21455,22 @@ c:cfef7fd03b432155a28b19ae91377218ab0e20ed
 D:so:libc.musl-s390x.so.1 so:libspf2.so.2
 p:cmd:spfd cmd:spfquery
 
+C:Q1E7bDJRPStX+PgxfmPDfiuqugx/Q=
+P:py3-ldb
+V:2.0.8-r0
+A:s390x
+S:46119
+I:159744
+T:Python 3 binding for the ldb library
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-s390x.so.1 so:libldb.so.2 so:libpython3.8.so.1.0 so:libtalloc.so.2
+p:so:libpyldb-util.cpython-38-s390x-linux-gnu.so.2=2.0.8
+
 C:Q1wRU4qR1f+AFCVyUrbTb/nGMzOVg=
 P:fail2ban
 V:0.10.4-r2
@@ -26964,22 +26980,6 @@ t:1554632304
 c:d7d8dcb792fc6267eccd6cfce264b8e7ed020aa1
 i:docs wget=1.20.3-r0
 
-C:Q13zbX6kB7tKy0usfYaLoEcf1W3uE=
-P:ldb-dev
-V:2.0.7-r0
-A:s390x
-S:27176
-I:143360
-T:A schema-less, ldap like, API and database (development files)
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:ldb=2.0.7-r0 pc:talloc pc:tdb pkgconfig py3-ldb=2.0.7-r0
-p:pc:ldb=2.0.7 pc:pyldb-util.cpython-38-s390x-linux-gnu=2.0.7
-
 C:Q1GuKp+T3cwjyFvIQs8DHo9QIEQrs=
 P:perl-dbix-dbschema
 V:0.45-r0
@@ -28725,6 +28725,22 @@ t:1574406693
 c:8fd3b83790332ed685791f243236e974fe347f1a
 D:uwsgi so:libc.musl-s390x.so.1
 
+C:Q1iOCSAm/UMcjUitobq5Husup9EGY=
+P:ldb-tools
+V:2.0.8-r0
+A:s390x
+S:24429
+I:131072
+T:Tools to manage LDB files
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-s390x.so.1 so:libldb.so.2 so:libpopt.so.0 so:libtalloc.so.2
+p:so:libldb-cmdline.so=0 cmd:ldbadd cmd:ldbdel cmd:ldbedit cmd:ldbmodify cmd:ldbrename cmd:ldbsearch
+
 C:Q1es0rKjD+uYkIUFsbFozPf7621qc=
 P:libxrandr-dev
 V:1.5.2-r0
@@ -29139,22 +29155,6 @@ t:1560955540
 c:2241a45c4df5576d6816d9c22c92e05f82e26384
 D:libxp=1.0.3-r3 pc:printproto pc:x11 pc:xau pc:xext pkgconfig
 p:pc:xp=1.0.3
-
-C:Q1q8c31xlmX+35SMBNmotK4/tJnYg=
-P:ldb-tools
-V:2.0.7-r0
-A:s390x
-S:24440
-I:131072
-T:Tools to manage LDB files
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-s390x.so.1 so:libldb.so.2 so:libpopt.so.0 so:libtalloc.so.2
-p:so:libldb-cmdline.so=0 cmd:ldbadd cmd:ldbdel cmd:ldbedit cmd:ldbmodify cmd:ldbrename cmd:ldbsearch
 
 C:Q1kJ3347fRWz5kViDEvygGrdNE/Wc=
 P:perl-tree-dag_node
@@ -45814,6 +45814,22 @@ t:1566549796
 c:034fce632813dd1111f4d96fd14ef525a434bae4
 i:openrc=0.42.1-r0 bash-completion
 
+C:Q1jXjHcq0WlyLQmfTIvjAixDpdNmE=
+P:ldb
+V:2.0.8-r0
+A:s390x
+S:162531
+I:536576
+T:A schema-less, ldap like, API and database
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-s390x.so.1 so:liblmdb.so.0 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0
+p:so:libldb-key-value.so=0 so:libldb-mdb-int.so=0 so:libldb-tdb-err-map.so=0 so:libldb-tdb-int.so=0 so:libldb.so.2=2.0.8
+
 C:Q1mJcu0Uc61IP4Q9luUC2HCxLwEjU=
 P:glibmm
 V:2.62.0-r1
@@ -59693,22 +59709,6 @@ c:80efa5be030b4b7cd06ffe21112c746541396c30
 D:so:libc.musl-s390x.so.1
 p:so:libdvbpsi.so.10=10.0.0
 
-C:Q1kS7pCvlGkeqBOjNsv36WFVo3y6Y=
-P:py3-ldb
-V:2.0.7-r0
-A:s390x
-S:46085
-I:159744
-T:Python 3 binding for the ldb library
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-s390x.so.1 so:libldb.so.2 so:libpython3.8.so.1.0 so:libtalloc.so.2
-p:so:libpyldb-util.cpython-38-s390x-linux-gnu.so.2=2.0.7
-
 C:Q1HjIR3/KFYGrWugXp32NBwpiUkig=
 P:m4-doc
 V:1.4.18-r1
@@ -61626,6 +61626,21 @@ t:1575617606
 c:bc7ca99b460459d57124a56d8fa82ccafd5969a3
 D:pkgconfig virglrenderer=0.8.0-r1
 p:pc:virglrenderer=0.8.0
+
+C:Q1qdqH8IKi4Uoej2o0kTDLG090Pco=
+P:ldb-doc
+V:2.0.8-r0
+A:s390x
+S:12146
+I:53248
+T:A schema-less, ldap like, API and database (documentation)
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+i:docs ldb=2.0.8-r0
 
 C:Q1oYzdnT8tKGtj8zbcKSaCKG96UdA=
 P:alpine-base
@@ -64183,21 +64198,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1571764762
 c:fc1070a72191d0cd9673497115c0e19833966989
 i:openrc xl2tpd=1.3.15-r0
-
-C:Q1IEp/fPz+b7PLy/+tr+enL3ZgKjY=
-P:ldb-doc
-V:2.0.7-r0
-A:s390x
-S:12131
-I:53248
-T:A schema-less, ldap like, API and database (documentation)
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-i:docs ldb=2.0.7-r0
 
 C:Q1A0ypUy5f3XQwe3D6X1y8Fp8YZdQ=
 P:pgpool

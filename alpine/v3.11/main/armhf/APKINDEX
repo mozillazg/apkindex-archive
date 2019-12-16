@@ -2852,22 +2852,6 @@ c:c65dd2c643cfeabdd3fe676b0adb7d07c2415f84
 D:so:libc.musl-armhf.so.1 so:libncursesw.so.6 so:libpcap.so.1
 p:cmd:dnstop
 
-C:Q1Hir0ZRC/nD5RCTrpy0CHoAUL0bs=
-P:py3-ldb
-V:2.0.7-r0
-A:armhf
-S:40279
-I:126976
-T:Python 3 binding for the ldb library
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-armhf.so.1 so:libldb.so.2 so:libpython3.8.so.1.0 so:libtalloc.so.2
-p:so:libpyldb-util.cpython-38-arm-linux-gnueabihf.so.2=2.0.7
-
 C:Q18M8iU67idAVy47niH4i1QlKidlo=
 P:dbus-x11
 V:1.12.16-r2
@@ -23949,6 +23933,22 @@ t:1576501409
 c:94f4c564ddbe0dd3098f4c786aef52f1aac6e417
 D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
+C:Q13PFKJ0K4oCor0nmp7Qw2wF7rGrk=
+P:ldb-tools
+V:2.0.8-r0
+A:armhf
+S:21150
+I:110592
+T:Tools to manage LDB files
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-armhf.so.1 so:libldb.so.2 so:libpopt.so.0 so:libtalloc.so.2
+p:so:libldb-cmdline.so=0 cmd:ldbadd cmd:ldbdel cmd:ldbedit cmd:ldbmodify cmd:ldbrename cmd:ldbsearch
+
 C:Q1f3ALtjWKJgvbuZGnbhJ5Nun0HR0=
 P:linux-firmware-liquidio
 V:20191022-r0
@@ -30250,22 +30250,6 @@ o:twm
 t:1559230128
 c:921442fb062eccb08e54a414caa0cd786e3112ab
 i:docs twm=1.0.10-r0
-
-C:Q1Zc/bXiyBkvT1VS+b1KczNmHsel4=
-P:ldb
-V:2.0.7-r0
-A:armhf
-S:140251
-I:413696
-T:A schema-less, ldap like, API and database
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-armhf.so.1 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0
-p:so:libldb-key-value.so=0 so:libldb-tdb-err-map.so=0 so:libldb-tdb-int.so=0 so:libldb.so.2=2.0.7
 
 C:Q1lQr9aNOIhgt1WjkRMUd/lM3nKCM=
 P:bzip2-doc
@@ -40347,6 +40331,22 @@ t:1567697811
 c:e8e35b40b4ace911bd764a6fd0652270d6f64147
 D:so:libapr-1.so.0 so:libc.musl-armhf.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_py-1.so.0=0.0.0
+
+C:Q1Z14LYY5GzatMqbnSHmS3OITOgnw=
+P:ldb
+V:2.0.8-r0
+A:armhf
+S:140062
+I:413696
+T:A schema-less, ldap like, API and database
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-armhf.so.1 so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0
+p:so:libldb-key-value.so=0 so:libldb-tdb-err-map.so=0 so:libldb-tdb-int.so=0 so:libldb.so.2=2.0.8
 
 C:Q1OcJcx5ErgacF9UHbhLWHNzEss3U=
 P:apache2-webdav
@@ -51994,6 +51994,21 @@ c:ebcbfd35408ff99a8ca089825f418d4d0b336a93
 D:so:libc.musl-armhf.so.1 so:libexpat.so.1
 i:lua5.1 lua-expat=1.3.0-r2
 
+C:Q13ujwIb6+U8fik4+QTBeFYrij2fc=
+P:ldb-doc
+V:2.0.8-r0
+A:armhf
+S:12137
+I:53248
+T:A schema-less, ldap like, API and database (documentation)
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+i:docs ldb=2.0.8-r0
+
 C:Q1YSjS871SSVT4Qk2lIeUaAl2RBhs=
 P:perl-sub-install
 V:0.928-r0
@@ -53990,22 +54005,6 @@ c:ee71969fa6d460a9292b9b6bbddf701c49dc1a38
 D:libbytesize=2.1-r2 pkgconfig
 p:pc:bytesize=0.1.0
 
-C:Q1eeHgZaENPvcUVmfI0gpIb6/Yx60=
-P:ldb-tools
-V:2.0.7-r0
-A:armhf
-S:21168
-I:110592
-T:Tools to manage LDB files
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:so:libc.musl-armhf.so.1 so:libldb.so.2 so:libpopt.so.0 so:libtalloc.so.2
-p:so:libldb-cmdline.so=0 cmd:ldbadd cmd:ldbdel cmd:ldbedit cmd:ldbmodify cmd:ldbrename cmd:ldbsearch
-
 C:Q1ScJLs0qOycoQcpZ5PDYecuMcjGg=
 P:terminus-font-doc
 V:4.48-r0
@@ -54415,6 +54414,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1567697810
 c:c492af0200903b3e2f913c14e368d7863e719ea1
 i:docs perl-package-anon=0.05-r7
+
+C:Q1ao63w4XY/rWzdZK4aTmA6df3P60=
+P:ldb-dev
+V:2.0.8-r0
+A:armhf
+S:27747
+I:143360
+T:A schema-less, ldap like, API and database (development files)
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:ldb=2.0.8-r0 pc:talloc pc:tdb pkgconfig py3-ldb=2.0.8-r0
+p:pc:ldb=2.0.8 pc:pyldb-util.cpython-38-arm-linux-gnueabihf=2.0.8
 
 C:Q1O6ZkB+Y+oFQzjg4RP+F3T00D9OA=
 P:memcached-doc
@@ -62028,6 +62043,22 @@ t:1517992756
 c:600739664866e69b07639471958ce35b46cde095
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:gperf
+
+C:Q1n6JkqPStCPxZmbje4mQZLe+vWbs=
+P:py3-ldb
+V:2.0.8-r0
+A:armhf
+S:40289
+I:126976
+T:Python 3 binding for the ldb library
+U:https://ldb.samba.org/
+L:LGPL-3.0-or-later
+o:ldb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1576514446
+c:7f7614b183e9e8db99c0df510db7706b0b73f229
+D:so:libc.musl-armhf.so.1 so:libldb.so.2 so:libpython3.8.so.1.0 so:libtalloc.so.2
+p:so:libpyldb-util.cpython-38-arm-linux-gnueabihf.so.2=2.0.8
 
 C:Q1g6ZDSlby15hmPHJmDU0cCb9kxmg=
 P:tcpdump-doc
@@ -76717,22 +76748,6 @@ t:1567697808
 c:1b90354ac3ca4f6de632aabb13f917818b6d7f3b
 D:so:libc.musl-armhf.so.1
 
-C:Q1CheViYHFEuhi2jsHtpLcNRx/aII=
-P:ldb-dev
-V:2.0.7-r0
-A:armhf
-S:27754
-I:143360
-T:A schema-less, ldap like, API and database (development files)
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-D:ldb=2.0.7-r0 pc:talloc pc:tdb pkgconfig py3-ldb=2.0.7-r0
-p:pc:ldb=2.0.7 pc:pyldb-util.cpython-38-arm-linux-gnueabihf=2.0.7
-
 C:Q1muXUhvyKY0quzpjWGS3YsFtzjXw=
 P:cciss_vol_status-doc
 V:1.12-r0
@@ -81433,21 +81448,6 @@ o:python3
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573838456
 c:02ea0bc2f6bc95e652751f07c3283b939b3cf41b
-
-C:Q19DYZ3D67pKnqwzQzZehfHmAlDPs=
-P:ldb-doc
-V:2.0.7-r0
-A:armhf
-S:12121
-I:53248
-T:A schema-less, ldap like, API and database (documentation)
-U:https://ldb.samba.org/
-L:LGPL-3.0-or-later
-o:ldb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1573029849
-c:d729abe7def371f4550fb58cd7054eff4552389e
-i:docs ldb=2.0.7-r0
 
 C:Q1F+Nt/KFo+8W+qXOv3j7D6UMNT5g=
 P:linux-firmware-cxgb4
