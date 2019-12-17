@@ -11783,23 +11783,22 @@
     "tracker": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
-        "so:libicui18n.so.64",
         "so:libicuuc.so.64",
         "so:libintl.so.8",
         "so:libsqlite3.so.0",
         "so:libtracker-control-2.0.so.0",
-        "so:libtracker-sparql-2.0.so.0",
-        "so:libuuid.so.1"
+        "so:libtracker-data.so",
+        "so:libtracker-sparql-2.0.so.0"
       ],
       "provides": [
-        "so:libtracker-data.so=0",
         "cmd:tracker"
       ]
     },
@@ -33177,10 +33176,11 @@
     "tracker-dev": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       },
       "dependencies": [
-        "libtracker=2.3.1-r0",
+        "libtracker=2.3.1-r1",
         "pc:gio-2.0",
         "pc:glib-2.0",
         "pc:gmodule-2.0",
@@ -33351,7 +33351,8 @@
     "tracker-doc": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       }
     },
     "bannergrab": {
@@ -50862,7 +50863,8 @@
     "tracker-lang": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       }
     },
     "borgbackup": {
@@ -58414,7 +58416,8 @@
     "tracker-bash-completion": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       }
     },
     "qjson": {
@@ -66867,23 +66870,27 @@
     "libtracker": {
       "origin": "tracker",
       "versions": {
-        "2.3.1-r0": 1571117344
+        "2.3.1-r0": 1571117344,
+        "2.3.1-r1": 1576620253
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
+        "so:libicui18n.so.64",
+        "so:libicuuc.so.64",
         "so:libintl.so.8",
         "so:libjson-glib-1.0.so.0",
         "so:libnm.so.0",
         "so:libsoup-2.4.so.1",
-        "so:libtracker-data.so",
+        "so:libsqlite3.so.0",
         "so:libuuid.so.1",
         "so:libxml2.so.2"
       ],
       "provides": [
         "so:libtracker-control-2.0.so.0=0.301.0",
+        "so:libtracker-data.so=0",
         "so:libtracker-miner-2.0.so.0=0.301.0",
         "so:libtracker-sparql-2.0.so.0=0.301.0"
       ]
@@ -78080,7 +78087,7 @@
         "version": "2.4.9"
       },
       "libtracker-data.so": {
-        "package": "tracker",
+        "package": "libtracker",
         "version": "0"
       },
       "libMagick++-7.Q16HDRI.so.4": {
