@@ -7330,7 +7330,8 @@
     "wireshark-doc": {
       "origin": "wireshark",
       "versions": {
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       }
     },
     "minissdpd": {
@@ -38893,13 +38894,10 @@
     "wireshark-common": {
       "origin": "wireshark",
       "versions": {
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
-        "pc:glib-2.0",
-        "pc:gmodule-2.0",
-        "pc:gthread-2.0",
-        "pkgconfig",
         "so:libc.musl-s390x.so.1",
         "so:libcap.so.2",
         "so:libcares.so.2",
@@ -38918,7 +38916,6 @@
         "so:libwiretap.so.9=9.0.7",
         "so:libwscodecs.so.2=2.0.0",
         "so:libwsutil.so.10=10.0.0",
-        "pc:wireshark=3.0.7",
         "cmd:capinfos",
         "cmd:captype",
         "cmd:dumpcap",
@@ -45447,7 +45444,8 @@
     "tshark": {
       "origin": "wireshark",
       "versions": {
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -55579,8 +55577,19 @@
     "wireshark-dev": {
       "origin": "wireshark",
       "versions": {
-        "3.0.7-r0": 1575515081
-      }
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
+      },
+      "dependencies": [
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:gthread-2.0",
+        "pkgconfig",
+        "wireshark-common=3.0.7-r1"
+      ],
+      "provides": [
+        "pc:wireshark=3.0.7"
+      ]
     },
     "aixlog": {
       "origin": "aixlog",
@@ -57395,7 +57404,8 @@
     "wireshark": {
       "origin": "wireshark",
       "versions": {
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
         "so:libQt5Core.so.5",

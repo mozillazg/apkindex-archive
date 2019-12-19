@@ -20332,13 +20332,10 @@
       "origin": "wireshark",
       "versions": {
         "3.0.6-r0": 1571913534,
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
-        "pc:glib-2.0",
-        "pc:gmodule-2.0",
-        "pc:gthread-2.0",
-        "pkgconfig",
         "so:libc.musl-aarch64.so.1",
         "so:libcap.so.2",
         "so:libcares.so.2",
@@ -20357,7 +20354,6 @@
         "so:libwiretap.so.9=9.0.7",
         "so:libwscodecs.so.2=2.0.0",
         "so:libwsutil.so.10=10.0.0",
-        "pc:wireshark=3.0.7",
         "cmd:capinfos",
         "cmd:captype",
         "cmd:dumpcap",
@@ -28243,7 +28239,8 @@
       "origin": "wireshark",
       "versions": {
         "3.0.6-r0": 1571913534,
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -36295,7 +36292,8 @@
       "origin": "wireshark",
       "versions": {
         "3.0.6-r0": 1571913534,
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       }
     },
     "vlc-plugins-packetizer": {
@@ -37502,8 +37500,19 @@
       "origin": "wireshark",
       "versions": {
         "3.0.6-r0": 1571913534,
-        "3.0.7-r0": 1575515081
-      }
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
+      },
+      "dependencies": [
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:gthread-2.0",
+        "pkgconfig",
+        "wireshark-common=3.0.7-r1"
+      ],
+      "provides": [
+        "pc:wireshark=3.0.7"
+      ]
     },
     "sane-backend-teco2": {
       "origin": "sane",
@@ -64727,7 +64736,8 @@
       "origin": "wireshark",
       "versions": {
         "3.0.6-r0": 1571913534,
-        "3.0.7-r0": 1575515081
+        "3.0.7-r0": 1575515081,
+        "3.0.7-r1": 1576762080
       },
       "dependencies": [
         "so:libQt5Core.so.5",
