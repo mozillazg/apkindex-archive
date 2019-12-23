@@ -76837,6 +76837,97 @@
       "versions": {
         "2019.10-r1": 1576698860
       }
+    },
+    "mongo-c-driver-static": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "mongo-c-driver-dev",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libmongoc-static-1.0=1.15.1"
+      ]
+    },
+    "libbson-static": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "libbson-dev",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libbson-static-1.0=1.15.1"
+      ]
+    },
+    "mongo-c-driver-doc": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      }
+    },
+    "libbson": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libbson-1.0.so.0=0.0.0"
+      ]
+    },
+    "mongo-c-driver-dev": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "libbson-dev",
+        "mongo-c-driver=1.15.1-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libmongoc-1.0=1.15.1",
+        "pc:libmongoc-ssl-1.0=1.15.1"
+      ]
+    },
+    "mongo-c-driver": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "so:libbson-1.0.so.0",
+        "so:libc.musl-armhf.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libsnappy.so.1",
+        "so:libssl.so.1.1",
+        "so:libz.so.1",
+        "so:libzstd.so.1"
+      ],
+      "provides": [
+        "so:libmongoc-1.0.so.0=0.0.0",
+        "cmd:mongoc-stat"
+      ]
+    },
+    "libbson-dev": {
+      "origin": "mongo-c-driver",
+      "versions": {
+        "1.15.1-r0": 1577103834
+      },
+      "dependencies": [
+        "libbson=1.15.1-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libbson-1.0=1.15.1"
+      ]
     }
   },
   "provide": {
@@ -83808,6 +83899,14 @@
       "libxerces-c-3.2.so": {
         "package": "xerces-c",
         "version": "0"
+      },
+      "libbson-1.0.so.0": {
+        "package": "libbson",
+        "version": "0.0.0"
+      },
+      "libmongoc-1.0.so.0": {
+        "package": "mongo-c-driver",
+        "version": "0.0.0"
       }
     },
     "package": {
