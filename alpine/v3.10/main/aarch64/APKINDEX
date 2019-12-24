@@ -10265,6 +10265,22 @@ c:9655dce42705c52e44b4db28575cc7e05835bdc9
 D:logrotate
 i:squid=4.8-r1 lang-he
 
+C:Q1dXA8sFBd98buWzvdBFs3lVsEgHI=
+P:clamav-scanner
+V:0.101.5-r0
+A:aarch64
+S:146952
+I:479232
+T:ClamAV command-line scanner and utils
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:freshclam so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:clambc cmd:clamscan cmd:sigtool
+
 C:Q1F58xwZirtyPiSTwZNhGYNMrsWzo=
 P:curl-dev
 V:7.66.0-r0
@@ -17703,22 +17719,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1577189689
 c:0595a8cfd177012e492000c76033a8a089b51270
 D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
-
-C:Q1a7XtkSNjLvvxjj0YjShk0un/0cM=
-P:clamav-milter
-V:0.101.4-r0
-A:aarch64
-S:83402
-I:249856
-T:ClamAV milter
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759043
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2 so:libssl.so.1.1
-p:cmd:clamav-milter
 
 C:Q1awrAnIbwHDb1JBwdL74bBh4CE8A=
 P:librelp
@@ -29446,6 +29446,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557180247
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 
+C:Q11yj6c9ObRnXwBiuUOGyrQE3CP74=
+P:clamav-milter
+V:0.101.5-r0
+A:aarch64
+S:83409
+I:249856
+T:ClamAV milter
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2 so:libssl.so.1.1
+p:cmd:clamav-milter
+
 C:Q1GqfehneFwi6wf5ikwwtcXdx3KYI=
 P:faad2
 V:2.9.0-r0
@@ -30859,22 +30875,6 @@ o:py-flask-wtf
 t:1557210027
 c:327821e3b57e0e59fce22469b581730f00906392
 D:py-flask py-wtforms
-
-C:Q1f+HiubDb6b3JckuFdSEYGgbkjjE=
-P:freshclam
-V:0.101.4-r0
-A:aarch64
-S:70885
-I:245760
-T:Auto-updater for the Clam Antivirus scanner data-files
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:freshclam
 
 C:Q1QCmtKflivbDCL3dVjJ1M6zdoA2c=
 P:font-bitstream-type1
@@ -32326,6 +32326,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1557177132
 c:5aaf2a21849613f115c99af09c5a1b023a8128a4
 D:nagios-plugins so:libc.musl-aarch64.so.1 so:libldap-2.4.so.2
+
+C:Q1o+S3xQpRqlm0f/jFEJB61dlLE8g=
+P:clamav-doc
+V:0.101.5-r0
+A:aarch64
+S:33185
+I:86016
+T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+i:docs clamav=0.101.5-r0
 
 C:Q19BoF1W4CE8EGistQtMKwRKu1lww=
 P:dmidecode
@@ -38509,22 +38524,6 @@ t:1557161202
 c:fb49eb1907e3c3fa35358e284bf567f18af95eaf
 i:openvswitch=2.10.1-r2 bash-completion
 
-C:Q1gOF1J67szn8UE/SaRG7zXxqPs64=
-P:clamav-daemon-openrc
-V:0.101.4-r0
-A:aarch64
-S:2466
-I:24576
-T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:freshclam-openrc
-i:clamav-daemon=0.101.4-r0 openrc
-
 C:Q1lTmo3X8EAAvWKtG/We0vx831qq4=
 P:lua5.1-evdev
 V:2.2.1-r1
@@ -39094,6 +39093,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1556880995
 c:bf94fe726e658c7944e10f2b38d14fa68ca642da
 i:docs libxau=1.0.9-r0
+
+C:Q1epgQg/VV/H8zN+LqvrN7QLp7n4o=
+P:clamav-daemon
+V:0.101.5-r0
+A:aarch64
+S:261221
+I:806912
+T:ClamAV daemon scanner
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:freshclam /bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libfts.so.0 so:libncursesw.so.6 so:libssl.so.1.1 so:libz.so.1
+p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1W4w/Q3iUFuHkFuCR1QxHUCOqUo8=
 P:open-isns-lib
@@ -41751,6 +41766,22 @@ t:1559283977
 c:610569bb88d62cac09c710ebe337f69068a54662
 D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
 p:cmd:X cmd:Xorg cmd:cvt cmd:gtf
+
+C:Q1l7m3+bw5JmIo4DqF544zCEDUHJw=
+P:clamav-daemon-openrc
+V:0.101.5-r0
+A:aarch64
+S:2471
+I:24576
+T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:freshclam-openrc
+i:clamav-daemon=0.101.5-r0 openrc
 
 C:Q12AgjLpc0dM5+KPGCwAVjhW/vS7U=
 P:py-pbr
@@ -44865,22 +44896,6 @@ c:6cbdf20d83ad6bbd3ce99c8f86ab2cde7aff4244
 D:liblksctp=1.0.18-r0 pkgconfig
 p:pc:libsctp=1.0.18
 
-C:Q1smeehi43sFiOgyrBWBCjQHTY83M=
-P:clamav-libunrar
-V:0.101.4-r0
-A:aarch64
-S:117657
-I:245760
-T:ClamAV unrar libraries
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759041
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libclamunrar.so.9=9.0.2 so:libclamunrar_iface.so.9=9.0.2
-
 C:Q1QjHOZxcZQdi3Cssys+ffhvtZU/Q=
 P:perl-term-table
 V:0.012-r0
@@ -45568,21 +45583,6 @@ t:1574167331
 c:7cbabb4295669ff0783dfaae2a2668cf979af287
 D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libpcap.so.1 so:libssl.so.1.1 so:libtalloc.so.2
 p:so:libfreeradius-dhcp.so=0 so:libfreeradius-eap.so=0 so:libfreeradius-radius.so=0 so:libfreeradius-server.so=0
-
-C:Q1eUApeerPn4RT6842PhGDIW5eebg=
-P:clamav-doc
-V:0.101.4-r0
-A:aarch64
-S:33254
-I:86016
-T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759041
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-i:docs clamav=0.101.4-r0
 
 C:Q1Oc1spahiQZ6+o3e0kVdt+OtqA6I=
 P:pgpool-dev
@@ -49066,22 +49066,6 @@ c:df99ec2c94df93240b572f0b51809dd42b10eb89
 D:lua5.2 lua5.2-stdlib-normalize so:libc.musl-aarch64.so.1 so:libyaml-0.so.2
 i:lua-lyaml=6.2-r3 lua5.2
 
-C:Q1dcuru9iY+v5WrIH0INFg9nP9BAI=
-P:clamav-daemon
-V:0.101.4-r0
-A:aarch64
-S:260975
-I:806912
-T:ClamAV daemon scanner
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:freshclam /bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libfts.so.0 so:libncursesw.so.6 so:libssl.so.1.1 so:libz.so.1
-p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
-
 C:Q1pWCpqM3Ko2GtVwOkSgPq6blhyFo=
 P:xmlindent
 V:0.2.17-r0
@@ -52152,6 +52136,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557216374
 c:b0cee5b93f3dfdc0eb15ee6a56118b37faed8706
 D:perl clamav so:libc.musl-aarch64.so.1 so:libclamav.so.7
+
+C:Q1SKNq5327XlEe8eybF42/4pEBpdA=
+P:clamav-dev
+V:0.101.5-r0
+A:aarch64
+S:15272
+I:94208
+T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:openssl-dev clamav-libs=0.101.5-r0 clamav-libunrar=0.101.5-r0 pkgconfig
+p:pc:libclamav=0.101.5 cmd:clamav-config
 
 C:Q1SRbjGsxG1f990hF5gJND/0aiAkE=
 P:py3-openssl
@@ -58317,6 +58317,22 @@ c:981bf8f8fb3cbbc210ee4f2a2fb5b55d0132e02a
 D:ca-certificates-cacert so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libtls-standalone.so.1=1.0.0
 
+C:Q1Y6o8ARtixNdjC3E03O1vtY2tLlM=
+P:freshclam
+V:0.101.5-r0
+A:aarch64
+S:70877
+I:245760
+T:Auto-updater for the Clam Antivirus scanner data-files
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:freshclam
+
 C:Q1tEqpmJX7yAziF/hTFZ7PHQkuNsI=
 P:gtkman
 V:1.0.1-r0
@@ -58533,22 +58549,6 @@ t:1560766487
 c:fa0e230be9fd2e79919214ecab466f5149cab5fe
 D:/bin/sh so:libc.musl-aarch64.so.1 so:libdbus-1.so.3 so:libexpat.so.1
 p:cmd:dbus-cleanup-sockets cmd:dbus-daemon cmd:dbus-monitor cmd:dbus-run-session cmd:dbus-send cmd:dbus-test-tool cmd:dbus-update-activation-environment cmd:dbus-uuidgen
-
-C:Q1eRIe2Y0pkcMsAfcxxFdyoUB/TSc=
-P:clamav-dev
-V:0.101.4-r0
-A:aarch64
-S:14766
-I:94208
-T:An anti-virus toolkit for UNIX eis-ng backport (development files)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759041
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:openssl-dev clamav-libs=0.101.4-r0 clamav-libunrar=0.101.4-r0 pkgconfig
-p:pc:libclamav=0.101.4 cmd:clamav-config
 
 C:Q1HBODKaGcs7/larYcbCR+RnRMMLU=
 P:xvfb
@@ -61106,21 +61106,6 @@ t:1559298514
 c:e8549d3a7df184630d46688c2b355ccb8283c808
 D:perl-image-exiftool
 p:cmd:exiftool
-
-C:Q1IWqk4cj4qDWTMOTvN3GNWNybaKE=
-P:freshclam-openrc
-V:0.101.4-r0
-A:aarch64
-S:2151
-I:24576
-T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-i:freshclam=0.101.4-r0 openrc
 
 C:Q10RFxHdXfY3IXknAxjbBlCL4m3yg=
 P:gamin-dev
@@ -64300,22 +64285,6 @@ t:1557152925
 c:5ebe85479ea89a3436e9338781641e06492756d1
 D:so:libc.musl-aarch64.so.1 so:libgdk-x11-2.0.so.0 so:libglib-2.0.so.0 so:libgnokii.so.7 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8
 p:cmd:xgnokii
-
-C:Q1wqEbnc3Q3Fndk9BocrhyF51rz2g=
-P:clamav-libs
-V:0.101.4-r0
-A:aarch64
-S:750792
-I:1736704
-T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759041
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libclamav.so.9=9.0.2 so:libclammspack.so.0=0.1.0
 
 C:Q1dQHctD9fSoa4xw3sYiQ04qTOvSU=
 P:nghttp2-doc
@@ -68518,6 +68487,22 @@ t:1557134639
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1oUi6SX57tfMqC9+UZI16o1pGhq4=
+P:clamav-libs
+V:0.101.5-r0
+A:aarch64
+S:754128
+I:1740800
+T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0
+
 C:Q1E86v4tYGUMnq71Suv3W0u/TVmoc=
 P:py2-openvswitch
 V:2.10.1-r2
@@ -70657,6 +70642,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557212706
 c:39d57d8175de808996c28f22244641045eb9ed1c
 i:docs perl-html-formattext-withlinks-andtables=0.07-r0
+
+C:Q1r91UVAQ0BlG8s3JczavJ6wsmQR0=
+P:clamav-db
+V:0.101.5-r0
+A:aarch64
+S:1335
+I:40960
+T:ClamAV dummy package for compatibility
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:freshclam
 
 C:Q106sYF2UIFmCJvDJOkdP6V/7INhw=
 P:perl-test-mockmodule-doc
@@ -73437,6 +73437,21 @@ c:9655dce42705c52e44b4db28575cc7e05835bdc9
 D:logrotate
 i:squid=4.8-r1 lang-pt
 
+C:Q1oxssoqLhqr+7gUIWJS+0xt4hvoE=
+P:clamav
+V:0.101.5-r0
+A:aarch64
+S:1320
+I:28672
+T:An anti-virus toolkit for UNIX eis-ng backport
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:clamav-scanner clamav-daemon
+
 C:Q1Vcgl9qVJ8eC1tm0ZA1g/9W/2GaI=
 P:graphviz-dev
 V:2.40.1-r1
@@ -74220,22 +74235,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557062354
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:taskd gnutls-utils
-
-C:Q1Jz+ZzXbLKWEzhvh3Wyl3luHoiW0=
-P:clamav-scanner
-V:0.101.4-r0
-A:aarch64
-S:147135
-I:479232
-T:ClamAV command-line scanner and utils
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:freshclam so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:clambc cmd:clamscan cmd:sigtool
 
 C:Q1BzoCck7qrokQaHCamyKrO8bQSn8=
 P:perl-inline-c
@@ -76409,6 +76408,21 @@ t:1557179288
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs cksfv=1.3.14-r4
 
+C:Q1hghrgZ0ZHAyak0QjN6b3dmK7TzI=
+P:freshclam-openrc
+V:0.101.5-r0
+A:aarch64
+S:2146
+I:24576
+T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192993
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+i:freshclam=0.101.5-r0 openrc
+
 C:Q1OEQN1upSXD89q/FKYzwsC7TfmR4=
 P:lttng-ust-doc
 V:2.10.3-r0
@@ -77291,21 +77305,6 @@ L:MIT
 o:command-not-found
 t:1557056632
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
-
-C:Q14WZAASMJ/FeWqcO4h2LuPOZqzOk=
-P:clamav
-V:0.101.4-r0
-A:aarch64
-S:1347
-I:28672
-T:An anti-virus toolkit for UNIX eis-ng backport
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759043
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:clamav-scanner clamav-daemon
 
 C:Q18zi4MgiKPlHOnUgiOQHNY0tAkp0=
 P:xf86-input-mouse-dev
@@ -79045,21 +79044,6 @@ t:1576032916
 c:9739986c1e03ef958ef47887b03d03d06e6559e3
 D:so:libCHARSET3-samba4.so so:libacl.so.1 so:libaddns-samba4.so so:libauthkrb5-samba4.so so:libc.musl-aarch64.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcom_err.so.2 so:libcommon-auth-samba4.so so:libcups.so.2 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgse-samba4.so so:libgssapi-samba4.so.2 so:libiov-buf-samba4.so so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.1 so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsrpc3-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpam.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-credentials.so.0 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libtrusts-util-samba4.so so:libutil-cmdline-samba4.so so:libutil-reg-samba4.so so:libutil-setid-samba4.so so:libutil-tdb-samba4.so so:libwbclient.so.0
 p:so:libads-samba4.so=0 so:libauth-samba4.so=0 so:libdfs-server-ad-samba4.so=0 so:libnetapi.so.0=0 so:libnpa-tstream-samba4.so=0 so:libprinting-migrate-samba4.so=0 so:libsmbd-base-samba4.so=0 so:libsmbd-conn-samba4.so=0 so:libsmbldap.so.2=2 so:libsmbldaphelper-samba4.so=0
-
-C:Q1UrL0+/I2vsaciijStO3iOC72RYc=
-P:clamav-db
-V:0.101.4-r0
-A:aarch64
-S:1351
-I:40960
-T:ClamAV dummy package for compatibility
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1567759042
-c:cf6b14480665acd8c533d8a514cb32bf74f565d7
-D:freshclam
 
 C:Q1EsUwXcRLmdaJP2kqasTshzouYL0=
 P:perl-encode-doc
@@ -86147,6 +86131,22 @@ t:1573487201
 c:9655dce42705c52e44b4db28575cc7e05835bdc9
 D:logrotate
 i:squid=4.8-r1 lang-fr
+
+C:Q1MhNCzn+AqZZyf3vP3iPT2upDU0M=
+P:clamav-libunrar
+V:0.101.5-r0
+A:aarch64
+S:117463
+I:245760
+T:ClamAV unrar libraries
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1577192992
+c:d4a978d74e6d14729113d02112827a851a2e53fd
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
 
 C:Q19MPezNelvtR9yn45Jg7D++8Whjw=
 P:perl-apache-logformat-compiler-doc

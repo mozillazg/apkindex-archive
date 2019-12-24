@@ -35541,8 +35541,13 @@
       "origin": "webkit2gtk",
       "versions": {
         "2.22.7-r1": 1557435956,
-        "2.24.3-r0": 1563355901
-      }
+        "2.24.3-r0": 1563355901,
+        "2.26.2-r0": 1577191038
+      },
+      "dependencies": [
+        "bubblewrap",
+        "xdg-dbus-proxy"
+      ]
     },
     "mate-panel-doc": {
       "origin": "mate-panel",
@@ -52620,9 +52625,12 @@
       "origin": "webkit2gtk",
       "versions": {
         "2.22.7-r1": 1557435957,
-        "2.24.3-r0": 1563355902
+        "2.24.3-r0": 1563355902,
+        "2.26.2-r0": 1577191039
       },
       "dependencies": [
+        "bubblewrap",
+        "xdg-dbus-proxy",
         "so:libEGL.so.1",
         "so:libGL.so.1",
         "so:libX11.so.6",
@@ -52663,6 +52671,7 @@
         "so:libopenjp2.so.7",
         "so:libpango-1.0.so.0",
         "so:libpng16.so.16",
+        "so:libseccomp.so.2",
         "so:libsecret-1.so.0",
         "so:libsoup-2.4.so.1",
         "so:libsqlite3.so.0",
@@ -52673,13 +52682,14 @@
         "so:libwayland-server.so.0",
         "so:libwebp.so.7",
         "so:libwebpdemux.so.2",
+        "so:libwoff2dec.so.1.0.2",
         "so:libxml2.so.2",
         "so:libxslt.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libjavascriptcoregtk-4.0.so.18=18.13.6",
-        "so:libwebkit2gtk-4.0.so.37=37.37.5",
+        "so:libjavascriptcoregtk-4.0.so.18=18.14.7",
+        "so:libwebkit2gtk-4.0.so.37=37.39.3",
         "cmd:WebKitWebDriver"
       ]
     },
@@ -52803,7 +52813,8 @@
       "origin": "webkit2gtk",
       "versions": {
         "2.22.7-r1": 1557435956,
-        "2.24.3-r0": 1563355901
+        "2.24.3-r0": 1563355901,
+        "2.26.2-r0": 1577191038
       },
       "dependencies": [
         "pc:glib-2.0",
@@ -52811,12 +52822,12 @@
         "pc:gtk+-3.0",
         "pc:libsoup-2.4",
         "pkgconfig",
-        "webkit2gtk=2.24.3-r0"
+        "webkit2gtk=2.26.2-r0"
       ],
       "provides": [
-        "pc:javascriptcoregtk-4.0=2.24.3",
-        "pc:webkit2gtk-4.0=2.24.3",
-        "pc:webkit2gtk-web-extension-4.0=2.24.3"
+        "pc:javascriptcoregtk-4.0=2.26.2",
+        "pc:webkit2gtk-4.0=2.26.2",
+        "pc:webkit2gtk-web-extension-4.0=2.26.2"
       ]
     },
     "font-noto-arabic": {
@@ -59898,6 +59909,28 @@
         "cmd:nq",
         "cmd:tq"
       ]
+    },
+    "xdg-dbus-proxy": {
+      "origin": "xdg-dbus-proxy",
+      "versions": {
+        "0.1.2-r0": 1577186983
+      },
+      "dependencies": [
+        "dbus",
+        "so:libc.musl-armhf.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0"
+      ],
+      "provides": [
+        "cmd:xdg-dbus-proxy"
+      ]
+    },
+    "xdg-dbus-proxy-doc": {
+      "origin": "xdg-dbus-proxy",
+      "versions": {
+        "0.1.2-r0": 1577186982
+      }
     }
   },
   "provide": {
@@ -64924,11 +64957,11 @@
       },
       "libjavascriptcoregtk-4.0.so.18": {
         "package": "webkit2gtk",
-        "version": "18.13.6"
+        "version": "18.14.7"
       },
       "libwebkit2gtk-4.0.so.37": {
         "package": "webkit2gtk",
-        "version": "37.37.5"
+        "version": "37.39.3"
       },
       "libabplo.so": {
         "package": "libreoffice-base",
