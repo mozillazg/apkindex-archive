@@ -3605,6 +3605,22 @@ t:1563794101
 c:77c6ceda099a80fd98cf4e14e663aa6984a2b032
 i:docs mc=4.8.23-r0
 
+C:Q1D4MoXxdSQrx69VH3MqlzsgIN6o8=
+P:libsasl
+V:2.1.27-r5
+A:armhf
+S:58229
+I:159744
+T:Cyrus Simple Authentication and Security Layer (SASL) library
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libdb-5.3.so
+p:so:libsasl2.so.3=3.0.0
+
 C:Q1IZML3rTeXhI1ERcw85hCIuGsoAo=
 P:boost-libs
 V:1.71.0-r1
@@ -4405,6 +4421,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1570636286
 c:205cc50839cde5a21101736ad4b0f69e44b5633d
 D:oath-toolkit-liboath so:libc.musl-armhf.so.1 so:liboath.so.0 so:libpam.so.0
+
+C:Q1/x8YSLPiWFFDJzR5SIQDu0CVtlo=
+P:cyrus-sasl-scram
+V:2.1.27-r5
+A:armhf
+S:17431
+I:53248
+T:Cyrus SASL plugin for scram
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1wWzcy+m8Ej9iuShemno3ziY3m+0=
 P:mupdf-x11
@@ -5630,21 +5661,6 @@ t:1549615769
 c:5c3a29b4196039bf3682e700f57695606a6316af
 D:so:libc.musl-armhf.so.1 so:libogg.so.0
 p:so:libvorbis.so.0=0.4.8 so:libvorbisenc.so.2=2.0.11 so:libvorbisfile.so.3=3.3.7
-
-C:Q18e4sx+w+PeaGOxxZhNv2xfxNNjY=
-P:cyrus-sasl-digestmd5
-V:2.1.27-r4
-A:armhf
-S:24345
-I:65536
-T:Cyrus SASL plugin for digestmd5
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1clzZ60jNKbKcOvk3B0fwWi6avyk=
 P:mpg123-doc
@@ -9763,6 +9779,21 @@ c:8383ddb0e97106e81b063445f534fe1b8b8a0d27
 D:so:libc.musl-armhf.so.1
 p:so:libjpeg.so.8=8.2.2 so:libturbojpeg.so.0=0.2.0
 
+C:Q1d7KIwQqTFC5dYpAUrpk5UG3WKII=
+P:cyrus-sasl-crammd5
+V:2.1.27-r5
+A:armhf
+S:9282
+I:36864
+T:Cyrus SASL plugin for crammd5
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1
+
 C:Q1aPgL+UFfNavaL0qO4vORm/DrQyE=
 P:xf86-video-nouveau-doc
 V:1.0.16-r0
@@ -10055,22 +10086,6 @@ t:1559029687
 c:97c5c7eb4e84a7e51644ba3e1b4794d6bf02efb1
 D:libusb-compat-dev libmtp=1.1.16-r0 pc:libusb-1.0 pkgconfig
 p:pc:libmtp=1.1.16
-
-C:Q1RAs8Qim9aSe5bqU9bxSIru6vwdQ=
-P:cyrus-sasl-dev
-V:2.1.27-r4
-A:armhf
-S:250081
-I:778240
-T:Cyrus Simple Authentication Service Layer (SASL) (development files)
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:libsasl=2.1.27-r4 pkgconfig
-p:pc:libsasl2=2.1.27
 
 C:Q1p6Rexpj13fdKPKkyyIa0+C88OP8=
 P:perl-file-next-doc
@@ -12776,21 +12791,6 @@ c:33201a92c43c38f3be611430c7b47470b0028c26
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXxf86dga.so.1=1.0.0
 
-C:Q1mQjeyb7Qqh4mhIeMHqXLCX3qsgs=
-P:linux-rpi
-V:5.4.5-r0
-A:armhf
-S:24357257
-I:66686976
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1576750525
-c:ce9fd837f4e96667d3199e1ebec5525abedf94d2
-D:mkinitfs linux-firmware-brcm
-
 C:Q1a6vtnLSQyTBFwyxULchp/FXwUsk=
 P:xrdp-doc
 V:0.9.11-r0
@@ -13415,22 +13415,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1576663083
 c:397a3bbe2c3569dd1fedc7062a2fe4e80263bae5
 p:linux-firmware-any
-
-C:Q1QKgqtfFmKuHxgQaGXv0i3+t47EI=
-P:cyrus-sasl
-V:2.1.27-r4
-A:armhf
-S:46029
-I:151552
-T:Cyrus Simple Authentication Service Layer (SASL)
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libkrb5.so.26 so:libroken.so.18 so:libsasl2.so.3
-p:cmd:pluginviewer cmd:saslauthd cmd:sasldblistusers2 cmd:saslpasswd2 cmd:testsaslauthd
 
 C:Q1I6Zcc1DvkmVNF3/b5kRUjOXKZEU=
 P:perl-test-without-module
@@ -15074,6 +15058,21 @@ t:1573485505
 c:c960394d423ce258a68bf53364ae13b6e331d8fe
 D:logrotate
 i:squid=4.9-r0 lang-ca
+
+C:Q1P8l5B7wbUB3RhUITAexRFzKkU/A=
+P:linux-rpi
+V:5.4.6-r0
+A:armhf
+S:24358905
+I:66686976
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577186224
+c:85441d457ff71d639b37495e6d2ff38ba454a30c
+D:mkinitfs linux-firmware-brcm
 
 C:Q1gu0XbhKTHavYwyC2TNuSiQ6ihu4=
 P:alpine-baselayout
@@ -21478,6 +21477,21 @@ c:5c2fc5ed2bba110486c11cc3ab20771756e4075a
 D:libdvdcss=1.4.2-r0 pkgconfig
 p:pc:libdvdcss=1.4.2
 
+C:Q1p9TsoWXg8qAHLBPzkxqcxQZiCh4=
+P:cyrus-sasl-gssapiv2
+V:2.1.27-r5
+A:armhf
+S:13667
+I:45056
+T:Cyrus SASL plugin for gssapiv2
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libgssapi.so.3
+
 C:Q1vMj1WAzK/LA0NGLXmbnIdyfPhMo=
 P:libxxf86vm-dev
 V:1.1.4-r2
@@ -24200,21 +24214,6 @@ t:1517979489
 c:561f7e51a6421b22a1ed7e40c559149d24cd6832
 D:cdparanoia-libs=10.2-r7
 
-C:Q1vs9Uywd2dkgkOn/ugzKROJO+5O8=
-P:linux-rpi2
-V:5.4.5-r0
-A:armhf
-S:24480808
-I:67141632
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1576750525
-c:ce9fd837f4e96667d3199e1ebec5525abedf94d2
-D:mkinitfs linux-firmware-brcm
-
 C:Q1ztQbkB1vWmD1yFz3V6yjfAVXsbs=
 P:gsm
 V:1.0.18-r0
@@ -25724,21 +25723,6 @@ c:e4e3ef5ba11b4b64ea59e8a6ca5690e8f248493b
 D:/bin/sh so:libc.musl-armhf.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
 p:cmd:rsyslogd
 
-C:Q1uZQA9ppmVJGDFsbEQjCoaUv+3/w=
-P:linux-rpi2-dev
-V:5.4.5-r0
-A:armhf
-S:17518955
-I:121958400
-T:Headers and script for third party modules for rpi2 kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1576750525
-c:ce9fd837f4e96667d3199e1ebec5525abedf94d2
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
 C:Q1upWFiTiYM1itke+IaaHAE9MQ8rM=
 P:xwininfo-doc
 V:1.1.5-r0
@@ -26088,6 +26072,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1575966084
 c:4d1be5ba9b0250ff80ce70f2d2bf7f86ea8d3d94
 i:docs perl-server-starter=0.35-r0
+
+C:Q15Qs2msCcIVm6kQ+xhifL/kxzKDQ=
+P:cyrus-sasl-login
+V:2.1.27-r5
+A:armhf
+S:8089
+I:32768
+T:Cyrus SASL plugin for login
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1
 
 C:Q1J/fBFUto5jGqFWC3H/Ldmh1wuIk=
 P:mlmmj-doc
@@ -29294,6 +29293,22 @@ c:f96df33aed05055667c4b2455c14a31f95d62394
 D:so:libc.musl-armhf.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libfribidi.so.0
 p:so:libass.so.9=9.0.2
 
+C:Q1AC2+2/xtV0S/BpyeTUApQnKwx+I=
+P:cyrus-sasl-dev
+V:2.1.27-r5
+A:armhf
+S:250071
+I:778240
+T:Cyrus Simple Authentication Service Layer (SASL) (development files)
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:libsasl=2.1.27-r5 pkgconfig
+p:pc:libsasl2=2.1.27
+
 C:Q14fErH9M7t4DWhhLa/qmHgR1twCs=
 P:rsyslog-mmanon
 V:8.1911.0-r1
@@ -31377,6 +31392,21 @@ t:1572100426
 c:f29c859c687342147661b62edb89d3f890877c3b
 i:docs nginx=1.16.1-r4
 
+C:Q1VQiR8VMeolqDviM1yGySX0/wjoE=
+P:linux-rpi-dev
+V:5.4.6-r0
+A:armhf
+S:17510711
+I:121798656
+T:Headers and script for third party modules for rpi kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577186224
+c:85441d457ff71d639b37495e6d2ff38ba454a30c
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
+
 C:Q1ZxP1cowS+NkU7QU4zgcak4+IWXk=
 P:uwsgi-pty
 V:2.0.18-r4
@@ -32855,21 +32885,6 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1575283461
 c:38664bd7a807d4b24c0e0482bdb1c041e783469e
 D:so:libc.musl-armhf.so.1 so:libpri.so.1.4 so:libtonezone.so.2
-
-C:Q1JWptksL5XjIdsOyh1a8Z4WSFy20=
-P:cyrus-sasl-openrc
-V:2.1.27-r4
-A:armhf
-S:1480
-I:16384
-T:Cyrus Simple Authentication Service Layer (SASL) (OpenRC init scripts)
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-i:openrc cyrus-sasl=2.1.27-r4
 
 C:Q1JYwu4bdDVZyIEmdG2GyqmTokQjI=
 P:openldap-overlay-auditlog
@@ -37548,22 +37563,6 @@ c:d281c3a623fe547a97512261b8efc3e79113d3d5
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libintl.so.8 so:libnewt.so.0.52 so:libslang.so.2 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:partimage cmd:partimaged
 
-C:Q1o/7tjQL/NUWf75efo+i6+E4qDuU=
-P:libsasl
-V:2.1.27-r4
-A:armhf
-S:58252
-I:159744
-T:Cyrus Simple Authentication and Security Layer (SASL) library
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libdb-5.3.so
-p:so:libsasl2.so.3=3.0.0
-
 C:Q1VuFAwUjLZbZa3rW8VHTw8yKOTPo=
 P:flac-dev
 V:1.3.3-r0
@@ -39797,21 +39796,6 @@ c:90af8c03ba1ca3a46ae286cce44ccac3d3814430
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:cmd:beep
 
-C:Q1ikufcZVUYg905SOZ4uC7GuibPDA=
-P:cyrus-sasl-login
-V:2.1.27-r4
-A:armhf
-S:8093
-I:32768
-T:Cyrus SASL plugin for login
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1
-
 C:Q1qpANFwU6+9qLsN/uYEuNpd03YoE=
 P:libsm-dev
 V:1.2.3-r0
@@ -41360,21 +41344,6 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1573845175
 c:aafb402f4f09442d1762bef4429f4a6018d2569b
 i:docs tar=1.32-r1
-
-C:Q1KvTOWQZlGQOFtIz54Jb3w2Hh9rU=
-P:cyrus-sasl-gs2
-V:2.1.27-r4
-A:armhf
-S:14182
-I:45056
-T:Cyrus SASL plugin for gs2
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libgssapi.so.3
 
 C:Q126JpugzBi023BDMwIQEObXUOXKg=
 P:gphoto2-doc
@@ -43243,6 +43212,21 @@ c:75fb021e6b07efc083a95e6083a937e5b036ecd2
 D:fontconfig=2.13.1-r2 pc:expat pc:freetype2>=21.0.15 pc:uuid pkgconfig
 p:pc:fontconfig=2.13.1
 
+C:Q1QrqdOjuf0yH5QRihjSxZMi8CFMQ=
+P:cyrus-sasl-gs2
+V:2.1.27-r5
+A:armhf
+S:14180
+I:45056
+T:Cyrus SASL plugin for gs2
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libgssapi.so.3
+
 C:Q1Q/c12JVnUSWE5TziC0fZ3lRim7M=
 P:lua5.2-uuid
 V:0.2.0-r1
@@ -43414,21 +43398,6 @@ t:1541609171
 c:8623682b8b306e297293f47399e2cdfe7f6ddbc2
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgdbm.so.4 so:libpopt.so.0 so:libssl.so.1.1 so:libvanessa_adt.so.1 so:libvanessa_logger.so.0 so:libvanessa_socket.so.2
 p:so:libperditiondb_gdbm.so.0=0.0.0 cmd:makegdbm cmd:perdition cmd:perdition.imap4 cmd:perdition.imap4s cmd:perdition.imaps cmd:perdition.managesieve cmd:perdition.pop3 cmd:perdition.pop3s
-
-C:Q1+DKfa6lFpdIHFK4Uahu75P8pNWE=
-P:cyrus-sasl-ntlm
-V:2.1.27-r4
-A:armhf
-S:15514
-I:49152
-T:Cyrus SASL plugin for ntlm
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1XFMQwFmhb50cGl4rreAVmaLD+r0=
 P:terminus-font
@@ -44101,21 +44070,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1563791813
 c:373f0b9370b1d740561afdd8f635fb3f8f2186a7
 i:lxterminal=0.3.2-r1 lang
-
-C:Q1k/QeSZu4y+ko/xlFh2S9jExdsvE=
-P:cyrus-sasl-scram
-V:2.1.27-r4
-A:armhf
-S:17438
-I:53248
-T:Cyrus SASL plugin for scram
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1RPY4lj1sTSk6nYwsUVlsfchU3n0=
 P:lua5.3-bit32
@@ -45771,6 +45725,21 @@ t:1573833239
 c:9e450874c8064d59e87132576fc6bd76fc598e75
 D:m4 so:libc.musl-armhf.so.1
 p:cmd:bison cmd:yacc
+
+C:Q1pGdIVk4YoZBLUH/Q/cVIo1TdMpM=
+P:linux-rpi2-dev
+V:5.4.6-r0
+A:armhf
+S:17518592
+I:121958400
+T:Headers and script for third party modules for rpi2 kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577186224
+c:85441d457ff71d639b37495e6d2ff38ba454a30c
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1peW1agyCcctnpxreF018Ej8xDFc=
 P:py3-libxml2
@@ -48450,21 +48419,6 @@ c:599b36e03fd60efbdfc810d38b2502da8c89c384
 D:libksba=1.3.5-r0
 p:cmd:ksba-config
 
-C:Q10S3Qr5xf4bFBFjkopWiNYAkwSio=
-P:linux-rpi-dev
-V:5.4.5-r0
-A:armhf
-S:17511485
-I:121798656
-T:Headers and script for third party modules for rpi kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1576750525
-c:ce9fd837f4e96667d3199e1ebec5525abedf94d2
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
 C:Q1OzVTncJB3UQ08QJEUgricYUOHl4=
 P:dovecot-ldap
 V:2.3.9.2-r0
@@ -49398,21 +49352,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1541609169
 c:b2e715c2b675eb9497c1dbc6a8e9dde30aa3e3d6
 i:docs lua-sec=0.7-r1
-
-C:Q1sbB8spITjbLF3Emg819WOu70CeY=
-P:cyrus-sasl-plain
-V:2.1.27-r4
-A:armhf
-S:8266
-I:32768
-T:Cyrus SASL plugin for plain
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1
 
 C:Q1lXpJpZ2EMVwyEzQg5FbBJrpTBpg=
 P:umurmur
@@ -54267,6 +54206,21 @@ t:1573896705
 c:1859208255855653bf16ea45e5a210ed7ab265da
 D:kamailio so:libc.musl-armhf.so.1 so:libperl.so
 
+C:Q1Zf2/AtOr+73ONeK//Z5znS3fdpo=
+P:cyrus-sasl-openrc
+V:2.1.27-r5
+A:armhf
+S:1484
+I:16384
+T:Cyrus Simple Authentication Service Layer (SASL) (OpenRC init scripts)
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+i:openrc cyrus-sasl=2.1.27-r5
+
 C:Q1dw03FjS7UwxKn2t9Hk6hUc9V1T4=
 P:device-mapper
 V:2.02.186-r0
@@ -55571,21 +55525,6 @@ t:1567526663
 c:792fb875f317d992027428297ea0103d82b98373
 D:so:libc.musl-armhf.so.1
 p:so:libnl-3.so.200=200.26.0 so:libnl-genl-3.so.200=200.26.0 so:libnl-idiag-3.so.200=200.26.0 so:libnl-nf-3.so.200=200.26.0 so:libnl-route-3.so.200=200.26.0 so:libnl-xfrm-3.so.200=200.26.0
-
-C:Q12irpF4AkAsXDPKDYKPu5SJVasTI=
-P:cyrus-sasl-crammd5
-V:2.1.27-r4
-A:armhf
-S:9283
-I:36864
-T:Cyrus SASL plugin for crammd5
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1
 
 C:Q1vFtneWdjbBDo0X0TQuQ8txVOVCg=
 P:mtr-bash-completion
@@ -58183,6 +58122,21 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1567697809
 c:1e1c4e9f5b6674e290aef6726ec6a1b9c737b70e
 D:perl
+
+C:Q1QukHKP8J4NMA26ibTcWRt9SKdqk=
+P:cyrus-sasl-ntlm
+V:2.1.27-r5
+A:armhf
+S:15509
+I:49152
+T:Cyrus SASL plugin for ntlm
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1I0VEPOReQxJjp/7PplFx06OeHEA=
 P:zmap
@@ -64029,6 +63983,21 @@ t:1573574543
 c:6cad3e1126958f8f43ab9e2498f1db2d337c546a
 D:perl-module-runtime perl-params-validate perl-dist-checkconflicts perl-devel-globaldestruction
 
+C:Q17N7E/SrTSbCDzEywKJHuhsFMfnU=
+P:cyrus-sasl-digestmd5
+V:2.1.27-r5
+A:armhf
+S:24339
+I:65536
+T:Cyrus SASL plugin for digestmd5
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
+
 C:Q1zb97uLh0y950VcVAXSeUxE9kGRo=
 P:perl-devel-stacktrace-doc
 V:2.04-r0
@@ -65284,21 +65253,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559030220
 c:cbefd0de8a47314e194af3203b66ee0eb6366b02
 i:docs fluxbox=1.3.7-r3
-
-C:Q1jmK29pXMOpiBY0k+pDqIqar3x8s=
-P:cyrus-sasl-doc
-V:2.1.27-r4
-A:armhf
-S:62462
-I:229376
-T:Cyrus Simple Authentication Service Layer (SASL) (documentation)
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-i:docs cyrus-sasl=2.1.27-r4
 
 C:Q1MdLASwJFaYrwJx6L+RLeW+RoN1E=
 P:lua5.3-stringy
@@ -70170,6 +70124,21 @@ t:1575456561
 c:dde225b4e88039a27e1ee33216a79c56775c446b
 i:docs doas=6.6-r2
 
+C:Q1AOLH8ZssZcQmjtmd9MMmeU/0V5s=
+P:linux-rpi2
+V:5.4.6-r0
+A:armhf
+S:24480473
+I:67137536
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577186224
+c:85441d457ff71d639b37495e6d2ff38ba454a30c
+D:mkinitfs linux-firmware-brcm
+
 C:Q1QQSqMK6wzecFuopA9s0GMokJLEw=
 P:openvpn
 V:2.4.7-r1
@@ -70413,21 +70382,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1567780102
 c:3876bc020ee016cbab0cd409d51326f7319b4537
 i:openrc bitlbee=3.6-r0
-
-C:Q1ZCxf6YD2it13j/DuaT1yA6NTaTM=
-P:cyrus-sasl-gssapiv2
-V:2.1.27-r4
-A:armhf
-S:13667
-I:45056
-T:Cyrus SASL plugin for gssapiv2
-U:https://cyrusimap.org/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572968026
-c:e31ed3ba305e4c7d93a93b58971ebeeb50b481c6
-D:so:libc.musl-armhf.so.1 so:libgssapi.so.3
 
 C:Q1GDrKwFdEx4ziQlKwC0uL9vtoJjU=
 P:libtirpc-dbg
@@ -72722,6 +72676,21 @@ t:1572968027
 c:5710c57cef7a622ba738309162ba34cb4a2bd81a
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libboost_filesystem.so.1.71.0=1.71.0
+
+C:Q1GYkPk1EEg3RPYLtdCwdxAvVVJYA=
+P:cyrus-sasl-doc
+V:2.1.27-r5
+A:armhf
+S:62443
+I:229376
+T:Cyrus Simple Authentication Service Layer (SASL) (documentation)
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+i:docs cyrus-sasl=2.1.27-r5
 
 C:Q1i03ESkcHyYVrEGb2Lb6m7Oi1rRA=
 P:clamav-milter
@@ -78835,6 +78804,22 @@ c:e4e3ef5ba11b4b64ea59e8a6ca5690e8f248493b
 D:rsyslog=8.1911.0-r1 so:libc.musl-armhf.so.1 so:libcurl.so.4
 p:rsyslog-omelasticsearch=8.1911.0-r1
 
+C:Q19tMfbruIpMTjk+hVqiJKBsOel4E=
+P:cyrus-sasl
+V:2.1.27-r5
+A:armhf
+S:46030
+I:151552
+T:Cyrus Simple Authentication Service Layer (SASL)
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libkrb5.so.26 so:libroken.so.18 so:libsasl2.so.3
+p:cmd:pluginviewer cmd:saslauthd cmd:sasldblistusers2 cmd:saslpasswd2 cmd:testsaslauthd
+
 C:Q1pyGPC/DMLzuhGq3wcPaogvy5WhU=
 P:perl-http-negotiate-doc
 V:6.01-r1
@@ -80683,6 +80668,21 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1503909648
 c:836b98b3c7314d216566a7f1bfba21a6996905ae
 i:docs perl-test-fatal=0.014-r1
+
+C:Q1FWMFmHZ8gaiIL8UhuCzp3EYNGJk=
+P:cyrus-sasl-plain
+V:2.1.27-r5
+A:armhf
+S:8262
+I:32768
+T:Cyrus SASL plugin for plain
+U:https://cyrusimap.org/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1577187278
+c:320e9fe25de21594bb1ef20b31586ec775ab1758
+D:so:libc.musl-armhf.so.1
 
 C:Q1F8fdEAmewi4wV1ETYABFHKGCAe4=
 P:less-doc
