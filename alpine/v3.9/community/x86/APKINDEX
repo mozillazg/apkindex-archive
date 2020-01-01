@@ -2816,22 +2816,6 @@ c:6c7e83f3a76feba3e459fc9d5366c535fc1588b7
 D:lua5.3
 i:luasrcdiet=1.0.0-r1 lua5.3
 
-C:Q1lGChY2ohghISWhYbEpxJ3hmtoXs=
-P:knot-dev
-V:2.7.4-r1
-A:x86
-S:341811
-I:1396736
-T:An high-performance authoritative-only DNS server (development files)
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755761
-c:ea05d8c376a161a4813663e1952477468765759a
-D:knot-libs=2.7.4-r1 pc:gnutls>=3.3 pkgconfig
-p:pc:knotd=2.7.4 pc:libdnssec=2.7.4 pc:libknot=2.7.4 pc:libzscanner=2.7.4
-
 C:Q1sKF+diT6JtnQoy1UYxROVHI5cXg=
 P:perl-digest-bubblebabble-doc
 V:0.02-r2
@@ -5911,6 +5895,22 @@ t:1548345684
 c:706da36557f9c5d773a4c2753a10ffef7fda9d3b
 D:imlib2 glib pango cairo libxcomposite libxdamage libxinerama libxrandr gtk+ so:libImlib2.so.1 so:libX11.so.6 so:libXcomposite.so.1 so:libXdamage.so.1 so:libXext.so.6 so:libXinerama.so.1 so:libXrandr.so.2 so:libXrender.so.1 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:librsvg-2.so.2 so:libstartup-notification-1.so.0
 p:cmd:tint2 cmd:tint2conf
+
+C:Q1EDcfNOllzrn66XKzPkJ+ugeYYPE=
+P:knot-utils
+V:2.7.8-r0
+A:x86
+S:353362
+I:823296
+T:DNS client utilities shipped with the Knot DNS server
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+D:so:libc.musl-x86.so.1 so:libdnssec.so.6 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.8 so:liburcu.so.6 so:libzscanner.so.2
+p:cmd:kdig cmd:khost cmd:knsec3hash cmd:knsupdate cmd:kzonecheck
 
 C:Q1tlQ+Zjb5fsi5up5EqXVF5b2OpfI=
 P:tesseract-ocr-data-jpn
@@ -11360,6 +11360,22 @@ D:python2 so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
 p:cmd:cheetah cmd:cheetah-analyze cmd:cheetah-compile
 i:py-cheetah=3.1.0-r0 python2
 
+C:Q1AqN36RruyckPRyTmPCTa3q7HI08=
+P:knot-libs
+V:2.7.8-r0
+A:x86
+S:217363
+I:667648
+T:Libraries used by the Knot DNS server and client applications
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+D:so:libc.musl-x86.so.1 so:libgnutls.so.30 so:liblmdb.so.0
+p:so:libdnssec.so.6=6.0.0 so:libknot.so.8=8.0.0 so:libzscanner.so.2=2.0.0
+
 C:Q1s03HK1ubIkPJFIpY4eMmz8aKjM8=
 P:spice-glib
 V:0.35-r1
@@ -11576,6 +11592,21 @@ t:1545689492
 c:859d6382196917ec75da7ccdb7f6d34db191255c
 D:so:libc.musl-x86.so.1 so:libpython2.7.so.1.0
 i:py-setproctitle=1.1.10-r2 python2
+
+C:Q1ICtSNyRvsoS2DLL1jaNWHkQDYQM=
+P:knot-openrc
+V:2.7.8-r0
+A:x86
+S:2036
+I:24576
+T:An high-performance authoritative-only DNS server (OpenRC init scripts)
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+i:openrc knot=2.7.8-r0
 
 C:Q1eWvosKyR71MfQqdCWU4AfuCZX/A=
 P:gns3-converter
@@ -13851,6 +13882,22 @@ c:c34558aad0fa77a9c307564822690940e618b972
 k:100
 D:php7-common so:libc.musl-x86.so.1 so:libedit.so.0 so:libpcre.so.1 so:libxml2.so.2 so:libz.so.1
 p:php-lightspeed cmd:lsphp cmd:lsphp7
+
+C:Q1YZKg8Q2sFUaluBkNvCqRuygVqtE=
+P:knot-dev
+V:2.7.8-r0
+A:x86
+S:341615
+I:1396736
+T:An high-performance authoritative-only DNS server (development files)
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+D:knot-libs=2.7.8-r0 pc:gnutls>=3.3 pkgconfig
+p:pc:knotd=2.7.8 pc:libdnssec=2.7.8 pc:libknot=2.7.8 pc:libzscanner=2.7.8
 
 C:Q14ommM9wy8WGvGcqjzQN3bUr5/b8=
 P:php7-exif
@@ -17092,6 +17139,22 @@ c:dc3bbf798e9bc1f7396f09c2ab195b69bc9d9881
 D:pkgconfig x265-libs=2.8-r1
 p:pc:x265=2.8
 
+C:Q1D/RKRPCQS6qGTOlsP7h3W9tmFHU=
+P:knot
+V:2.7.8-r0
+A:x86
+S:988330
+I:2306048
+T:An high-performance authoritative-only DNS server
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+D:/bin/sh so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libdnssec.so.6 so:libedit.so.0 so:libgnutls.so.30 so:libknot.so.8 so:liburcu.so.6 so:libzscanner.so.2
+p:cmd:keymgr cmd:kjournalprint cmd:knotc cmd:knotd
+
 C:Q1ggc+acOc/OqUS/xF5nyzVeiuPe4=
 P:restic-bash-completion
 V:0.9.4-r0
@@ -19934,22 +19997,6 @@ m:William Pitcock <nenolod@dereferenced.org>
 t:1545674008
 c:4e6848e00f109290b87d213aee9e5584cca12876
 i:faenza-icon-theme=1.3.1-r4 vlc
-
-C:Q1jHYvr8xm2SV05+cBo8vDlvH5EQ4=
-P:knot-utils
-V:2.7.4-r1
-A:x86
-S:352085
-I:823296
-T:DNS client utilities shipped with the Knot DNS server
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755761
-c:ea05d8c376a161a4813663e1952477468765759a
-D:so:libc.musl-x86.so.1 so:libdnssec.so.6 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.8 so:liburcu.so.6 so:libzscanner.so.2
-p:cmd:kdig cmd:khost cmd:knsec3hash cmd:knsupdate cmd:kzonecheck
 
 C:Q1MVuhd+bCIfx6xGgvyU/PiTocYg4=
 P:gringo
@@ -24288,21 +24335,6 @@ c:0cda22506de5829120ee853fb2b0b12e8583ca26
 D:py3-greenlet so:libc.musl-x86.so.1 so:libpython3.6m.so.1.0
 i:py-gevent=1.3.4-r0 python3
 
-C:Q1sz0s3Zp5wJOhqRev3Enf/9MTk4I=
-P:knot-openrc
-V:2.7.4-r1
-A:x86
-S:2029
-I:24576
-T:An high-performance authoritative-only DNS server (OpenRC init scripts)
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755762
-c:ea05d8c376a161a4813663e1952477468765759a
-i:openrc knot=2.7.4-r1
-
 C:Q1M06hr1kkof5O/cDz1c1DDv4Ox4g=
 P:openjdk7-jre-lib
 V:7.221.2.6.18-r0
@@ -28443,22 +28475,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1545691116
 c:82ea9c1874af2db9b4e601bb7d2a2fbc58bb0275
 i:docs dateutils=0.4.5-r0
-
-C:Q1NF7RMQHn6Eu88Olh4RjlfhBZffM=
-P:knot
-V:2.7.4-r1
-A:x86
-S:983033
-I:2293760
-T:An high-performance authoritative-only DNS server
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755762
-c:ea05d8c376a161a4813663e1952477468765759a
-D:/bin/sh so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libdnssec.so.6 so:libedit.so.0 so:libgnutls.so.30 so:libknot.so.8 so:liburcu.so.6 so:libzscanner.so.2
-p:cmd:keymgr cmd:kjournalprint cmd:knotc cmd:knotd
 
 C:Q1xnUtEKGs4BO4Aw+5XGJdBi5peRs=
 P:chicken-dev
@@ -53648,22 +53664,6 @@ t:1548165587
 c:1fa98258e093e4ce7160e280e3e63e820a1ec030
 i:docs glances=3.1.0-r0
 
-C:Q1cZVTDuDgdg0bxqbbxwgUtWH45wY=
-P:knot-libs
-V:2.7.4-r1
-A:x86
-S:217405
-I:667648
-T:Libraries used by the Knot DNS server and client applications
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755761
-c:ea05d8c376a161a4813663e1952477468765759a
-D:so:libc.musl-x86.so.1 so:libgnutls.so.30 so:liblmdb.so.0
-p:so:libdnssec.so.6=6.0.0 so:libknot.so.8=8.0.0 so:libzscanner.so.2=2.0.0
-
 C:Q1HtfZlsmvrTr5xFAndlHSIXhGINM=
 P:perl-appconfig-doc
 V:1.71-r1
@@ -53865,6 +53865,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545668402
 c:e1d2234e7b3fed7aec2b709b20f4e998cd424f44
 i:py-configobj=5.0.6-r3 python2
+
+C:Q1UQ+rDzVGa7Yc1kVeonyR9ohHSWc=
+P:knot-doc
+V:2.7.8-r0
+A:x86
+S:30428
+I:77824
+T:An high-performance authoritative-only DNS server (documentation)
+U:https://www.knot-dns.cz
+L:GPL-3.0
+o:knot
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1577886593
+c:9ae93588cf9f0b3f7543a75152e40e0fa4f3dcee
+i:docs knot=2.7.8-r0
 
 C:Q1pHF6xD2FFPGHhR2Cwht5ty5MDLs=
 P:libreoffice-lang-lb
@@ -57888,21 +57903,6 @@ t:1545684244
 c:b58ad19595714d1635d5c778445e18e207ab875f
 D:so:libImlib2.so.1 so:libX11.so.6 so:libc.musl-x86.so.1 so:libstdc++.so.6 so:libz.so.1
 p:so:libcaca++.so.0=0.99.19 so:libcaca.so.0=0.99.19 cmd:cacaclock cmd:cacademo cmd:cacafire cmd:cacaplay cmd:cacaserver cmd:cacaview cmd:img2txt
-
-C:Q1l4Zd7dPZb1NBezelKxjX8BMnrno=
-P:knot-doc
-V:2.7.4-r1
-A:x86
-S:30111
-I:77824
-T:An high-performance authoritative-only DNS server (documentation)
-U:https://www.knot-dns.cz
-L:GPL-3.0
-o:knot
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1545755762
-c:ea05d8c376a161a4813663e1952477468765759a
-i:docs knot=2.7.4-r1
 
 C:Q1Z/dPZWL0SzKntFzFqD01FKLR4fI=
 P:xfce4-xkb-plugin
