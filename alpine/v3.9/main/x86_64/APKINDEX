@@ -4471,6 +4471,21 @@ t:1545746178
 c:c284cbc8e4f8aa82136badddb6bf394c282e3b04
 i:docs gparted=0.33.0-r0
 
+C:Q11MEYbGewKYLhx9TCGMjPoz1+So8=
+P:libseccomp-doc
+V:2.4.2-r2
+A:x86_64
+S:21992
+I:135168
+T:An interface to the Linux Kernel's syscall filtering mechanism (documentation)
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1579793194
+c:9092d9ca814a141dbcee7a97070ff4bd93f78e10
+i:docs libseccomp=2.4.2-r2
+
 C:Q1BtCh3cSjPi9Ez4No0KGOKH5JE+Y=
 P:glib-dev
 V:2.58.1-r3
@@ -19326,6 +19341,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1545300017
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 
+C:Q1q3JqirW7BK3CtIUdFUcu0Jwv9jw=
+P:libseccomp
+V:2.4.2-r2
+A:x86_64
+S:136231
+I:622592
+T:An interface to the Linux Kernel's syscall filtering mechanism
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1579793194
+c:9092d9ca814a141dbcee7a97070ff4bd93f78e10
+D:so:libc.musl-x86_64.so.1
+p:so:libseccomp.so.2=2.4.2 cmd:scmp_sys_resolver
+
 C:Q1zHjJ4Zgi4zR2GC/tPMbnyccNfRU=
 P:freeradius-lib
 V:3.0.17-r6
@@ -27408,22 +27439,6 @@ c:31d53e1c0f3eae446c3726c7d937ffaef3933565
 D:so:libc.musl-x86_64.so.1 so:libkeyutils.so.1
 p:cmd:key.dns_resolver cmd:keyctl cmd:request-key
 
-C:Q1pmE9rwMkn2XoDA1TQQwviAmCaJg=
-P:libseccomp
-V:2.3.3-r1
-A:x86_64
-S:118620
-I:540672
-T:An interface to the Linux Kernel's syscall filtering mechanism
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1543923554
-c:04a0c56c81ba5120c1e808f2481d527fd4d009f4
-D:so:libc.musl-x86_64.so.1
-p:so:libseccomp.so.2=2.3.3 cmd:scmp_sys_resolver
-
 C:Q15nKHw2odVyp7Tf7VFaPLIs1/2pM=
 P:nginx-mod-http-vod
 V:1.14.2-r5
@@ -27720,6 +27735,22 @@ t:1542972233
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXext.so.6 so:libXrender.so.1 so:libc.musl-x86_64.so.1
 p:so:libXrandr.so.2=2.2.0
+
+C:Q15JUzUpzCaYqn6fDtQ4MAHzZxLxY=
+P:libseccomp-dev
+V:2.4.2-r2
+A:x86_64
+S:69353
+I:540672
+T:An interface to the Linux Kernel's syscall filtering mechanism (development files)
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1579793193
+c:9092d9ca814a141dbcee7a97070ff4bd93f78e10
+D:linux-headers libseccomp=2.4.2-r2 pkgconfig
+p:pc:libseccomp=2.4.2
 
 C:Q1WFstwhgIBfdwYVzhwJFsZHBVB2Y=
 P:distcc-doc
@@ -32948,22 +32979,6 @@ t:1543928531
 c:d940613ae9511db4a0f13bec6c79e1bc1e4097ed
 D:so:libSDL-1.2.so.0 so:libc.musl-x86_64.so.1 so:libogg.so.0 so:libtheoradec.so.1 so:libtheoraenc.so.1 so:libvorbis.so.0 so:libvorbisenc.so.2
 p:cmd:dump_psnr cmd:dump_video cmd:encoder_example cmd:player_example
-
-C:Q1Qn1bEm+POXBRAJKwsHViQxx+BXI=
-P:libseccomp-dev
-V:2.3.3-r1
-A:x86_64
-S:59038
-I:450560
-T:An interface to the Linux Kernel's syscall filtering mechanism (development files)
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1543923552
-c:04a0c56c81ba5120c1e808f2481d527fd4d009f4
-D:linux-headers libseccomp=2.3.3-r1 pkgconfig
-p:pc:libseccomp=2.3.3
 
 C:Q1UlM3uo2Z34y1V4YXbp21URVqeF8=
 P:lua-maxminddb
@@ -80165,21 +80180,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545300865
 c:aabf14cd2b96c1614ed3e51a4134d5a8f934e2ff
 i:docs valgrind=3.14.0-r0
-
-C:Q1qZ1+g548R9rrDQPPRxc9iGDZCF4=
-P:libseccomp-doc
-V:2.3.3-r1
-A:x86_64
-S:19742
-I:126976
-T:An interface to the Linux Kernel's syscall filtering mechanism (documentation)
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1543923553
-c:04a0c56c81ba5120c1e808f2481d527fd4d009f4
-i:docs libseccomp=2.3.3-r1
 
 C:Q1uenhLF+9ap4OKTskpWbOfeOcBpc=
 P:iproute2-doc
