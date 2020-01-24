@@ -65916,6 +65916,41 @@
       "versions": {
         "2.2.9-r1": 1577196817
       }
+    },
+    "luajit": {
+      "origin": "luajit",
+      "versions": {
+        "2.1.0_beta3-r6": 1579870326
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "lua",
+        "so:libluajit-5.1.so.2=2.1.0",
+        "cmd:luajit",
+        "cmd:luajit-2.1.0-beta3"
+      ]
+    },
+    "luajit-dev": {
+      "origin": "luajit",
+      "versions": {
+        "2.1.0_beta3-r6": 1579870326
+      },
+      "dependencies": [
+        "luajit=2.1.0_beta3-r6",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:luajit=2.1.0_beta3"
+      ]
+    },
+    "luajit-doc": {
+      "origin": "luajit",
+      "versions": {
+        "2.1.0_beta3-r6": 1579870326
+      }
     }
   },
   "provide": {
@@ -71915,6 +71950,10 @@
       "libgps.so.25": {
         "package": "gpsd",
         "version": "25.0.0"
+      },
+      "libluajit-5.1.so.2": {
+        "package": "luajit",
+        "version": "2.1.0"
       }
     },
     "package": {
