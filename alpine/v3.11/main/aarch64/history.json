@@ -1396,7 +1396,8 @@
     "mysql-bench": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-client"
@@ -3285,7 +3286,8 @@
     "mariadb-doc": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       }
     },
     "userspace-rcu": {
@@ -8882,18 +8884,19 @@
     "mariadb-dev": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "openssl-dev",
         "zlib-dev",
         "mariadb-connector-c-dev",
-        "mariadb-embedded=10.4.10-r0",
+        "mariadb-embedded=10.4.12-r0",
         "pkgconfig"
       ],
       "provides": [
-        "mysql-dev=10.4.10-r0",
-        "pc:mariadb=10.4.10"
+        "mysql-dev=10.4.12-r0",
+        "pc:mariadb=10.4.12"
       ]
     },
     "perl-encode-utils": {
@@ -9644,10 +9647,11 @@
     "mariadb-embedded": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
-        "mariadb-common=10.4.10-r0",
+        "mariadb-common=10.4.12-r0",
         "so:libaio.so.1",
         "so:libc.musl-aarch64.so.1",
         "so:libcrypto.so.1.1",
@@ -14912,7 +14916,8 @@
     "mariadb-openrc": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       }
     },
     "recode": {
@@ -17286,7 +17291,8 @@
     "mysql-client": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-client"
@@ -19221,7 +19227,8 @@
     "mariadb-common": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "/bin/sh"
@@ -21079,14 +21086,21 @@
     "mariadb-server-utils": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "perl",
-        "mariadb-common=10.4.10-r0",
+        "mariadb-common=10.4.12-r0",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
+        "cmd:mariadb-convert-table-format",
+        "cmd:mariadb-hotcopy",
+        "cmd:mariadb-setpermission",
+        "cmd:mariadb-upgrade",
+        "cmd:mariadbd-multi",
+        "cmd:mariadbd-safe-helper",
         "cmd:mysql_convert_table_format",
         "cmd:mysql_setpermission",
         "cmd:mysql_upgrade",
@@ -24303,7 +24317,8 @@
     "mariadb-test": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common",
@@ -24319,8 +24334,13 @@
         "so:libz.so.1"
       ],
       "provides": [
+        "cmd:mariadb-client-test",
+        "cmd:mariadb-client-test-embedded",
+        "cmd:mariadb-test",
+        "cmd:mariadb-test-embedded",
         "cmd:my_safe_process",
         "cmd:mysql_client_test",
+        "cmd:mysql_client_test_embedded",
         "cmd:mysqltest",
         "cmd:mysqltest_embedded"
       ]
@@ -28067,7 +28087,8 @@
     "mariadb-static": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common"
@@ -28192,7 +28213,8 @@
     "mariadb-backup": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common",
@@ -28207,6 +28229,7 @@
       ],
       "provides": [
         "cmd:mariabackup",
+        "cmd:mariadb-backup",
         "cmd:mbstream"
       ]
     },
@@ -30657,7 +30680,8 @@
     "mysql": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb"
@@ -33675,10 +33699,11 @@
     "mariadb-plugin-rocksdb": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
-        "mariadb=10.4.10-r0",
+        "mariadb=10.4.12-r0",
         "so:libc.musl-aarch64.so.1",
         "so:libstdc++.so.6",
         "so:libz.so.1"
@@ -40413,11 +40438,12 @@
     "mariadb-embedded-dev": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common",
-        "mariadb-embedded=10.4.10-r0"
+        "mariadb-embedded=10.4.12-r0"
       ]
     },
     "font-sony-misc": {
@@ -53916,10 +53942,11 @@
     "mariadb-client": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
-        "mariadb-common=10.4.10-r0",
+        "mariadb-common=10.4.12-r0",
         "so:libc.musl-aarch64.so.1",
         "so:libcrypto.so.1.1",
         "so:libncursesw.so.6",
@@ -53928,6 +53955,17 @@
         "so:libz.so.1"
       ],
       "provides": [
+        "cmd:mariadb",
+        "cmd:mariadb-access",
+        "cmd:mariadb-admin",
+        "cmd:mariadb-check",
+        "cmd:mariadb-dump",
+        "cmd:mariadb-dumpslow",
+        "cmd:mariadb-find-rows",
+        "cmd:mariadb-fix-extensions",
+        "cmd:mariadb-import",
+        "cmd:mariadb-show",
+        "cmd:mariadb-waitpid",
         "cmd:myisam_ftdump",
         "cmd:mysql",
         "cmd:mysql_find_rows",
@@ -53959,7 +53997,8 @@
     "mariadb-bench": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common"
@@ -59154,15 +59193,12 @@
     "mariadb": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "mariadb-common",
         "/bin/sh",
-        "mariadb-backup=10.4.10-r0",
-        "mariadb-client=10.4.10-r0",
-        "mariadb-server-utils=10.4.10-r0",
-        "mariadb-test=10.4.10-r0",
         "so:libaio.so.1",
         "so:libc.musl-aarch64.so.1",
         "so:libcrypto.so.1.1",
@@ -59183,7 +59219,6 @@
         "cmd:aria_read_log",
         "cmd:innochecksum",
         "cmd:mariadb-binlog",
-        "cmd:mariadb-client-test-embedded",
         "cmd:mariadb-embedded",
         "cmd:mariadb-install-db",
         "cmd:mariadb-ldb",
@@ -59199,7 +59234,6 @@
         "cmd:myisamlog",
         "cmd:myisampack",
         "cmd:myrocks_hotbackup",
-        "cmd:mysql_client_test_embedded",
         "cmd:mysql_embedded",
         "cmd:mysql_install_db",
         "cmd:mysql_ldb",
@@ -63399,7 +63433,8 @@
     "mariadb-mytop": {
       "origin": "mariadb",
       "versions": {
-        "10.4.10-r0": 1573721109
+        "10.4.10-r0": 1573721109,
+        "10.4.12-r0": 1580311550
       },
       "dependencies": [
         "perl",
@@ -68274,7 +68309,7 @@
       },
       "mysql-dev": {
         "package": "mariadb-dev",
-        "version": "10.4.10-r0"
+        "version": "10.4.12-r0"
       },
       "perl-encode-piconv": {
         "package": "perl-encode-utils",
