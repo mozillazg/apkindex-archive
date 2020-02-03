@@ -42612,7 +42612,8 @@
       "origin": "open-iscsi",
       "versions": {
         "2.1.0-r0": 1573810483,
-        "2.1.0-r1": 1576489836
+        "2.1.0-r1": 1576489836,
+        "2.1.0-r2": 1580748184
       }
     },
     "libisofs": {
@@ -54483,19 +54484,18 @@
       "origin": "open-iscsi",
       "versions": {
         "2.1.0-r0": 1573810483,
-        "2.1.0-r1": 1576489836
+        "2.1.0-r1": 1576489836,
+        "2.1.0-r2": 1580748184
       },
       "dependencies": [
-        "pkgconfig",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libisns.so.0",
         "so:libkmod.so.2",
-        "so:libmount.so.1"
+        "so:libmount.so.1",
+        "so:libopeniscsiusr.so.0.2.0"
       ],
       "provides": [
-        "so:libopeniscsiusr.so.0.2.0=0.2.0",
-        "pc:libopeniscsiusr=0",
         "cmd:iscsi-gen-initiatorname",
         "cmd:iscsi-iname",
         "cmd:iscsi_discovery",
@@ -57390,7 +57390,8 @@
       "origin": "open-iscsi",
       "versions": {
         "2.1.0-r0": 1573810483,
-        "2.1.0-r1": 1576489836
+        "2.1.0-r1": 1576489836,
+        "2.1.0-r2": 1580748184
       }
     },
     "nfs-utils-doc": {
@@ -66790,6 +66791,32 @@
       "versions": {
         "2.2.9-r1": 1577196817
       }
+    },
+    "open-iscsi-libs": {
+      "origin": "open-iscsi",
+      "versions": {
+        "2.1.0-r2": 1580748184
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libkmod.so.2"
+      ],
+      "provides": [
+        "so:libopeniscsiusr.so.0.2.0=0.2.0"
+      ]
+    },
+    "open-iscsi-dev": {
+      "origin": "open-iscsi",
+      "versions": {
+        "2.1.0-r2": 1580748184
+      },
+      "dependencies": [
+        "open-iscsi-libs=2.1.0-r2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libopeniscsiusr=0"
+      ]
     }
   },
   "provide": {
@@ -71723,7 +71750,7 @@
         "version": "5.5.0"
       },
       "libopeniscsiusr.so.0.2.0": {
-        "package": "open-iscsi",
+        "package": "open-iscsi-libs",
         "version": "0.2.0"
       },
       "libjbig2dec.so.0": {
