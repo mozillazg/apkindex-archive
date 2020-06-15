@@ -7657,7 +7657,8 @@
     },
     "live-media-utils": {
       "versions": {
-        "2018.04.25-r0": 1527000541
+        "2018.04.25-r0": 1527000541,
+        "2020.03.06-r0": 1583602159
       },
       "origin": "live-media",
       "dependencies": [
@@ -7666,11 +7667,12 @@
         "so:libc.musl-s390x.so.1",
         "so:libgcc_s.so.1",
         "so:libgroupsock.so.8",
-        "so:libliveMedia.so.62",
+        "so:libliveMedia.so.78",
         "so:libstdc++.so.6"
       ],
       "provides": [
         "cmd:MPEG2TransportStreamIndexer",
+        "cmd:mikeyParse",
         "cmd:openRTSP",
         "cmd:playSIP",
         "cmd:registerRTSPStream",
@@ -7678,9 +7680,11 @@
         "cmd:testAMRAudioStreamer",
         "cmd:testDVVideoStreamer",
         "cmd:testH264VideoStreamer",
+        "cmd:testH264VideoToHLSSegments",
         "cmd:testH264VideoToTransportStream",
         "cmd:testH265VideoStreamer",
         "cmd:testH265VideoToTransportStream",
+        "cmd:testMKVSplitter",
         "cmd:testMKVStreamer",
         "cmd:testMP3Receiver",
         "cmd:testMP3Streamer",
@@ -7690,6 +7694,7 @@
         "cmd:testMPEG1or2VideoReceiver",
         "cmd:testMPEG1or2VideoStreamer",
         "cmd:testMPEG2TransportReceiver",
+        "cmd:testMPEG2TransportStreamSplitter",
         "cmd:testMPEG2TransportStreamTrickPlay",
         "cmd:testMPEG2TransportStreamer",
         "cmd:testMPEG4VideoStreamer",
@@ -17925,18 +17930,20 @@
     },
     "live-media": {
       "versions": {
-        "2018.04.25-r0": 1527000541
+        "2018.04.25-r0": 1527000541,
+        "2020.03.06-r0": 1583602159
       },
       "origin": "live-media",
       "dependencies": [
         "so:libc.musl-s390x.so.1",
-        "so:libgcc_s.so.1"
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ],
       "provides": [
         "so:libBasicUsageEnvironment.so.1=1.0.1",
         "so:libUsageEnvironment.so.3=3.1.0",
-        "so:libgroupsock.so.8=8.1.1",
-        "so:libliveMedia.so.62=62.0.5"
+        "so:libgroupsock.so.8=8.2.4",
+        "so:libliveMedia.so.78=78.0.3"
       ]
     },
     "acccheck": {
@@ -21020,7 +21027,8 @@
     },
     "mpv-zsh-completion": {
       "versions": {
-        "0.27.2-r1": 1527684734
+        "0.27.2-r1": 1527684734,
+        "0.27.2-r2": 1583602141
       },
       "origin": "mpv"
     },
@@ -23307,7 +23315,8 @@
     },
     "tor-doc": {
       "versions": {
-        "0.3.3.12-r0": 1551206478
+        "0.3.3.12-r0": 1551206478,
+        "0.3.3.12-r1": 1587290101
       },
       "origin": "tor"
     },
@@ -23524,7 +23533,8 @@
     },
     "mpv-libs": {
       "versions": {
-        "0.27.2-r1": 1527684733
+        "0.27.2-r1": 1527684733,
+        "0.27.2-r2": 1583602140
       },
       "origin": "mpv",
       "dependencies": [
@@ -24284,11 +24294,12 @@
     },
     "mpv": {
       "versions": {
-        "0.27.2-r1": 1527684734
+        "0.27.2-r1": 1527684734,
+        "0.27.2-r2": 1583602141
       },
       "origin": "mpv",
       "dependencies": [
-        "mpv-libs=0.27.2-r1",
+        "mpv-libs=0.27.2-r2",
         "pkgconfig",
         "so:libEGL.so.1",
         "so:libGL.so.1",
@@ -31118,7 +31129,8 @@
     },
     "mpv-doc": {
       "versions": {
-        "0.27.2-r1": 1527684732
+        "0.27.2-r1": 1527684732,
+        "0.27.2-r2": 1583602140
       },
       "origin": "mpv"
     },
@@ -37713,11 +37725,12 @@
     },
     "live-media-dev": {
       "versions": {
-        "2018.04.25-r0": 1527000541
+        "2018.04.25-r0": 1527000541,
+        "2020.03.06-r0": 1583602158
       },
       "origin": "live-media",
       "dependencies": [
-        "live-media=2018.04.25-r0"
+        "live-media=2020.03.06-r0"
       ]
     },
     "terraform": {
@@ -38189,7 +38202,8 @@
     },
     "tor": {
       "versions": {
-        "0.3.3.12-r0": 1551206478
+        "0.3.3.12-r0": 1551206478,
+        "0.3.3.12-r1": 1587290101
       },
       "origin": "tor",
       "dependencies": [
@@ -46716,7 +46730,7 @@
       },
       "libgroupsock.so.8": {
         "package": "live-media",
-        "version": "8.1.1"
+        "version": "8.2.4"
       },
       "libliveMedia.so.62": {
         "package": "live-media",
@@ -48349,6 +48363,10 @@
       "libsnappyjava.so.1.1.2": {
         "package": "java-snappy-native",
         "version": "1.1.2"
+      },
+      "libliveMedia.so.78": {
+        "package": "live-media",
+        "version": "78.0.3"
       }
     },
     "package": {

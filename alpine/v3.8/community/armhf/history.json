@@ -233,18 +233,20 @@
     },
     "live-media": {
       "versions": {
-        "2018.04.25-r0": 1527067538
+        "2018.04.25-r0": 1527067538,
+        "2020.03.06-r0": 1583602176
       },
       "origin": "live-media",
       "dependencies": [
         "so:libc.musl-armhf.so.1",
-        "so:libgcc_s.so.1"
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ],
       "provides": [
         "so:libBasicUsageEnvironment.so.1=1.0.1",
         "so:libUsageEnvironment.so.3=3.1.0",
-        "so:libgroupsock.so.8=8.1.1",
-        "so:libliveMedia.so.62=62.0.5"
+        "so:libgroupsock.so.8=8.2.4",
+        "so:libliveMedia.so.78=78.0.3"
       ]
     },
     "py-attrs": {
@@ -1004,11 +1006,12 @@
     },
     "vlc-daemon": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602519
       },
       "origin": "vlc",
       "dependencies": [
-        "vlc=3.0.2-r0",
+        "vlc=3.0.2-r1",
         "/bin/sh"
       ]
     },
@@ -1283,7 +1286,8 @@
     },
     "vlc-plugins-demux": {
       "versions": {
-        "3.0.2-r0": 1527068175
+        "3.0.2-r0": 1527068175,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -2999,11 +3003,12 @@
     },
     "mpv": {
       "versions": {
-        "0.27.2-r1": 1527780902
+        "0.27.2-r1": 1527780902,
+        "0.27.2-r2": 1583602156
       },
       "origin": "mpv",
       "dependencies": [
-        "mpv-libs=0.27.2-r1",
+        "mpv-libs=0.27.2-r2",
         "pkgconfig",
         "so:libEGL.so.1",
         "so:libGL.so.1",
@@ -3657,7 +3662,8 @@
     },
     "vlc-plugins-meta_engine": {
       "versions": {
-        "3.0.2-r0": 1527068175
+        "3.0.2-r0": 1527068175,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -5473,7 +5479,8 @@
     },
     "vlc-plugins-video_output": {
       "versions": {
-        "3.0.2-r0": 1527068178
+        "3.0.2-r0": 1527068178,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -7112,11 +7119,12 @@
     },
     "live-media-dev": {
       "versions": {
-        "2018.04.25-r0": 1527067537
+        "2018.04.25-r0": 1527067537,
+        "2020.03.06-r0": 1583602176
       },
       "origin": "live-media",
       "dependencies": [
-        "live-media=2018.04.25-r0"
+        "live-media=2020.03.06-r0"
       ]
     },
     "netatalk": {
@@ -8770,7 +8778,8 @@
     },
     "mpv-doc": {
       "versions": {
-        "0.27.2-r1": 1527780901
+        "0.27.2-r1": 1527780901,
+        "0.27.2-r2": 1583602156
       },
       "origin": "mpv"
     },
@@ -10886,7 +10895,8 @@
     },
     "vlc-plugins-video_chroma": {
       "versions": {
-        "3.0.2-r0": 1527068177
+        "3.0.2-r0": 1527068177,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -11638,7 +11648,8 @@
     },
     "mpv-libs": {
       "versions": {
-        "0.27.2-r1": 1527780902
+        "0.27.2-r1": 1527780902,
+        "0.27.2-r2": 1583602156
       },
       "origin": "mpv",
       "dependencies": [
@@ -12764,7 +12775,8 @@
     },
     "vlc-plugins-control": {
       "versions": {
-        "3.0.2-r0": 1527068175
+        "3.0.2-r0": 1527068175,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -13158,7 +13170,8 @@
     },
     "vlc-plugins-misc": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -14289,7 +14302,8 @@
     },
     "live-media-utils": {
       "versions": {
-        "2018.04.25-r0": 1527067538
+        "2018.04.25-r0": 1527067538,
+        "2020.03.06-r0": 1583602176
       },
       "origin": "live-media",
       "dependencies": [
@@ -14298,11 +14312,12 @@
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libgroupsock.so.8",
-        "so:libliveMedia.so.62",
+        "so:libliveMedia.so.78",
         "so:libstdc++.so.6"
       ],
       "provides": [
         "cmd:MPEG2TransportStreamIndexer",
+        "cmd:mikeyParse",
         "cmd:openRTSP",
         "cmd:playSIP",
         "cmd:registerRTSPStream",
@@ -14310,9 +14325,11 @@
         "cmd:testAMRAudioStreamer",
         "cmd:testDVVideoStreamer",
         "cmd:testH264VideoStreamer",
+        "cmd:testH264VideoToHLSSegments",
         "cmd:testH264VideoToTransportStream",
         "cmd:testH265VideoStreamer",
         "cmd:testH265VideoToTransportStream",
+        "cmd:testMKVSplitter",
         "cmd:testMKVStreamer",
         "cmd:testMP3Receiver",
         "cmd:testMP3Streamer",
@@ -14322,6 +14339,7 @@
         "cmd:testMPEG1or2VideoReceiver",
         "cmd:testMPEG1or2VideoStreamer",
         "cmd:testMPEG2TransportReceiver",
+        "cmd:testMPEG2TransportStreamSplitter",
         "cmd:testMPEG2TransportStreamTrickPlay",
         "cmd:testMPEG2TransportStreamer",
         "cmd:testMPEG4VideoStreamer",
@@ -15105,7 +15123,8 @@
     },
     "vlc-plugins-video_filter": {
       "versions": {
-        "3.0.2-r0": 1527068177
+        "3.0.2-r0": 1527068177,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -15888,7 +15907,8 @@
     },
     "vlc-plugins-audio_mixer": {
       "versions": {
-        "3.0.2-r0": 1527068174
+        "3.0.2-r0": 1527068174,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -17015,7 +17035,8 @@
     },
     "vlc-plugins-audio_output": {
       "versions": {
-        "3.0.2-r0": 1527068174
+        "3.0.2-r0": 1527068174,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -18244,7 +18265,8 @@
     },
     "vlc-plugins-access": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -18262,7 +18284,7 @@
         "so:libgcc_s.so.1",
         "so:libgcrypt.so.20",
         "so:libgroupsock.so.8",
-        "so:libliveMedia.so.62",
+        "so:libliveMedia.so.78",
         "so:libraw1394.so.11",
         "so:librom1394.so.0",
         "so:libsmbclient.so.0",
@@ -19880,7 +19902,8 @@
     },
     "vlc-plugins-codec": {
       "versions": {
-        "3.0.2-r0": 1527068174
+        "3.0.2-r0": 1527068174,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -21796,11 +21819,12 @@
     },
     "vlc-qt": {
       "versions": {
-        "3.0.2-r0": 1527068171
+        "3.0.2-r0": 1527068171,
+        "3.0.2-r1": 1583602518
       },
       "origin": "vlc",
       "dependencies": [
-        "vlc-xorg=3.0.2-r0",
+        "vlc-xorg=3.0.2-r1",
         "so:libQt5Core.so.5",
         "so:libQt5Gui.so.5",
         "so:libQt5Svg.so.5",
@@ -22460,12 +22484,13 @@
     },
     "vlc-dev": {
       "versions": {
-        "3.0.2-r0": 1527068169
+        "3.0.2-r0": 1527068169,
+        "3.0.2-r1": 1583602517
       },
       "origin": "vlc",
       "dependencies": [
         "pkgconfig",
-        "vlc-libs=3.0.2-r0"
+        "vlc-libs=3.0.2-r1"
       ],
       "provides": [
         "pc:libvlc=3.0.2",
@@ -22505,7 +22530,8 @@
     },
     "vlc-plugins": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -23173,7 +23199,8 @@
     },
     "vlc": {
       "versions": {
-        "3.0.2-r0": 1527068178
+        "3.0.2-r0": 1527068178,
+        "3.0.2-r1": 1583602523
       },
       "origin": "vlc",
       "dependencies": [
@@ -23186,7 +23213,7 @@
         "so:libvlc.so.5",
         "so:libvlc_vdpau.so.0",
         "so:libvlccore.so.9",
-        "vlc-xorg=3.0.2-r0"
+        "vlc-xorg=3.0.2-r1"
       ],
       "provides": [
         "cmd:cvlc",
@@ -25503,7 +25530,8 @@
     },
     "vlc-plugins-lua": {
       "versions": {
-        "3.0.2-r0": 1527068175
+        "3.0.2-r0": 1527068175,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -25622,7 +25650,8 @@
     },
     "vlc-plugins-text_renderer": {
       "versions": {
-        "3.0.2-r0": 1527068177
+        "3.0.2-r0": 1527068177,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -26557,7 +26586,8 @@
     },
     "tor": {
       "versions": {
-        "0.3.3.12-r0": 1551206527
+        "0.3.3.12-r0": 1551206527,
+        "0.3.3.12-r1": 1587312001
       },
       "origin": "tor",
       "dependencies": [
@@ -27479,7 +27509,8 @@
     },
     "vlc-plugins-mux": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -27858,7 +27889,8 @@
     },
     "vlc-libs": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -31576,7 +31608,8 @@
     },
     "vlc-doc": {
       "versions": {
-        "3.0.2-r0": 1527068170
+        "3.0.2-r0": 1527068170,
+        "3.0.2-r1": 1583602517
       },
       "origin": "vlc"
     },
@@ -31897,7 +31930,8 @@
     },
     "vlc-plugins-stream_filter": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -33096,7 +33130,8 @@
     },
     "mpv-zsh-completion": {
       "versions": {
-        "0.27.2-r1": 1527780902
+        "0.27.2-r1": 1527780902,
+        "0.27.2-r2": 1583602156
       },
       "origin": "mpv"
     },
@@ -34691,7 +34726,8 @@
     },
     "vlc-plugins-access_output": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -34785,7 +34821,8 @@
     },
     "tor-doc": {
       "versions": {
-        "0.3.3.12-r0": 1551206526
+        "0.3.3.12-r0": 1551206526,
+        "0.3.3.12-r1": 1587312001
       },
       "origin": "tor"
     },
@@ -34980,7 +35017,8 @@
     },
     "vlc-plugins-stream_out": {
       "versions": {
-        "3.0.2-r0": 1527068177
+        "3.0.2-r0": 1527068177,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -34997,7 +35035,8 @@
     },
     "vlc-plugins-services_discovery": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -35408,7 +35447,8 @@
     },
     "vlc-plugins-notify": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc"
     },
@@ -36054,12 +36094,13 @@
     },
     "vlc-xorg": {
       "versions": {
-        "3.0.2-r0": 1527068173
+        "3.0.2-r0": 1527068173,
+        "3.0.2-r1": 1583602519
       },
       "origin": "vlc",
       "dependencies": [
         "xdg-utils",
-        "vlc=3.0.2-r0",
+        "vlc=3.0.2-r1",
         "so:libEGL.so.1",
         "so:libGL.so.1",
         "so:libX11.so.6",
@@ -38578,7 +38619,8 @@
     },
     "vlc-plugins-gui": {
       "versions": {
-        "3.0.2-r0": 1527068175
+        "3.0.2-r0": 1527068175,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -38843,7 +38885,8 @@
     },
     "vlc-plugins-visualization": {
       "versions": {
-        "3.0.2-r0": 1527068178
+        "3.0.2-r0": 1527068178,
+        "3.0.2-r1": 1583602522
       },
       "origin": "vlc",
       "dependencies": [
@@ -43061,7 +43104,8 @@
     },
     "vlc-plugins-audio_filter": {
       "versions": {
-        "3.0.2-r0": 1527068174
+        "3.0.2-r0": 1527068174,
+        "3.0.2-r1": 1583602520
       },
       "origin": "vlc",
       "dependencies": [
@@ -43811,7 +43855,8 @@
     },
     "vlc-plugins-packetizer": {
       "versions": {
-        "3.0.2-r0": 1527068176
+        "3.0.2-r0": 1527068176,
+        "3.0.2-r1": 1583602521
       },
       "origin": "vlc",
       "dependencies": [
@@ -47256,7 +47301,7 @@
       },
       "libgroupsock.so.8": {
         "package": "live-media",
-        "version": "8.1.1"
+        "version": "8.2.4"
       },
       "libliveMedia.so.62": {
         "package": "live-media",
@@ -52145,6 +52190,10 @@
       "libortp.so.10": {
         "package": "ortp",
         "version": "10.0.0"
+      },
+      "libliveMedia.so.78": {
+        "package": "live-media",
+        "version": "78.0.3"
       }
     },
     "package": {
