@@ -747,6 +747,21 @@ t:1532867559
 c:0522906bfa4e70b64ba52f3761c4a11610bac902
 i:docs xf86-input-synaptics=1.9.1-r1
 
+C:Q10d7qYCVSvSpRyOmhEyyXFw3PSTc=
+P:busybox-static
+V:1.31.1-r19
+A:ppc64le
+S:668800
+I:1253376
+T:Statically linked Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+p:cmd:busybox.static
+
 C:Q1Q7Womsf7qLT5Iz531n89rx16lFk=
 P:inotify-tools-dev
 V:3.20.2.2-r0
@@ -1470,6 +1485,22 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1590178710
 c:f210f2265d7a46e3f3f20a4d73e6ef421a4ae70e
 D:perl perl-lwp-mediatypes perl-encode-locale perl-http-date perl-uri perl-io-html
+
+C:Q1+BZbjWdUrOHczeM/IUHhgrJ7+wI=
+P:busybox-suid
+V:1.31.1-r19
+A:ppc64le
+S:4219
+I:77824
+T:suid binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+D:busybox so:libc.musl-ppc64le.so.1
+p:cmd:bbsuid
 
 C:Q1/KqBaVBTmYo5TiS2+h/AC1Fv4F0=
 P:libtxc_dxtn-dev
@@ -18275,22 +18306,6 @@ t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
-C:Q1fmy7pbvdWWJM8Jz9boosNrlfS+Q=
-P:busybox
-V:1.31.1-r16
-A:ppc64le
-S:550581
-I:1163264
-T:Size optimized toolbox of many common UNIX utilities
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-D:so:libc.musl-ppc64le.so.1
-p:/bin/sh cmd:busybox cmd:sh
-
 C:Q1zvmTkNR1gRZYLATJOoj+1xvyyXQ=
 P:lua5.3-ldap
 V:1.2.3-r6
@@ -19535,6 +19550,23 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1588743839
 c:79b91193424acb73b4aaf851fe21fde9cdca27f5
 i:docs perl-crypt-x509=0.53-r0
+
+C:Q1SV+6lbwjzEH5sV9uXkeOf5gVrSo=
+P:ssl_client
+V:1.31.1-r19
+A:ppc64le
+S:4785
+I:28672
+T:EXternal ssl_client for busybox wget
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+D:so:libc.musl-ppc64le.so.1 so:libtls-standalone.so.1
+p:cmd:ssl_client
+i:busybox=1.31.1-r19 libssl1.1
 
 C:Q1ulbIgqJI3KpIiBSvkUWQ63w7h9k=
 P:nodejs-doc
@@ -25896,22 +25928,6 @@ c:a4f95ea668f1ff39b5df4560fa890d0452c8852d
 D:/bin/sh so:libX11.so.6 so:libXaw.so.7 so:libXmu.so.6 so:libXt.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libltdl.so.7 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libcdt.so.5=5.0.0 so:libcgraph.so.6=6.0.0 so:libgvc.so.6=6.0.0 so:libgvplugin_core.so.6=6.0.0 so:libgvplugin_dot_layout.so.6=6.0.0 so:libgvplugin_neato_layout.so.6=6.0.0 so:libgvplugin_pango.so.6=6.0.0 so:libgvplugin_visio.so.6=6.0.0 so:libgvplugin_xlib.so.6=6.0.0 so:libgvpr.so.2=2.0.0 so:liblab_gamut.so.1=1.0.0 so:libpathplan.so.4=4.0.0 so:libxdot.so.4=4.0.0 cmd:acyclic cmd:bcomps cmd:ccomps cmd:circo cmd:cluster cmd:dijkstra cmd:dot cmd:dot2gxl cmd:dot_builtins cmd:dotty cmd:edgepaint cmd:fdp cmd:gc cmd:gml2gv cmd:graphml2gv cmd:gv2gml cmd:gv2gxl cmd:gvcolor cmd:gvgen cmd:gvmap cmd:gvmap.sh cmd:gvpack cmd:gvpr cmd:gxl2dot cmd:gxl2gv cmd:lefty cmd:lneato cmd:mm2gv cmd:neato cmd:nop cmd:osage cmd:patchwork cmd:prune cmd:sccmap cmd:sfdp cmd:tred cmd:twopi cmd:unflatten cmd:vimdot
 
-C:Q1SRwUd6w8ZnWFIW/uVP2IH0eflt0=
-P:busybox-extras
-V:1.31.1-r16
-A:ppc64le
-S:57195
-I:135168
-T:Additional binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-D:busybox so:libc.musl-ppc64le.so.1
-p:cmd:busybox-extras
-
 C:Q1uVmzTr7HRX9JbDx0TfTLFRCVxvo=
 P:bind-openrc
 V:9.14.12-r0
@@ -27734,21 +27750,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1518448335
 c:77ea1bc3e56fdba49a8fbae0f77f356f5b81b8ab
 i:docs speex=1.2.0-r0
-
-C:Q12zPBj+VkpaP+vU/zQG3RS5C7rc8=
-P:busybox-static
-V:1.31.1-r16
-A:ppc64le
-S:668779
-I:1253376
-T:Statically linked Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-p:cmd:busybox.static
 
 C:Q1a1mRZO+BBoABk349cpmKD4++aqw=
 P:libxslt-doc
@@ -38840,21 +38841,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1561734541
 c:e6e21786a8843a339fe59b172cfc767a518072b2
 i:docs libxt=1.2.0-r0
-
-C:Q1NJxbDITfCzWazHSIhT6PBbNUq0M=
-P:busybox-doc
-V:1.31.1-r16
-A:ppc64le
-S:44355
-I:65536
-T:Size optimized toolbox of many common UNIX utilities (documentation)
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-i:docs busybox=1.31.1-r16
 
 C:Q1S3uzNJfXUW8pvr78v8d40qbrbNQ=
 P:postgresql
@@ -51342,22 +51328,6 @@ t:1559766353
 c:1446dc388bcddbeecc502eaf0d78fbe207739a64
 i:docs fcgiwrap=1.1.0-r3
 
-C:Q1XGnWGVl25JcYM01V/HwmM6jRVAo=
-P:busybox-suid
-V:1.31.1-r16
-A:ppc64le
-S:4221
-I:77824
-T:suid binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-D:busybox so:libc.musl-ppc64le.so.1
-p:cmd:bbsuid
-
 C:Q1Ynxubv0cqsiLZVD5Zac1OE4CJaI=
 P:flex-dev
 V:2.6.4-r2
@@ -58542,6 +58512,21 @@ c:b7dd3d754286b5ce1900ea9d1e29a3d9d8d449d2
 D:expect
 p:cmd:runtest
 
+C:Q1uC8RxoIc8n/PzT1PuZ/vJpg85TM=
+P:busybox-doc
+V:1.31.1-r19
+A:ppc64le
+S:44355
+I:65536
+T:Size optimized toolbox of many common UNIX utilities (documentation)
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+i:docs busybox=1.31.1-r19
+
 C:Q12cLtOp0fk5TvLAQMGeuNtHeRXL4=
 P:py3-gv
 V:2.44.0-r0
@@ -60099,23 +60084,6 @@ t:1590342686
 c:61ed183084f3ab8c122bd6bce5b98e550ef6a7be
 D:so:libc.musl-ppc64le.so.1
 p:so:libcrypto.so.46=46.0.1
-
-C:Q1fhc0AhVtZIaF4eRrIAH1kmdoz0g=
-P:ssl_client
-V:1.31.1-r16
-A:ppc64le
-S:4789
-I:28672
-T:EXternal ssl_client for busybox wget
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590130789
-c:38ef6cebfd8498e03f0636b00c62bdf42fbf5eb2
-D:so:libc.musl-ppc64le.so.1 so:libtls-standalone.so.1
-p:cmd:ssl_client
-i:busybox=1.31.1-r16 libssl1.1
 
 C:Q11HbD/JDco6Rq+OjkglqhqWlpq78=
 P:spamassassin
@@ -62207,6 +62175,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 
+C:Q1lU7M9AW9IfJFyYEoc7SyUPlz9bc=
+P:busybox-extras
+V:1.31.1-r19
+A:ppc64le
+S:57197
+I:135168
+T:Additional binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+D:busybox so:libc.musl-ppc64le.so.1
+p:cmd:busybox-extras
+
 C:Q1tn8EwDfnYhpVE8QKMLRkbtyY51M=
 P:nagios-plugins-ide_smart
 V:2.3.2-r0
@@ -62265,6 +62249,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580255759
 c:1eb911922a7e818a6f314a68c0561bba008e6efd
 i:docs libogg=1.3.4-r0
+
+C:Q1X9ORIoKLKJGDyYQ3ATNye/kk7yE=
+P:busybox
+V:1.31.1-r19
+A:ppc64le
+S:550574
+I:1163264
+T:Size optimized toolbox of many common UNIX utilities
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592305554
+c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
+D:so:libc.musl-ppc64le.so.1
+p:/bin/sh cmd:busybox cmd:sh
 
 C:Q14MJGP1z71HfcHtyAmAEbO1lsP6k=
 P:lua5.1-doc
