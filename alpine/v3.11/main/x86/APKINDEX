@@ -4369,21 +4369,6 @@ c:d3520985ef6e24334ba9b9bc82fafc133dea985e
 D:mariadb-common so:libaio.so.1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mariabackup cmd:mariadb-backup cmd:mbstream
 
-C:Q1tlCX+uyVYXQR1wazxbkOz6Q+woQ=
-P:dropbear-openrc
-V:2019.78-r0
-A:x86
-S:2069
-I:24576
-T:small SSH 2 client/server designed for small memory environments (OpenRC init scripts)
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-i:openrc dropbear=2019.78-r0
-
 C:Q1B7q0zrlwcQAONS6Rgkqgo/mxmy0=
 P:screen-doc
 V:4.7.0-r1
@@ -5749,6 +5734,22 @@ c:dba5821d653d6b762e22ac858ca07a88cfce087a
 k:100
 D:so:libc.musl-x86.so.1
 p:lua-libs so:liblua.so.5=5.1.4
+
+C:Q1D5ihB1Z+3UByEIFtOWeoK7Eq1iI=
+P:dropbear-convert
+V:2019.78-r1
+A:x86
+S:81651
+I:192512
+T:dropbear dropbearconvert command
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+D:so:libc.musl-x86.so.1
+p:cmd:dropbearconvert
 
 C:Q1AaggVjc/ivhc3zaNItbx3n+Bs4g=
 P:the_silver_searcher-bash-completion
@@ -8855,6 +8856,22 @@ t:1557246460
 c:33201a92c43c38f3be611430c7b47470b0028c26
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-x86.so.1
 p:so:libXxf86dga.so.1=1.0.0
+
+C:Q1VsIoEqvkW4ebN1juR+fRjTnsWRU=
+P:dropbear
+V:2019.78-r1
+A:x86
+S:204173
+I:458752
+T:small SSH 2 client/server designed for small memory environments
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+D:so:libc.musl-x86.so.1 so:libz.so.1
+p:cmd:dropbear cmd:dropbearkey
 
 C:Q1Fy18Kj77MNnjAmoeJwXT51w75Cc=
 P:openldap-overlay-constraint
@@ -20433,22 +20450,6 @@ t:1531495604
 c:645fa636bd83a4f53f10b1ae1e02631fd11fe149
 D:perl-sub-uplevel
 
-C:Q1yI+dzohnGNzFs3NrIfLIOOXO0Kc=
-P:dropbear-convert
-V:2019.78-r0
-A:x86
-S:81670
-I:192512
-T:dropbear dropbearconvert command
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-D:so:libc.musl-x86.so.1
-p:cmd:dropbearconvert
-
 C:Q1yYxcE9KSeMUJyImdPZpTpe+Xw+I=
 P:ruby-did_you_mean
 V:2.6.6-r2
@@ -24548,6 +24549,22 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core dhcp
 
+C:Q1ktVhOVFhlQFQQDXKghdxq08qyA4=
+P:dropbear-scp
+V:2019.78-r1
+A:x86
+S:14277
+I:45056
+T:dropbear scp support
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+D:!openssh-client so:libc.musl-x86.so.1
+p:cmd:scp
+
 C:Q1k7+9yq+mXqbhU5sLu6wy3GMUG5A=
 P:ipset
 V:7.4-r0
@@ -26080,21 +26097,6 @@ t:1573836819
 c:4998b609e9a4ad588bc3f7cc04b245b77cd93bd0
 D:so:libacl.so.1 so:libc.musl-x86.so.1 so:libpopt.so.0
 p:cmd:rsync
-
-C:Q131gb0IDmp7lfjPIq7qJe/beVoy0=
-P:dropbear-ssh
-V:2019.78-r0
-A:x86
-S:1267
-I:12288
-T:dropbear ssh command (compatibility symlink for dbclient)
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-D:dropbear-dbclient !openssh-client dropbear-dbclient=2019.78-r0
 
 C:Q1Qj/zUoRTjN7cqvQvfmzfqPg32uc=
 P:perl-mail-imapclient
@@ -33205,6 +33207,21 @@ c:a073b3140f146eab2108ca821f725cfd99fe84a0
 D:so:libc.musl-x86.so.1 so:libmariadb.so.3
 p:so:postfix-mysql.so=0
 
+C:Q1LU9qhozIGOnC+E3epnJfr2PJHfI=
+P:dropbear-ssh
+V:2019.78-r1
+A:x86
+S:1261
+I:12288
+T:dropbear ssh command (compatibility symlink for dbclient)
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+D:dropbear-dbclient !openssh-client dropbear-dbclient=2019.78-r1
+
 C:Q1vv0tYWHx/QaaiPy0aCNvAj6oLNU=
 P:supervisor
 V:4.1.0-r0
@@ -33235,6 +33252,21 @@ t:1572954401
 c:8cbd0c1356d18a6e07b87aa5f71a673acf602ab7
 D:cryptsetup-libs=2.2.2-r0 pkgconfig
 p:pc:libcryptsetup=2.2.2
+
+C:Q138q86ZBU7DrzsPJ4tfz2DctLz8s=
+P:dropbear-openrc
+V:2019.78-r1
+A:x86
+S:2061
+I:24576
+T:small SSH 2 client/server designed for small memory environments (OpenRC init scripts)
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+i:openrc dropbear=2019.78-r1
 
 C:Q1QHnDQ2PyhFqhTQy6XBo0VtM2FN8=
 P:libvpx-dev
@@ -33915,6 +33947,21 @@ t:1573835734
 c:2a8cc0b0f8d0d692654555b81e6ad8f4b92ed3cd
 D:so:libc.musl-x86.so.1
 p:so:libpcre.so.1=1.2.11 so:libpcreposix.so.0=0.0.6
+
+C:Q1KhfPWeo2sybg9M2eKe/SzxrecXk=
+P:dropbear-doc
+V:2019.78-r1
+A:x86
+S:8996
+I:40960
+T:small SSH 2 client/server designed for small memory environments (documentation)
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+i:docs dropbear=2019.78-r1
 
 C:Q1Da84zdF5AGduraHfHyIgEFIBimQ=
 P:openrc-bash-completion
@@ -37216,21 +37263,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1532867203
 c:1a217e7ba2ac96ad01d293806bc0307e3491c853
 i:docs consolekit2=1.2.1-r1
-
-C:Q1zeAPqwdbKlo11+gJlwEmCJIPQmc=
-P:dropbear-doc
-V:2019.78-r0
-A:x86
-S:9000
-I:40960
-T:small SSH 2 client/server designed for small memory environments (documentation)
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-i:docs dropbear=2019.78-r0
 
 C:Q19i0UHFJm8NMwJ5vcQKw7TmL8jpM=
 P:xmodmap-doc
@@ -43062,22 +43094,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:acf-core lua-sql-postgres wget postgresql-client lua-subprocess /bin/sh
 p:cmd:acf-weblog-update-schema
 
-C:Q1I9YzgrIBmjBCR11JqHtwGP1B8OE=
-P:dropbear-dbclient
-V:2019.78-r0
-A:x86
-S:122972
-I:274432
-T:dropbear dbclient command
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-D:so:libc.musl-x86.so.1 so:libz.so.1
-p:cmd:dbclient
-
 C:Q1NELx6NGT4T2yIY8wWU2I3rtLEBM=
 P:libjpeg-turbo-utils
 V:2.0.4-r0
@@ -44853,22 +44869,6 @@ t:1567697810
 c:782f1220824c0d1b52c1a3fc1aace27aea7ac08a
 D:perl so:libc.musl-x86.so.1
 p:perl-yaml-xs=0.80-r1
-
-C:Q1bE/JltQcRbkGnyIJZ4Jhna9enow=
-P:dropbear-scp
-V:2019.78-r0
-A:x86
-S:14283
-I:45056
-T:dropbear scp support
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-D:!openssh-client so:libc.musl-x86.so.1
-p:cmd:scp
 
 C:Q1gJtd4l6/tzBSsJwrWNCstUiuXxY=
 P:libgsf-lang
@@ -49438,22 +49438,6 @@ t:1573666244
 c:bd13ce2905ef5142082625f0d2a601ba5f0ba5bf
 D:so:libc.musl-x86.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6 so:libx265.so.179
 p:so:libheif.so.1=1.6.0
-
-C:Q1uKijaAkSjl8NKd5HZDlRUzmP5+s=
-P:dropbear
-V:2019.78-r0
-A:x86
-S:204205
-I:458752
-T:small SSH 2 client/server designed for small memory environments
-U:http://matt.ucc.asn.au/dropbear/dropbear.html
-L:MIT
-o:dropbear
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1555063018
-c:ee43ff043bbe380b1070603146e8da09b08b6116
-D:so:libc.musl-x86.so.1 so:libz.so.1
-p:cmd:dropbear cmd:dropbearkey
 
 C:Q17EOIO5+FMEwZM5Se2j3PcxltREU=
 P:gphoto2-doc
@@ -77564,6 +77548,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559228524
 c:3a9a90739057c3025b864e427ad7e0a11615041a
 i:docs libdc1394=2.2.6-r0
+
+C:Q12ZetTjo5A5+a6APxQqcmdRkPvwo=
+P:dropbear-dbclient
+V:2019.78-r1
+A:x86
+S:122951
+I:274432
+T:dropbear dbclient command
+U:http://matt.ucc.asn.au/dropbear/dropbear.html
+L:MIT
+o:dropbear
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592543931
+c:de9ffe497547df2da1542ea3ae029fce69296f3e
+D:so:libc.musl-x86.so.1 so:libz.so.1
+p:cmd:dbclient
 
 C:Q1K2Wiqlpqd/e45HM9d6wY2c+k9js=
 P:perl-http-daemon
