@@ -77,6 +77,22 @@ c:022f8251cdb0d371a112ad13e1c0d6b0163ab44b
 D:so:libQt5Core.so.5 so:libQt5Qml.so.5 so:libc.musl-x86_64.so.1 so:libstdc++.so.6
 p:so:libKF5ItemModels.so.5=5.70.0
 
+C:Q1yxxjv456ghqDq2N/KkmoYzs3LFg=
+P:pulseaudio-zeroconf
+V:13.0-r10
+A:x86_64
+S:54425
+I:204800
+T:Pulseaudio zeroconf support
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:avahi so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libintl.so.8 so:libprotocol-native.so so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:librtp.so
+p:so:libavahi-wrap.so=0 so:libraop.so=0 so:module-raop-discover.so=0 so:module-raop-sink.so=0 so:module-zeroconf-discover.so=0 so:module-zeroconf-publish.so=0
+
 C:Q1XFFjntMQr3jPaMR/+Yo+8ahn7rg=
 P:ucpp
 V:1.3.5-r0
@@ -2052,22 +2068,6 @@ t:1591548388
 c:77767b56bb3d272d3d77adaa8c8602ff57a6c21b
 D:librsvg=2.48.7-r0 pc:cairo pc:gdk-pixbuf-2.0 pc:gio-2.0 pc:glib-2.0 pkgconfig
 p:pc:librsvg-2.0=2.48.7
-
-C:Q1DmC8e+KbDVVWhUd+iSIMXnDyjzI=
-P:libpulse
-V:13.0-r9
-A:x86_64
-S:564993
-I:1478656
-T:Pulseaudio libraries
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libX11-xcb.so.1 so:libX11.so.6 so:libasyncns.so.0 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libltdl.so.7 so:liborc-0.4.so.0 so:libsndfile.so.1 so:libsoxr.so.0 so:libspeexdsp.so.1 so:libtdb.so.1 so:libxcb.so.1
-p:so:libpulse-simple.so.0=0.1.1 so:libpulse.so.0=0.21.1 so:libpulsecommon-13.0.so=0 so:libpulsecore-13.0.so=0 so:libpulsedsp.so=0
 
 C:Q171DD4KxifiBiUF+yUINZ9KSK/sY=
 P:akonadi-mime-dev
@@ -11818,22 +11818,6 @@ c:b273e32e4aaab6eb167524be39e8d636656b9ece
 D:sane so:libc.musl-x86_64.so.1
 p:cmd:umax_pp
 
-C:Q16Ms6mLDOqoaoCDp79PXjE5nuwvo=
-P:pulseaudio-bluez
-V:13.0-r9
-A:x86_64
-S:69192
-I:221184
-T:Pulseaudio bluetooth support
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libsbc.so.1
-p:so:libbluez5-util.so=0 so:module-bluetooth-discover.so=0 so:module-bluetooth-policy.so=0 so:module-bluez5-device.so=0 so:module-bluez5-discover.so=0
-
 C:Q12umF+PP9wOncreTZm26/YjfzJvg=
 P:kjsembed-doc
 V:5.70.0-r0
@@ -18319,22 +18303,6 @@ c:a3bdef0b8a07a73c0c80fa951bf2ff84910c1b3b
 D:so:libc.musl-x86_64.so.1
 p:cmd:glow
 
-C:Q1GGQ1sPAHxPNNM58elKUarg4f+hY=
-P:pulseaudio-openrc
-V:13.0-r9
-A:x86_64
-S:2754
-I:24576
-T:A featureful, general-purpose sound server (OpenRC init scripts)
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:alsa-utils-openrc
-i:openrc pulseaudio=13.0-r9
-
 C:Q1qCMkSGwvWQRKuLy9OJDa7w8Gy14=
 P:gnome-software-dbg
 V:3.36.1-r0
@@ -23162,6 +23130,22 @@ c:01b7945ebe0987af1314b50f250e3e1902883a46
 D:libusb-dev libraw1394-dev libdc1394=2.2.6-r0 pkgconfig
 p:pc:libdc1394-2=2.2.6
 
+C:Q13fI97WCj1BEnMg4puTOdoZh/pCg=
+P:pulseaudio-openrc
+V:13.0-r10
+A:x86_64
+S:2751
+I:24576
+T:A featureful, general-purpose sound server (OpenRC init scripts)
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:alsa-utils-openrc
+i:openrc pulseaudio=13.0-r10
+
 C:Q1ABQnZ6nlqIGa/2sHwmujtYeLs2w=
 P:perl-spiffy-doc
 V:0.46-r2
@@ -24535,6 +24519,23 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589797790
 c:417ca607e553906ff38597fa5ab188ab95cf82bb
 i:kbruch=20.04.1-r0 lang
+
+C:Q1hAEO/kcb6fLKF6UctOHqw6XCl+g=
+P:pulseaudio-bluez
+V:13.0-r10
+A:x86_64
+S:69193
+I:221184
+T:Pulseaudio bluetooth support
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libsbc.so.1
+p:so:libbluez5-util.so=0 so:module-bluetooth-discover.so=0 so:module-bluetooth-policy.so=0 so:module-bluez5-device.so=0 so:module-bluez5-discover.so=0
+i:pulseaudio bluez
 
 C:Q1hYinvhakOiNoQQBk3CLsVrbZ2aM=
 P:meld-lang
@@ -28757,22 +28758,6 @@ c:7d3e2769759e6572749df30fb85caaf27d9a98e3
 D:so:libX11.so.6 so:libXrandr.so.2 so:libatk-1.0.so.0 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libdconf.so.1 so:libecal-2.0.so.1 so:libedataserver-1.2.so.24 so:libelogind.so.0 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgdm.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgnome-menu-3.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libgweather-3.so.16 so:libical-glib.so.3 so:libintl.so.8 so:libpango-1.0.so.0 so:libpolkit-gobject-1.so.0 so:libwnck-3.so.0
 p:so:libgnome-panel.so.0=0.0.0 so:libpanel-applet.so.3=3.0.0 cmd:gnome-panel
 
-C:Q1wuqXZzxKqel3iOpJRyZmVxcAtbs=
-P:pulseaudio-equalizer
-V:13.0-r9
-A:x86_64
-S:33617
-I:122880
-T:Equalizer for pulseaudio
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:pulseaudio=13.0-r9 py3-qt5 py3-sip py3-dbus so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libfftw3f.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so
-p:so:module-equalizer-sink.so=0 cmd:qpaeq
-
 C:Q1xHsLi5KlxUkjfBAFbkgd55JzcqA=
 P:salt-syndic
 V:3000.3-r0
@@ -29528,6 +29513,22 @@ t:1569469764
 c:08167256c15857c321eb0c3a3ba715826e7c985e
 D:so:libc.musl-x86_64.so.1 so:libgnutls.so.30 so:libnl-3.so.200 so:libnl-genl-3.so.200
 p:cmd:nbd-client
+
+C:Q17m8Vl5ix7jeYfEpV2Unt3tFL6Bk=
+P:pulseaudio-utils
+V:13.0-r10
+A:x86_64
+S:54124
+I:184320
+T:Pulseaudio utilities
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libc.musl-x86_64.so.1 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libsndfile.so.1 so:libxcb.so.1
+p:cmd:pa-info cmd:pacat cmd:pacmd cmd:pactl cmd:padsp cmd:pamon cmd:paplay cmd:parec cmd:parecord cmd:pasuspender cmd:pax11publish
 
 C:Q1v8bTc0hs9LR3ZuShdQ/Mdthzi6I=
 P:outils-md5
@@ -33600,22 +33601,6 @@ t:1586495351
 c:92785286e9a6317ef70a626ad2b01d63e91f9aa2
 D:perl perl-module-runtime perl-sub-quote perl-role-tiny perl-devel-globaldestruction perl-class-method-modifiers
 
-C:Q1R8P3EXrJrgdSYYsH2r9GDcQ5btI=
-P:pulseaudio-zeroconf
-V:13.0-r9
-A:x86_64
-S:54429
-I:204800
-T:Pulseaudio zeroconf support
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:avahi so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libintl.so.8 so:libprotocol-native.so so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:librtp.so
-p:so:libavahi-wrap.so=0 so:libraop.so=0 so:module-raop-discover.so=0 so:module-raop-sink.so=0 so:module-zeroconf-discover.so=0 so:module-zeroconf-publish.so=0
-
 C:Q1SKMrbss3Fyk8X2h4GK75SuMOeJI=
 P:libkcddb
 V:20.04.1-r0
@@ -37326,6 +37311,22 @@ t:1586007223
 c:605616381dfa5301a86959e34bdde3d2ad188a7a
 i:docs perl-algorithm-diff=1.1903-r3
 
+C:Q1uupMsDWi76ogqtM+VDx2+9QUyHQ=
+P:libpulse
+V:13.0-r10
+A:x86_64
+S:564983
+I:1478656
+T:Pulseaudio libraries
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libX11-xcb.so.1 so:libX11.so.6 so:libasyncns.so.0 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libltdl.so.7 so:liborc-0.4.so.0 so:libsndfile.so.1 so:libsoxr.so.0 so:libspeexdsp.so.1 so:libtdb.so.1 so:libxcb.so.1
+p:so:libpulse-simple.so.0=0.1.1 so:libpulse.so.0=0.21.1 so:libpulsecommon-13.0.so=0 so:libpulsecore-13.0.so=0 so:libpulsedsp.so=0
+
 C:Q1O4R8RlX81gYOFextZpKqs4wDe7U=
 P:audacious-plugins-dbg
 V:4.0.2-r1
@@ -38035,6 +38036,22 @@ t:1592600436
 c:e65433cdaf16291b7685520908aed8511fb2e579
 D:zabbix !zabbix-pgsql !zabbix-mysql so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libsqlite3.so.0 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
 p:cmd:zabbix_proxy
+
+C:Q19UN3zgOIPARy9VLEbZUDzAUD5K8=
+P:pulseaudio-equalizer
+V:13.0-r10
+A:x86_64
+S:33606
+I:122880
+T:Equalizer for pulseaudio
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:pulseaudio=13.0-r10 py3-qt5 py3-sip py3-dbus so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libfftw3f.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so
+p:so:module-equalizer-sink.so=0 cmd:qpaeq
 
 C:Q1pgq1sQye/KAbf++CVVctRt9jzYE=
 P:rtrlib-doc
@@ -48620,21 +48637,6 @@ t:1589236595
 c:5ed98127feebcdc9ebff780baaa05b578733f4b0
 D:perl
 
-C:Q1szCvXRO/Q1+JfIB0GvMO+lI4pCM=
-P:pulseaudio-lang
-V:13.0-r9
-A:x86_64
-S:782527
-I:3182592
-T:Languages for package pulseaudio
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-i:pulseaudio=13.0-r9 lang
-
 C:Q1c+KWzxuif7wjramx7GtkslwOBuo=
 P:libxpresent
 V:1.0.0-r0
@@ -49834,6 +49836,21 @@ t:1588825835
 c:81505831fa60182eacf8fe1331bb07c2536f42dc
 D:python3 so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
 p:cmd:pwiz.py
+
+C:Q1M5ln6WBWuez496wqHHAMC/FBSBE=
+P:pulseaudio-bash-completion
+V:13.0-r10
+A:x86_64
+S:4206
+I:36864
+T:Bash completion for pulseaudio
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+i:pulseaudio=13.0-r10 bash-completion
 
 C:Q1xUE2xanRANEZ/m1a1wmCg2+beEc=
 P:xfce4-screenshooter
@@ -54713,22 +54730,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589031609
 c:022f8251cdb0d371a112ad13e1c0d6b0163ab44b
 D:qt5-qtdeclarative-dev solid-libs=5.70.0-r0
-
-C:Q1Jod78cYQz4rhnF3QeAykVW9uDBo=
-P:pulseaudio
-V:13.0-r9
-A:x86_64
-S:662637
-I:2785280
-T:A featureful, general-purpose sound server
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:/bin/sh so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libXtst.so.6 so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libdbus-1.so.3 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libltdl.so.7 so:liborc-0.4.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libspeexdsp.so.1 so:libudev.so.1 so:libxcb.so.1
-p:so:libcli.so=0 so:liboss-util.so=0 so:libprotocol-cli.so=0 so:libprotocol-http.so=0 so:libprotocol-native.so=0 so:libprotocol-simple.so=0 so:librtp.so=0 so:module-allow-passthrough.so=0 so:module-always-sink.so=0 so:module-always-source.so=0 so:module-augment-properties.so=0 so:module-card-restore.so=0 so:module-cli-protocol-tcp.so=0 so:module-cli-protocol-unix.so=0 so:module-cli.so=0 so:module-combine-sink.so=0 so:module-combine.so=0 so:module-console-kit.so=0 so:module-dbus-protocol.so=0 so:module-default-device-restore.so=0 so:module-detect.so=0 so:module-device-manager.so=0 so:module-device-restore.so=0 so:module-echo-cancel.so=0 so:module-filter-apply.so=0 so:module-filter-heuristics.so=0 so:module-gsettings.so=0 so:module-http-protocol-tcp.so=0 so:module-http-protocol-unix.so=0 so:module-intended-roles.so=0 so:module-ladspa-sink.so=0 so:module-loopback.so=0 so:module-match.so=0 so:module-mmkbd-evdev.so=0 so:module-native-protocol-fd.so=0 so:module-native-protocol-tcp.so=0 so:module-native-protocol-unix.so=0 so:module-null-sink.so=0 so:module-null-source.so=0 so:module-oss.so=0 so:module-pipe-sink.so=0 so:module-pipe-source.so=0 so:module-position-event-sounds.so=0 so:module-remap-sink.so=0 so:module-remap-source.so=0 so:module-rescue-streams.so=0 so:module-role-cork.so=0 so:module-role-ducking.so=0 so:module-rtp-recv.so=0 so:module-rtp-send.so=0 so:module-rygel-media-server.so=0 so:module-simple-protocol-tcp.so=0 so:module-simple-protocol-unix.so=0 so:module-sine-source.so=0 so:module-sine.so=0 so:module-stream-restore.so=0 so:module-suspend-on-idle.so=0 so:module-switch-on-connect.so=0 so:module-switch-on-port-available.so=0 so:module-tunnel-sink-new.so=0 so:module-tunnel-sink.so=0 so:module-tunnel-source-new.so=0 so:module-tunnel-source.so=0 so:module-udev-detect.so=0 so:module-virtual-sink.so=0 so:module-virtual-source.so=0 so:module-virtual-surround-sink.so=0 so:module-volume-restore.so=0 so:module-x11-bell.so=0 so:module-x11-cork-request.so=0 so:module-x11-publish.so=0 so:module-x11-xsmp.so=0 cmd:pulseaudio cmd:start-pulseaudio-x11
 
 C:Q1JyYEyqBdq3j9dsSqVz0ginP5Ol8=
 P:ceph-osd-daemon
@@ -60463,6 +60464,21 @@ t:1591783212
 c:f0047a0abb1736b5fd1c2cb4011708029a8609f8
 D:nextcloud
 
+C:Q1L86z3xCN5rmmFSkcumRXB5qVhXo=
+P:pulseaudio-doc
+V:13.0-r10
+A:x86_64
+S:27163
+I:81920
+T:A featureful, general-purpose sound server (documentation)
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+i:docs pulseaudio=13.0-r10
+
 C:Q1IFCh85M7no/Q5dPOtupvW6XunzI=
 P:perl-crypt-openssl-verifyx509
 V:0.10-r3
@@ -62609,21 +62625,6 @@ t:1579652582
 c:9eecd120a8c7196d6709b9993eff6d205ebc1e0e
 i:docs perl-xml-libxml-simple=1.01-r0
 
-C:Q1mzxG8SGdngGebQ3tpo1iS0KWGoA=
-P:pulseaudio-bash-completion
-V:13.0-r9
-A:x86_64
-S:4212
-I:36864
-T:Bash completion for pulseaudio
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-i:pulseaudio=13.0-r9 bash-completion
-
 C:Q1y5Nk4Ibhi04S4K7zuc08BOYSbw4=
 P:py3-opengl
 V:3.1.5-r0
@@ -63757,6 +63758,22 @@ t:1587535969
 c:b7f57ad857684038b064347ec978a7bfc8294ec8
 D:groff ruby ruby-json ruby-hpricot ruby-mustache ruby-rdiscount
 p:cmd:ronn
+
+C:Q1rDasBwsiyVuHzQaSNSfoJ6RT6gg=
+P:pulseaudio
+V:13.0-r10
+A:x86_64
+S:662644
+I:2785280
+T:A featureful, general-purpose sound server
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:/bin/sh so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libXtst.so.6 so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libdbus-1.so.3 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libltdl.so.7 so:liborc-0.4.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libspeexdsp.so.1 so:libudev.so.1 so:libxcb.so.1
+p:so:libcli.so=0 so:liboss-util.so=0 so:libprotocol-cli.so=0 so:libprotocol-http.so=0 so:libprotocol-native.so=0 so:libprotocol-simple.so=0 so:librtp.so=0 so:module-allow-passthrough.so=0 so:module-always-sink.so=0 so:module-always-source.so=0 so:module-augment-properties.so=0 so:module-card-restore.so=0 so:module-cli-protocol-tcp.so=0 so:module-cli-protocol-unix.so=0 so:module-cli.so=0 so:module-combine-sink.so=0 so:module-combine.so=0 so:module-console-kit.so=0 so:module-dbus-protocol.so=0 so:module-default-device-restore.so=0 so:module-detect.so=0 so:module-device-manager.so=0 so:module-device-restore.so=0 so:module-echo-cancel.so=0 so:module-filter-apply.so=0 so:module-filter-heuristics.so=0 so:module-gsettings.so=0 so:module-http-protocol-tcp.so=0 so:module-http-protocol-unix.so=0 so:module-intended-roles.so=0 so:module-ladspa-sink.so=0 so:module-loopback.so=0 so:module-match.so=0 so:module-mmkbd-evdev.so=0 so:module-native-protocol-fd.so=0 so:module-native-protocol-tcp.so=0 so:module-native-protocol-unix.so=0 so:module-null-sink.so=0 so:module-null-source.so=0 so:module-oss.so=0 so:module-pipe-sink.so=0 so:module-pipe-source.so=0 so:module-position-event-sounds.so=0 so:module-remap-sink.so=0 so:module-remap-source.so=0 so:module-rescue-streams.so=0 so:module-role-cork.so=0 so:module-role-ducking.so=0 so:module-rtp-recv.so=0 so:module-rtp-send.so=0 so:module-rygel-media-server.so=0 so:module-simple-protocol-tcp.so=0 so:module-simple-protocol-unix.so=0 so:module-sine-source.so=0 so:module-sine.so=0 so:module-stream-restore.so=0 so:module-suspend-on-idle.so=0 so:module-switch-on-connect.so=0 so:module-switch-on-port-available.so=0 so:module-tunnel-sink-new.so=0 so:module-tunnel-sink.so=0 so:module-tunnel-source-new.so=0 so:module-tunnel-source.so=0 so:module-udev-detect.so=0 so:module-virtual-sink.so=0 so:module-virtual-source.so=0 so:module-virtual-surround-sink.so=0 so:module-volume-restore.so=0 so:module-x11-bell.so=0 so:module-x11-cork-request.so=0 so:module-x11-publish.so=0 so:module-x11-xsmp.so=0 cmd:pulseaudio cmd:start-pulseaudio-x11
 
 C:Q1DfJfRfdBKcmEqM7+9BunYzgXmQc=
 P:suitesparse-dev
@@ -66658,6 +66675,22 @@ t:1580598585
 c:d2d8c7385b0582928d8ffa96eea86888c8511c25
 i:docs perl-sort-key=1.33-r5
 
+C:Q1zGz+/tljubb3mGDuUj4sYxkO4fg=
+P:libpulse-mainloop-glib
+V:13.0-r10
+A:x86_64
+S:7264
+I:32768
+T:Pulseaudio mainloop-glib library
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so
+p:so:libpulse-mainloop-glib.so.0=0.0.5
+
 C:Q1XeOykC2HPc7HKgy0bArnKeToTns=
 P:libchamplain-dev
 V:0.12.20-r2
@@ -67503,22 +67536,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589797790
 c:417ca607e553906ff38597fa5ab188ab95cf82bb
 i:akonadi-import-wizard=20.04.1-r0 lang
-
-C:Q1Ivav626OTveTcQWessGPyN3pHAo=
-P:pulseaudio-utils
-V:13.0-r9
-A:x86_64
-S:54133
-I:184320
-T:Pulseaudio utilities
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libc.musl-x86_64.so.1 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libsndfile.so.1 so:libxcb.so.1
-p:cmd:pa-info cmd:pacat cmd:pacmd cmd:pactl cmd:padsp cmd:pamon cmd:paplay cmd:parec cmd:parecord cmd:pasuspender cmd:pax11publish
 
 C:Q1kgWVrNDF8tpR2TyUgHj9aGGphLY=
 P:sn0int-doc
@@ -69106,6 +69123,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1586286978
 c:e79429933bb59ecd56072b8eaf757ab8d6697f0f
 i:docs ocaml-findlib=1.8.1-r0
+
+C:Q1Fkam0ul9eBJnIAXq3mRlMHGfOic=
+P:pulseaudio-zsh-completion
+V:13.0-r10
+A:x86_64
+S:7284
+I:53248
+T:Zsh completion for pulseaudio
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+i:pulseaudio=13.0-r10 zsh
 
 C:Q1OPj0Z2fNrSxGjY592aJbefPCf34=
 P:libreoffice-lang-kok
@@ -86653,6 +86685,23 @@ c:417ca607e553906ff38597fa5ab188ab95cf82bb
 D:so:libKEduVocDocument.so.5 so:libKF5ConfigCore.so.5 so:libKF5CoreAddons.so.5 so:libKF5Crash.so.5 so:libKF5Declarative.so.5 so:libKF5I18n.so.5 so:libKF5NewStuff.so.5 so:libKF5WidgetsAddons.so.5 so:libKF5XmlGui.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Qml.so.5 so:libQt5QuickWidgets.so.5 so:libQt5Widgets.so.5 so:libQt5Xml.so.5 so:libc.musl-x86_64.so.1 so:libstdc++.so.6
 p:cmd:khangman
 
+C:Q1rY8YpBvw28jwhiO2fm1wLa6bCzM=
+P:pulseaudio-alsa
+V:13.0-r10
+A:x86_64
+S:130031
+I:376832
+T:Pulseaudio alsa support
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libasound.so.2 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libudev.so.1
+p:so:libalsa-util.so=0 so:module-alsa-card.so=0 so:module-alsa-sink.so=0 so:module-alsa-source.so=0
+i:pulseaudio alsa-lib
+
 C:Q1XwVi4wH07L+bTtZapQ3kVPRPfs8=
 P:oxygen-icons
 V:5.70.0-r0
@@ -89498,23 +89547,6 @@ t:1575030109
 c:f1ee04773b81ec9ea05592d0e669cbb04d20cb38
 D:wpa_supplicant gawk dialog
 p:cmd:wifish
-
-C:Q1Jzbc9L/sOGb3ZtMbcveDses2+L4=
-P:pulseaudio-alsa
-V:13.0-r9
-A:x86_64
-S:130037
-I:376832
-T:Pulseaudio alsa support
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libasound.so.2 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libintl.so.8 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so so:libudev.so.1
-p:so:libalsa-util.so=0 so:module-alsa-card.so=0 so:module-alsa-sink.so=0 so:module-alsa-source.so=0
-i:pulseaudio alsa-lib
 
 C:Q1ZwxezQPdUct1TRcolfRpqC4uV1c=
 P:perl-starlet
@@ -92968,22 +93000,6 @@ t:1582770820
 c:6c33d05ade4b7842f3f3c990c1bcaa06d30b657a
 D:libmms=0.6.4-r1 pc:glib-2.0 pkgconfig
 p:pc:libmms=0.6.4
-
-C:Q1xSiEtS+gv9une/eHsEwkyUaYMBo=
-P:pulseaudio-dev
-V:13.0-r9
-A:x86_64
-S:86990
-I:540672
-T:A featureful, general-purpose sound server (development files)
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:libpulse-mainloop-glib=13.0-r9 libpulse=13.0-r9 pc:glib-2.0 pkgconfig
-p:pc:libpulse-mainloop-glib=13.0 pc:libpulse-simple=13.0 pc:libpulse=13.0
 
 C:Q1tWZVHK0aQUOxNutteWnnyCwYEMw=
 P:kamera-lang
@@ -96812,6 +96828,22 @@ t:1585344931
 c:9d41243a6f61e6d011ec2a131ead5c7831eceb76
 D:gsettings-desktop-schemas dbus:org.freedesktop.Secrets so:libc.musl-x86_64.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgudev-1.0.so.0 so:libgvfscommon.so so:libgvfsdaemon.so so:libintl.so.8 so:libmtp.so.9 so:libusb-1.0.so.0
 
+C:Q105PcK+gBDGTsMH9c56QqajXm2bI=
+P:pulseaudio-jack
+V:13.0-r10
+A:x86_64
+S:18179
+I:94208
+T:Pulseaudio jack support
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libjack.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so
+p:so:module-jack-sink.so=0 so:module-jack-source.so=0 so:module-jackdbus-detect.so=0
+
 C:Q1VuS9hU5WHl6+bBOBEUWXKyGT7gI=
 P:apenwarr-redo-doc
 V:0.42a-r0
@@ -96921,22 +96953,6 @@ t:1586304335
 c:507e268cbe33172e5947530d952de4121b946d97
 D:mate-common yelp-tools mate-desktop so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libatk-1.0.so.0 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libdconf.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libvte-2.91.so.0
 p:cmd:mate-terminal cmd:mate-terminal.wrapper
-
-C:Q1ihiyyjOGVrkFXOveXsSqpuOU0Fc=
-P:pulseaudio-jack
-V:13.0-r9
-A:x86_64
-S:18193
-I:94208
-T:Pulseaudio jack support
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libjack.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so so:libpulsecore-13.0.so
-p:so:module-jack-sink.so=0 so:module-jack-source.so=0 so:module-jackdbus-detect.so=0
 
 C:Q1OloWE3DZZpS5XaWS8aEDbYcoWQc=
 P:rancid-doc
@@ -107758,22 +107774,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:c44e1739d09485e6e56c3e8d179f02da33a0a7bf
 
-C:Q194wxO/8AhBRoNwIAOGlJjUqPPMY=
-P:libpulse-mainloop-glib
-V:13.0-r9
-A:x86_64
-S:7270
-I:32768
-T:Pulseaudio mainloop-glib library
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libpulse.so.0 so:libpulsecommon-13.0.so
-p:so:libpulse-mainloop-glib.so.0=0.0.5
-
 C:Q1FyCOBjwoCdIzv9VWiatNzjRBYMI=
 P:py3-pytest-benchmark
 V:3.2.3-r0
@@ -109576,21 +109576,6 @@ o:gdal
 m:Trevor R.H. Clarke <trevor@notcows.com>
 t:1590497633
 c:d23bb3d885f4f82b8957e66d233e029d1bdbd4ff
-
-C:Q1i4UDwSdhCOPQNiqv9unqI2AH9mg=
-P:pulseaudio-doc
-V:13.0-r9
-A:x86_64
-S:27168
-I:81920
-T:A featureful, general-purpose sound server (documentation)
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-i:docs pulseaudio=13.0-r9
 
 C:Q1rVYzwGSHL3DUAOPIW+tQM72F3tU=
 P:freerdp-libs
@@ -112254,21 +112239,6 @@ t:1587727907
 c:6a447d36f5f69569400b3c05fd4dea6d36b06912
 i:gtksourceview4=4.6.0-r1 lang
 
-C:Q19x50NNgLAug/YnaGqXOIqQ/7HCA=
-P:pulseaudio-zsh-completion
-V:13.0-r9
-A:x86_64
-S:7291
-I:53248
-T:Zsh completion for pulseaudio
-U:https://www.freedesktop.org/wiki/Software/PulseAudio/
-L:LGPL-2.1-or-later
-o:pulseaudio
-m:Leo <thinkabit.ukim@gmail.com>
-t:1588666422
-c:bae00e074001f63eefbf785a876607e65c9fbe4d
-i:pulseaudio=13.0-r9 zsh
-
 C:Q1eCjJg+X60pfqAQeGG+3BXIddAg4=
 P:geany-plugins-autoclose
 V:1.36-r2
@@ -113260,6 +113230,22 @@ m:Frédéric Guillot <fred@miniflux.net>
 t:1588346526
 c:a3bdef0b8a07a73c0c80fa951bf2ff84910c1b3b
 i:openrc miniflux=2.0.21-r1
+
+C:Q1RY3DCBhBPSleRlklqS+/AUkh1jU=
+P:pulseaudio-dev
+V:13.0-r10
+A:x86_64
+S:86992
+I:540672
+T:A featureful, general-purpose sound server (development files)
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+D:libpulse-mainloop-glib=13.0-r10 libpulse=13.0-r10 pc:glib-2.0 pkgconfig
+p:pc:libpulse-mainloop-glib=13.0 pc:libpulse-simple=13.0 pc:libpulse=13.0
 
 C:Q1twS0U+CeUylJxR4GqcT7eyLBq0k=
 P:isync
@@ -115377,6 +115363,21 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589797790
 c:417ca607e553906ff38597fa5ab188ab95cf82bb
 i:docs kdeconnect=20.04.1-r0
+
+C:Q1o4T1OtsEU+W7bDpez/rS9IWwWko=
+P:pulseaudio-lang
+V:13.0-r10
+A:x86_64
+S:782500
+I:3182592
+T:Languages for package pulseaudio
+U:https://www.freedesktop.org/wiki/Software/PulseAudio/
+L:LGPL-2.1-or-later
+o:pulseaudio
+m:Leo <thinkabit.ukim@gmail.com>
+t:1592653526
+c:275396b7150918c8468863a97585b2552f47cd70
+i:pulseaudio=13.0-r10 lang
 
 C:Q1xBiHp1ELUQ6LTZ+IUzI25RlZPZs=
 P:lxpolkit
