@@ -10093,6 +10093,22 @@ c:1ed623639efb63333ac8e12365dff1ab5f0d66cb
 D:so:libc.musl-x86.so.1
 p:so:libunistring.so.2=2.1.0
 
+C:Q1r2+CneykcaYnaxIjWTVuPJVcmE0=
+P:libjpeg-turbo
+V:2.0.4-r1
+A:x86
+S:358679
+I:1318912
+T:Accelerated baseline JPEG compression and decompression library
+U:https://libjpeg-turbo.org/
+L:BSD-3-Clause IJG Zlib
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929378
+c:a85da862ac46070bb8ddbff5fb4d4a89953d7551
+D:so:libc.musl-x86.so.1
+p:so:libjpeg.so.8=8.2.2 so:libturbojpeg.so.0=0.2.0
+
 C:Q1wV0vJeppqv1huGr9qn+R55aZ+9U=
 P:clamav-dev
 V:0.101.5-r0
@@ -11445,6 +11461,22 @@ t:1557063569
 c:5c2fc5ed2bba110486c11cc3ab20771756e4075a
 D:so:libc.musl-x86.so.1
 p:so:libdvdcss.so.2=2.2.0
+
+C:Q1y8s43zdZnSjuuww1j6wnAXG6eNs=
+P:libjpeg-turbo-utils
+V:2.0.4-r1
+A:x86
+S:85996
+I:233472
+T:Utilities for manipulating JPEG images
+U:https://libjpeg-turbo.org/
+L:BSD-3-Clause IJG Zlib
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929378
+c:a85da862ac46070bb8ddbff5fb4d4a89953d7551
+D:so:libc.musl-x86.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
+p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
 
 C:Q1X3J9/08djxXUO07TOgaux+5gQxo=
 P:perl-test-manifest-doc
@@ -13098,22 +13130,6 @@ t:1557223369
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libstdc++.so.6 so:libuuid.so.1
 p:cmd:task
-
-C:Q12nLhbdHtVkUF7FK6FK4s6KjQrZo=
-P:libjpeg-turbo-utils
-V:2.0.4-r0
-A:x86
-S:85964
-I:233472
-T:Utilities for manipulating JPEG images
-U:https://libjpeg-turbo.org/
-L:BSD-3-Clause IJG Zlib
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1578408952
-c:e852bf9467a5250a1d3eab5770c859c0c2878788
-D:so:libc.musl-x86.so.1 so:libjpeg.so.8 so:libturbojpeg.so.0
-p:cmd:cjpeg cmd:djpeg cmd:jpegtran cmd:rdjpgcom cmd:tjbench cmd:wrjpgcom
 
 C:Q1W8j+6LHuuT96OoBdInumMiYju+8=
 P:openldap-overlay-dynlist
@@ -15581,22 +15597,6 @@ t:1557062373
 c:f9d524ab725ac2060f20353cc7ffdb6fa61fd8db
 D:so:libc.musl-x86.so.1
 p:so:libjbig2dec.so.0=0.0.0 cmd:jbig2dec
-
-C:Q1yo5dGYd/mzg3ZT1TEYb2XwDdgVs=
-P:libjpeg-turbo-dev
-V:2.0.4-r0
-A:x86
-S:523566
-I:2064384
-T:Accelerated baseline JPEG compression and decompression library (development files)
-U:https://libjpeg-turbo.org/
-L:BSD-3-Clause IJG Zlib
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1578408952
-c:e852bf9467a5250a1d3eab5770c859c0c2878788
-D:libjpeg-turbo=2.0.4-r0 pkgconfig
-p:pc:libjpeg=2.0.4 pc:libturbojpeg=2.0.4
 
 C:Q1DqUXWb+oDT5PkU2pyXiHYW6Wn7E=
 P:sdl_mixer
@@ -22509,6 +22509,21 @@ t:1556991570
 c:81349743eed3e76a7fd09dd7dd4388a0d6f7ddd3
 i:docs perl-devel-checklib=1.13-r0
 
+C:Q1OS/rSHCjcQJrsBivljz8UL4Wz3E=
+P:libjpeg-turbo-doc
+V:2.0.4-r1
+A:x86
+S:126010
+I:417792
+T:Accelerated baseline JPEG compression and decompression library (documentation)
+U:https://libjpeg-turbo.org/
+L:BSD-3-Clause IJG Zlib
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929378
+c:a85da862ac46070bb8ddbff5fb4d4a89953d7551
+i:docs libjpeg-turbo=2.0.4-r1
+
 C:Q1Sma/QXJoWOLLNy8njVFscuaVVFA=
 P:openldap-back-relay
 V:2.4.48-r1
@@ -23555,6 +23570,21 @@ t:1568280884
 c:783f17a9ea9e07009f72100cd31f71dca8972f3d
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libc-client.so.1=1.0.0
+
+C:Q1gTJAwNQc3ZLks6mb2Powwc9fFIo=
+P:ngircd-openrc
+V:25-r1
+A:x86
+S:1707
+I:16384
+T:Next Generation IRC Daemon (OpenRC init scripts)
+U:https://ngircd.barton.de/
+L:GPL-2.0-or-later
+o:ngircd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929399
+c:b96a3dad09aded07b0c48ca36d3e8c4179d2b248
+i:openrc ngircd=25-r1
 
 C:Q10zR01fI4NwMk+rxOHI4L8bjspPE=
 P:rsyslog-doc
@@ -42445,21 +42475,6 @@ c:496c7d760f74189dee3917ee9190719146855446
 D:py2-flask py2-requests-oauthlib python2
 i:py-flask-oauthlib=0.9.5-r1 python2
 
-C:Q14Rxz4rHHh3D0DgzqY+YByQVIV+g=
-P:libjpeg-turbo-doc
-V:2.0.4-r0
-A:x86
-S:125953
-I:417792
-T:Accelerated baseline JPEG compression and decompression library (documentation)
-U:https://libjpeg-turbo.org/
-L:BSD-3-Clause IJG Zlib
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1578408952
-c:e852bf9467a5250a1d3eab5770c859c0c2878788
-i:docs libjpeg-turbo=2.0.4-r0
-
 C:Q10W4HCO0jvkI54nG9XX9gkatUJT4=
 P:byobu-doc
 V:5.129-r0
@@ -52435,22 +52450,6 @@ t:1557063515
 c:b6abc6d02e35fd54b9db18d863d34f32977db1b7
 D:/bin/sh so:libc.musl-x86.so.1 so:libpcap.so.1
 p:cmd:arp2ethers cmd:arpfetch cmd:arpsnmp cmd:arpwatch cmd:bihourly.sh cmd:massagevendor
-
-C:Q1JrEARM1UQesisV684fzcUlNFfGY=
-P:ngircd
-V:25-r0
-A:x86
-S:108374
-I:266240
-T:Next Generation IRC Daemon
-U:https://ngircd.barton.de/
-L:GPL-2.0-or-later
-o:ngircd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560248643
-c:b31da4c95868cd79cd9f6651f3fd128504fe2814
-D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libssl.so.1.1 so:libz.so.1
-p:cmd:ngircd
 
 C:Q11mMO7OK+SPUqdQ0lVjDuIPV31XA=
 P:perl-string-shellquote-doc
@@ -63276,21 +63275,6 @@ c:06fe05c65af5f0afffe1c231d82718d6cc9cb6d7
 D:so:libc.musl-x86.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libev.so.4 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:h2load cmd:nghttp cmd:nghttpd cmd:nghttpx
 
-C:Q1PZImqWhosqU5USvFtYBAOlGUi9Q=
-P:ngircd-openrc
-V:25-r0
-A:x86
-S:1711
-I:16384
-T:Next Generation IRC Daemon (OpenRC init scripts)
-U:https://ngircd.barton.de/
-L:GPL-2.0-or-later
-o:ngircd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560248642
-c:b31da4c95868cd79cd9f6651f3fd128504fe2814
-i:openrc ngircd=25-r0
-
 C:Q1n1Fp9lIvkQL6tGGwZwfKZiKz4M4=
 P:uwsgi-graylog2
 V:2.0.18-r1
@@ -64022,6 +64006,22 @@ o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580072391
 c:b8e0913221a8801e03e073be93e3b20c0bcb5781
+
+C:Q1G53CyEd4tTBSLkIWtCl4k/lK+5U=
+P:ngircd
+V:25-r1
+A:x86
+S:108437
+I:266240
+T:Next Generation IRC Daemon
+U:https://ngircd.barton.de/
+L:GPL-2.0-or-later
+o:ngircd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929399
+c:b96a3dad09aded07b0c48ca36d3e8c4179d2b248
+D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libssl.so.1.1 so:libz.so.1
+p:cmd:ngircd
 
 C:Q1/fV6QbXwLQHCjk0QNODMs9pjHTo=
 P:freeradius-pam
@@ -64874,6 +64874,22 @@ t:1557154146
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libaudit.so.1 so:libauparse.so.0 so:libc.musl-x86.so.1 so:libcap-ng.so.0
 p:cmd:audisp-remote cmd:audispd cmd:auditctl cmd:auditd cmd:augenrules cmd:aulast cmd:aulastlog cmd:aureport cmd:ausearch cmd:ausyscall cmd:autrace cmd:auvirt
+
+C:Q1vYeCKlvg61Kk6oLofFrU/LbZwd4=
+P:libjpeg-turbo-dev
+V:2.0.4-r1
+A:x86
+S:523549
+I:2064384
+T:Accelerated baseline JPEG compression and decompression library (development files)
+U:https://libjpeg-turbo.org/
+L:BSD-3-Clause IJG Zlib
+o:libjpeg-turbo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929378
+c:a85da862ac46070bb8ddbff5fb4d4a89953d7551
+D:libjpeg-turbo=2.0.4-r1 pkgconfig
+p:pc:libjpeg=2.0.4 pc:libturbojpeg=2.0.4
 
 C:Q1sQiqh6uOexRxUpLDkDLrHJeG2vI=
 P:libnfsidmap-ldap
@@ -73756,22 +73772,6 @@ t:1565683870
 c:3f7f1749c88d4b23d858b584d358fadd836429da
 i:docs pango=1.42.4-r2
 
-C:Q1gHZ+RJ082A+G2fPoQnEhVDKs80M=
-P:libjpeg-turbo
-V:2.0.4-r0
-A:x86
-S:358611
-I:1318912
-T:Accelerated baseline JPEG compression and decompression library
-U:https://libjpeg-turbo.org/
-L:BSD-3-Clause IJG Zlib
-o:libjpeg-turbo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1578408953
-c:e852bf9467a5250a1d3eab5770c859c0c2878788
-D:so:libc.musl-x86.so.1
-p:so:libjpeg.so.8=8.2.2 so:libturbojpeg.so.0=0.2.0
-
 C:Q1diF1qAE5+cLDNA+Uid0Wc/jJxZA=
 P:libc-dev
 V:0.7.1-r0
@@ -74495,21 +74495,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1570025975
 c:9ac7fe6ecd7a632dfc19dedfcc865c1d24cf5136
 i:openrc postfix=3.4.7-r0
-
-C:Q1fwWXOUcHSN9WGAdzXDs28UJHXKs=
-P:ngircd-doc
-V:25-r0
-A:x86
-S:122563
-I:397312
-T:Next Generation IRC Daemon (documentation)
-U:https://ngircd.barton.de/
-L:GPL-2.0-or-later
-o:ngircd
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1560248642
-c:b31da4c95868cd79cd9f6651f3fd128504fe2814
-i:docs ngircd=25-r0
 
 C:Q18R2LdtDYLP34+sCKNN2W3YadlLk=
 P:zfs-libs
@@ -76311,6 +76296,21 @@ t:1556994087
 c:988b66d67e0000eb1ebddcabf7a1b4facce6536d
 D:python2
 i:py-itsdangerous=0.24-r4 python2
+
+C:Q1nhRqSTttMb4KvbjFSLoQsJv2ryk=
+P:ngircd-doc
+V:25-r1
+A:x86
+S:122635
+I:397312
+T:Next Generation IRC Daemon (documentation)
+U:https://ngircd.barton.de/
+L:GPL-2.0-or-later
+o:ngircd
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1592929399
+c:b96a3dad09aded07b0c48ca36d3e8c4179d2b248
+i:docs ngircd=25-r1
 
 C:Q1tupf/oYgff5hIDcGKd3XmiZy6JA=
 P:cpufrequtils-dev
