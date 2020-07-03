@@ -108175,6 +108175,148 @@
       "provides": [
         "so:libdav1d.so.4=4.0.1"
       ]
+    },
+    "vala-language-server": {
+      "origin": "vala-language-server",
+      "versions": {
+        "0.48-r0": 1593771929
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgee-0.8.so.2",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libjson-glib-1.0.so.0",
+        "so:libjsonrpc-glib-1.0.so.1",
+        "so:libvala-0.48.so.0"
+      ],
+      "provides": [
+        "cmd:vala-language-server"
+      ]
+    },
+    "hplip-libs": {
+      "origin": "hplip",
+      "versions": {
+        "3.20.5-r0": 1593770503
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libnetsnmp.so.35",
+        "so:libusb-1.0.so.0"
+      ],
+      "provides": [
+        "so:libhpdiscovery.so.0=0.0.1",
+        "so:libhpip.so.0=0.0.1",
+        "so:libhpipp.so.0=0.0.1",
+        "so:libhpmud.so.0=0.0.6"
+      ]
+    },
+    "getting-things-gnome-lang": {
+      "origin": "getting-things-gnome",
+      "versions": {
+        "20200521-r0": 1593770362
+      },
+      "dependencies": [
+        "python3",
+        "py3-xdg",
+        "py3-dbus",
+        "py3-gobject3",
+        "py3-liblarch"
+      ]
+    },
+    "getting-things-gnome": {
+      "origin": "getting-things-gnome",
+      "versions": {
+        "20200521-r0": 1593770362
+      },
+      "dependencies": [
+        "python3",
+        "py3-xdg",
+        "py3-dbus",
+        "py3-gobject3",
+        "py3-liblarch"
+      ],
+      "provides": [
+        "cmd:gtg"
+      ]
+    },
+    "hplip-doc": {
+      "origin": "hplip",
+      "versions": {
+        "3.20.5-r0": 1593770503
+      }
+    },
+    "getting-things-gnome-doc": {
+      "origin": "getting-things-gnome",
+      "versions": {
+        "20200521-r0": 1593770362
+      }
+    },
+    "sane-backend-hpaio": {
+      "origin": "hplip",
+      "versions": {
+        "3.20.5-r0": 1593770503
+      },
+      "dependencies": [
+        "sane",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcups.so.2",
+        "so:libhpdiscovery.so.0",
+        "so:libhpip.so.0",
+        "so:libhpmud.so.0"
+      ],
+      "provides": [
+        "hplip-sane"
+      ]
+    },
+    "py3-liblarch": {
+      "origin": "py3-liblarch",
+      "versions": {
+        "3.0-r0": 1593770362
+      },
+      "dependencies": [
+        "python3",
+        "py3-gobject3",
+        "gtk+3.0"
+      ]
+    },
+    "hplip": {
+      "origin": "hplip",
+      "versions": {
+        "3.20.5-r0": 1593770503
+      },
+      "dependencies": [
+        "hplip-libs=3.20.5-r0",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcups.so.2",
+        "so:libgcc_s.so.1",
+        "so:libhpdiscovery.so.0",
+        "so:libhpipp.so.0",
+        "so:libhpmud.so.0",
+        "so:libjpeg.so.8",
+        "so:libsane.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ]
+    },
+    "gede": {
+      "origin": "gede",
+      "versions": {
+        "2.16.2-r0": 1593698120
+      },
+      "dependencies": [
+        "ctags",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:gede"
+      ]
     }
   },
   "provide": {
@@ -118182,6 +118324,22 @@
       "libdav1d.so.4": {
         "package": "libdav1d",
         "version": "4.0.1"
+      },
+      "libhpdiscovery.so.0": {
+        "package": "hplip-libs",
+        "version": "0.0.1"
+      },
+      "libhpip.so.0": {
+        "package": "hplip-libs",
+        "version": "0.0.1"
+      },
+      "libhpipp.so.0": {
+        "package": "hplip-libs",
+        "version": "0.0.1"
+      },
+      "libhpmud.so.0": {
+        "package": "hplip-libs",
+        "version": "0.0.6"
       }
     },
     "package": {
@@ -119724,6 +119882,10 @@
       "go-bootstrap": {
         "package": "go",
         "version": "1.13.11-r0"
+      },
+      "hplip-sane": {
+        "package": "sane-backend-hpaio",
+        "version": 0
       }
     }
   }
