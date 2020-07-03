@@ -2751,22 +2751,6 @@ t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armhf.so.1 so:libz.so.1
 
-C:Q1U1HwIHnZDB2A5/XIqKQeiBDwguU=
-P:nss-tools
-V:3.53.1-r0
-A:armhf
-S:424274
-I:962560
-T:Tools for the Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1593072806
-c:0ddce5a52e81427c9bb61f4fd23eec1127eae6eb
-D:so:libc.musl-armhf.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
-p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
-
 C:Q19AojDWjbwz3kEDS5TUtQJzhVTas=
 P:libotr-tools
 V:4.1.1-r1
@@ -23477,6 +23461,20 @@ c:1eb911922a7e818a6f314a68c0561bba008e6efd
 D:lua5.1 so:libc.musl-armhf.so.1 so:libpq.so.5
 i:lua-dbi=0.7.2-r0 lua5.1
 
+C:Q1uRpti1PXogsU9b9X4M4XpdFU/T4=
+P:nss-static
+V:3.54-r0
+A:armhf
+S:1518139
+I:5238784
+T:Mozilla Network Security Services (static library)
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1593773492
+c:e13763057c1486efadc174c28290721a5bd35a2b
+
 C:Q1znEcL+Y2GeiBLmuo6vrLwINmcwE=
 P:xf86-input-keyboard
 V:1.9.0-r1
@@ -24183,6 +24181,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590427742
 c:db4d4d0ffbd4200cb04671197763118625bf25c8
 p:linux-firmware-any
+
+C:Q1IJ1EqkMt5qiUGayZ4tfAaX1X39Q=
+P:nss-tools
+V:3.54-r0
+A:armhf
+S:426611
+I:974848
+T:Tools for the Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1593773492
+c:e13763057c1486efadc174c28290721a5bd35a2b
+D:so:libc.musl-armhf.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
+p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
 
 C:Q1ksCvg5i6Dy53aXJudmav8cWM3Jg=
 P:perl-encode-hanextra-doc
@@ -29246,6 +29260,22 @@ c:a8a1b91446db94e5eafa5ebe8b532fa0025c26c4
 D:so:libboost_serialization.so.1.72.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libboost_wserialization.so.1.72.0=1.72.0
 
+C:Q1bzNuLuBAMIahpfp8V0lXbC32/54=
+P:nss-dev
+V:3.54-r0
+A:armhf
+S:281563
+I:1519616
+T:Development files for nss
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1593773492
+c:e13763057c1486efadc174c28290721a5bd35a2b
+D:nss nspr-dev pc:nspr>=3.54 pkgconfig
+p:pc:mozilla-nss=3.54 pc:nss-softokn=3.54 pc:nss-util=3.54 pc:nss=3.54 cmd:nss-config
+
 C:Q1Aalls9nMOUtg+XmnyuGDSGeB1Hk=
 P:opus-doc
 V:1.3.1-r0
@@ -32104,22 +32134,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl
 p:cmd:net-server
-
-C:Q1SgdcZ5LO7ObcoDdCFHL83AL+A1w=
-P:nss
-V:3.53.1-r0
-A:armhf
-S:1234514
-I:2793472
-T:Mozilla Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1593072806
-c:0ddce5a52e81427c9bb61f4fd23eec1127eae6eb
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
-p:so:libfreebl3.so=53 so:libnss3.so=53 so:libnssckbi-testlib.so=53 so:libnssckbi.so=53 so:libnssdbm3.so=53 so:libnsssysinit.so=53 so:libnssutil3.so=53 so:libpkcs11testmodule.so=53 so:libsmime3.so=53 so:libsoftokn3.so=53 so:libssl3.so=53
 
 C:Q1q6ZQtAOub9qc6eit44Tf9hwfipM=
 P:zlib
@@ -35506,22 +35520,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1582877773
 c:9701e80de499ce0a7daf2fbd33aa9e51e334afa9
 i:openrc mosquitto=1.6.9-r0
-
-C:Q122HZ6gzrNw67JSrY8IWUdPFRg/s=
-P:nss-dev
-V:3.53.1-r0
-A:armhf
-S:280825
-I:1515520
-T:Development files for nss
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1593072806
-c:0ddce5a52e81427c9bb61f4fd23eec1127eae6eb
-D:nss nspr-dev pc:nspr>=3.53.1 pkgconfig
-p:pc:mozilla-nss=3.53.1 pc:nss-softokn=3.53.1 pc:nss-util=3.53.1 pc:nss=3.53.1 cmd:nss-config
 
 C:Q1vyOLQuyNiOqLgHCUWsZeHFBr57A=
 P:perl-extutils-installpaths-doc
@@ -49544,20 +49542,6 @@ t:1560356144
 c:9624b5e104928dca4a1017a51b8e233bbe430ad9
 D:libexecinfo=1.1-r1
 
-C:Q1WTUQoMpJmkVjRcoue5vKf2rJrj4=
-P:nss-static
-V:3.53.1-r0
-A:armhf
-S:1525359
-I:5267456
-T:Mozilla Network Security Services (static library)
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1593072806
-c:0ddce5a52e81427c9bb61f4fd23eec1127eae6eb
-
 C:Q1Wl/NLH4wRJaJcf2C1vKnWeeQ+Uk=
 P:polkit
 V:0.116-r1
@@ -55333,6 +55317,22 @@ t:1586878719
 c:165cc9f46d1c8c38547c0cc72953811da82b7462
 D:so:libc.musl-armhf.so.1
 p:so:libhttp_parser.so.2.9=2.9.4
+
+C:Q1ddMN1yp4raNt58pErM1i7WwbkmQ=
+P:nss
+V:3.54-r0
+A:armhf
+S:1227686
+I:2768896
+T:Mozilla Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1593773492
+c:e13763057c1486efadc174c28290721a5bd35a2b
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
+p:so:libfreebl3.so=54 so:libnss3.so=54 so:libnssckbi-testlib.so=54 so:libnssckbi.so=54 so:libnssdbm3.so=54 so:libnsssysinit.so=54 so:libnssutil3.so=54 so:libpkcs11testmodule.so=54 so:libsmime3.so=54 so:libsoftokn3.so=54 so:libssl3.so=54
 
 C:Q1eILWWrpxf1mgWinn1Lh68GAwvVI=
 P:libedit-dev
