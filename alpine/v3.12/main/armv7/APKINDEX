@@ -1225,22 +1225,6 @@ t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armv7.so.1
 
-C:Q15dnGDxBOdqin4uDCyaaNcvK30hs=
-P:xvfb
-V:1.20.8-r2
-A:armv7
-S:629407
-I:1015808
-T:Virtual Framebuffer 'fake' X server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xvfb
-
 C:Q1WFG9i2hV7DTPrrUT4jcmrgTaoKc=
 P:lua-evdev
 V:2.2.1-r1
@@ -3231,6 +3215,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-scope-guard=0.21-r1
+
+C:Q1AM8VrKk0iaPaH2SPf6UIbeXR6jU=
+P:xorg-server-xephyr
+V:1.20.8-r3
+A:armv7
+S:752306
+I:1224704
+T:kdrive based X Server which targets a window on a host X Server as its framebuffer
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:cmd:Xephyr
 
 C:Q1cWXPmwCIKF0DejRcNa4io54mESA=
 P:gvpe
@@ -7237,6 +7237,22 @@ t:1588264926
 c:d86ee7be6b67b04ddd4a7c5eb1a7e2b8b2c09b86
 i:docs softhsm=2.6.1-r0
 
+C:Q1+QAg88Qtrcd/kQBJVbFjU2y8M3w=
+P:xorg-server-dev
+V:1.20.8-r3
+A:armv7
+S:267820
+I:1523712
+T:X.Org X servers (development files)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
+p:pc:xorg-server=1.20.8
+
 C:Q1a3G+sEjZy9LY+DfAnIJUCJ521oc=
 P:lvm2-doc
 V:2.02.186-r1
@@ -10253,6 +10269,22 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armv7.so.1 so:liblua.so.5
 p:cmd:tolua++
 
+C:Q1vOdTI9DTeQ1s0SoZRJxs4Jn0j+8=
+P:xorg-server
+V:1.20.8-r3
+A:armv7
+S:1944583
+I:3366912
+T:X.Org X servers
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
+p:cmd:Xorg cmd:cvt cmd:gtf
+
 C:Q1zo7alECU6ulBV/RVIKPIbyfOzHg=
 P:tig-doc
 V:2.5.1-r0
@@ -12763,22 +12795,6 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:so:libatf-c++.so.2 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:liblutok.so.3 so:libsqlite3.so.0 so:libstdc++.so.6
 p:cmd:kyua
-
-C:Q1JclQn36JFA9rYtVQrJ9yMaI2ny8=
-P:xorg-server-xephyr
-V:1.20.8-r2
-A:armv7
-S:752240
-I:1224704
-T:kdrive based X Server which targets a window on a host X Server as its framebuffer
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:cmd:Xephyr
 
 C:Q1uRtx8Yv0TgXNDDIR+ioeHZNO4hg=
 P:skalibs-static
@@ -26646,22 +26662,6 @@ c:54c636ae3e80c6069d0e222944f5717b6fbe5d7d
 D:python3
 p:py-six=1.15.0-r0
 
-C:Q1MDv7Uy8n7nybPCApoJqzI0KwYyY=
-P:xorg-server-xwayland
-V:1.20.8-r2
-A:armv7
-S:715875
-I:1167360
-T:run X clients under wayland
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
-p:cmd:Xwayland
-
 C:Q1daY5EPg9zvkvgbwZXJ1xwf8l3nw=
 P:py3-simplejson
 V:3.17.0-r1
@@ -34412,21 +34412,6 @@ t:1555064847
 c:1245056475ad59a71c91494d1e1820f323e22911
 i:docs libsndfile=1.0.28-r8
 
-C:Q1O1INxUrMxCImWCL2Qnq2YJbmCbo=
-P:xorg-server-dbg
-V:1.20.8-r2
-A:armv7
-S:39465262
-I:92213248
-T:X.Org X servers (debug symbols)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
-
 C:Q1LFBmCyO2QFKx5Pv+bstE18R7MCs=
 P:lua-lyaml
 V:6.2.5-r0
@@ -37780,6 +37765,21 @@ c:42be0f5a4cea8f590edd5eecafad05e4ef4eaff2
 D:so:libc.musl-armv7.so.1 so:libgcrypt.so.20 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:so:libsecret-1.so.0=0.0.0 cmd:secret-tool
 
+C:Q1AjXWScVitjVrE3L1Sd/bPjvlWn8=
+P:xorg-server-doc
+V:1.20.8-r3
+A:armv7
+S:54875
+I:122880
+T:X.Org X servers (documentation)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+i:docs xorg-server=1.20.8-r3
+
 C:Q11RbRuritLpIA/37ZyG1rN9GWic8=
 P:lm-sensors-detect
 V:3.6.0-r0
@@ -39536,6 +39536,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1582124650
 c:40ecb4d9422fa1239e67388fe9ad532b730fa87d
 i:docs avahi=0.8-r0
+
+C:Q1izlwt9C6YvqtNqI3jDLnDmJ4xbE=
+P:xorg-server-dbg
+V:1.20.8-r3
+A:armv7
+S:39467811
+I:92213248
+T:X.Org X servers (debug symbols)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
 
 C:Q1rak2nW6l1nmVDdPuR0AQ0kOzJxQ=
 P:perl-role-tiny-doc
@@ -53257,22 +53272,6 @@ t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armv7.so.1
 
-C:Q184U3m8Q+g9Bh3Fg6GJV7BWIyQtI=
-P:xorg-server-xnest
-V:1.20.8-r2
-A:armv7
-S:521637
-I:815104
-T:A nested Xorg server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xnest
-
 C:Q1Y69Kwfy3Qbj2jfzRUAffvn5whr4=
 P:libnice-gstreamer
 V:0.1.17-r0
@@ -54643,22 +54642,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585664483
 c:e1dea19b74c3241013d0826cb9c8b35bcbb01f62
 i:docs unrar=5.9.2-r0
-
-C:Q1wLBmLD4q37DIPTAwvkEDGVtqySQ=
-P:xorg-server
-V:1.20.8-r2
-A:armv7
-S:1944578
-I:3366912
-T:X.Org X servers
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
-p:cmd:Xorg cmd:cvt cmd:gtf
 
 C:Q1pLdF/KCabuMiYxbVy1I38mS7ZOc=
 P:acpi-doc
@@ -59530,6 +59513,22 @@ t:1580616990
 c:063e2a8eb25dbe115154bf23df90a691111402bd
 i:docs inotify-tools=3.20.2.2-r0
 
+C:Q1X4KG/oackcMFjGWtLKFHEGGGFqI=
+P:xorg-server-xnest
+V:1.20.8-r3
+A:armv7
+S:521655
+I:815104
+T:A nested Xorg server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xnest
+
 C:Q1wId69eZuapalfIx3e8CTs1trnR4=
 P:perl-class-singleton-doc
 V:1.5-r1
@@ -61180,21 +61179,6 @@ t:1582145155
 c:e1f078c2d3b9b8fb85c0d393630f2b04400fac52
 D:alsa-utils bash
 p:cmd:alsaconf
-
-C:Q1Spn/7phYbYbiRJMSdC+GPp9wcDg=
-P:xorg-server-doc
-V:1.20.8-r2
-A:armv7
-S:54880
-I:122880
-T:X.Org X servers (documentation)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-i:docs xorg-server=1.20.8-r2
 
 C:Q1wHk+qx/Cdlj+5+6TQ6m4R9W4MBs=
 P:libcap-ng-doc
@@ -68340,6 +68324,22 @@ c:609d32c81c34bcc4e9df7f6848ead286fe2af0d3
 D:gdb so:libc.musl-armv7.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libpython3.8.so.1.0 so:libreadline.so.8 so:libstdc++.so.6 so:libz.so.1
 p:cmd:gdb-multiarch
 
+C:Q1ao4ATm7eBnX043/YkP+yONoCPN0=
+P:xvfb
+V:1.20.8-r3
+A:armv7
+S:629420
+I:1015808
+T:Virtual Framebuffer 'fake' X server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xvfb
+
 C:Q17ByABl24gGFcrK8kdsiEv9MW+VA=
 P:mosh-doc
 V:1.3.2-r14
@@ -70114,6 +70114,22 @@ t:1541609172
 c:a5bbe2b19caadf886ae754aa2369ef02d0937f81
 i:docs icecast=2.4.4-r1
 
+C:Q1V3FQaQ24Z08hVXXzXFDX7VzwI/Q=
+P:xorg-server-xwayland
+V:1.20.8-r3
+A:armv7
+S:715887
+I:1167360
+T:run X clients under wayland
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1596228209
+c:c106e3c92285573771ab176f5aed1fa0787bf36e
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
+p:cmd:Xwayland
+
 C:Q1OBvh1c2Ng2LWmf07b4tZ/2UYhSw=
 P:tiff-dev
 V:4.1.0-r0
@@ -70252,22 +70268,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:lua5.3 so:libc.musl-armv7.so.1
 i:lua-evdev=2.2.1-r1 lua5.3
-
-C:Q1Pi/SCfxEbVqk2W/LzI2wezJMOTk=
-P:xorg-server-dev
-V:1.20.8-r2
-A:armv7
-S:267803
-I:1523712
-T:X.Org X servers (development files)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588015817
-c:660321b4443624b5a078274e3278b72d5876f45b
-D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
-p:pc:xorg-server=1.20.8
 
 C:Q1fhdVi5X0RV75l9RXb8vOVpSJARU=
 P:mtools
