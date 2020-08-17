@@ -152,6 +152,22 @@ t:1590699382
 c:7882cc57cadd8c1a91d299fc5dbdd057ff7bdfa5
 D:gettext-dev linux-pam=1.3.1-r4
 
+C:Q1BRP3bPdooLWqz0Fm5gEOwY+GQs0=
+P:postgresql-bdr-dev
+V:9.4.14_p1-r8
+A:s390x
+S:1318996
+I:6733824
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (development files)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:readline-dev openssl-dev zlib-dev libxml2-dev pkgconfig postgresql-bdr-libs=9.4.14_p1-r8 so:libc.musl-s390x.so.1 so:libpq.so.5
+p:postgresql-dev=9.4.14_p1 pc:libecpg=9.4.14 pc:libecpg_compat=9.4.14 pc:libpgtypes=9.4.14 pc:libpq=9.4.14 cmd:ecpg cmd:pg_config
+
 C:Q1XYwyIbGC+Kf1iEGK9CtwLmoefQ8=
 P:perl-devel-stacktrace-ashtml
 V:0.15-r1
@@ -550,6 +566,22 @@ t:1590155461
 c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
 D:so:libc.musl-s390x.so.1 so:libgnutls.so.30 so:liblmdb.so.0
 p:so:libdnssec.so.7=7.0.0 so:libknot.so.10=10.0.0 so:libzscanner.so.3=3.0.0
+
+C:Q1G388G7UNeKkBytar/asKBniK6iM=
+P:postgresql-bdr-libs
+V:9.4.14_p1-r8
+A:s390x
+S:69651
+I:188416
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (libraries)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:so:libc.musl-s390x.so.1 so:libpq.so.5
+p:postgresql-libs=9.4.14_p1 so:libecpg.so.6=6.6 so:libecpg_compat.so.3=3.6 so:libpgtypes.so.3=3.5
 
 C:Q1Wky7YNtSkWGHXoIIkLNYULi1i0E=
 P:perl-exception-class
@@ -2489,6 +2521,21 @@ t:1588342288
 c:9ad68c72ca2240730a17cb53425eb642c8b92b41
 D:lua5.1 so:libc.musl-s390x.so.1 so:libpq.so.5
 i:lua-sql-postgres=2.5.0-r1 lua5.1
+
+C:Q15xynLYGT32sQG59Hqgs3w5dlZZU=
+P:openrc-zsh-completion
+V:0.42.1-r11
+A:s390x
+S:2801
+I:36864
+T:Zsh completions for openrc
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:openrc=0.42.1-r11 zsh
 
 C:Q1JJOY06S+okxoAy3EnDuBW3eOcYY=
 P:lua-sec-doc
@@ -5097,22 +5144,6 @@ t:1587420476
 c:e964b427700d05033702d989be968bdd17d391ad
 i:git=2.26.2-r0 bash-completion
 
-C:Q1lhcZGQcCQch29muk4/DOWAjQM/8=
-P:postgresql-bdr-libs
-V:9.4.14_p1-r7
-A:s390x
-S:69654
-I:188416
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (libraries)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:so:libc.musl-s390x.so.1 so:libpq.so.5
-p:postgresql-libs=9.4.14_p1 so:libecpg.so.6=6.6 so:libecpg_compat.so.3=3.6 so:libpgtypes.so.3=3.5
-
 C:Q17nm9Ry8oN989aoq6GpAR+j1+hHQ=
 P:cups-doc
 V:2.3.3-r0
@@ -6079,22 +6110,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-s390x.so.1
 i:lua5.1 lua-posixtz=0.5-r1
-
-C:Q1kq0CSuL46FTGdP3H5BpFFqlevlg=
-P:clamav-daemon
-V:0.102.4-r0
-A:s390x
-S:265530
-I:843776
-T:ClamAV daemon scanner
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam /bin/sh so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libz.so.1
-p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1DWwyp3s86cdxvrSsoRUxkP6AuAE=
 P:libwebp-doc
@@ -7085,22 +7100,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs fprobe=1.1-r8
 
-C:Q10B7K9eD92FOGbR9sAtP84jPATkQ=
-P:clamav-daemon-openrc
-V:0.102.4-r0
-A:s390x
-S:2488
-I:24576
-T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam-openrc
-i:clamav-daemon=0.102.4-r0 openrc
-
 C:Q1np/eC85vieSn3ajOQ5DHMoLEJBg=
 P:squid-lang-et
 V:4.11-r0
@@ -8022,22 +8021,6 @@ t:1572015635
 c:ea01bb226907d1841c222a4d45832c3c36378115
 i:aspell=0.60.8-r0 lang
 
-C:Q1a+l6ZPDn60+omGI4W2t3zAV6Zq8=
-P:openrc
-V:0.42.1-r10
-A:s390x
-S:353945
-I:2482176
-T:OpenRC manages the services, startup and shutdown of a host
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-D:/bin/sh so:libc.musl-s390x.so.1
-p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc cmd:openrc-init cmd:openrc-run cmd:openrc-shutdown cmd:rc cmd:rc-service cmd:rc-sstat cmd:rc-status cmd:rc-update cmd:runscript cmd:service cmd:start-stop-daemon cmd:supervise-daemon
-
 C:Q1+dLy5Fn1DcAnLD8K0eNgRA/cBGY=
 P:py3-django-sorl-thumbnail
 V:12.5.0-r1
@@ -8392,6 +8375,22 @@ t:1595933952
 c:1b1d9aed72f7aacb92529cd86472da2de9dee79c
 i:docs hylafaxplus=7.0.2-r2
 
+C:Q1/ymgGeYfMe7zCH83Snn9eJig88c=
+P:openrc-dev
+V:0.42.1-r11
+A:s390x
+S:41707
+I:188416
+T:OpenRC manages the services, startup and shutdown of a host (development files)
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+D:openrc=0.42.1-r11 pkgconfig
+p:pc:einfo=0.42.1 pc:openrc=0.42.1
+
 C:Q15+O8ks+kT5Cbmy3TEkGM6f5uhwg=
 P:djbdns
 V:1.05-r47
@@ -8621,21 +8620,6 @@ t:1587747212
 c:a8a1b91446db94e5eafa5ebe8b532fa0025c26c4
 D:so:libboost_context.so.1.72.0 so:libc.musl-s390x.so.1 so:libgcc_s.so.1
 p:so:libboost_fiber.so.1.72.0=1.72.0
-
-C:Q1rbW3UhXxMSMM3QJBml816/TRZrA=
-P:postgresql-bdr-openrc
-V:9.4.14_p1-r7
-A:s390x
-S:4745
-I:32768
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (OpenRC init scripts)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-i:openrc postgresql-bdr=9.4.14_p1-r7
 
 C:Q1N5Du9yG7rGVCIlHcu3YVDKK4V18=
 P:iperf3-openrc
@@ -9143,6 +9127,22 @@ t:1579551244
 c:136b008eb01b1855a28e4a9344d3afd8ff08c4e4
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-s390x.so.1 so:libgdbm.so.4 so:libgdk-3.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8
 p:so:libavahi-ui-gtk3.so.0=0.1.4
+
+C:Q1oCp3gGZNzOY+4RWpsYu/4uQQpMY=
+P:clamav-milter
+V:0.102.4-r1
+A:s390x
+S:86993
+I:266240
+T:ClamAV milter
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2
+p:cmd:clamav-milter
 
 C:Q1y9JggeoXv1gnHqZZg2MnDdp19Xs=
 P:perl-class-tiny-doc
@@ -10892,21 +10892,6 @@ t:1532867559
 c:0522906bfa4e70b64ba52f3761c4a11610bac902
 i:docs xf86-input-synaptics=1.9.1-r1
 
-C:Q1Qg/5F5UssEqv+XmK5LWBwaFubu0=
-P:freshclam-openrc
-V:0.102.4-r0
-A:s390x
-S:2146
-I:24576
-T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-i:freshclam=0.102.4-r0 openrc
-
 C:Q1WjB0iu5WNIqq8uXSrCIA+DjQ2tA=
 P:perl-fcgi-procmanager-doc
 V:0.28-r1
@@ -11397,6 +11382,21 @@ o:py-bluez
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1583935862
 c:81a73dad70151069829836b67cf0b2d808f9437f
+
+C:Q1TDfSfIIoFG82isyGgvU9TUCm2cU=
+P:postgresql-bdr-openrc
+V:9.4.14_p1-r8
+A:s390x
+S:4737
+I:32768
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (OpenRC init scripts)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+i:openrc postgresql-bdr=9.4.14_p1-r8
 
 C:Q1MwZ3EBxjKhT6+yYHWOmBd5q7GLc=
 P:gobject-introspection-doc
@@ -14080,22 +14080,6 @@ t:1574839756
 c:2c843fd6dacfbad67368e3332b6024fae41b897c
 i:docs texinfo=6.7-r0
 
-C:Q1BZUg97qDtLRjDLYYS75jU+5d9e8=
-P:freshclam
-V:0.102.4-r0
-A:s390x
-S:49339
-I:204800
-T:Auto-updater for the Clam Antivirus scanner data-files
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:/bin/sh so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libfreshclam.so.2
-p:cmd:freshclam
-
 C:Q1XOxF5a3pLPaZNWcrzoTbl4pMPHA=
 P:ca-certificates
 V:20191127-r4
@@ -14780,22 +14764,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-crypt-eksblowfish=0.009-r7
-
-C:Q1wV/GwWFo1aRHoG0CGh8ZTBmoyuA=
-P:openrc-dev
-V:0.42.1-r10
-A:s390x
-S:41711
-I:188416
-T:OpenRC manages the services, startup and shutdown of a host (development files)
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-D:openrc=0.42.1-r10 pkgconfig
-p:pc:einfo=0.42.1 pc:openrc=0.42.1
 
 C:Q1/djCnedAuTV6yf5TJnAcHzQlHsE=
 P:pango
@@ -15501,22 +15469,6 @@ c:c8d5292fcc124b3cde16a4eb5c94748dfe97b378
 D:lua5.1
 i:lua-unit=3.3-r0 lua5.1
 
-C:Q1vwkGdilw3wCtAxY/3TpoaeXLtJU=
-P:clamav-libs
-V:0.102.4-r0
-A:s390x
-S:809466
-I:2174976
-T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.0
-
 C:Q1yylIb3cUFEAgpPL6sGmZ5+4gyoY=
 P:acf-freeradius3
 V:0.3.1-r0
@@ -15960,21 +15912,6 @@ c:8bb5586fea347052fe0debde4c2ba06fbf3e61ba
 D:argon2-libs=20190702-r1 pkgconfig
 p:pc:libargon2=20190702
 
-C:Q1RfgddSkjWuaz0M7YedpQbv/DG7U=
-P:clamav-doc
-V:0.102.4-r0
-A:s390x
-S:33552
-I:86016
-T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-i:docs clamav=0.102.4-r0
-
 C:Q1akUcgyh9LZhl2uMIlOFOmRpiQLg=
 P:elfutils-doc
 V:0.179-r0
@@ -16020,22 +15957,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1566811784
 c:ff8eee72bf28ee9b641d67fa4c88fb832c96dc3b
 D:perl-xml-parser perl-html-parser perl-datetime-format-mail perl-datetime-format-w3cdtf perl-datetime
-
-C:Q1Sjpq28fuBVAhOUDcsuNTWPmUX4s=
-P:postgresql-bdr-client
-V:9.4.14_p1-r7
-A:s390x
-S:595056
-I:1695744
-T:PostgreSQL Client Utilities
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq so:libc.musl-s390x.so.1 so:libpq.so.5 so:libreadline.so.8 so:libssl.so.1.1 so:libz.so.1
-p:postgresql-client=9.4.14_p1 cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1DCq5maGE8sBVCzNzYyHwT7CTYQ4=
 P:libcap-ng
@@ -16447,22 +16368,6 @@ o:autoconf2.13
 t:1557056514
 c:f68e00a1a508947c0ecc51fbae2367d657c8110a
 i:docs autoconf2.13=2.13-r1
-
-C:Q1WHJHmSyTTDsXGw0oZ0zp+h/UBHY=
-P:postgresql-bdr-contrib
-V:9.4.14_p1-r7
-A:s390x
-S:600449
-I:2633728
-T:Extension modules distributed with PostgreSQL
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
-p:postgresql-contrib=9.4.14_p1 cmd:oid2name cmd:pg_archivecleanup cmd:pg_standby cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_xlogdump cmd:pgbench cmd:vacuumlo
 
 C:Q11obDtRSafnwg7+lktXLrl7iLzBg=
 P:pcre
@@ -17503,6 +17408,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580171340
 c:9d0dff6ef0d9558896b5d3b35e0e88190a04b9eb
 D:perl so:libc.musl-s390x.so.1
+
+C:Q1F99mb8rlO7WudiHWlCRNJpuiFLA=
+P:clamav-daemon-openrc
+V:0.102.4-r1
+A:s390x
+S:2495
+I:24576
+T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam-openrc
+i:clamav-daemon=0.102.4-r1 openrc
 
 C:Q1WSt3+63oIabQpFYLdOE+k92gMD0=
 P:libdnet-dev
@@ -19665,6 +19586,22 @@ c:1a1cbf4ee2c744a9b31f9c97f6eb1b28b7424065
 D:musl-obstack=1.1-r1 pkgconfig
 p:pc:musl-obstack=1.1
 
+C:Q1eUAkAo19Z7x+lKnOkUBwdvLqZkU=
+P:postgresql-bdr
+V:9.4.14_p1-r8
+A:s390x
+S:5016383
+I:13590528
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1
+p:postgresql=9.4.14_p1 cmd:createlang cmd:droplang cmd:initdb cmd:pg_controldata cmd:pg_ctl cmd:pg_receivexlog cmd:pg_resetxlog cmd:postgres cmd:postmaster
+
 C:Q1twepTwK6Uv1917pfAspDVSsO+6w=
 P:libunwind-static
 V:1.4.0-r0
@@ -20478,22 +20415,6 @@ t:1573571075
 c:a42217d3c29c40cd979f3d6f0e5a6aa7fba8860c
 D:font-sony-misc so:libc.musl-s390x.so.1 so:librrd.so.8
 p:cmd:rrdtool
-
-C:Q1ePaJXOloFbmgXrMKwaBMd43OVIQ=
-P:clamav
-V:0.102.4-r0
-A:s390x
-S:90177
-I:282624
-T:An anti-virus toolkit for UNIX eis-ng backport
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:clamav-scanner clamav-daemon so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libfts.so.0
-p:cmd:clamonacc
 
 C:Q1F74RrJ7ORokD2zsIZPq5ByBIUCc=
 P:freeradius-redis
@@ -21858,6 +21779,22 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-class-returnvalue=0.55-r2
 
+C:Q1Taiz4eDsFQezb7tKuePNvxgjDE8=
+P:clamav-scanner
+V:0.102.4-r1
+A:s390x
+S:154091
+I:503808
+T:ClamAV command-line scanner and utils
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:clambc cmd:clamscan cmd:sigtool
+
 C:Q1JNYy0dzOYxkcT2pHnQPH4EyehOk=
 P:inotify-tools
 V:3.20.2.2-r0
@@ -22301,6 +22238,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580250445
 c:238b6bccbab3b844079fa109d5cee096b81756d3
 i:docs bacula=9.4.4-r3
+
+C:Q19mfuDr9Cj9xgWR+1z6HHcNtJCf4=
+P:freshclam
+V:0.102.4-r1
+A:s390x
+S:49345
+I:204800
+T:Auto-updater for the Clam Antivirus scanner data-files
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:/bin/sh so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libfreshclam.so.2
+p:cmd:freshclam
 
 C:Q15xIp98UC1Q/bXXhC6S9tsTmTECM=
 P:gcc-doc
@@ -23302,6 +23255,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1577475852
 c:39affe011f6364608a4527601183b038a2bd4f12
 i:docs perl-test-taint=1.08-r2
+
+C:Q1fM3Glllk/UbKr6WOc/0BqGnW/XM=
+P:openrc
+V:0.42.1-r11
+A:s390x
+S:353930
+I:2482176
+T:OpenRC manages the services, startup and shutdown of a host
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+D:/bin/sh so:libc.musl-s390x.so.1
+p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc cmd:openrc-init cmd:openrc-run cmd:openrc-shutdown cmd:rc cmd:rc-service cmd:rc-sstat cmd:rc-status cmd:rc-update cmd:runscript cmd:service cmd:start-stop-daemon cmd:supervise-daemon
 
 C:Q18Qi4vivnmYrblvyJiGadA6BVkfQ=
 P:xorg-cf-files-doc
@@ -24922,6 +24891,22 @@ c:e0c690d5e38a10e8c98c9584cf6b2e207ddba5a9
 D:pango-tools=1.44.7-r2 pango=1.44.7-r2 pc:cairo>=1.12.10 pc:fontconfig>=2.11.91 pc:freetype2 pc:fribidi>=0.19.7 pc:glib-2.0>=2.59.2 pc:gobject-2.0>=2.59.2 pc:harfbuzz>=2.0.0 pc:xft>=2.0.0 pc:xrender pkgconfig
 p:pc:pango=1.44.7 pc:pangocairo=1.44.7 pc:pangoft2=1.44.7 pc:pangoxft=1.44.7
 
+C:Q1j8k7zhVPjUyaru6/5iWyazhquQQ=
+P:postgresql-bdr-contrib
+V:9.4.14_p1-r8
+A:s390x
+S:600480
+I:2633728
+T:Extension modules distributed with PostgreSQL
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
+p:postgresql-contrib=9.4.14_p1 cmd:oid2name cmd:pg_archivecleanup cmd:pg_standby cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_xlogdump cmd:pgbench cmd:vacuumlo
+
 C:Q1p/mpuKaPST7mrExGjkHD8y4mueM=
 P:perl-crypt-rijndael-doc
 V:1.14-r1
@@ -25123,22 +25108,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559227711
 c:6b69e5f877de225f66bb01d12f1c4f3bf261afe2
 i:docs mkfontscale=1.2.1-r1
-
-C:Q1a3Q3ElM7DqkPCRIdcRr/eHhH4Fg=
-P:clamav-milter
-V:0.102.4-r0
-A:s390x
-S:86991
-I:266240
-T:ClamAV milter
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2
-p:cmd:clamav-milter
 
 C:Q1690orCxBxJrK6MbFkN+JG2RBo8A=
 P:libmilter
@@ -26966,22 +26935,6 @@ t:1580230624
 c:4f52d1ac038ca18df1ed78ff6ae06d43d7498d00
 i:docs pciutils=3.6.4-r0
 
-C:Q1vlYj6lbufP3KTYlvTs1nO+ZaWMg=
-P:clamav-libunrar
-V:0.102.4-r0
-A:s390x
-S:117034
-I:270336
-T:ClamAV unrar libraries
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
-
 C:Q1xcf1d/qHFEBoO1/2ZXOoy2myH0k=
 P:byacc
 V:20200330-r0
@@ -28202,6 +28155,21 @@ t:1597049649
 c:878f3c2dacaa0996519ac17512337541e5f6a88f
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
 
+C:Q1aRs38VutWEQZjTevpdZ/ar6oXpI=
+P:freshclam-openrc
+V:0.102.4-r1
+A:s390x
+S:2155
+I:24576
+T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+i:freshclam=0.102.4-r1 openrc
+
 C:Q10PTTG1fPLfgpGuzBst1mILOOAng=
 P:s6-networking-static
 V:2.3.1.2-r0
@@ -28541,6 +28509,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1585035423
 c:b064700c572a24960940de0e584a8bbbae22db22
 D:ulogd=2.0.7-r6 so:libc.musl-s390x.so.1 so:libsqlite3.so.0
+
+C:Q1nNLShzqqnvWXlb75fmjdWXQTtoY=
+P:clamav-dev
+V:0.102.4-r1
+A:s390x
+S:18281
+I:110592
+T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:openssl-dev clamav-libs=0.102.4-r1 clamav-libunrar=0.102.4-r1 pkgconfig
+p:pc:libclamav=0.102.4 cmd:clamav-config
 
 C:Q1TA6LwXxnHjd/GSlpRUIjZYSxlmM=
 P:lighttpd-dbg
@@ -32190,22 +32174,6 @@ t:1583770574
 c:6d1af38a7aad6d576b9bb31d9d23824def16ee93
 i:docs perl-parse-yapp=1.21-r0
 
-C:Q1HHzumt74BzZP5FuNTPNajfi4xTE=
-P:clamav-scanner
-V:0.102.4-r0
-A:s390x
-S:154091
-I:503808
-T:ClamAV command-line scanner and utils
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:clambc cmd:clamscan cmd:sigtool
-
 C:Q1bzT/kjEC3deOctuBkGRHFBUXs0E=
 P:stfl
 V:0.24-r2
@@ -34174,6 +34142,22 @@ t:1561999320
 c:3745dd28af99646a740eef08867a0094d1f6cb5b
 i:docs rtpproxy=2.1.0-r0
 
+C:Q19zJ66jXER+Yt2BhJC5MG3JyG5Wo=
+P:postgresql-bdr-client
+V:9.4.14_p1-r8
+A:s390x
+S:595106
+I:1695744
+T:PostgreSQL Client Utilities
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq so:libc.musl-s390x.so.1 so:libpq.so.5 so:libreadline.so.8 so:libssl.so.1.1 so:libz.so.1
+p:postgresql-client=9.4.14_p1 cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
+
 C:Q1H9wqv3DnQ9q8IiCnVmhRCpt4a2c=
 P:rtmpdump-dev
 V:2.4_git20190330-r0
@@ -35267,6 +35251,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:so:libc.musl-s390x.so.1
+
+C:Q1cwdt2hch7mHcxhZnQ61r2wj6T98=
+P:clamav-doc
+V:0.102.4-r1
+A:s390x
+S:33552
+I:86016
+T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+i:docs clamav=0.102.4-r1
 
 C:Q1Ob1dcvdUtVQTSL5TRYwnyp46pq4=
 P:amavis
@@ -44601,21 +44600,6 @@ c:ac4b5da9e124b16b2eefeec749577688f3d5d7c9
 D:so:libc.musl-s390x.so.1
 p:so:libepoxy.so.0=0.0.0
 
-C:Q18vr6nykPSZTA+qomWuZ8wjX3IQY=
-P:openrc-zsh-completion
-V:0.42.1-r10
-A:s390x
-S:2808
-I:36864
-T:Zsh completions for openrc
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:openrc=0.42.1-r10 zsh
-
 C:Q1W4Vl5p4+AEWMMfKbsIfcvvN5kuw=
 P:perl-test-nowarnings
 V:1.04-r2
@@ -48779,22 +48763,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-file-which=1.23-r1
 
-C:Q1DaN7uUQq3/tApGrtlryqfBeNV/s=
-P:clamav-dev
-V:0.102.4-r0
-A:s390x
-S:18287
-I:110592
-T:An anti-virus toolkit for UNIX eis-ng backport (development files)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:openssl-dev clamav-libs=0.102.4-r0 clamav-libunrar=0.102.4-r0 pkgconfig
-p:pc:libclamav=0.102.4 cmd:clamav-config
-
 C:Q13tMnbG9UJLuloR+YcwkNCM1rYAM=
 P:sqlite
 V:3.32.1-r0
@@ -49284,6 +49252,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1589836800
 c:ffac0a78e29551f4a75a037096d75b744a439df2
 i:docs mosh=1.3.2-r14
+
+C:Q1qgHhNYoBJSkdRDMqj8akg2e8xEY=
+P:clamav-libs
+V:0.102.4-r1
+A:s390x
+S:809463
+I:2174976
+T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.0
 
 C:Q1z5VIG/mwvT36M3sYZn6A7j3C7Nc=
 P:binutils
@@ -52138,6 +52122,22 @@ c:7795a7c6a9b5f649d6d8647f2273a6e0b98a8d6f
 D:perl so:libc.musl-s390x.so.1
 p:cmd:combinediff cmd:dehtmldiff cmd:editdiff cmd:espdiff cmd:filterdiff cmd:fixcvsdiff cmd:flipdiff cmd:grepdiff cmd:interdiff cmd:lsdiff cmd:recountdiff cmd:rediff cmd:splitdiff cmd:unwrapdiff
 
+C:Q16ZwKqMOWEveDR8GuXLwjVW4cD3I=
+P:clamav
+V:0.102.4-r1
+A:s390x
+S:90180
+I:282624
+T:An anti-virus toolkit for UNIX eis-ng backport
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:clamav-scanner clamav-daemon so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libfts.so.0
+p:cmd:clamonacc
+
 C:Q1w+P0N7sFOztL73A5spdJLI+C6QY=
 P:libmaxminddb-dev
 V:1.4.2-r1
@@ -54104,21 +54104,6 @@ t:1584856740
 c:341f7e39077d504e53bae0dccdc1ed5514115478
 D:perl
 p:cmd:aclocal cmd:aclocal-1.16 cmd:automake cmd:automake-1.16
-
-C:Q1zhRGHJvLl0UfUAJe3VIoU8HHupQ=
-P:openrc-doc
-V:0.42.1-r10
-A:s390x
-S:68200
-I:233472
-T:OpenRC manages the services, startup and shutdown of a host (documentation)
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:docs openrc=0.42.1-r10
 
 C:Q1T7ngzfxpfSa+lJXTnKVPMWaDnZk=
 P:rtpproxy-debug
@@ -57511,22 +57496,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:apache2 samba samba-winbind so:libc.musl-s390x.so.1
 
-C:Q1hjIBLheB4+Ctwi2jUakJvlcn8xg=
-P:postgresql-bdr-dev
-V:9.4.14_p1-r7
-A:s390x
-S:1318989
-I:6733824
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (development files)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:readline-dev openssl-dev zlib-dev libxml2-dev pkgconfig postgresql-bdr-libs=9.4.14_p1-r7 so:libc.musl-s390x.so.1 so:libpq.so.5
-p:postgresql-dev=9.4.14_p1 pc:libecpg=9.4.14 pc:libecpg_compat=9.4.14 pc:libpgtypes=9.4.14 pc:libpq=9.4.14 cmd:ecpg cmd:pg_config
-
 C:Q1YhdpmFa5r/EJomMvdU/Au9n+JbA=
 P:kamailio-ims
 V:5.3.4-r0
@@ -57647,6 +57616,22 @@ o:libconfig
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559283739
 c:943de8c0a9e6a3457265f3150d86a8f6e16f28cb
+
+C:Q1jeq514yB+g7cOt4ndCbvTKoAt4o=
+P:clamav-libunrar
+V:0.102.4-r1
+A:s390x
+S:117035
+I:270336
+T:ClamAV unrar libraries
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
 
 C:Q1Rb1tHNmciU/VchEXPcs/mc7noeo=
 P:keyutils-libs
@@ -58171,6 +58156,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:djbdns-common /bin/sh so:libc.musl-s390x.so.1
 p:cmd:dnscache cmd:dnscache-conf
 
+C:Q1UmVATT1HSBdxxlY7O13hiG/p36s=
+P:openrc-bash-completion
+V:0.42.1-r11
+A:s390x
+S:3783
+I:40960
+T:Bash completions for openrc
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:openrc=0.42.1-r11 bash-completion
+
 C:Q1rxkXZBtMcQhV/l5VncrFL7QeayA=
 P:linux-firmware-amd-ucode
 V:20200519-r0
@@ -58294,22 +58294,6 @@ t:1582305142
 c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
 D:shared-mime-info
 i:gdk-pixbuf=2.40.0-r2 lang
-
-C:Q1FB6yIDcU1SQdzxPMr+leOuaLJC8=
-P:postgresql-bdr
-V:9.4.14_p1-r7
-A:s390x
-S:5016275
-I:13590528
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1
-p:postgresql=9.4.14_p1 cmd:createlang cmd:droplang cmd:initdb cmd:pg_controldata cmd:pg_ctl cmd:pg_receivexlog cmd:pg_resetxlog cmd:postgres cmd:postmaster
 
 C:Q1HfInR9WSWMVAdim4wmaNclqUhqY=
 P:perl-plack-doc
@@ -60601,6 +60585,22 @@ t:1550653166
 c:104de42e838e77bb5e0cec959f07ddc476880897
 D:so:libICE.so.6 so:libc.musl-s390x.so.1 so:libuuid.so.1
 p:so:libSM.so.6=6.0.1
+
+C:Q1wzmQlOPlR20ey4rAgeNIDsHT8Lc=
+P:clamav-daemon
+V:0.102.4-r1
+A:s390x
+S:265536
+I:843776
+T:ClamAV daemon scanner
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam /bin/sh so:libc.musl-s390x.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libz.so.1
+p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1ksr27oECPs6d35XT0GVwFmgJqZM=
 P:knot-dev
@@ -65416,6 +65416,21 @@ c:847f69d918bc30fa090135efc6c4923ac9b6ff65
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
 p:so:libnetsnmp.so.35=35.0.0
 
+C:Q1MUwqH8U3e27VTunHthPrLo4Y6+g=
+P:clamav-db
+V:0.102.4-r1
+A:s390x
+S:1364
+I:40960
+T:ClamAV dummy package for compatibility
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam
+
 C:Q123+OzZeEa7+tkXez/EVrfeI8Ygc=
 P:perl-encode-dev
 V:3.06-r0
@@ -65948,6 +65963,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1590771625
 c:6dcab66ca3123b954e67ce2151df4bb08f4de6bf-dirty
 D:kamailio so:libc.musl-s390x.so.1 so:libsrdb1.so.1 so:libxml2.so.2
+
+C:Q14biKbfSnJHEZ9RxzH2d6+W1luY0=
+P:openrc-doc
+V:0.42.1-r11
+A:s390x
+S:68200
+I:233472
+T:OpenRC manages the services, startup and shutdown of a host (documentation)
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:docs openrc=0.42.1-r11
 
 C:Q1IKFqCTZPMaPef0Lk/b1r+zR6t9c=
 P:perl-class-method-modifiers-doc
@@ -67025,21 +67055,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl so:libc.musl-s390x.so.1 so:libdb-5.3.so
 
-C:Q1lC9G0y0ZQrJ3MDhvnEzZLxTomEY=
-P:clamav-db
-V:0.102.4-r0
-A:s390x
-S:1366
-I:40960
-T:ClamAV dummy package for compatibility
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam
-
 C:Q1weciy0G6VbK+zaMyE+efywseIbs=
 P:pgpool-openrc
 V:4.1.2-r0
@@ -67572,21 +67587,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1549615254
 c:60eb89d6a116718372f0c795c86b6abde053db18
 i:docs perl-class-accessor=0.51-r0
-
-C:Q18kVG3Ema1k1shQKj4ouicnLGQKg=
-P:openrc-bash-completion
-V:0.42.1-r10
-A:s390x
-S:3784
-I:40960
-T:Bash completions for openrc
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:openrc=0.42.1-r10 bash-completion
 
 C:Q1e8udDImRdsCS6Q3Spau4rLwooeQ=
 P:perl-term-readkey
