@@ -28,6 +28,22 @@ t:1589508629
 c:175ff6dd5565feede2bfa918c82b06a5efb532d0
 D:perl perl-dbi so:libc.musl-x86.so.1 so:libpq.so.5
 
+C:Q11+tto9/d6Nk5nnyPL50NhEDQfWI=
+P:libvirt
+V:6.6.0-r1
+A:x86
+S:1505140
+I:6221824
+T:A virtualization API for several hypervisor and container systems
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:lvm2 /bin/sh so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libparted.so.2 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
+p:cmd:virtinterfaced cmd:virtlockd cmd:virtlogd cmd:virtlxcd cmd:virtnetworkd cmd:virtnodedevd cmd:virtnwfilterd cmd:virtproxyd cmd:virtqemud cmd:virtsecretd cmd:virtstoraged cmd:virtvboxd
+
 C:Q1GK66O8nnBlzVXztc+lpbwsiFkcM=
 P:rsyslog-pmsnare
 V:8.2004.0-r0
@@ -1413,22 +1429,6 @@ t:1551214433
 c:15244dd3e928e6eec11634fc17c7e2183727e7fb
 i:docs xf86-video-tdfx=1.5.0-r0
 
-C:Q1S+rlhGkGcVjFKbBmSLpTWYykJes=
-P:clamav-daemon
-V:0.102.4-r0
-A:x86
-S:254586
-I:716800
-T:ClamAV daemon scanner
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam /bin/sh so:libc.musl-x86.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libz.so.1
-p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
-
 C:Q1C2iUdbljYgTcV5ohrjQE7or1E9s=
 P:dmraid-static
 V:1.0.0_rc16-r0
@@ -2171,6 +2171,21 @@ t:1581809674
 c:60fc43f1dcefd6c509456b9dc58e0497a82aa247
 i:docs mg=20200215-r0
 
+C:Q1eTlF4SQsTpe1Z8ApkHzBmKkH3qc=
+P:dovecot-gssapi
+V:2.3.11.3-r1
+A:x86
+S:8525
+I:40960
+T:GSSAPI auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libgssapi.so.3 so:libkrb5.so.26
+
 C:Q1rsf/LBl8rbVsNG+GX605xZOBgs0=
 P:arpon-openrc
 V:3.0-r3
@@ -2615,22 +2630,6 @@ c:e0c690d5e38a10e8c98c9584cf6b2e207ddba5a9
 D:/bin/sh so:libX11.so.6 so:libXft.so.2 so:libXrender.so.1 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libfribidi.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libharfbuzz.so.0
 p:so:libpango-1.0.so.0=0.4400.7 so:libpangocairo-1.0.so.0=0.4400.7 so:libpangoft2-1.0.so.0=0.4400.7 so:libpangoxft-1.0.so.0=0.4400.7
 
-C:Q1j8obQcbl1yXheKZbEV/fZf/ZEz0=
-P:libvirt-lang
-V:6.5.0-r0
-A:x86
-S:4473891
-I:18010112
-T:Languages for package libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:lvm2
-i:libvirt=6.5.0-r0 lang
-
 C:Q1v/sVNjLpWwMwWFaOFZYAAfGFp/I=
 P:sysfsutils-static
 V:2.1.0-r9
@@ -2768,21 +2767,6 @@ t:1579373086
 c:9c8655126ec1834fd1d217825e8be208dc8e3cd6
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libwebsockets.so.15
 p:cmd:libwebsockets-test-client cmd:libwebsockets-test-lejp cmd:libwebsockets-test-server cmd:libwebsockets-test-server-extpoll
-
-C:Q1LY2JitfyQOs2GECkF7ThaMeFisc=
-P:glib-doc
-V:2.64.4-r0
-A:x86
-S:43216
-I:102400
-T:Common C routines used by Gtk+ and other libs (documentation)
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-i:docs glib=2.64.4-r0
 
 C:Q1nzRGu2mXqW0kUkblb4/eNOxNCag=
 P:libtheora-dev
@@ -3332,6 +3316,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588773367
 c:aac194968015e50383144a04b526574a5e0c315d
 i:docs libffi=3.3-r2
+
+C:Q1fUIxuvC0Ub1hqI5AVSZ3oorDYUQ=
+P:libvirt-qemu
+V:6.6.0-r1
+A:x86
+S:709437
+I:1871872
+T:QEMU driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt-daemon=6.6.0-r1 libvirt-common-drivers=6.6.0-r1 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+i:libvirt-daemon=6.6.0-r1 qemu
 
 C:Q1bb3FiCP2kAr4WkhMxHXPnpAhH5A=
 P:nano-doc
@@ -4118,6 +4118,22 @@ t:1582378323
 c:3d81a558d8f655e88b154bb61a636c5cb61d24e7
 i:docs pstree=2.39-r1
 
+C:Q1aoH2rrvWth2wBxy6ERdsdvlUWLI=
+P:clamav-scanner
+V:0.102.4-r1
+A:x86
+S:148460
+I:430080
+T:ClamAV command-line scanner and utils
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam so:libc.musl-x86.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:clambc cmd:clamscan cmd:sigtool
+
 C:Q1SyoDeZv1lGnf0JSciXcabaSneV8=
 P:perl-super-doc
 V:1.20190531-r0
@@ -4366,6 +4382,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-x86.so.1
 p:so:libdaemon.so.0=0.5.0
+
+C:Q1l6cYG0yG9IdRgC7Ob5oWAoRs6XI=
+P:clamav-daemon-openrc
+V:0.102.4-r1
+A:x86
+S:2496
+I:24576
+T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam-openrc
+i:clamav-daemon=0.102.4-r1 openrc
 
 C:Q1R444h+ydw+M4PYAbf8QFlzqUyoc=
 P:linux-firmware-mwlwifi
@@ -5224,21 +5256,6 @@ t:1591755525
 c:76596d9eb38d659caa8131cd6128b122b300df39
 i:openrc hostapd=2.9-r2
 
-C:Q1E8P/kAq99Stf/S564xOHBRU6vDU=
-P:chrony-openrc
-V:3.5-r2
-A:x86
-S:2761
-I:24576
-T:NTP client and server programs (OpenRC init scripts)
-U:https://chrony.tuxfamily.org
-L:GPL-2.0-only
-o:chrony
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1583938078
-c:e8f479168122f5e199cadd797a8e7f9b8bf20774
-i:openrc chrony=3.5-r2
-
 C:Q1VcrwKx2skj88XNxMYai3rPGdWks=
 P:dmraid-dev
 V:1.0.0_rc16-r0
@@ -5330,6 +5347,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1590596435
 c:348590044b7ded076e5292d729aa60a2b8ddb584
 i:docs perl-net-dns=1.24-r0
+
+C:Q18DQhUfB40Zjvu6UW483FDksXID8=
+P:postgresql-bdr-libs
+V:9.4.14_p1-r8
+A:x86
+S:72685
+I:180224
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (libraries)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:so:libc.musl-x86.so.1 so:libpq.so.5
+p:postgresql-libs=9.4.14_p1 so:libecpg.so.6=6.6 so:libecpg_compat.so.3=3.6 so:libpgtypes.so.3=3.5
 
 C:Q1lAesvEKxMdef1JN2Nsk/ZV+Ev0o=
 P:perl-mail-spamassassin
@@ -6581,6 +6614,22 @@ c:498967de775f0fa1e27d6e009b962a48cae56328
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6
 p:so:libreadline.so.8=8.0
 
+C:Q11X2uccUsACLZRfoZZaQ+R5ZtY78=
+P:openrc
+V:0.42.1-r11
+A:x86
+S:355768
+I:2580480
+T:OpenRC manages the services, startup and shutdown of a host
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+D:/bin/sh so:libc.musl-x86.so.1
+p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc cmd:openrc-init cmd:openrc-run cmd:openrc-shutdown cmd:rc cmd:rc-service cmd:rc-sstat cmd:rc-status cmd:rc-update cmd:runscript cmd:service cmd:start-stop-daemon cmd:supervise-daemon
+
 C:Q1VmmYNUuyappudQ5Gh3qE1F8WJo0=
 P:audit-openrc
 V:2.8.5-r0
@@ -6610,6 +6659,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588264926
 c:d86ee7be6b67b04ddd4a7c5eb1a7e2b8b2c09b86
 i:docs softhsm=2.6.1-r0
+
+C:Q1OvkWg2DGZJonsaXoV0FW/1WlYWg=
+P:libvirt-libs
+V:6.6.0-r1
+A:x86
+S:1590136
+I:4476928
+T:A virtualization API for several hypervisor and container systems (libraries)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
+p:so:libvirt-admin.so.0=0.6006.0 so:libvirt-lxc.so.0=0.6006.0 so:libvirt-qemu.so.0=0.6006.0 so:libvirt.so.0=0.6006.0
 
 C:Q1y28bryZNPdgdKspw9Oxf5it7dTI=
 P:userspace-rcu
@@ -6763,22 +6828,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1568725395
 c:cd144136ad59f95ca2d962cbf6014b0378af8fd9
 i:docs wpa_supplicant=2.9-r5
-
-C:Q1F9Qvf+K+OBFzadzoPnxjxOVeVCU=
-P:postgresql-bdr-libs
-V:9.4.14_p1-r7
-A:x86
-S:72680
-I:180224
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (libraries)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:so:libc.musl-x86.so.1 so:libpq.so.5
-p:postgresql-libs=9.4.14_p1 so:libecpg.so.6=6.6 so:libecpg_compat.so.3=3.6 so:libpgtypes.so.3=3.5
 
 C:Q1q+WLclOz8TDNDe6jSTYuGqtL8LQ=
 P:rdiff-backup-bash-completion
@@ -7042,22 +7091,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-x86.so.1
-
-C:Q1v5SiZnWAc0H9lWAwwJu5tB0putE=
-P:dovecot-pgsql
-V:2.3.10.1-r0
-A:x86
-S:14554
-I:61440
-T:PostgreSQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot-sql=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libpq.so.5
-p:so:libdriver_pgsql.so=0
 
 C:Q1kD2NPw4JmDADvmWdHjLItZ0kBIM=
 P:vanessa_socket-doc
@@ -7348,22 +7381,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590736138
 c:5c627a9df9155e297c14b07ef7cbc692fa3dd3c7
 i:openrc shorewall=5.2.4.5-r0
-
-C:Q1023ugwUdRXjLCFw9vVutSS8PO3o=
-P:dovecot-fts-solr
-V:2.3.10.1-r0
-A:x86
-S:22402
-I:65536
-T:FTS-Solr plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:lib20_fts_plugin.so so:libc.musl-x86.so.1 so:libexpat.so.1
-p:so:lib21_fts_solr_plugin.so=0
 
 C:Q1pUZFIK2sy8JJB/KIuUOnDNRMjaE=
 P:sshfs
@@ -7870,22 +7887,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590427742
 c:db4d4d0ffbd4200cb04671197763118625bf25c8
 p:linux-firmware-any
-
-C:Q1/rk699eR7Mp0dNCT/30Li3heW/s=
-P:dovecot-sqlite
-V:2.3.10.1-r0
-A:x86
-S:8432
-I:49152
-T:SQLite driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot-sql=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libsqlite3.so.0
-p:so:libdriver_sqlite.so=0
 
 C:Q1oGQMBB1FM/CNFgAGliYzTdwlPBQ=
 P:mesa-va-gallium
@@ -9553,21 +9554,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588202463
 c:760f109a634b90a5fbf27f80e8bf993a16be0b4b
 D:so:libc.musl-x86.so.1 so:libdrm.so.2 so:libudev.so.1 so:libxatracker.so.2
-
-C:Q1moFeuE93BjAwEufMHYA6ugERO94=
-P:dovecot-submissiond
-V:2.3.10.1-r0
-A:x86
-S:55223
-I:184320
-T:IMAP and POP3 server (mail submission agent)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1UMMlHojKrrLJk3J6Ey4Ukd+Ca0I=
 P:rsyslog-udpspoof
@@ -11305,21 +11291,6 @@ t:1583519157
 c:9d7cab77e911bba47d621d0a3560e5f8526df1bc
 i:docs coreutils=8.32-r0
 
-C:Q1ZVqx6nOL11tj6uhcSch9N2nds1E=
-P:libvirt-static
-V:6.5.0-r0
-A:x86
-S:3562137
-I:10842112
-T:libvirt static libraries
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:lvm2
-
 C:Q1mMCgztYz8KrLAiL5UguVbEef5b8=
 P:xvfb-run-doc
 V:1.20.7.3-r0
@@ -12753,21 +12724,6 @@ t:1583671453
 c:ef31baf0665c581a04f5072019db91ea45fd4f93
 i:docs at-spi2-core=2.36.0-r1
 
-C:Q149PD471NXh6WzW1zCzX5RcDKwXs=
-P:libvirt-common-drivers
-V:6.5.0-r0
-A:x86
-S:194876
-I:618496
-T:Common libvirt daemon drivers
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:lvm2 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
-
 C:Q15enj5Bqiu3dOc70PZobBiQY6jVU=
 P:perl-font-afm-doc
 V:1.20-r1
@@ -12933,6 +12889,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1571506529
 c:12a2e9700f50f0189054993374c97cccbb84ae70
 D:perl
+
+C:Q1uxfSGJ3oqU0emoNxzw+Ouzp2oJI=
+P:glib
+V:2.64.5-r0
+A:x86
+S:1422638
+I:3792896
+T:Common C routines used by Gtk+ and other libs
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
+D:/bin/sh so:libc.musl-x86.so.1 so:libffi.so.7 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
+p:so:libgio-2.0.so.0=0.6400.5 so:libglib-2.0.so.0=0.6400.5 so:libgmodule-2.0.so.0=0.6400.5 so:libgobject-2.0.so.0=0.6400.5 so:libgthread-2.0.so.0=0.6400.5 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
 
 C:Q133+MmcZh86Rhg4t4+lwWyXf+eQU=
 P:cjdns-doc
@@ -13577,6 +13549,21 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl-io-socket-ssl perl-net-ssleay
 
+C:Q1Bxz6k/Z4SHyFkB1thlvn8xaZDqQ=
+P:postgresql-bdr-openrc
+V:9.4.14_p1-r8
+A:x86
+S:4736
+I:32768
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (OpenRC init scripts)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+i:openrc postgresql-bdr=9.4.14_p1-r8
+
 C:Q1yPaj4I7Dzih4a0FaxK3x13ZRltk=
 P:kamailio-sqlang
 V:5.3.4-r0
@@ -14057,6 +14044,21 @@ c:0a0d062e47b6349a625bb9a67232ea3fcf54f898
 D:lvm2-libs=2.02.186-r1 so:libaio.so.1 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
 p:cmd:lvchange cmd:lvconvert cmd:lvcreate cmd:lvdisplay cmd:lvextend cmd:lvm cmd:lvmconfig cmd:lvmdiskscan cmd:lvmsadc cmd:lvmsar cmd:lvreduce cmd:lvremove cmd:lvrename cmd:lvresize cmd:lvs cmd:lvscan cmd:pvchange cmd:pvck cmd:pvcreate cmd:pvdisplay cmd:pvmove cmd:pvremove cmd:pvresize cmd:pvs cmd:pvscan cmd:vgcfgbackup cmd:vgcfgrestore cmd:vgchange cmd:vgck cmd:vgconvert cmd:vgcreate cmd:vgdisplay cmd:vgexport cmd:vgextend cmd:vgimport cmd:vgimportclone cmd:vgmerge cmd:vgmknodes cmd:vgreduce cmd:vgremove cmd:vgrename cmd:vgs cmd:vgscan cmd:vgsplit
 
+C:Q1dSF64//adAdkidtEnI4JJhfPLVc=
+P:libvirt-common-drivers
+V:6.6.0-r1
+A:x86
+S:195712
+I:602112
+T:Common libvirt daemon drivers
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:lvm2 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libnetcf.so.1 so:libpcap.so.1 so:libpciaccess.so.0 so:libudev.so.1 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q1Ffs9sK6t1hTxXyuNfKpcVcBRFEs=
 P:gphoto2-doc
 V:2.5.23-r0
@@ -14422,6 +14424,22 @@ t:1597049649
 c:878f3c2dacaa0996519ac17512337541e5f6a88f
 D:freeswitch-timezones
 
+C:Q1lIXmoFsuO8yx8wyZGNbSmY3W0U8=
+P:dovecot-sqlite
+V:2.3.11.3-r1
+A:x86
+S:8432
+I:49152
+T:SQLite driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot-sql=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libsqlite3.so.0
+p:so:libdriver_sqlite.so=0
+
 C:Q1NoIVNbBw/RTJrQ6kKFJQYl9fdIo=
 P:pptpd
 V:1.4.0-r2
@@ -14669,6 +14687,22 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:flac=1.3.3-r0 pc:ogg pkgconfig
 p:pc:flac++=1.3.3 pc:flac=1.3.3
+
+C:Q1NXuGd4VQbIl1Ce3oyW2VxvEZWBU=
+P:postgresql-bdr-dev
+V:9.4.14_p1-r8
+A:x86
+S:1323990
+I:6635520
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (development files)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:readline-dev openssl-dev zlib-dev libxml2-dev pkgconfig postgresql-bdr-libs=9.4.14_p1-r8 so:libc.musl-x86.so.1 so:libpq.so.5
+p:postgresql-dev=9.4.14_p1 pc:libecpg=9.4.14 pc:libecpg_compat=9.4.14 pc:libpgtypes=9.4.14 pc:libpq=9.4.14 cmd:ecpg cmd:pg_config
 
 C:Q1hnGoPNcmKr52ztqm4TWRXLm/AXg=
 P:dpaste-de
@@ -15370,6 +15404,21 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-x86.so.1
 p:cmd:logtail
 
+C:Q1R9dYEugfNtzeiEMdRqgWxwBl0b0=
+P:dovecot-openrc
+V:2.3.11.3-r1
+A:x86
+S:1863
+I:16384
+T:IMAP and POP3 server (OpenRC init scripts)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+i:openrc dovecot=2.3.11.3-r1
+
 C:Q1Cvn7tPFPkECOrcI2tp+Rx9nVxbA=
 P:protobuf-dev
 V:3.12.2-r0
@@ -15911,21 +15960,6 @@ t:1588692017
 c:2511d0a5a709c80d70a5b50747ceaacc935e11c5
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libcppunit_subunit.so.0=0.0.0 so:libsubunit.so.0=0.0.0
-
-C:Q1OZSEkqINjg4F8xc9+XCJUo7wMyU=
-P:dovecot-doc
-V:2.3.10.1-r0
-A:x86
-S:605119
-I:2564096
-T:IMAP and POP3 server (documentation)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-i:docs dovecot=2.3.10.1-r0
 
 C:Q1Cuk6dqx+0Z29E6bSzr88W0NCLP8=
 P:grub-doc
@@ -16526,6 +16560,21 @@ t:1583232748
 c:e0c690d5e38a10e8c98c9584cf6b2e207ddba5a9
 D:libxkbcommon-x11=0.10.0-r1 libxkbcommon-x11=0.10.0-r1 libxkbcommon=0.10.0-r1 pc:xcb-xkb>=1.10 pc:xcb>=1.10 pkgconfig
 p:pc:xkbcommon-x11=0.10.0 pc:xkbcommon=0.10.0
+
+C:Q1pfGSWdiDhB9CI8LEuUaSxYGfU2k=
+P:openrc-zsh-completion
+V:0.42.1-r11
+A:x86
+S:2804
+I:36864
+T:Zsh completions for openrc
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:openrc=0.42.1-r11 zsh
 
 C:Q1FgpuMhPlRuX1+Drk4t3KrEn+EB0=
 P:mpfr-dev
@@ -17385,21 +17434,6 @@ t:1574080526
 c:2455a26360e9d2a6222d3e8357fc56b6a9830c90
 i:docs perl-apache-logformat-compiler=0.36-r0
 
-C:Q1HVi19fMBBPayaV5iM4pm2e8DwTg=
-P:openrc-zsh-completion
-V:0.42.1-r10
-A:x86
-S:2802
-I:36864
-T:Zsh completions for openrc
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:openrc=0.42.1-r10 zsh
-
 C:Q1vp7/PZ/rmxEJbJLYqV+J+KhD6JI=
 P:setup-box-doc
 V:1.0.1-r0
@@ -17444,22 +17478,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins so:libc.musl-x86.so.1 so:libcrypto.so.1.1
-
-C:Q1N/kHYerCOJ1gHgDWAcu/bS4tSkU=
-P:glib-dev
-V:2.64.4-r0
-A:x86
-S:465274
-I:3436544
-T:Common C routines used by Gtk+ and other libs (development files)
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-D:python3 gettext-dev bzip2-dev libxml2-utils libxslt docbook-xml docbook-xsl glib=2.64.4-r0 pc:libffi>=3.0.0 pc:libpcre>=8.31 pc:mount>=2.23 pc:zlib pkgconfig so:libc.musl-x86.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
-p:pc:gio-2.0=2.64.4 pc:gio-unix-2.0=2.64.4 pc:glib-2.0=2.64.4 pc:gmodule-2.0=2.64.4 pc:gmodule-export-2.0=2.64.4 pc:gmodule-no-export-2.0=2.64.4 pc:gobject-2.0=2.64.4 pc:gthread-2.0=2.64.4 cmd:gdbus-codegen cmd:glib-compile-resources cmd:glib-genmarshal cmd:glib-gettextize cmd:glib-mkenums cmd:gobject-query cmd:gresource cmd:gtester cmd:gtester-report
 
 C:Q16OLRPnya5SVBtpVNdmnRzrcuLig=
 P:alsa-utils-openrc
@@ -18225,22 +18243,6 @@ c:ce2c8c257fd929fe9768e27a8526d0439cd42dd8
 D:perl perl-mail-spf perl-netaddr-ip perl-sys-hostname-long
 p:cmd:postfix-policyd-spf-perl
 
-C:Q1Oq5wlMANAQ/HEAnnkkrvqbYMJ5I=
-P:clamav-daemon-openrc
-V:0.102.4-r0
-A:x86
-S:2486
-I:24576
-T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam-openrc
-i:clamav-daemon=0.102.4-r0 openrc
-
 C:Q1ms1rGut692fQhOn73dPEqokwtRo=
 P:lua5.1-posix
 V:33.4.0-r1
@@ -18411,21 +18413,6 @@ t:1590555222
 c:599aab5c2a9e21728e2fbac28b9cd555294b6967
 D:so:libc.musl-x86.so.1 so:libpciaccess.so.0
 p:so:libdrm.so.2=2.4.0 so:libdrm_amdgpu.so.1=1.0.0 so:libdrm_etnaviv.so.1=1.0.0 so:libdrm_freedreno.so.1=1.0.0 so:libdrm_intel.so.1=1.0.0 so:libdrm_nouveau.so.2=2.0.0 so:libdrm_radeon.so.1=1.0.1 so:libdrm_tegra.so.0=0.0.0 so:libkms.so.1=1.0.0
-
-C:Q18GiGq2HmibxCpqZrlfRbOy7EY58=
-P:libvirt-vbox
-V:6.5.0-r0
-A:x86
-S:89406
-I:299008
-T:VirtualBox driver for libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt-daemon=6.5.0-r0 libvirt-common-drivers=6.5.0-r0 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
 
 C:Q1Y9+6O/scirsBRjvAjaxsAsAM4yw=
 P:lua-iconv
@@ -18715,22 +18702,6 @@ o:musl
 m:Timo Teräs <timo.teras@iki.fi>
 t:1592662716
 c:253b8a827f0ef91026eb42c7cdd59c718ed598f3
-
-C:Q14ZrPdALO1/TpgZ0R2ZTEpdbL754=
-P:clamav-libunrar
-V:0.102.4-r0
-A:x86
-S:130050
-I:290816
-T:ClamAV unrar libraries
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
 
 C:Q1w8mle3C74m6kgS+UtrJvBWmG9l0=
 P:perl-archive-zip-doc
@@ -19223,22 +19194,6 @@ o:git
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587420476
 c:e964b427700d05033702d989be968bdd17d391ad
-
-C:Q1M2pvvjHjqzjjuceHabsOfPCLNVk=
-P:clamav-libs
-V:0.102.4-r0
-A:x86
-S:820907
-I:2195456
-T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.0
 
 C:Q1FX+yfNW3oqg6xNOBrrXdlmS+Ifc=
 P:pssh
@@ -20231,22 +20186,6 @@ t:1574247585
 c:7524badc16a4157691398a942c5a94069febe580
 i:docs sdl=1.2.15-r12
 
-C:Q1SzQ8n/4RvFdqd1E8aSZTBd/1kPY=
-P:postgresql-bdr
-V:9.4.14_p1-r7
-A:x86
-S:4880231
-I:13844480
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq /bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1
-p:postgresql=9.4.14_p1 cmd:createlang cmd:droplang cmd:initdb cmd:pg_controldata cmd:pg_ctl cmd:pg_receivexlog cmd:pg_resetxlog cmd:postgres cmd:postmaster
-
 C:Q1fQCuqTwhXLHyxPRgaX8VfFX5DzU=
 P:axel-doc
 V:2.17.8-r0
@@ -21039,6 +20978,21 @@ t:1587814425
 c:7ebfa23b6119a24ca9b9375bdc55373259192da1
 D:ca-certificates-bundle so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libtls-standalone.so.1=1.0.0
+
+C:Q1b7D9sRIETstt3UxgxC7WqsLGQM8=
+P:glib-lang
+V:2.64.5-r0
+A:x86
+S:2657748
+I:9687040
+T:Languages for package glib
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
+i:glib=2.64.5-r0 lang
 
 C:Q1kLaygV4POwAclwC1G7FUHNJNLpE=
 P:man-pages
@@ -21863,21 +21817,6 @@ c:79d4bf70deb43c3bd6df616bd2aeb4b917afd762
 D:libisoburn=1.5.2-r0 pkgconfig
 p:pc:libisoburn-1=1.5.2
 
-C:Q1pwDLL4aaWKrCDPMX7ARBdibmiRw=
-P:glib-lang
-V:2.64.4-r0
-A:x86
-S:2657662
-I:9687040
-T:Languages for package glib
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-i:glib=2.64.4-r0 lang
-
 C:Q1x119wwr7AH9Pae7MX+DOBjqKYGQ=
 P:hunspell-lang
 V:1.7.0-r1
@@ -22205,22 +22144,6 @@ c:3fe10202b17cab6dd2b9eefd7e8e092864a008ab
 D:re2c gcc make libc-dev perl-dev perl-mail-spamassassin
 p:cmd:sa-compile
 
-C:Q1awF94usSS+qs+dmWr4h1nTpV1AI=
-P:openrc
-V:0.42.1-r10
-A:x86
-S:355782
-I:2580480
-T:OpenRC manages the services, startup and shutdown of a host
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-D:/bin/sh so:libc.musl-x86.so.1
-p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc cmd:openrc-init cmd:openrc-run cmd:openrc-shutdown cmd:rc cmd:rc-service cmd:rc-sstat cmd:rc-status cmd:rc-update cmd:runscript cmd:service cmd:start-stop-daemon cmd:supervise-daemon
-
 C:Q1vc/tlABSH4ey0lJY8ZWG06C5Ljg=
 P:freetype-doc
 V:2.10.2-r0
@@ -22313,6 +22236,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1a/ifC5VZ/gP/EOp+vaWIYzYpX9w=
+P:dovecot-submissiond
+V:2.3.11.3-r1
+A:x86
+S:56104
+I:184320
+T:IMAP and POP3 server (mail submission agent)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1bET2vWf4Lnu9ylqakw38py71PW0=
 P:curl-dbg
@@ -23018,22 +22956,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 
-C:Q1jXI4q933o4VLqB9rcYH6jUVHjyM=
-P:dovecot-sql
-V:2.3.10.1-r0
-A:x86
-S:21571
-I:86016
-T:SQL plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0
-p:so:libdovecot-sql.so.0=0.0.0
-
 C:Q1IR4yxjSW17a4x7o24mjlGcJ45yg=
 P:perl-text-vfile-asdata
 V:0.08-r1
@@ -23188,6 +23110,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 p:cmd:installkernel
+
+C:Q1aQA2de/BAJJmKgXFHGtZwXjQdyE=
+P:dovecot-pop3d
+V:2.3.11.3-r1
+A:x86
+S:37434
+I:135168
+T:IMAP and POP3 server (POP3 daemon)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1mogN4Km/AeCuU5th8do2Gq7vKbQ=
 P:jwhois
@@ -23871,22 +23808,6 @@ c:da8f80666d97257e2143f56461fd5d5e721ab606
 D:perl
 p:cmd:crc32
 
-C:Q1yjOrQ9vDZj7tyF3aiMVlxuYaXF4=
-P:libvirt
-V:6.5.0-r0
-A:x86
-S:1486124
-I:6172672
-T:A virtualization API for several hypervisor and container systems
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:lvm2 /bin/sh so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libparted.so.2 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
-p:cmd:virtinterfaced cmd:virtlockd cmd:virtlogd cmd:virtlxcd cmd:virtnetworkd cmd:virtnodedevd cmd:virtnwfilterd cmd:virtproxyd cmd:virtqemud cmd:virtsecretd cmd:virtstoraged cmd:virtvboxd
-
 C:Q1ymNHfFzkahoIN/cXb1ZwSP5E9ZU=
 P:perl-locale-maketext-lexicon-doc
 V:1.00-r1
@@ -24525,6 +24446,22 @@ t:1597164496
 c:d24fbab5d02e55e38585b476479817dedc89fc09
 i:docs gtk+3.0=3.24.22-r0
 
+C:Q1qY6N4OOuViR1jCjYadYRIEQWhXk=
+P:libvirt-lxc
+V:6.6.0-r1
+A:x86
+S:145666
+I:466944
+T:LXC driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt-daemon=6.6.0-r1 libvirt-common-drivers=6.6.0-r1 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0
+i:libvirt-daemon=6.6.0-r1 lxc
+
 C:Q1PdJ/DBtG5kxwHwmKDhazAmlUGnw=
 P:lua5.1-ldap
 V:1.2.3-r6
@@ -24587,6 +24524,22 @@ t:1585786541
 c:a3a94776afc0f31fea0de6a9ed59b57517881b85
 D:/bin/sh so:libc.musl-x86.so.1 so:libgmp.so.10 so:libjansson.so.4 so:libmnl.so.0 so:libnftnl.so.11 so:libreadline.so.8
 p:so:libnftables.so.1=1.0.0 cmd:nft
+
+C:Q1SqCkoPpZ+jMjDSO519vLxr3SC1w=
+P:libvirt-daemon
+V:6.6.0-r1
+A:x86
+S:139615
+I:577536
+T:libvirt daemon package
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt-client bridge-utils dmidecode dnsmasq ip6tables iptables so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
+p:cmd:libvirtd
 
 C:Q1Kjz+3pHKp29HT0ToVQO4WbQpEP8=
 P:xvfb
@@ -25683,21 +25636,6 @@ c:8ddc01280c84aafdacf6ab24f828d9263e9959e9
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:cmd:bsdcat cmd:bsdcpio cmd:bsdtar
 
-C:Q15f9fWZxvdmhRAQMrurLYDIQzyuU=
-P:clamav-db
-V:0.102.4-r0
-A:x86
-S:1361
-I:40960
-T:ClamAV dummy package for compatibility
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam
-
 C:Q19W3T7uBrkh1QTzlvl6btJwGK4ks=
 P:libnetfilter_acct-dev
 V:1.0.3-r0
@@ -26174,6 +26112,22 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins fping so:libc.musl-x86.so.1 so:libcrypto.so.1.1
+
+C:Q1mcI6rwrIzE8kQ/dpjvmsTc7HhhU=
+P:dovecot-pgsql
+V:2.3.11.3-r1
+A:x86
+S:14561
+I:61440
+T:PostgreSQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot-sql=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libpq.so.5
+p:so:libdriver_pgsql.so=0
 
 C:Q12r0tx180k3zWXhRTjGKD9RHIwbE=
 P:lua-asn1
@@ -26728,22 +26682,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1561999320
 c:3745dd28af99646a740eef08867a0094d1f6cb5b
 i:openrc rtpproxy=2.1.0-r0
-
-C:Q16GFBBHo7qk+qbqrthVVYvTW5UEE=
-P:libvirt-daemon
-V:6.5.0-r0
-A:x86
-S:137687
-I:573440
-T:libvirt daemon package
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt-client bridge-utils dmidecode dnsmasq ip6tables iptables so:libc.musl-x86.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libtirpc.so.3 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0
-p:cmd:libvirtd
 
 C:Q16+aO6smxEnZj6m7OsoF3MoVlsbY=
 P:lz4-static
@@ -27889,6 +27827,22 @@ c:d965ca7d546a9edb965fe411631b59d934d58eee
 D:so:libc.musl-x86.so.1
 p:so:liblogging-stdlog.so.0=0.1.0 cmd:stdlogctl
 
+C:Q1IA1ePQhggY8n6kTvCL6FmCr3f6o=
+P:postgresql-bdr-client
+V:9.4.14_p1-r8
+A:x86
+S:613629
+I:1654784
+T:PostgreSQL Client Utilities
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq so:libc.musl-x86.so.1 so:libpq.so.5 so:libreadline.so.8 so:libssl.so.1.1 so:libz.so.1
+p:postgresql-client=9.4.14_p1 cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
+
 C:Q1677kTrJeq1RpW88tbuIu3e8BrJM=
 P:lua5.3-posixtz
 V:0.5-r1
@@ -28193,21 +28147,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1532867204
 c:b2d4a592a1d1d7f1190e34a9421f86ad07fb124a
 D:so:libc.musl-x86.so.1
-
-C:Q1aezxHRneSa5YK1kZ+7WpK+l1Lxg=
-P:openrc-doc
-V:0.42.1-r10
-A:x86
-S:68198
-I:233472
-T:OpenRC manages the services, startup and shutdown of a host (documentation)
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:docs openrc=0.42.1-r10
 
 C:Q13LN2jtkfB0Kuql+KLc4NyFgpxls=
 P:cifs-utils-dev
@@ -28515,6 +28454,21 @@ c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
 D:so:libc.musl-x86.so.1
 p:so:liblzma.so.5=5.2.5
 
+C:Q1/lFOS/e+rzjjf6kU9OmNi8+XCoE=
+P:glib-doc
+V:2.64.5-r0
+A:x86
+S:43193
+I:102400
+T:Common C routines used by Gtk+ and other libs (documentation)
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
+i:docs glib=2.64.5-r0
+
 C:Q1fwrm45Z5ufYzi0VXGk5MBA6z5OM=
 P:po4a-lang
 V:0.59-r0
@@ -28776,6 +28730,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585580836
 c:548f95ada34336ecaea32f93e3679be8588cb43f
 i:docs screen=4.8.0-r0
+
+C:Q12T/d1qBv1wawznPdfyVgDS9ZGoY=
+P:dovecot-lmtpd
+V:2.3.11.3-r1
+A:x86
+S:26120
+I:110592
+T:IMAP and POP3 server (LMTP server)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1asDKzgFXEWgDBw1ouu86bxBOBxA=
 P:squid-lang-pl
@@ -29265,22 +29234,6 @@ t:1585668630
 c:da73423adf41426243cd380166e7b23f54e51d9f
 i:docs byacc=20200330-r0
 
-C:Q1s1SwgiNB/myTz1tq826qwDODHqI=
-P:openrc-dev
-V:0.42.1-r10
-A:x86
-S:44080
-I:159744
-T:OpenRC manages the services, startup and shutdown of a host (development files)
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-D:openrc=0.42.1-r10 pkgconfig
-p:pc:einfo=0.42.1 pc:openrc=0.42.1
-
 C:Q1FH8BZiYlEc/Dv9Oo4fKfxJKAf2Q=
 P:libtxc_dxtn-dev
 V:1.0.1-r5
@@ -29615,6 +29568,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588289323
 c:5e870c62147606570abe370344287f454969e59a
 i:docs cryptsetup=2.3.2-r0
+
+C:Q18zRSW/Y6m4LuGuZ3aZ56VRRrhxE=
+P:dovecot-mysql
+V:2.3.11.3-r1
+A:x86
+S:10630
+I:53248
+T:MySQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot-sql=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libmariadb.so.3
+p:so:libdriver_mysql.so=0
 
 C:Q1lTaiVYKOs5dmCDFsLJqPjIOaWbI=
 P:c-ares-static
@@ -30960,6 +30929,22 @@ c:576f2c4e28da760057e1d1fbc7a2e7aed1fece68
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:sendmail cmd:ssmtp
 
+C:Q1Uo7siDCWsnsyA0/G50QZf4+H19E=
+P:dovecot-ldap
+V:2.3.11.3-r1
+A:x86
+S:46453
+I:163840
+T:LDAP auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:libdovecot-ldap.so.0=0.0.0
+
 C:Q1VdyopqqAc8bLvKwvLw84hhywfsU=
 P:ctags
 V:0_git20200205-r0
@@ -31311,21 +31296,6 @@ t:1590555222
 c:599aab5c2a9e21728e2fbac28b9cd555294b6967
 D:linux-headers libdrm=2.4.102-r0 pkgconfig
 p:pc:libdrm=2.4.102 pc:libdrm_amdgpu=2.4.102 pc:libdrm_etnaviv=2.4.102 pc:libdrm_freedreno=2.4.102 pc:libdrm_intel=2.4.102 pc:libdrm_nouveau=2.4.102 pc:libdrm_radeon=2.4.102 pc:libdrm_tegra=2.4.102 pc:libkms=1.0.0
-
-C:Q1NroGQ1yO/tSAkiKhSjaXht/hKBg=
-P:chrony-doc
-V:3.5-r2
-A:x86
-S:55788
-I:98304
-T:NTP client and server programs (documentation)
-U:https://chrony.tuxfamily.org
-L:GPL-2.0-only
-o:chrony
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1583938078
-c:e8f479168122f5e199cadd797a8e7f9b8bf20774
-i:docs chrony=3.5-r2
 
 C:Q1OAjRNKe6anjvmg0VxhpSnsZvkm0=
 P:bwm-ng-doc
@@ -32600,6 +32570,22 @@ c:a8a1b91446db94e5eafa5ebe8b532fa0025c26c4
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:so:libboost_program_options.so.1.72.0=1.72.0
 
+C:Q1IfudvrtJv7pONAoSb7Wrz3QBQ+Q=
+P:dovecot-fts-solr
+V:2.3.11.3-r1
+A:x86
+S:22401
+I:65536
+T:FTS-Solr plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:lib20_fts_plugin.so so:libc.musl-x86.so.1 so:libexpat.so.1
+p:so:lib21_fts_solr_plugin.so=0
+
 C:Q1Y7TCFEpU40lOGPLJvUpp2wnos9s=
 P:perl-cps
 V:0.19-r1
@@ -33151,21 +33137,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585551725
 c:533d0d519363e59c65c54547e11ce909174a07dd
 D:iptables=1.8.4-r1 so:libc.musl-x86.so.1 so:libxtables.so.12
-
-C:Q1jiimlexfwxK7pcjE+TyESn7USPI=
-P:dovecot-openrc
-V:2.3.10.1-r0
-A:x86
-S:1861
-I:16384
-T:IMAP and POP3 server (OpenRC init scripts)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-i:openrc dovecot=2.3.10.1-r0
 
 C:Q1IB0WgxQAnpwwpxgY1ytI0hbtL7o=
 P:freeswitch-sangoma
@@ -34122,20 +34093,6 @@ c:ea01bb226907d1841c222a4d45832c3c36378115
 D:aspell
 p:cmd:ispell cmd:spell
 
-C:Q1830mzCpTVsMEkA3j5R35h2jcs8Q=
-P:dovecot-dev
-V:2.3.10.1-r0
-A:x86
-S:511580
-I:3575808
-T:IMAP and POP3 server (development files)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-
 C:Q1JMKpuw8ZSCMmuv0YKRNL/tx//Qo=
 P:perl-net-cidr-lite
 V:0.21-r5
@@ -34711,21 +34668,6 @@ t:1579574214
 c:b99db116fdf67514ee7e6fc4a128c25a90ceffee
 D:perl
 
-C:Q1wVaHlXD968/DUMbMjRRk/oo5J8g=
-P:dovecot-gssapi
-V:2.3.10.1-r0
-A:x86
-S:8514
-I:40960
-T:GSSAPI auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libgssapi.so.3 so:libkrb5.so.26
-
 C:Q1BpUsiysasI7WD2Av0gMwhBNNnhw=
 P:perl-file-slurp-tiny
 V:0.004-r1
@@ -34739,21 +34681,6 @@ o:perl-file-slurp-tiny
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
-
-C:Q1i+smOLWjEO/ptH74sMSEpSVIESo=
-P:libvirt-bash-completion
-V:6.5.0-r0
-A:x86
-S:2525
-I:24576
-T:Bash completions for libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-i:libvirt=6.5.0-r0 bash-completion
 
 C:Q1SxZx83+wrd/Gafdi8bNhbyQdJhQ=
 P:libpaper
@@ -35309,6 +35236,21 @@ c:4b0f393e9ffe0c0c2a7ccd16cf14f8ee88cf3337
 D:perl perl-time-parsedate perl-device-serialport perl-astro-suntime
 p:cmd:x10client cmd:x10server
 
+C:Q1qfegnD7KQoZvd/y2yyJ6zzYWrfE=
+P:openrc-bash-completion
+V:0.42.1-r11
+A:x86
+S:3780
+I:40960
+T:Bash completions for openrc
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:openrc=0.42.1-r11 bash-completion
+
 C:Q1m213MyX6Y2oTxGs/eERctLLnRro=
 P:dbus-doc
 V:1.12.18-r0
@@ -35599,6 +35541,21 @@ t:1587651067
 c:79b55a4a4fc9d6fbb260b9b6be5c6ff06ae61f28
 D:freeradius=3.0.21-r3 so:libc.musl-x86.so.1
 p:so:libfreeradius-dhcp.so=0 so:proto_dhcp.so=0 so:rlm_dhcp.so=0
+
+C:Q1FH9YldInY/zrSB0vTxzFgKMJqVE=
+P:clamav-doc
+V:0.102.4-r1
+A:x86
+S:33547
+I:86016
+T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+i:docs clamav=0.102.4-r1
 
 C:Q1hXFPmwRB2DD+DH+Y8ezxRbOmxPI=
 P:perl-class-container
@@ -36289,6 +36246,22 @@ c:d26b9b0b9da70da63bcb53f68ea1650f44760d1f
 D:so:libc.musl-x86.so.1
 p:so:libspeexdsp.so.1=1.5.1
 
+C:Q1LhoVfVcZIIr/b+jqPVeL1ovVnWk=
+P:postgresql-bdr-contrib
+V:9.4.14_p1-r8
+A:x86
+S:622068
+I:2732032
+T:Extension modules distributed with PostgreSQL
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
+p:postgresql-contrib=9.4.14_p1 cmd:oid2name cmd:pg_archivecleanup cmd:pg_standby cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_xlogdump cmd:pgbench cmd:vacuumlo
+
 C:Q1f1K3k27+YLwyOuNt4TF1ktXPGMg=
 P:brotli-dev
 V:1.0.7-r5
@@ -36382,22 +36355,6 @@ t:1590747945
 c:e4e59bc50fc083f6af8319a122434c87bcff5e53
 D:attr-dev e2fsprogs-dev glib-dev libtirpc-dev openssl-dev util-linux-dev pkgconfig zfs-libs=0.8.4-r0
 p:pc:libzfs=0.8.4 pc:libzfs_core=0.8.4
-
-C:Q1ML5ylSifhNwpg/NEx4u27lrL2Ro=
-P:clamav-scanner
-V:0.102.4-r0
-A:x86
-S:148455
-I:430080
-T:ClamAV command-line scanner and utils
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:freshclam so:libc.musl-x86.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:clambc cmd:clamscan cmd:sigtool
 
 C:Q1BsfR1QyJrAqO/ZCT7JfoCNHo2Y4=
 P:mesa-dri-intel
@@ -36508,6 +36465,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:libxrender=0.9.10-r3 pc:renderproto>=0.9 pc:x11 pc:xproto pkgconfig
 p:pc:xrender=0.9.10
+
+C:Q1bDjq9rkoQIpdEG95HfhXbQ0HTFw=
+P:clamav-daemon
+V:0.102.4-r1
+A:x86
+S:254582
+I:716800
+T:ClamAV daemon scanner
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam /bin/sh so:libc.musl-x86.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libz.so.1
+p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1PlFMQx2WdGL32TTVIA6MuVNmRoA=
 P:fuse3-libs
@@ -37815,22 +37788,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-regexp-common=2017060201-r1
-
-C:Q1GCjJCnZrjNxvkyyg0KGkgCMaYlY=
-P:postgresql-bdr-dev
-V:9.4.14_p1-r7
-A:x86
-S:1323970
-I:6635520
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (development files)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:readline-dev openssl-dev zlib-dev libxml2-dev pkgconfig postgresql-bdr-libs=9.4.14_p1-r7 so:libc.musl-x86.so.1 so:libpq.so.5
-p:postgresql-dev=9.4.14_p1 pc:libecpg=9.4.14 pc:libecpg_compat=9.4.14 pc:libpgtypes=9.4.14 pc:libpq=9.4.14 cmd:ecpg cmd:pg_config
 
 C:Q1DMh93mPRvL+zmGS4e2vuA1EDgKQ=
 P:kamailio-presence
@@ -39688,6 +39645,21 @@ t:1589744791
 c:cd8ebd297c903e043282d00d22719b18a6fe1528
 i:openrc iperf3=3.7-r2
 
+C:Q19PGhuk0IauNQUpywQ8pgG3PA3e4=
+P:dovecot-pigeonhole-plugin-ldap
+V:2.3.11.3-r1
+A:x86
+S:20473
+I:69632
+T:Sieve and managesieve plugin for Dovecot (LDAP support)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot-pigeonhole-plugin=2.3.11.3-r1 dovecot-ldap=2.3.11.3-r1 so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+
 C:Q11ai3kDeL1DI6dmN8kI67eK19bPM=
 P:lua-cqueues
 V:20190813-r0
@@ -40571,21 +40543,6 @@ t:1586188431
 c:4f50580be86165c6a8c4aa2d74cb6dccb13c0574
 D:so:libc.musl-x86.so.1
 p:so:libskarnet.so.2.9=2.9.2.1
-
-C:Q1q3hGE6hXKUZwzH+R0oMwApK7lUY=
-P:libvirt-uml
-V:6.5.0-r0
-A:x86
-S:1344
-I:32768
-T:UML driver for libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt-daemon=6.5.0-r0 libvirt-common-drivers=6.5.0-r0
 
 C:Q1XQf9i7aYH4Ppi/653IIKSKlNXu8=
 P:syslog-ng-stomp
@@ -42348,21 +42305,6 @@ t:1585245035
 c:4313c8e525d3ec5a67b25c584f40e76dc47e47cc
 D:perl
 
-C:Q1GupcHvLHGTmj7glZzd15LgcsO+E=
-P:postgresql-bdr-openrc
-V:9.4.14_p1-r7
-A:x86
-S:4746
-I:32768
-T:A sophisticated object-relational DBMS with bidirectional replication support (BDR) (OpenRC init scripts)
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-i:openrc postgresql-bdr=9.4.14_p1-r7
-
 C:Q1i1PeIndnn6otfc6zqzqwPK+V3sU=
 P:font-bh-75dpi
 V:1.0.3-r0
@@ -42483,21 +42425,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl perl-datetime
-
-C:Q1dGL3eV+sj9sHl0GOyq/K6qNerzs=
-P:freshclam-openrc
-V:0.102.4-r0
-A:x86
-S:2145
-I:24576
-T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-i:freshclam=0.102.4-r0 openrc
 
 C:Q1eMEJ4OyH6LGFh+bRvPFr18vg6Zk=
 P:openssl-libs-static
@@ -43191,21 +43118,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588855746
 c:102a411743515ac4fb7ed06c7092acd8dd95214f
 D:so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q1db+XgRqslzjMyHkuUTPrGcAbZ4c=
-P:dovecot-pigeonhole-plugin-ldap
-V:2.3.10.1-r0
-A:x86
-S:20478
-I:69632
-T:Sieve and managesieve plugin for Dovecot (LDAP support)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot-pigeonhole-plugin=2.3.10.1-r0 dovecot-ldap=2.3.10.1-r0 so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 
 C:Q1K7gmXlOV7yKB9bPlu39x3yvKTAk=
 P:api-sanity-checker
@@ -43943,21 +43855,6 @@ o:perl-extutils-cchecker
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-extutils-cchecker=0.10-r2
-
-C:Q1RPgTYkIwVfItVyorohJMIN0QvC0=
-P:dovecot-lmtpd
-V:2.3.10.1-r0
-A:x86
-S:25996
-I:110592
-T:IMAP and POP3 server (LMTP server)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q16gxXb5Gohe/6dP0T572+33SSGTI=
 P:zmap-doc
@@ -45392,6 +45289,22 @@ t:1519022535
 c:884b9ff935a35e9aec6b44c97ffd75e93e0054ba
 D:perl
 
+C:Q1CXki5w9KKx84e+aphtiSBeL9hVA=
+P:glib-dev
+V:2.64.5-r0
+A:x86
+S:465336
+I:3436544
+T:Common C routines used by Gtk+ and other libs (development files)
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
+D:python3 gettext-dev bzip2-dev libxml2-utils libxslt docbook-xml docbook-xsl glib=2.64.5-r0 pc:libffi>=3.0.0 pc:libpcre>=8.31 pc:mount>=2.23 pc:zlib pkgconfig so:libc.musl-x86.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
+p:pc:gio-2.0=2.64.5 pc:gio-unix-2.0=2.64.5 pc:glib-2.0=2.64.5 pc:gmodule-2.0=2.64.5 pc:gmodule-export-2.0=2.64.5 pc:gmodule-no-export-2.0=2.64.5 pc:gobject-2.0=2.64.5 pc:gthread-2.0=2.64.5 cmd:gdbus-codegen cmd:glib-compile-resources cmd:glib-genmarshal cmd:glib-gettextize cmd:glib-mkenums cmd:gobject-query cmd:gresource cmd:gtester cmd:gtester-report
+
 C:Q1izK8lmUMzhAwrr7Pd/NqFlPDS0w=
 P:libcap-doc
 V:2.27-r0
@@ -45591,22 +45504,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588855746
 c:102a411743515ac4fb7ed06c7092acd8dd95214f
 D:so:libc.musl-x86.so.1 so:liblber-2.4.so.2
-
-C:Q1XzCRviZH/qZUGZf/A3kGcRqO158=
-P:dovecot-mysql
-V:2.3.10.1-r0
-A:x86
-S:10637
-I:53248
-T:MySQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot-sql=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libmariadb.so.3
-p:so:libdriver_mysql.so=0
 
 C:Q1dD2Giexsz6vDpY3ZYO4JW88Ui/4=
 P:perl-encode
@@ -45930,6 +45827,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:acf-core iproute2-qos acf-alpine-baselayout>=0.5.7
 
+C:Q12EYmaT0DSq7ev4ifn+MMSNdS4f4=
+P:libvirt-static
+V:6.6.0-r1
+A:x86
+S:3584840
+I:10870784
+T:libvirt static libraries
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:lvm2
+
 C:Q1aMBAci/OAqqk2Frm9QTIqyiB2Q8=
 P:nload-doc
 V:0.7.4-r3
@@ -46204,22 +46116,6 @@ t:1590427742
 c:db4d4d0ffbd4200cb04671197763118625bf25c8
 p:linux-firmware-any
 
-C:Q1TotVAMqOCtPJwzA2YFMQi/m1k5A=
-P:clamav-milter
-V:0.102.4-r0
-A:x86
-S:83796
-I:225280
-T:ClamAV milter
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2
-p:cmd:clamav-milter
-
 C:Q1QZWDr3DdnAkDFIiSNvmq/24WKJs=
 P:f2fs-tools-doc
 V:1.13.0-r0
@@ -46479,22 +46375,6 @@ c:c1d369808b2ebd87f82076a5da60bfac4076db94
 D:so:libc.musl-x86.so.1
 p:cmd:su-exec
 
-C:Q1v12C00/gdGGyBtaSXODLo2wV1Is=
-P:freshclam
-V:0.102.4-r0
-A:x86
-S:46582
-I:176128
-T:Auto-updater for the Clam Antivirus scanner data-files
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:/bin/sh so:libc.musl-x86.so.1 so:libclamav.so.9 so:libfreshclam.so.2
-p:cmd:freshclam
-
 C:Q131/5Z9NCUFbC3ltnxsuTgiTzuN8=
 P:lua-xctrl
 V:2015.04.10-r2
@@ -46724,6 +46604,21 @@ t:1585493538
 c:4f4123805c0934af087f92ae85217b6c1d33d9f2
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6
 p:cmd:dialog
+
+C:Q1Ko125/02uNxoktgW6vZRILU+ytI=
+P:libvirt-bash-completion
+V:6.6.0-r1
+A:x86
+S:2526
+I:24576
+T:Bash completions for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+i:libvirt=6.6.0-r1 bash-completion
 
 C:Q1qt2OpMZov5dz/wSnqTR4NYhl4Zg=
 P:glu-dev
@@ -47721,6 +47616,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 
+C:Q1SSL805fnZn8eVRNGdfrqA2M2Pms=
+P:dovecot-doc
+V:2.3.11.3-r1
+A:x86
+S:605153
+I:2560000
+T:IMAP and POP3 server (documentation)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+i:docs dovecot=2.3.11.3-r1
+
 C:Q1OlxEMB50G20Wk4lQvJP57VbNbbk=
 P:hylafax-doc
 V:6.0.7-r3
@@ -48444,22 +48354,6 @@ t:1583212507
 c:30bcd98f604097c9e3c1cd3c6747ad95d6558c83
 i:docs fribidi=1.0.9-r0
 
-C:Q1RoVZ5k02yHLnflAjUkYThxaOORk=
-P:postgresql-bdr-client
-V:9.4.14_p1-r7
-A:x86
-S:613563
-I:1654784
-T:PostgreSQL Client Utilities
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq so:libc.musl-x86.so.1 so:libpq.so.5 so:libreadline.so.8 so:libssl.so.1.1 so:libz.so.1
-p:postgresql-client=9.4.14_p1 cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
-
 C:Q1iBBXpXaHSGQIXSDbUMEFDgrpOaI=
 P:perl-test-mockmodule-doc
 V:0.172.0-r0
@@ -48720,6 +48614,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1571601163
 c:b81fcaecbeaaf7ccfe750c4345cd79bd18e19cb1
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+
+C:Q1pA02ODaqQWNetmbaUerDpJmS32Y=
+P:openrc-doc
+V:0.42.1-r11
+A:x86
+S:68204
+I:233472
+T:OpenRC manages the services, startup and shutdown of a host (documentation)
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+i:docs openrc=0.42.1-r11
 
 C:Q1dUAIO72ab408z1tKYVh0qPpmMEE=
 P:llvm10-dev
@@ -49062,6 +48971,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-sys-hostname-long=1.5-r3
+
+C:Q1PKK33v0ROPbNMcCwR4WALiVYUJI=
+P:chrony-openrc
+V:3.5.1-r0
+A:x86
+S:2757
+I:24576
+T:NTP client and server programs (OpenRC init scripts)
+U:https://chrony.tuxfamily.org
+L:GPL-2.0-only
+o:chrony
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598203726
+c:a79726f4871165dc7569d9be8efa689c286ba417
+i:openrc chrony=3.5.1-r0
 
 C:Q1D7Ph9tgA5dU7NOLXTqTLk618Y7U=
 P:dbus
@@ -49818,22 +49742,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:so:libc.musl-x86.so.1
 
-C:Q1T9g83y/kS9KfaCEnSicDR7WV6jU=
-P:libvirt-libs
-V:6.5.0-r0
-A:x86
-S:1580744
-I:4476928
-T:A virtualization API for several hypervisor and container systems (libraries)
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libdbus-1.so.3 so:libdevmapper.so.1.02 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
-p:so:libvirt-admin.so.0=0.6005.0 so:libvirt-lxc.so.0=0.6005.0 so:libvirt-qemu.so.0=0.6005.0 so:libvirt.so.0=0.6005.0
-
 C:Q1QMUVYTEKVVGHspyKKZ88oGTY0f4=
 P:kamailio-jsdt
 V:5.3.4-r0
@@ -50247,6 +50155,21 @@ t:1589744791
 c:cd8ebd297c903e043282d00d22719b18a6fe1528
 D:iperf3=3.7-r2
 
+C:Q1Vcp4pV7w9MeOZYSuT/Y+WfWo/rg=
+P:clamav-db
+V:0.102.4-r1
+A:x86
+S:1361
+I:40960
+T:ClamAV dummy package for compatibility
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:freshclam
+
 C:Q19RpmlQzX4gpPurv7+2AyTDgbM7A=
 P:perl-params-classify-doc
 V:0.015-r3
@@ -50506,6 +50429,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1532867203
 c:4c32e89c11910ff57b985f3ff6c0ba6908b433d3
 i:docs xf86-video-ark=0.7.5-r10
+
+C:Q1jUVYQANLZVPtARfksgYuwwEcP9k=
+P:freshclam
+V:0.102.4-r1
+A:x86
+S:46584
+I:176128
+T:Auto-updater for the Clam Antivirus scanner data-files
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:/bin/sh so:libc.musl-x86.so.1 so:libclamav.so.9 so:libfreshclam.so.2
+p:cmd:freshclam
 
 C:Q1vqXdIL0cp/TIwPu8CFnfNpT7Ed4=
 P:lua5.1-filesystem
@@ -50815,6 +50754,22 @@ t:1580255759
 c:1eb911922a7e818a6f314a68c0561bba008e6efd
 i:openrc rp-pppoe=3.13-r0
 
+C:Q1u9CRRIr82K7wqJHABy8OslQPpF8=
+P:dovecot
+V:2.3.11.3-r1
+A:x86
+S:3538472
+I:8933376
+T:IMAP and POP3 server
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.67 so:libicuuc.so.67 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
+p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dovecot-sysreport cmd:dsync
+
 C:Q1LDA6pGfoxvFe4RnhhiAEgQJvFrg=
 P:haserl-lua5.2
 V:0.9.35-r1
@@ -50926,6 +50881,20 @@ c:3755e1591d766bee030fae26f8a81c23e47e011e
 D:libxaw=1.0.13-r3 pc:x11 pc:xext pc:xmu pc:xpm pc:xproto pc:xt pkgconfig
 p:pc:xaw7=1.0.13
 
+C:Q1I4RBGIylZoN+UNv+yX3xT6aGxQo=
+P:dovecot-dev
+V:2.3.11.3-r1
+A:x86
+S:517682
+I:3608576
+T:IMAP and POP3 server (development files)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+
 C:Q1Nu/7BUHuuRyLWC0I8Tm2y9FdvyY=
 P:lua5.1-yaml
 V:1.1.2-r2
@@ -50986,6 +50955,20 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1587103063
 c:85f68ec811f2b96b68308c8c99db0edd919761da
 i:docs ortp=4.3.2-r0
+
+C:Q1POx0Jju45hOHqUO78wqMwJEb+Kk=
+P:glib-dbg
+V:2.64.5-r0
+A:x86
+S:3686314
+I:9101312
+T:Common C routines used by Gtk+ and other libs (debug symbols)
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
 
 C:Q1jX4KkFuF8r4wPX/DOnuZa0TXrRw=
 P:perl-io-captureoutput
@@ -51233,21 +51216,6 @@ c:d140e9a31d3897b665df372c1ca8e1e3557c0ace
 D:so:libc.musl-x86.so.1 so:libskarnet.so.2.9
 p:cmd:s6-basename cmd:s6-cat cmd:s6-chmod cmd:s6-chown cmd:s6-clock cmd:s6-cut cmd:s6-dirname cmd:s6-dumpenv cmd:s6-echo cmd:s6-env cmd:s6-expr cmd:s6-false cmd:s6-format-filter cmd:s6-grep cmd:s6-head cmd:s6-hiercopy cmd:s6-linkname cmd:s6-ln cmd:s6-ls cmd:s6-maximumtime cmd:s6-mkdir cmd:s6-mkfifo cmd:s6-nice cmd:s6-nuke cmd:s6-pause cmd:s6-printenv cmd:s6-quote cmd:s6-quote-filter cmd:s6-rename cmd:s6-rmrf cmd:s6-seq cmd:s6-sleep cmd:s6-sort cmd:s6-sync cmd:s6-tail cmd:s6-test cmd:s6-touch cmd:s6-true cmd:s6-uniquename cmd:s6-unquote cmd:s6-unquote-filter cmd:s6-update-symlinks cmd:seekablepipe
 
-C:Q1hgafWG/GiI4A0+xzV6YiS07qkyU=
-P:dovecot-pop3d
-V:2.3.10.1-r0
-A:x86
-S:36447
-I:135168
-T:IMAP and POP3 server (POP3 daemon)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1Fyxb8Awqg8ih9Y15F3f55zE2zBw=
 P:libxscrnsaver
 V:1.2.3-r0
@@ -51354,21 +51322,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1589382210
 c:d667fc961bad0ef91f29ef651d6d50acf5da3f54
 D:/bin/sh
-
-C:Q1HZxrP/9zRklwQcPDKwEbXzUFozc=
-P:libvirt-doc
-V:6.5.0-r0
-A:x86
-S:2205254
-I:8179712
-T:A virtualization API for several hypervisor and container systems (documentation)
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-i:docs libvirt=6.5.0-r0
 
 C:Q1zT4gH9dW/z79zuiOOzWy5ykg5y4=
 P:supervisor
@@ -52322,20 +52275,6 @@ t:1574053286
 c:eae2b16a0286e63ce8e4cc80dbec07e7ae797b44
 D:acf-core amavis
 
-C:Q1IGGlxsYkcC1wjBMp4BMOFGqesf8=
-P:glib-dbg
-V:2.64.4-r0
-A:x86
-S:3685988
-I:9101312
-T:Common C routines used by Gtk+ and other libs (debug symbols)
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-
 C:Q1EPcQ5GTRpdTaZVtWHeqe1uryA/s=
 P:fish-doc
 V:3.1.2-r0
@@ -52689,22 +52628,6 @@ t:1580250445
 c:238b6bccbab3b844079fa109d5cee096b81756d3
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
 p:so:libgmpxx.so.4=4.6.0
-
-C:Q152kqLJUQIlxg2Nx2movVvN63Qqg=
-P:libvirt-qemu
-V:6.5.0-r0
-A:x86
-S:704343
-I:1859584
-T:QEMU driver for libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt-daemon=6.5.0-r0 libvirt-common-drivers=6.5.0-r0 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
-i:libvirt-daemon=6.5.0-r0 qemu
 
 C:Q1Zx85kgjc9aVJd4JBTi8Rc0rl6kg=
 P:perl-devel-checklib-doc
@@ -53381,6 +53304,22 @@ t:1588142792
 c:8a8ed4afc121014d2907abd53033c8de7a974ce7
 D:nginx so:libc.musl-x86.so.1
 
+C:Q1neSKLeOwDLD1q1QNPXLS66EQUM8=
+P:clamav
+V:0.102.4-r1
+A:x86
+S:89698
+I:249856
+T:An anti-virus toolkit for UNIX eis-ng backport
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:clamav-scanner clamav-daemon so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libfts.so.0
+p:cmd:clamonacc
+
 C:Q1nf7PBTOwDPr9Nn1Royb+buMIeNw=
 P:linux-firmware-emi26
 V:20200519-r0
@@ -53918,6 +53857,21 @@ t:1585639273
 c:acf8da437b9f5221fc591ee2cc421fb591cadec9
 i:docs radvd=2.18-r0
 
+C:Q1JuF24EqLnAVIDcz359MYANX/ly0=
+P:libvirt-doc
+V:6.6.0-r1
+A:x86
+S:2213057
+I:8224768
+T:A virtualization API for several hypervisor and container systems (documentation)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+i:docs libvirt=6.6.0-r1
+
 C:Q1DMacPGxeFME3CxCG6sP+ifIUF60=
 P:lighttpd-doc
 V:1.4.55-r1
@@ -54232,22 +54186,6 @@ t:1589507191
 c:115b97fbb2a160d7ec810eda935d4bf27238e4f1
 D:mesa=20.0.7-r0 libvdpau so:libLLVM-10.so so:libX11-xcb.so.1 so:libc.musl-x86.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 
-C:Q1nPoUNVaYRdo5UsDFO6b2D4w7+nA=
-P:glib
-V:2.64.4-r0
-A:x86
-S:1422628
-I:3792896
-T:Common C routines used by Gtk+ and other libs
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-D:/bin/sh so:libc.musl-x86.so.1 so:libffi.so.7 so:libintl.so.8 so:libmount.so.1 so:libpcre.so.1 so:libz.so.1
-p:so:libgio-2.0.so.0=0.6400.4 so:libglib-2.0.so.0=0.6400.4 so:libgmodule-2.0.so.0=0.6400.4 so:libgobject-2.0.so.0=0.6400.4 so:libgthread-2.0.so.0=0.6400.4 cmd:gapplication cmd:gdbus cmd:gio cmd:gio-querymodules cmd:glib-compile-schemas cmd:gsettings
-
 C:Q1/sJRooZ1N7yNPiucwnYEV2szto0=
 P:mysql-client
 V:10.4.13-r0
@@ -54429,21 +54367,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-devel-stacktrace-ashtml=0.15-r1
-
-C:Q1XSr548ts4VswyQHaQ6OmMK/V9NQ=
-P:clamav-doc
-V:0.102.4-r0
-A:x86
-S:33551
-I:86016
-T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-i:docs clamav=0.102.4-r0
 
 C:Q1zqdhPsXwLifxNe7IoZxZq7DHlqo=
 P:ngircd
@@ -55492,22 +55415,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1589994008
 c:8ddc01280c84aafdacf6ab24f828d9263e9959e9
 
-C:Q124Lw0p5BydHRJiAj5tuw377lCPE=
-P:libvirt-client
-V:6.5.0-r0
-A:x86
-S:285643
-I:827392
-T:libvirt client package
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libreadline.so.8 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
-p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-qemu-run cmd:virt-xml-validate
-
 C:Q1TTlgiBQOR3I/zI4QcPjRZhn4gx4=
 P:ppp-daemon
 V:2.4.8-r2
@@ -56296,6 +56203,21 @@ t:1585679707
 c:104e290b2e3f271694cab5d53b25621a0a418a43
 i:docs atf=0.21-r2
 
+C:Q1k1+ZVLN09XMld6f8gLqkcN6IZk0=
+P:libvirt-vbox
+V:6.6.0-r1
+A:x86
+S:89388
+I:299008
+T:VirtualBox driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt-daemon=6.6.0-r1 libvirt-common-drivers=6.6.0-r1 so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libvirt.so.0 so:libxml2.so.2
+
 C:Q1Uyjp7q1ATp91xoOp9PICTlEkPG0=
 P:apache-mod-fcgid-doc
 V:2.3.9-r2
@@ -56463,6 +56385,22 @@ m:Roberto Oliveira <robertoguimaraes8@gmail.com>
 t:1587535969
 c:f2ba3f20e115181a2d50312d53a6c524d7b5c89f
 i:docs ghi=1.2.0-r5
+
+C:Q1V4rrmgoZ5J01rNzOxPPz8sbsU4k=
+P:dovecot-sql
+V:2.3.11.3-r1
+A:x86
+S:21576
+I:86016
+T:SQL plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot.so.0
+p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q1San4iDi+WUQqVc+SE8Ez+0VQGzI=
 P:freetype-dev
@@ -57288,22 +57226,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1584852763
 c:5f819cab2311ed4d290b6d626e3922e930e718e2
 i:docs perl-ldap=0.66-r2
-
-C:Q1rtjHpfaeKWQ9IKKt+KcgD9cCbcE=
-P:clamav-dev
-V:0.102.4-r0
-A:x86
-S:18278
-I:110592
-T:An anti-virus toolkit for UNIX eis-ng backport (development files)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:openssl-dev clamav-libs=0.102.4-r0 clamav-libunrar=0.102.4-r0 pkgconfig
-p:pc:libclamav=0.102.4 cmd:clamav-config
 
 C:Q10ELfVF+pflnjakJw1Zh8svy6oXo=
 P:perl-sub-quote-doc
@@ -58166,6 +58088,21 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86.so.1
 i:lua5.3 lua-sircbot=0.4-r2
 
+C:Q1/TPtI/d0gEqUPAEfe5hv0vAe4VI=
+P:freshclam-openrc
+V:0.102.4-r1
+A:x86
+S:2151
+I:24576
+T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+i:freshclam=0.102.4-r1 openrc
+
 C:Q1Pqu3b2ZIOi7lmIPTe5jCkha6okY=
 P:fftw
 V:3.3.8-r0
@@ -58320,22 +58257,6 @@ t:1559284751
 c:24cebe87e21cfadfb2c601b79e62d4043c6869de
 D:lua5.3
 i:lua-uuid=0.2.0-r1 lua5.3
-
-C:Q1MgmV9FsYQ463xf5GLgTLMcIdryw=
-P:postgresql-bdr-contrib
-V:9.4.14_p1-r7
-A:x86
-S:622046
-I:2732032
-T:Extension modules distributed with PostgreSQL
-U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
-L:PostgreSQL
-o:postgresql-bdr
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1576683391
-c:c467afc6754584e901ba177a66365fa31f254a44
-D:bash libpq so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
-p:postgresql-contrib=9.4.14_p1 cmd:oid2name cmd:pg_archivecleanup cmd:pg_standby cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_xlogdump cmd:pgbench cmd:vacuumlo
 
 C:Q1w5BacodGhgqXS4MCfHRXlS7a8Vs=
 P:dropbear-ssh
@@ -58884,6 +58805,22 @@ t:1531841134
 c:c6a9a17f4164572f308708d3bbf7ebcd1662d609
 D:so:libc.musl-x86.so.1
 p:so:libnpth.so.0=0.1.2
+
+C:Q1T03gISMXSMxeLgRVkwJUvfStBiM=
+P:chrony
+V:3.5.1-r0
+A:x86
+S:154336
+I:380928
+T:NTP client and server programs
+U:https://chrony.tuxfamily.org
+L:GPL-2.0-only
+o:chrony
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598203726
+c:a79726f4871165dc7569d9be8efa689c286ba417
+D:/bin/sh so:libc.musl-x86.so.1 so:libcap.so.2
+p:cmd:chronyc cmd:chronyd
 
 C:Q1f8ozDcer+a062f7yR/pOgxkOyPA=
 P:perl-module-scandeps-doc
@@ -61097,6 +61034,21 @@ t:1563189806
 c:fa24fcb44c8012dc251bf28039a6d043d1928773
 i:docs irqbalance=1.6.0-r1
 
+C:Q1+kbzy05+BsBA8DUi4Jukw7fyU/E=
+P:glib-static
+V:2.64.5-r0
+A:x86
+S:7436883
+I:13307904
+T:glib static libraries
+U:https://developer.gnome.org/glib/
+L:LGPL-2.1-or-later
+o:glib
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1598175397
+c:59b0b1b7c695e72d865e23f67b85c1c7cdaab037
+D:gettext-static
+
 C:Q1XfgV/GwdH8JBIbilitx6N0WM/g0=
 P:git-doc
 V:2.26.2-r0
@@ -61127,21 +61079,6 @@ t:1582305142
 c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
 D:shared-mime-info gdk-pixbuf=2.40.0-r2 pc:gio-2.0>=2.38.0 pc:glib-2.0>=2.38.0 pc:gmodule-no-export-2.0>=2.38.0 pc:gobject-2.0>=2.38.0 pc:shared-mime-info pc:x11 pkgconfig
 p:pc:gdk-pixbuf-2.0=2.40.0 pc:gdk-pixbuf-xlib-2.0=2.40.0
-
-C:Q1Ev5gocj6jBm+mm7vdVkyppWMpPw=
-P:glib-static
-V:2.64.4-r0
-A:x86
-S:7436666
-I:13307904
-T:glib static libraries
-U:https://developer.gnome.org/glib/
-L:LGPL-2.1-or-later
-o:glib
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1593856677
-c:44b5946805c1c52baad6049f3bcdde663564cb3a
-D:gettext-static
 
 C:Q1EinTNqPexaEo4bJwbmgoswPd2k4=
 P:iperf-openrc
@@ -61716,6 +61653,38 @@ t:1590085013
 c:006eef8480cd3e7c134a72692c2257e1127dca40
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:cancel cmd:cupsaccept cmd:cupsctl cmd:cupsdisable cmd:cupsenable cmd:cupstestppd cmd:ippeveprinter cmd:ippfind cmd:lp cmd:lpadmin cmd:lpc cmd:lpinfo cmd:lpmove cmd:lpoptions cmd:lpq cmd:lpr cmd:lprm cmd:lpstat cmd:ppdc cmd:ppdhtml cmd:ppdi cmd:ppdmerge cmd:ppdpo
+
+C:Q1r0mqrb/4FUMcCqtOUyQq6jH+EJQ=
+P:openrc-dev
+V:0.42.1-r11
+A:x86
+S:44084
+I:159744
+T:OpenRC manages the services, startup and shutdown of a host (development files)
+U:https://github.com/OpenRC/openrc
+L:BSD-2-Clause
+o:openrc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1597702746
+c:9028084776f69c8b41d820c608bd5676cb20bbf9
+D:openrc=0.42.1-r11 pkgconfig
+p:pc:einfo=0.42.1 pc:openrc=0.42.1
+
+C:Q1Q7o5RrpjBMODxaSUe5DZUEo9Qjw=
+P:dovecot-pigeonhole-plugin
+V:2.3.11.3-r1
+A:x86
+S:481886
+I:1351680
+T:Sieve and managesieve plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
 
 C:Q11U0oJTRZ9BN8txsDBOQSO69n3Cw=
 P:boost-graph
@@ -62299,6 +62268,22 @@ t:1590427742
 c:db4d4d0ffbd4200cb04671197763118625bf25c8
 p:linux-firmware-any
 
+C:Q1xgpWl56bqqhlel7D+HpVIZ6d12M=
+P:clamav-milter
+V:0.102.4-r1
+A:x86
+S:83796
+I:225280
+T:ClamAV milter
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2
+p:cmd:clamav-milter
+
 C:Q1aenOXrKVl23ggVOnasSIutpgMV8=
 P:libc-dev
 V:0.7.2-r3
@@ -62390,22 +62375,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566543781
 c:55fddf182b1ed339bc1ea7f8a83c5537aca47da8
 i:docs cgdb=0.7.1-r0
-
-C:Q1wAsRiFeklfPLKHTy+ByabaSbldk=
-P:dovecot-ldap
-V:2.3.10.1-r0
-A:x86
-S:46458
-I:163840
-T:LDAP auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot.so.0 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q18iYpxeyEksDKSg8aKLi0CuAZQf4=
 P:rdesktop
@@ -63746,22 +63715,6 @@ t:1583148589
 c:9e99d436a820cd0d92b86b5bd986662d0794a970
 D:so:libc.musl-x86.so.1
 p:so:libevdev.so.2=2.3.0 cmd:libevdev-tweak-device cmd:mouse-dpi-tool cmd:touchpad-edge-detector
-
-C:Q1XLcSzBjWby5JuF2weqq1K2piiG8=
-P:libvirt-dev
-V:6.5.0-r0
-A:x86
-S:249260
-I:1654784
-T:A virtualization API for several hypervisor and container systems (development files)
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libtirpc-dev libvirt-libs=6.5.0-r0 pkgconfig
-p:pc:libvirt-admin=6.5.0 pc:libvirt-lxc=6.5.0 pc:libvirt-qemu=6.5.0 pc:libvirt=6.5.0
 
 C:Q1n632964CmnnWg0iW/g1ILK32k0U=
 P:syslog-ng-stardate
@@ -65650,22 +65603,6 @@ c:136b008eb01b1855a28e4a9344d3afd8ff08c4e4
 D:gdbm-dev avahi-ui-gtk3=0.7-r2 pc:avahi-client pc:avahi-glib pc:gtk+-3.0 pkgconfig
 p:pc:avahi-ui-gtk3=0.7
 
-C:Q1JoLQOHymT2Z0+MfTLJQsjO3xJFw=
-P:dovecot
-V:2.3.10.1-r0
-A:x86
-S:3484688
-I:8802304
-T:IMAP and POP3 server
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
-p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib05_snarf_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_mail_filter_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_autocreate_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_expire_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dovecot-sysreport cmd:dsync
-
 C:Q1mPhyh7nHwFgikuuHEqc3ZoFCrEs=
 P:d-feet
 V:0.3.15-r2
@@ -66288,22 +66225,6 @@ t:1588334200
 c:7fd2bddbd0920f625bee9cb723e8710c7cad4587
 D:so:libc.musl-x86.so.1 so:liblinenoise.so.0 so:liblua-5.3.so.0
 p:lua cmd:lua5.3 cmd:luac5.3
-
-C:Q1TWyv5YXhoMle8JQed2CQZ4HP0uY=
-P:dovecot-fts-lucene
-V:2.3.10.1-r0
-A:x86
-S:30537
-I:106496
-T:FTS-Lucene plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:lib21_fts_lucene_plugin.so=0
 
 C:Q1ENjPCBNJmcqnmWQU0rJNcrRIBRI=
 P:libsecret-dev
@@ -66931,22 +66852,6 @@ c:5dd91db652c7199e1ce3b0b27c7c19e5773ce48c
 D:hwids-net hwids-pci hwids-usb
 i:hwids-usb=20200306-r0 eudev
 
-C:Q1ekU6PS9xQFlAYxzFUkMArLeK+sE=
-P:clamav
-V:0.102.4-r0
-A:x86
-S:89698
-I:249856
-T:An anti-virus toolkit for UNIX eis-ng backport
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1595098099
-c:f468b1fb3fb7fe47bc6f66d5096d8dcffe858265
-D:clamav-scanner clamav-daemon so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libfts.so.0
-p:cmd:clamonacc
-
 C:Q1rEfsJqcJ7ASAxRYESTiuvwCeObk=
 P:libx11-static
 V:1.6.11-r0
@@ -67392,6 +67297,22 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-x86.so.1
 p:cmd:sntpc
 
+C:Q15x7wIzZ/QB7KQIcUonMZsZyNl78=
+P:libvirt-client
+V:6.6.0-r1
+A:x86
+S:287404
+I:823296
+T:libvirt client package
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt pm-utils gnutls-utils netcat-openbsd so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libreadline.so.8 so:libvirt-admin.so.0 so:libvirt-lxc.so.0 so:libvirt-qemu.so.0 so:libvirt.so.0 so:libxml2.so.2
+p:cmd:virsh cmd:virt-admin cmd:virt-host-validate cmd:virt-login-shell cmd:virt-pki-validate cmd:virt-qemu-run cmd:virt-xml-validate
+
 C:Q1J6IBzOflIAPyzItSwoWu8qz7wB0=
 P:nagios-plugins-snmp
 V:2.3.2-r0
@@ -67825,22 +67746,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl-html-tagset perl-uri perl-html-parser
 
-C:Q10f5y/nts9lrJ/DJrqvrf+9bizSA=
-P:libvirt-lxc
-V:6.5.0-r0
-A:x86
-S:145625
-I:466944
-T:LXC driver for libvirt
-U:https://libvirt.org/
-L:LGPL-2.1-or-later
-o:libvirt
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1594381495
-c:3dd40b6457d507544ebdc88ff996a598ac9a3e19
-D:libvirt-daemon=6.5.0-r0 libvirt-common-drivers=6.5.0-r0 so:libblkid.so.1 so:libc.musl-x86.so.1 so:libcap-ng.so.0 so:libfuse.so.2 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libtirpc.so.3 so:libvirt.so.0
-i:libvirt-daemon=6.5.0-r0 lxc
-
 C:Q1Yar5w+VGsrnH5qIuhYY55EVomRg=
 P:boost-python3
 V:1.72.0-r6
@@ -67887,22 +67792,6 @@ t:1596228209
 c:c106e3c92285573771ab176f5aed1fa0787bf36e
 D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-x86.so.1 so:libnettle.so.7 so:libpixman-1.so.0
 p:cmd:Xnest
-
-C:Q1XF+ZVxoqnVNqOqmdrDoEriOuGFY=
-P:chrony
-V:3.5-r2
-A:x86
-S:153318
-I:380928
-T:NTP client and server programs
-U:https://chrony.tuxfamily.org
-L:GPL-2.0-only
-o:chrony
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1583938078
-c:e8f479168122f5e199cadd797a8e7f9b8bf20774
-D:/bin/sh so:libc.musl-x86.so.1 so:libcap.so.2
-p:cmd:chronyc cmd:chronyd
 
 C:Q1cV79ArRnFnLQZ9ECCSBRUC7EBA0=
 P:lua-stringy
@@ -67960,6 +67849,21 @@ o:libcap
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587978130
 c:2671de78c5d89ba639b1dcca2a06246da56944bc
+
+C:Q13d9b0XEcYIJLt+XICje8a1qFk2I=
+P:chrony-doc
+V:3.5.1-r0
+A:x86
+S:55776
+I:98304
+T:NTP client and server programs (documentation)
+U:https://chrony.tuxfamily.org
+L:GPL-2.0-only
+o:chrony
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598203726
+c:a79726f4871165dc7569d9be8efa689c286ba417
+i:docs chrony=3.5.1-r0
 
 C:Q1rYtjcYCuHf5V7j3dyjnx/bJYWxY=
 P:perl-cache-cache-doc
@@ -68295,6 +68199,22 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:so:libc.musl-x86.so.1
 
+C:Q17fjs8QahQGohkhl0sjUNIVs0q7g=
+P:postgresql-bdr
+V:9.4.14_p1-r8
+A:x86
+S:4880328
+I:13844480
+T:A sophisticated object-relational DBMS with bidirectional replication support (BDR)
+U:https://www.2ndquadrant.com/en/resources/postgres-bdr-2ndquadrant/
+L:PostgreSQL
+o:postgresql-bdr
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1597700767
+c:e85874b35cda608ba1ac567f409162fe9c50fc95
+D:bash libpq /bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1
+p:postgresql=9.4.14_p1 cmd:createlang cmd:droplang cmd:initdb cmd:pg_controldata cmd:pg_ctl cmd:pg_receivexlog cmd:pg_resetxlog cmd:postgres cmd:postmaster
+
 C:Q1P1SXodKQIhOjMXC8lhPkz7ngHyY=
 P:libice-static
 V:1.0.10-r0
@@ -68597,6 +68517,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1588164907
 c:451b887f506132301b2dfceee2873dcbcd002eba
 D:libasr=1.0.4-r0
+
+C:Q1hKYyEsxJn6A4cyy/Uc2EfzPwcFY=
+P:clamav-libs
+V:0.102.4-r1
+A:x86
+S:820913
+I:2195456
+T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libbz2.so.1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.0
 
 C:Q1lakCGw/SNm1CQ+m497icGwKWoRs=
 P:dahdi-linux
@@ -69599,6 +69535,21 @@ c:3d8370f50dc353026f9dcc3a9f28c7cd8ac01129
 D:so:libc.musl-x86.so.1 so:libffi.so.7 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
 p:so:libLLVM-9.so=0
 
+C:Q1ixdc6Fv/FdvlWUyVEwg4oVZ4OQE=
+P:libvirt-uml
+V:6.6.0-r1
+A:x86
+S:1346
+I:32768
+T:UML driver for libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libvirt-daemon=6.6.0-r1 libvirt-common-drivers=6.6.0-r1
+
 C:Q1/HsNO+yjYVKnD3HN1hIdaLCwNbY=
 P:procps
 V:3.3.16-r0
@@ -69974,21 +69925,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585649251
 c:3844aa04647ff7fe7442c0b1575c01a394878975
 i:docs jbig2dec=0.18-r0
-
-C:Q1DQuNtYnZi7ltvB0pafRTUqCmpt8=
-P:openrc-bash-completion
-V:0.42.1-r10
-A:x86
-S:3779
-I:40960
-T:Bash completions for openrc
-U:https://github.com/OpenRC/openrc
-L:BSD-2-Clause
-o:openrc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590746553
-c:299a1c1afb07fab3c57f60a3545e60492a9c496b
-i:openrc=0.42.1-r10 bash-completion
 
 C:Q1cGkXlWsUPT2xksYxruCHT+4YjWU=
 P:squid-lang-he
@@ -71089,6 +71025,22 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-scope-upper=0.32-r2
 
+C:Q1RqfkP+mgMfnzvSDukbRdnaMSpwk=
+P:clamav-dev
+V:0.102.4-r1
+A:x86
+S:18275
+I:110592
+T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:openssl-dev clamav-libs=0.102.4-r1 clamav-libunrar=0.102.4-r1 pkgconfig
+p:pc:libclamav=0.102.4 cmd:clamav-config
+
 C:Q1dmGgU8XaiPg00a1FDdbLVzs0RRo=
 P:haveged
 V:1.9.8-r1
@@ -71438,22 +71390,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590277929
 c:7a8be3df82e968edb33e2d5ce2dc4e9a1f51d0a0
 
-C:Q10GG+r9r1ag7VBLmzxp31km/67eU=
-P:dovecot-pigeonhole-plugin
-V:2.3.10.1-r0
-A:x86
-S:480976
-I:1343488
-T:Sieve and managesieve plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590084271
-c:2b1449bb52bbd408ea452e0f29312761f669c517
-D:dovecot=2.3.10.1-r0 so:libc.musl-x86.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump cmd:sieve-filter cmd:sieve-test cmd:sievec
-
 C:Q1Ej1oXsEYN7OUPSWXSH9ApDm6Hvg=
 P:nginx-mod-http-xslt-filter
 V:1.18.0-r0
@@ -71775,6 +71711,22 @@ t:1588142792
 c:8a8ed4afc121014d2907abd53033c8de7a974ce7
 i:docs nginx=1.18.0-r0
 
+C:Q1/6o6y5p7AkJMn/hjQj7YyyLK5zk=
+P:clamav-libunrar
+V:0.102.4-r1
+A:x86
+S:130050
+I:290816
+T:ClamAV unrar libraries
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1597702715
+c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
+D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
+
 C:Q1Uwec1j34yWius8D+cWTrfIFErrE=
 P:xf86-video-xgixp-doc
 V:1.8.1-r11
@@ -72037,6 +71989,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1567697808
 c:c68a7de1df533938d1f2d2add48c73aa4758ed3f
 D:irssi perl so:libc.musl-x86.so.1 so:libperl.so
+
+C:Q1CfmsDUWi9JyeHrk25BUov9aFQeY=
+P:libvirt-lang
+V:6.6.0-r1
+A:x86
+S:4499912
+I:18108416
+T:Languages for package libvirt
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:lvm2
+i:libvirt=6.6.0-r1 lang
 
 C:Q1OiVAeMaoCqFzwJ3uykVkZi8SVVg=
 P:hylafax
@@ -73197,6 +73165,22 @@ t:1589566447
 c:47e0f488993e07f4ed6090d47e7f5c2fd1b47925
 D:diffutils vim
 
+C:Q1cXflZHQMlhSqzt7PpjcmX+0G6Z4=
+P:libvirt-dev
+V:6.6.0-r1
+A:x86
+S:250028
+I:1658880
+T:A virtualization API for several hypervisor and container systems (development files)
+U:https://libvirt.org/
+L:LGPL-2.1-or-later
+o:libvirt
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1597999414
+c:cb893263272c73c5d81eb5564166561ae4faabe1
+D:libtirpc-dev libvirt-libs=6.6.0-r1 pkgconfig
+p:pc:libvirt-admin=6.6.0 pc:libvirt-lxc=6.6.0 pc:libvirt-qemu=6.6.0 pc:libvirt=6.6.0
+
 C:Q1Ut3nsgVFVWoauiFUH+ReYMSbDO0=
 P:audit-dev
 V:2.8.5-r0
@@ -73721,6 +73705,22 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1589405346
 c:c08d409977711204374e60cf060f02327ca80f60
 i:docs ansible=2.9.9-r0
+
+C:Q1m+gx39N0CTCS0tL0S8dnGUYQe78=
+P:dovecot-fts-lucene
+V:2.3.11.3-r1
+A:x86
+S:30538
+I:106496
+T:FTS-Lucene plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598337263
+c:c8fb865b579b81d947372db0f485199f85b84456
+D:dovecot=2.3.11.3-r1 so:libc.musl-x86.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:lib21_fts_lucene_plugin.so=0
 
 C:Q1PVU0Kx9TC2gyhOXNdIQ4M48P6vE=
 P:mercurial-doc
