@@ -2181,22 +2181,6 @@ c:1a217e7ba2ac96ad01d293806bc0307e3491c853
 D:polkit eudev so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libdbus-1.so.3 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libpolkit-gobject-1.so.0 so:libudev.so.1 so:libz.so.1
 p:consolekit=1.2.1 so:libck-connector.so.0=0.0.0 so:libconsolekit.so.1=1.0.0 cmd:ck-history cmd:ck-launch-session cmd:ck-list-sessions cmd:ck-log-system-restart cmd:ck-log-system-start cmd:ck-log-system-stop cmd:console-kit-daemon
 
-C:Q13dkH1nZiGBL0xk4Q6T5wDefUIM0=
-P:iptables
-V:1.8.4-r1
-A:ppc64le
-S:564243
-I:2297856
-T:Linux kernel firewall, NAT and packet mangling tools
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-D:so:libc.musl-ppc64le.so.1 so:libmnl.so.0 so:libnftnl.so.11
-p:ebtables so:libip4tc.so.2=2.0.0 so:libip6tc.so.2=2.0.0 so:libipq.so.0=0.0.0 so:libxtables.so.12=12.2.0 cmd:arptables cmd:arptables-nft cmd:arptables-nft-restore cmd:arptables-nft-save cmd:arptables-restore cmd:arptables-save cmd:ebtables cmd:ebtables-nft cmd:ebtables-nft-restore cmd:ebtables-nft-save cmd:ebtables-restore cmd:ebtables-save cmd:iptables cmd:iptables-legacy cmd:iptables-legacy-restore cmd:iptables-legacy-save cmd:iptables-nft cmd:iptables-nft-restore cmd:iptables-nft-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-legacy-multi cmd:xtables-monitor cmd:xtables-nft-multi
-
 C:Q1jeAF/Q1/VtCw0XgSD0bRUiF8qnk=
 P:cmocka
 V:1.1.5-r1
@@ -10734,21 +10718,6 @@ c:acf033946815499efc5c8782eade6fd831d79cf6
 D:so:libc.musl-ppc64le.so.1 so:libgdbm.so.4 so:libpython2.7.so.1.0
 p:python-gdbm=2.7.18-r0
 
-C:Q1qWztTaSSzd9hMmBCqpQ4eJ+yyP8=
-P:ip6tables
-V:1.8.4-r1
-A:ppc64le
-S:76238
-I:368640
-T:Linux kernel firewall, NAT and packet mangling tools
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-D:iptables=1.8.4-r1 so:libc.musl-ppc64le.so.1 so:libxtables.so.12
-
 C:Q1rQa5G4pUdsUGM3XKmPBWjp0JTGQ=
 P:libunwind-static
 V:1.4.0-r0
@@ -18305,6 +18274,22 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl perl-dbi
 
+C:Q1LtIzHQNq8GTQrZHJC+vBAuVNfdQ=
+P:iptables-dev
+V:1.8.4-r2
+A:ppc64le
+S:12602
+I:110592
+T:Linux kernel firewall, NAT and packet mangling tools (development files)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+D:linux-headers iptables=1.8.4-r2 pkgconfig
+p:pc:libip4tc=1.8.4 pc:libip6tc=1.8.4 pc:libipq=1.8.4 pc:libiptc=1.8.4 pc:xtables=1.8.4
+
 C:Q14vZ6zTW8MfqbtwynepT0K4TXcRc=
 P:linux-firmware-ar3k
 V:20200519-r0
@@ -21931,6 +21916,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1587651067
 c:79b55a4a4fc9d6fbb260b9b6be5c6ff06ae61f28
 
+C:Q1GMn4EpGxs2xvPja1mhwN4FlHCuY=
+P:iptables
+V:1.8.4-r2
+A:ppc64le
+S:564132
+I:2297856
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+D:so:libc.musl-ppc64le.so.1 so:libmnl.so.0 so:libnftnl.so.11
+p:ebtables so:libip4tc.so.2=2.0.0 so:libip6tc.so.2=2.0.0 so:libipq.so.0=0.0.0 so:libxtables.so.12=12.2.0 cmd:arptables cmd:arptables-nft cmd:arptables-nft-restore cmd:arptables-nft-save cmd:arptables-restore cmd:arptables-save cmd:ebtables cmd:ebtables-nft cmd:ebtables-nft-restore cmd:ebtables-nft-save cmd:ebtables-restore cmd:ebtables-save cmd:iptables cmd:iptables-legacy cmd:iptables-legacy-restore cmd:iptables-legacy-save cmd:iptables-nft cmd:iptables-nft-restore cmd:iptables-nft-save cmd:iptables-restore cmd:iptables-restore-translate cmd:iptables-save cmd:iptables-translate cmd:xtables-legacy-multi cmd:xtables-monitor cmd:xtables-nft-multi
+
 C:Q12fmLyfQVtU+J8SGbnQN124VuFdE=
 P:hunspell-pt
 V:20190329-r0
@@ -23458,22 +23459,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1572015635
 c:ea01bb226907d1841c222a4d45832c3c36378115
 i:docs aspell=0.60.8-r0
-
-C:Q1oB26Iy3eqdtEGWw7QXIUsy0pATI=
-P:iptables-dev
-V:1.8.4-r1
-A:ppc64le
-S:12605
-I:110592
-T:Linux kernel firewall, NAT and packet mangling tools (development files)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-D:linux-headers iptables=1.8.4-r1 pkgconfig
-p:pc:libip4tc=1.8.4 pc:libip6tc=1.8.4 pc:libipq=1.8.4 pc:libiptc=1.8.4 pc:xtables=1.8.4
 
 C:Q1IcIgksnzmC3Bvu0PETeVaAplojI=
 P:ser2net-doc
@@ -25690,21 +25675,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-ppc64le.so.1
 p:cmd:dosfsck cmd:dosfslabel cmd:fatlabel cmd:fsck.fat cmd:fsck.msdos cmd:fsck.vfat cmd:mkdosfs cmd:mkfs.fat cmd:mkfs.msdos cmd:mkfs.vfat
-
-C:Q1RIw8Z9kSgXeIzNbp0mG4r5m0o7I=
-P:iptables-doc
-V:1.8.4-r1
-A:ppc64le
-S:88853
-I:208896
-T:Linux kernel firewall, NAT and packet mangling tools (documentation)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-i:docs iptables=1.8.4-r1
 
 C:Q15meztXNuxI7f+7Z90siEgg2qFzY=
 P:fts-dev
@@ -34938,21 +34908,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1586682230
 c:9af72b19675b1be5e4f838b5dc97b5fa4d7211d0
 i:docs dnsmasq=2.81-r0
-
-C:Q1WEuuMjvjTyA0MqIXv8FvwJsUsRo=
-P:ip6tables-openrc
-V:1.8.4-r1
-A:ppc64le
-S:2895
-I:24576
-T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-i:openrc ip6tables=1.8.4-r1
 
 C:Q1WFxTD219LZPfAiSitO2UOPYqWSs=
 P:geoip-dev
@@ -45455,6 +45410,21 @@ t:1571508100
 c:b64670f31a9ff0825122fed18ebe0de04feadd80
 D:so:libc.musl-ppc64le.so.1
 p:so:libcap-ng.so.0=0.0.0
+
+C:Q1JN4wtbNTbVV3e7lhyjvNtYrvGto=
+P:iptables-doc
+V:1.8.4-r2
+A:ppc64le
+S:88863
+I:208896
+T:Linux kernel firewall, NAT and packet mangling tools (documentation)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+i:docs iptables=1.8.4-r2
 
 C:Q1fQgiC9J82xoQyWUJvaILKbe5ZYM=
 P:libsecret
@@ -63380,6 +63350,21 @@ c:1eb911922a7e818a6f314a68c0561bba008e6efd
 D:expat=2.2.9-r1 pkgconfig
 p:pc:expat=2.2.9
 
+C:Q1TcmR8jr9xmKUK6CPvfOJFGRFGSQ=
+P:iptables-openrc
+V:1.8.4-r2
+A:ppc64le
+S:3550
+I:32768
+T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+i:openrc iptables=1.8.4-r2
+
 C:Q1Dw6VjYFt8kuPIbIuYsl8Vgwe++g=
 P:uwsgi-router_memcached
 V:2.0.18-r8
@@ -65305,21 +65290,6 @@ o:freeswitch-sounds-en-us-callie-8000
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
-
-C:Q1DXJMTA+/DnF5faUvz/DfCNbfz/s=
-P:iptables-openrc
-V:1.8.4-r1
-A:ppc64le
-S:3550
-I:32768
-T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
-U:https://www.netfilter.org/projects/iptables/index.html
-L:GPL-2.0-or-later
-o:iptables
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1585551725
-c:533d0d519363e59c65c54547e11ce909174a07dd
-i:openrc iptables=1.8.4-r1
 
 C:Q1XWbZewq1AEdKys7LyXdctiBZTUs=
 P:libxi-doc
@@ -69905,6 +69875,21 @@ t:1586445084
 c:1c7ba057cebc74c8b4db0a2c40c1b2c508e8c484
 D:zsh
 
+C:Q1ulncOfDcFFY0AaK7OUpcPSnVUbg=
+P:ip6tables-openrc
+V:1.8.4-r2
+A:ppc64le
+S:2897
+I:24576
+T:Linux kernel firewall, NAT and packet mangling tools (OpenRC init scripts)
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+i:openrc ip6tables=1.8.4-r2
+
 C:Q1n9EpkNGn2budp2GekrV6//dicjI=
 P:lua5.2-maxminddb
 V:0.1-r2
@@ -72500,6 +72485,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1541609172
 c:1071e5913bb4650500a86baefbeb660976085127
 i:docs pound=2.8-r0
+
+C:Q1vOwaado+3+62Id+wblbiaLvv6Y4=
+P:ip6tables
+V:1.8.4-r2
+A:ppc64le
+S:76212
+I:368640
+T:Linux kernel firewall, NAT and packet mangling tools
+U:https://www.netfilter.org/projects/iptables/index.html
+L:GPL-2.0-or-later
+o:iptables
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1598627528
+c:8d91876805031982643ede3bc6aff38b89d7d6e1
+D:iptables=1.8.4-r2 so:libc.musl-ppc64le.so.1 so:libxtables.so.12
 
 C:Q13r9CEpspErvd1plRHX0R2gF0y34=
 P:py3-setuptools
