@@ -3575,6 +3575,22 @@ c:5949036164c597352ded38bcb5386cc5e4ea273b
 D:krb5-conf so:libasn1.so.8 so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libgssapi.so.3 so:libhcrypto.so.4 so:libhdb.so.9 so:libheimbase.so.1 so:libheimntlm.so.0 so:libhx509.so.5 so:libkadm5clnt.so.7 so:libkadm5srv.so.8 so:libkafs.so.0 so:libkdc.so.2 so:libkrb5.so.26 so:libotp.so.0 so:libreadline.so.7 so:libroken.so.18 so:libsl.so.0 so:libwind.so.0
 p:cmd:afslog cmd:bsearch cmd:gsstool cmd:heimdal cmd:heimtools cmd:hprop cmd:hpropd cmd:hxtool cmd:idn-lookup cmd:iprop-log cmd:ipropd-master cmd:ipropd-slave cmd:kadmin cmd:kadmind cmd:kcm cmd:kdc cmd:kdestroy cmd:kf cmd:kfd cmd:kgetcred cmd:kimpersonate cmd:kinit cmd:klist cmd:kpasswd cmd:kpasswdd cmd:kstash cmd:kswitch cmd:ktutil cmd:otp cmd:otpprint cmd:pagsh cmd:su
 
+C:Q1K1XIfFxVao/p8v724Cvu521We0I=
+P:gnutls
+V:3.6.15-r0
+A:x86_64
+S:773417
+I:1765376
+T:A TLS protocol implementation
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257384
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
+D:so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libhogweed.so.4 so:libnettle.so.6 so:libp11-kit.so.0 so:libtasn1.so.6 so:libunistring.so.2
+p:so:libgnutls.so.30=30.28.1
+
 C:Q1bLvGn8HQyq4SXyLEhessIKfo4iA=
 P:py-rrd
 V:1.7.0-r0
@@ -7827,6 +7843,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543935715
 c:28eebaa5b0e64bdf8238c36a1ae9d95517242d90
 
+C:Q1Bl5J4EkOiev4N5uD8BRdkbRiSz8=
+P:gnutls-dev
+V:3.6.15-r0
+A:x86_64
+S:68771
+I:405504
+T:A TLS protocol implementation (development files)
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257384
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
+D:gnutls-c++=3.6.15-r0 gnutls=3.6.15-r0 pc:hogweed pc:libtasn1 pc:nettle pc:p11-kit-1 pkgconfig
+p:pc:gnutls=3.6.15
+
 C:Q1d02KAgojvJn6NihKbKf0Zc00YOY=
 P:qemu-ui-curses
 V:3.1.0-r3
@@ -11112,21 +11144,6 @@ t:1545235264
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXi.so.6 so:libXinerama.so.1 so:libXrandr.so.2 so:libc.musl-x86_64.so.1
 p:cmd:xinput
-
-C:Q1ZQ0RSgD7paBKae0aRGW0kGZc554=
-P:gnutls-doc
-V:3.6.14-r0
-A:x86_64
-S:1887669
-I:7335936
-T:A TLS protocol implementation (documentation)
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729771
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-i:docs gnutls=3.6.14-r0
 
 C:Q1p4DFPpleVrB9z6i7if55nSUhRHY=
 P:libgnat
@@ -17762,22 +17779,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545116527
 c:99a6e1539b1bb5beefcd6c62fe429ad7f2761b97
 D:so:libc.musl-x86_64.so.1
-
-C:Q1SRo4pjld4RP1vuBWvACX+BDRIpc=
-P:gnutls-dev
-V:3.6.14-r0
-A:x86_64
-S:68853
-I:405504
-T:A TLS protocol implementation (development files)
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729771
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-D:gnutls-c++=3.6.14-r0 gnutls=3.6.14-r0 pc:hogweed pc:libtasn1 pc:nettle pc:p11-kit-1 pkgconfig
-p:pc:gnutls=3.6.14
 
 C:Q1Obp/WT/2fIqE8gLn2FNaq3btCSo=
 P:qemu-system-i386
@@ -25394,22 +25395,6 @@ t:1545249932
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libusb-dev libraw1394-dev libdc1394=2.2.5-r1 pkgconfig
 p:pc:libdc1394-2=2.2.5
-
-C:Q1jDC8ZywXMdPvpnMxj8gpYkEMac8=
-P:gnutls-c++
-V:3.6.14-r0
-A:x86_64
-S:16673
-I:73728
-T:The C++ interface to GnuTLS
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729771
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libstdc++.so.6
-p:so:libgnutlsxx.so.28=28.1.0
 
 C:Q17VytUHNhUFjmq5ATkXGI4VXhgI4=
 P:perl-try-tiny-doc
@@ -33297,6 +33282,22 @@ c:e09fa9fd69e509b0de3041baab65aac63b246b0d
 D:expat-dev pc:libcrypto pc:libevent pc:libssl pc:python2 pkgconfig unbound-libs=1.8.3-r4
 p:pc:libunbound=1.8.3
 
+C:Q1aHz3UkXX+27ztmyZtqoBZ/EHmqI=
+P:gnutls-c++
+V:3.6.15-r0
+A:x86_64
+S:16529
+I:73728
+T:The C++ interface to GnuTLS
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257384
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libstdc++.so.6
+p:so:libgnutlsxx.so.28=28.1.0
+
 C:Q1iXg5yqZW+tyFupWsRCSSoMnPpXU=
 P:perl-devel-checklib-doc
 V:1.13-r0
@@ -38059,22 +38060,6 @@ t:1568706205
 c:36ecea72e973a1cb6755d0b0ca25fed57b7c1cb8
 D:ca-certificates so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssh2.so.1 so:libssl.so.1.1 so:libz.so.1
 p:so:libcurl.so.4=4.5.0
-
-C:Q1w1VvlwM37/uVq1+UtrE/9Z1S8O8=
-P:gnutls
-V:3.6.14-r0
-A:x86_64
-S:771064
-I:1761280
-T:A TLS protocol implementation
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729771
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-D:so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libhogweed.so.4 so:libnettle.so.6 so:libp11-kit.so.0 so:libtasn1.so.6 so:libunistring.so.2
-p:so:libgnutls.so.30=30.28.0
 
 C:Q1lPC8FSLqmt7dYxvirUipVRLBUM8=
 P:radvd-doc
@@ -51931,22 +51916,6 @@ t:1542824333
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs libice=1.0.9-r3
 
-C:Q1o9SihzMs1wxVgLAgSozvL2T5sg8=
-P:gnutls-utils
-V:3.6.14-r0
-A:x86_64
-S:623352
-I:1617920
-T:Command line tools for TLS protocol
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729771
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-D:so:libc.musl-x86_64.so.1 so:libgnutls.so.30 so:libtasn1.so.6
-p:cmd:certtool cmd:gnutls-cli cmd:gnutls-cli-debug cmd:gnutls-serv cmd:ocsptool cmd:p11tool cmd:psktool cmd:srptool
-
 C:Q1w8NtdFbWt0KIyhQ2+3bOl5aWLyU=
 P:mailx-doc
 V:8.1.1-r1
@@ -63658,20 +63627,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:mcpp so:libX11.so.6 so:libXmuu.so.1 so:libc.musl-x86_64.so.1
 p:cmd:xrdb
 
-C:Q1C1p08vW3JwW6gKFbonrMKMGQisc=
-P:gnutls-dbg
-V:3.6.14-r0
-A:x86_64
-S:5279553
-I:14946304
-T:A TLS protocol implementation (debug symbols)
-U:https://www.gnutls.org/
-L:GPL
-o:gnutls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1591729740
-c:9b3acf4771f5aca10335e0374abc9b66661e8c9c
-
 C:Q13TCMaMOWlMpeVQhk2jUx5UHRZBc=
 P:lsof-doc
 V:4.91-r0
@@ -64128,6 +64083,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1545069134
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:udisks=1.0.5-r3 lang
+
+C:Q1x6FwskVsenqTMLrUhUn6THTLoGc=
+P:gnutls-doc
+V:3.6.15-r0
+A:x86_64
+S:1889777
+I:7323648
+T:A TLS protocol implementation (documentation)
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257383
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
+i:docs gnutls=3.6.15-r0
 
 C:Q1GU5gcT6HvC403Kc2h0na8cDnNCc=
 P:net-snmp-libs
@@ -70231,6 +70201,22 @@ t:1545292906
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libgdk-x11-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
 i:gtk-xfce-engine=3.2.0-r2 gtk+2.0
+
+C:Q1zMmp5floGkFx9sfxPVQsFMOOuYo=
+P:gnutls-utils
+V:3.6.15-r0
+A:x86_64
+S:624534
+I:1617920
+T:Command line tools for TLS protocol
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257384
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
+D:so:libc.musl-x86_64.so.1 so:libgnutls.so.30 so:libtasn1.so.6
+p:cmd:certtool cmd:gnutls-cli cmd:gnutls-cli-debug cmd:gnutls-serv cmd:ocsptool cmd:p11tool cmd:psktool cmd:srptool
 
 C:Q1nTOQzCjbMdFwGXczBV2AkKy3Gg0=
 P:perl-encode-locale-doc
@@ -86984,6 +86970,20 @@ t:1579268756
 c:390b341e36d575528904054fbd72fade6b1e8e3d
 D:nginx so:libc.musl-x86_64.so.1
 p:nginx-rtmp
+
+C:Q1BBdUFrlOioYfwlzJy0hjpsAyd+Y=
+P:gnutls-dbg
+V:3.6.15-r0
+A:x86_64
+S:5286963
+I:14966784
+T:A TLS protocol implementation (debug symbols)
+U:https://www.gnutls.org/
+L:GPL
+o:gnutls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1599257351
+c:37c651c6b3fe5dd504064e39fce2145dad90dc1f
 
 C:Q1NngllYrfc5CGgryAFBTQz6lhUiU=
 P:qemu-system-s390x
