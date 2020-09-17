@@ -551,22 +551,6 @@ c:f68e00a1a508947c0ecc51fbae2367d657c8110a
 D:m4 perl
 p:cmd:autoconf-2.13 cmd:autoheader-2.13 cmd:autoreconf-2.13 cmd:autoscan-2.13 cmd:autoupdate-2.13 cmd:ifnames-2.13
 
-C:Q1UIbabhHHiaf7H+7jKqcBobkPAW8=
-P:knot-libs
-V:2.9.4-r0
-A:s390x
-S:247717
-I:827392
-T:Libraries used by the Knot DNS server and client applications
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-D:so:libc.musl-s390x.so.1 so:libgnutls.so.30 so:liblmdb.so.0
-p:so:libdnssec.so.7=7.0.0 so:libknot.so.10=10.0.0 so:libzscanner.so.3=3.0.0
-
 C:Q1G388G7UNeKkBytar/asKBniK6iM=
 P:postgresql-bdr-libs
 V:9.4.14_p1-r8
@@ -4421,6 +4405,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587776031
 c:b8865099571493587168a21464ff667150448089
 
+C:Q1Ldlo58qomfWRNoNiOZ8I9UIuX84=
+P:knot
+V:2.9.6-r0
+A:s390x
+S:944993
+I:2412544
+T:An high-performance authoritative-only DNS server
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+D:/bin/sh so:libc.musl-s390x.so.1 so:libcap-ng.so.0 so:libdnssec.so.7 so:libedit.so.0 so:libgnutls.so.30 so:libknot.so.10 so:liblmdb.so.0 so:liburcu.so.6 so:libzscanner.so.3
+p:cmd:keymgr cmd:kjournalprint cmd:knotc cmd:knotd
+
 C:Q1yY3jQAH/fRZojyRyj0JyfW4NRZk=
 P:perl-io-captureoutput-doc
 V:1.1105-r0
@@ -6029,6 +6029,22 @@ t:1559283739
 c:943de8c0a9e6a3457265f3150d86a8f6e16f28cb
 i:docs libconfig=1.7.2-r0
 
+C:Q1coJT1t2XDVCINtdWEl2cwWU1aWA=
+P:knot-libs
+V:2.9.6-r0
+A:s390x
+S:248020
+I:827392
+T:Libraries used by the Knot DNS server and client applications
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+D:so:libc.musl-s390x.so.1 so:libgnutls.so.30 so:liblmdb.so.0
+p:so:libdnssec.so.7=7.0.0 so:libknot.so.10=10.0.0 so:libzscanner.so.3=3.0.0
+
 C:Q1lN38uxqZCuIx4TIQNVjwYSDa1g4=
 P:lua5.1-posixtz
 V:0.5-r1
@@ -6613,6 +6629,22 @@ t:1586773246
 c:43cfc5efba166d4c1d486f4170deee4a482f5a71
 D:libffi-dev expat-dev pkgconfig so:libc.musl-s390x.so.1 so:libexpat.so.1 so:libxml2.so.2 wayland-libs-client=1.18.0-r4 wayland-libs-cursor=1.18.0-r4 wayland-libs-egl=1.18.0-r4 wayland-libs-server=1.18.0-r4
 p:pc:wayland-client=1.18.0 pc:wayland-cursor=1.18.0 pc:wayland-egl-backend=3 pc:wayland-egl=18.1.0 pc:wayland-scanner=1.18.0 pc:wayland-server=1.18.0 cmd:wayland-scanner
+
+C:Q1ZVp0evr0go+MyoApfWyTBIBBYM4=
+P:knot-utils
+V:2.9.6-r0
+A:s390x
+S:343445
+I:892928
+T:DNS client utilities shipped with the Knot DNS server
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+D:so:libc.musl-s390x.so.1 so:libdnssec.so.7 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.10 so:liblmdb.so.0 so:liburcu.so.6 so:libzscanner.so.3
+p:cmd:kdig cmd:khost cmd:knsec3hash cmd:knsupdate cmd:kzonecheck
 
 C:Q1rsJtSHcoJhBV6rvLxa54Qtjp8uI=
 P:xf86-video-nouveau-doc
@@ -13992,21 +14024,6 @@ t:1575966084
 c:4d1be5ba9b0250ff80ce70f2d2bf7f86ea8d3d94
 i:docs perl-server-starter=0.35-r0
 
-C:Q1C9nq+QnJbtNIZ6htNCwhFhA5P8A=
-P:knot-openrc
-V:2.9.4-r0
-A:s390x
-S:2028
-I:24576
-T:An high-performance authoritative-only DNS server (OpenRC init scripts)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-i:openrc knot=2.9.4-r0
-
 C:Q1rUi3E08MqraF9WXmBFvIQ3Og1Ws=
 P:pgpool-dev
 V:4.1.2-r0
@@ -15296,6 +15313,22 @@ c:39c64709530cd3aa9310533ac4a6b6b96362a3ed
 D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
 p:cmd:Xorg cmd:cvt cmd:gtf
 
+C:Q1wPC8PVo1yDFyGpeQT+IYNQoqUOE=
+P:openjpeg
+V:2.3.1-r5
+A:s390x
+S:134979
+I:352256
+T:Open-source implementation of JPEG2000 image codec
+U:https://www.openjpeg.org/
+L:BSD-2-Clause-NetBSD
+o:openjpeg
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1600341040
+c:9d26e332941a1174c40c27df4c9debbae52296d7
+D:so:libc.musl-s390x.so.1
+p:so:libopenjp2.so.7=2.3.1
+
 C:Q1/HD2xFAgVAIClzKlgFWU6BgctBo=
 P:lua5.3-doc
 V:5.3.5-r6
@@ -16534,22 +16567,6 @@ t:1586113809
 c:622c0975ca8f9a0441df23a7b943c7172993c082
 D:so:libc.musl-s390x.so.1
 p:so:libpcre.so.1=1.2.12 so:libpcreposix.so.0=0.0.7
-
-C:Q1tKOfJF4jPdwL3HHdN3QLymR16sY=
-P:knot-utils
-V:2.9.4-r0
-A:s390x
-S:343101
-I:892928
-T:DNS client utilities shipped with the Knot DNS server
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-D:so:libc.musl-s390x.so.1 so:libdnssec.so.7 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.10 so:liblmdb.so.0 so:liburcu.so.6 so:libzscanner.so.3
-p:cmd:kdig cmd:khost cmd:knsec3hash cmd:knsupdate cmd:kzonecheck
 
 C:Q1bWXzcO0m0h2zUaTT/GAvMB+6p2w=
 P:bacula-client
@@ -19710,20 +19727,6 @@ c:fe7417f5c2fd0ea8b513ce1f1eeebf14f20eb56d
 D:nghttp2-libs=1.41.0-r0 pkgconfig
 p:pc:libnghttp2=1.41.0
 
-C:Q1sCo+GOiEZxv3V2PpBayJMtmbNdw=
-P:knot-libs-static
-V:2.9.4-r0
-A:s390x
-S:343029
-I:1478656
-T:An high-performance authoritative-only DNS server (static library)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-
 C:Q1+5ie3CJU3r5IXDsS84evvPoubKk=
 P:ldns
 V:1.7.1-r1
@@ -22045,22 +22048,6 @@ t:1580616990
 c:063e2a8eb25dbe115154bf23df90a691111402bd
 D:so:libc.musl-s390x.so.1
 p:so:libinotifytools.so.0=0.4.1 cmd:inotifywait cmd:inotifywatch
-
-C:Q154Yu1PAwwvwX+Hm9XW+ghwxUchk=
-P:openjpeg-dev
-V:2.3.1-r4
-A:s390x
-S:174303
-I:610304
-T:Open-source implementation of JPEG2000 image codec (development files)
-U:https://www.openjpeg.org/
-L:BSD-2-Clause-NetBSD
-o:openjpeg
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1582305142
-c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
-D:openjpeg=2.3.1-r4 pkgconfig
-p:pc:libopenjp2=2.3.1
 
 C:Q1DVLuJd+bbi37yzGHfHG5DyKIns4=
 P:mesa-dri-classic
@@ -33053,22 +33040,6 @@ c:536da02181da6dbe9e852a7909e83c3227f03b7f
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:lzip
 
-C:Q1vw4gwVJWr2cTuT1QG/kYGBtV7JY=
-P:knot
-V:2.9.4-r0
-A:s390x
-S:944600
-I:2408448
-T:An high-performance authoritative-only DNS server
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-D:/bin/sh so:libc.musl-s390x.so.1 so:libcap-ng.so.0 so:libdnssec.so.7 so:libedit.so.0 so:libgnutls.so.30 so:libknot.so.10 so:liblmdb.so.0 so:liburcu.so.6 so:libzscanner.so.3
-p:cmd:keymgr cmd:kjournalprint cmd:knotc cmd:knotd
-
 C:Q13GwHVzW8PGjv53OZYbsisfKtl/E=
 P:libjpeg-turbo-utils
 V:2.0.5-r0
@@ -42427,22 +42398,6 @@ t:1588142792
 c:8a8ed4afc121014d2907abd53033c8de7a974ce7
 D:nginx so:libc.musl-s390x.so.1 so:libgd.so.3
 
-C:Q1mRCKv4Gog7/WNfiePgaUIley/pk=
-P:openjpeg
-V:2.3.1-r4
-A:s390x
-S:134990
-I:352256
-T:Open-source implementation of JPEG2000 image codec
-U:https://www.openjpeg.org/
-L:BSD-2-Clause-NetBSD
-o:openjpeg
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1582305142
-c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
-D:so:libc.musl-s390x.so.1
-p:so:libopenjp2.so.7=2.3.1
-
 C:Q1Fp/Mop8xANP/xGMkLXnPxY1d/kE=
 P:xf86-video-r128
 V:6.12.0-r0
@@ -44359,6 +44314,22 @@ c:f3c1355ca20b2f845b6cd78942f0d66ce88ac527
 D:lua5.1-mosquitto
 i:lua5.1 lua-mqtt-publish=0.3-r1
 
+C:Q1lEyVy+2FZDN/5Y9sSg3AE2Wm/0U=
+P:openjpeg-tools
+V:2.3.1-r5
+A:s390x
+S:145933
+I:344064
+T:Open-source implementation of JPEG2000 image codec - tools
+U:https://www.openjpeg.org/
+L:BSD-2-Clause-NetBSD
+o:openjpeg
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1600341040
+c:9d26e332941a1174c40c27df4c9debbae52296d7
+D:so:libc.musl-s390x.so.1 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libtiff.so.5
+p:cmd:opj_compress cmd:opj_decompress cmd:opj_dump
+
 C:Q1Zxx5+OAdz+XAPQAPM3RD0Nd2Wus=
 P:perl-yaml-tiny-doc
 V:1.73-r1
@@ -45025,6 +44996,21 @@ o:lua-evdev
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
+
+C:Q16FcWhrwi/BKBB4IbF04ynzvuhUk=
+P:knot-doc
+V:2.9.6-r0
+A:s390x
+S:34089
+I:77824
+T:An high-performance authoritative-only DNS server (documentation)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+i:docs knot=2.9.6-r0
 
 C:Q1rTkjrmEm+hbwm2o9tFJrF6W1ysc=
 P:nginx-mod-stream
@@ -46840,22 +46826,6 @@ t:1588855746
 c:102a411743515ac4fb7ed06c7092acd8dd95214f
 D:so:libc.musl-s390x.so.1 so:liblber-2.4.so.2
 
-C:Q1+Qd+krRY1jvnCYQmlcVfHefNWWs=
-P:openjpeg-tools
-V:2.3.1-r4
-A:s390x
-S:145998
-I:344064
-T:Open-source implementation of JPEG2000 image codec - tools
-U:https://www.openjpeg.org/
-L:BSD-2-Clause-NetBSD
-o:openjpeg
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1582305142
-c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
-D:so:libc.musl-s390x.so.1 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libtiff.so.5
-p:cmd:opj_compress cmd:opj_decompress cmd:opj_dump
-
 C:Q1EasiVoD/zDxaOLKGjz7ySRiBA3M=
 P:lua-rex
 V:2.9.0-r0
@@ -47974,6 +47944,22 @@ o:libgpg-error
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1581131364
 c:c85d3bee67a50b74afb0564b873cd4c2b7159e4e
+
+C:Q1C6fMogg02sGANHrzGVN1LJwxM2M=
+P:knot-dev
+V:2.9.6-r0
+A:s390x
+S:58605
+I:471040
+T:An high-performance authoritative-only DNS server (development files)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+D:knot knot-libs-static knot-utils knot-libs=2.9.6-r0 pc:gnutls>=3.3 pkgconfig
+p:pc:knotd=2.9.6 pc:libdnssec=2.9.6 pc:libknot=2.9.6 pc:libzscanner=2.9.6
 
 C:Q1xhH244H6ARUA9PVYOvNc1BFdAKA=
 P:py3-pillow
@@ -58739,6 +58725,20 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libaugeas.so.0 so:libc.musl-s390x.so.1
 i:lua5.2 lua-augeas=0.1.2-r4
 
+C:Q1tB1zCRF0jIb9sPZifg+/SXB0Rq4=
+P:knot-libs-static
+V:2.9.6-r0
+A:s390x
+S:343463
+I:1478656
+T:An high-performance authoritative-only DNS server (static library)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+
 C:Q1xwc7GJdjgChhlua0zygfcfytohw=
 P:iperf-doc
 V:2.0.13-r2
@@ -60626,22 +60626,6 @@ t:1599324867
 c:aaa7f43dbe8511ff1385f8ae704cbd18c2cb5eea
 D:postgresql-client tzdata /bin/sh so:libLLVM-10.so so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libicui18n.so.67 so:libicuuc.so.67 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2
 p:cmd:initdb cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
-
-C:Q1ksr27oECPs6d35XT0GVwFmgJqZM=
-P:knot-dev
-V:2.9.4-r0
-A:s390x
-S:58431
-I:471040
-T:An high-performance authoritative-only DNS server (development files)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-D:knot knot-libs-static knot-utils knot-libs=2.9.4-r0 pc:gnutls>=3.3 pkgconfig
-p:pc:knotd=2.9.4 pc:libdnssec=2.9.4 pc:libknot=2.9.4 pc:libzscanner=2.9.4
 
 C:Q133+7Mh8v9OIrkWO5AFe7lZxbjBM=
 P:py3-yaml
@@ -65913,6 +65897,22 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libexpat.so.1
 p:so:libnih-dbus.so.1=1.0.0 so:libnih.so.1=1.0.0 cmd:nih-dbus-tool
 
+C:Q1duoUbvQY4PyKwO2YXnQgeivvATQ=
+P:openjpeg-dev
+V:2.3.1-r5
+A:s390x
+S:174291
+I:610304
+T:Open-source implementation of JPEG2000 image codec (development files)
+U:https://www.openjpeg.org/
+L:BSD-2-Clause-NetBSD
+o:openjpeg
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1600341040
+c:9d26e332941a1174c40c27df4c9debbae52296d7
+D:openjpeg=2.3.1-r5 pkgconfig
+p:pc:libopenjp2=2.3.1
+
 C:Q1iwqV2kK18p4VNkpJYlZpqPy94Lc=
 P:heimdal
 V:7.7.0-r1
@@ -67417,21 +67417,6 @@ t:1590427742
 c:db4d4d0ffbd4200cb04671197763118625bf25c8
 p:linux-firmware-any
 
-C:Q1FOfYuuL5z6j+a5Pqniv9u6WrC3Y=
-P:knot-doc
-V:2.9.4-r0
-A:s390x
-S:33940
-I:77824
-T:An high-performance authoritative-only DNS server (documentation)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1590155461
-c:625c43bbd3297c5db6f6a0fbe159b6f25c0d6298
-i:docs knot=2.9.4-r0
-
 C:Q12rY5mdhSbJtVmJDx521ZSeHiylc=
 P:libsecret-static
 V:0.20.3-r0
@@ -67477,6 +67462,21 @@ t:1592471618
 c:2db22e01ffdcff6cb673b0f5660cb911cff79bc1
 D:perl-utils
 p:cmd:enc2xs cmd:h2xs cmd:perlivp cmd:xsubpp
+
+C:Q1EVtErFiXTrEYgJyNsFXWvJW7Akk=
+P:knot-openrc
+V:2.9.6-r0
+A:s390x
+S:2028
+I:24576
+T:An high-performance authoritative-only DNS server (OpenRC init scripts)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1600340905
+c:6f980c129ce4413e5de916117187bb5ceecd8c4b
+i:openrc knot=2.9.6-r0
 
 C:Q1qv6hm8B4x1XsPDwet8kN7fEf5s0=
 P:lz4-doc
