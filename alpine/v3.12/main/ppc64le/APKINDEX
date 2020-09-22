@@ -792,22 +792,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-socket6=0.29-r2
 
-C:Q1DPLfl16QZFHSItuEmBP0AHwa3AA=
-P:cryptsetup-libs
-V:2.3.2-r0
-A:ppc64le
-S:192139
-I:471040
-T:Cryptsetup shared library
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
-p:so:libcryptsetup.so.12=12.6.0
-
 C:Q1DdVgolWpKFUcDzA8X6N4S/diKQY=
 P:patchutils
 V:0.3.4-r1
@@ -4706,6 +4690,22 @@ t:1574052232
 c:cab2f7460bc61617445a4f921c14b6b9d8ec0e0a
 D:so:libc.musl-ppc64le.so.1 so:libgcrypt.so.20 so:libxml2.so.2
 p:so:libexslt.so.0=0.8.20 so:libxslt.so.1=1.1.34 cmd:xsltproc
+
+C:Q104xA2DuU/bbwhsx6YAWkb2jpcfw=
+P:cryptsetup-dev
+V:2.3.2-r1
+A:ppc64le
+S:18476
+I:106496
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:cryptsetup-libs=2.3.2-r1 pkgconfig
+p:pc:libcryptsetup=2.3.2
 
 C:Q11Rn+kk39r1d9jVbuoSMjx+4OZuo=
 P:dmvpn-ca
@@ -10646,6 +10646,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:librlog.so.5=5.0.0
+
+C:Q1ISosvgdjAp6Sg4GsnTnXFnnyMJg=
+P:cryptsetup-libs
+V:2.3.2-r1
+A:ppc64le
+S:192122
+I:471040
+T:Cryptsetup shared library
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
+p:so:libcryptsetup.so.12=12.6.0
 
 C:Q11/xVDEgVoz32kSCQlENJd809eB8=
 P:lighttpd-dbg
@@ -18075,6 +18091,22 @@ t:1590269173
 c:ce4b2e19d944d7129340ccbd08f1e125e59491bd
 i:docs nano=4.9.3-r0
 
+C:Q1reNmsfPMw0sFqcZlklPQz8r4Nos=
+P:cryptsetup
+V:2.3.2-r1
+A:ppc64le
+S:118166
+I:364544
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
+p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
+
 C:Q1hIHsy8XkghcMLTkOo/pqKMqomIc=
 P:linux-firmware-cavium
 V:20200519-r0
@@ -18638,21 +18670,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1590178710
 c:f210f2265d7a46e3f3f20a4d73e6ef421a4ae70e
 i:docs perl-http-message=6.24-r0
-
-C:Q1wxw2pn39zKc81aHUZdwP6qVuii0=
-P:cryptsetup-doc
-V:2.3.2-r0
-A:ppc64le
-S:85224
-I:221184
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-i:docs cryptsetup=2.3.2-r0
 
 C:Q1JL2grDn38CqgUiIVYkowFkqxrbo=
 P:llvm10
@@ -30315,6 +30332,21 @@ c:dda5ea2686c9cbf08a3ed04807e0288a79d24ac1
 D:perl-file-next perl
 p:cmd:ack
 
+C:Q1ZWr3ibCmMNMf4cEVLOpeRVcSo9c=
+P:cryptsetup-doc
+V:2.3.2-r1
+A:ppc64le
+S:85232
+I:221184
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+i:docs cryptsetup=2.3.2-r1
+
 C:Q1lhgo4VklVT+jAEKo5xUViRRtpjQ=
 P:openldap-overlay-rwm
 V:2.4.50-r0
@@ -41775,22 +41807,6 @@ t:1557246460
 c:5ff4bea6b5bc66432176a0d04b94e12ad7fdf3a5
 i:docs libxft=2.3.3-r0
 
-C:Q183yGozM0r3ewcUVreLIDnn4gt30=
-P:cryptsetup-dev
-V:2.3.2-r0
-A:ppc64le
-S:18480
-I:106496
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:cryptsetup-libs=2.3.2-r0 pkgconfig
-p:pc:libcryptsetup=2.3.2
-
 C:Q1hwSiKSY1wDcHBUE2/EIBAL2Y0fQ=
 P:perl-devel-symdump-doc
 V:2.18-r1
@@ -46709,22 +46725,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1585839464
 c:6623be2cabbe65c7c4dc58855da62b9a1755cb25
 i:docs atk=2.36.0-r0
-
-C:Q1Zr+mjQcGqbc0edON8d5MpscTWzw=
-P:cryptsetup
-V:2.3.2-r0
-A:ppc64le
-S:118161
-I:364544
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
-p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
 
 C:Q1x9BJRGr4UtS/6oTf2CDVoY+DQ3I=
 P:orc-compiler
@@ -52909,6 +52909,21 @@ o:msmtp
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587656610
 c:4e7591f56f2cb28673ee2443f6b9a32116ef8d69
+
+C:Q1B7b2Q45aFhEKM0YHPeYgAiO9nMU=
+P:cryptsetup-openrc
+V:2.3.2-r1
+A:ppc64le
+S:6278
+I:32768
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+i:openrc cryptsetup=2.3.2-r1
 
 C:Q12KqWXvlpD4Lj2hn8hMLSxexA/gM=
 P:apr-util-dbd_sqlite3
@@ -70503,21 +70518,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-ppc64le.so.1 so:libncursesw.so.6
 p:cmd:aumix cmd:mute cmd:xaumix
-
-C:Q1454Ml+XzHaOsdzuhoiuwhnpkrqA=
-P:cryptsetup-openrc
-V:2.3.2-r0
-A:ppc64le
-S:6281
-I:32768
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-i:openrc cryptsetup=2.3.2-r0
 
 C:Q1hBWXVOSTG/0wYSeSjNcHnpgXRzk=
 P:libelf-static

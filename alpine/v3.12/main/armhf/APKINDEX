@@ -3007,22 +3007,6 @@ t:1590736142
 c:87d624ebb8045b62b01f278e0a3d80b55ef594ff
 i:docs shorewall6=5.2.4.5-r0
 
-C:Q1toj1kBKa8XakbxctfJs1xFxeEIs=
-P:cryptsetup-dev
-V:2.3.2-r0
-A:armhf
-S:18478
-I:106496
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:cryptsetup-libs=2.3.2-r0 pkgconfig
-p:pc:libcryptsetup=2.3.2
-
 C:Q1lysJWoWj1kJhDze0fwlohYOvoO8=
 P:postgresql-bdr-contrib
 V:9.4.14_p1-r8
@@ -3068,6 +3052,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590659649
 c:38a7d6eaa8cf893b162b57499774356c3df9cec6
 D:openssh-client so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libz.so.1
+
+C:Q1ObFqD35hfUKy8cc/btFzGX50s10=
+P:cryptsetup
+V:2.3.2-r1
+A:armhf
+S:120312
+I:303104
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
+p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
 
 C:Q1reeg0lVNCyYuWpFncdIq0WNKdq0=
 P:ruby-full
@@ -13837,6 +13837,21 @@ t:1597700767
 c:e85874b35cda608ba1ac567f409162fe9c50fc95
 i:openrc postgresql-bdr=9.4.14_p1-r8
 
+C:Q1B7b2Q45aFhEKM0YHPeYgAiO9nMU=
+P:cryptsetup-openrc
+V:2.3.2-r1
+A:armhf
+S:6280
+I:32768
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+i:openrc cryptsetup=2.3.2-r1
+
 C:Q1H1UvYeL5AkxvZWNgf6Cx0jcS/tY=
 P:db-dev
 V:5.3.28-r1
@@ -21497,6 +21512,22 @@ t:1572015635
 c:ea01bb226907d1841c222a4d45832c3c36378115
 i:aspell=0.60.8-r0 lang
 
+C:Q19c2XFCi8bt54KLB2AI4P/ho9F6E=
+P:cryptsetup-dev
+V:2.3.2-r1
+A:armhf
+S:18474
+I:106496
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:cryptsetup-libs=2.3.2-r1 pkgconfig
+p:pc:libcryptsetup=2.3.2
+
 C:Q1eQOxWTwIEMJ+EH7+gPejUkVMo78=
 P:shorewall6-openrc
 V:5.2.4.5-r0
@@ -23105,6 +23136,21 @@ t:1587120004
 c:e0fad3997c7ea65b2f48dfcc62e949d583b55dd5
 D:so:libX11.so.6 so:libXmuu.so.1 so:libc.musl-armhf.so.1
 p:cmd:xrdb
+
+C:Q1ZWr3ibCmMNMf4cEVLOpeRVcSo9c=
+P:cryptsetup-doc
+V:2.3.2-r1
+A:armhf
+S:85233
+I:221184
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+i:docs cryptsetup=2.3.2-r1
 
 C:Q1J9hChBT+1FiNW/DjpSS92ezCtCM=
 P:libvorbis-dev
@@ -24977,22 +25023,6 @@ t:1589913323
 c:c849e4bc23475ef19a667576355e77bbd2bb022d
 D:libinput-dev xorg-server-dev pkgconfig
 p:pc:xorg-libinput=0.30.0
-
-C:Q12LRvEU4jmSsjbRGxnrOGDLe4Nio=
-P:cryptsetup-libs
-V:2.3.2-r0
-A:armhf
-S:189852
-I:409600
-T:Cryptsetup shared library
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
-p:so:libcryptsetup.so.12=12.6.0
 
 C:Q17JYU6OHu7eBQPunLd0yMl2BkXJE=
 P:lua5.1-evdev
@@ -30114,21 +30144,6 @@ c:c9497c9ea6fbcd311d8967265baa0824f256b0a0
 D:rsyslog=8.2004.0-r0 so:libc.musl-armhf.so.1 so:libmariadb.so.3
 p:rsyslog-ommysql=8.2004.0-r0
 
-C:Q1wxw2pn39zKc81aHUZdwP6qVuii0=
-P:cryptsetup-doc
-V:2.3.2-r0
-A:armhf
-S:85222
-I:221184
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-i:docs cryptsetup=2.3.2-r0
-
 C:Q1hX5vUJQQ3XiF4jJTud5EjBXm4dM=
 P:perl-term-readkey
 V:2.38-r3
@@ -31808,6 +31823,22 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:acf-core clamav
+
+C:Q1h/LjTSE73Fbgl0qRyiEopjVo4ts=
+P:cryptsetup-libs
+V:2.3.2-r1
+A:armhf
+S:189887
+I:409600
+T:Cryptsetup shared library
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1600790729
+c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
+D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
+p:so:libcryptsetup.so.12=12.6.0
 
 C:Q1KJXk+hhlIzk4IFfp/MOmTy199kI=
 P:py3-monotonic
@@ -49419,21 +49450,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-html-tagset=3.20-r2
 
-C:Q1454Ml+XzHaOsdzuhoiuwhnpkrqA=
-P:cryptsetup-openrc
-V:2.3.2-r0
-A:armhf
-S:6282
-I:32768
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-i:openrc cryptsetup=2.3.2-r0
-
 C:Q19InTtqmcdlHXVUY+HO2XpBDyS64=
 P:hwids-pci
 V:20200306-r0
@@ -60270,22 +60286,6 @@ t:1592471618
 c:2db22e01ffdcff6cb673b0f5660cb911cff79bc1
 D:so:libc.musl-armhf.so.1
 p:cmd:miniperl
-
-C:Q1mlKI1thU4ov1USHW9pislgWjGbc=
-P:cryptsetup
-V:2.3.2-r0
-A:armhf
-S:120321
-I:303104
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1588289323
-c:5e870c62147606570abe370344287f454969e59a
-D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
-p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
 
 C:Q16pY2RC7ZBOvdLrFhUsz+PgWkU2o=
 P:postgresql-plperl-contrib
