@@ -7069,22 +7069,6 @@ c:38d8a7c2ca995bf1fc1c310303941fcad35ae429
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavahi-glib.so.1 so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libintl.so.8 so:libxml2.so.2
 p:so:libbonjour.so=0
 
-C:Q1HTHEyEtAL/mAT1tFpefAol6A/nM=
-P:pdns-tools
-V:4.2.1-r0
-A:armhf
-S:3449514
-I:8466432
-T:PowerDNS Authoritative Server
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:so:libboost_program_options.so.1.71.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libprotobuf.so.22 so:libsodium.so.23 so:libstdc++.so.6
-p:cmd:calidns cmd:dnsbulktest cmd:dnsgram cmd:dnspcap2protobuf cmd:dnsreplay cmd:dnsscan cmd:dnsscope cmd:dnstcpbench cmd:dnswasher cmd:dumresp cmd:ixplore cmd:nproxy cmd:nsec3dig cmd:pdns_notify cmd:saxfr cmd:sdig cmd:stubquery cmd:zone2json cmd:zone2ldap cmd:zone2sql
-
 C:Q1wfq82Za95G0RgLjKCX85BLBKfCI=
 P:collectd-ipmi
 V:5.9.2-r0
@@ -8116,21 +8100,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1576558401
 c:8d7ffaad90077c3f0321f03fe0febfb791e9e7fa
 D:qt5-qtbase-dev qt5-qtdeclarative-dev qt5-qtwebengine-dev karchive-dev kconfig-dev kcoreaddons-dev kdeclarative-dev kholidays-dev ki18n-dev kiconthemes-dev kio-dev kcmutils-dev kross-dev knotifications-dev plasma-framework-dev krunner-dev kservice-dev sonnet-dev kunitconversion-dev kwindowsystem-dev knewstuff-dev kdeplasma-addons=5.17.4-r0
-
-C:Q1gLoYetOow+LD88VZmJmLkVMimbA=
-P:pdns-backend-mydns
-V:4.2.1-r0
-A:armhf
-S:31174
-I:94208
-T:mydns backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libstdc++.so.6
 
 C:Q1U12wYCAfurMjjC6EDXGU4/w02f4=
 P:libkcddb-dev
@@ -10113,6 +10082,21 @@ c:38e8e9dbbf4480ef75b9b9e40f0743dbaa4134fb
 D:libarchive-tools
 i:pacman=5.2.1-r0 lang
 
+C:Q13j8eFsnOs89b/kTfyKZJrxgnvzg=
+P:pdns-backend-mysql
+V:4.2.3-r0
+A:armhf
+S:28246
+I:94208
+T:gmysql backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns mariadb-client so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libstdc++.so.6
+
 C:Q1kAITIvm5Ae5no/I09hmE1ByK5NA=
 P:mate-session-manager-doc
 V:1.22.2-r0
@@ -10234,6 +10218,22 @@ c:d8ca1836b9174a8a8129267750c273a8cde492ce
 k:100
 D:php7-common so:libXpm.so.4 so:libc.musl-armhf.so.1 so:libfreetype.so.6 so:libjpeg.so.8 so:libpng16.so.16 so:libwebp.so.7 so:libz.so.1
 p:php-gd
+
+C:Q1zEW539PMlpWwdyc6jNkngDvmGqQ=
+P:pdns
+V:4.2.3-r0
+A:armhf
+S:2208885
+I:6041600
+T:PowerDNS Authoritative Server
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:/bin/sh so:libboost_program_options.so.1.71.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:liblua.so.5 so:libsodium.so.23 so:libsqlite3.so.0 so:libstdc++.so.6
+p:cmd:dnspcap2calidns cmd:pdns_control cmd:pdns_server cmd:pdnsutil
 
 C:Q1LZeqiAmAn8mfZVbOd6u3d3hK52Q=
 P:cmus-doc
@@ -11872,6 +11872,21 @@ c:e17e60defb78d6909cf8595594b434e23d2a5319
 D:runc so:libc.musl-armhf.so.1 so:libseccomp.so.2
 p:cmd:containerd cmd:containerd-shim cmd:containerd-shim-runc-v1 cmd:containerd-shim-runc-v2 cmd:containerd-stress cmd:ctr
 
+C:Q1vNaPfGjzFHcf2k3IxBZi/u89TOc=
+P:pdns-backend-sqlite3
+V:4.2.3-r0
+A:armhf
+S:16334
+I:69632
+T:gsqlite3 backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns sqlite so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+
 C:Q1oMV4zt15G/xprK+Cg97ZpPpxD4M=
 P:perl-class-load-xs-doc
 V:0.10-r3
@@ -13402,21 +13417,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1573814201
 c:a3698bd3bce5b7a2e76c6d439fae4af875ec3d2d
 i:baloo-widgets=19.08.3-r0 lang
-
-C:Q1BVnWOCzm1c1VpMYsoNbJ1afV8oc=
-P:pdns-backend-sqlite3
-V:4.2.1-r0
-A:armhf
-S:16354
-I:69632
-T:gsqlite3 backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns sqlite so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1BpM9Qtz78Fm8mgF2kqE8CQZeJH8=
 P:gnome-desktop
@@ -16261,6 +16261,21 @@ t:1575533602
 c:0340f42fabee3853750b7b7f751b378bdf769db4
 D:py3-yaml python3 /bin/sh so:libGeoIP.so.1 so:libc.musl-armhf.so.1 so:libcap-ng.so.0 so:libgcc_s.so.1 so:libhiredis.so.0.14 so:libhtp.so.2 so:libjansson.so.4 so:libluajit-5.1.so.2 so:liblz4.so.1 so:libmagic.so.1 so:libnet.so.1 so:libnetfilter_log.so.1 so:libnetfilter_queue.so.1 so:libnfnetlink.so.0 so:libnspr4.so so:libnss3.so so:libpcap.so.1 so:libpcre.so.1 so:libyaml-0.so.2 so:libz.so.1
 p:cmd:suricata cmd:suricata-update cmd:suricatactl cmd:suricatasc
+
+C:Q1zFgPVBQyXWJ9M4XBiA2UdDXVB3k=
+P:pdns-openrc
+V:4.2.3-r0
+A:armhf
+S:1682
+I:16384
+T:PowerDNS Authoritative Server (OpenRC init scripts)
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+i:openrc pdns=4.2.3-r0
 
 C:Q1IpZx9b9SyV14GHi5AVBl+xb4e5U=
 P:biber
@@ -19346,21 +19361,6 @@ t:1575371584
 c:dd502921478ee7eeaeace500929d294a09487a28
 D:ttf-font-awesome so:libc.musl-armhf.so.1 so:libfmt.so.6 so:libgcc_s.so.1 so:libgdk-3.so.0 so:libgdkmm-3.0.so.1 so:libgiomm-2.4.so.1 so:libglibmm-2.4.so.1 so:libgobject-2.0.so.0 so:libgtkmm-3.0.so.1 so:libjsoncpp.so.22 so:libmpdclient.so.2 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpulse.so.0 so:libsigc-2.0.so.0 so:libspdlog.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0
 p:cmd:waybar
-
-C:Q11kBjGi/0rTACo9H6hSNhB1yK3g0=
-P:pdns-backend-mariadb
-V:4.2.1-r0
-A:armhf
-S:1211
-I:4096
-T:mariadb backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns pdns-backend-mysql
 
 C:Q1DNBeKD3ktKtvDtyF79+w3AX+VLI=
 P:qt5-qtquickcontrols2-dev
@@ -22592,21 +22592,6 @@ c:49a8e07ed854de0916de7f9b37ec1d672e32906d
 D:alsa-lib-dev openal-soft=1.20.0-r0 pkgconfig
 p:pc:openal=1.20.0
 
-C:Q1A38kgS1IQeEMcbg8gNwp4W363sM=
-P:pdns-backend-bind
-V:4.2.1-r0
-A:armhf
-S:67727
-I:200704
-T:bind backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-
 C:Q1Zjor5jg2uYhr4D577JhBP89T2So=
 P:milter-greylist
 V:4.6.2-r5
@@ -24355,6 +24340,21 @@ t:1569380508
 c:8baa8099b35299bea7e3864dcb2383299e9a6f9a
 D:mate-common so:libX11.so.6 so:libatk-1.0.so.0 so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libcanberra-gtk3.so.0 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libnotify.so.4 so:libpango-1.0.so.0 so:libwnck-3.so.0
 p:cmd:mate-notification-properties
+
+C:Q1WMqHz62LanTN/scRH02AjNxavwU=
+P:pdns-backend-lua
+V:4.2.3-r0
+A:armhf
+S:34440
+I:106496
+T:lua backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns lua so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblua.so.5 so:libstdc++.so.6
 
 C:Q1Kg2yOK2iMXHFmtEmBoYh74p53uY=
 P:perl-date-calc
@@ -36117,21 +36117,6 @@ t:1573327852
 c:88df3fee24aa5223f4d1f105f4bf4b7c88412346
 i:jool-tools=4.0.6-r3 bash-completion
 
-C:Q1JWByOt6pcgM/JdryYJydeG7Y4ao=
-P:pdns-backend-lua
-V:4.2.1-r0
-A:armhf
-S:34445
-I:106496
-T:lua backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns lua so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblua.so.5 so:libstdc++.so.6
-
 C:Q1Z9xpbdova6ii9M0yXgPAAf/Q9ps=
 P:perl-test-postgresql-doc
 V:1.27-r0
@@ -41066,6 +41051,21 @@ c:a3698bd3bce5b7a2e76c6d439fae4af875ec3d2d
 D:so:libKF5I18n.so.5 so:libKF5TextWidgets.so.5 so:libKF5Wallet.so.5 so:libKF5WidgetsAddons.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libsane.so.1 so:libstdc++.so.6
 p:so:libKF5Sane.so.5=5.55.0
 
+C:Q1GPbI70OxBAKf+W6CoiwM0l04+54=
+P:pdns-backend-mydns
+V:4.2.3-r0
+A:armhf
+S:32191
+I:98304
+T:mydns backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libstdc++.so.6
+
 C:Q1CcI/4KRBqXbdjxco6SCS+X6mYnY=
 P:iwd
 V:1.2-r1
@@ -45386,6 +45386,21 @@ t:1572968037
 c:8be13517167a368e38130d090d8d5269f7ead92b
 D:python3 py3-paramiko py3-defusedxml py3-lxml
 
+C:Q1yKHnp+R2wA1J7X61ttlwBiew3Ho=
+P:pdns-backend-pgsql
+V:4.2.3-r0
+A:armhf
+S:26382
+I:98304
+T:gpgsql backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns postgresql-client /bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpq.so.5 so:libstdc++.so.6
+
 C:Q1KQyE1+Seqye6c/8Mw5g+VaGHR8k=
 P:x264-dev
 V:20191119-r0
@@ -47646,21 +47661,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1573642407
 c:99cf1129a6d27c03253342ac5205256886202d8e
 
-C:Q1KDZvAd8fzKuFJQoLtHvLrpGr3Uo=
-P:pdns-backend-random
-V:4.2.1-r0
-A:armhf
-S:10348
-I:49152
-T:random backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-
 C:Q1ig9MgfP9dkBPMSJ2ERMX3OyFPIQ=
 P:ruby-rmagick
 V:4.0.0-r1
@@ -48168,6 +48168,21 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1570523163
 c:a6308dc805830b69e6ec9589756b48b47d9b28e2
 i:sysprof=3.34.1-r0 lang
+
+C:Q1XuatU7NHQtHSbr+DQ2OSL0KOujo=
+P:pdns-backend-geoip
+V:4.2.3-r0
+A:armhf
+S:76623
+I:225280
+T:geoip backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns geoip so:libGeoIP.so.1 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libyaml-cpp.so.0.6
 
 C:Q1Az1qyAyh8dvv651jpGC/zOLAQ58=
 P:libowfat-doc
@@ -49073,6 +49088,21 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1573642407
 c:99cf1129a6d27c03253342ac5205256886202d8e
+
+C:Q1ko9xpKP8pBTj/dmh5a5zje5w5Lc=
+P:pdns-backend-mariadb
+V:4.2.3-r0
+A:armhf
+S:1205
+I:4096
+T:mariadb backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns pdns-backend-mysql
 
 C:Q1A9AkyMHzP0Iz+Udczqj6alCfX18=
 P:vlc-plugins-visualization
@@ -55487,21 +55517,6 @@ c:8e1c7cd3c4bfd299d6decfae4802887d1c932049
 D:so:libc.musl-armhf.so.1 so:libi2c.so.0
 p:py-smbus=4.1-r2
 
-C:Q1u/zyzOKa0r7tm5SBUP+Y0Bag1Sw=
-P:pdns-openrc
-V:4.2.1-r0
-A:armhf
-S:1691
-I:16384
-T:PowerDNS Authoritative Server (OpenRC init scripts)
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-i:openrc pdns=4.2.1-r0
-
 C:Q1rZMa3RqIWZHNeE/Sf63E/j1DPmk=
 P:mate-settings-daemon
 V:1.22.1-r0
@@ -56304,21 +56319,6 @@ c:33dacb72f563a271522ea734c28944cc2316ceaa
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:librevenge-0.0.so.0 so:libstdc++.so.6
 p:so:libpagemaker-0.0.so.0=0.0.4
 
-C:Q1DO5oEsBFbbw+8iD0KCr2DDMZh9A=
-P:pdns-backend-odbc
-V:4.2.1-r0
-A:armhf
-S:24074
-I:86016
-T:godbc backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns unixodbc so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libodbc.so.2 so:libstdc++.so.6
-
 C:Q1wIkHI+HFI9jIHjA6cSAqPSuVaYw=
 P:frameworkintegration
 V:5.65.0-r0
@@ -56380,21 +56380,6 @@ o:mpdscribble
 t:1556470840
 c:cabf9c6c5ffa230c7a679a7b87e660aecb049222
 i:openrc mpdscribble=0.22-r2
-
-C:Q1lGpSIgj5FNl6Y201YbfuMX+ilJA=
-P:pdns-backend-ldap
-V:4.2.1-r0
-A:armhf
-S:48078
-I:135168
-T:ldap backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libkrb5.so.3 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libstdc++.so.6
 
 C:Q1Bs4PMoZhXnf+lZ7j+tWrdQP/usA=
 P:sniproxy-openrc
@@ -57022,21 +57007,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1598858985
 c:5df837bcafaa52c6b85a0465e241fd2846fc5e44
 D:nextcloud
-
-C:Q10QoMjc8wRyMf+HqNm3KGD/uxKs0=
-P:pdns-backend-pgsql
-V:4.2.1-r0
-A:armhf
-S:26392
-I:98304
-T:gpgsql backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns postgresql-client /bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpq.so.5 so:libstdc++.so.6
 
 C:Q1IuQsjrtRMuKEn/Y+LR0t6RDu34U=
 P:qt5-qtlocation-dev
@@ -59505,21 +59475,6 @@ c:001ef21f2fa6ce9c13142c226e42549268a777fd
 D:faenza-icon-theme=1.3.1-r5
 i:faenza-icon-theme=1.3.1-r5 bash
 
-C:Q16t+hXg5uN7gi31IcWG6+Ry2ENNM=
-P:pdns-backend-remote
-V:4.2.1-r0
-A:armhf
-S:109175
-I:290816
-T:remote backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libzmq.so.5
-
 C:Q16/xofzMV+EmCRYJnXRXw61ILIaw=
 P:erlang-hipe
 V:22.1-r0
@@ -61576,6 +61531,21 @@ t:1566527476
 c:359a095da0eea19b5ff7db17e55be56d7c036ca8
 D:sane so:libc.musl-armhf.so.1
 
+C:Q1pAeM7eFSZC12hCqy6vpvZ4awcAg=
+P:pdns-backend-ldap
+V:4.2.3-r0
+A:armhf
+S:48073
+I:135168
+T:ldap backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libkrb5.so.3 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2 so:libstdc++.so.6
+
 C:Q1VrDrXbykpttvF+XbWUK4HBVut6E=
 P:sane-backend-coolscan
 V:1.0.28-r1
@@ -62288,6 +62258,21 @@ c:df1f631c9313dc88e28551f89017268764a0d267
 D:qt5-qtdeclarative-dev gstreamer-dev gst-plugins-base-dev libxslt-dev mesa-dev icu-dev libxext-dev glib-dev libxcomposite-dev libxrender-dev pc:Qt5Core pc:Qt5Gui pc:Qt5Network pc:Qt5Widgets pkgconfig qt5-qtwebkit=5.9.1-r7
 p:pc:Qt5WebKit=5.9.1 pc:Qt5WebKitWidgets=5.9.1
 
+C:Q1AaNKKfeTr1JM8skRYexkij945w0=
+P:pdns-doc
+V:4.2.3-r0
+A:armhf
+S:39251
+I:225280
+T:PowerDNS Authoritative Server (documentation)
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+i:docs pdns=4.2.3-r0
+
 C:Q1ZGlZe8XHnYWqtJZTQWSE2Nrjm/I=
 P:knot-resolver-doc
 V:4.3.0-r3
@@ -62735,6 +62720,21 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1571741172
 c:cff16f05f21dfbb46f74b4513fb606aa045c9611
 D:so:libX11-xcb.so.1 so:libX11.so.6 so:libc.musl-armhf.so.1 so:libjpeg.so.8 so:libpixman-1.so.0 so:libpng16.so.16 so:libwayland-server.so.0 so:libwebp.so.7 so:libweston-7.so.0 so:libxcb-shm.so.0 so:libxcb-xkb.so.1 so:libxcb.so.1 so:libxkbcommon.so.0
+
+C:Q1rp5a/Ks3mkveJKqBf6zW0PWDFh8=
+P:pdns-backend-pipe
+V:4.2.3-r0
+A:armhf
+S:30269
+I:98304
+T:pipe backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q17+eLTCBNP82dpKDshTZ98uJ78nQ=
 P:libreoffice-lang-ml
@@ -66052,22 +66052,6 @@ t:1559400997
 c:4a8b8439fc56294ecb379e4c288a0f9cad2f3047
 D:font-bakoma-ttf
 
-C:Q1/7YxSHY96EG7AbH0LlWzMWnNEa8=
-P:pdns
-V:4.2.1-r0
-A:armhf
-S:2204219
-I:6021120
-T:PowerDNS Authoritative Server
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:/bin/sh so:libboost_program_options.so.1.71.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:liblua.so.5 so:libsodium.so.23 so:libsqlite3.so.0 so:libstdc++.so.6
-p:cmd:dnspcap2calidns cmd:pdns_control cmd:pdns_server cmd:pdnsutil
-
 C:Q1obzrTA1r503gTghfdY7sZokzfFM=
 P:nextcloud-mysql
 V:17.0.9-r0
@@ -67743,6 +67727,21 @@ c:53ae89a079fafccc542e6fdf0173e61cf58633e3
 D:python3-tkinter=3.8.0-r0
 p:cmd:idle3.8
 
+C:Q1HdtW/S6p1kWBh1lpLy1PUDUpXp8=
+P:pdns-backend-remote
+V:4.2.3-r0
+A:armhf
+S:109499
+I:290816
+T:remote backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libzmq.so.5
+
 C:Q1Puxtq5Ndg1CYZPnE96oEtYAhWLE=
 P:corestuff
 V:2.7.0-r0
@@ -67985,6 +67984,22 @@ m:Leo <thinkabit.ukim@gmail.com>
 t:1573557204
 c:5d67f72060818f35b3f8b817b57d1596f9593f6c
 i:adapta-nokto=3.95.0.11-r2 openbox
+
+C:Q10l4lxpdfh8OqV84f2YaMZuWTFmc=
+P:pdns-tools
+V:4.2.3-r0
+A:armhf
+S:3465179
+I:8495104
+T:PowerDNS Authoritative Server
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:so:libboost_program_options.so.1.71.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libprotobuf.so.22 so:libsodium.so.23 so:libstdc++.so.6
+p:cmd:calidns cmd:dnsbulktest cmd:dnsgram cmd:dnspcap2protobuf cmd:dnsreplay cmd:dnsscan cmd:dnsscope cmd:dnstcpbench cmd:dnswasher cmd:dumresp cmd:ixplore cmd:nproxy cmd:nsec3dig cmd:pdns_notify cmd:saxfr cmd:sdig cmd:stubquery cmd:zone2json cmd:zone2ldap cmd:zone2sql
 
 C:Q1U7flyJxAL43hFIBAW0bQOlgSYTk=
 P:prosody-doc
@@ -68811,6 +68826,21 @@ m:Daiki Maekawa <daikimaekawa29@gmail.com>
 t:1575662398
 c:d0fe56a72ad31a93e66f8cf94a2ec0d0774dffc9
 p:py-frozendict=1.2-r3
+
+C:Q1qQoqYIFpvUqh8nnlPYSsI1WfHuM=
+P:pdns-backend-random
+V:4.2.3-r0
+A:armhf
+S:10349
+I:49152
+T:random backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1KwqCnERKjTjcEAK/zm3FFMs6Kqs=
 P:py3-async_generator
@@ -69953,21 +69983,6 @@ t:1544997749
 c:c3e685320315cf6d88cccaef50b6f669e6483bde
 D:libselinux=2.8-r0 pc:libpcre pc:libsepol pkgconfig
 p:pc:libselinux=2.8
-
-C:Q1lcliSlrXdcfLLnfct6+V0swL318=
-P:pdns-backend-geoip
-V:4.2.1-r0
-A:armhf
-S:76625
-I:225280
-T:geoip backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns geoip so:libGeoIP.so.1 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libyaml-cpp.so.0.6
 
 C:Q1ltn6TJvEmVQBBDad++1evNtdT7o=
 P:py3-pyrsistent
@@ -73661,21 +73676,6 @@ c:d978b6187bf01b79629369998d45f46f4a3ae43d
 D:pinentry-gtk so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libcrypto.so.1.1 so:libgdk-x11-2.0.so.0 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgpgme.so.11 so:libgtk-x11-2.0.so.0 so:libintl.so.8 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libssl.so.1.1
 p:so:libsylph-0.so.1=1.3.0 so:libsylpheed-plugin-0.so.1=1.3.0 cmd:sylpheed
 
-C:Q1/G1TINBgY8ycLxow74E3vcRG5Z4=
-P:pdns-backend-pipe
-V:4.2.1-r0
-A:armhf
-S:30273
-I:98304
-T:pipe backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-
 C:Q1bTQl2wZ7BsXv5PW41/YJdZaXGZg=
 P:spdx-licenses-rdfturtle
 V:3.7-r0
@@ -76012,21 +76012,6 @@ t:1576558401
 c:8d7ffaad90077c3f0321f03fe0febfb791e9e7fa
 D:so:libKF5WaylandClient.so.5 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5X11Extras.so.5 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-randr.so.0 so:libxcb.so.1
 p:so:libKF5Screen.so.7=5.17.4 cmd:kscreen-doctor
-
-C:Q18ojnuatn6O8ukPd0o7u+vlTMAAQ=
-P:pdns-backend-mysql
-V:4.2.1-r0
-A:armhf
-S:28260
-I:94208
-T:gmysql backend module for PowerDNS
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-D:pdns mariadb-client so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libstdc++.so.6
 
 C:Q184jAgad0nWHqReqwy/iHeY/ep0k=
 P:sndio-libs
@@ -78755,6 +78740,21 @@ t:1538567375
 c:a838e377b39d575ea816934e31c6b4d88eb0ecad
 i:lshw=02.18-r0 lang
 
+C:Q1HiKf7akzglkh2hIjOl378gamnkI=
+P:pdns-backend-odbc
+V:4.2.3-r0
+A:armhf
+S:24057
+I:86016
+T:godbc backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns unixodbc so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libodbc.so.2 so:libstdc++.so.6
+
 C:Q1oDiFrdwLxyZ0zu3wqgzlz2Creec=
 P:weston-xwayland
 V:7.0.0-r0
@@ -80873,6 +80873,21 @@ c:02a267dc7c84ff8b8a3b2c5cfe82055d5237bd40
 D:so:libQt5Core.so.5 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libKF5CoreAddons.so.5=5.65.0 cmd:desktoptojson
 
+C:Q1ZrgxIC3dGu9ctMVyiLcRzFjNFR0=
+P:pdns-backend-bind
+V:4.2.3-r0
+A:armhf
+S:67570
+I:200704
+T:bind backend module for PowerDNS
+U:https://www.powerdns.com/
+L:GPL-2.0-only
+o:pdns
+m:Matt Smith <mcs@darkregion.net>
+t:1600817113
+c:2eb9de2b60ab1981a19e80378afa51969155ba8e
+D:pdns so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+
 C:Q1al2Y+oal2ydzRfZUkNGv1e3AtfM=
 P:fwsnort
 V:1.6.8-r2
@@ -81462,21 +81477,6 @@ t:1573557204
 c:5d67f72060818f35b3f8b817b57d1596f9593f6c
 D:adapta-xfwm4 adapta-xfwm4=3.95.0.11-r2
 i:adapta-nokto=3.95.0.11-r2 xfwm4
-
-C:Q1tojn/axXz0nGgcsyUEe9tT9ko9Y=
-P:pdns-doc
-V:4.2.1-r0
-A:armhf
-S:39229
-I:225280
-T:PowerDNS Authoritative Server (documentation)
-U:https://www.powerdns.com/
-L:GPL-2.0-only
-o:pdns
-m:Matt Smith <mcs@darkregion.net>
-t:1575393457
-c:914425d6f56ced202ad71d0f9b953a11528f0483
-i:docs pdns=4.2.1-r0
 
 C:Q1l7MRC1VhV9yJyoHMY5/RhPKz0XM=
 P:mtex2mml-dev

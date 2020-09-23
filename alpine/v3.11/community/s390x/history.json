@@ -66500,6 +66500,252 @@
         "lua5.2",
         "lua5.2-compat53"
       ]
+    },
+    "pdns-backend-mysql": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "mariadb-client",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libmariadb.so.3",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-mariadb": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "pdns-backend-mysql"
+      ]
+    },
+    "pdns": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libboost_program_options.so.1.71.0",
+        "so:libc.musl-s390x.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:liblua.so.5",
+        "so:libsodium.so.23",
+        "so:libsqlite3.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:dnspcap2calidns",
+        "cmd:pdns_control",
+        "cmd:pdns_server",
+        "cmd:pdnsutil"
+      ]
+    },
+    "pdns-backend-pgsql": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "postgresql-client",
+        "/bin/sh",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libpq.so.5",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-geoip": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "geoip",
+        "so:libGeoIP.so.1",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libyaml-cpp.so.0.6"
+      ]
+    },
+    "pdns-backend-odbc": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "unixodbc",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libodbc.so.2",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-lua": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "lua",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblua.so.5",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-ldap": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libkrb5.so.3",
+        "so:liblber-2.4.so.2",
+        "so:libldap_r-2.4.so.2",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-doc": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      }
+    },
+    "pdns-tools": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "so:libboost_program_options.so.1.71.0",
+        "so:libc.musl-s390x.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libprotobuf.so.22",
+        "so:libsodium.so.23",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:calidns",
+        "cmd:dnsbulktest",
+        "cmd:dnsgram",
+        "cmd:dnspcap2protobuf",
+        "cmd:dnsreplay",
+        "cmd:dnsscan",
+        "cmd:dnsscope",
+        "cmd:dnstcpbench",
+        "cmd:dnswasher",
+        "cmd:dumresp",
+        "cmd:ixplore",
+        "cmd:nproxy",
+        "cmd:nsec3dig",
+        "cmd:pdns_notify",
+        "cmd:saxfr",
+        "cmd:sdig",
+        "cmd:stubquery",
+        "cmd:zone2json",
+        "cmd:zone2ldap",
+        "cmd:zone2sql"
+      ]
+    },
+    "pdns-backend-bind": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-random": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-pipe": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-remote": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libzmq.so.5"
+      ]
+    },
+    "pdns-openrc": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      }
+    },
+    "pdns-backend-sqlite3": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "sqlite",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
+    },
+    "pdns-backend-mydns": {
+      "origin": "pdns",
+      "versions": {
+        "4.2.3-r0": 1600817113
+      },
+      "dependencies": [
+        "pdns",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libmariadb.so.3",
+        "so:libstdc++.so.6"
+      ]
     }
   },
   "provide": {
