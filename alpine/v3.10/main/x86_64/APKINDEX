@@ -4157,6 +4157,20 @@ c:5ce579e0032d7796c0a2b2bb1b8b71361499dab0
 D:samba-common=4.10.17-r0 so:libCHARSET3-samba4.so so:libauth-samba4.so so:libc.musl-x86_64.so.1 so:libcli-cldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libdbus-1.so.3 so:libdbwrap-samba4.so so:libgenrand-samba4.so so:libgse-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsghdr-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-standard.so.0 so:libndr.so.0 so:libpopt-samba3-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmb-transport-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
 p:so:libxattr-tdb-samba4.so=0 cmd:eventlogadm cmd:nmbd cmd:smbd cmd:smbstatus
 
+C:Q1B0AD8MJaSEyTyYbL0rvQZod18Zw=
+P:mbedtls-static
+V:2.16.8-r0
+A:x86_64
+S:318322
+I:1036288
+T:Static files for mbedtls
+U:https://tls.mbed.org
+L:Apache-2.0
+o:mbedtls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1601288719
+c:ea6eea6e70a69afc77bbdb4202c8def49f446f4a
+
 C:Q1aHVl8u8P8gKu59vnuWIUXwvqQBU=
 P:py-paramiko-demos
 V:2.4.2-r1
@@ -7872,6 +7886,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1556915762
 c:a80ff2399551748d3a0063fa82cdeb8d8ea4b599
 i:docs perl-test-needs=0.002005-r1
+
+C:Q1Yo1yy48N1RZj28CppUhasBt6dEU=
+P:mbedtls
+V:2.16.8-r0
+A:x86_64
+S:273506
+I:659456
+T:Light-weight cryptographic and SSL/TLS library
+U:https://tls.mbed.org
+L:Apache-2.0
+o:mbedtls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1601288719
+c:ea6eea6e70a69afc77bbdb4202c8def49f446f4a
+D:so:libc.musl-x86_64.so.1
+p:so:libmbedcrypto.so.3=2.16.8 so:libmbedtls.so.12=2.16.8 so:libmbedx509.so.0=2.16.8
 
 C:Q1U1BwQMMhNsDGre0zHegSxLwnqcA=
 P:libedit-doc
@@ -23884,22 +23914,6 @@ t:1573682737
 c:855d7eeff4f62e630213bfe1110271dfed73e20b
 D:uwsgi so:libc.musl-x86_64.so.1 so:libpq.so.5
 
-C:Q1qWepxCVKsEavoCPFaaS91lhEhhU=
-P:mbedtls
-V:2.16.6-r0
-A:x86_64
-S:272598
-I:655360
-T:Light-weight cryptographic and SSL/TLS library
-U:https://tls.mbed.org
-L:Apache-2.0
-o:mbedtls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590585589
-c:e9adc65cdc1f79a5de1831fff0c5833b540665d2
-D:so:libc.musl-x86_64.so.1
-p:so:libmbedcrypto.so.3=2.16.6 so:libmbedtls.so.12=2.16.6 so:libmbedx509.so.0=2.16.6
-
 C:Q1yYwv9oDK5txs7rLmCTF7xf+ujPY=
 P:tolua++
 V:1.0.93-r2
@@ -25327,22 +25341,6 @@ t:1557057528
 c:a8e055e13abc0a5e9dbf3c702ba43b8e09c4e8e9
 D:bzip2-dev libgsf=1.14.46-r0 pc:glib-2.0 pc:gobject-2.0 pc:libxml-2.0 pkgconfig
 p:pc:libgsf-1=1.14.46
-
-C:Q1dYkB5PeESGpUKgIDlKvItOa61u4=
-P:mbedtls-utils
-V:2.16.6-r0
-A:x86_64
-S:139257
-I:868352
-T:Utilities for mbedtls (including gen_key / cert_write)
-U:https://tls.mbed.org
-L:Apache-2.0
-o:mbedtls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590585587
-c:e9adc65cdc1f79a5de1831fff0c5833b540665d2
-D:so:libc.musl-x86_64.so.1 so:libmbedcrypto.so.3 so:libmbedtls.so.12 so:libmbedx509.so.0
-p:cmd:aescrypt2 cmd:benchmark cmd:cert_app cmd:cert_req cmd:cert_write cmd:crl_app cmd:crypt_and_hash cmd:dh_client cmd:dh_genprime cmd:dh_server cmd:dtls_client cmd:dtls_server cmd:gen_entropy cmd:gen_key cmd:gen_random_ctr_drbg cmd:gen_random_havege cmd:generic_sum cmd:hello cmd:key_app cmd:mini_client cmd:mpi_demo cmd:pem2der cmd:pk_decrypt cmd:pk_encrypt cmd:pk_sign cmd:pk_verify cmd:query_compile_time_config cmd:req_app cmd:rsa_decrypt cmd:rsa_encrypt cmd:rsa_genkey cmd:rsa_sign cmd:rsa_verify cmd:selftest cmd:ssl_client1 cmd:ssl_client2 cmd:ssl_fork_server cmd:ssl_mail_client cmd:ssl_pthread_server cmd:ssl_server cmd:strerror cmd:udp_proxy
 
 C:Q1R8eCSqPCME4WmiPX3pnRcsQZrkM=
 P:lua5.1-lxc
@@ -27871,6 +27869,22 @@ t:1557082198
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-x86_64.so.1
 p:cmd:axfr-get cmd:axfrdns cmd:axfrdns-conf cmd:dnsfilter cmd:dnsipq cmd:dnsmx cmd:dnsname cmd:dnsq cmd:dnstrace cmd:dnstracesort cmd:dnstxt cmd:pickdns cmd:pickdns-conf cmd:pickdns-data cmd:random-ip cmd:rbldns cmd:rbldns-conf cmd:rbldns-data cmd:walldns cmd:walldns-conf
+
+C:Q1R2c2m9JM6UeKseLEsW+K8QKsh38=
+P:mbedtls-utils
+V:2.16.8-r0
+A:x86_64
+S:161919
+I:933888
+T:Utilities for mbedtls (including gen_key / cert_write)
+U:https://tls.mbed.org
+L:Apache-2.0
+o:mbedtls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1601288719
+c:ea6eea6e70a69afc77bbdb4202c8def49f446f4a
+D:so:libc.musl-x86_64.so.1 so:libmbedcrypto.so.3 so:libmbedtls.so.12 so:libmbedx509.so.0
+p:cmd:aescrypt2 cmd:benchmark cmd:cert_app cmd:cert_req cmd:cert_write cmd:crl_app cmd:crypt_and_hash cmd:dh_client cmd:dh_genprime cmd:dh_server cmd:dtls_client cmd:dtls_server cmd:gen_entropy cmd:gen_key cmd:gen_random_ctr_drbg cmd:gen_random_havege cmd:generic_sum cmd:hello cmd:key_app cmd:mini_client cmd:mpi_demo cmd:pem2der cmd:pk_decrypt cmd:pk_encrypt cmd:pk_sign cmd:pk_verify cmd:query_compile_time_config cmd:req_app cmd:rsa_decrypt cmd:rsa_encrypt cmd:rsa_genkey cmd:rsa_sign cmd:rsa_verify cmd:selftest cmd:ssl_client1 cmd:ssl_client2 cmd:ssl_fork_server cmd:ssl_mail_client cmd:ssl_pthread_server cmd:ssl_server cmd:ssl_server2 cmd:strerror cmd:udp_proxy
 
 C:Q1OBlo+LQYk0u0a+nwIiLAWR8rLik=
 P:postgresql-plpython2
@@ -37051,20 +37065,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557086707
 c:73f28ae83d0390365f3d8ffe9d0e81d1d7f4f8a5
 i:gdl=3.28.0-r0 lang
-
-C:Q13+h2mSChnN+XHd+g//HkqKY5dBU=
-P:mbedtls-static
-V:2.16.6-r0
-A:x86_64
-S:316408
-I:1036288
-T:Static files for mbedtls
-U:https://tls.mbed.org
-L:Apache-2.0
-o:mbedtls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590585580
-c:e9adc65cdc1f79a5de1831fff0c5833b540665d2
 
 C:Q1AK2gwZtyVTZbdTpEk+nX6H3LwhE=
 P:s6-rc-dev
@@ -60274,6 +60274,21 @@ t:1557079518
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs openobex=1.7.2-r1
 
+C:Q1tsjgdvogr7XQeaAdsOffPYAQdWs=
+P:mbedtls-dev
+V:2.16.8-r0
+A:x86_64
+S:273188
+I:1708032
+T:Light-weight cryptographic and SSL/TLS library (development files)
+U:https://tls.mbed.org
+L:Apache-2.0
+o:mbedtls
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1601288719
+c:ea6eea6e70a69afc77bbdb4202c8def49f446f4a
+D:mbedtls=2.16.8-r0
+
 C:Q12FH0BCIoKt8XJ3J33V9HVD4VXrw=
 P:lvm2-libs
 V:2.02.184-r0
@@ -78414,21 +78429,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1560933703
 c:8faf6299e2a8ba608b761f542bde1192416b5965
 i:openrc mosquitto=1.6.3-r0
-
-C:Q1KfXfaRQTbXBNO2jr6ztxIPJAMDY=
-P:mbedtls-dev
-V:2.16.6-r0
-A:x86_64
-S:265744
-I:1622016
-T:Light-weight cryptographic and SSL/TLS library (development files)
-U:https://tls.mbed.org
-L:Apache-2.0
-o:mbedtls
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590585582
-c:e9adc65cdc1f79a5de1831fff0c5833b540665d2
-D:mbedtls=2.16.6-r0
 
 C:Q1elDHl0tCTTwre3g2qVTGOrC8r5M=
 P:daq
